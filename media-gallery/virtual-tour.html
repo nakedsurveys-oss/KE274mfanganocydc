@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour | Sena Centre, Mfangano Island | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Take an immersive virtual tour of Sena Centre on Mfangano Island, Kenya. Explore our facilities, nearby landmarks, and get directions through interactive maps.">
+    <meta name="theme-color" content="#0B1B33">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* =========================================================
+           DESIGN TOKENS — Identical to index.html
+           ========================================================= */
+        :root {
+            --blue-950: #040B1A;
+            --blue-900: #0B1B33;
+            --blue-850: #0F2544;
+            --blue-800: #132E55;
+            --blue-700: #1A3F73;
+            --blue-600: #1E4FD8;
+            --blue-500: #2563EB;
+            --blue-400: #3B82F6;
+            --blue-300: #60A5FA;
+            --blue-200: #93C5FD;
+            --blue-100: #BFDBFE;
+            --blue-50:  #EFF6FF;
+            --sky-500:  #0EA5E9;
+            --sky-400:  #38BDF8;
+            --sky-300:  #7DD3FC;
+            --sky-100:  #E0F2FE;
+            --amber-600: #D97706;
+            --amber-500: #F59E0B;
+            --amber-400: #FBBF24;
+            --amber-300: #FCD34D;
+            --amber-100: #FEF3C7;
+            --forest-600: #1e6b3a;
+            --forest-500: #2d8a4e;
+            --terra-500: #a8553c;
+            --stone-950: #0C0A09;
+            --stone-900: #1C1917;
+            --stone-800: #292524;
+            --stone-700: #44403C;
+            --stone-600: #57534E;
+            --stone-500: #78716C;
+            --stone-400: #A8A29E;
+            --stone-300: #D6D3D1;
+            --stone-200: #E7E5E4;
+            --stone-100: #F5F5F4;
+            --stone-50:  #FAFAF9;
+            --ivory:    #FDFCF8;
+            --cream:    #FAF7F0;
+            --pearl:    #F8F6F1;
+
+            --bg-page:       var(--ivory);
+            --bg-surface:    #ffffff;
+            --bg-elevated:   #ffffff;
+            --bg-muted:      var(--pearl);
+            --bg-inverse:    var(--blue-900);
+
+            --text-primary:   var(--blue-950);
+            --text-secondary: var(--stone-700);
+            --text-tertiary:  var(--stone-500);
+            --text-inverse:   var(--ivory);
+            --text-accent:    var(--blue-600);
+
+            --border-hairline: rgba(12, 27, 51, 0.06);
+            --border-subtle:   rgba(12, 27, 51, 0.10);
+            --border-default:  rgba(12, 27, 51, 0.16);
+            --border-strong:   rgba(12, 27, 51, 0.24);
+
+            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+
+            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+            --fs-xs:   0.75rem;
+            --fs-sm:   0.875rem;
+            --fs-base: 1rem;
+            --fs-md:   1.0625rem;
+            --fs-lg:   1.125rem;
+            --fs-xl:   1.25rem;
+            --fs-2xl:  1.5rem;
+            --fs-3xl:  1.875rem;
+            --fs-4xl:  2.25rem;
+            --fs-5xl:  3rem;
+
+            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+
+            --r-sm: 8px;
+            --r-md: 12px;
+            --r-lg: 16px;
+            --r-xl: 24px;
+            --r-2xl: 32px;
+            --r-3xl: 40px;
+            --r-full: 9999px;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+            --dur-fast: 200ms;
+            --dur-base: 360ms;
+            --dur-slow: 640ms;
+
+            --sidebar-w: 300px;
+            --container: 1320px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page:     #050B16;
+            --bg-surface:  #0B1526;
+            --bg-elevated: #111E36;
+            --bg-muted:    #0A1322;
+            --bg-inverse:  var(--ivory);
+
+            --text-primary:   #F5F7FA;
+            --text-secondary: #B8C5D9;
+            --text-tertiary:  #7A8BA3;
+            --text-inverse:   var(--blue-950);
+            --text-accent:    var(--sky-400);
+
+            --border-hairline: rgba(255,255,255,0.05);
+            --border-subtle:   rgba(255,255,255,0.08);
+            --border-default:  rgba(255,255,255,0.14);
+            --border-strong:   rgba(255,255,255,0.22);
+
+            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            font-size: var(--fs-base);
+            line-height: 1.65;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+        }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        ::selection { background: var(--blue-600); color: white; }
+
+        :focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: 3px;
+            border-radius: var(--r-sm);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px; left: var(--s-4);
+            background: var(--blue-900);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--r-md);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            z-index: 10000;
+            transition: top var(--dur-fast);
+        }
+        .skip-link:focus { top: var(--s-4); }
+
+        /* =========================================================
+           AMBIENT BACKGROUND
+           ========================================================= */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.4;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            animation: orbFloat 24s ease-in-out infinite;
+            will-change: transform;
+        }
+        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
+        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
+        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -30px) scale(1.08); }
+            66% { transform: translate(-30px, 40px) scale(0.95); }
+        }
+
+        /* =========================================================
+           SIDEBAR — Identical to index.html
+           ========================================================= */
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0;
+            height: 100vh;
+            width: var(--sidebar-w);
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-right: 1px solid var(--border-hairline);
+            padding: var(--s-7) var(--s-5);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--dur-base) var(--ease-out);
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+        }
+        .sidebar::-webkit-scrollbar { width: 4px; }
+        .sidebar::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+        [data-theme="dark"] .sidebar {
+            background: rgba(11, 21, 38, 0.78);
+            border-right: 1px solid var(--border-subtle);
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .sidebar-header {
+            padding-bottom: var(--s-6);
+            margin-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            transition: opacity var(--dur-fast);
+        }
+        .sidebar-logo:hover { opacity: 0.8; }
+        .sidebar-logo-mark {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar-logo-mark::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
+        }
+        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
+        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-6);
+            padding-right: 2px;
+        }
+
+        .nav-section-title {
+            color: var(--text-tertiary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: var(--s-3);
+            padding-left: var(--s-3);
+        }
+        .nav-item { position: relative; }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--s-3);
+            padding: 10px var(--s-3);
+            color: var(--text-secondary);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast) var(--ease-out);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
+        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
+        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
+        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
+        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
+        .nav-link.active i.nav-icon { opacity: 1; }
+        .dropdown-arrow {
+            font-size: 0.65rem;
+            transition: transform var(--dur-fast) var(--ease-out);
+            color: var(--text-tertiary);
+        }
+        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+
+        .dropdown {
+            margin-top: var(--s-1);
+            margin-left: var(--s-7);
+            padding-left: var(--s-4);
+            border-left: 1px solid var(--border-subtle);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--dur-base) var(--ease-out);
+        }
+        .nav-item.active .dropdown { max-height: 400px; }
+        .dropdown-link {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 7px var(--s-3);
+            color: var(--text-tertiary);
+            font-size: 0.825rem;
+            font-weight: 500;
+            border-radius: var(--r-sm);
+            transition: all var(--dur-fast);
+        }
+        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
+        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
+        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
+        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
+        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .theme-toggle {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+        }
+        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: var(--s-4); left: var(--s-4);
+            z-index: 1001;
+            width: 48px; height: 48px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md);
+            color: var(--blue-900);
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
+
+        /* =========================================================
+           MAIN CONTENT
+           ========================================================= */
+        .main-content {
+            margin-left: var(--sidebar-w);
+            position: relative;
+            z-index: 2;
+            transition: margin-left var(--dur-base) var(--ease-out);
+        }
+
+        /* =========================================================
+           HERO SECTION — Immersive
+           ========================================================= */
+        .hero-tour {
+            position: relative;
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--gradient-hero);
+        }
+        .hero-tour-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=85');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            animation: heroZoom 30s ease-in-out infinite alternate;
+        }
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+        .hero-tour-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, 
+                rgba(4, 11, 26, 0.88) 0%, 
+                rgba(11, 27, 51, 0.82) 40%, 
+                rgba(14, 165, 233, 0.3) 100%);
+        }
+        .hero-tour-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--s-16) var(--s-5) var(--s-12);
+            text-align: center;
+            color: white;
+        }
+        .hero-tour-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) var(--s-4);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-6);
+            color: var(--amber-300);
+        }
+        .hero-tour-badge i { color: var(--amber-400); }
+        .hero-tour h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5.5vw, 3.5rem);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: var(--s-4);
+        }
+        .hero-tour h1 .highlight {
+            color: var(--amber-400);
+        }
+        .hero-tour-sub {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            margin: 0 auto var(--s-8);
+            line-height: 1.6;
+        }
+        .hero-tour-cta {
+            display: flex;
+            gap: var(--s-3);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-hero {
+            padding: var(--s-3) var(--s-6);
+            border-radius: var(--r-full);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            transition: all var(--dur-fast) var(--ease-out);
+            border: none;
+            text-decoration: none;
+        }
+        .btn-hero-primary {
+            background: var(--gradient-warm);
+            color: var(--blue-950);
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.35);
+        }
+        .btn-hero-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(245, 158, 11, 0.5);
+        }
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .btn-hero-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .btn-hero-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* GPS Coordinates Display */
+        .gps-display {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-2) var(--s-4);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-md);
+            margin-top: var(--s-8);
+            font-family: var(--font-mono);
+            font-size: var(--fs-xs);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .gps-display i { color: var(--forest-500); }
+        .gps-display .dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--forest-500);
+            box-shadow: 0 0 6px var(--forest-500);
+            animation: statusPulse 2s ease-in-out infinite;
+        }
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* =========================================================
+           SECTIONS
+           ========================================================= */
+        .section {
+            padding: var(--s-16) var(--s-5);
+            position: relative;
+        }
+        .section-container {
+            max-width: var(--container);
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--s-10);
+        }
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) var(--s-4);
+            background: var(--blue-50);
+            color: var(--blue-700);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+            border: 1px solid var(--blue-100);
+        }
+        [data-theme="dark"] .section-tag {
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--sky-300);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-3);
+            color: var(--text-primary);
+        }
+        .section-subtitle {
+            font-size: var(--fs-md);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--blue-500), var(--amber-400), var(--sky-500), transparent);
+            margin: var(--s-4) auto;
+            width: 160px;
+            border-radius: 2px;
+        }
+        .bg-muted { background: var(--bg-muted); }
+
+        /* =========================================================
+           INTERACTIVE MAP SECTION
+           ========================================================= */
+        .tour-container {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-3xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Map Header */
+        .map-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--s-3) var(--s-5);
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-wrap: wrap;
+            gap: var(--s-3);
+        }
+        .map-title {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-family: var(--font-display);
+            font-size: var(--fs-md);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .map-title-icon {
+            width: 32px; height: 32px;
+            border-radius: var(--r-sm);
+            background: var(--gradient-sky);
+            color: white;
+            display: grid; place-items: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        .map-controls {
+            display: flex;
+            gap: var(--s-2);
+            flex-wrap: wrap;
+        }
+        .map-btn {
+            padding: 6px 14px;
+            border-radius: var(--r-full);
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            color: var(--text-secondary);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            transition: all var(--dur-fast);
+        }
+        .map-btn:hover {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            border-color: var(--border-subtle);
+        }
+        .map-btn.active {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+        }
+        [data-theme="dark"] .map-btn.active {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            border-color: var(--blue-600);
+        }
+
+        /* Tour Stops Navigation */
+        .tour-stops {
+            display: flex;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            background: var(--bg-muted);
+            border-bottom: 1px solid var(--border-hairline);
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+        .tour-stops::-webkit-scrollbar { height: 4px; }
+        .tour-stops::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+        .tour-stop-btn {
+            padding: 6px 14px;
+            border-radius: var(--r-full);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            color: var(--text-secondary);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            white-space: nowrap;
+            transition: all var(--dur-fast);
+        }
+        .tour-stop-btn:hover {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            border-color: var(--border-subtle);
+        }
+        .tour-stop-btn.active {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+        }
+        [data-theme="dark"] .tour-stop-btn.active {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            border-color: var(--blue-600);
+        }
+
+        /* Map Wrapper */
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            background: var(--bg-muted);
+        }
+        .map-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Loading Overlay */
+        .map-loading {
+            position: absolute;
+            inset: 0;
+            background: var(--bg-surface);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-5);
+            z-index: 20;
+            transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base) var(--ease-out);
+        }
+        .map-loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .map-spinner {
+            width: 56px; height: 56px;
+            border-radius: var(--r-xl);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.4rem;
+            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            animation: loaderPulse 2s ease-in-out infinite;
+        }
+        .map-spinner::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: var(--r-2xl);
+            border: 2px solid transparent;
+            border-top-color: var(--amber-400);
+            border-right-color: var(--blue-400);
+            animation: loaderSpin 1.5s linear infinite;
+        }
+        @keyframes loaderPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes loaderSpin { to { transform: rotate(360deg); } }
+        .loading-text {
+            font-family: var(--font-display);
+            font-size: var(--fs-md);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .loading-sub {
+            font-size: var(--fs-sm);
+            color: var(--text-tertiary);
+        }
+
+        /* Floating Compass */
+        .compass-widget {
+            position: absolute;
+            top: var(--s-4);
+            right: var(--s-4);
+            width: 56px; height: 56px;
+            border-radius: 50%;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            box-shadow: var(--shadow-lg);
+            display: grid; place-items: center;
+            z-index: 15;
+            transition: all var(--dur-fast);
+        }
+        .compass-widget:hover {
+            transform: scale(1.08);
+            box-shadow: var(--shadow-xl);
+        }
+        .compass-needle {
+            width: 24px; height: 24px;
+            position: relative;
+        }
+        .compass-needle::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 0; height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 12px solid var(--red-500, #ef4444);
+        }
+        .compass-needle::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 0; height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 12px solid var(--text-tertiary);
+        }
+        .compass-label {
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 8px;
+            font-weight: 800;
+            color: var(--red-500, #ef4444);
+            font-family: var(--font-mono);
+        }
+
+        /* Info Panel Overlay */
+        .info-panel {
+            position: absolute;
+            bottom: var(--s-5);
+            left: var(--s-5);
+            max-width: 380px;
+            background: var(--bg-surface);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-5);
+            z-index: 15;
+            box-shadow: var(--shadow-xl);
+            transform: translateY(120%);
+            transition: transform var(--dur-base) var(--ease-out);
+        }
+        .info-panel.visible { transform: translateY(0); }
+        .info-panel-close {
+            position: absolute;
+            top: var(--s-2); right: var(--s-2);
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--bg-muted);
+            display: grid; place-items: center;
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+            transition: all var(--dur-fast);
+        }
+        .info-panel-close:hover {
+            background: var(--blue-900);
+            color: white;
+        }
+        .info-panel h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: var(--s-2);
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+        }
+        .info-panel h3 i { color: var(--blue-500); }
+        .info-panel p {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+            line-height: 1.6;
+            margin-bottom: var(--s-3);
+        }
+        .info-panel-actions {
+            display: flex;
+            gap: var(--s-2);
+            flex-wrap: wrap;
+        }
+        .info-panel-btn {
+            padding: 6px 12px;
+            border-radius: var(--r-full);
+            background: var(--blue-900);
+            color: white;
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-1);
+            transition: all var(--dur-fast);
+        }
+        .info-panel-btn:hover {
+            background: var(--blue-800);
+            transform: translateY(-1px);
+        }
+        .info-panel-btn.secondary {
+            background: var(--bg-muted);
+            color: var(--text-primary);
+            border: 1px solid var(--border-hairline);
+        }
+        .info-panel-btn.secondary:hover {
+            background: var(--bg-elevated);
+            border-color: var(--border-subtle);
+        }
+
+        /* =========================================================
+           BREADCRUMB NAVIGATION
+           ========================================================= */
+        .breadcrumb-bar {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            background: var(--bg-muted);
+            border-bottom: 1px solid var(--border-hairline);
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+            font-family: var(--font-mono);
+            overflow-x: auto;
+        }
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            white-space: nowrap;
+        }
+        .breadcrumb-item.active {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .breadcrumb-sep {
+            color: var(--border-default);
+        }
+
+        /* =========================================================
+           LOCATION INFO CARDS
+           ========================================================= */
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--s-5);
+            margin-top: var(--s-8);
+        }
+        .location-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            display: flex;
+            gap: var(--s-4);
+            align-items: flex-start;
+            transition: all var(--dur-base) var(--ease-out);
+            cursor: pointer;
+        }
+        .location-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-subtle);
+        }
+        .location-card.active {
+            border-color: var(--blue-500);
+            box-shadow: var(--shadow-blue);
+        }
+        .location-card-icon {
+            width: 48px; height: 48px;
+            border-radius: var(--r-md);
+            background: var(--gradient-royal);
+            display: grid; place-items: center;
+            color: white;
+            font-size: var(--fs-lg);
+            flex-shrink: 0;
+        }
+        .location-card-icon.green { background: linear-gradient(135deg, var(--forest-500), var(--forest-600)); }
+        .location-card-icon.amber { background: var(--gradient-warm); color: var(--blue-950); }
+        .location-card-icon.sky { background: var(--gradient-sky); }
+        .location-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-md);
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: var(--s-1);
+        }
+        .location-card p {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+            line-height: 1.5;
+        }
+        .location-card .card-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            margin-top: var(--s-2);
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+            font-family: var(--font-mono);
+        }
+        .location-card .card-meta i { color: var(--forest-500); }
+
+        /* =========================================================
+           POINTS OF INTEREST
+           ========================================================= */
+        .poi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--s-4);
+        }
+        .poi-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-5);
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .poi-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: var(--gradient-sky);
+            opacity: 0;
+            transition: opacity var(--dur-fast);
+        }
+        .poi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-subtle);
+        }
+        .poi-card:hover::before { opacity: 1; }
+        .poi-icon {
+            width: 40px; height: 40px;
+            border-radius: var(--r-md);
+            background: var(--blue-50);
+            display: grid; place-items: center;
+            color: var(--blue-600);
+            font-size: var(--fs-md);
+            margin-bottom: var(--s-3);
+        }
+        [data-theme="dark"] .poi-icon {
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--sky-400);
+        }
+        .poi-card h4 {
+            font-family: var(--font-display);
+            font-size: var(--fs-base);
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: var(--s-1);
+        }
+        .poi-card p {
+            font-size: var(--fs-sm);
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .poi-distance {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-1);
+            margin-top: var(--s-2);
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+            font-family: var(--font-mono);
+        }
+
+        /* =========================================================
+           VISITOR GUIDANCE
+           ========================================================= */
+        .guidance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--s-6);
+        }
+        .guidance-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            box-shadow: var(--shadow-md);
+        }
+        .guidance-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: var(--s-4);
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+        }
+        .guidance-card h3 i { color: var(--blue-500); }
+        .guidance-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-3);
+        }
+        .guidance-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-3);
+            padding: var(--s-2) 0;
+            border-bottom: 1px dashed var(--border-subtle);
+        }
+        .guidance-list li:last-child { border-bottom: none; }
+        .guidance-list li i {
+            color: var(--blue-500);
+            margin-top: 3px;
+            flex-shrink: 0;
+            font-size: var(--fs-sm);
+        }
+        .guidance-list li strong {
+            display: block;
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 2px;
+            font-size: var(--fs-sm);
+        }
+        .guidance-list li span {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+        }
+
+        /* Emergency contacts */
+        .emergency-contacts {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            margin-top: var(--s-6);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--s-4);
+        }
+        .emergency-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-3);
+            background: var(--bg-muted);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast);
+        }
+        .emergency-item:hover {
+            background: var(--bg-elevated);
+            transform: translateX(4px);
+        }
+        .emergency-item-icon {
+            width: 36px; height: 36px;
+            border-radius: var(--r-sm);
+            background: rgba(239, 68, 68, 0.1);
+            display: grid; place-items: center;
+            color: #ef4444;
+            font-size: var(--fs-sm);
+            flex-shrink: 0;
+        }
+        .emergency-item-icon.green {
+            background: rgba(45, 138, 78, 0.1);
+            color: var(--forest-600);
+        }
+        .emergency-item strong {
+            display: block;
+            font-size: var(--fs-sm);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .emergency-item span {
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+        }
+
+        /* =========================================================
+           AI TOUR GUIDE
+           ========================================================= */
+        .ai-guide-section {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-3xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .ai-guide-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--s-4) var(--s-5);
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .ai-guide-title {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+        }
+        .ai-guide-icon {
+            width: 36px; height: 36px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--sky-500));
+            display: grid; place-items: center;
+            color: white;
+            font-size: var(--fs-md);
+        }
+        .ai-guide-title h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-md);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .ai-guide-title .status {
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .ai-guide-title .status .dot {
+            width: 5px; height: 5px;
+            border-radius: 50%;
+            background: var(--forest-500);
+            box-shadow: 0 0 6px var(--forest-500);
+        }
+
+        .ai-guide-chat {
+            padding: var(--s-5);
+            min-height: 280px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-3);
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+        }
+        .chat-message {
+            display: flex;
+            gap: var(--s-3);
+            max-width: 85%;
+            animation: msgIn var(--dur-base) var(--ease-out);
+        }
+        @keyframes msgIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .chat-message.ai { align-self: flex-start; }
+        .chat-message.user { align-self: flex-end; flex-direction: row-reverse; }
+        .chat-avatar {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            display: grid; place-items: center;
+            flex-shrink: 0;
+            font-size: var(--fs-xs);
+        }
+        .chat-message.ai .chat-avatar {
+            background: linear-gradient(135deg, var(--blue-600), var(--sky-500));
+            color: white;
+        }
+        .chat-message.user .chat-avatar {
+            background: var(--amber-500);
+            color: var(--blue-950);
+        }
+        .chat-bubble {
+            padding: var(--s-3) var(--s-4);
+            border-radius: var(--r-lg);
+            font-size: var(--fs-sm);
+            line-height: 1.5;
+        }
+        .chat-message.ai .chat-bubble {
+            background: var(--bg-muted);
+            color: var(--text-primary);
+            border-bottom-left-radius: var(--r-sm);
+        }
+        .chat-message.user .chat-bubble {
+            background: var(--blue-900);
+            color: white;
+            border-bottom-right-radius: var(--r-sm);
+        }
+        [data-theme="dark"] .chat-message.user .chat-bubble {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+        }
+
+        .ai-guide-input {
+            display: flex;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            background: var(--bg-muted);
+        }
+        .ai-guide-input input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-full);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: var(--fs-sm);
+            transition: all var(--dur-fast);
+        }
+        .ai-guide-input input::placeholder { color: var(--text-tertiary); }
+        .ai-guide-input input:focus {
+            outline: none;
+            border-color: var(--blue-500);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .ai-guide-input button {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: var(--blue-900);
+            color: white;
+            display: grid; place-items: center;
+            font-size: var(--fs-sm);
+            transition: all var(--dur-fast);
+            flex-shrink: 0;
+        }
+        [data-theme="dark"] .ai-guide-input button {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+        }
+        .ai-guide-input button:hover {
+            transform: scale(1.08);
+            box-shadow: var(--shadow-md);
+        }
+
+        .quick-questions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+        }
+        .quick-q {
+            padding: 4px 12px;
+            border-radius: var(--r-full);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            font-size: var(--fs-xs);
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: all var(--dur-fast);
+        }
+        .quick-q:hover {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+        }
+
+        /* =========================================================
+           GUIDE ME BUTTON (Floating)
+           ========================================================= */
+        .guide-me-btn {
+            position: fixed;
+            bottom: var(--s-8);
+            right: var(--s-8);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            background: var(--gradient-warm);
+            color: var(--blue-950);
+            border-radius: var(--r-full);
+            font-weight: 700;
+            font-size: var(--fs-sm);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+            transition: all var(--dur-fast);
+            animation: guideMePulse 2.5s ease-in-out infinite;
+        }
+        .guide-me-btn:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 16px 40px rgba(245, 158, 11, 0.6);
+        }
+        @keyframes guideMePulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4), 0 0 0 0 rgba(245, 158, 11, 0.4); }
+            50% { box-shadow: 0 10px 30px rgba(245, 158, 11, 0.6), 0 0 0 14px rgba(245, 158, 11, 0); }
+        }
+
+        /* =========================================================
+           FOOTER — Identical to index.html
+           ========================================================= */
+        .footer {
+            background: var(--blue-950);
+            color: rgba(255,255,255,0.75);
+            padding: var(--s-16) 0 var(--s-8);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        .footer > * { position: relative; z-index: 1; }
+        .footer-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-5);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: var(--s-10);
+            margin-bottom: var(--s-10);
+        }
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-4);
+            color: white;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .footer-brand .footer-logo-mark {
+            width: 38px; height: 38px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+            color: var(--amber-400);
+            display: grid; place-items: center;
+            font-size: 0.95rem;
+            box-shadow: var(--shadow-md);
+        }
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            color: var(--amber-300);
+            margin-bottom: var(--s-4);
+            line-height: 1.5;
+        }
+        .footer-brand > p {
+            font-size: var(--fs-sm);
+            line-height: 1.7;
+            margin-bottom: var(--s-5);
+            max-width: 360px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+            font-size: var(--fs-sm);
+            font-style: normal;
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: var(--fs-xs); }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+        }
+        .footer-links a {
+            font-size: var(--fs-sm);
+            color: rgba(255,255,255,0.65);
+            transition: color var(--dur-fast);
+            font-weight: 500;
+        }
+        .footer-links a:hover { color: var(--amber-300); }
+
+        .footer-bottom {
+            padding-top: var(--s-6);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+            font-size: var(--fs-xs);
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-legal { display: flex; gap: var(--s-5); }
+        .footer-legal a { transition: color var(--dur-fast); }
+        .footer-legal a:hover { color: var(--amber-300); }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 1280px) {
+            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+        }
+        @media (max-width: 1024px) {
+            :root { --sidebar-w: 280px; }
+        }
+        @media (max-width: 900px) {
+            .sidebar { transform: translateX(-100%); box-shadow: none; }
+            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
+            .main-content { margin-left: 0; }
+            .mobile-toggle { display: flex; }
+            .map-wrapper { height: 400px; }
+            .info-panel {
+                left: var(--s-3);
+                right: var(--s-3);
+                bottom: var(--s-3);
+                max-width: none;
+            }
+            .compass-widget { width: 44px; height: 44px; }
+            .guide-me-btn {
+                bottom: var(--s-4);
+                right: var(--s-4);
+                padding: var(--s-2) var(--s-4);
+            }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+            .footer-brand { grid-column: 1 / -1; }
+        }
+        @media (max-width: 640px) {
+            .hero-tour { min-height: 60vh; }
+            .hero-tour-cta { flex-direction: column; align-items: center; }
+            .btn-hero { width: 100%; max-width: 280px; justify-content: center; }
+            .map-header { padding: var(--s-2) var(--s-3); }
+            .tour-stops { padding: var(--s-2) var(--s-3); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { flex-wrap: wrap; justify-content: center; }
+            .guide-me-btn span { display: none; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+            .orb { animation: none; }
+            .hero-tour-bg { animation: none; }
+        }
+
+        @media print {
+            .sidebar, .mobile-toggle, .ambient-bg, .guide-me-btn { display: none !important; }
+            .main-content { margin-left: 0; }
+            body { background: white !important; color: black !important; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Floating Guide Me Button -->
+    <button class="guide-me-btn" id="guideMeBtn" aria-label="Guide me through the tour">
+        <i class="fas fa-route" aria-hidden="true"></i>
+        <span>Guide Me</span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-header">
+            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                <div class="sidebar-logo-text">
+                    <span class="sidebar-logo-title">KE0274 PEFA</span>
+                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Resources</div>
+                <div class="nav-item">
+                    <a href="../learningresources/learningresources.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">More</div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+                        <a href="virtual-tour.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../achievments/achievment.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../inventory/inventory.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../chatsupport/chat-support.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero-tour">
+            <div class="hero-tour-bg" aria-hidden="true"></div>
+            <div class="hero-tour-overlay" aria-hidden="true"></div>
+            
+            <div class="hero-tour-content">
+                <div class="hero-tour-badge">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <span>Interactive Virtual Experience</span>
+                </div>
+                
+                <h1>Welcome to <span class="highlight">Sena Centre</span>,<br>Mfangano Island</h1>
+                
+                <p class="hero-tour-sub">
+                    Explore the heart of Mfangano Island through an interactive virtual journey. Discover our facilities, nearby landmarks, and navigate with ease.
+                </p>
+                
+                <div class="hero-tour-cta">
+                    <a href="#tour-section" class="btn-hero btn-hero-primary">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                        Start Virtual Tour
+                    </a>
+                    <a href="https://maps.google.com/?q=G3G8+RJV,Sena+Centre,Kenya" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-secondary">
+                        <i class="fas fa-map" aria-hidden="true"></i>
+                        Open Google Maps
+                    </a>
+                    <a href="#guidance" class="btn-hero btn-hero-outline">
+                        <i class="fas fa-directions" aria-hidden="true"></i>
+                        Get Directions
+                    </a>
+                </div>
+
+                <div class="gps-display">
+                    <span class="dot" aria-hidden="true"></span>
+                    <i class="fas fa-location-crosshairs" aria-hidden="true"></i>
+                    <span>G3G8+RJV · Sena Centre, Mfangano Island</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INTERACTIVE MAP SECTION ===== -->
+        <section class="section" id="tour-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-satellite" aria-hidden="true"></i>
+                        Interactive Map
+                    </span>
+                    <h2 class="section-title">Explore Sena Centre</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Navigate through our campus and surrounding areas with our interactive map. Click on tour stops to learn more.</p>
+                </div>
+
+                <div class="tour-container">
+                    <!-- Breadcrumb Navigation -->
+                    <div class="breadcrumb-bar">
+                        <div class="breadcrumb-item"><i class="fas fa-home"></i> Home</div>
+                        <span class="breadcrumb-sep">/</span>
+                        <div class="breadcrumb-item">Media & Gallery</div>
+                        <span class="breadcrumb-sep">/</span>
+                        <div class="breadcrumb-item active" id="breadcrumbCurrent">Sena Centre</div>
+                    </div>
+
+                    <!-- Map Header with Controls -->
+                    <div class="map-header">
+                        <div class="map-title">
+                            <div class="map-title-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></div>
+                            <span id="currentLocation">Sena Centre, Mfangano Island</span>
+                        </div>
+                        <div class="map-controls">
+                            <button class="map-btn active" id="mapViewBtn" title="Map View"><i class="fas fa-map" aria-hidden="true"></i> Map</button>
+                            <button class="map-btn" id="satelliteBtn" title="Satellite View"><i class="fas fa-satellite" aria-hidden="true"></i> Satellite</button>
+                            <button class="map-btn" id="terrainBtn" title="Terrain View"><i class="fas fa-mountain" aria-hidden="true"></i> Terrain</button>
+                            <button class="map-btn" id="directionsBtn" title="Get Directions"><i class="fas fa-directions" aria-hidden="true"></i> Directions</button>
+                        </div>
+                    </div>
+
+                    <!-- Tour Stops Navigation -->
+                    <div class="tour-stops">
+                        <button class="tour-stop-btn active" data-location="sena-centre" data-query="G3G8+RJV+Sena+Centre+Kenya" data-title="Sena Centre - Main Campus" data-desc="The main campus of KE0274 PEFA Mfangano CYDC, located at Sena Centre on Mfangano Island. Plus Code: G3G8+RJV"><i class="fas fa-building"></i> Sena Centre</button>
+                        <button class="tour-stop-btn" data-location="sena-market" data-query="Sena+Market+Mfangano+Island+Kenya" data-title="Sena Market" data-desc="The local marketplace near Sena Centre. A vibrant hub for the community where you can find fresh produce, goods, and services."><i class="fas fa-store"></i> Sena Market</button>
+                        <button class="tour-stop-btn" data-location="health-centre" data-query="Mfangano+Community+Health+Centre+Kenya" data-title="Mfangano Community Health Centre" data-desc="The community health facility serving Mfangano Island, located near Sena Centre. Provides essential medical services to the community."><i class="fas fa-hospital"></i> Health Centre</button>
+                        <button class="tour-stop-btn" data-location="pefa-cathedral" data-query="PEFA+Cathedral+Sena+Kenya" data-title="PEFA Cathedral Sena" data-desc="The spiritual home of our community where worship services and discipleship programs are held. Heart of our faith activities."><i class="fas fa-church"></i> PEFA Cathedral</button>
+                        <button class="tour-stop-btn" data-location="ferry-point" data-query="Mbita+Point+Ferry+Kenya" data-title="Mbita Ferry Point" data-desc="The ferry landing connecting Mfangano Island to the mainland at Mbita. The primary access point for visitors arriving by road."><i class="fas fa-ship"></i> Ferry Point</button>
+                        <button class="tour-stop-btn" data-location="lake-victoria" data-query="Lake+Victoria+Mfangano+Island+Kenya" data-title="Lake Victoria Viewpoint" data-desc="Stunning views of Lake Victoria, the world's second-largest freshwater lake. Mfangano Island sits in these beautiful waters."><i class="fas fa-water"></i> Lake View</button>
+                    </div>
+
+                    <!-- Map Wrapper -->
+                    <div class="map-wrapper">
+                        <div class="map-loading" id="mapLoading">
+                            <div class="map-spinner" aria-hidden="true">
+                                <i class="fas fa-map-location-dot"></i>
+                            </div>
+                            <span class="loading-text">Loading interactive map</span>
+                            <span class="loading-sub">Sena Centre, Mfangano Island...</span>
+                        </div>
+                        
+                        <iframe
+                            id="mapFrame"
+                            class="map-frame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.5!2d34.15!3d-0.533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRDNHOCtSSlYgU2VuYSBDZW50cmUsIEtlbnlh!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Interactive map of Sena Centre, Mfangano Island">
+                        </iframe>
+
+                        <!-- Floating Compass -->
+                        <div class="compass-widget" title="Compass — North" aria-label="Compass pointing north">
+                            <div class="compass-needle"></div>
+                            <span class="compass-label">N</span>
+                        </div>
+
+                        <!-- Info Panel -->
+                        <div class="info-panel" id="infoPanel">
+                            <button class="info-panel-close" id="infoPanelClose" aria-label="Close info panel"><i class="fas fa-times"></i></button>
+                            <h3 id="infoPanelTitle"><i class="fas fa-info-circle"></i> Location Info</h3>
+                            <p id="infoPanelDesc">Click on a tour stop to learn more about each location.</p>
+                            <div class="info-panel-actions">
+                                <a href="#" class="info-panel-btn" id="infoDirectionsBtn"><i class="fas fa-directions"></i> Directions</a>
+                                <a href="#" class="info-panel-btn secondary" id="infoExternalBtn" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Open in Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Info Cards -->
+                <div class="location-grid">
+                    <div class="location-card" data-location="sena-centre">
+                        <div class="location-card-icon"><i class="fas fa-building"></i></div>
+                        <div>
+                            <h3>Sena Centre</h3>
+                            <p>Main campus of KE0274 PEFA Mfangano CYDC. Home to holistic child development programs.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> G3G8+RJV · Mfangano Island</div>
+                        </div>
+                    </div>
+                    <div class="location-card" data-location="sena-market">
+                        <div class="location-card-icon amber"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h3>Sena Market</h3>
+                            <p>Vibrant local marketplace near the Centre. Fresh produce, goods, and community hub.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> ~0.5 km from Centre</div>
+                        </div>
+                    </div>
+                    <div class="location-card" data-location="health-centre">
+                        <div class="location-card-icon green"><i class="fas fa-hospital"></i></div>
+                        <div>
+                            <h3>Community Health Centre</h3>
+                            <p>Mfangano Community Health Centre providing essential medical services to the island.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> Near Sena Centre</div>
+                        </div>
+                    </div>
+                    <div class="location-card" data-location="pefa-cathedral">
+                        <div class="location-card-icon sky"><i class="fas fa-church"></i></div>
+                        <div>
+                            <h3>PEFA Cathedral Sena</h3>
+                            <p>Spiritual home of our community. Worship services and discipleship programs.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> Sena Centre grounds</div>
+                        </div>
+                    </div>
+                    <div class="location-card" data-location="ferry-point">
+                        <div class="location-card-icon"><i class="fas fa-ship"></i></div>
+                        <div>
+                            <h3>Mbita Ferry Point</h3>
+                            <p>Main access point from the mainland. 15-minute boat ride to Mfangano Island.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> Mbita, Suba Bay</div>
+                        </div>
+                    </div>
+                    <div class="location-card" data-location="lake-victoria">
+                        <div class="location-card-icon sky"><i class="fas fa-water"></i></div>
+                        <div>
+                            <h3>Lake Victoria</h3>
+                            <p>World's second-largest freshwater lake. Beautiful views and fishing communities.</p>
+                            <div class="card-meta"><i class="fas fa-location-dot"></i> Surrounding the island</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== POINTS OF INTEREST ===== -->
+        <section class="section bg-muted">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-compass" aria-hidden="true"></i>
+                        Nearby Attractions
+                    </span>
+                    <h2 class="section-title">Points of Interest</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Discover what's around Sena Centre and make the most of your visit to Mfangano Island.</p>
+                </div>
+
+                <div class="poi-grid">
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-store"></i></div>
+                        <h4>Sena Market</h4>
+                        <p>Local marketplace with fresh produce, crafts, and daily essentials.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~0.5 km · 6 min walk</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-hospital"></i></div>
+                        <h4>Health Centre</h4>
+                        <p>Mfangano Community Health Centre for medical services.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~0.3 km · 4 min walk</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-umbrella-beach"></i></div>
+                        <h4>Beach Views</h4>
+                        <p>Beautiful Lake Victoria beaches with stunning sunset views.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~1.2 km · 15 min walk</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-school"></i></div>
+                        <h4>Local Schools</h4>
+                        <p>Primary and secondary schools serving the island community.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~0.8 km · 10 min walk</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-church"></i></div>
+                        <h4>Religious Centres</h4>
+                        <p>Various churches and places of worship across the island.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> On-site · PEFA Cathedral</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-fish"></i></div>
+                        <h4>Fishing Communities</h4>
+                        <p>Traditional fishing villages along the Lake Victoria shoreline.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~2 km · Boat access</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-mountain-sun"></i></div>
+                        <h4>Island Viewpoints</h4>
+                        <p>Panoramic views of Lake Victoria and surrounding islands.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~1.5 km · Scenic route</div>
+                    </div>
+                    <div class="poi-card">
+                        <div class="poi-icon"><i class="fas fa-shop"></i></div>
+                        <h4>Local Businesses</h4>
+                        <p>Shops, restaurants, and services for visitors and residents.</p>
+                        <div class="poi-distance"><i class="fas fa-route"></i> ~0.4 km · 5 min walk</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VISITOR GUIDANCE ===== -->
+        <section class="section" id="guidance">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-signs-post" aria-hidden="true"></i>
+                        Visitor Information
+                    </span>
+                    <h2 class="section-title">How to Reach Sena Centre</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Everything you need to know for your visit to Mfangano Island and KE0274 PEFA Mfangano CYDC.</p>
+                </div>
+
+                <div class="guidance-grid">
+                    <div class="guidance-card">
+                        <h3><i class="fas fa-ship" aria-hidden="true"></i> Ferry & Boat Routes</h3>
+                        <ul class="guidance-list">
+                            <li>
+                                <i class="fas fa-anchor" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Mbita – Mfangano Ferry</strong>
+                                    <span>Main ferry service from Mbita Point to Mfangano Island. Runs multiple times daily. Journey takes approximately 15–20 minutes.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-sailboat" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Private Boat Transport</strong>
+                                    <span>Private boats available at Mbita landing. Negotiate fare in advance. Good for groups or flexible schedules.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Operating Hours</strong>
+                                    <span>Ferry services typically run from 6:00 AM to 6:00 PM. Confirm schedules locally as they may vary by season.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="guidance-card">
+                        <h3><i class="fas fa-route" aria-hidden="true"></i> Route Guidance</h3>
+                        <ul class="guidance-list">
+                            <li>
+                                <i class="fas fa-city" aria-hidden="true"></i>
+                                <div>
+                                    <strong>From Nairobi</strong>
+                                    <span>Drive to Kisumu (~6 hrs), then to Homa Bay (~2 hrs), then to Mbita Point (~1 hr). Take ferry to Mfangano Island.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-city" aria-hidden="true"></i>
+                                <div>
+                                    <strong>From Kisumu</strong>
+                                    <span>Drive west to Homa Bay (~2 hrs), continue to Mbita Point (~1 hr). Ferry crossing to Mfangano Island.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-city" aria-hidden="true"></i>
+                                <div>
+                                    <strong>From Homa Bay</strong>
+                                    <span>Drive to Mbita Point (~1 hr). Take the ferry or private boat to Mfangano Island. Sena Centre is accessible from the landing.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="guidance-card">
+                        <h3><i class="fas fa-lightbulb" aria-hidden="true"></i> Travel Tips</h3>
+                        <ul class="guidance-list">
+                            <li>
+                                <i class="fas fa-sun" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Best Time to Visit</strong>
+                                    <span>Dry seasons (January–March, June–October) offer the best weather. Saturday programs run 9 AM – 2 PM during school terms.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-suitcase" aria-hidden="true"></i>
+                                <div>
+                                    <strong>What to Bring</strong>
+                                    <span>Comfortable walking shoes, sun protection, light clothing, and a sense of adventure. The island is warm year-round.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Communication</strong>
+                                    <span>Mobile network coverage is available (Safaricom, Airtel). Internet access is limited — plan accordingly.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Emergency Contacts -->
+                <div class="emergency-contacts">
+                    <div class="emergency-item">
+                        <div class="emergency-item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Emergency Hotline</strong>
+                            <span>0800 211 112 (Toll-free)</span>
+                        </div>
+                    </div>
+                    <div class="emergency-item">
+                        <div class="emergency-item-icon green"><i class="fas fa-hospital"></i></div>
+                        <div>
+                            <strong>Health Centre</strong>
+                            <span>Mfangano Community Health Centre</span>
+                        </div>
+                    </div>
+                    <div class="emergency-item">
+                        <div class="emergency-item-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <strong>Child Protection</strong>
+                            <span>kenyaReportAbuse@compassion.com</span>
+                        </div>
+                    </div>
+                    <div class="emergency-item">
+                        <div class="emergency-item-icon green"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>CYDC Contact</strong>
+                            <span>info@ke0274pefa.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== AI TOUR GUIDE ===== -->
+        <section class="section bg-muted">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                        AI Assistant
+                    </span>
+                    <h2 class="section-title">AI Tour Guide</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Ask our AI guide anything about Sena Centre, Mfangano Island, and how to get here.</p>
+                </div>
+
+                <div class="ai-guide-section">
+                    <div class="ai-guide-header">
+                        <div class="ai-guide-title">
+                            <div class="ai-guide-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
+                            <div>
+                                <h3>Mfangano Guide</h3>
+                                <div class="status"><span class="dot"></span> Online & Ready</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-guide-chat" id="aiChat">
+                        <div class="chat-message ai">
+                            <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                            <div class="chat-bubble">
+                                <strong>Karibu! Welcome!</strong> 👋 I'm your AI tour guide for Sena Centre and Mfangano Island. I can help you with directions, tell you about nearby attractions, or answer questions about what you're looking at. What would you like to know?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-questions">
+                        <button class="quick-q" data-q="Where am I?">Where am I?</button>
+                        <button class="quick-q" data-q="How do I get there?">How do I get there?</button>
+                        <button class="quick-q" data-q="What am I looking at?">What am I looking at?</button>
+                        <button class="quick-q" data-q="Nearby attractions">Nearby attractions</button>
+                        <button class="quick-q" data-q="Travel recommendations">Travel tips</button>
+                    </div>
+
+                    <div class="ai-guide-input">
+                        <input type="text" id="aiInput" placeholder="Ask me anything about Sena Centre..." aria-label="Ask the AI tour guide">
+                        <button id="aiSendBtn" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                            <span>KE0274 PEFA Mfangano CYDC</span>
+                        </div>
+                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+                        <address class="footer-contact">
+                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
+                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                        </address>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../studentleadership/leaders.html">Leadership</a></li>
+                            <li><a href="../academics/dreamachiever.html">Academics</a></li>
+                            <li><a href="../achievments/achievment.html">Achievements</a></li>
+                            <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="../learningresources/learningresources.html">Learning Resources</a></li>
+                            <li><a href="../studentportal/timetable.html">Student Portal</a></li>
+                            <li><a href="imagegallery/image-gallery.html">Media Gallery</a></li>
+                            <li><a href="virtual-tour.html">Virtual Tour</a></li>
+                            <li><a href="../childprotection.html">Child Protection</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Visit Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://maps.google.com/?q=G3G8+RJV,Sena+Centre,Kenya" target="_blank" rel="noopener noreferrer"><i class="fas fa-map" style="width:14px;margin-right:6px;"></i> Google Maps</a></li>
+                            <li><a href="#guidance"><i class="fas fa-directions" style="width:14px;margin-right:6px;"></i> Get Directions</a></li>
+                            <li><a href="#tour-section"><i class="fas fa-satellite" style="width:14px;margin-right:6px;"></i> Virtual Tour</a></li>
+                            <li><a href="../chatsupport/chat-support.html"><i class="fas fa-comments" style="width:14px;margin-right:6px;"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Child Protection Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Safeguarding</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const icon = themeToggle.querySelector('i');
+            const label = themeToggle.querySelector('span');
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // ===== MOBILE SIDEBAR =====
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+        mobileToggle.addEventListener('click', () => {
+            const isActive = sidebar.classList.toggle('active');
+            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
+            mobileToggle.setAttribute('aria-expanded', String(isActive));
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
+                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+                sidebar.classList.remove('active');
+                mobileToggle.querySelector('i').className = 'fas fa-bars';
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // ===== DROPDOWN TOGGLE =====
+        window.toggleDropdown = function(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            const navItem = element.closest('.nav-item');
+            const isActive = navItem.classList.toggle('active');
+            element.setAttribute('aria-expanded', String(isActive));
+            document.querySelectorAll('.nav-item').forEach(item => {
+                if (item !== navItem) {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }
+            });
+        };
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        // ===== KEYBOARD: ESCAPE =====
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    mobileToggle.focus();
+                }
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
+                });
+            }
+        });
+
+        // ===== RESIZE HANDLER =====
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 900) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            }, 200);
+        });
+
+        // ===== MAP FUNCTIONALITY =====
+        const mapFrame = document.getElementById('mapFrame');
+        const mapLoading = document.getElementById('mapLoading');
+        const mapViewBtn = document.getElementById('mapViewBtn');
+        const satelliteBtn = document.getElementById('satelliteBtn');
+        const terrainBtn = document.getElementById('terrainBtn');
+        const directionsBtn = document.getElementById('directionsBtn');
+        const tourStopBtns = document.querySelectorAll('.tour-stop-btn');
+        const locationCards = document.querySelectorAll('.location-card');
+        const infoPanel = document.getElementById('infoPanel');
+        const infoPanelTitle = document.getElementById('infoPanelTitle');
+        const infoPanelDesc = document.getElementById('infoPanelDesc');
+        const infoPanelClose = document.getElementById('infoPanelClose');
+        const infoDirectionsBtn = document.getElementById('infoDirectionsBtn');
+        const infoExternalBtn = document.getElementById('infoExternalBtn');
+        const currentLocationSpan = document.getElementById('currentLocation');
+        const breadcrumbCurrent = document.getElementById('breadcrumbCurrent');
+
+        const DEFAULT_QUERY = 'G3G8+RJV+Sena+Centre+Kenya';
+        let currentMapType = 'roadmap';
+        let currentQuery = DEFAULT_QUERY;
+
+        // Generate Google Maps Embed URL
+        function getMapUrl(query, mapType) {
+            const encodedQuery = encodeURIComponent(query.replace(/\+/g, ' '));
+            return `https://www.google.com/maps?q=${encodedQuery}&output=embed&maptype=${mapType}`;
+        }
+
+        // Load map with specific location
+        function loadMap(query, mapType) {
+            mapLoading.classList.remove('hidden');
+            currentQuery = query;
+            const url = getMapUrl(query, mapType);
+            mapFrame.src = url;
+            
+            mapFrame.onload = () => {
+                setTimeout(() => {
+                    mapLoading.classList.add('hidden');
+                }, 600);
+            };
+            
+            setTimeout(() => {
+                mapLoading.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Update info panel
+        function showInfoPanel(title, desc, query) {
+            infoPanelTitle.innerHTML = `<i class="fas fa-info-circle"></i> ${title}`;
+            infoPanelDesc.textContent = desc;
+            infoPanel.classList.add('visible');
+            currentLocationSpan.textContent = title;
+            breadcrumbCurrent.textContent = title.split(' - ')[0];
+            
+            // Update action buttons
+            const encodedQuery = encodeURIComponent(query.replace(/\+/g, ' '));
+            infoDirectionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${encodedQuery}`;
+            infoExternalBtn.href = `https://maps.google.com/?q=${encodedQuery}`;
+        }
+
+        // Tour stop buttons
+        tourStopBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tourStopBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const query = btn.dataset.query;
+                const title = btn.dataset.title;
+                const desc = btn.dataset.desc;
+                
+                loadMap(query, currentMapType);
+                showInfoPanel(title, desc, query);
+
+                // Highlight corresponding location card
+                const loc = btn.dataset.location;
+                locationCards.forEach(c => c.classList.remove('active'));
+                const matchingCard = document.querySelector(`.location-card[data-location="${loc}"]`);
+                if (matchingCard) {
+                    matchingCard.classList.add('active');
+                    matchingCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        });
+
+        // Location cards click
+        locationCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const location = card.dataset.location;
+                const correspondingBtn = document.querySelector(`.tour-stop-btn[data-location="${location}"]`);
+                if (correspondingBtn) {
+                    correspondingBtn.click();
+                }
+            });
+        });
+
+        // Map view buttons
+        mapViewBtn.addEventListener('click', () => {
+            currentMapType = 'roadmap';
+            mapViewBtn.classList.add('active');
+            satelliteBtn.classList.remove('active');
+            terrainBtn.classList.remove('active');
+            loadMap(currentQuery, 'roadmap');
+        });
+
+        satelliteBtn.addEventListener('click', () => {
+            currentMapType = 'satellite';
+            satelliteBtn.classList.add('active');
+            mapViewBtn.classList.remove('active');
+            terrainBtn.classList.remove('active');
+            loadMap(currentQuery, 'satellite');
+        });
+
+        terrainBtn.addEventListener('click', () => {
+            currentMapType = 'terrain';
+            terrainBtn.classList.add('active');
+            mapViewBtn.classList.remove('active');
+            satelliteBtn.classList.remove('active');
+            loadMap(currentQuery, 'terrain');
+        });
+
+        directionsBtn.addEventListener('click', () => {
+            const encodedQuery = encodeURIComponent(currentQuery.replace(/\+/g, ' '));
+            window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedQuery}`, '_blank');
+        });
+
+        // Close info panel
+        infoPanelClose.addEventListener('click', () => {
+            infoPanel.classList.remove('visible');
+        });
+
+        // Initialize map
+        loadMap(DEFAULT_QUERY, 'roadmap');
+        
+        // Show initial info panel after delay
+        setTimeout(() => {
+            showInfoPanel(
+                'Sena Centre - Main Campus',
+                'Welcome to Sena Centre, the main campus of KE0274 PEFA Mfangano CYDC. Plus Code: G3G8+RJV. Located on Mfangano Island in Lake Victoria, near Sena Market and Mfangano Community Health Centre.',
+                DEFAULT_QUERY
+            );
+        }, 2500);
+
+        // ===== GUIDE ME BUTTON =====
+        const guideMeBtn = document.getElementById('guideMeBtn');
+        const tourStops = Array.from(tourStopBtns);
+        let guideIndex = 0;
+        let guideInterval = null;
+
+        guideMeBtn.addEventListener('click', () => {
+            if (guideInterval) {
+                clearInterval(guideInterval);
+                guideInterval = null;
+                guideMeBtn.innerHTML = '<i class="fas fa-route"></i> <span>Guide Me</span>';
+                return;
+            }
+
+            guideIndex = 0;
+            guideMeBtn.innerHTML = '<i class="fas fa-stop"></i> <span>Stop Guide</span>';
+
+            function nextStop() {
+                if (guideIndex >= tourStops.length) {
+                    clearInterval(guideInterval);
+                    guideInterval = null;
+                    guideMeBtn.innerHTML = '<i class="fas fa-route"></i> <span>Guide Me</span>';
+                    return;
+                }
+                tourStops[guideIndex].click();
+                guideIndex++;
+            }
+
+            nextStop();
+            guideInterval = setInterval(nextStop, 4000);
+
+            // Scroll to tour section
+            document.getElementById('tour-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // ===== AI TOUR GUIDE =====
+        const aiChat = document.getElementById('aiChat');
+        const aiInput = document.getElementById('aiInput');
+        const aiSendBtn = document.getElementById('aiSendBtn');
+        const quickQuestions = document.querySelectorAll('.quick-q');
+
+        const aiResponses = {
+            'where am i': "You're currently viewing <strong>Sena Centre</strong> on Mfangano Island, Kenya! 📍 This is the home of KE0274 PEFA Mfangano CYDC, located in Suba West, Homa Bay County. The Plus Code is <strong>G3G8+RJV</strong>. We're situated on a beautiful island in Lake Victoria, near Sena Market and the Mfangano Community Health Centre.",
+            'how do i get there': "Here's how to reach Sena Centre: 🚗<br><br><strong>From Nairobi:</strong> Drive to Kisumu (~6 hrs) → Homa Bay (~2 hrs) → Mbita Point (~1 hr) → Take the ferry to Mfangano Island (~15-20 min).<br><br><strong>From Kisumu:</strong> Drive west to Homa Bay, then to Mbita Point, and take the ferry.<br><br>The ferry runs multiple times daily from 6 AM to 6 PM. You can also arrange private boat transport at Mbita landing!",
+            'what am i looking at': "You're looking at the interactive map of <strong>Sena Centre</strong> on Mfangano Island! 🗺️ This is where KE0274 PEFA Mfangano CYDC operates — a Compassion International partner dedicated to releasing children from poverty. The Centre is located near Sena Market and the Community Health Centre. Try clicking the different tour stops to explore nearby landmarks!",
+            'nearby attractions': "Here are some great points of interest near Sena Centre: 🌟<br><br>• <strong>Sena Market</strong> (~0.5 km) — Local marketplace<br>• <strong>Community Health Centre</strong> (~0.3 km) — Medical services<br>• <strong>PEFA Cathedral</strong> — On-site spiritual centre<br>• <strong>Lake Victoria beaches</strong> (~1.2 km) — Beautiful sunset views<br>• <strong>Fishing communities</strong> — Traditional villages<br>• <strong>Island viewpoints</strong> — Panoramic lake views<br><br>Scroll down to the Points of Interest section for more details!",
+            'travel recommendations': "Here are my top travel tips for visiting Mfangano Island: ✈️<br><br>🌤️ <strong>Best time:</strong> Dry seasons (Jan-Mar, Jun-Oct)<br>👟 <strong>Pack:</strong> Comfortable shoes, sun protection, light clothing<br>📱 <strong>Network:</strong> Safaricom & Airtel coverage available<br>⛴️ <strong>Ferry:</strong> Runs 6 AM – 6 PM from Mbita<br>📅 <strong>Programs:</strong> Saturdays 9 AM – 2 PM during school terms<br>💡 <strong>Tip:</strong> Confirm ferry schedules locally as they vary by season<br><br>Don't forget to experience the stunning Lake Victoria sunsets! 🌅"
+        };
+
+        function addMessage(text, isUser = false) {
+            const msg = document.createElement('div');
+            msg.className = `chat-message ${isUser ? 'user' : 'ai'}`;
+            msg.innerHTML = `
+                <div class="chat-avatar"><i class="fas fa-${isUser ? 'user' : 'robot'}"></i></div>
+                <div class="chat-bubble">${text}</div>
+            `;
+            aiChat.appendChild(msg);
+            aiChat.scrollTop = aiChat.scrollHeight;
+        }
+
+        function getAIResponse(question) {
+            const q = question.toLowerCase().trim();
+            
+            // Check for keyword matches
+            if (q.includes('where') && (q.includes('am i') || q.includes('location'))) {
+                return aiResponses['where am i'];
+            }
+            if (q.includes('how') && (q.includes('get') || q.includes('reach') || q.includes('direction') || q.includes('travel'))) {
+                return aiResponses['how do i get there'];
+            }
+            if (q.includes('what') && (q.includes('looking') || q.includes('see') || q.includes('this'))) {
+                return aiResponses['what am i looking at'];
+            }
+            if (q.includes('nearby') || q.includes('attraction') || q.includes('around') || q.includes('places')) {
+                return aiResponses['nearby attractions'];
+            }
+            if (q.includes('tip') || q.includes('recommend') || q.includes('advice') || q.includes('suggest')) {
+                return aiResponses['travel recommendations'];
+            }
+            if (q.includes('ferry') || q.includes('boat')) {
+                return "The ferry from <strong>Mbita Point</strong> to Mfangano Island runs multiple times daily, typically from <strong>6:00 AM to 6:00 PM</strong>. The journey takes about <strong>15–20 minutes</strong>. Private boats are also available at Mbita landing — negotiate the fare in advance. ⛴️";
+            }
+            if (q.includes('market')) {
+                return "<strong>Sena Market</strong> is the local marketplace near Sena Centre, about a 6-minute walk away. You'll find fresh produce, crafts, daily essentials, and a vibrant community atmosphere. It's a great place to experience local island life! 🛍️";
+            }
+            if (q.includes('health') || q.includes('hospital') || q.includes('medical')) {
+                return "The <strong>Mfangano Community Health Centre</strong> is located near Sena Centre and provides essential medical services to the island community. In case of emergency, you can also call the toll-free hotline: <strong>0800 211 112</strong>. 🏥";
+            }
+            if (q.includes('beach') || q.includes('lake') || q.includes('victoria')) {
+                return "Mfangano Island is surrounded by the beautiful <strong>Lake Victoria</strong>, the world's second-largest freshwater lake! 🌊 There are several beaches within walking distance offering stunning sunset views. The fishing communities along the shore are also worth visiting for an authentic experience.";
+            }
+            if (q.includes('time') || q.includes('when') || q.includes('hour')) {
+                return "Our programs at Sena Centre run on <strong>Saturdays from 9:00 AM to 2:00 PM</strong> during school terms. During holidays, we offer intensive daily programs Monday through Friday. The best time to visit is during the dry seasons (January–March, June–October) for the best weather. ☀️";
+            }
+            if (q.includes('hello') || q.includes('hi') || q.includes('hey')) {
+                return "Hello! 👋 Karibu (welcome) to the Mfangano Island virtual tour! I'm here to help you explore Sena Centre and the surrounding area. Ask me about directions, attractions, travel tips, or anything else you'd like to know!";
+            }
+            if (q.includes('thank')) {
+                return "You're very welcome! 😊 Asante sana! If you have any more questions about Sena Centre or Mfangano Island, feel free to ask. We hope you enjoy your virtual tour! 🙏";
+            }
+
+            // Default response
+            return "That's a great question! 🤔 While I'm a specialized guide for Sena Centre and Mfangano Island, I can help you with:<br><br>• <strong>Directions</strong> — How to get here<br>• <strong>Attractions</strong> — What's nearby<br>• <strong>Travel tips</strong> — Best times to visit<br>• <strong>Location info</strong> — What you're looking at<br><br>Try asking one of these, or click a quick question below! 👇";
+        }
+
+        function handleUserInput() {
+            const question = aiInput.value.trim();
+            if (!question) return;
+
+            addMessage(question, true);
+            aiInput.value = '';
+
+            // Simulate AI thinking
+            setTimeout(() => {
+                const response = getAIResponse(question);
+                addMessage(response, false);
+            }, 600);
+        }
+
+        aiSendBtn.addEventListener('click', handleUserInput);
+        aiInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleUserInput();
+        });
+
+        quickQuestions.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const q = btn.dataset.q;
+                aiInput.value = q;
+                handleUserInput();
+            });
+        });
+    });
+    </script>
+</body>
+</html>

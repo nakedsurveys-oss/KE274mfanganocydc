@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cast Your Vote | Student Elections 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* --- CSS VARIABLES FOR THEMES --- */
+:root {
+  /* Dark Mode Defaults */
+  --bg-start: #0b1120;
+  --bg-end: #1a2639;
+  --text-main: #1e293b;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --input-bg: #f8fafc;
+  --particle-color: rgba(59, 130, 246, 0.6);
+  --line-color: rgba(59, 130, 246, 0.2);
+  --toggle-bg: rgba(255, 255, 255, 0.1);
+  --toggle-color: #fff;
+  
+  /* Brand Colors (Kept consistent) */
+  --primary: #4338ca; 
+  --primary-dark: #3730a3; 
+  --secondary: #0ea5e9;
+  --success: #10b981;
+  --gray: #64748b;
+}
+
+[data-theme="light"] {
+  /* Light Mode Overrides */
+  --bg-start: #f0f4f8;
+  --bg-end: #d9e2ec;
+  --text-main: #1e293b;
+  --card-bg: #ffffff;
+  --border-color: #cbd5e1;
+  --input-bg: #f1f5f9;
+  --particle-color: rgba(30, 41, 59, 0.5);
+  --line-color: rgba(30, 41, 59, 0.15);
+  --toggle-bg: rgba(0, 0, 0, 0.05);
+  --toggle-color: #334155;
+}
+
+/* --- GLOBAL STYLES --- */
+* { box-sizing: border-box; margin: 0; padding: 0; transition: background-color 0.4s ease, color 0.3s ease, border-color 0.3s ease; }
+body { 
+  font-family: 'Poppins', sans-serif; 
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end)); 
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  color: var(--text-main); 
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Canvas Background */
+#particle-canvas {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute; top: 20px; right: 20px;
+  background: var(--toggle-bg); border: 1px solid rgba(255,255,255,0.2);
+  color: var(--toggle-color); width: 45px; height: 45px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 100; backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+.theme-toggle:hover { transform: scale(1.1); background: var(--primary); color: white; border-color: transparent; }
+
+/* App Container */
+.app-container { width: 100%; max-width: 520px; animation: slideUp 0.5s ease-out; position: relative; z-index: 10; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Card Styles */
+.card { 
+  background: var(--card-bg); 
+  border-radius: 24px; 
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); 
+  overflow: hidden; 
+  position: relative; 
+}
+.card-header { 
+  background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+  color: #ffffff; 
+  padding: 25px 30px; 
+  text-align: center; 
+}
+.card-header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 5px; }
+.card-body { padding: 30px; }
+
+/* Progress Bar */
+.progress-container { margin-bottom: 25px; }
+.progress-label { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray); margin-bottom: 8px; font-weight: 500; }
+.progress-bar { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width 0.4s ease; width: 0%; }
+
+/* Verification Section */
+.verification-section { text-align: center; padding: 10px 0 25px; }
+.verification-icon { 
+  width: 70px; height: 70px; 
+  background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+  border-radius: 50%; 
+  display: flex; align-items: center; justify-content: center; 
+  margin: 0 auto 20px; color: white; font-size: 28px; 
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); 
+}
+.ke-input-group { position: relative; max-width: 200px; margin: 0 auto; }
+.ke-input-group input { 
+  width: 100%; padding: 16px 20px; padding-left: 50px; 
+  border: 2px solid var(--border-color); 
+  border-radius: 12px; 
+  font-size: 1.3rem; font-weight: 600; text-align: center; letter-spacing: 8px; 
+  transition: all 0.3s; 
+  background: var(--input-bg); color: var(--text-main);
+}
+.ke-input-group input:focus { outline: none; border-color: var(--primary); background: var(--card-bg); box-shadow: 0 0 0 4px rgba(67, 56, 202, 0.1); }
+.ke-input-group i { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--gray); font-size: 1.1rem; }
+
+/* Post Section */
+.post-section { display: none; animation: fadeIn 0.4s ease; }
+.post-section.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+.post-header { text-align: center; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); }
+.post-badge { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; }
+.post-title { font-size: 1.3rem; font-weight: 700; color: var(--text-main); }
+
+/* Candidates Grid */
+.candidates-grid { display: grid; gap: 12px; margin-bottom: 25px; }
+.candidate-card { 
+  display: flex; align-items: center; padding: 14px 18px; 
+  border: 2px solid var(--border-color); 
+  border-radius: 14px; cursor: pointer; 
+  transition: all 0.2s; 
+  background: var(--card-bg); position: relative; 
+}
+.candidate-card:hover { border-color: var(--primary); transform: translateX(4px); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.candidate-card.selected { 
+  border-color: var(--primary); 
+  background: linear-gradient(135deg, rgba(67,56,202,0.08), rgba(14,165,233,0.08)); 
+  box-shadow: 0 0 0 4px rgba(67, 56, 202, 0.15); 
+}
+.candidate-card input { position: absolute; opacity: 0; cursor: pointer; }
+.candidate-avatar { 
+  width: 44px; height: 44px; border-radius: 50%; 
+  background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+  color: white; display: flex; align-items: center; justify-content: center; 
+  font-weight: 600; font-size: 1rem; margin-right: 14px; flex-shrink: 0; 
+}
+.candidate-info { flex: 1; }
+.candidate-name { font-weight: 600; color: var(--text-main); font-size: 1rem; }
+.candidate-check { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #cbd5e1; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.2s; }
+.candidate-card.selected .candidate-check { background: var(--primary); border-color: var(--primary); }
+
+/* Buttons */
+.btn { width: 100%; padding: 16px 24px; border: none; border-radius: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.2s; }
+.btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; box-shadow: 0 4px 14px rgba(67, 56, 202, 0.4); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(67, 56, 202, 0.6); }
+.btn-secondary { background: var(--input-bg); color: var(--text-main); border: 2px solid var(--border-color); }
+.btn-secondary:hover { background: #e2e8f0; }
+.btn-group { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+
+/* Modal */
+.modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 1000; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(4px); }
+.modal.active { display: flex; }
+.modal-content { background: var(--card-bg); border-radius: 24px; padding: 40px 30px; max-width: 420px; width: 100%; text-align: center; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); animation: scaleIn 0.4s ease; color: var(--text-main); }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+.success-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--success), #059669); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: white; font-size: 36px; }
+
+/* Error Msg */
+.error-msg { background: #fef2f2; border: 1px solid #fecaca; color: #ef4444; padding: 12px 16px; border-radius: 10px; margin-bottom: 20px; font-size: 0.9rem; display: none; align-items: center; gap: 10px; }
+.error-msg.show { display: flex; }
+
+/* Footer */
+.card-footer { padding: 20px 30px 30px; text-align: center; border-top: 1px solid var(--border-color); }
+.back-link { color: var(--primary); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+.back-link:hover { color: var(--secondary); }
+</style>
+</head>
+
+<body>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
+
+<!-- Canvas Background -->
+<canvas id="particle-canvas"></canvas>
+
+<div class="app-container">
+  <div class="card">
+    <div class="card-header">
+      <h1><i class="fas fa-vote-yea"></i> Student Elections 2026</h1>
+      <p>Secure • Transparent • Democratic</p>
+    </div>
+
+    <div class="card-body">
+      <div class="error-msg" id="errorMsg"><i class="fas fa-exclamation-circle"></i><span id="errorText"></span></div>
+
+      <!-- VERIFICATION STEP -->
+      <div class="verification-section" id="verificationStep">
+        <div class="verification-icon"><i class="fas fa-id-card"></i></div>
+        <h2 style="color: var(--text-main);">Verify Your Identity</h2>
+        <p style="color: var(--gray);">Enter your unique KE number to begin voting</p>
+        <div class="ke-input-group">
+          <i class="fas fa-hashtag"></i>
+          <input type="text" id="keInput" placeholder="000" maxlength="3" pattern="\d{3}" inputmode="numeric" autocomplete="off">
+        </div>
+        <p style="font-size: 0.8rem; color: var(--gray); margin-top: 10px;">KE numbers range from <strong>001</strong> to <strong>550</strong></p>
+        <button class="btn btn-primary" id="startBtn" style="margin-top: 25px;">
+          <i class="fas fa-play-circle"></i> Start Voting
+        </button>
+      </div>
+
+      <!-- VOTING STEP -->
+      <div class="post-section" id="votingStep">
+        <div class="progress-container">
+          <div class="progress-label"><span>Progress</span><span id="progressText">1 of 10</span></div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        </div>
+
+        <div class="post-header">
+          <div class="post-badge"><i class="fas fa-briefcase"></i><span id="postCounter">Position 1/10</span></div>
+          <h2 class="post-title" id="postTitle">President</h2>
+          <p style="color: var(--gray); font-size: 0.9rem;">Select one candidate below</p>
+        </div>
+
+        <div class="candidates-grid" id="candidatesContainer"></div>
+
+        <div class="btn-group">
+          <button class="btn btn-secondary" id="backBtn" style="display: none;"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="btn btn-primary" id="nextBtn"><span id="nextBtnText">Next Position</span><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="index.html" class="back-link"><i class="fas fa-home"></i> Return to Home</a>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-content">
+    <div class="success-icon"><i class="fas fa-check"></i></div>
+    <h3>🎉 Vote Submitted!</h3>
+    <p style="color: var(--gray); margin-bottom: 20px;">Thank you for participating. Your vote has been recorded.</p>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <button class="btn btn-primary" onclick="location.href='index.html'"><i class="fas fa-home"></i> Return Home</button>
+      <button class="btn btn-secondary" onclick="closeModal()"><i class="fas fa-redo"></i> Test Again</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// =====================
+// THEME TOGGLE LOGIC
+// =====================
+const toggleBtn = document.getElementById('theme-toggle');
+const icon = toggleBtn.querySelector('i');
+const html = document.documentElement;
+
+const savedTheme = localStorage.getItem('voterTheme');
+if (savedTheme === 'light') {
+  html.setAttribute('data-theme', 'light');
+  icon.classList.replace('fa-moon', 'fa-sun');
+}
+
+toggleBtn.addEventListener('click', () => {
+  const isLight = html.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    html.setAttribute('data-theme', 'dark');
+    icon.classList.replace('fa-sun', 'fa-moon');
+    localStorage.setItem('voterTheme', 'dark');
+  } else {
+    html.setAttribute('data-theme', 'light');
+    icon.classList.replace('fa-moon', 'fa-sun');
+    localStorage.setItem('voterTheme', 'light');
+  }
+  updateParticleColors();
+});
+
+// =====================
+// DATA CONFIGURATION
+// =====================
+const posts = [
+  { title: "President", candidates: ["Alex Otieno", "Brian Mwangi", "Cynthia Akinyi", "David Kiptoo"] },
+  { title: "Deputy President", candidates: ["Faith Wanjiru", "George Odhiambo", "Hassan Ali", "Irene Chebet"] },
+  { title: "Secretary General", candidates: ["James Ouma", "Kevin Mutua", "Linda Njeri", "Mark Otieno"] },
+  { title: "Deputy Secretary", candidates: ["Nancy Jepkoech", "Oscar Kamau", "Pauline Auma", "Ronald Maina"] },
+  { title: "Treasurer", candidates: ["Sarah Atieno", "Thomas Kibet", "Umar Farah", "Vivian Wairimu"] },
+  { title: "Assistant Treasurer", candidates: ["Wilson Omondi", "Xavier Mutiso", "Yvonne Chepngeno", "Zack Kariuki"] },
+  { title: "Academic Prefect", candidates: ["Ann Muthoni", "Brian Otieno", "Clara Jepchirchir", "Dennis Kimani"] },
+  { title: "Sports Captain", candidates: ["Eric Kiprono", "Felix Ochieng", "Grace Naliaka", "Henry Mwenda"] },
+  { title: "Entertainment Captain", candidates: ["Ivy Achieng", "Joel Barasa", "Kelly Wambui", "Lewis Ngugi"] },
+  { title: "ICT Representative", candidates: ["Mike Otieno", "Naomi Wekesa", "Peter Kamande", "Queen Moraa"] }
+];
+
+// =====================
+// STATE & STORAGE
+// =====================
+let currentPost = 0;
+let userKE = null;
+let userVotes = {}; 
+
+const VOTES_KEY = "election_votes_2026"; 
+const VOTED_KEY = "election_voted_users_2026";
+
+let votesData = JSON.parse(localStorage.getItem(VOTES_KEY)) || {};
+let votedUsers = JSON.parse(localStorage.getItem(VOTED_KEY)) || [];
+
+// DOM Elements
+const keInput = document.getElementById("keInput");
+const startBtn = document.getElementById("startBtn");
+const verificationStep = document.getElementById("verificationStep");
+const votingStep = document.getElementById("votingStep");
+const postTitle = document.getElementById("postTitle");
+const postCounter = document.getElementById("postCounter");
+const progressText = document.getElementById("progressText");
+const progressFill = document.getElementById("progressFill");
+const candidatesContainer = document.getElementById("candidatesContainer");
+const nextBtn = document.getElementById("nextBtn");
+const nextBtnText = document.getElementById("nextBtnText");
+const backBtn = document.getElementById("backBtn");
+const errorMsg = document.getElementById("errorMsg");
+const errorText = document.getElementById("errorText");
+const successModal = document.getElementById("successModal");
+
+// Utilities
+function showError(msg) { errorText.textContent = msg; errorMsg.classList.add("show"); setTimeout(() => errorMsg.classList.remove("show"), 4000); }
+function getInitials(name) { return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2); }
+function updateProgress() {
+  const percent = ((currentPost) / posts.length) * 100;
+  progressFill.style.width = `${percent}%`;
+  progressText.textContent = `${currentPost + 1} of ${posts.length}`;
+  postCounter.textContent = `Position ${currentPost + 1}/${posts.length}`;
+}
+
+// Load Candidates
+function loadCandidates() {
+  const post = posts[currentPost];
+  postTitle.textContent = post.title;
+  candidatesContainer.innerHTML = "";
+  
+  post.candidates.forEach((name, index) => {
+    const card = document.createElement("label");
+    card.className = "candidate-card";
+    card.innerHTML = `
+      <input type="radio" name="candidate" value="${name}" id="c${index}">
+      <div class="candidate-avatar">${getInitials(name)}</div>
+      <div class="candidate-info">
+        <div class="candidate-name">${name}</div>
+      </div>
+      <div class="candidate-check"><i class="fas fa-check" style="font-size: 12px;"></i></div>
+    `;
+    
+    const radio = card.querySelector("input");
+    radio.addEventListener("change", () => {
+      document.querySelectorAll('.candidate-card').forEach(c => c.classList.remove('selected'));
+      if (radio.checked) {
+        card.classList.add('selected');
+        userVotes[post.title] = name;
+      }
+    });
+    
+    card.addEventListener("click", (e) => {
+      if (e.target.tagName !== "INPUT") { radio.checked = true; radio.dispatchEvent(new Event("change")); }
+    });
+    candidatesContainer.appendChild(card);
+  });
+  
+  updateProgress();
+  backBtn.style.display = currentPost > 0 ? "flex" : "none";
+  
+  if (currentPost === posts.length - 1) {
+    nextBtnText.textContent = "Submit Vote";
+    nextBtn.innerHTML = `<i class="fas fa-paper-plane"></i> ${nextBtnText.textContent}`;
+  } else {
+    nextBtnText.textContent = "Next Position";
+    nextBtn.innerHTML = `${nextBtnText.textContent} <i class="fas fa-arrow-right"></i>`;
+  }
+}
+
+// Start Voting Logic
+startBtn.addEventListener("click", () => {
+  const ke = keInput.value.trim();
+  if (!/^\d{3}$/.test(ke)) { showError("KE number must be 3 digits"); return; }
+  const keNum = parseInt(ke, 10);
+  if (keNum < 1 || keNum > 550) { showError("KE number must be between 001 and 550"); return; }
+  if (votedUsers.includes(ke)) { showError("This KE number has already voted!"); return; }
+  
+  userKE = ke;
+  verificationStep.style.display = "none";
+  votingStep.classList.add("active");
+  loadCandidates();
+});
+
+// Navigation
+backBtn.addEventListener("click", () => { if (currentPost > 0) { currentPost--; loadCandidates(); } });
+
+nextBtn.addEventListener("click", () => {
+  const post = posts[currentPost];
+  const selected = document.querySelector('input[name="candidate"]:checked');
+  if (!selected) { showError(`Please select a candidate for ${post.title}`); return; }
+  
+  userVotes[post.title] = selected.value;
+  
+  if (currentPost < posts.length - 1) {
+    currentPost++;
+    loadCandidates();
+  } else {
+    submitVotes();
+  }
+});
+
+// SUBMIT VOTES
+function submitVotes() {
+  Object.entries(userVotes).forEach(([position, candidate]) => {
+    if (!votesData[position]) votesData[position] = {};
+    if (!votesData[position][candidate]) votesData[position][candidate] = 0;
+    votesData[position][candidate]++;
+  });
+  
+  localStorage.setItem(VOTES_KEY, JSON.stringify(votesData));
+  votedUsers.push(userKE);
+  localStorage.setItem(VOTED_KEY, JSON.stringify(votedUsers));
+  
+  successModal.classList.add("active");
+}
+
+function closeModal() { location.reload(); }
+keInput.addEventListener("keypress", (e) => { if (e.key === "Enter") startBtn.click(); });
+keInput.addEventListener("input", (e) => { e.target.value = e.target.value.replace(/[^0-9]/g, ''); });
+window.addEventListener("load", () => { keInput.focus(); });
+
+// =====================
+// CANVAS PARTICLE NETWORK
+// =====================
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+let particlesArray;
+
+function setCanvasSize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+setCanvasSize();
+window.addEventListener('resize', () => {
+  setCanvasSize();
+  initParticles();
+});
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.directionX = (Math.random() * 0.4) - 0.2;
+    this.directionY = (Math.random() * 0.4) - 0.2;
+    this.size = Math.random() * 2 + 1;
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    const isDark = html.getAttribute('data-theme') !== 'light';
+    ctx.fillStyle = isDark ? 'rgba(59, 130, 246, 0.6)' : 'rgba(30, 41, 59, 0.5)';
+    ctx.fill();
+  }
+  update() {
+    if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+    if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+    this.x += this.directionX;
+    this.y += this.directionY;
+    this.draw();
+  }
+}
+
+function initParticles() {
+  particlesArray = [];
+  let numberOfParticles = (canvas.height * canvas.width) / 15000;
+  for (let i = 0; i < numberOfParticles; i++) {
+    particlesArray.push(new Particle());
+  }
+}
+
+function animateParticles() {
+  requestAnimationFrame(animateParticles);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const isDark = html.getAttribute('data-theme') !== 'light';
+  const lineColor = isDark ? 'rgba(59, 130, 246, 0.15)' : 'rgba(30, 41, 59, 0.1)';
+  const connectionDistance = 120;
+
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].update();
+    for (let j = i; j < particlesArray.length; j++) {
+      const dx = particlesArray[i].x - particlesArray[j].x;
+      const dy = particlesArray[i].y - particlesArray[j].y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < connectionDistance) {
+        ctx.beginPath();
+        ctx.strokeStyle = lineColor;
+        ctx.lineWidth = 1 - (distance / connectionDistance);
+        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+function updateParticleColors() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].draw();
+  }
+}
+
+initParticles();
+animateParticles();
+</script>
+</body>
+</html>

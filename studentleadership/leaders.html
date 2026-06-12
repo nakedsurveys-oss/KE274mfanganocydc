@@ -1,0 +1,1868 @@
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaders | Student Leadership | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Meet the dedicated student leaders of KE0274 PEFA Mfangano CYDC — a council of 12 servant-leaders empowering 375 students through integrity, faith, and service.">
+    <meta name="theme-color" content="#0B1B33">
+    <meta property="og:title" content="Student Leadership | KE0274 PEFA Mfangano CYDC">
+    <meta property="og:description" content="Meet our 2026 Student Council — 12 servant-leaders shaping the future of Mfangano Island.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* =========================================================
+           DESIGN TOKENS — Flagship Blue System
+           ========================================================= */
+        :root {
+            /* Blue Spectrum */
+            --blue-950: #040B1A;
+            --blue-900: #0B1B33;
+            --blue-850: #0F2544;
+            --blue-800: #132E55;
+            --blue-700: #1A3F73;
+            --blue-600: #1E4FD8;
+            --blue-500: #2563EB;
+            --blue-400: #3B82F6;
+            --blue-300: #60A5FA;
+            --blue-200: #93C5FD;
+            --blue-100: #BFDBFE;
+            --blue-50:  #EFF6FF;
+            --sky-500:  #0EA5E9;
+            --sky-400:  #38BDF8;
+            --sky-300:  #7DD3FC;
+            --sky-100:  #E0F2FE;
+            --ice-50:   #F0F9FF;
+            --ice-100:  #E0F2FE;
+            
+            /* Accent — African Gold */
+            --amber-600: #D97706;
+            --amber-500: #F59E0B;
+            --amber-400: #FBBF24;
+            --amber-300: #FCD34D;
+            
+            /* Neutrals */
+            --stone-900: #1C1917;
+            --stone-700: #44403C;
+            --stone-600: #57534E;
+            --stone-500: #78716C;
+            --stone-400: #A8A29E;
+            --stone-300: #D6D3D1;
+            --stone-100: #F5F5F4;
+            --ivory:    #FDFCF8;
+            --pearl:    #F8F6F1;
+
+            /* Semantic Tokens — Light */
+            --bg-page:       var(--ivory);
+            --bg-surface:    #ffffff;
+            --bg-elevated:   #ffffff;
+            --bg-muted:      var(--pearl);
+            --bg-inverse:    var(--blue-900);
+
+            --text-primary:   var(--blue-950);
+            --text-secondary: var(--stone-700);
+            --text-tertiary:  var(--stone-500);
+            --text-inverse:   var(--ivory);
+            --text-accent:    var(--blue-600);
+
+            --border-hairline: rgba(12, 27, 51, 0.06);
+            --border-subtle:   rgba(12, 27, 51, 0.10);
+            --border-default:  rgba(12, 27, 51, 0.16);
+            --border-strong:   rgba(12, 27, 51, 0.24);
+
+            /* Gradients */
+            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+            --gradient-azure: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+            /* Shadows */
+            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+            --shadow-glow: 0 0 0 1px rgba(59, 130, 246, 0.1), 0 8px 24px rgba(59, 130, 246, 0.15);
+
+            /* Typography */
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-ui: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+            --fs-xs:   0.75rem;
+            --fs-sm:   0.875rem;
+            --fs-base: 1rem;
+            --fs-md:   1.0625rem;
+            --fs-lg:   1.125rem;
+            --fs-xl:   1.25rem;
+            --fs-2xl:  1.5rem;
+            --fs-3xl:  1.875rem;
+            --fs-4xl:  2.25rem;
+            --fs-5xl:  3rem;
+            --fs-6xl:  3.75rem;
+            --fs-7xl:  4.5rem;
+            --fs-8xl:  5.5rem;
+
+            /* Spacing */
+            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+            --s-32: 8rem;   --s-40: 10rem;
+
+            /* Radii */
+            --r-sm: 8px;
+            --r-md: 12px;
+            --r-lg: 16px;
+            --r-xl: 24px;
+            --r-2xl: 32px;
+            --r-3xl: 40px;
+            --r-full: 9999px;
+
+            /* Motion */
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --dur-fast: 200ms;
+            --dur-base: 360ms;
+            --dur-slow: 640ms;
+            --dur-slower: 1000ms;
+
+            /* Layout */
+            --sidebar-w: 300px;
+            --container: 1320px;
+            --container-narrow: 1100px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page:     #050B16;
+            --bg-surface:  #0B1526;
+            --bg-elevated: #111E36;
+            --bg-muted:    #0A1322;
+            --bg-inverse:  var(--ivory);
+
+            --text-primary:   #F5F7FA;
+            --text-secondary: #B8C5D9;
+            --text-tertiary:  #7A8BA3;
+            --text-inverse:   var(--blue-950);
+            --text-accent:    var(--sky-400);
+
+            --border-hairline: rgba(255,255,255,0.05);
+            --border-subtle:   rgba(255,255,255,0.08);
+            --border-default:  rgba(255,255,255,0.14);
+            --border-strong:   rgba(255,255,255,0.22);
+
+            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        /* =========================================================
+           RESET & BASE
+           ========================================================= */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+        body {
+            font-family: var(--font-body);
+            font-size: var(--fs-base);
+            line-height: 1.65;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        ::selection { background: var(--blue-600); color: white; }
+
+        :focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: 3px;
+            border-radius: var(--r-sm);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px; left: var(--s-4);
+            background: var(--blue-900);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--r-md);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            z-index: 10000;
+            transition: top var(--dur-fast);
+        }
+        .skip-link:focus { top: var(--s-4); }
+
+        /* =========================================================
+           AMBIENT BACKGROUND
+           ========================================================= */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.7;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            animation: orbFloat 24s ease-in-out infinite;
+            will-change: transform;
+        }
+        .orb-1 {
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, var(--blue-400), transparent 70%);
+            top: -10%; left: -10%;
+        }
+        .orb-2 {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, var(--sky-400), transparent 70%);
+            top: 40%; right: -8%;
+            animation-delay: -8s;
+        }
+        .orb-3 {
+            width: 380px; height: 380px;
+            background: radial-gradient(circle, var(--amber-400), transparent 70%);
+            bottom: -10%; left: 30%;
+            opacity: 0.3;
+            animation-delay: -16s;
+        }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -30px) scale(1.08); }
+            66% { transform: translate(-30px, 40px) scale(0.95); }
+        }
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.025;
+            mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        /* =========================================================
+           SIDEBAR NAVIGATION
+           ========================================================= */
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0;
+            height: 100vh;
+            width: var(--sidebar-w);
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-right: 1px solid var(--border-hairline);
+            padding: var(--s-7) var(--s-5);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--dur-base) var(--ease-out);
+            overflow: hidden;
+        }
+        [data-theme="dark"] .sidebar {
+            background: rgba(11, 21, 38, 0.78);
+            border-right: 1px solid var(--border-subtle);
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .sidebar-header {
+            padding-bottom: var(--s-6);
+            margin-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            transition: opacity var(--dur-fast);
+        }
+        .sidebar-logo:hover { opacity: 0.8; }
+        .sidebar-logo-mark {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
+        .sidebar-logo-sub { font-size: 0.68rem; font-weight: 600; color: var(--text-tertiary); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-6);
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+        }
+        .sidebar-nav::-webkit-scrollbar { width: 4px; }
+        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+
+        .nav-section-title {
+            color: var(--text-tertiary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: var(--s-3);
+            padding-left: var(--s-3);
+        }
+        .nav-item { position: relative; }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--s-3);
+            padding: 10px var(--s-3);
+            color: var(--text-secondary);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast) var(--ease-out);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-link:hover {
+            background: var(--bg-muted);
+            color: var(--text-primary);
+        }
+        .nav-link.active {
+            background: var(--blue-900);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+        [data-theme="dark"] .nav-link.active {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            box-shadow: var(--shadow-blue);
+        }
+        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
+        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
+        .nav-link.active i.nav-icon { opacity: 1; }
+        .dropdown-arrow {
+            font-size: 0.65rem;
+            transition: transform var(--dur-fast) var(--ease-out);
+            color: var(--text-tertiary);
+        }
+        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+
+        .dropdown {
+            margin-top: var(--s-1);
+            margin-left: var(--s-7);
+            padding-left: var(--s-4);
+            border-left: 1px solid var(--border-subtle);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--dur-base) var(--ease-out);
+        }
+        .nav-item.active .dropdown { max-height: 400px; }
+        .dropdown-link {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 7px var(--s-3);
+            color: var(--text-tertiary);
+            font-size: 0.825rem;
+            font-weight: 500;
+            border-radius: var(--r-sm);
+            transition: all var(--dur-fast);
+        }
+        .dropdown-link:hover {
+            color: var(--text-primary);
+            background: var(--bg-muted);
+            padding-left: var(--s-4);
+        }
+        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .theme-toggle {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+        }
+        .theme-toggle:hover {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+        }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: var(--s-4); left: var(--s-4);
+            z-index: 1001;
+            width: 48px; height: 48px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md);
+            color: var(--blue-900);
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        [data-theme="dark"] .mobile-toggle {
+            background: rgba(11, 21, 38, 0.85);
+            color: white;
+        }
+
+        /* =========================================================
+           MAIN CONTENT
+           ========================================================= */
+        .main-content {
+            margin-left: var(--sidebar-w);
+            min-height: 100vh;
+            position: relative;
+            z-index: 2;
+            transition: margin-left var(--dur-base) var(--ease-out);
+        }
+
+        /* =========================================================
+           PAGE HERO — Cinematic Leadership
+           ========================================================= */
+        .page-hero {
+            position: relative;
+            padding: var(--s-32) var(--s-8) var(--s-24);
+            overflow: hidden;
+            color: white;
+            isolation: isolate;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -3;
+        }
+        .hero-bg img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(4, 11, 26, 0.94) 0%, rgba(11, 27, 51, 0.82) 50%, rgba(19, 46, 85, 0.72) 100%),
+                linear-gradient(180deg, transparent 50%, rgba(4, 11, 26, 0.85) 100%);
+            z-index: 1;
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.25) 0%, transparent 50%);
+            z-index: 2;
+        }
+        .hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.06;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 3;
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--s-8);
+            backdrop-filter: blur(12px);
+            animation: heroFadeIn 1s var(--ease-out) both;
+        }
+        .hero-breadcrumb i { color: var(--amber-400); font-size: 0.7rem; }
+        .hero-breadcrumb .sep { opacity: 0.5; }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: 6px 14px;
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--amber-300);
+            margin-bottom: var(--s-6);
+            animation: heroFadeIn 1s var(--ease-out) 0.1s both;
+        }
+        .hero-eyebrow .pulse {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--amber-400);
+            box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+            animation: pulseRing 2.4s ease-out infinite;
+        }
+        @keyframes pulseRing {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, var(--fs-7xl));
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--s-6);
+            color: white;
+            font-variation-settings: "opsz" 144;
+            animation: heroFadeIn 1.2s var(--ease-out) 0.2s both;
+        }
+        .hero-title .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--amber-300);
+            letter-spacing: -0.02em;
+        }
+        .hero-title .divider {
+            display: block;
+            width: 60px; height: 2px;
+            background: linear-gradient(90deg, var(--amber-400), transparent);
+            margin: var(--s-5) auto;
+            border-radius: 1px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.6vw, var(--fs-lg));
+            color: rgba(255, 255, 255, 0.82);
+            max-width: 680px;
+            margin: 0 auto var(--s-12);
+            line-height: 1.7;
+            font-weight: 400;
+            animation: heroFadeIn 1s var(--ease-out) 0.4s both;
+        }
+
+        @keyframes heroFadeIn {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--s-4);
+            max-width: 900px;
+            margin: 0 auto;
+            animation: heroFadeIn 1s var(--ease-out) 0.6s both;
+        }
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--r-xl);
+            padding: var(--s-6) var(--s-4);
+            text-align: center;
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-stat::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        }
+        .hero-stat:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+        }
+        .hero-stat-icon {
+            width: 40px; height: 40px;
+            margin: 0 auto var(--s-3);
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(14, 165, 233, 0.2));
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            display: grid; place-items: center;
+            color: var(--sky-300);
+            font-size: 1rem;
+        }
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-3xl);
+            font-weight: 500;
+            color: white;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+            font-variation-settings: "opsz" 144;
+        }
+        .hero-stat-label {
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.65);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        /* =========================================================
+           LEADERSHIP PHILOSOPHY
+           ========================================================= */
+        .philosophy-section {
+            padding: var(--s-24) 0;
+            background: var(--bg-page);
+            position: relative;
+        }
+        .philosophy-inner {
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: var(--s-16);
+            align-items: center;
+        }
+        .philosophy-visual {
+            position: relative;
+            aspect-ratio: 4 / 5;
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+        }
+        .philosophy-visual img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+        .philosophy-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(4, 11, 26, 0.5) 100%);
+        }
+        .philosophy-visual-caption {
+            position: absolute;
+            bottom: var(--s-5); left: var(--s-5); right: var(--s-5);
+            padding: var(--s-3) var(--s-4);
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--r-md);
+            color: white;
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            z-index: 1;
+        }
+        .philosophy-visual-caption i { color: var(--amber-400); }
+
+        .philosophy-content .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: var(--s-5);
+        }
+        [data-theme="dark"] .philosophy-content .section-eyebrow { color: var(--sky-400); }
+        .philosophy-content .section-eyebrow::before {
+            content: '';
+            width: 28px; height: 1px;
+            background: currentColor;
+        }
+        .philosophy-content h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, var(--fs-4xl));
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: var(--s-5);
+            font-variation-settings: "opsz" 144;
+        }
+        .philosophy-content h2 .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--blue-600);
+        }
+        [data-theme="dark"] .philosophy-content h2 .italic { color: var(--sky-400); }
+        .philosophy-content .lede {
+            font-size: var(--fs-md);
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: var(--s-8);
+        }
+
+        .philosophy-pillars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--s-4);
+        }
+        .pillar {
+            padding: var(--s-5);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-lg);
+            transition: all var(--dur-base) var(--ease-out);
+            box-shadow: var(--shadow-xs);
+        }
+        .pillar:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-default);
+        }
+        .pillar-icon {
+            width: 36px; height: 36px;
+            border-radius: var(--r-sm);
+            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
+            color: var(--blue-700);
+            display: grid; place-items: center;
+            font-size: 0.9rem;
+            margin-bottom: var(--s-3);
+        }
+        [data-theme="dark"] .pillar-icon {
+            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
+            color: var(--sky-400);
+        }
+        .pillar h4 {
+            font-family: var(--font-display);
+            font-size: var(--fs-base);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            letter-spacing: -0.01em;
+        }
+        .pillar p {
+            font-size: 0.825rem;
+            color: var(--text-tertiary);
+            line-height: 1.6;
+        }
+
+        /* =========================================================
+           LEADERS SECTION - DUAL IMAGE LAYOUT
+           ========================================================= */
+        .leaders-section {
+            padding: var(--s-24) 0 var(--s-32);
+            background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-page) 100%);
+            position: relative;
+        }
+        .leaders-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .leaders-section > * { position: relative; z-index: 1; }
+
+        .leaders-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--s-16);
+        }
+        .section-header .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: var(--s-5);
+        }
+        [data-theme="dark"] .section-header .section-eyebrow { color: var(--sky-400); }
+        .section-header .section-eyebrow::before,
+        .section-header .section-eyebrow::after {
+            content: '';
+            width: 28px; height: 1px;
+            background: currentColor;
+        }
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, var(--fs-5xl));
+            font-weight: 400;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: var(--s-5);
+            font-variation-settings: "opsz" 144;
+        }
+        .section-header h2 .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--blue-600);
+        }
+        [data-theme="dark"] .section-header h2 .italic { color: var(--sky-400); }
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: var(--fs-md);
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Dual Leader Card Layout */
+        .dual-leader-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            gap: var(--s-6);
+            margin-bottom: var(--s-8);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all var(--dur-base) var(--ease-out);
+        }
+        .dual-leader-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--border-default);
+        }
+
+        .dual-image-wrapper {
+            position: relative;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--blue-700), var(--blue-900));
+        }
+        .dual-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--dur-slow) var(--ease-out);
+        }
+        .dual-leader-card:hover .dual-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .dual-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(4, 11, 26, 0.85) 100%);
+        }
+
+        .dual-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--s-5) var(--s-4);
+            z-index: 2;
+            color: white;
+        }
+        .dual-name {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 4px;
+        }
+        .dual-role {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--amber-300);
+        }
+
+        .dual-role-badge {
+            position: absolute;
+            top: var(--s-3);
+            right: var(--s-3);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            color: var(--blue-900);
+            padding: 5px 10px;
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            z-index: 3;
+            box-shadow: var(--shadow-md);
+            max-width: 140px;
+            text-align: center;
+            line-height: 1.3;
+        }
+        .dual-role-badge.president {
+            background: linear-gradient(135deg, var(--amber-400), var(--amber-500));
+            color: var(--blue-950);
+        }
+
+        /* Story Section with Gradient */
+        .story-section {
+            background: linear-gradient(135deg, 
+                rgba(11, 27, 51, 0.95) 0%, 
+                rgba(19, 46, 85, 0.92) 50%, 
+                rgba(26, 63, 115, 0.90) 100%);
+            padding: var(--s-8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .story-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .story-section::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+        .story-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+        .story-title {
+            font-family: var(--font-display);
+            font-size: var(--fs-2xl);
+            font-weight: 500;
+            margin-bottom: var(--s-4);
+            color: var(--amber-300);
+            letter-spacing: -0.01em;
+        }
+        .story-text {
+            font-size: var(--fs-base);
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--s-5);
+        }
+        .story-meta {
+            display: flex;
+            gap: var(--s-4);
+            flex-wrap: wrap;
+            padding-top: var(--s-4);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .story-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .story-meta-item i {
+            color: var(--amber-400);
+            font-size: 0.85rem;
+        }
+
+        /* =========================================================
+           CLOSING SECTION
+           ========================================================= */
+        .closing-section {
+            padding: var(--s-24) 0;
+            background: var(--bg-page);
+        }
+        .closing-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+        }
+        .closing-card {
+            background: var(--gradient-hero);
+            color: white;
+            border-radius: var(--r-3xl);
+            padding: var(--s-16) var(--s-12);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+        }
+        .closing-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(59, 130, 246, 0.3), transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(245, 158, 11, 0.15), transparent 50%);
+            pointer-events: none;
+        }
+        .closing-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        .closing-card > * { position: relative; z-index: 1; }
+        .closing-icon {
+            width: 64px; height: 64px;
+            margin: 0 auto var(--s-6);
+            border-radius: var(--r-lg);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.5rem;
+            backdrop-filter: blur(12px);
+        }
+        .closing-card h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, var(--fs-3xl));
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-5);
+            font-variation-settings: "opsz" 144;
+        }
+        .closing-card h3 .italic {
+            font-style: italic;
+            color: var(--amber-300);
+            font-weight: 300;
+        }
+        .closing-card p {
+            font-size: var(--fs-md);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.8;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+        .footer {
+            background: var(--blue-950);
+            color: rgba(255,255,255,0.75);
+            padding: var(--s-16) 0 var(--s-8);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        .footer > * { position: relative; z-index: 1; }
+        .footer-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: var(--s-10);
+            margin-bottom: var(--s-10);
+        }
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-4);
+            color: white;
+            font-family: var(--font-ui);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .footer-logo-mark {
+            width: 38px; height: 38px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+            color: var(--amber-400);
+            display: grid; place-items: center;
+            font-size: 0.95rem;
+        }
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            color: var(--amber-300);
+            margin-bottom: var(--s-4);
+            line-height: 1.5;
+        }
+        .footer-brand > p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: var(--s-5);
+            max-width: 360px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+            font-size: 0.8rem;
+            font-style: normal;
+            font-family: var(--font-ui);
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.75rem; }
+
+        .footer-col h4 {
+            color: white;
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+        }
+        .footer-links a {
+            font-family: var(--font-ui);
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.65);
+            transition: color var(--dur-fast);
+            font-weight: 500;
+        }
+        .footer-links a:hover { color: var(--amber-300); }
+
+        .social-links { display: flex; gap: var(--s-2); margin-top: var(--s-4); }
+        .social-links a {
+            width: 36px; height: 36px;
+            border-radius: var(--r-md);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid; place-items: center;
+            color: rgba(255,255,255,0.7);
+            transition: all var(--dur-fast);
+            font-size: 0.85rem;
+        }
+        .social-links a:hover {
+            background: var(--amber-500);
+            color: var(--blue-950);
+            border-color: var(--amber-500);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            padding-top: var(--s-6);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-legal { display: flex; gap: var(--s-5); flex-wrap: wrap; }
+        .footer-legal a { transition: color var(--dur-fast); }
+        .footer-legal a:hover { color: var(--amber-300); }
+
+        /* =========================================================
+           REVEAL ANIMATIONS
+           ========================================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-stagger > * {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+        }
+        .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+        .reveal-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
+        .reveal-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
+        .reveal-stagger.visible > *:nth-child(7) { transition-delay: 480ms; }
+        .reveal-stagger.visible > *:nth-child(8) { transition-delay: 560ms; }
+        .reveal-stagger.visible > *:nth-child(9) { transition-delay: 640ms; }
+        .reveal-stagger.visible > *:nth-child(10) { transition-delay: 720ms; }
+        .reveal-stagger.visible > *:nth-child(11) { transition-delay: 800ms; }
+        .reveal-stagger.visible > *:nth-child(12) { transition-delay: 880ms; }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 1100px) {
+            .philosophy-inner { grid-template-columns: 1fr; gap: var(--s-10); }
+            .philosophy-visual { max-width: 480px; margin: 0 auto; }
+            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+            .dual-leader-card { grid-template-columns: 1fr 1fr; }
+            .story-section { grid-column: 1 / -1; }
+        }
+        @media (max-width: 900px) {
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+            .footer-brand { grid-column: 1 / -1; }
+            .dual-leader-card { grid-template-columns: 1fr; }
+            .dual-image-wrapper { aspect-ratio: 16 / 9; }
+        }
+        @media (max-width: 640px) {
+            .page-hero { padding: var(--s-20) var(--s-5) var(--s-16); }
+            .philosophy-section, .leaders-section, .closing-section { padding: var(--s-16) 0; }
+            .leaders-container, .philosophy-inner, .closing-inner, .footer-container { padding: 0 var(--s-5); }
+            .philosophy-pillars { grid-template-columns: 1fr; }
+            .closing-card { padding: var(--s-12) var(--s-6); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { justify-content: center; }
+            .sidebar { transform: translateX(-100%); }
+            .sidebar.active { transform: translateX(0); }
+            .main-content { margin-left: 0; }
+            .mobile-toggle { display: flex; }
+            .dual-image-wrapper { aspect-ratio: 4 / 3; }
+            .story-section { padding: var(--s-6); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
+            .orb { animation: none; }
+        }
+
+        @media print {
+            .sidebar, .mobile-toggle, .ambient-bg, .noise-overlay { display: none; }
+            body { background: white; color: black; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-header">
+            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                <div class="sidebar-logo-text">
+                    <span class="sidebar-logo-title">KE0274 PEFA</span>
+                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="leaders.html" class="dropdown-link active" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+                        <a href="index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+                        <a href="suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+                        <a href="leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Resources</div>
+                <div class="nav-item">
+                    <a href="../learningresources/learningresources.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">More</div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../achievments/achievment.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../inventory/inventory.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../chatsupport/chat-support.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="hero-bg" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2400&q=85" alt="" loading="eager" decoding="async">
+            </div>
+            <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <div class="hero-breadcrumb">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                    <span class="sep">/</span>
+                    <span>Student Leadership</span>
+                    <span class="sep">/</span>
+                    <span>Leaders</span>
+                </div>
+
+                <div class="hero-eyebrow">
+                    <span class="pulse" aria-hidden="true"></span>
+                    <span>Student Council · Class of 2026</span>
+                </div>
+
+                <h1 class="hero-title" id="page-title">
+                    Meet the leaders<br>
+                    shaping <span class="italic">our community.</span>
+                    <span class="divider" aria-hidden="true"></span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Twelve servant-leaders elected by their peers — united by a shared commitment to integrity, faith, and the flourishing of every student at KE0274 PEFA Mfangano CYDC.
+                </p>
+
+                <div class="hero-stats" role="list" aria-label="Council at a glance">
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">12</div>
+                        <div class="hero-stat-label">Student Leaders</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">375</div>
+                        <div class="hero-stat-label">Students Served</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">6</div>
+                        <div class="hero-stat-label">Core Values</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-infinity" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">100%</div>
+                        <div class="hero-stat-label">Dedication</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LEADERSHIP PHILOSOPHY ===== -->
+        <section class="philosophy-section reveal" aria-labelledby="philosophy-title">
+            <div class="philosophy-inner">
+                <div class="philosophy-visual">
+                    <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1000&q=85" alt="Student leaders collaborating in a meeting" loading="lazy" decoding="async">
+                    <div class="philosophy-visual-caption">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        <span>Servant-leadership in action</span>
+                    </div>
+                </div>
+
+                <div class="philosophy-content">
+                    <div class="section-eyebrow">Our Philosophy</div>
+                    <h2 id="philosophy-title">Leadership as <span class="italic">service,</span> not status.</h2>
+                    <p class="lede">At KE0274 PEFA Mfangano CYDC, we believe leadership is not a title — it is a posture of the heart. Our student council is formed not to rule, but to serve; not to be seen, but to lift others up. Every leader is first a learner, first a servant, first a child of God.</p>
+
+                    <div class="philosophy-pillars reveal-stagger">
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fas fa-cross" aria-hidden="true"></i></div>
+                            <h4>Faith-Led</h4>
+                            <p>Every decision grounded in Christ-like character and biblical wisdom.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fas fa-hands-helping" aria-hidden="true"></i></div>
+                            <h4>Service-Driven</h4>
+                            <p>Authority expressed through meeting the needs of others.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                            <h4>Integrity-First</h4>
+                            <p>Consistency between word and deed, in public and in private.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                            <h4>Growth-Oriented</h4>
+                            <p>Leaders are continually learning, mentored, and empowered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LEADERS SECTION - DUAL LAYOUT ===== -->
+        <section class="leaders-section" id="content" aria-labelledby="leaders-title">
+            <div class="leaders-container">
+                <div class="section-header reveal">
+                    <div class="section-eyebrow">The Council</div>
+                    <h2 id="leaders-title">The <span class="italic">2026</span> Leadership Team</h2>
+                    <p>Each leader brings unique gifts to serve our community with excellence. Meet the individuals entrusted with representing 375 students.</p>
+                </div>
+
+                <div class="leadership-grid reveal-stagger" id="leadershipGrid"></div>
+            </div>
+        </section>
+
+        <!-- ===== CLOSING ===== -->
+        <section class="closing-section reveal" aria-labelledby="closing-title">
+            <div class="closing-inner">
+                <div class="closing-card">
+                    <div class="closing-icon" aria-hidden="true"><i class="fas fa-quote-right"></i></div>
+                    <h3 id="closing-title">Every child has <span class="italic">leadership potential.</span></h3>
+                    <p>Through mentorship, responsibility, and service opportunities, we nurture confident, compassionate leaders who will transform their communities for Christ. The council you see today is the fruit of a culture where every voice matters and every gift is honored.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                            <span>KE0274 PEFA Mfangano CYDC</span>
+                        </div>
+                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya.</p>
+                        <address class="footer-contact">
+                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County</div>
+                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                        </address>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Leadership</h4>
+                        <ul class="footer-links">
+                            <li><a href="studentleadership/leaders.html">Current Leaders</a></li>
+                            <li><a href="studentleadership/index.html">Voting System</a></li>
+                            <li><a href="studentleadership/suggestions.html">Suggestions</a></li>
+                            <li><a href="studentleadership/leadershipempowerment.html">Empowerment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../academics/dreamachiever.html">Academics</a></li>
+                            <li><a href="../studentportal/timetable.html">Student Portal</a></li>
+                            <li><a href="../achievments/achievment.html">Achievements</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul class="footer-links">
+                            <li><a href="../newsandupdates/newsandupdates.html">News & Updates</a></li>
+                            <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
+                            <li><a href="../chatsupport/chat-support.html">Chat Support</a></li>
+                            <li><a href="../childprotection.html">Child Protection</a></li>
+                        </ul>
+                        <div class="social-links" aria-label="Social media">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Child Protection Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        function applyTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const icon = themeToggle.querySelector('i');
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // Mobile Menu
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        function closeMobileMenu() {
+            sidebar.classList.remove('active');
+            mobileToggle.querySelector('i').className = 'fas fa-bars';
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        mobileToggle.addEventListener('click', () => {
+            const isActive = sidebar.classList.contains('active');
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                sidebar.classList.add('active');
+                mobileToggle.querySelector('i').className = 'fas fa-times';
+                mobileToggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Dropdown Toggle
+        window.toggleDropdown = function(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            const navItem = element.closest('.nav-item');
+            const isActive = navItem.classList.contains('active');
+            element.setAttribute('aria-expanded', String(!isActive));
+            
+            document.querySelectorAll('.nav-item').forEach(item => {
+                if (item !== navItem) {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            navItem.classList.toggle('active');
+        };
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
+
+        // Keyboard: Escape closes mobile menu and dropdowns
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (window.innerWidth <= 640 && sidebar.classList.contains('active')) {
+                    closeMobileMenu();
+                    mobileToggle.focus();
+                }
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
+                });
+            }
+        });
+
+        // Active link detection
+        const currentPage = window.location.pathname.split('/').pop() || 'leaders.html';
+        document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+                link.classList.add('active');
+                const navItem = link.closest('.nav-item');
+                if (navItem) navItem.classList.add('active');
+            }
+        });
+
+        // ===== LEADERSHIP DATA =====
+        const leadershipData = [
+            { name: "STANLEY OKINYI", role: "The President", image: "image/20260417_122043.jpg", description: "The head of the student council. Stanley presides over all meetings, represents the student body in administrative discussions, and ensures that the vision of the council is executed effectively.", isPresident: true },
+            { name: "MERCY AMELIE", role: "Deputy President", image: "image/20260417_121816.jpg", description: "Mercy assists the President and steps in when the President is unavailable. She focuses on internal harmony within the council and oversees the implementation of council decisions." },
+            { name: "THOMAS ODHIAMBO", role: "Prime Minister", image: "image/20260417_122010.jpg", description: "Thomas acts as the chief coordinator of council activities. He ensures that all departments are working together and serves as the primary link between the academic staff and the student leaders." },
+            { name: "EMANUEL ISAAC", role: "Welfare & Child Protection", image: "image/20260417_121234.jpg", description: "Emanuel is dedicated to the safety and well-being of every child. He handles peer conflicts, reports safeguarding concerns to patrons, and ensures that every student feels safe and valued." },
+            { name: "BLESSING CAREY", role: "Environment Prefect", image: "image/20260417_122148.jpg", description: "Blessing leads the 'Green Initiative.' He organizes tree planting days, oversees the school garden project, and ensures that the campus remains clean and eco-friendly." },
+            { name: "CYPRIAN AWITI", role: "Religious Leader", image: "image/20260417_122921.jpg", description: "Cyprian leads the student body in spiritual matters. He organizes chapel programs, leads the choir, and encourages moral uprightness and integrity among students." },
+            { name: "ROONEY ODERO", role: "Sports & Games Captain", image: "image/20260417_121009.jpg", description: "Rooney manages sports equipment and organizes leagues. He promotes physical fitness, teamwork, and fair play during inter-class and inter-school competitions." },
+            { name: "MESHARCK CLINTON", role: "ICT Prefect", image: "image/20260417_122129.jpg", description: "Meshack assists in the computer lab, ensuring rules are followed. He helps peers with basic coding and typing skills and manages the digital notice board." },
+            { name: "NEPHIA GRACIA", role: "Library Prefect", image: "image/20260417_122139.jpg", description: "Grace maintains order in the library. She assists in issuing books, ensures silence is maintained for studying, and organizes the 'Reading Week' campaigns." },
+            { name: "IVINE OKETCH", role: "Chief Bell Ringer", image: "image/20260417_121831.jpg", description: "Ivine is responsible for timekeeping. He rings the bell for class changes, meal times, and lights out, ensuring the daily schedule runs strictly on time." },
+            { name: "SYNAIDER ACHIENG", role: "Media & Communications", image: "image/20260417_121252.jpg", description: "Synaider manages the center's notice boards, social media updates, and event documentation. He ensures transparent communication between administration and students." },
+            { name: "BLESSING ACHIENG", role: "Language & Communication Prefect", image: "image/20260417_122148.jpg", description: "Blessing upholds the center's code of communication and has an outstanding skill in language use in the educational environment." }
+        ];
+
+        // ===== RENDER DUAL LEADER CARDS =====
+        function renderDualLeaderCards() {
+            const grid = document.getElementById('leadershipGrid');
+            let html = '';
+            
+            // Group leaders in pairs
+            for (let i = 0; i < leadershipData.length; i += 2) {
+                const leader1 = leadershipData[i];
+                const leader2 = leadershipData[i + 1];
+                
+                if (!leader1 && !leader2) continue;
+                
+                const badgeClass1 = leader1.isPresident ? 'dual-role-badge president' : 'dual-role-badge';
+                const badgeClass2 = leader2 && leader2.isPresident ? 'dual-role-badge president' : 'dual-role-badge';
+                
+                html += `
+                <article class="dual-leader-card reveal">
+                    ${leader1 ? `
+                    <div class="dual-image-wrapper">
+                        <div class="${badgeClass1}">${leader1.role}</div>
+                        <img src="${leader1.image}" alt="Portrait of ${leader1.name}" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                        <div class="dual-overlay">
+                            <div class="dual-name">${leader1.name}</div>
+                            <div class="dual-role">${leader1.role}</div>
+                        </div>
+                    </div>` : '<div style="background: var(--bg-muted);"></div>'}
+                    
+                    ${leader2 ? `
+                    <div class="dual-image-wrapper">
+                        <div class="${badgeClass2}">${leader2.role}</div>
+                        <img src="${leader2.image}" alt="Portrait of ${leader2.name}" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                        <div class="dual-overlay">
+                            <div class="dual-name">${leader2.name}</div>
+                            <div class="dual-role">${leader2.role}</div>
+                        </div>
+                    </div>` : '<div style="background: var(--bg-muted);"></div>'}
+                    
+                    <div class="story-section">
+                        <div class="story-content">
+                            <h3 class="story-title">Leadership in Action</h3>
+                            <div class="story-text">
+                                ${leader1 ? `<p style="margin-bottom: 1rem;"><strong style="color: var(--amber-300);">${leader1.name}</strong> — ${leader1.description}</p>` : ''}
+                                ${leader2 ? `<p><strong style="color: var(--amber-300);">${leader2.name}</strong> — ${leader2.description}</p>` : ''}
+                            </div>
+                            <div class="story-meta">
+                                <div class="story-meta-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Council 2026</span>
+                                </div>
+                                <div class="story-meta-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Elected Leaders</span>
+                                </div>
+                                <div class="story-meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Serving 375 Students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>`;
+            }
+            
+            grid.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', renderDualLeaderCards);
+    </script>
+</body>
+</html>
+```

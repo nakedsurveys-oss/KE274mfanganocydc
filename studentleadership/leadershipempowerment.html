@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Empowerment | Student Leadership | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Empowering student leaders through mentorship, training, and faith-based inspiration at KE0274 PEFA Mfangano CYDC.">
+    <meta name="theme-color" content="#0B1B33">
+    <meta property="og:title" content="Leadership Empowerment | KE0274 PEFA Mfangano CYDC">
+    <meta property="og:description" content="Building tomorrow's leaders through mentorship, training, and faith-based inspiration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* =========================================================
+           DESIGN TOKENS — Flagship Blue System
+           ========================================================= */
+        :root {
+            --blue-950: #040B1A;
+            --blue-900: #0B1B33;
+            --blue-850: #0F2544;
+            --blue-800: #132E55;
+            --blue-700: #1A3F73;
+            --blue-600: #1E4FD8;
+            --blue-500: #2563EB;
+            --blue-400: #3B82F6;
+            --blue-300: #60A5FA;
+            --blue-200: #93C5FD;
+            --blue-100: #BFDBFE;
+            --blue-50:  #EFF6FF;
+            --sky-500:  #0EA5E9;
+            --sky-400:  #38BDF8;
+            --sky-300:  #7DD3FC;
+            --sky-100:  #E0F2FE;
+            --amber-600: #D97706;
+            --amber-500: #F59E0B;
+            --amber-400: #FBBF24;
+            --amber-300: #FCD34D;
+            --stone-900: #1C1917;
+            --stone-700: #44403C;
+            --stone-600: #57534E;
+            --stone-500: #78716C;
+            --stone-400: #A8A29E;
+            --stone-300: #D6D3D1;
+            --stone-100: #F5F5F4;
+            --ivory:    #FDFCF8;
+            --pearl:    #F8F6F1;
+
+            --bg-page:       var(--ivory);
+            --bg-surface:    #ffffff;
+            --bg-elevated:   #ffffff;
+            --bg-muted:      var(--pearl);
+            --bg-inverse:    var(--blue-900);
+
+            --text-primary:   var(--blue-950);
+            --text-secondary: var(--stone-700);
+            --text-tertiary:  var(--stone-500);
+            --text-inverse:   var(--ivory);
+            --text-accent:    var(--blue-600);
+
+            --border-hairline: rgba(12, 27, 51, 0.06);
+            --border-subtle:   rgba(12, 27, 51, 0.10);
+            --border-default:  rgba(12, 27, 51, 0.16);
+            --border-strong:   rgba(12, 27, 51, 0.24);
+
+            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+            --gradient-azure: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-ui: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+            --fs-xs:   0.75rem;
+            --fs-sm:   0.875rem;
+            --fs-base: 1rem;
+            --fs-md:   1.0625rem;
+            --fs-lg:   1.125rem;
+            --fs-xl:   1.25rem;
+            --fs-2xl:  1.5rem;
+            --fs-3xl:  1.875rem;
+            --fs-4xl:  2.25rem;
+            --fs-5xl:  3rem;
+            --fs-6xl:  3.75rem;
+            --fs-7xl:  4.5rem;
+
+            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+            --s-32: 8rem;
+
+            --r-sm: 8px;
+            --r-md: 12px;
+            --r-lg: 16px;
+            --r-xl: 24px;
+            --r-2xl: 32px;
+            --r-3xl: 40px;
+            --r-full: 9999px;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+            --dur-fast: 200ms;
+            --dur-base: 360ms;
+            --dur-slow: 640ms;
+
+            --sidebar-w: 300px;
+            --container: 1320px;
+            --container-narrow: 1100px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page:     #050B16;
+            --bg-surface:  #0B1526;
+            --bg-elevated: #111E36;
+            --bg-muted:    #0A1322;
+            --bg-inverse:  var(--ivory);
+
+            --text-primary:   #F5F7FA;
+            --text-secondary: #B8C5D9;
+            --text-tertiary:  #7A8BA3;
+            --text-inverse:   var(--blue-950);
+            --text-accent:    var(--sky-400);
+
+            --border-hairline: rgba(255,255,255,0.05);
+            --border-subtle:   rgba(255,255,255,0.08);
+            --border-default:  rgba(255,255,255,0.14);
+            --border-strong:   rgba(255,255,255,0.22);
+
+            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+        body {
+            font-family: var(--font-body);
+            font-size: var(--fs-base);
+            line-height: 1.65;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        ::selection { background: var(--blue-600); color: white; }
+
+        :focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: 3px;
+            border-radius: var(--r-sm);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px; left: var(--s-4);
+            background: var(--blue-900);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--r-md);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            z-index: 10000;
+            transition: top var(--dur-fast);
+        }
+        .skip-link:focus { top: var(--s-4); }
+
+        /* =========================================================
+           AMBIENT BACKGROUND
+           ========================================================= */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.7;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            animation: orbFloat 24s ease-in-out infinite;
+            will-change: transform;
+        }
+        .orb-1 {
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, var(--blue-400), transparent 70%);
+            top: -10%; left: -10%;
+        }
+        .orb-2 {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, var(--sky-400), transparent 70%);
+            top: 40%; right: -8%;
+            animation-delay: -8s;
+        }
+        .orb-3 {
+            width: 380px; height: 380px;
+            background: radial-gradient(circle, var(--amber-400), transparent 70%);
+            bottom: -10%; left: 30%;
+            opacity: 0.3;
+            animation-delay: -16s;
+        }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -30px) scale(1.08); }
+            66% { transform: translate(-30px, 40px) scale(0.95); }
+        }
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.025;
+            mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        /* =========================================================
+           SIDEBAR NAVIGATION
+           ========================================================= */
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0;
+            height: 100vh;
+            width: var(--sidebar-w);
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-right: 1px solid var(--border-hairline);
+            padding: var(--s-7) var(--s-5);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--dur-base) var(--ease-out);
+            overflow: hidden;
+        }
+        [data-theme="dark"] .sidebar {
+            background: rgba(11, 21, 38, 0.78);
+            border-right: 1px solid var(--border-subtle);
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .sidebar-header {
+            padding-bottom: var(--s-6);
+            margin-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            transition: opacity var(--dur-fast);
+        }
+        .sidebar-logo:hover { opacity: 0.8; }
+        .sidebar-logo-mark {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
+        .sidebar-logo-sub { font-size: 0.68rem; font-weight: 600; color: var(--text-tertiary); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-6);
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+        }
+        .sidebar-nav::-webkit-scrollbar { width: 4px; }
+        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+
+        .nav-section-title {
+            color: var(--text-tertiary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: var(--s-3);
+            padding-left: var(--s-3);
+        }
+        .nav-item { position: relative; }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--s-3);
+            padding: 10px var(--s-3);
+            color: var(--text-secondary);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast) var(--ease-out);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-link:hover {
+            background: var(--bg-muted);
+            color: var(--text-primary);
+        }
+        .nav-link.active {
+            background: var(--blue-900);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+        [data-theme="dark"] .nav-link.active {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            box-shadow: var(--shadow-blue);
+        }
+        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
+        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
+        .nav-link.active i.nav-icon { opacity: 1; }
+        .dropdown-arrow {
+            font-size: 0.65rem;
+            transition: transform var(--dur-fast) var(--ease-out);
+            color: var(--text-tertiary);
+        }
+        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+
+        .dropdown {
+            margin-top: var(--s-1);
+            margin-left: var(--s-7);
+            padding-left: var(--s-4);
+            border-left: 1px solid var(--border-subtle);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--dur-base) var(--ease-out);
+        }
+        .nav-item.active .dropdown { max-height: 400px; }
+        .dropdown-link {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 7px var(--s-3);
+            color: var(--text-tertiary);
+            font-size: 0.825rem;
+            font-weight: 500;
+            border-radius: var(--r-sm);
+            transition: all var(--dur-fast);
+        }
+        .dropdown-link:hover {
+            color: var(--text-primary);
+            background: var(--bg-muted);
+            padding-left: var(--s-4);
+        }
+        .dropdown-link.active {
+            color: var(--blue-700);
+            font-weight: 600;
+        }
+        [data-theme="dark"] .dropdown-link.active {
+            color: var(--sky-400);
+        }
+        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
+        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .theme-toggle {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+        }
+        .theme-toggle:hover {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+        }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: var(--s-4); left: var(--s-4);
+            z-index: 1001;
+            width: 48px; height: 48px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md);
+            color: var(--blue-900);
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        [data-theme="dark"] .mobile-toggle {
+            background: rgba(11, 21, 38, 0.85);
+            color: white;
+        }
+
+        /* =========================================================
+           MAIN CONTENT
+           ========================================================= */
+        .main-content {
+            margin-left: var(--sidebar-w);
+            min-height: 100vh;
+            position: relative;
+            z-index: 2;
+            transition: margin-left var(--dur-base) var(--ease-out);
+        }
+
+        /* =========================================================
+           PAGE HERO
+           ========================================================= */
+        .page-hero {
+            position: relative;
+            padding: var(--s-32) var(--s-8) var(--s-24);
+            overflow: hidden;
+            color: white;
+            isolation: isolate;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -3;
+        }
+        .hero-bg img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(4, 11, 26, 0.94) 0%, rgba(11, 27, 51, 0.82) 50%, rgba(19, 46, 85, 0.72) 100%),
+                linear-gradient(180deg, transparent 50%, rgba(4, 11, 26, 0.85) 100%);
+            z-index: 1;
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.25) 0%, transparent 50%);
+            z-index: 2;
+        }
+        .hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.06;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 3;
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--s-8);
+            backdrop-filter: blur(12px);
+            animation: heroFadeIn 1s var(--ease-out) both;
+        }
+        .hero-breadcrumb i { color: var(--amber-400); font-size: 0.7rem; }
+        .hero-breadcrumb .sep { opacity: 0.5; }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: 6px 14px;
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--amber-300);
+            margin-bottom: var(--s-6);
+            animation: heroFadeIn 1s var(--ease-out) 0.1s both;
+        }
+        .hero-eyebrow .pulse {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--amber-400);
+            box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+            animation: pulseRing 2.4s ease-out infinite;
+        }
+        @keyframes pulseRing {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, var(--fs-7xl));
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--s-6);
+            color: white;
+            font-variation-settings: "opsz" 144;
+            animation: heroFadeIn 1.2s var(--ease-out) 0.2s both;
+        }
+        .hero-title .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--amber-300);
+            letter-spacing: -0.02em;
+        }
+        .hero-title .divider {
+            display: block;
+            width: 60px; height: 2px;
+            background: linear-gradient(90deg, var(--amber-400), transparent);
+            margin: var(--s-5) auto;
+            border-radius: 1px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.6vw, var(--fs-lg));
+            color: rgba(255, 255, 255, 0.82);
+            max-width: 680px;
+            margin: 0 auto var(--s-12);
+            line-height: 1.7;
+            font-weight: 400;
+            animation: heroFadeIn 1s var(--ease-out) 0.4s both;
+        }
+
+        @keyframes heroFadeIn {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--s-4);
+            max-width: 900px;
+            margin: 0 auto;
+            animation: heroFadeIn 1s var(--ease-out) 0.6s both;
+        }
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--r-xl);
+            padding: var(--s-6) var(--s-4);
+            text-align: center;
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-stat::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        }
+        .hero-stat:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+        }
+        .hero-stat-icon {
+            width: 40px; height: 40px;
+            margin: 0 auto var(--s-3);
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(14, 165, 233, 0.2));
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            display: grid; place-items: center;
+            color: var(--sky-300);
+            font-size: 1rem;
+        }
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-3xl);
+            font-weight: 500;
+            color: white;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+            font-variation-settings: "opsz" 144;
+        }
+        .hero-stat-label {
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.65);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        /* =========================================================
+           SECTIONS
+           ========================================================= */
+        .page-section {
+            padding: var(--s-24) 0;
+            position: relative;
+        }
+        .page-section.alt-bg {
+            background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-page) 100%);
+        }
+        .page-section.alt-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .page-section > * { position: relative; z-index: 1; }
+
+        .section-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--s-16);
+        }
+        .section-header .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: var(--s-5);
+        }
+        [data-theme="dark"] .section-header .section-eyebrow { color: var(--sky-400); }
+        .section-header .section-eyebrow::before,
+        .section-header .section-eyebrow::after {
+            content: '';
+            width: 28px; height: 1px;
+            background: currentColor;
+        }
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, var(--fs-5xl));
+            font-weight: 400;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: var(--s-5);
+            font-variation-settings: "opsz" 144;
+        }
+        .section-header h2 .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--blue-600);
+        }
+        [data-theme="dark"] .section-header h2 .italic { color: var(--sky-400); }
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: var(--fs-md);
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* =========================================================
+           SPOTLIGHT CARD — Editorial profile
+           ========================================================= */
+        .spotlight-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-3xl);
+            padding: var(--s-12);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--dur-base) var(--ease-out);
+        }
+        .spotlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--blue-600), var(--sky-400), var(--amber-400));
+        }
+        .spotlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--border-default);
+        }
+
+        .spotlight-header {
+            display: flex;
+            align-items: center;
+            gap: var(--s-6);
+            margin-bottom: var(--s-8);
+            padding-bottom: var(--s-8);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-wrap: wrap;
+        }
+        .spotlight-image {
+            width: 100px; height: 100px;
+            border-radius: var(--r-xl);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 2.2rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        .spotlight-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
+        }
+        .spotlight-info { flex: 1; min-width: 240px; }
+        .spotlight-info .role-tag {
+            display: inline-block;
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--amber-600);
+            margin-bottom: var(--s-2);
+        }
+        [data-theme="dark"] .spotlight-info .role-tag { color: var(--amber-400); }
+        .spotlight-info h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-3xl);
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-2);
+            font-variation-settings: "opsz" 144;
+        }
+        .spotlight-info .role {
+            font-family: var(--font-ui);
+            font-size: var(--fs-sm);
+            color: var(--text-tertiary);
+            font-weight: 500;
+        }
+
+        .spotlight-quote {
+            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
+            border-left: 4px solid var(--amber-500);
+            padding: var(--s-6) var(--s-8);
+            border-radius: 0 var(--r-xl) var(--r-xl) 0;
+            margin-bottom: var(--s-8);
+            position: relative;
+        }
+        [data-theme="dark"] .spotlight-quote {
+            background: linear-gradient(135deg, rgba(30, 79, 216, 0.12), rgba(14, 165, 233, 0.08));
+        }
+        .spotlight-quote .quote-icon {
+            position: absolute;
+            top: var(--s-4); left: var(--s-5);
+            font-size: 1.5rem;
+            color: var(--amber-500);
+            opacity: 0.4;
+        }
+        .spotlight-quote p {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: var(--fs-xl);
+            color: var(--text-primary);
+            line-height: 1.55;
+            padding-left: var(--s-8);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            font-variation-settings: "opsz" 144;
+        }
+
+        .spotlight-content {
+            color: var(--text-secondary);
+            font-size: var(--fs-base);
+            line-height: 1.85;
+        }
+        .spotlight-content p {
+            margin-bottom: var(--s-5);
+        }
+        .spotlight-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .spotlight-content strong.highlight {
+            color: var(--blue-600);
+            font-weight: 600;
+        }
+        [data-theme="dark"] .spotlight-content strong.highlight { color: var(--sky-400); }
+
+        /* =========================================================
+           CARDS GRID
+           ========================================================= */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--s-6);
+        }
+        .cards-grid.full-width {
+            grid-template-columns: 1fr;
+        }
+        .cards-grid.full-width .inner-card {
+            max-width: 100%;
+        }
+
+        .inner-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-2xl);
+            padding: var(--s-8);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--dur-base) var(--ease-out);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+        }
+        .inner-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--blue-600), var(--sky-400));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--dur-slow) var(--ease-out);
+        }
+        .inner-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--border-default);
+        }
+        .inner-card:hover::before { transform: scaleX(1); }
+
+        .inner-card h4 {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--s-3);
+            letter-spacing: -0.01em;
+        }
+        .inner-card h4 i {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
+            color: var(--blue-700);
+            display: grid; place-items: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        [data-theme="dark"] .inner-card h4 i {
+            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
+            color: var(--sky-400);
+        }
+
+        .inner-card .author,
+        .inner-card .leader-name {
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--amber-600);
+            letter-spacing: 0.04em;
+            display: block;
+            margin-bottom: var(--s-4);
+        }
+        [data-theme="dark"] .inner-card .author,
+        [data-theme="dark"] .inner-card .leader-name {
+            color: var(--amber-400);
+        }
+
+        .inner-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.75;
+            flex-grow: 1;
+            margin-bottom: var(--s-4);
+        }
+
+        /* Book Links */
+        .book-links {
+            display: flex;
+            gap: var(--s-2);
+            flex-wrap: wrap;
+            margin-top: auto;
+            padding-top: var(--s-4);
+            border-top: 1px solid var(--border-hairline);
+        }
+        .book-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: var(--bg-muted);
+            color: var(--text-primary);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+            border: 1px solid var(--border-hairline);
+        }
+        .book-link:hover {
+            background: var(--blue-900);
+            color: white;
+            border-color: var(--blue-900);
+            transform: translateY(-2px);
+        }
+        .book-link.free {
+            background: var(--forest-500, #2d8a4e);
+            color: white;
+            border-color: transparent;
+        }
+        .book-link.free:hover {
+            background: #1e6b3a;
+            transform: translateY(-2px);
+        }
+
+        /* Verse Block */
+        .verse {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(245, 158, 11, 0.04));
+            border-left: 3px solid var(--amber-500);
+            padding: var(--s-4) var(--s-5);
+            border-radius: 0 var(--r-md) var(--r-md) 0;
+            color: var(--amber-600);
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            margin: var(--s-4) 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        [data-theme="dark"] .verse {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(245, 158, 11, 0.04));
+            color: var(--amber-300);
+        }
+
+        /* =========================================================
+           CTA SECTION
+           ========================================================= */
+        .cta-section {
+            padding: var(--s-24) 0;
+        }
+        .cta-card {
+            background: var(--gradient-hero);
+            color: white;
+            border-radius: var(--r-3xl);
+            padding: var(--s-16) var(--s-12);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+        }
+        .cta-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(59, 130, 246, 0.3), transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(245, 158, 11, 0.15), transparent 50%);
+            pointer-events: none;
+        }
+        .cta-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        .cta-card > * { position: relative; z-index: 1; }
+
+        .cta-icon {
+            width: 72px; height: 72px;
+            margin: 0 auto var(--s-6);
+            border-radius: var(--r-xl);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.6rem;
+            backdrop-filter: blur(12px);
+        }
+        .cta-card h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, var(--fs-3xl));
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-5);
+            font-variation-settings: "opsz" 144;
+        }
+        .cta-card h3 .italic {
+            font-style: italic;
+            color: var(--amber-300);
+            font-weight: 300;
+        }
+        .cta-card > p {
+            font-size: var(--fs-md);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.75;
+            max-width: 640px;
+            margin: 0 auto var(--s-8);
+        }
+
+        .engage-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-4) var(--s-8);
+            background: var(--amber-500);
+            color: var(--blue-950);
+            border-radius: var(--r-full);
+            font-family: var(--font-ui);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all var(--dur-fast) var(--ease-out);
+            box-shadow: 0 12px 32px rgba(245, 158, 11, 0.35);
+            min-height: 56px;
+        }
+        .engage-btn:hover {
+            background: var(--amber-400);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px rgba(245, 158, 11, 0.45);
+        }
+        .engage-btn i {
+            transition: transform var(--dur-fast);
+        }
+        .engage-btn:hover i {
+            transform: translateX(4px);
+        }
+
+        .privacy-note {
+            margin-top: var(--s-6);
+            font-family: var(--font-ui);
+            font-size: 0.825rem;
+            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            flex-wrap: wrap;
+        }
+        .privacy-note i { color: var(--amber-400); }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+        .footer {
+            background: var(--blue-950);
+            color: rgba(255,255,255,0.75);
+            padding: var(--s-16) 0 var(--s-8);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        .footer > * { position: relative; z-index: 1; }
+        .footer-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: var(--s-10);
+            margin-bottom: var(--s-10);
+        }
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-4);
+            color: white;
+            font-family: var(--font-ui);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .footer-logo-mark {
+            width: 38px; height: 38px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+            color: var(--amber-400);
+            display: grid; place-items: center;
+            font-size: 0.95rem;
+        }
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            color: var(--amber-300);
+            margin-bottom: var(--s-4);
+            line-height: 1.5;
+        }
+        .footer-brand > p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: var(--s-5);
+            max-width: 360px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+            font-size: 0.8rem;
+            font-style: normal;
+            font-family: var(--font-ui);
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.75rem; }
+
+        .footer-col h4 {
+            color: white;
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+        }
+        .footer-links a {
+            font-family: var(--font-ui);
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.65);
+            transition: color var(--dur-fast);
+            font-weight: 500;
+        }
+        .footer-links a:hover { color: var(--amber-300); }
+
+        .social-links { display: flex; gap: var(--s-2); margin-top: var(--s-4); }
+        .social-links a {
+            width: 36px; height: 36px;
+            border-radius: var(--r-md);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid; place-items: center;
+            color: rgba(255,255,255,0.7);
+            transition: all var(--dur-fast);
+            font-size: 0.85rem;
+        }
+        .social-links a:hover {
+            background: var(--amber-500);
+            color: var(--blue-950);
+            border-color: var(--amber-500);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            padding-top: var(--s-6);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-legal { display: flex; gap: var(--s-5); flex-wrap: wrap; }
+        .footer-legal a { transition: color var(--dur-fast); }
+        .footer-legal a:hover { color: var(--amber-300); }
+
+        /* =========================================================
+           REVEAL ANIMATIONS
+           ========================================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-stagger > * {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+        }
+        .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+        .reveal-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
+        .reveal-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 1100px) {
+            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+        }
+        @media (max-width: 900px) {
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+            .footer-brand { grid-column: 1 / -1; }
+            .spotlight-header { flex-direction: column; text-align: center; align-items: center; }
+        }
+        @media (max-width: 640px) {
+            .page-hero { padding: var(--s-20) var(--s-5) var(--s-16); }
+            .page-section { padding: var(--s-16) 0; }
+            .section-container, .footer-container { padding: 0 var(--s-5); }
+            .spotlight-card { padding: var(--s-8); }
+            .spotlight-quote { padding: var(--s-5) var(--s-5) var(--s-5) var(--s-6); }
+            .spotlight-quote p { padding-left: var(--s-6); font-size: var(--fs-lg); }
+            .inner-card { padding: var(--s-6); }
+            .cta-card { padding: var(--s-12) var(--s-6); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { justify-content: center; }
+            .sidebar { transform: translateX(-100%); }
+            .sidebar.active { transform: translateX(0); }
+            .main-content { margin-left: 0; }
+            .mobile-toggle { display: flex; }
+            .cards-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
+            .orb { animation: none; }
+        }
+
+        @media print {
+            .sidebar, .mobile-toggle, .ambient-bg, .noise-overlay { display: none; }
+            .main-content { margin-left: 0; }
+            body { background: white; color: black; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-header">
+            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                <div class="sidebar-logo-text">
+                    <span class="sidebar-logo-title">KE0274 PEFA</span>
+                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+                        <a href="index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+                        <a href="suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+                        <a href="leadershipempowerment.html" class="dropdown-link active" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Resources</div>
+                <div class="nav-item">
+                    <a href="../learningresources/learningresources.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">More</div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../achievments/achievment.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../inventory/inventory.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../chatsupport/chat-support.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="hero-bg" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2400&q=85" alt="" loading="eager" decoding="async">
+            </div>
+            <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <div class="hero-breadcrumb">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                    <span class="sep">/</span>
+                    <span>Student Leadership</span>
+                    <span class="sep">/</span>
+                    <span>Empowerment</span>
+                </div>
+
+                <div class="hero-eyebrow">
+                    <span class="pulse" aria-hidden="true"></span>
+                    <span>Leadership Development Program</span>
+                </div>
+
+                <h1 class="hero-title" id="page-title">
+                    Empowering tomorrow's<br>
+                    <span class="italic">leaders</span> today.
+                    <span class="divider" aria-hidden="true"></span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Building confident, compassionate, and capable leaders through mentorship, training, and faith-based inspiration at KE0274 PEFA Mfangano CYDC.
+                </p>
+
+                <div class="hero-stats" role="list" aria-label="Program at a glance">
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">4</div>
+                        <div class="hero-stat-label">Core Books</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-praying-hands" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">3</div>
+                        <div class="hero-stat-label">Faith Stories</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-lightbulb" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">4</div>
+                        <div class="hero-stat-label">Leadership Tips</div>
+                    </div>
+                    <div class="hero-stat" role="listitem">
+                        <div class="hero-stat-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                        <div class="hero-stat-number">100%</div>
+                        <div class="hero-stat-label">Faith-Based</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURED LEADER SPOTLIGHT ===== -->
+        <section class="page-section" aria-labelledby="spotlight-title">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-eyebrow">Featured Spotlight</div>
+                    <h2 id="spotlight-title">A life of <span class="italic">faithful</span> leadership.</h2>
+                    <p>Stories of leaders whose lives embody the principles we seek to cultivate in every student at our Centre.</p>
+                </div>
+
+                <article class="spotlight-card reveal">
+                    <div class="spotlight-header">
+                        <div class="spotlight-image" aria-hidden="true">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="spotlight-info">
+                            <span class="role-tag">Veteran Statesman</span>
+                            <h3>Raila Amollo Odinga</h3>
+                            <span class="role">Faith-Driven Leader · Prime Minister of Kenya (2008–2013)</span>
+                        </div>
+                    </div>
+
+                    <blockquote class="spotlight-quote">
+                        <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                        <p>"Leadership is not about being in charge. It is about taking care of those in your charge."</p>
+                    </blockquote>
+
+                    <div class="spotlight-content">
+                        <p><strong class="highlight">Raila Amollo Odinga</strong> is a towering figure in Kenyan politics and a testament to leadership rooted in faith, resilience, and service. Born in 1945, his journey from political detainee to Prime Minister of Kenya (2008–2013) reflects a life dedicated to justice, democracy, and the empowerment of marginalized communities.</p>
+                        <p>What sets Raila apart is his unwavering commitment to his Christian faith as a foundation for public service. He has often spoken about how his belief in God guides his decisions, fuels his perseverance through adversity, and inspires his vision for a more equitable Kenya. His leadership style emphasizes <strong>dialogue over division</strong>, <strong>reconciliation over retribution</strong>, and <strong>hope over despair</strong> — principles deeply aligned with the teachings of Christ.</p>
+                        <p>For our students at KE0274 PEFA Mfangano CYDC, Raila's story offers powerful lessons: that true leadership requires courage to stand for what is right, humility to listen to others, and faith to keep moving forward even when the path is difficult. His life reminds us that leadership is not about personal glory, but about lifting others up and leaving a legacy of positive change.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== BOOK RECOMMENDATIONS ===== -->
+        <section class="page-section alt-bg" aria-labelledby="books-title">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-eyebrow">Recommended Reading</div>
+                    <h2 id="books-title">Books that have <span class="italic">shaped</span> great leaders.</h2>
+                    <p>Essential reading for young leaders — available for purchase or free access.</p>
+                </div>
+
+                <div class="cards-grid reveal-stagger">
+                    <article class="inner-card">
+                        <h4><i class="fas fa-book" aria-hidden="true"></i> The Purpose Driven Life</h4>
+                        <span class="author">by Rick Warren</span>
+                        <p>A classic on finding your God-given purpose and leading with intention. Essential for young leaders seeking direction.</p>
+                        <div class="book-links">
+                            <a href="https://www.amazon.com/Purpose-Driven-Life-Rick-Warren/dp/0310205719" target="_blank" rel="noopener" class="book-link" aria-label="Buy on Amazon">
+                                <i class="fab fa-amazon" aria-hidden="true"></i> Amazon
+                            </a>
+                            <a href="https://www.purposedrivenlife.com/" target="_blank" rel="noopener" class="book-link free" aria-label="Free resources">
+                                <i class="fas fa-gift" aria-hidden="true"></i> Free Resources
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-book" aria-hidden="true"></i> Dare to Lead</h4>
+                        <span class="author">by Brené Brown</span>
+                        <p>Practical wisdom on courageous leadership, vulnerability, and building trust — perfect for student leaders navigating peer dynamics.</p>
+                        <div class="book-links">
+                            <a href="https://www.amazon.com/Dare-Lead-Brave-Work-Tough/dp/0399592520" target="_blank" rel="noopener" class="book-link" aria-label="Buy on Amazon">
+                                <i class="fab fa-amazon" aria-hidden="true"></i> Amazon
+                            </a>
+                            <a href="https://brenebrown.com/dare-to-lead/" target="_blank" rel="noopener" class="book-link free" aria-label="Free guide">
+                                <i class="fas fa-gift" aria-hidden="true"></i> Free Guide
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-book" aria-hidden="true"></i> The Leadership Challenge</h4>
+                        <span class="author">by Kouzes &amp; Posner</span>
+                        <p>Research-based practices for exemplary leadership. Learn the five practices that transform ordinary people into extraordinary leaders.</p>
+                        <div class="book-links">
+                            <a href="https://www.amazon.com/Leadership-Challenge-James-M-Kouzes/dp/1119278961" target="_blank" rel="noopener" class="book-link" aria-label="Buy on Amazon">
+                                <i class="fab fa-amazon" aria-hidden="true"></i> Amazon
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-book" aria-hidden="true"></i> Faith Matters</h4>
+                        <span class="author">by Various Authors</span>
+                        <p>A collection of essays on integrating faith and leadership. Includes reflections from African Christian leaders on serving with integrity.</p>
+                        <div class="book-links">
+                            <a href="https://www.christianleadershipalliance.org/resources" target="_blank" rel="noopener" class="book-link free" aria-label="Free PDF">
+                                <i class="fas fa-download" aria-hidden="true"></i> Free PDF
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAITH-DRIVEN LEADERS ===== -->
+        <section class="page-section" aria-labelledby="faith-title">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-eyebrow">Faith in Action</div>
+                    <h2 id="faith-title">Leaders who led <span class="italic">through faith.</span></h2>
+                    <p>Inspiring stories of those who changed their worlds by anchoring their leadership in God.</p>
+                </div>
+
+                <div class="cards-grid reveal-stagger">
+                    <article class="inner-card">
+                        <h4><i class="fas fa-star" aria-hidden="true"></i> Wangari Maathai</h4>
+                        <span class="leader-name">The Green Belt Prophet (1940–2011)</span>
+                        <p>Nobel Peace Prize laureate and founder of the Green Belt Movement, Wangari Maathai transformed environmental activism in Africa through her deep Christian faith. She believed that caring for creation was an act of worship and that empowering women to plant trees was a pathway to peace, justice, and sustainable development.</p>
+                        <div class="verse">"When you plant a tree, you plant hope." — Wangari Maathai</div>
+                        <p>Her legacy teaches us that leadership rooted in faith can heal both people and planet. For our students, her life is a call to lead with compassion, courage, and a commitment to the common good.</p>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-star" aria-hidden="true"></i> Desmond Tutu</h4>
+                        <span class="leader-name">The Archbishop of Reconciliation (1931–2021)</span>
+                        <p>Archbishop Desmond Tutu led South Africa's Truth and Reconciliation Commission with a vision grounded in Ubuntu ("I am because we are") and his Christian belief in forgiveness. He demonstrated that true leadership requires the courage to confront injustice while extending grace to former enemies.</p>
+                        <div class="verse">"Do your little bit of good where you are; it's those little bits of good put together that overwhelm the world." — Desmond Tutu</div>
+                        <p>Tutu's example reminds us that faith-driven leadership is not about power, but about service; not about winning, but about healing. His life challenges our students to lead with humility, hope, and an unwavering commitment to human dignity.</p>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-star" aria-hidden="true"></i> Local Heroes</h4>
+                        <span class="leader-name">Mfangano's Own — Pastors, Teachers &amp; Community Elders</span>
+                        <p>Right here on Mfangano Island, we are surrounded by everyday leaders whose faith fuels their service: pastors who shepherd congregations through hardship, teachers who nurture young minds with patience, and elders who preserve wisdom for future generations. Their quiet, consistent leadership — rooted in prayer, integrity, and love for community — is the bedrock of our CYDC's mission.</p>
+                        <div class="verse">"Let no one despise you for your youth, but set the believers an example in speech, in conduct, in love, in faith, in purity." — 1 Timothy 4:12</div>
+                        <p>These local heroes show our students that you don't need a title to lead. You just need a heart aligned with God's purpose and a willingness to serve where you are planted.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TIPS FOR STUDENT LEADERS ===== -->
+        <section class="page-section alt-bg" aria-labelledby="tips-title">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div class="section-eyebrow">Practical Wisdom</div>
+                    <h2 id="tips-title">Tips for <span class="italic">growing</span> as a leader.</h2>
+                    <p>Actionable guidance for student leaders at KE0274 PEFA Mfangano CYDC.</p>
+                </div>
+
+                <div class="cards-grid reveal-stagger">
+                    <article class="inner-card">
+                        <h4><i class="fas fa-pray" aria-hidden="true"></i> Start with Prayer</h4>
+                        <p>Before making decisions, seeking advice, or facing challenges, pause to pray. Ask God for wisdom, humility, and courage. Leadership is a spiritual journey as much as a practical one.</p>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-users" aria-hidden="true"></i> Listen More Than You Speak</h4>
+                        <p>Great leaders are great listeners. Create space for others to share their ideas, concerns, and dreams. When people feel heard, they become partners in your vision.</p>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-hand-holding-heart" aria-hidden="true"></i> Serve First, Lead Second</h4>
+                        <p>Jesus washed His disciples' feet to show that leadership is service. Look for ways to help others succeed before seeking recognition for yourself.</p>
+                    </article>
+
+                    <article class="inner-card">
+                        <h4><i class="fas fa-book" aria-hidden="true"></i> Keep Learning</h4>
+                        <p>Read books, attend workshops, and seek mentors. The best leaders are lifelong learners who grow in knowledge, character, and skill.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="section-container">
+                <div class="cta-card reveal">
+                    <div class="cta-icon" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3 id="cta-title">Ready to grow as a <span class="italic">leader?</span></h3>
+                    <p>Join our Leadership Empowerment Program for mentorship, training, and opportunities to serve your community. Your journey to impactful leadership starts here.</p>
+                    <a href="#engage" class="engage-btn" id="engageBtn">
+                        <span>Join the Leadership Program</span>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <div class="privacy-note">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        <span>Open to all students · No experience required · Faith-based mentorship</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                            <span>KE0274 PEFA Mfangano CYDC</span>
+                        </div>
+                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya.</p>
+                        <address class="footer-contact">
+                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County</div>
+                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                        </address>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Leadership</h4>
+                        <ul class="footer-links">
+                            <li><a href="leaders.html">Current Leaders</a></li>
+                            <li><a href="index.html">Voting System</a></li>
+                            <li><a href="suggestions.html">Suggestions</a></li>
+                            <li><a href="leadershipempowerment.html">Empowerment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../academics/dreamachiever.html">Academics</a></li>
+                            <li><a href="../studentportal/timetable.html">Student Portal</a></li>
+                            <li><a href="../achievments/achievment.html">Achievements</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul class="footer-links">
+                            <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
+                            <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
+                            <li><a href="../chatsupport/chat-support.html">Chat Support</a></li>
+                            <li><a href="../childprotection.html">Child Protection</a></li>
+                        </ul>
+                        <div class="social-links" aria-label="Social media">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Child Protection Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        function applyTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const icon = themeToggle.querySelector('i');
+            const label = themeToggle.querySelector('span');
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // Mobile Menu
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        function closeMobileMenu() {
+            sidebar.classList.remove('active');
+            mobileToggle.querySelector('i').className = 'fas fa-bars';
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        mobileToggle.addEventListener('click', () => {
+            const isActive = sidebar.classList.contains('active');
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                sidebar.classList.add('active');
+                mobileToggle.querySelector('i').className = 'fas fa-times';
+                mobileToggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Dropdown Toggle
+        window.toggleDropdown = function(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            const navItem = element.closest('.nav-item');
+            const isActive = navItem.classList.contains('active');
+            element.setAttribute('aria-expanded', String(!isActive));
+
+            document.querySelectorAll('.nav-item').forEach(item => {
+                if (item !== navItem) {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            navItem.classList.toggle('active');
+        };
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
+
+        // Keyboard: Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (window.innerWidth <= 640 && sidebar.classList.contains('active')) {
+                    closeMobileMenu();
+                    mobileToggle.focus();
+                }
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
+                });
+            }
+        });
+
+        // Active link detection
+        const currentPage = window.location.pathname.split('/').pop() || 'leadershipempowerment.html';
+        document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+                link.classList.add('active');
+                const navItem = link.closest('.nav-item');
+                if (navItem) navItem.classList.add('active');
+            }
+        });
+
+        // Engage button handler
+        const engageBtn = document.getElementById('engageBtn');
+        if (engageBtn) {
+            engageBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('🌟 Thank you for your interest in leadership!\n\nTo join our Leadership Empowerment Program:\n\n1. Speak with your class teacher or CYDC patron\n2. Attend our next leadership orientation (announced in assembly)\n3. Email us at ke0274pefamfangano@gmail.com with "Leadership Program" in the subject\n\nWe look forward to walking this journey with you!');
+            });
+        }
+    </script>
+</body>
+</html>

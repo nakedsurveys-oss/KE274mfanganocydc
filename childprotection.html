@@ -1,0 +1,2547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Protection | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Child protection policy, reporting mechanisms, and emergency contacts for KE0274 PEFA Mfangano Child Development Centre.">
+    <meta name="theme-color" content="#0B1B33">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* =========================================================
+           DESIGN TOKENS — Identical to index.html
+           ========================================================= */
+        :root {
+            --blue-950: #040B1A;
+            --blue-900: #0B1B33;
+            --blue-850: #0F2544;
+            --blue-800: #132E55;
+            --blue-700: #1A3F73;
+            --blue-600: #1E4FD8;
+            --blue-500: #2563EB;
+            --blue-400: #3B82F6;
+            --blue-300: #60A5FA;
+            --blue-200: #93C5FD;
+            --blue-100: #BFDBFE;
+            --blue-50:  #EFF6FF;
+            --sky-500:  #0EA5E9;
+            --sky-400:  #38BDF8;
+            --sky-300:  #7DD3FC;
+            --sky-100:  #E0F2FE;
+            --amber-600: #D97706;
+            --amber-500: #F59E0B;
+            --amber-400: #FBBF24;
+            --amber-300: #FCD34D;
+            --amber-100: #FEF3C7;
+            --forest-600: #1e6b3a;
+            --forest-500: #2d8a4e;
+            --terra-500: #a8553c;
+            --stone-950: #0C0A09;
+            --stone-900: #1C1917;
+            --stone-800: #292524;
+            --stone-700: #44403C;
+            --stone-600: #57534E;
+            --stone-500: #78716C;
+            --stone-400: #A8A29E;
+            --stone-300: #D6D3D1;
+            --stone-200: #E7E5E4;
+            --stone-100: #F5F5F4;
+            --stone-50:  #FAFAF9;
+            --ivory:    #FDFCF8;
+            --cream:    #FAF7F0;
+            --pearl:    #F8F6F1;
+            --red-500:  #EF4444;
+            --red-600:  #DC2626;
+            --red-100:  #FEE2E2;
+            --purple-500: #8B5CF6;
+            --purple-100: #EDE9FE;
+            --green-500: #10B981;
+            --green-100: #D1FAE5;
+            --yellow-500: #F59E0B;
+            --yellow-100: #FEF3C7;
+
+            --bg-page:       var(--ivory);
+            --bg-surface:    #ffffff;
+            --bg-elevated:   #ffffff;
+            --bg-muted:      var(--pearl);
+            --bg-inverse:    var(--blue-900);
+
+            --text-primary:   var(--blue-950);
+            --text-secondary: var(--stone-700);
+            --text-tertiary:  var(--stone-500);
+            --text-inverse:   var(--ivory);
+            --text-accent:    var(--blue-600);
+
+            --border-hairline: rgba(12, 27, 51, 0.06);
+            --border-subtle:   rgba(12, 27, 51, 0.10);
+            --border-default:  rgba(12, 27, 51, 0.16);
+            --border-strong:   rgba(12, 27, 51, 0.24);
+
+            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
+            --gradient-danger: linear-gradient(135deg, var(--red-600) 0%, var(--red-500) 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+            --shadow-danger: 0 20px 48px -12px rgba(220, 38, 38, 0.35);
+
+            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+            --fs-xs:   0.75rem;
+            --fs-sm:   0.875rem;
+            --fs-base: 1rem;
+            --fs-md:   1.0625rem;
+            --fs-lg:   1.125rem;
+            --fs-xl:   1.25rem;
+            --fs-2xl:  1.5rem;
+            --fs-3xl:  1.875rem;
+            --fs-4xl:  2.25rem;
+            --fs-5xl:  3rem;
+            --fs-6xl:  3.75rem;
+
+            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+
+            --r-sm: 8px;
+            --r-md: 12px;
+            --r-lg: 16px;
+            --r-xl: 24px;
+            --r-2xl: 32px;
+            --r-3xl: 40px;
+            --r-full: 9999px;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+            --dur-fast: 200ms;
+            --dur-base: 360ms;
+            --dur-slow: 640ms;
+
+            --sidebar-w: 300px;
+            --container: 1320px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page:     #050B16;
+            --bg-surface:  #0B1526;
+            --bg-elevated: #111E36;
+            --bg-muted:    #0A1322;
+            --bg-inverse:  var(--ivory);
+
+            --text-primary:   #F5F7FA;
+            --text-secondary: #B8C5D9;
+            --text-tertiary:  #7A8BA3;
+            --text-inverse:   var(--blue-950);
+            --text-accent:    var(--sky-400);
+
+            --border-hairline: rgba(255,255,255,0.05);
+            --border-subtle:   rgba(255,255,255,0.08);
+            --border-default:  rgba(255,255,255,0.14);
+            --border-strong:   rgba(255,255,255,0.22);
+
+            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            font-size: var(--fs-base);
+            line-height: 1.65;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+        }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        ::selection { background: var(--blue-600); color: white; }
+
+        :focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: 3px;
+            border-radius: var(--r-sm);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px; left: var(--s-4);
+            background: var(--blue-900);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--r-md);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            z-index: 10000;
+            transition: top var(--dur-fast);
+        }
+        .skip-link:focus { top: var(--s-4); }
+
+        /* =========================================================
+           AMBIENT BACKGROUND
+           ========================================================= */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.4;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            animation: orbFloat 24s ease-in-out infinite;
+            will-change: transform;
+        }
+        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
+        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
+        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -30px) scale(1.08); }
+            66% { transform: translate(-30px, 40px) scale(0.95); }
+        }
+
+        /* =========================================================
+           SIDEBAR — Identical to index.html
+           ========================================================= */
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0;
+            height: 100vh;
+            width: var(--sidebar-w);
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-right: 1px solid var(--border-hairline);
+            padding: var(--s-7) var(--s-5);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--dur-base) var(--ease-out);
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+        }
+        .sidebar::-webkit-scrollbar { width: 4px; }
+        .sidebar::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+        [data-theme="dark"] .sidebar {
+            background: rgba(11, 21, 38, 0.78);
+            border-right: 1px solid var(--border-subtle);
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .sidebar-header {
+            padding-bottom: var(--s-6);
+            margin-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            transition: opacity var(--dur-fast);
+        }
+        .sidebar-logo:hover { opacity: 0.8; }
+        .sidebar-logo-mark {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar-logo-mark::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
+        }
+        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
+        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-6);
+            padding-right: 2px;
+        }
+
+        .nav-section-title {
+            color: var(--text-tertiary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: var(--s-3);
+            padding-left: var(--s-3);
+        }
+        .nav-item { position: relative; }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--s-3);
+            padding: 10px var(--s-3);
+            color: var(--text-secondary);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast) var(--ease-out);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
+        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
+        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
+        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
+        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
+        .nav-link.active i.nav-icon { opacity: 1; }
+        .dropdown-arrow {
+            font-size: 0.65rem;
+            transition: transform var(--dur-fast) var(--ease-out);
+            color: var(--text-tertiary);
+        }
+        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+
+        .dropdown {
+            margin-top: var(--s-1);
+            margin-left: var(--s-7);
+            padding-left: var(--s-4);
+            border-left: 1px solid var(--border-subtle);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--dur-base) var(--ease-out);
+        }
+        .nav-item.active .dropdown { max-height: 400px; }
+        .dropdown-link {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 7px var(--s-3);
+            color: var(--text-tertiary);
+            font-size: 0.825rem;
+            font-weight: 500;
+            border-radius: var(--r-sm);
+            transition: all var(--dur-fast);
+        }
+        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
+        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
+        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
+        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
+        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .theme-toggle {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+        }
+        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: var(--s-4); left: var(--s-4);
+            z-index: 1001;
+            width: 48px; height: 48px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md);
+            color: var(--blue-900);
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
+
+        /* =========================================================
+           MAIN CONTENT
+           ========================================================= */
+        .main-content {
+            margin-left: var(--sidebar-w);
+            position: relative;
+            z-index: 2;
+            transition: margin-left var(--dur-base) var(--ease-out);
+        }
+
+        /* =========================================================
+           EMERGENCY BANNER (Sticky)
+           ========================================================= */
+        .emergency-banner {
+            background: var(--gradient-danger);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-8);
+            flex-wrap: wrap;
+            font-size: var(--fs-sm);
+        }
+        .emergency-banner-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            font-weight: 600;
+        }
+        .emergency-banner-item i {
+            font-size: var(--fs-md);
+            animation: pulseIcon 2s infinite;
+        }
+        @keyframes pulseIcon {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        .emergency-banner-item a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 700;
+            transition: opacity var(--dur-fast);
+        }
+        .emergency-banner-item a:hover { opacity: 0.85; }
+
+        /* =========================================================
+           HERO SECTION
+           ========================================================= */
+        .hero-section {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--gradient-hero);
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.25;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, 
+                rgba(4, 11, 26, 0.92) 0%, 
+                rgba(11, 27, 51, 0.88) 45%, 
+                rgba(26, 63, 115, 0.85) 100%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--s-16) var(--s-5) var(--s-12);
+            text-align: center;
+            color: white;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) var(--s-4);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--s-8);
+            text-transform: uppercase;
+        }
+        .hero-badge i { color: var(--amber-400); }
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-6);
+        }
+        .hero-title .highlight-love { color: var(--sky-300); }
+        .hero-title .highlight-known { color: var(--amber-400); }
+        .hero-title .highlight-protected { 
+            color: white; 
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 650px;
+            margin: 0 auto var(--s-8);
+            line-height: 1.6;
+        }
+        .hero-subtitle strong { color: var(--amber-300); font-weight: 600; }
+        .hero-cta {
+            display: flex;
+            gap: var(--s-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: var(--s-3) var(--s-6);
+            border-radius: var(--r-full);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            transition: all var(--dur-fast) var(--ease-out);
+            border: none;
+        }
+        .btn-danger {
+            background: var(--gradient-danger);
+            color: white;
+            box-shadow: var(--shadow-danger);
+        }
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(220, 38, 38, 0.5);
+        }
+        .btn-outline-light {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background: var(--blue-900);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+        .btn-primary:hover {
+            background: var(--blue-800);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Stats */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: var(--s-4);
+            max-width: 700px;
+            margin: var(--s-12) auto 0;
+        }
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-lg);
+            padding: var(--s-5) var(--s-3);
+            text-align: center;
+            transition: all var(--dur-fast);
+        }
+        .hero-stat:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-3xl);
+            font-weight: 600;
+            color: var(--amber-400);
+            line-height: 1;
+            margin-bottom: var(--s-1);
+        }
+        .hero-stat-label {
+            font-size: var(--fs-xs);
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+        }
+
+        /* =========================================================
+           SECTIONS
+           ========================================================= */
+        .section {
+            padding: var(--s-16) var(--s-5);
+            position: relative;
+        }
+        .section-container {
+            max-width: var(--container);
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--s-12);
+        }
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) var(--s-4);
+            background: var(--blue-50);
+            color: var(--blue-700);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+            border: 1px solid var(--blue-100);
+        }
+        [data-theme="dark"] .section-tag {
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--sky-300);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        .section-tag.danger {
+            background: var(--red-100);
+            color: var(--red-600);
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        [data-theme="dark"] .section-tag.danger {
+            background: rgba(220, 38, 38, 0.15);
+            color: #f87171;
+            border-color: rgba(220, 38, 38, 0.3);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-4);
+            color: var(--text-primary);
+        }
+        .section-subtitle {
+            font-size: var(--fs-md);
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--blue-500), var(--amber-400), var(--red-500), transparent);
+            margin: var(--s-5) auto;
+            width: 160px;
+            border-radius: 2px;
+        }
+
+        .bg-muted { background: var(--bg-muted); }
+
+        /* =========================================================
+           IMPORTANCE SECTION
+           ========================================================= */
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--s-8);
+            margin-bottom: var(--s-10);
+        }
+        .importance-card {
+            padding: var(--s-8);
+            border-radius: var(--r-xl);
+            background: var(--bg-surface);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-hairline);
+            transition: all var(--dur-base) var(--ease-out);
+        }
+        .importance-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+        .importance-icon {
+            width: 64px; height: 64px;
+            border-radius: var(--r-lg);
+            display: grid; place-items: center;
+            margin-bottom: var(--s-5);
+            font-size: var(--fs-xl);
+            color: white;
+        }
+        .importance-icon.danger { background: var(--gradient-danger); }
+        .importance-icon.primary { background: var(--gradient-royal); }
+        .importance-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            font-weight: 500;
+            margin-bottom: var(--s-4);
+            color: var(--text-primary);
+        }
+        .importance-list {
+            list-style: none;
+            margin-top: var(--s-4);
+        }
+        .importance-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-3);
+            padding: var(--s-3) 0;
+            border-bottom: 1px dashed var(--border-subtle);
+        }
+        .importance-list li:last-child { border-bottom: none; }
+        .importance-list li i {
+            color: var(--blue-500);
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+        .importance-list li strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+        .importance-list li span {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-10) var(--s-8);
+            text-align: center;
+            border: 1px solid var(--border-hairline);
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .quote-block > i.fa-quote-left {
+            font-size: var(--fs-3xl);
+            color: var(--blue-500);
+            opacity: 0.15;
+            margin-bottom: var(--s-3);
+        }
+        .quote-block h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: var(--s-3);
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        .quote-block p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: var(--fs-sm);
+        }
+
+        /* =========================================================
+           HOW TO REPORT
+           ========================================================= */
+        .report-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--s-5);
+        }
+        .report-card {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-hairline);
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .report-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: var(--gradient-royal);
+            transition: width var(--dur-fast);
+        }
+        .report-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--border-subtle);
+        }
+        .report-card:hover::before { width: 6px; }
+        .report-card-icon {
+            width: 52px; height: 52px;
+            border-radius: var(--r-md);
+            display: grid; place-items: center;
+            margin-bottom: var(--s-4);
+            font-size: var(--fs-lg);
+            color: white;
+        }
+        .report-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            margin-bottom: var(--s-3);
+            color: var(--text-primary);
+        }
+        .report-card ul {
+            list-style: none;
+            margin-bottom: var(--s-4);
+        }
+        .report-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-2);
+            padding: var(--s-1) 0;
+            font-size: var(--fs-sm);
+            color: var(--text-secondary);
+        }
+        .report-card ul li i {
+            color: var(--blue-500);
+            margin-top: 4px;
+            flex-shrink: 0;
+            font-size: var(--fs-xs);
+        }
+        .report-card .contact-info {
+            background: var(--bg-muted);
+            padding: var(--s-3) var(--s-4);
+            border-radius: var(--r-md);
+            margin-top: var(--s-3);
+            font-weight: 600;
+            color: var(--blue-700);
+            font-size: var(--fs-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+        }
+        [data-theme="dark"] .report-card .contact-info {
+            color: var(--sky-300);
+        }
+        .report-card .contact-info a {
+            color: var(--blue-700);
+            text-decoration: underline;
+        }
+        [data-theme="dark"] .report-card .contact-info a {
+            color: var(--sky-300);
+        }
+
+        /* =========================================================
+           EMERGENCY SECTION
+           ========================================================= */
+        .emergency-section {
+            background: var(--gradient-hero);
+            color: white;
+            padding: var(--s-16) var(--s-5);
+            position: relative;
+            overflow: hidden;
+        }
+        .emergency-section::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(220, 38, 38, 0.12) 0%, transparent 50%);
+            animation: emergencyBg 8s ease-in-out infinite;
+        }
+        @keyframes emergencyBg {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(5%, 5%); }
+        }
+        .emergency-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .emergency-header {
+            text-align: center;
+            margin-bottom: var(--s-10);
+        }
+        .emergency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) var(--s-4);
+            background: rgba(220, 38, 38, 0.2);
+            border: 1px solid rgba(220, 38, 38, 0.4);
+            color: #fca5a5;
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+            animation: pulseBadge 2s infinite;
+        }
+        @keyframes pulseBadge {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+            50% { box-shadow: 0 0 0 12px rgba(220, 38, 38, 0); }
+        }
+        .emergency-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-3);
+        }
+        .emergency-subtitle {
+            font-size: var(--fs-md);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--s-5);
+            margin-bottom: var(--s-10);
+        }
+        .emergency-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            text-align: center;
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .emergency-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(90deg, var(--red-500), var(--amber-400));
+        }
+        .emergency-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(220, 38, 38, 0.4);
+        }
+        .emergency-card-icon {
+            width: 64px; height: 64px;
+            margin: 0 auto var(--s-4);
+            border-radius: var(--r-lg);
+            background: var(--gradient-danger);
+            display: grid; place-items: center;
+            font-size: var(--fs-xl);
+            color: white;
+            animation: emergencyIconPulse 2s infinite;
+        }
+        @keyframes emergencyIconPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5); }
+            50% { box-shadow: 0 0 0 14px rgba(220, 38, 38, 0); }
+        }
+        .emergency-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            margin-bottom: var(--s-2);
+        }
+        .emergency-card .availability {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-1) var(--s-3);
+            background: rgba(16, 185, 129, 0.15);
+            color: #4ade80;
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            margin-bottom: var(--s-4);
+        }
+        .emergency-card .availability i {
+            font-size: 6px;
+        }
+        .emergency-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-2xl);
+            font-weight: 600;
+            color: var(--amber-400);
+            margin: var(--s-3) 0;
+            letter-spacing: 0.02em;
+        }
+        .emergency-number.small {
+            font-size: var(--fs-md);
+        }
+        .emergency-number a {
+            color: var(--amber-400);
+            transition: color var(--dur-fast);
+        }
+        .emergency-number a:hover { color: white; }
+        .emergency-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--fs-sm);
+            margin-bottom: var(--s-4);
+        }
+        .emergency-card .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Security Notice */
+        .security-notice {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-5);
+            flex-wrap: wrap;
+        }
+        .security-notice-icon {
+            width: 56px; height: 56px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--green-500), #059669);
+            display: grid; place-items: center;
+            font-size: var(--fs-xl);
+            color: white;
+            flex-shrink: 0;
+        }
+        .security-notice h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            margin-bottom: var(--s-2);
+        }
+        .security-notice p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--s-3);
+            font-size: var(--fs-sm);
+        }
+        .security-notice p strong { color: var(--amber-400); }
+        .security-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+        }
+        .security-feature {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: var(--fs-sm);
+        }
+        .security-feature i { color: var(--green-500); }
+
+        /* =========================================================
+           RISKS SECTION
+           ========================================================= */
+        .risks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--s-5);
+        }
+        .risk-card {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-hairline);
+            border-left: 5px solid;
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+        }
+        .risk-card:hover {
+            transform: translateY(-6px) translateX(4px);
+            box-shadow: var(--shadow-xl);
+        }
+        .risk-neglect { border-left-color: var(--yellow-500); }
+        .risk-sexual { border-left-color: var(--red-500); }
+        .risk-physical { border-left-color: var(--red-600); }
+        .risk-emotional { border-left-color: var(--purple-500); }
+        .risk-labor { border-left-color: var(--green-500); }
+        .risk-cultural { border-left-color: #7C3AED; }
+
+        .risk-header {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-3);
+        }
+        .risk-icon {
+            width: 48px; height: 48px;
+            border-radius: var(--r-md);
+            display: grid; place-items: center;
+            font-size: var(--fs-lg);
+            color: white;
+            flex-shrink: 0;
+        }
+        .risk-neglect .risk-icon { background: linear-gradient(135deg, var(--yellow-500), var(--amber-400)); }
+        .risk-sexual .risk-icon { background: linear-gradient(135deg, var(--red-500), #f87171); }
+        .risk-physical .risk-icon { background: linear-gradient(135deg, var(--red-600), var(--red-500)); }
+        .risk-emotional .risk-icon { background: linear-gradient(135deg, var(--purple-500), #a78bfa); }
+        .risk-labor .risk-icon { background: linear-gradient(135deg, var(--green-500), #059669); }
+        .risk-cultural .risk-icon { background: linear-gradient(135deg, #7C3AED, var(--purple-500)); }
+
+        .risk-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .risk-card p {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+            margin-bottom: var(--s-3);
+            line-height: 1.6;
+        }
+        .risk-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-1) var(--s-3);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+        }
+        .risk-neglect .risk-indicator { background: var(--yellow-100); color: #92400E; }
+        .risk-sexual .risk-indicator, .risk-physical .risk-indicator { background: var(--red-100); color: #991B1B; }
+        .risk-emotional .risk-indicator, .risk-cultural .risk-indicator { background: var(--purple-100); color: #5B21B6; }
+        .risk-labor .risk-indicator { background: var(--green-100); color: #065F46; }
+
+        /* =========================================================
+           STATISTICS
+           ========================================================= */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--s-5);
+            margin-bottom: var(--s-10);
+        }
+        .stat-card {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-6) var(--s-4);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-hairline);
+            transition: all var(--dur-base) var(--ease-out);
+        }
+        .stat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-4xl);
+            font-weight: 600;
+            background: var(--gradient-danger);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--s-2);
+        }
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: var(--fs-sm);
+            font-weight: 500;
+        }
+
+        /* Chart Card */
+        .chart-card {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-hairline);
+        }
+        .chart-card h3 {
+            font-family: var(--font-display);
+            text-align: center;
+            margin-bottom: var(--s-5);
+            font-size: var(--fs-lg);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .chart-wrapper {
+            position: relative;
+            height: 320px;
+        }
+
+        /* =========================================================
+           STRATEGY PILLARS
+           ========================================================= */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--s-6);
+        }
+        .pillar-card {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-8) var(--s-6);
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-hairline);
+            transition: all var(--dur-base) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: var(--gradient-royal);
+        }
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-subtle);
+            box-shadow: var(--shadow-xl);
+        }
+        .pillar-icon {
+            width: 72px; height: 72px;
+            margin: 0 auto var(--s-5);
+            border-radius: var(--r-lg);
+            display: grid; place-items: center;
+            font-size: var(--fs-2xl);
+            color: white;
+        }
+        .pillar-card:nth-child(1) .pillar-icon { background: var(--gradient-royal); }
+        .pillar-card:nth-child(2) .pillar-icon { background: var(--gradient-danger); }
+        .pillar-card:nth-child(3) .pillar-icon { background: linear-gradient(135deg, var(--green-500), #059669); }
+        .pillar-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            font-weight: 500;
+            margin-bottom: var(--s-3);
+            color: var(--text-primary);
+        }
+        .pillar-card p {
+            color: var(--text-secondary);
+            margin-bottom: var(--s-4);
+            font-size: var(--fs-sm);
+        }
+        .pillar-card ul {
+            list-style: none;
+            text-align: left;
+        }
+        .pillar-card ul li {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-2) 0;
+            font-size: var(--fs-sm);
+            color: var(--text-secondary);
+        }
+        .pillar-card ul li i { color: var(--blue-500); }
+
+        /* =========================================================
+           POST REPORTING FLOW
+           ========================================================= */
+        .flow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--s-5);
+            margin: var(--s-10) 0;
+        }
+        .flow-step {
+            background: var(--bg-surface);
+            border-radius: var(--r-xl);
+            padding: var(--s-5);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-hairline);
+            flex: 1;
+            min-width: 160px;
+            max-width: 200px;
+            position: relative;
+            transition: all var(--dur-fast);
+        }
+        .flow-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .flow-step::after {
+            content: '→';
+            position: absolute;
+            right: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: var(--fs-xl);
+            color: var(--blue-500);
+            font-weight: bold;
+        }
+        .flow-step:last-child::after { display: none; }
+        .flow-step-number {
+            width: 36px; height: 36px;
+            margin: 0 auto var(--s-3);
+            border-radius: 50%;
+            background: var(--gradient-royal);
+            color: white;
+            display: grid; place-items: center;
+            font-weight: 700;
+            font-size: var(--fs-base);
+        }
+        .flow-step h4 {
+            font-family: var(--font-display);
+            font-size: var(--fs-sm);
+            font-weight: 600;
+            margin-bottom: var(--s-1);
+            color: var(--text-primary);
+        }
+        .flow-step p {
+            font-size: var(--fs-xs);
+            color: var(--text-tertiary);
+        }
+
+        /* =========================================================
+           FOOTER — Identical to index.html
+           ========================================================= */
+        .footer {
+            background: var(--blue-950);
+            color: rgba(255,255,255,0.75);
+            padding: var(--s-16) 0 var(--s-8);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        .footer > * { position: relative; z-index: 1; }
+        .footer-container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-5);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: var(--s-10);
+            margin-bottom: var(--s-10);
+        }
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-4);
+            color: white;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .footer-brand .footer-logo-mark {
+            width: 38px; height: 38px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+            color: var(--amber-400);
+            display: grid; place-items: center;
+            font-size: 0.95rem;
+            box-shadow: var(--shadow-md);
+        }
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            color: var(--amber-300);
+            margin-bottom: var(--s-4);
+            line-height: 1.5;
+        }
+        .footer-brand > p {
+            font-size: var(--fs-sm);
+            line-height: 1.7;
+            margin-bottom: var(--s-5);
+            max-width: 360px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+            font-size: var(--fs-sm);
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: var(--fs-xs); }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-4);
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+        }
+        .footer-links a {
+            font-size: var(--fs-sm);
+            color: rgba(255,255,255,0.65);
+            transition: color var(--dur-fast);
+            font-weight: 500;
+        }
+        .footer-links a:hover { color: var(--amber-300); }
+
+        .footer-bottom {
+            padding-top: var(--s-6);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+            font-size: var(--fs-xs);
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-legal { display: flex; gap: var(--s-5); }
+        .footer-legal a { transition: color var(--dur-fast); }
+        .footer-legal a:hover { color: var(--amber-300); }
+
+        /* =========================================================
+           FLOATING EMERGENCY BUTTON
+           ========================================================= */
+        .emergency-float {
+            position: fixed;
+            bottom: var(--s-8);
+            right: var(--s-8);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: var(--s-3) var(--s-5);
+            background: var(--gradient-danger);
+            color: white;
+            border-radius: var(--r-full);
+            font-weight: 700;
+            font-size: var(--fs-sm);
+            box-shadow: var(--shadow-danger);
+            animation: emergencyFloatPulse 2.5s ease-in-out infinite;
+            transition: all var(--dur-fast);
+        }
+        .emergency-float:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 16px 40px rgba(220, 38, 38, 0.6);
+        }
+        @keyframes emergencyFloatPulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4), 0 0 0 0 rgba(220, 38, 38, 0.5); }
+            50% { box-shadow: 0 10px 30px rgba(220, 38, 38, 0.6), 0 0 0 16px rgba(220, 38, 38, 0); }
+        }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 1280px) {
+            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+        }
+        @media (max-width: 1024px) {
+            :root { --sidebar-w: 280px; }
+        }
+        @media (max-width: 900px) {
+            .sidebar { transform: translateX(-100%); box-shadow: none; }
+            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
+            .main-content { margin-left: 0; }
+            .mobile-toggle { display: flex; }
+            .emergency-banner {
+                flex-direction: column;
+                gap: var(--s-2);
+                padding: var(--s-3) var(--s-4);
+                font-size: var(--fs-xs);
+            }
+            .flow-step::after {
+                content: '↓';
+                position: static;
+                display: block;
+                margin-top: var(--s-2);
+            }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+            .footer-brand { grid-column: 1 / -1; }
+            .emergency-float {
+                bottom: var(--s-4);
+                right: var(--s-4);
+                padding: var(--s-2) var(--s-4);
+            }
+            .emergency-float span { display: none; }
+        }
+        @media (max-width: 640px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { flex-wrap: wrap; justify-content: center; }
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+            .orb { animation: none; }
+        }
+
+        @media print {
+            .sidebar, .mobile-toggle, .ambient-bg, .emergency-float, .emergency-banner { display: none !important; }
+            .main-content { margin-left: 0; }
+            body { background: white !important; color: black !important; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Floating Emergency Button -->
+    <button onclick="document.getElementById('emergency-section').scrollIntoView({behavior: 'smooth'})" class="emergency-float" aria-label="Report abuse">
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        <span>Report Abuse</span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                <div class="sidebar-logo-text">
+                    <span class="sidebar-logo-title">KE0274 PEFA</span>
+                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+                        <a href="studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+                        <a href="studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+                        <a href="studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Resources</div>
+                <div class="nav-item">
+                    <a href="learningresources/learningresources.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="newsandupdates/newsandupdates.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">More</div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+                        <a href="media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="achievments/achievment.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="inventory/inventory.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="chatsupport/chat-support.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="childprotection.html" class="nav-link active" aria-current="page">
+                        <div class="nav-link-left"><i class="fas fa-shield-alt nav-icon" aria-hidden="true"></i><span>Child Protection</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+
+        <!-- Emergency Banner (Sticky) -->
+        <div class="emergency-banner" role="alert">
+            <div class="emergency-banner-item">
+                <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                <span>24/7 Hotline: <a href="tel:0800211112">0800 211 112</a></span>
+            </div>
+            <div class="emergency-banner-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>Email: <a href="mailto:kenyaReportAbuse@compassion.com">kenyaReportAbuse@compassion.com</a></span>
+            </div>
+            <div class="emergency-banner-item">
+                <i class="fas fa-globe" aria-hidden="true"></i>
+                <a href="https://cintl.us/reportabuse" target="_blank" rel="noopener noreferrer">Online Report →</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span>Compassion Kenya Child Protection Strategy</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Every Child Must Be<br>
+                    <span class="highlight-love">Loved,</span> 
+                    <span class="highlight-known">Known</span> 
+                    <span class="highlight-protected">& Protected</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Releasing children from poverty through <strong>holistic protection</strong> and development. Every child deserves safety, dignity, and the chance to reach their God-given potential.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#emergency-section" class="btn btn-danger">
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        Report Abuse Now
+                    </a>
+                    <a href="#importance" class="btn btn-outline-light">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="49">0</div>
+                        <div class="hero-stat-label">% of Kenya under 14</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="9">0</div>
+                        <div class="hero-stat-label">Focus Areas</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="100">0</div>
+                        <div class="hero-stat-label">% Commitment</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">24/7</div>
+                        <div class="hero-stat-label">Protection</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Importance Section -->
+        <section id="importance" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag danger">
+                        <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                        Talking Guide
+                    </span>
+                    <h2 class="section-title">Importance of Reporting</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Understanding why reporting child abuse is critical for protection, healing, and prevention</p>
+                </div>
+
+                <div class="importance-grid">
+                    <div class="importance-card">
+                        <div class="importance-icon danger">
+                            <i class="fas fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                        <h3>Why Report?</h3>
+                        <ul class="importance-list">
+                            <li>
+                                <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Access to Professional Resources</strong>
+                                    <span>Compassion has professionals, legal aid, and support services available to victims that may not otherwise have access.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Save a Child from Abuse</strong>
+                                    <span>Reporting can save a child from continued abuse and prevent further harm to them and others.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="importance-card">
+                        <div class="importance-icon primary">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <h3>How Does Reporting Help?</h3>
+                        <ul class="importance-list">
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <strong>1. Recognition & Validation</strong>
+                                    <span>Reporting recognizes that something wrong happened. This is vital for a victim's recovery journey.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <strong>2. Access to Resources</strong>
+                                    <span>It makes resources available to victims and their families that they otherwise would not have.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <strong>3. Prevention & Safety</strong>
+                                    <span>It helps prevent future abuse and creates safety for children in the community.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quote-block">
+                    <i class="fas fa-quote-left" aria-hidden="true"></i>
+                    <h3>"Every report matters. Your voice can be the difference between continued suffering and healing for a child."</h3>
+                    <p>Reporting is not just about documenting abuse—it's about taking action to protect, heal, and restore.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Report Section -->
+        <section id="how-to-report" class="section bg-muted">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                        Take Action
+                    </span>
+                    <h2 class="section-title">How to Report</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Multiple safe, confidential ways to report child abuse. Choose the method that works best for you.</p>
+                </div>
+
+                <div class="report-methods">
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: var(--gradient-royal);">
+                            <i class="fas fa-laptop" aria-hidden="true"></i>
+                        </div>
+                        <h3>Resolver Website</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Fill out a form to complete your report</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Anonymous reporting available</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Secure and confidential</li>
+                        </ul>
+                        <div class="contact-info">
+                            <a href="https://cintl.us/reportabuse" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Access Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: linear-gradient(135deg, var(--purple-500), #7C3AED);">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Direct to Compassion Kenya</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Report created on Resolver</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Confirmation of submission</li>
+                        </ul>
+                        <div class="contact-info">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> 
+                            <a href="mailto:kenyaReportAbuse@compassion.com">kenyaReportAbuse@compassion.com</a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: var(--gradient-danger);">
+                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                        </div>
+                        <h3>Hotline</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Home or cell phone access</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Trained staff documentation</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Available 24/7</li>
+                        </ul>
+                        <div class="contact-info">
+                            <i class="fas fa-phone" aria-hidden="true"></i> 
+                            <a href="tel:0800211112">0800 211 112</a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: linear-gradient(135deg, var(--green-500), #059669);">
+                            <i class="fas fa-qrcode" aria-hidden="true"></i>
+                        </div>
+                        <h3>QR Code</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Scan posters with smartphone</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Direct to Resolver system</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Quick and easy access</li>
+                        </ul>
+                        <div class="contact-info">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i> Find on our posters
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: linear-gradient(135deg, var(--amber-500), var(--amber-600));">
+                            <i class="fas fa-user-shield" aria-hidden="true"></i>
+                        </div>
+                        <h3>Child Protection Officer</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Report in person, email, or phone</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Methods vary by location</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Officers upload to Resolver</li>
+                        </ul>
+                        <div class="contact-info">
+                            <i class="fas fa-user" aria-hidden="true"></i> Contact your local CPO
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-card-icon" style="background: linear-gradient(135deg, #EC4899, #DB2777);">
+                            <i class="fas fa-church" aria-hidden="true"></i>
+                        </div>
+                        <h3>FCP Staff</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Report to church partnership staff</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Follow-up with victim/caregiver</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Tailored intervention</li>
+                        </ul>
+                        <div class="contact-info">
+                            <i class="fas fa-hands-helping" aria-hidden="true"></i> Reach out to FCP staff
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts Section -->
+        <section id="emergency-section" class="emergency-section">
+            <div class="emergency-container">
+                <div class="emergency-header">
+                    <div class="emergency-badge">
+                        <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                        Emergency Response
+                    </div>
+                    <h2 class="emergency-title">Immediate Help Available</h2>
+                    <p class="emergency-subtitle">If a child is in immediate danger, contact these emergency services right away. Every second counts.</p>
+                </div>
+
+                <div class="emergency-grid">
+                    <div class="emergency-card">
+                        <div class="emergency-card-icon">
+                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                        </div>
+                        <h3>24/7 Child Protection Hotline</h3>
+                        <div class="availability">
+                            <i class="fas fa-circle" aria-hidden="true"></i> Available Now
+                        </div>
+                        <div class="emergency-number">
+                            <a href="tel:0800211112">0800 211 112</a>
+                        </div>
+                        <p>Trained staff ready to take your report and provide immediate guidance.</p>
+                        <a href="tel:0800211112" class="btn btn-danger">
+                            <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+                        </a>
+                    </div>
+
+                    <div class="emergency-card">
+                        <div class="emergency-card-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <h3>Emergency Email</h3>
+                        <div class="availability">
+                            <i class="fas fa-circle" aria-hidden="true"></i> Monitored 24/7
+                        </div>
+                        <div class="emergency-number small">
+                            <a href="mailto:kenyaReportAbuse@compassion.com">kenyaReportAbuse@compassion.com</a>
+                        </div>
+                        <p>Send detailed reports with confirmation of submission.</p>
+                        <a href="mailto:kenyaReportAbuse@compassion.com" class="btn btn-primary" style="background: var(--blue-600);">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Send Email
+                        </a>
+                    </div>
+
+                    <div class="emergency-card">
+                        <div class="emergency-card-icon">
+                            <i class="fas fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <h3>Online Reporting Portal</h3>
+                        <div class="availability">
+                            <i class="fas fa-circle" aria-hidden="true"></i> Anonymous Option
+                        </div>
+                        <div class="emergency-number small">
+                            <a href="https://cintl.us/reportabuse" target="_blank" rel="noopener noreferrer">cintl.us/reportabuse</a>
+                        </div>
+                        <p>Secure online form with anonymous reporting capability.</p>
+                        <a href="https://cintl.us/reportabuse" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: var(--blue-600);">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Access Portal
+                        </a>
+                    </div>
+                </div>
+
+                <div class="security-notice">
+                    <div class="security-notice-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3>Your Safety is Guaranteed</h3>
+                        <p>All reports are treated with <strong>equal urgency</strong> regardless of method. Your identity is protected, and we have a zero-tolerance policy for retaliation.</p>
+                        <div class="security-features">
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Confidential</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Secure</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Anonymous Option</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protection Risks Section -->
+        <section id="risks" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag danger">
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        Protection Focus
+                    </span>
+                    <h2 class="section-title">Main Child Protection Risks</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Our strategy identifies and addresses the most common risks facing children in our communities</p>
+                </div>
+
+                <div class="risks-grid">
+                    <div class="risk-card risk-neglect">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-home" aria-hidden="true"></i></div>
+                            <h3>Neglect</h3>
+                        </div>
+                        <p>Children not receiving basic needs like food, care, protection, and education. The most widespread form of child endangerment.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                            Most common risk
+                        </span>
+                    </div>
+
+                    <div class="risk-card risk-sexual">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                            <h3>Sexual Abuse</h3>
+                        </div>
+                        <p>Includes exploitation, harassment, and violence against children. A severe violation requiring immediate intervention.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            20.6% of cases
+                        </span>
+                    </div>
+
+                    <div class="risk-card risk-physical">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-hand-paper" aria-hidden="true"></i></div>
+                            <h3>Physical Abuse</h3>
+                        </div>
+                        <p>Beatings and physical harm by caregivers or others in the community. Leaves both visible and invisible scars.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            13.5% of cases
+                        </span>
+                    </div>
+
+                    <div class="risk-card risk-emotional">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                            <h3>Emotional Abuse</h3>
+                        </div>
+                        <p>Shouting, humiliation, rejection, or psychological harm to children. Often overlooked but deeply damaging.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-heart-broken" aria-hidden="true"></i>
+                            Long-term impact
+                        </span>
+                    </div>
+
+                    <div class="risk-card risk-labor">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+                            <h3>Child Labour</h3>
+                        </div>
+                        <p>Children forced to work instead of going to school and playing. Robs them of their childhood and future.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            1.3M affected
+                        </span>
+                    </div>
+
+                    <div class="risk-card risk-cultural">
+                        <div class="risk-header">
+                            <div class="risk-icon"><i class="fas fa-ring" aria-hidden="true"></i></div>
+                            <h3>Early Marriage & FGM</h3>
+                        </div>
+                        <p>Harmful cultural practices affecting girls' development and safety. Violates their fundamental rights.</p>
+                        <span class="risk-indicator">
+                            <i class="fas fa-female" aria-hidden="true"></i>
+                            Girls at risk
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="context" class="section bg-muted">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag danger">
+                        <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        The Reality
+                    </span>
+                    <h2 class="section-title">Children in Kenya Today</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Understanding the context drives our strategic response to protect vulnerable children</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="49">0</div>
+                        <div class="stat-label">% of population under 14 years</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="38.8" data-decimal="true">0</div>
+                        <div class="stat-label">% females experienced violence before 18</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="51.9" data-decimal="true">0</div>
+                        <div class="stat-label">% males experienced violence before 18</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1.3M</div>
+                        <div class="stat-label">Children in child labor</div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Key Challenges Affecting Children</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="challengesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Pillars Section -->
+        <section id="strategy" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        Our Approach
+                    </span>
+                    <h2 class="section-title">Three Strategic Pillars</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Comprehensive child protection through prevention, response, and empowerment</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Prevention</h3>
+                        <p>Stopping abuse before it happens through education and awareness</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Education programs</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Awareness campaigns</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Community training</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-hand-holding-medical" aria-hidden="true"></i>
+                        </div>
+                        <h3>Protection & Response</h3>
+                        <p>Acting quickly when abuse is reported to protect the child</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> 24/7 response system</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Immediate protection</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Recovery support</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Empowerment</h3>
+                        <p>Helping children, caregivers, and churches understand their role</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Skill building</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Capacity development</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Community ownership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post Reporting Section -->
+        <section class="section bg-muted">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                        What Happens Next
+                    </span>
+                    <h2 class="section-title">Post-Reporting Protocol</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Understanding the process after you submit a report</p>
+                </div>
+
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-number">1</div>
+                        <h4>Submit Report</h4>
+                        <p>Via any method</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">2</div>
+                        <h4>Confirmation</h4>
+                        <p>Receive acknowledgment</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">3</div>
+                        <h4>Investigation</h4>
+                        <p>Case review</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">4</div>
+                        <h4>Intervention</h4>
+                        <p>Support provided</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">5</div>
+                        <h4>Case Closed</h4>
+                        <p>Summary provided</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                            <span>KE0274 PEFA Mfangano CYDC</span>
+                        </div>
+                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+                        <address class="footer-contact">
+                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
+                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                        </address>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="studentleadership/leaders.html">Leadership</a></li>
+                            <li><a href="academics/dreamachiever.html">Academics</a></li>
+                            <li><a href="achievments/achievment.html">Achievements</a></li>
+                            <li><a href="newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="learningresources/learningresources.html">Learning Resources</a></li>
+                            <li><a href="studentportal/timetable.html">Student Portal</a></li>
+                            <li><a href="media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
+                            <li><a href="media-gallery/virtual-tour.html">Virtual Tour</a></li>
+                            <li><a href="childprotection.html">Child Protection</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Protection</h4>
+                        <ul class="footer-links">
+                            <li><a href="tel:0800211112"><i class="fas fa-phone" style="width:14px;margin-right:6px;"></i> 0800 211 112</a></li>
+                            <li><a href="mailto:kenyaReportAbuse@compassion.com"><i class="fas fa-envelope" style="width:14px;margin-right:6px;"></i> Report Abuse</a></li>
+                            <li><a href="https://cintl.us/reportabuse" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" style="width:14px;margin-right:6px;"></i> Online Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Child Protection Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Safeguarding</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const icon = themeToggle.querySelector('i');
+            const label = themeToggle.querySelector('span');
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // ===== MOBILE SIDEBAR =====
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+        mobileToggle.addEventListener('click', () => {
+            const isActive = sidebar.classList.toggle('active');
+            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
+            mobileToggle.setAttribute('aria-expanded', String(isActive));
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
+                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+                sidebar.classList.remove('active');
+                mobileToggle.querySelector('i').className = 'fas fa-bars';
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // ===== DROPDOWN TOGGLE =====
+        window.toggleDropdown = function(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            const navItem = element.closest('.nav-item');
+            const isActive = navItem.classList.toggle('active');
+            element.setAttribute('aria-expanded', String(isActive));
+            document.querySelectorAll('.nav-item').forEach(item => {
+                if (item !== navItem) {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }
+            });
+        };
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        // ===== KEYBOARD: ESCAPE =====
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    mobileToggle.focus();
+                }
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
+                });
+            }
+        });
+
+        // ===== RESIZE HANDLER =====
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 900) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            }, 200);
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== COUNTER ANIMATION =====
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => animateCounter(counter));
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.hero-stats, .stats-grid').forEach(el => {
+            counterObserver.observe(el);
+        });
+
+        function animateCounter(element) {
+            const target = parseFloat(element.getAttribute('data-target'));
+            const isDecimal = element.hasAttribute('data-decimal');
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    if (isDecimal) {
+                        element.textContent = target.toFixed(1) + '%';
+                    } else if (target === 100) {
+                        element.textContent = target + '%';
+                    } else {
+                        element.textContent = Math.floor(target);
+                    }
+                    clearInterval(timer);
+                } else {
+                    if (isDecimal) {
+                        element.textContent = current.toFixed(1);
+                    } else {
+                        element.textContent = Math.floor(current);
+                    }
+                }
+            }, 16);
+        }
+
+        // ===== CHART =====
+        const ctx = document.getElementById('challengesChart');
+        if (ctx) {
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Neglect', 'Sexual Abuse', 'Physical Abuse', 'Child Labor', 'Emotional Abuse'],
+                    datasets: [{
+                        label: 'Percentage',
+                        data: [27.0, 20.6, 13.5, 11.3, 8.5],
+                        backgroundColor: [
+                            'rgba(245, 158, 11, 0.85)',
+                            'rgba(239, 68, 68, 0.85)',
+                            'rgba(220, 38, 38, 0.85)',
+                            'rgba(16, 185, 129, 0.85)',
+                            'rgba(139, 92, 246, 0.85)'
+                        ],
+                        borderColor: [
+                            'rgb(245, 158, 11)',
+                            'rgb(239, 68, 68)',
+                            'rgb(220, 38, 38)',
+                            'rgb(16, 185, 129)',
+                            'rgb(139, 92, 246)'
+                        ],
+                        borderWidth: 2,
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) { return value + '%'; },
+                                font: { family: 'Inter' },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--text-tertiary').trim() || '#78716C'
+                            },
+                            grid: { color: 'rgba(0,0,0,0.05)' }
+                        },
+                        x: {
+                            ticks: { 
+                                font: { family: 'Inter' },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--text-secondary').trim() || '#44403C'
+                            },
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

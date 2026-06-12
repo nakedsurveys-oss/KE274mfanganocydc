@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Access free educational resources, revision papers, e-learning links, and study materials for participants at KE0274 PEFA Mfangano Child Development Centre.">
+    <meta name="theme-color" content="#0B1B33">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* =========================================================
+           DESIGN TOKENS — Identical to index.html
+           ========================================================= */
+        :root {
+            --blue-950: #040B1A;
+            --blue-900: #0B1B33;
+            --blue-850: #0F2544;
+            --blue-800: #132E55;
+            --blue-700: #1A3F73;
+            --blue-600: #1E4FD8;
+            --blue-500: #2563EB;
+            --blue-400: #3B82F6;
+            --blue-300: #60A5FA;
+            --blue-200: #93C5FD;
+            --blue-100: #BFDBFE;
+            --blue-50:  #EFF6FF;
+            --sky-500:  #0EA5E9;
+            --sky-400:  #38BDF8;
+            --sky-300:  #7DD3FC;
+            --sky-200:  #BAE6FD;
+            --sky-100:  #E0F2FE;
+            --amber-600: #D97706;
+            --amber-500: #F59E0B;
+            --amber-400: #FBBF24;
+            --amber-300: #FCD34D;
+            --amber-100: #FEF3C7;
+            --forest-600: #1e6b3a;
+            --forest-500: #2d8a4e;
+            --terra-500: #a8553c;
+            --stone-950: #0C0A09;
+            --stone-900: #1C1917;
+            --stone-800: #292524;
+            --stone-700: #44403C;
+            --stone-600: #57534E;
+            --stone-500: #78716C;
+            --stone-400: #A8A29E;
+            --stone-300: #D6D3D1;
+            --stone-200: #E7E5E4;
+            --stone-100: #F5F5F4;
+            --stone-50:  #FAFAF9;
+            --ivory:    #FDFCF8;
+            --cream:    #FAF7F0;
+            --pearl:    #F8F6F1;
+
+            --bg-page:       var(--ivory);
+            --bg-surface:    #ffffff;
+            --bg-elevated:   #ffffff;
+            --bg-muted:      var(--pearl);
+            --bg-inverse:    var(--blue-900);
+
+            --text-primary:   var(--blue-950);
+            --text-secondary: var(--stone-700);
+            --text-tertiary:  var(--stone-500);
+            --text-inverse:   var(--ivory);
+            --text-accent:    var(--blue-600);
+
+            --border-hairline: rgba(12, 27, 51, 0.06);
+            --border-subtle:   rgba(12, 27, 51, 0.10);
+            --border-default:  rgba(12, 27, 51, 0.16);
+            --border-strong:   rgba(12, 27, 51, 0.24);
+
+            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+
+            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+            --fs-xs:   0.75rem;
+            --fs-sm:   0.875rem;
+            --fs-base: 1rem;
+            --fs-md:   1.0625rem;
+            --fs-lg:   1.125rem;
+            --fs-xl:   1.25rem;
+            --fs-2xl:  1.5rem;
+            --fs-3xl:  1.875rem;
+            --fs-4xl:  2.25rem;
+            --fs-5xl:  3rem;
+            --fs-6xl:  3.75rem;
+            --fs-7xl:  4.5rem;
+            --fs-8xl:  5.5rem;
+
+            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+            --s-32: 8rem;   --s-40: 10rem;
+
+            --r-sm: 8px;
+            --r-md: 12px;
+            --r-lg: 16px;
+            --r-xl: 24px;
+            --r-2xl: 32px;
+            --r-3xl: 40px;
+            --r-full: 9999px;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+            --dur-fast: 200ms;
+            --dur-base: 360ms;
+            --dur-slow: 640ms;
+            --dur-slower: 1000ms;
+
+            --sidebar-w: 300px;
+            --container: 1320px;
+            --container-wide: 1520px;
+            --container-narrow: 900px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page:     #050B16;
+            --bg-surface:  #0B1526;
+            --bg-elevated: #111E36;
+            --bg-muted:    #0A1322;
+            --bg-inverse:  var(--ivory);
+
+            --text-primary:   #F5F7FA;
+            --text-secondary: #B8C5D9;
+            --text-tertiary:  #7A8BA3;
+            --text-inverse:   var(--blue-950);
+            --text-accent:    var(--sky-400);
+
+            --border-hairline: rgba(255,255,255,0.05);
+            --border-subtle:   rgba(255,255,255,0.08);
+            --border-default:  rgba(255,255,255,0.14);
+            --border-strong:   rgba(255,255,255,0.22);
+
+            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+        body {
+            font-family: var(--font-body);
+            font-size: var(--fs-base);
+            line-height: 1.65;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        input { font-family: inherit; }
+        ::selection { background: var(--blue-600); color: white; }
+
+        :focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: 3px;
+            border-radius: var(--r-sm);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px; left: var(--s-4);
+            background: var(--blue-900);
+            color: white;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--r-md);
+            font-weight: 600;
+            font-size: var(--fs-sm);
+            z-index: 10000;
+            transition: top var(--dur-fast);
+        }
+        .skip-link:focus { top: var(--s-4); }
+
+        /* =========================================================
+           AMBIENT BACKGROUND
+           ========================================================= */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.7;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            animation: orbFloat 24s ease-in-out infinite;
+            will-change: transform;
+        }
+        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
+        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
+        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.3; animation-delay: -16s; }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -30px) scale(1.08); }
+            66% { transform: translate(-30px, 40px) scale(0.95); }
+        }
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.025;
+            mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        /* =========================================================
+           SIDEBAR — Identical to index.html
+           ========================================================= */
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0;
+            height: 100vh;
+            width: var(--sidebar-w);
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-right: 1px solid var(--border-hairline);
+            padding: var(--s-7) var(--s-5);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--dur-base) var(--ease-out);
+            overflow: hidden;
+        }
+        [data-theme="dark"] .sidebar {
+            background: rgba(11, 21, 38, 0.78);
+            border-right: 1px solid var(--border-subtle);
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .sidebar-header {
+            padding-bottom: var(--s-6);
+            margin-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            transition: opacity var(--dur-fast);
+        }
+        .sidebar-logo:hover { opacity: 0.8; }
+        .sidebar-logo-mark {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar-logo-mark::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
+        }
+        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
+        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-6);
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-default) transparent;
+            padding-right: 2px;
+        }
+        .sidebar-nav::-webkit-scrollbar { width: 4px; }
+        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+
+        .nav-section-title {
+            color: var(--text-tertiary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: var(--s-3);
+            padding-left: var(--s-3);
+        }
+        .nav-item { position: relative; }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--s-3);
+            padding: 10px var(--s-3);
+            color: var(--text-secondary);
+            border-radius: var(--r-md);
+            transition: all var(--dur-fast) var(--ease-out);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
+        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
+        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
+        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
+        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
+        .nav-link.active i.nav-icon { opacity: 1; }
+        .dropdown-arrow {
+            font-size: 0.65rem;
+            transition: transform var(--dur-fast) var(--ease-out);
+            color: var(--text-tertiary);
+        }
+        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+
+        .dropdown {
+            margin-top: var(--s-1);
+            margin-left: var(--s-7);
+            padding-left: var(--s-4);
+            border-left: 1px solid var(--border-subtle);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--dur-base) var(--ease-out);
+        }
+        .nav-item.active .dropdown { max-height: 400px; }
+        .dropdown-link {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 7px var(--s-3);
+            color: var(--text-tertiary);
+            font-size: 0.825rem;
+            font-weight: 500;
+            border-radius: var(--r-sm);
+            transition: all var(--dur-fast);
+        }
+        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
+        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
+        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
+        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
+        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: var(--s-5);
+            border-top: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+        }
+        .theme-toggle {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-weight: 600;
+            transition: all var(--dur-fast);
+        }
+        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: var(--s-4); left: var(--s-4);
+            z-index: 1001;
+            width: 48px; height: 48px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md);
+            color: var(--blue-900);
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
+
+        /* =========================================================
+           MAIN CONTENT
+           ========================================================= */
+        .main-content {
+            margin-left: var(--sidebar-w);
+            min-height: 100vh;
+            position: relative;
+            z-index: 2;
+            transition: margin-left var(--dur-base) var(--ease-out);
+        }
+
+        /* =========================================================
+           HERO — Cinematic with integrated search
+           ========================================================= */
+        .page-hero {
+            position: relative;
+            padding: var(--s-32) var(--s-12) var(--s-20);
+            overflow: hidden;
+            color: white;
+            isolation: isolate;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -3;
+        }
+        .hero-bg img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center 35%;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(4, 11, 26, 0.94) 0%, rgba(11, 27, 51, 0.82) 50%, rgba(19, 46, 85, 0.72) 100%),
+                linear-gradient(180deg, transparent 40%, rgba(4, 11, 26, 0.88) 100%);
+            z-index: 1;
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.25) 0%, transparent 50%);
+            z-index: 2;
+        }
+        .hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.06;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 3;
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-2);
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--s-8);
+            backdrop-filter: blur(12px);
+            animation: heroFadeIn 1s var(--ease-out) both;
+        }
+        .hero-breadcrumb i { color: var(--amber-400); font-size: 0.7rem; }
+        .hero-breadcrumb .sep { opacity: 0.5; }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: 8px 16px;
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: var(--r-full);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--s-8);
+            backdrop-filter: blur(12px);
+            animation: heroFadeIn 1s var(--ease-out) 0.2s both;
+        }
+        .hero-eyebrow .pulse {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--amber-400);
+            box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+            animation: pulseRing 2.4s ease-out infinite;
+        }
+        @keyframes pulseRing {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, var(--fs-7xl));
+            font-weight: 400;
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--s-6);
+            color: white;
+            font-variation-settings: "opsz" 144;
+            animation: heroFadeIn 1.2s var(--ease-out) 0.3s both;
+        }
+        .hero-title .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--amber-300);
+            letter-spacing: -0.02em;
+        }
+        .hero-title .divider {
+            display: block;
+            width: 80px; height: 2px;
+            background: linear-gradient(90deg, var(--amber-400), transparent);
+            margin: var(--s-5) auto;
+            border-radius: 1px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.4vw, var(--fs-lg));
+            color: rgba(255, 255, 255, 0.78);
+            max-width: 640px;
+            line-height: 1.7;
+            margin: 0 auto var(--s-10);
+            font-weight: 400;
+            animation: heroFadeIn 1s var(--ease-out) 0.5s both;
+        }
+
+        /* Integrated Search */
+        .hero-search {
+            max-width: 580px;
+            margin: 0 auto;
+            position: relative;
+            animation: heroFadeIn 1s var(--ease-out) 0.6s both;
+        }
+        .search-input {
+            width: 100%;
+            padding: 18px 24px 18px 56px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: var(--r-full);
+            color: white;
+            font-size: 0.95rem;
+            transition: all var(--dur-fast);
+            box-shadow: var(--shadow-xl), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .search-input::placeholder { color: rgba(255, 255, 255, 0.55); }
+        .search-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--amber-400);
+            box-shadow: var(--shadow-2xl), 0 0 0 4px rgba(251, 191, 36, 0.15);
+        }
+        .search-icon {
+            position: absolute;
+            left: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            pointer-events: none;
+        }
+
+        @keyframes heroFadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* =========================================================
+           FILTER STRIP — Contained pill bar
+           ========================================================= */
+        .filter-strip {
+            position: relative;
+            z-index: 10;
+            margin-top: calc(-1 * var(--s-8));
+            margin-bottom: var(--s-16);
+            padding: 0 var(--s-8);
+        }
+        .filter-strip-inner {
+            max-width: var(--container);
+            margin: 0 auto;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-full);
+            padding: var(--s-2);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            gap: var(--s-1);
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .filter-strip-inner::-webkit-scrollbar { display: none; }
+        .filter-tab {
+            padding: 10px 18px;
+            background: transparent;
+            border: none;
+            border-radius: var(--r-full);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.825rem;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            transition: all var(--dur-fast) var(--ease-out);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .filter-tab:hover { color: var(--text-primary); background: var(--bg-muted); }
+        .filter-tab.active {
+            background: var(--blue-900);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+        [data-theme="dark"] .filter-tab.active {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            box-shadow: var(--shadow-blue);
+        }
+        .filter-tab i { font-size: 0.75rem; }
+
+        /* =========================================================
+           SECTION CONTAINERS — Varied layouts to break boredom
+           ========================================================= */
+        .container {
+            width: 100%;
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+            position: relative;
+        }
+        .container-narrow {
+            width: 100%;
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+            position: relative;
+        }
+
+        .section {
+            padding: var(--s-20) 0;
+            position: relative;
+        }
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: var(--s-5);
+        }
+        [data-theme="dark"] .section-eyebrow { color: var(--sky-400); }
+        .section-eyebrow::before {
+            content: '';
+            width: 28px; height: 1px;
+            background: currentColor;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, var(--fs-4xl));
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: var(--s-4);
+            font-variation-settings: "opsz" 144;
+        }
+        .section-title .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--blue-600);
+        }
+        [data-theme="dark"] .section-title .italic { color: var(--sky-400); }
+        .section-lede {
+            font-size: var(--fs-md);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-width: 640px;
+        }
+
+        /* Category header */
+        .category-header {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-5);
+            margin-bottom: var(--s-10);
+            padding-bottom: var(--s-6);
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .category-icon {
+            width: 56px; height: 56px;
+            border-radius: var(--r-lg);
+            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
+            color: var(--blue-700);
+            display: grid; place-items: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-inner);
+        }
+        [data-theme="dark"] .category-icon {
+            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
+            color: var(--sky-400);
+        }
+        .category-title {
+            font-family: var(--font-display);
+            font-size: var(--fs-2xl);
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.015em;
+            margin-bottom: 4px;
+        }
+        .category-desc {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* =========================================================
+           BOOK CARDS — Refined editorial design
+           ========================================================= */
+        .books-grid {
+            display: grid;
+            gap: var(--s-6);
+        }
+        /* Pattern A: Standard 3-col */
+        .books-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+        /* Pattern B: Asymmetric 2+1 (featured large + 2 smaller) */
+        .books-grid.grid-featured {
+            grid-template-columns: 1.4fr 1fr;
+            grid-template-rows: auto auto;
+        }
+        .books-grid.grid-featured .book-card:first-child {
+            grid-row: 1 / 3;
+        }
+        /* Pattern C: Bento (1 wide + 2 stacked) */
+        .books-grid.grid-bento {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+        .books-grid.grid-bento .book-card:first-child {
+            grid-column: 1 / -1;
+        }
+        /* Pattern D: Horizontal list cards */
+        .books-grid.grid-list {
+            grid-template-columns: 1fr;
+        }
+        .books-grid.grid-list .book-card {
+            flex-direction: row;
+            align-items: stretch;
+        }
+        .books-grid.grid-list .book-cover {
+            width: 180px;
+            min-height: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .book-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            transition: all var(--dur-base) var(--ease-out);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--card-accent, var(--gradient-royal));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--dur-slow) var(--ease-out);
+            z-index: 2;
+        }
+        .book-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--border-default);
+        }
+        .book-card:hover::before { transform: scaleX(1); }
+
+        /* Unique accent per card via nth-child in parent */
+        .book-card:nth-child(1) { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
+        .book-card:nth-child(2) { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
+        .book-card:nth-child(3) { --card-accent: linear-gradient(135deg, var(--forest-500), var(--sky-500)); }
+
+        /* Book cover */
+        .book-cover {
+            position: relative;
+            height: 160px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            background: var(--card-accent, var(--gradient-royal));
+        }
+        .book-cover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+        }
+        .book-cover::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.25) 100%);
+        }
+        .book-cover i {
+            z-index: 2;
+            transition: transform var(--dur-slow) var(--ease-out);
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+        }
+        .book-card:hover .book-cover i {
+            transform: scale(1.1) rotate(-3deg);
+        }
+        .book-badge {
+            position: absolute;
+            top: var(--s-4); right: var(--s-4);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            color: var(--blue-900);
+            padding: 5px 12px;
+            border-radius: var(--r-full);
+            font-family: var(--font-body);
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            z-index: 3;
+            box-shadow: var(--shadow-md);
+        }
+        .book-badge.new {
+            background: var(--amber-500);
+            color: var(--blue-950);
+        }
+
+        /* Book content */
+        .book-content {
+            padding: var(--s-6);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .book-title {
+            font-family: var(--font-display);
+            font-size: var(--fs-lg);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+        .book-author {
+            font-size: 0.825rem;
+            color: var(--amber-600);
+            font-style: italic;
+            margin-bottom: var(--s-3);
+            font-weight: 500;
+        }
+        [data-theme="dark"] .book-author { color: var(--amber-400); }
+        .book-description {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.7;
+            margin-bottom: var(--s-4);
+            flex-grow: 1;
+        }
+
+        /* Book footer */
+        .book-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--s-4);
+            border-top: 1px solid var(--border-hairline);
+            margin-top: auto;
+            gap: var(--s-3);
+        }
+        .book-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.8rem;
+            color: var(--amber-600);
+            font-weight: 600;
+            font-family: var(--font-mono);
+        }
+        [data-theme="dark"] .book-rating { color: var(--amber-400); }
+        .book-rating i { color: var(--amber-500); font-size: 0.75rem; }
+        .book-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--blue-600);
+            font-weight: 600;
+            font-size: 0.825rem;
+            transition: all var(--dur-fast);
+        }
+        [data-theme="dark"] .book-link { color: var(--sky-400); }
+        .book-link:hover { gap: 10px; }
+        .book-link i { transition: transform var(--dur-fast); font-size: 0.75rem; }
+        .book-link:hover i { transform: translateX(3px); }
+
+        /* Featured book (larger) */
+        .book-card.featured .book-cover { height: 240px; font-size: 4rem; }
+        .book-card.featured .book-title { font-size: var(--fs-xl); }
+        .book-card.featured .book-content { padding: var(--s-8); }
+
+        /* =========================================================
+           STATS STRIP — Breaking boredom with a data band
+           ========================================================= */
+        .stats-strip {
+            background: var(--gradient-hero);
+            color: white;
+            padding: var(--s-12) 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .stats-strip::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(59, 130, 246, 0.3), transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(245, 158, 11, 0.15), transparent 50%);
+            pointer-events: none;
+        }
+        .stats-strip::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        .stats-strip-inner {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--s-8);
+            position: relative;
+            z-index: 1;
+        }
+        .strip-stat {
+            text-align: center;
+        }
+        .strip-stat-icon {
+            width: 48px; height: 48px;
+            margin: 0 auto var(--s-3);
+            border-radius: var(--r-md);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.1rem;
+            backdrop-filter: blur(12px);
+        }
+        .strip-stat-number {
+            font-family: var(--font-display);
+            font-size: var(--fs-4xl);
+            font-weight: 500;
+            color: white;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+            font-variation-settings: "opsz" 144;
+        }
+        .strip-stat-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.65);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        /* =========================================================
+           FEATURED QUOTE SECTION — Breaking boredom
+           ========================================================= */
+        .quote-section {
+            padding: var(--s-20) 0;
+            background: var(--bg-muted);
+            position: relative;
+        }
+        .quote-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .quote-inner {
+            max-width: var(--container-narrow);
+            margin: 0 auto;
+            padding: 0 var(--s-8);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .quote-mark {
+            font-family: var(--font-display);
+            font-size: 6rem;
+            line-height: 1;
+            color: var(--amber-500);
+            opacity: 0.4;
+            margin-bottom: calc(-1 * var(--s-6));
+        }
+        .quote-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.3rem, 2.5vw, var(--fs-2xl));
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text-primary);
+            line-height: 1.5;
+            margin-bottom: var(--s-5);
+            letter-spacing: -0.01em;
+            font-variation-settings: "opsz" 144;
+        }
+        .quote-author {
+            font-size: 0.875rem;
+            color: var(--text-tertiary);
+            font-weight: 500;
+        }
+        .quote-author strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* =========================================================
+           FOOTER — Identical to index.html
+           ========================================================= */
+        .footer {
+            background: var(--blue-950);
+            color: rgba(255,255,255,0.75);
+            padding: var(--s-20) 0 var(--s-8);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        .footer > * { position: relative; z-index: 1; }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: var(--s-12);
+            margin-bottom: var(--s-12);
+        }
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            margin-bottom: var(--s-5);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .footer-brand .footer-logo-mark {
+            width: 40px; height: 40px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+            color: var(--amber-400);
+            display: grid; place-items: center;
+            font-size: 1rem;
+            box-shadow: var(--shadow-md);
+        }
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            color: var(--amber-300);
+            margin-bottom: var(--s-5);
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+        .footer-brand > p {
+            font-size: 0.875rem;
+            line-height: 1.7;
+            margin-bottom: var(--s-6);
+            max-width: 360px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-2);
+            font-size: 0.825rem;
+            font-style: normal;
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s-2);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.8rem; }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: var(--s-5);
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-3);
+        }
+        .footer-links a {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.65);
+            transition: color var(--dur-fast);
+            font-weight: 500;
+        }
+        .footer-links a:hover { color: var(--amber-300); }
+
+        .footer-newsletter p {
+            font-size: 0.875rem;
+            margin-bottom: var(--s-4);
+            line-height: 1.6;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: var(--s-2);
+            margin-bottom: var(--s-5);
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 11px 14px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: var(--r-md);
+            color: white;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            min-width: 0;
+            transition: all var(--dur-fast);
+        }
+        .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--amber-400);
+            background: rgba(255,255,255,0.1);
+        }
+        .newsletter-form button {
+            padding: 11px 18px;
+            background: var(--amber-500);
+            color: var(--blue-950);
+            border-radius: var(--r-md);
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: background var(--dur-fast);
+        }
+        .newsletter-form button:hover { background: var(--amber-400); }
+
+        .social-links { display: flex; gap: var(--s-2); }
+        .social-links a {
+            width: 38px; height: 38px;
+            border-radius: var(--r-md);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid; place-items: center;
+            color: rgba(255,255,255,0.7);
+            transition: all var(--dur-fast);
+            font-size: 0.9rem;
+        }
+        .social-links a:hover {
+            background: var(--amber-500);
+            color: var(--blue-950);
+            border-color: var(--amber-500);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            padding-top: var(--s-8);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--s-4);
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-legal { display: flex; gap: var(--s-5); }
+        .footer-legal a { transition: color var(--dur-fast); }
+        .footer-legal a:hover { color: var(--amber-300); }
+
+        /* =========================================================
+           REVEAL ANIMATIONS
+           ========================================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-stagger > * {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+        }
+        .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 1280px) {
+            .books-grid.grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .books-grid.grid-featured { grid-template-columns: 1fr 1fr; }
+            .books-grid.grid-featured .book-card:first-child { grid-row: auto; }
+            .books-grid.grid-bento { grid-template-columns: 1fr 1fr; }
+            .books-grid.grid-bento .book-card:first-child { grid-column: auto; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); gap: var(--s-6); }
+            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+            .footer-newsletter { grid-column: 1 / -1; }
+        }
+        @media (max-width: 1024px) {
+            :root { --sidebar-w: 280px; }
+        }
+        @media (max-width: 900px) {
+            .sidebar { transform: translateX(-100%); box-shadow: none; }
+            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
+            .main-content { margin-left: 0; }
+            .mobile-toggle { display: flex; }
+            .page-hero { padding: var(--s-24) var(--s-6) var(--s-16); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+            .footer-brand { grid-column: 1 / -1; }
+            .books-grid.grid-3,
+            .books-grid.grid-featured,
+            .books-grid.grid-bento { grid-template-columns: 1fr; }
+            .books-grid.grid-list .book-card { flex-direction: column; }
+            .books-grid.grid-list .book-cover { width: 100%; height: 160px; }
+        }
+        @media (max-width: 640px) {
+            .container, .container-narrow, .filter-strip, .stats-strip-inner, .quote-inner { padding-left: var(--s-5); padding-right: var(--s-5); }
+            .section { padding: var(--s-16) 0; }
+            .book-content { padding: var(--s-5); }
+            .book-cover { height: 140px; font-size: 2.5rem; }
+            .book-card.featured .book-cover { height: 180px; font-size: 3rem; }
+            .category-header { flex-direction: column; gap: var(--s-3); }
+            .stats-strip-inner { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { flex-wrap: wrap; justify-content: center; }
+            .filter-strip { margin-top: calc(-1 * var(--s-6)); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
+            .orb { animation: none; }
+        }
+
+        @media print {
+            .sidebar, .mobile-toggle, .ambient-bg, .noise-overlay, .filter-strip, .footer { display: none !important; }
+            .main-content { margin-left: 0; }
+            body { background: white !important; color: black !important; }
+            .page-hero { padding: var(--s-8) var(--s-4); color: black; }
+            .hero-bg, .stats-strip { display: none; }
+            .book-card { box-shadow: none !important; border: 1px solid #ccc !important; break-inside: avoid; background: white !important; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Sidebar Navigation — Identical to index.html -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-header">
+            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                <div class="sidebar-logo-text">
+                    <span class="sidebar-logo-title">KE0274 PEFA</span>
+                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Resources</div>
+                <div class="nav-item active">
+                    <a href="learningresources.html" class="nav-link active" aria-current="page">
+                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">More</div>
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown" role="menu">
+                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="../achievments/achievment.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../inventory/inventory.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../chatsupport/chat-support.html" class="nav-link">
+                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main">
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="hero-bg" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=2400&q=85" alt="" loading="eager" decoding="async">
+            </div>
+            <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <div class="hero-breadcrumb">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                    <span class="sep">/</span>
+                    <span>Resources</span>
+                    <span class="sep">/</span>
+                    <span>Learning</span>
+                </div>
+
+                <div class="hero-eyebrow">
+                    <span class="pulse" aria-hidden="true"></span>
+                    <span>Learning Resources Hub · CBC Aligned</span>
+                </div>
+
+                <h1 class="hero-title" id="page-title">
+                    <span class="line">Empower your</span>
+                    <span class="line"><span class="italic">learning</span> journey.</span>
+                    <span class="line"><span class="divider" aria-hidden="true"></span></span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Free, high-quality educational materials designed to support participants at every stage — from early childhood through young adulthood. All resources are aligned with Kenya's CBC curriculum and infused with Christian values.
+                </p>
+
+                <div class="hero-search">
+                    <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    <input type="text" class="search-input" id="resourceSearch" placeholder="Search books by title, author, or topic..." aria-label="Search resources">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FILTER STRIP ===== -->
+        <div class="filter-strip" role="tablist" aria-label="Filter categories">
+            <div class="filter-strip-inner">
+                <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true"><i class="fas fa-th-large" aria-hidden="true"></i> All Categories</button>
+                <button class="filter-tab" data-filter="academic" role="tab"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academic</button>
+                <button class="filter-tab" data-filter="faith" role="tab"><i class="fas fa-praying-hands" aria-hidden="true"></i> Faith</button>
+                <button class="filter-tab" data-filter="leadership" role="tab"><i class="fas fa-crown" aria-hidden="true"></i> Leadership</button>
+                <button class="filter-tab" data-filter="stem" role="tab"><i class="fas fa-flask" aria-hidden="true"></i> STEM</button>
+                <button class="filter-tab" data-filter="literature" role="tab"><i class="fas fa-book" aria-hidden="true"></i> Literature</button>
+                <button class="filter-tab" data-filter="lifeskills" role="tab"><i class="fas fa-heart" aria-hidden="true"></i> Life Skills</button>
+                <button class="filter-tab" data-filter="career" role="tab"><i class="fas fa-briefcase" aria-hidden="true"></i> Career</button>
+            </div>
+        </div>
+
+        <!-- ===== STATS STRIP — Breaking boredom ===== -->
+        <section class="stats-strip reveal" aria-label="Resource statistics">
+            <div class="stats-strip-inner">
+                <div class="strip-stat">
+                    <div class="strip-stat-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+                    <div class="strip-stat-number">120+</div>
+                    <div class="strip-stat-label">Curated Books</div>
+                </div>
+                <div class="strip-stat">
+                    <div class="strip-stat-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+                    <div class="strip-stat-number">7</div>
+                    <div class="strip-stat-label">Categories</div>
+                </div>
+                <div class="strip-stat">
+                    <div class="strip-stat-icon"><i class="fas fa-globe-africa" aria-hidden="true"></i></div>
+                    <div class="strip-stat-number">100%</div>
+                    <div class="strip-stat-label">CBC Aligned</div>
+                </div>
+                <div class="strip-stat">
+                    <div class="strip-stat-icon"><i class="fas fa-cross" aria-hidden="true"></i></div>
+                    <div class="strip-stat-number">Faith</div>
+                    <div class="strip-stat-label">Centered</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ACADEMIC EXCELLENCE — Pattern A: Standard 3-col ===== -->
+        <section class="section" data-category="academic" aria-labelledby="academic-title">
+            <div class="container">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Core Curriculum</div>
+                        <h2 class="category-title" id="academic-title">Academic Excellence</h2>
+                        <p class="category-desc">Core curriculum support, study strategies, and exam preparation resources</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-3 reveal-stagger">
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                            <span class="book-badge">Top Pick</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The Study Skills Handbook</h3>
+                            <p class="book-author">by Stella Cottrell</p>
+                            <p class="book-description">Practical strategies for effective note-taking, time management, and exam preparation tailored for CBC learners.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.9/5</div>
+                                <a href="https://www.amazon.com/Study-Skills-Handbook-Stella-Cottrell/dp/1352005077" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Make It Stick: The Science of Successful Learning</h3>
+                            <p class="book-author">by Peter C. Brown</p>
+                            <p class="book-description">Evidence-based techniques for memory retention, active recall, and spaced repetition to master any subject.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/Make-Stick-Science-Successful-Learning/dp/0674729013" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                            <span class="book-badge new">New</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">CBC Curriculum Guide for Parents</h3>
+                            <p class="book-author">Kenya Institute of Curriculum Development</p>
+                            <p class="book-description">Official guide explaining CBC structure, assessment methods, and how parents can support learning at home.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.kicd.ac.ke" target="_blank" rel="noopener" class="book-link">Download Free <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAITH & SPIRITUALITY — Pattern B: Featured + 2 ===== -->
+        <section class="section" data-category="faith" aria-labelledby="faith-title" style="background: var(--bg-muted);">
+            <div class="container">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-praying-hands" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Spiritual Growth</div>
+                        <h2 class="category-title" id="faith-title">Faith & Spirituality</h2>
+                        <p class="category-desc">Biblical wisdom, devotional guides, and character-building resources for spiritual growth</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-featured reveal-stagger">
+                    <article class="book-card featured">
+                        <div class="book-cover">
+                            <i class="fas fa-bible" aria-hidden="true"></i>
+                            <span class="book-badge">Essential</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The Purpose Driven Life</h3>
+                            <p class="book-author">by Rick Warren</p>
+                            <p class="book-description">A 40-day spiritual journey helping readers discover God's purpose for their lives through biblical principles. This transformative classic has guided millions toward a life of meaning, faith, and service — an essential companion for every participant seeking to understand their divine calling.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.9/5</div>
+                                <a href="https://www.amazon.com/Purpose-Driven-Life-Rick-Warren/dp/0310205719" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Mere Christianity</h3>
+                            <p class="book-author">by C.S. Lewis</p>
+                            <p class="book-description">Classic apologetics that presents a rational case for Christian faith in accessible, timeless language.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/Mere-Christianity-C-S-Lewis/dp/0060652926" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Jesus Calling for Kids</h3>
+                            <p class="book-author">by Sarah Young</p>
+                            <p class="book-description">Daily devotions written as if Jesus is speaking directly to children, with age-appropriate language and prayers.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.9/5</div>
+                                <a href="https://www.amazon.com/Jesus-Calling-Kids-Devotions-Experience/dp/1400321786" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUOTE INTERLUDE — Breaking boredom ===== -->
+        <section class="quote-section reveal" aria-label="Inspirational quote">
+            <div class="quote-inner">
+                <div class="quote-mark" aria-hidden="true">"</div>
+                <p class="quote-text">The roots of education are bitter, but the fruit is sweet.</p>
+                <p class="quote-author">— <strong>Aristotle</strong>, Greek Philosopher</p>
+            </div>
+        </section>
+
+        <!-- ===== LEADERSHIP — Pattern C: Bento (1 wide + 2) ===== -->
+        <section class="section" data-category="leadership" aria-labelledby="leadership-title">
+            <div class="container-narrow">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-crown" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Character Building</div>
+                        <h2 class="category-title" id="leadership-title">Leadership Development</h2>
+                        <p class="category-desc">Books to cultivate character, influence, and servant leadership in young people</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-bento reveal-stagger">
+                    <article class="book-card featured">
+                        <div class="book-cover">
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
+                            <span class="book-badge">Top Pick</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Dare to Lead</h3>
+                            <p class="book-author">by Brené Brown</p>
+                            <p class="book-description">Research-based insights on courageous leadership, vulnerability, and building trust — essential for young leaders learning to serve with empathy and conviction. Brown's work redefines what it means to lead with heart in a complex world.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/Dare-Lead-Brave-Work-Tough/dp/0399592520" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Start with Why</h3>
+                            <p class="book-author">by Simon Sinek</p>
+                            <p class="book-description">Discover how great leaders inspire action by starting with purpose — a powerful framework for youth leadership.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The 7 Habits of Highly Effective Teens</h3>
+                            <p class="book-author">by Sean Covey</p>
+                            <p class="book-description">Adapted from the classic, this book teaches teens practical habits for personal effectiveness and leadership.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/7-Habits-Highly-Effective-Teens/dp/1476789223" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STEM & INNOVATION — Pattern A: Standard 3-col ===== -->
+        <section class="section" data-category="stem" aria-labelledby="stem-title" style="background: var(--bg-muted);">
+            <div class="container">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-flask" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Curiosity & Discovery</div>
+                        <h2 class="category-title" id="stem-title">STEM & Innovation</h2>
+                        <p class="category-desc">Science, technology, engineering, and math resources to spark curiosity and problem-solving</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-3 reveal-stagger">
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-atom" aria-hidden="true"></i>
+                            <span class="book-badge">Essential</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Astrophysics for People in a Hurry</h3>
+                            <p class="book-author">by Neil deGrasse Tyson</p>
+                            <p class="book-description">Accessible explanations of the universe's biggest questions — perfect for curious young minds exploring science.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Astrophysics-People-Hurry-Neil-deGrasse-Tyson/dp/0393609391" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Hello World: Being Human in the Age of Algorithms</h3>
+                            <p class="book-author">by Hannah Fry</p>
+                            <p class="book-description">An engaging exploration of how algorithms shape our world — essential reading for digital natives.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.6/5</div>
+                                <a href="https://www.amazon.com/Hello-World-Being-Human-Algorithms/dp/0393635686" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The Boy Who Harnessed the Wind</h3>
+                            <p class="book-author">by William Kamkwamba</p>
+                            <p class="book-description">True story of a Malawian teen who built a windmill to save his village — inspiring innovation and perseverance.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.9/5</div>
+                                <a href="https://www.amazon.com/Boy-Who-Harnessed-Wind-Creating/dp/0061730335" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LITERATURE — Pattern D: Horizontal list cards ===== -->
+        <section class="section" data-category="literature" aria-labelledby="literature-title">
+            <div class="container-narrow">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Imagination & Voice</div>
+                        <h2 class="category-title" id="literature-title">Literature & Creative Writing</h2>
+                        <p class="category-desc">Classic and contemporary fiction, poetry, and writing guides to nurture imagination</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-list reveal-stagger">
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-feather-alt" aria-hidden="true"></i>
+                            <span class="book-badge">Classic</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Things Fall Apart</h3>
+                            <p class="book-author">by Chinua Achebe</p>
+                            <p class="book-description">Seminal African novel exploring tradition, change, and identity — essential reading for understanding our heritage and the complexities of colonial encounter.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/Things-Fall-Apart-Chinua-Achebe/dp/0385474547" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-pen-fancy" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">On Writing: A Memoir of the Craft</h3>
+                            <p class="book-author">by Stephen King</p>
+                            <p class="book-description">Part memoir, part masterclass on writing — practical advice for aspiring authors of all ages, from one of literature's most beloved storytellers.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Writing-Memoir-Craft-Stephen-King/dp/1439156824" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-globe-africa" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">We Should All Be Feminists</h3>
+                            <p class="book-author">by Chimamanda Ngozi Adichie</p>
+                            <p class="book-description">Powerful essay on gender equality that sparks critical thinking and empathy in young readers — a modern classic adapted from her celebrated TED talk.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/We-Should-All-Feminists-Chimamanda/dp/1101911765" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LIFE SKILLS — Pattern A: Standard 3-col ===== -->
+        <section class="section" data-category="lifeskills" aria-labelledby="lifeskills-title" style="background: var(--bg-muted);">
+            <div class="container">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Personal Growth</div>
+                        <h2 class="category-title" id="lifeskills-title">Life Skills & Character</h2>
+                        <p class="category-desc">Practical wisdom for emotional intelligence, relationships, and personal growth</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-3 reveal-stagger">
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                            <span class="book-badge">Top Pick</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Emotional Intelligence 2.0</h3>
+                            <p class="book-author">by Travis Bradberry</p>
+                            <p class="book-description">Practical strategies to develop self-awareness, empathy, and relationship skills — critical for success in life.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Emotional-Intelligence-2-0-Travis-Bradberry/dp/0974320625" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The 5 Love Languages</h3>
+                            <p class="book-author">by Gary Chapman</p>
+                            <p class="book-description">Understanding how people give and receive love — essential for healthy relationships with family and friends.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.8/5</div>
+                                <a href="https://www.amazon.com/5-Love-Languages-Secret-Relationships/dp/0802412707" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Boundaries for Teens</h3>
+                            <p class="book-author">by Dr. Henry Cloud</p>
+                            <p class="book-description">Teaching young people how to set healthy boundaries, say no respectfully, and take responsibility for their choices.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Boundaries-Teens-When-Say-How/dp/0310247632" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CAREER — Pattern B: Featured + 2 ===== -->
+        <section class="section" data-category="career" aria-labelledby="career-title">
+            <div class="container">
+                <div class="category-header reveal">
+                    <div class="category-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+                    <div>
+                        <div class="section-eyebrow">Future Ready</div>
+                        <h2 class="category-title" id="career-title">Career & Financial Literacy</h2>
+                        <p class="category-desc">Preparing youth for economic independence through practical skills and wisdom</p>
+                    </div>
+                </div>
+
+                <div class="books-grid grid-featured reveal-stagger">
+                    <article class="book-card featured">
+                        <div class="book-cover">
+                            <i class="fas fa-coins" aria-hidden="true"></i>
+                            <span class="book-badge">Essential</span>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Rich Dad Poor Dad for Teens</h3>
+                            <p class="book-author">by Robert T. Kiyosaki</p>
+                            <p class="book-description">Age-appropriate lessons on money management, investing, and building wealth — critical for future financial freedom. This adapted edition translates complex financial concepts into actionable wisdom that empowers young people to take control of their economic destiny.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.6/5</div>
+                                <a href="https://www.amazon.com/Rich-Dad-Poor-Teenagers-Secrets/dp/1612680186" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Designing Your Life</h3>
+                            <p class="book-author">by Bill Burnett & Dave Evans</p>
+                            <p class="book-description">Stanford-designed framework for building a meaningful career and life through design thinking principles.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.7/5</div>
+                                <a href="https://www.amazon.com/Designing-Your-Life-Build-Well-Lived/dp/1101875321" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">The $100 Startup</h3>
+                            <p class="book-author">by Chris Guillebeau</p>
+                            <p class="book-description">Inspiring stories of entrepreneurs who built businesses with minimal investment — perfect for aspiring young innovators.</p>
+                            <div class="book-footer">
+                                <div class="book-rating"><i class="fas fa-star" aria-hidden="true"></i> 4.6/5</div>
+                                <a href="https://www.amazon.com/100-Startup-Reinvent-Making-Living/dp/0307951529" target="_blank" rel="noopener" class="book-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                            <span>KE0274 PEFA Mfangano CYDC</span>
+                        </div>
+                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+                        <address class="footer-contact">
+                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
+                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                        </address>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../studentleadership/leaders.html">Leadership</a></li>
+                            <li><a href="../academics/dreamachiever.html">Academics</a></li>
+                            <li><a href="../achievments/achievment.html">Achievements</a></li>
+                            <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="learningresources.html">Learning Resources</a></li>
+                            <li><a href="../studentportal/timetable.html">Student Portal</a></li>
+                            <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
+                            <li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li>
+                            <li><a href="../childprotection.html">Child Protection</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col footer-newsletter">
+                        <h4>Stay Connected</h4>
+                        <p>Receive quarterly updates on the lives being transformed through our work.</p>
+                        <form class="newsletter-form" aria-label="Newsletter subscription">
+                            <label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label>
+                            <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email">
+                            <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+                        </form>
+                        <div class="social-links" aria-label="Social media">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Child Protection Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Safeguarding</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const icon = themeToggle.querySelector('i');
+            const label = themeToggle.querySelector('span');
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // Mobile sidebar
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+        mobileToggle.addEventListener('click', () => {
+            const isActive = sidebar.classList.toggle('active');
+            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
+            mobileToggle.setAttribute('aria-expanded', String(isActive));
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
+                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+                sidebar.classList.remove('active');
+                mobileToggle.querySelector('i').className = 'fas fa-bars';
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Dropdown toggle
+        window.toggleDropdown = function(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            const navItem = element.closest('.nav-item');
+            const isActive = navItem.classList.toggle('active');
+            element.setAttribute('aria-expanded', String(isActive));
+            document.querySelectorAll('.nav-item').forEach(item => {
+                if (item !== navItem) {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                }
+            });
+        };
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) link.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href.length < 2) return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Keyboard: Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    mobileToggle.focus();
+                }
+                document.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    const link = item.querySelector('.nav-link[aria-expanded]');
+                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
+                });
+            }
+        });
+
+        // Active link highlighting
+        const currentPage = window.location.pathname.split('/').pop() || 'learningresources.html';
+        document.querySelectorAll('.nav-link[href]').forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+            }
+        });
+
+        // Newsletter form
+        const form = document.querySelector('.newsletter-form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const input = form.querySelector('input');
+                const btn = form.querySelector('button');
+                const original = btn.textContent;
+                btn.textContent = '✓ Subscribed';
+                btn.style.background = 'var(--amber-400)';
+                input.value = '';
+                setTimeout(() => {
+                    btn.textContent = original;
+                    btn.style.background = '';
+                }, 2800);
+            });
+        }
+
+        // Resize handler
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 900) {
+                    sidebar.classList.remove('active');
+                    mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            }, 200);
+        });
+
+        // ===== FILTER FUNCTIONALITY =====
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const categorySections = document.querySelectorAll('section[data-category]');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                filterTabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+
+                const filter = tab.getAttribute('data-filter');
+
+                categorySections.forEach(section => {
+                    const category = section.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        section.style.display = '';
+                        requestAnimationFrame(() => {
+                            section.style.opacity = '1';
+                            section.style.transform = 'translateY(0)';
+                        });
+                    } else {
+                        section.style.opacity = '0';
+                        section.style.transform = 'translateY(20px)';
+                        setTimeout(() => { section.style.display = 'none'; }, 400);
+                    }
+                });
+
+                // Also handle quote section visibility
+                const quoteSection = document.querySelector('.quote-section');
+                if (quoteSection) {
+                    if (filter === 'all' || filter === 'leadership') {
+                        quoteSection.style.display = '';
+                    } else {
+                        quoteSection.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // ===== SEARCH FUNCTIONALITY =====
+        const searchInput = document.getElementById('resourceSearch');
+        const allBookCards = document.querySelectorAll('.book-card');
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+
+                allBookCards.forEach(card => {
+                    const title = card.querySelector('.book-title')?.textContent.toLowerCase() || '';
+                    const author = card.querySelector('.book-author')?.textContent.toLowerCase() || '';
+                    const desc = card.querySelector('.book-description')?.textContent.toLowerCase() || '';
+                    const matches = title.includes(query) || author.includes(query) || desc.includes(query);
+
+                    if (matches || query === '') {
+                        card.style.display = '';
+                        requestAnimationFrame(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(10px)';
+                        setTimeout(() => { card.style.display = 'none'; }, 300);
+                    }
+                });
+
+                categorySections.forEach(section => {
+                    const booksInCategory = section.querySelectorAll('.book-card');
+                    const visibleBooks = Array.from(booksInCategory).filter(book => book.style.display !== 'none');
+
+                    if (visibleBooks.length > 0 || query === '') {
+                        section.style.display = '';
+                        requestAnimationFrame(() => {
+                            section.style.opacity = '1';
+                            section.style.transform = 'translateY(0)';
+                        });
+                    } else {
+                        section.style.opacity = '0';
+                        section.style.transform = 'translateY(20px)';
+                        setTimeout(() => { section.style.display = 'none'; }, 300);
+                    }
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>

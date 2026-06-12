@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mfangano Digital Voting System | KE0274 PEFA Mfangano CYDC</title>
+  <meta name="description" content="Secure, transparent digital voting for KE0274 PEFA Mfangano CYDC student leadership elections.">
+  <meta name="theme-color" content="#0B1B33">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* =========================================================
+       DESIGN TOKENS — Identical to index.html
+       ========================================================= */
+    :root {
+      --blue-950: #040B1A;
+      --blue-900: #0B1B33;
+      --blue-850: #0F2544;
+      --blue-800: #132E55;
+      --blue-700: #1A3F73;
+      --blue-600: #1E4FD8;
+      --blue-500: #2563EB;
+      --blue-400: #3B82F6;
+      --blue-300: #60A5FA;
+      --blue-200: #93C5FD;
+      --blue-100: #BFDBFE;
+      --blue-50:  #EFF6FF;
+      --sky-500:  #0EA5E9;
+      --sky-400:  #38BDF8;
+      --sky-300:  #7DD3FC;
+      --amber-600: #D97706;
+      --amber-500: #F59E0B;
+      --amber-400: #FBBF24;
+      --amber-300: #FCD34D;
+      --amber-100: #FEF3C7;
+      --forest-600: #1e6b3a;
+      --forest-500: #2d8a4e;
+      --stone-950: #0C0A09;
+      --stone-900: #1C1917;
+      --stone-800: #292524;
+      --stone-700: #44403C;
+      --stone-600: #57534E;
+      --stone-500: #78716C;
+      --stone-400: #A8A29E;
+      --stone-300: #D6D3D1;
+      --stone-200: #E7E5E4;
+      --stone-100: #F5F5F4;
+      --stone-50:  #FAFAF9;
+      --ivory:    #FDFCF8;
+      --cream:    #FAF7F0;
+      --pearl:    #F8F6F1;
+
+      --bg-page:       var(--ivory);
+      --bg-surface:    #ffffff;
+      --bg-elevated:   #ffffff;
+      --bg-muted:      var(--pearl);
+      --bg-inverse:    var(--blue-900);
+
+      --text-primary:   var(--blue-950);
+      --text-secondary: var(--stone-700);
+      --text-tertiary:  var(--stone-500);
+      --text-inverse:   var(--ivory);
+      --text-accent:    var(--blue-600);
+
+      --border-hairline: rgba(12, 27, 51, 0.06);
+      --border-subtle:   rgba(12, 27, 51, 0.10);
+      --border-default:  rgba(12, 27, 51, 0.16);
+      --border-strong:   rgba(12, 27, 51, 0.24);
+
+      --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+      --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
+      --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
+      --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
+      --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                       radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+                       radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                       radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+
+      --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
+      --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
+      --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
+      --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
+      --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
+      --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
+      --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
+      --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+      --fs-xs:   0.75rem;
+      --fs-sm:   0.875rem;
+      --fs-base: 1rem;
+      --fs-md:   1.0625rem;
+      --fs-lg:   1.125rem;
+      --fs-xl:   1.25rem;
+      --fs-2xl:  1.5rem;
+      --fs-3xl:  1.875rem;
+      --fs-4xl:  2.25rem;
+      --fs-5xl:  3rem;
+
+      --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
+      --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
+      --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
+      --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+
+      --r-sm: 8px;
+      --r-md: 12px;
+      --r-lg: 16px;
+      --r-xl: 24px;
+      --r-2xl: 32px;
+      --r-3xl: 40px;
+      --r-full: 9999px;
+
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-fast: 200ms;
+      --dur-base: 360ms;
+      --dur-slow: 640ms;
+    }
+
+    [data-theme="dark"] {
+      --bg-page:     #050B16;
+      --bg-surface:  #0B1526;
+      --bg-elevated: #111E36;
+      --bg-muted:    #0A1322;
+      --bg-inverse:  var(--ivory);
+
+      --text-primary:   #F5F7FA;
+      --text-secondary: #B8C5D9;
+      --text-tertiary:  #7A8BA3;
+      --text-inverse:   var(--blue-950);
+      --text-accent:    var(--sky-400);
+
+      --border-hairline: rgba(255,255,255,0.05);
+      --border-subtle:   rgba(255,255,255,0.08);
+      --border-default:  rgba(255,255,255,0.14);
+      --border-strong:   rgba(255,255,255,0.22);
+
+      --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
+      --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+                       radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+                       radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+
+      --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
+      --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--fs-base);
+      line-height: 1.65;
+      color: var(--text-primary);
+      background: var(--bg-page);
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--s-6);
+      position: relative;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    ::selection { background: var(--blue-600); color: white; }
+
+    :focus-visible {
+      outline: 2px solid var(--blue-500);
+      outline-offset: 3px;
+      border-radius: var(--r-sm);
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px; left: var(--s-4);
+      background: var(--blue-900);
+      color: white;
+      padding: var(--s-3) var(--s-5);
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: var(--fs-sm);
+      z-index: 10000;
+      transition: top var(--dur-fast);
+    }
+    .skip-link:focus { top: var(--s-4); }
+
+    /* =========================================================
+       AMBIENT BACKGROUND
+       ========================================================= */
+    .ambient-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .ambient-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-mesh);
+      opacity: 0.4;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      animation: orbFloat 24s ease-in-out infinite;
+      will-change: transform;
+    }
+    .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
+    .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
+    .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
+    @keyframes orbFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(40px, -30px) scale(1.08); }
+      66% { transform: translate(-30px, 40px) scale(0.95); }
+    }
+
+    /* =========================================================
+       TOP BAR — Home Button & Theme Toggle
+       ========================================================= */
+    .top-bar {
+      position: fixed;
+      top: var(--s-5);
+      left: var(--s-5);
+      right: var(--s-5);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+    .top-bar > * { pointer-events: auto; }
+
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-2);
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--r-md);
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: var(--fs-sm);
+      box-shadow: var(--shadow-md);
+      transition: all var(--dur-fast) var(--ease-out);
+    }
+    [data-theme="dark"] .home-btn {
+      background: rgba(11, 21, 38, 0.78);
+      border-color: var(--border-subtle);
+    }
+    .home-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      background: var(--blue-900);
+      color: white;
+      border-color: var(--blue-900);
+    }
+    .home-btn i {
+      font-size: 0.9rem;
+    }
+
+    .theme-toggle {
+      width: 42px; height: 42px;
+      border-radius: var(--r-md);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      box-shadow: var(--shadow-md);
+      transition: all var(--dur-fast) var(--ease-out);
+    }
+    [data-theme="dark"] .theme-toggle {
+      background: rgba(11, 21, 38, 0.78);
+      border-color: var(--border-subtle);
+    }
+    .theme-toggle:hover {
+      background: var(--blue-900);
+      color: white;
+      border-color: var(--blue-900);
+      transform: rotate(180deg) scale(1.05);
+      box-shadow: var(--shadow-blue);
+    }
+
+    /* =========================================================
+       VOTING CARD
+       ========================================================= */
+    .voting-card {
+      background: var(--bg-surface);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      width: 100%;
+      max-width: 560px;
+      padding: var(--s-10) var(--s-10);
+      border-radius: var(--r-3xl);
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border-hairline);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      animation: cardIn var(--dur-base) var(--ease-out) forwards;
+      overflow: hidden;
+    }
+    .voting-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--blue-600), var(--amber-400), var(--sky-500));
+    }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .voting-logo {
+      width: 64px; height: 64px;
+      margin: 0 auto var(--s-5);
+      border-radius: var(--r-xl);
+      background: var(--gradient-hero);
+      display: grid; place-items: center;
+      color: var(--amber-400);
+      font-size: 1.6rem;
+      box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
+      position: relative;
+    }
+    .voting-logo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--r-xl);
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
+    }
+
+    .voting-card h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      margin-bottom: var(--s-2);
+      line-height: 1.2;
+    }
+
+    .voting-subtitle {
+      font-size: var(--fs-sm);
+      color: var(--text-tertiary);
+      margin-bottom: var(--s-5);
+    }
+
+    .voting-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(45, 138, 78, 0.08);
+      border: 1px solid rgba(45, 138, 78, 0.15);
+      color: var(--forest-600);
+      padding: 4px 12px;
+      border-radius: var(--r-full);
+      font-weight: 600;
+      font-size: var(--fs-xs);
+      font-family: var(--font-mono);
+      margin-bottom: var(--s-6);
+    }
+    [data-theme="dark"] .voting-badge {
+      background: rgba(45, 138, 78, 0.12);
+      color: #4ade80;
+      border-color: rgba(74, 222, 128, 0.2);
+    }
+    .voting-badge .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--forest-500);
+      box-shadow: 0 0 6px var(--forest-500);
+      animation: statusPulse 2s ease-in-out infinite;
+    }
+    @keyframes statusPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .nav-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-3);
+      margin: var(--s-6) 0 var(--s-5);
+    }
+
+    .vote-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s-3);
+      padding: var(--s-4) var(--s-5);
+      border-radius: var(--r-lg);
+      font-weight: 600;
+      font-size: var(--fs-base);
+      color: white;
+      border: none;
+      box-shadow: var(--shadow-md);
+      transition: all var(--dur-fast) var(--ease-out);
+      position: relative;
+      overflow: hidden;
+      min-height: 56px;
+    }
+    .vote-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent);
+      opacity: 0;
+      transition: opacity var(--dur-fast);
+    }
+    .vote-btn:hover::before { opacity: 1; }
+    .vote-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-xl);
+    }
+    .vote-btn i {
+      font-size: 1.2rem;
+      width: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .btn-voter {
+      background: var(--gradient-royal);
+    }
+    .btn-voter:hover {
+      box-shadow: var(--shadow-blue);
+    }
+
+    .btn-admin {
+      background: linear-gradient(135deg, var(--forest-500), var(--forest-600));
+    }
+    .btn-admin:hover {
+      box-shadow: 0 16px 40px rgba(45, 138, 78, 0.35);
+    }
+
+    .btn-guide {
+      background: var(--bg-muted);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-guide i {
+      color: var(--amber-500);
+    }
+    .btn-guide:hover {
+      background: var(--bg-elevated);
+      border-color: var(--border-default);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Footer inside card */
+    .voting-footer {
+      margin-top: var(--s-5);
+      padding-top: var(--s-5);
+      border-top: 1px solid var(--border-hairline);
+      font-size: var(--fs-xs);
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+
+    /* Bottom brand footer */
+    .brand-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: var(--s-4) var(--s-5) var(--s-5);
+      color: var(--text-tertiary);
+      font-size: var(--fs-xs);
+      z-index: 50;
+      background: linear-gradient(180deg, transparent, var(--bg-page));
+      pointer-events: none;
+    }
+    .brand-footer-content {
+      pointer-events: auto;
+    }
+    .brand-footer-logo {
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: var(--fs-sm);
+    }
+    .brand-footer-logo i {
+      color: var(--amber-400);
+    }
+    .brand-footer-tagline {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+      opacity: 0.9;
+      font-size: var(--fs-sm);
+      color: var(--text-secondary);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      body { padding: var(--s-4); }
+      .voting-card {
+        padding: var(--s-8) var(--s-5);
+        border-radius: var(--r-2xl);
+      }
+      .top-bar {
+        top: var(--s-3);
+        left: var(--s-3);
+        right: var(--s-3);
+      }
+      .home-btn {
+        padding: 8px 14px;
+        font-size: var(--fs-xs);
+      }
+      .home-btn span { display: none; }
+      .theme-toggle {
+        width: 38px; height: 38px;
+      }
+      .voting-card h1 { font-size: 1.5rem; }
+      .vote-btn {
+        padding: var(--s-3) var(--s-4);
+        font-size: var(--fs-sm);
+        min-height: 50px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .orb { animation: none; }
+    }
+
+    @media print {
+      .home-btn, .theme-toggle, .ambient-bg, .brand-footer { display: none !important; }
+      body { background: white !important; color: black !important; padding: 2rem; }
+      .voting-card { box-shadow: none !important; border: 1px solid #ccc !important; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <a href="../index.html" class="home-btn" aria-label="Back to Home">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      <span>Back to Home</span>
+    </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- Voting Card -->
+  <main class="voting-card" id="content">
+    <div class="voting-logo" aria-hidden="true">
+      <i class="fas fa-vote-yea"></i>
+    </div>
+
+    <h1>Mfangano Digital Voting System</h1>
+    <p class="voting-subtitle">KE0274 PEFA Mfangano CYDC · Student Leadership Elections</p>
+
+    <div class="voting-badge">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Secure · Transparent · Verified</span>
+    </div>
+    
+    <div class="nav-grid">
+      <a href="voter.html" class="vote-btn btn-voter">
+        <i class="fas fa-user-check" aria-hidden="true"></i>
+        <span>Voter Portal</span>
+      </a>
+      <a href="admin.html" class="vote-btn btn-admin">
+        <i class="fas fa-user-shield" aria-hidden="true"></i>
+        <span>Admin Panel</span>
+      </a>
+      <a href="how-it-works.html" class="vote-btn btn-guide">
+        <i class="fas fa-compass" aria-hidden="true"></i>
+        <span>How It Works</span>
+      </a>
+    </div>
+    
+    <footer class="voting-footer">
+      © <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC
+    </footer>
+  </main>
+
+  <!-- Brand Footer -->
+  <footer class="brand-footer">
+    <div class="brand-footer-content">
+      <div class="brand-footer-logo"><i class="fas fa-heart" aria-hidden="true"></i> KE0274 PEFA MFANGANO CYDC</div>
+      <div class="brand-footer-tagline">Releasing children from poverty in Jesus' name.</div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // ===== THEME TOGGLE =====
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      const icon = themeToggle.querySelector('i');
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  });
+  </script>
+</body>
+</html>

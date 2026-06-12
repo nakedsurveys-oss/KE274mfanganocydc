@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation: Isaac's Online Voting System</title>
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --code-bg: #1e293b;
+            --code-text: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+            
+            /* Particle Colors */
+            --particle-color: rgba(30, 41, 59, 0.4);
+            --line-color: rgba(30, 41, 59, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+            --card-bg: #1e293b;
+            --sidebar-bg: #1e293b;
+            --border-color: #334155;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            
+            /* Particle Colors for Dark Mode */
+            --particle-color: rgba(59, 130, 246, 0.6);
+            --line-color: rgba(59, 130, 246, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: var(--transition);
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Canvas Background */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* --- LAYOUT --- */
+        .sidebar {
+            width: 280px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 2rem;
+            z-index: 100;
+            transition: var(--transition);
+            backdrop-filter: blur(10px); /* Optional: slight blur for glass effect over particles */
+        }
+
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 2rem 4rem;
+            max-width: 1200px;
+            position: relative;
+            z-index: 10; /* Ensure content is above canvas */
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 { color: var(--primary-color); margin-bottom: 1rem; }
+        h1 { font-size: 2rem; font-weight: 800; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-top: 3rem; }
+        h3 { font-size: 1.25rem; margin-top: 1.5rem; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        ul, ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.5rem; }
+
+        /* --- COMPONENTS --- */
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            position: relative;
+            z-index: 101;
+        }
+
+        .nav-links { list-style: none; margin: 0; padding: 0; }
+        .nav-links li a {
+            display: block;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            transition: var(--transition);
+            font-weight: 500;
+            position: relative;
+            z-index: 101;
+        }
+        .nav-links li a:hover, .nav-links li a.active {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Home Button Specific Style */
+        .home-btn {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            text-align: center;
+            font-weight: 700;
+            box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+            margin-bottom: 1.5rem;
+        }
+        .home-btn:hover {
+            background-color: var(--secondary-color) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+            z-index: 10;
+        }
+        .card:hover { transform: translateY(-2px); }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .tech-item {
+            background: var(--border-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: var(--transition);
+            z-index: 101;
+            backdrop-filter: blur(5px);
+        }
+        .theme-toggle:hover { 
+            background-color: var(--primary-color); 
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 200;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                width: 250px;
+            }
+            .sidebar.open { transform: translateX(0); }
+            .main-content { margin-left: 0; padding: 1.5rem; padding-top: 4rem; }
+            .mobile-menu-btn { display: block; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.4rem; }
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.6s ease-out forwards; }
+    </style>
+</head>
+<body>
+
+    <!-- Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="logo-area">
+            <span>🗳️</span> Isaac's Voting Sys
+        </div>
+        
+        <ul class="nav-links">
+            <!-- NEW HOME BUTTON ADDED HERE -->
+            <li><a href="index.html" class="home-btn" onclick="scrollToTop()">🏠 Home</a></li>
+            
+            <li><a href="#overview" class="active">1. Overview & Impact</a></li>
+            <li><a href="#voters">Helping Voters</a></li>
+            <li><a href="#admins">Helping Admins</a></li>
+            <li><a href="#process">Improving Process</a></li>
+            <li><a href="#technical">Technical Value</a></li>
+            <li><a href="#why">2. Why Created?</a></li>
+            <li><a href="#how">3. How Built?</a></li>
+        </ul>
+        <div style="margin-top: 2rem; font-size: 0.8rem; color: #64748b; text-align: center;">
+            &copy; 2026 Isaac's Project
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- Section 1: Overview -->
+        <section id="overview" class="fade-in">
+            <span class="badge">Project Documentation</span>
+            <h1>Isaac's Online Voting System</h1>
+            <p class="lead" style="font-size: 1.1rem; color: var(--text-color); opacity: 0.9;">
+                A secure, transparent, and accessible digital platform designed to modernize student elections for KE numbers 001–550.
+            </p>
+
+            <div class="card">
+                <h3>📋 Executive Summary</h3>
+                <p>This project empowers eligible students by providing a simple, intuitive voting experience while delivering real-time transparency for administrators. By digitizing the workflow, we address critical pain points of traditional paper-based elections: speed, accuracy, accessibility, and trust.</p>
+            </div>
+        </section>
+
+        <!-- Section 1.1: Helping Voters -->
+        <section id="voters" class="fade-in">
+            <h2>👥 Helping Voters & Students</h2>
+            <div class="feature-grid">
+                <div class="card">
+                    <h3>📱 Accessibility</h3>
+                    <p>Cast ballots from any device—mobile, tablet, or desktop. No need to queue physically.</p>
+                </div>
+                <div class="card">
+                    <h3>🛡️ Integrity</h3>
+                    <p>Prevents accidental duplicate voting by locking each KE number after submission.</p>
+                </div>
+                <div class="card">
+                    <h3>🧭 Guidance</h3>
+                    <p>Step-by-step interface with visual progress tracking and clear candidate cards.</p>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 1.5rem;">
+                <h3>User Experience Highlights</h3>
+                <ul>
+                    <li><strong>Intuitive Interface:</strong> Guides voters through all 10 leadership positions seamlessly.</li>
+                    <li><strong>Instant Confirmation:</strong> Users know immediately that their vote counts.</li>
+                    <li><strong>Educational Guide:</strong> A dedicated "How It Works" page reduces confusion with FAQs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 1.2: Helping Admins -->
+        <section id="admins" class="fade-in">
+            <h2>🔒 Helping Election Administrators</h2>
+            <div class="card">
+                <h3>Real-Time Transparency</h3>
+                <p>The password-protected admin dashboard automatically aggregates votes as they are submitted. Officials can view live results with visual progress bars, eliminating hours of manual counting and reducing human error.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="card">
+                    <h3>🖨️ Print-Ready Reports</h3>
+                    <p>Generate professional, official-looking result reports with a single click using optimized CSS print styles.</p>
+                </div>
+                <div class="card">
+                    <h3>🔄 Easy Management</h3>
+                    <p>"Reset All" feature provides a clean slate for testing. Data persists via localStorage without complex servers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1.3: Improving Process -->
+        <section id="process" class="fade-in">
+            <h2>⚙️ Improving the Overall Election Process</h2>
+            <p>By digitizing the voting workflow, the project addresses critical pain points of traditional paper-based elections.</p>
+            
+            <div class="card">
+                <h3>Key Improvements</h3>
+                <ul>
+                    <li><strong>Speed & Accuracy:</strong> Votes are recorded instantly and securely in the browser's localStorage with structured keys (<code>election_votes_2026</code>).</li>
+                    <li><strong>Eligibility Enforcement:</strong> KE number validation (3-digit, range 001–550) ensures only eligible students vote.</li>
+                    <li><strong>Inclusivity:</strong> Responsive, mobile-first design ensures students with limited computer access can participate via smartphones.</li>
+                    <li><strong>Trust:</strong> Separation of voter and admin interfaces builds confidence in the system's fairness.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 1.4: Technical Value -->
+        <section id="technical" class="fade-in">
+            <h2>💻 Technical & Educational Value</h2>
+            <p>Beyond immediate election utility, this project serves as a practical learning tool for modern web development concepts.</p>
+            
+            <div class="card">
+                <h3>Tech Stack & Concepts Demonstrated</h3>
+                <div class="tech-stack">
+                    <span class="tech-item">Semantic HTML5</span>
+                    <span class="tech-item">CSS Custom Properties</span>
+                    <span class="tech-item">Flexbox & Grid</span>
+                    <span class="tech-item">Vanilla JavaScript ES6+</span>
+                    <span class="tech-item">LocalStorage API</span>
+                    <span class="tech-item">Responsive Design</span>
+                    <span class="tech-item">Print Media Queries</span>
+                </div>
+                <p style="margin-top: 1rem;">
+                    Features like dark mode toggle, smooth scroll animations, FAQ accordions, and client-side data management showcase attention to user experience and accessibility standards. This bridges technical skill with civic engagement.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Created -->
+        <section id="why" class="fade-in">
+            <h2>❓ Why This Project Was Created</h2>
+            <div class="card" style="border-left: 5px solid var(--primary-color);">
+                <p>
+                    Traditional paper-based voting systems often face challenges such as <strong>manual counting errors, delayed results, duplicate voting, and limited accessibility</strong>. 
+                    <br><br>
+                    This Online Voting System was developed to <strong>modernize and streamline student elections</strong> by providing a secure, transparent, and accessible digital platform. It enables eligible students to cast votes electronically while ensuring one-vote-per-user integrity, promoting trust and efficiency in the electoral process.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: How Built -->
+        <section id="how" class="fade-in">
+            <h2>🛠️ How The Project Was Built</h2>
+            <div class="card">
+                <h3>Architecture Overview</h3>
+                <p>The application uses a <strong>client-side architecture</strong> with four interconnected HTML pages:</p>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li><strong>index.html:</strong> Landing page with navigation.</li>
+                    <li><strong>voter.html:</strong> Secure voting interface with identity verification.</li>
+                    <li><strong>admin.html:</strong> Password-protected results dashboard.</li>
+                    <li><strong>guide.html:</strong> User documentation and FAQs.</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>The Voting Flow</h3>
+                <ul>
+                    <li><strong>Verification:</strong> Identity check via 3-digit KE number.</li>
+                    <li><strong>Selection:</strong> Step-by-step candidate selection across 10 positions.</li>
+                    <li><strong>Storage:</strong> Selections stored temporarily in a JS object, then aggregated to <code>localStorage</code> upon submission.</li>
+                    <li><strong>Rendering:</strong> Admin panel reads localStorage to render live visual progress bars.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Key Interactions</h3>
+                <p>Handled entirely with <strong>Vanilla JavaScript</strong>:</p>
+                <ul>
+                    <li>Form validation (KE Number range 001-550)</li>
+                    <li>Dynamic candidate rendering</li>
+                    <li>Progress tracking & Modal dialogs</li>
+                    <li>Print functionality for official reports</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); text-align: center; color: #64748b;">
+            <p>Developed by Isaac | Student Elections 2026</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- Theme Toggle Logic ---
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const btn = document.querySelector('.theme-toggle');
+            
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                btn.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            }
+            updateParticleColors();
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+            if(savedTheme === 'dark') document.querySelector('.theme-toggle').textContent = '☀️ Light Mode';
+        }
+
+        // --- Mobile Sidebar Logic ---
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        // Close sidebar when clicking a link on mobile
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('sidebar').classList.remove('open');
+                }
+            });
+        });
+
+        // --- Scroll to Top Function for Home Button ---
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // --- Active Link Highlighter on Scroll ---
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(a => {
+                if(a.classList.contains('home-btn')) return; 
+
+                a.classList.remove('active');
+                if (a.getAttribute('href').includes(current)) {
+                    a.classList.add('active');
+                }
+            });
+            
+            const homeBtn = document.querySelector('.home-btn');
+            if(window.scrollY < 100) {
+                homeBtn.classList.add('active');
+            } else {
+                homeBtn.classList.remove('active');
+            }
+        });
+
+        // --- Simple Fade In Animation on Load ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        });
+
+        // =====================
+        // CANVAS PARTICLE NETWORK
+        // =====================
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray;
+
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        setCanvasSize();
+        window.addEventListener('resize', () => {
+            setCanvasSize();
+            initParticles();
+        });
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.directionX = (Math.random() * 0.4) - 0.2;
+                this.directionY = (Math.random() * 0.4) - 0.2;
+                this.size = Math.random() * 2 + 1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                const isDark = document.body.getAttribute('data-theme') === 'dark';
+                ctx.fillStyle = isDark ? 'rgba(59, 130, 246, 0.6)' : 'rgba(30, 41, 59, 0.4)';
+                ctx.fill();
+            }
+            update() {
+                if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+                if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+                this.x += this.directionX;
+                this.y += this.directionY;
+                this.draw();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 15000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            requestAnimationFrame(animateParticles);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            const lineColor = isDark ? 'rgba(59, 130, 246, 0.15)' : 'rgba(30, 41, 59, 0.1)';
+            const connectionDistance = 120;
+
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                for (let j = i; j < particlesArray.length; j++) {
+                    const dx = particlesArray[i].x - particlesArray[j].x;
+                    const dy = particlesArray[i].y - particlesArray[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < connectionDistance) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = lineColor;
+                        ctx.lineWidth = 1 - (distance / connectionDistance);
+                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function updateParticleColors() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].draw();
+            }
+        }
+
+        initParticles();
+        animateParticles();
+    </script>
+</body>
+</html>
