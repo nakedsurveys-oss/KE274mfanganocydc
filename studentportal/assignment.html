@@ -1,1861 +1,813 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments | Student Portal | KE0274 PEFA Mfangano CYDC</title>
-    <meta name="description" content="Access your assignments, events, deadlines, and academic tasks at KE0274 PEFA Mfangano Child Development Centre.">
-    <meta name="theme-color" content="#0B1B33">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* =========================================================
-           DESIGN TOKENS — Identical to index.html
-           ========================================================= */
-        :root {
-            --blue-950: #040B1A;
-            --blue-900: #0B1B33;
-            --blue-850: #0F2544;
-            --blue-800: #132E55;
-            --blue-700: #1A3F73;
-            --blue-600: #1E4FD8;
-            --blue-500: #2563EB;
-            --blue-400: #3B82F6;
-            --blue-300: #60A5FA;
-            --blue-200: #93C5FD;
-            --blue-100: #BFDBFE;
-            --blue-50:  #EFF6FF;
-            --sky-500:  #0EA5E9;
-            --sky-400:  #38BDF8;
-            --sky-300:  #7DD3FC;
-            --sky-100:  #E0F2FE;
-            --amber-600: #D97706;
-            --amber-500: #F59E0B;
-            --amber-400: #FBBF24;
-            --amber-300: #FCD34D;
-            --amber-100: #FEF3C7;
-            --forest-600: #1e6b3a;
-            --forest-500: #2d8a4e;
-            --terra-500: #a8553c;
-            --stone-950: #0C0A09;
-            --stone-900: #1C1917;
-            --stone-800: #292524;
-            --stone-700: #44403C;
-            --stone-600: #57534E;
-            --stone-500: #78716C;
-            --stone-400: #A8A29E;
-            --stone-300: #D6D3D1;
-            --stone-200: #E7E5E4;
-            --stone-100: #F5F5F4;
-            --stone-50:  #FAFAF9;
-            --ivory:    #FDFCF8;
-            --cream:    #FAF7F0;
-            --pearl:    #F8F6F1;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Assignments and studio tasks portal for KE0274 PEFA Mfangano CYDC — due dates, submissions, calendars and progress tracking for Saturday classes and holiday programs.">
+<title>Assignments | Student Portal | KE0274 PEFA Mfangano CYDC</title>
+<script>(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t||'light';}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+  --blue-950:#040B1A;--blue-900:#0B1B33;--blue-850:#0F2544;--blue-800:#132E55;--blue-700:#1A3F73;--blue-600:#1E4FD8;--blue-500:#2563EB;--blue-400:#3B82F6;--blue-300:#60A5FA;--blue-200:#93C5FD;--blue-100:#BFDBFE;--blue-50:#EFF6FF;
+  --sky-500:#0EA5E9;--sky-400:#38BDF8;--sky-300:#7DD3FC;--sky-200:#BAE6FD;--sky-100:#E0F2FE;
+  --amber-600:#D97706;--amber-500:#F59E0B;--amber-400:#FBBF24;--amber-300:#FCD34D;--amber-100:#FEF3C7;
+  --stone-900:#1C1917;--stone-800:#292524;--stone-700:#44403C;--stone-600:#57534E;--stone-500:#78716C;--stone-400:#A8A29E;--stone-300:#D6D3D1;--stone-200:#E7E5E4;--stone-100:#F5F5F4;--stone-50:#FAFAF9;
+  --ivory:#FDFCF8;--cream:#FAF7F0;--pearl:#F8F6F1;
+  --bg-page:var(--ivory);--bg-surface:#ffffff;--bg-elevated:#ffffff;--bg-muted:var(--pearl);
+  --text-primary:var(--blue-950);--text-secondary:var(--stone-700);--text-tertiary:var(--stone-500);--text-accent:var(--blue-600);
+  --border-hairline:rgba(12,27,51,.06);--border-subtle:rgba(12,27,51,.10);--border-default:rgba(12,27,51,.16);--border-strong:rgba(12,27,51,.24);
+  --gradient-hero:linear-gradient(135deg,var(--blue-950) 0%,var(--blue-900) 40%,var(--blue-800) 100%);
+  --gradient-royal:linear-gradient(135deg,var(--blue-700) 0%,var(--blue-600) 100%);
+  --gradient-sky:linear-gradient(135deg,var(--sky-500) 0%,var(--blue-400) 100%);
+  --gradient-warm:linear-gradient(135deg,var(--amber-500) 0%,var(--amber-400) 100%);
+  --gradient-mesh:radial-gradient(at 20% 20%,rgba(59,130,246,.15) 0%,transparent 50%),radial-gradient(at 80% 0%,rgba(14,165,233,.12) 0%,transparent 50%),radial-gradient(at 80% 80%,rgba(245,158,11,.08) 0%,transparent 50%),radial-gradient(at 0% 100%,rgba(30,79,216,.10) 0%,transparent 50%);
+  --shadow-sm:0 2px 4px rgba(11,27,51,.04),0 1px 2px rgba(11,27,51,.06);
+  --shadow-md:0 4px 16px -2px rgba(11,27,51,.08),0 2px 4px rgba(11,27,51,.04);
+  --shadow-lg:0 12px 32px -8px rgba(11,27,51,.12),0 4px 8px rgba(11,27,51,.04);
+  --shadow-xl:0 24px 64px -16px rgba(11,27,51,.18),0 8px 16px rgba(11,27,51,.06);
+  --shadow-2xl:0 48px 96px -24px rgba(11,27,51,.28);
+  --shadow-blue:0 20px 48px -12px rgba(30,79,216,.35);
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--font-mono:'JetBrains Mono',monospace;
+  --s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.25rem;--s-6:1.5rem;--s-7:1.75rem;--s-8:2rem;--s-10:2.5rem;--s-12:3rem;--s-16:4rem;--s-20:5rem;--s-24:6rem;--s-32:8rem;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
+  --ease-out:cubic-bezier(.16,1,.3,1);--dur-fast:200ms;--dur-base:360ms;--dur-slow:640ms;
+  --sidebar-w:300px;--container:1320px;
+}
+[data-theme="dark"]{
+  --bg-page:#050B16;--bg-surface:#0B1526;--bg-elevated:#111E36;--bg-muted:#0A1322;
+  --text-primary:#F5F7FA;--text-secondary:#B8C5D9;--text-tertiary:#7A8BA3;--text-accent:var(--sky-400);
+  --border-hairline:rgba(255,255,255,.05);--border-subtle:rgba(255,255,255,.08);--border-default:rgba(255,255,255,.14);--border-strong:rgba(255,255,255,.22);
+  --shadow-sm:0 2px 4px rgba(0,0,0,.3);--shadow-md:0 4px 16px rgba(0,0,0,.4);--shadow-lg:0 12px 32px rgba(0,0,0,.5);--shadow-xl:0 24px 64px rgba(0,0,0,.6);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text-primary);background:var(--bg-page);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background-color var(--dur-slow) var(--ease-out),color var(--dur-base) var(--ease-out)}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--blue-600);color:white}
+:focus-visible{outline:2px solid var(--blue-500);outline-offset:3px;border-radius:var(--r-sm)}
+.skip-link{position:absolute;top:-100px;left:var(--s-4);background:var(--blue-900);color:white;padding:var(--s-3) var(--s-5);border-radius:var(--r-md);font-weight:600;font-size:.875rem;z-index:10000;transition:top var(--dur-fast)}.skip-link:focus{top:var(--s-4)}
 
-            --bg-page:       var(--ivory);
-            --bg-surface:    #ffffff;
-            --bg-elevated:   #ffffff;
-            --bg-muted:      var(--pearl);
-            --bg-inverse:    var(--blue-900);
+.ambient-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient-bg::before{content:"";position:absolute;inset:0;background:var(--gradient-mesh);opacity:.7}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;animation:orbFloat 24s ease-in-out infinite}
+.orb-1{width:500px;height:500px;background:radial-gradient(circle,var(--blue-400),transparent 70%);top:-10%;left:-10%}
+.orb-2{width:400px;height:400px;background:radial-gradient(circle,var(--sky-400),transparent 70%);top:40%;right:-8%;animation-delay:-8s}
+.orb-3{width:380px;height:380px;background:radial-gradient(circle,var(--amber-400),transparent 70%);bottom:-10%;left:30%;opacity:.3;animation-delay:-16s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.08)}66%{transform:translate(-30px,40px) scale(.95)}}
+.noise-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 
-            --text-primary:   var(--blue-950);
-            --text-secondary: var(--stone-700);
-            --text-tertiary:  var(--stone-500);
-            --text-inverse:   var(--ivory);
-            --text-accent:    var(--blue-600);
+.sidebar{position:fixed;left:0;top:0;height:100vh;width:var(--sidebar-w);background:rgba(255,255,255,.72);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-right:1px solid var(--border-hairline);padding:var(--s-7) var(--s-5);z-index:1000;display:flex;flex-direction:column;transition:transform var(--dur-base) var(--ease-out);overflow:hidden}
+[data-theme="dark"] .sidebar{background:rgba(11,21,38,.78);border-right:1px solid var(--border-subtle)}
+.sidebar::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.3),transparent)}
+.sidebar-header{padding-bottom:var(--s-6);margin-bottom:var(--s-6);border-bottom:1px solid var(--border-hairline);flex-shrink:0}
+.sidebar-logo{display:flex;align-items:center;gap:var(--s-3);transition:opacity var(--dur-fast)}
+.sidebar-logo:hover{opacity:.8}
+.sidebar-logo-mark{width:44px;height:44px;border-radius:var(--r-md);background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-size:1.1rem;flex-shrink:0;box-shadow:var(--shadow-md),inset 0 1px 0 rgba(255,255,255,.1);position:relative;overflow:hidden}
+.sidebar-logo-mark::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.15),transparent 60%)}
+.sidebar-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.sidebar-logo-title{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--text-primary)}
+.sidebar-logo-sub{font-size:.68rem;color:var(--text-tertiary);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+.sidebar-nav{flex:1;display:flex;flex-direction:column;gap:var(--s-6);overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border-default) transparent;padding-right:2px}
+.sidebar-nav::-webkit-scrollbar{width:4px}.sidebar-nav::-webkit-scrollbar-thumb{background:var(--border-default);border-radius:2px}
+.nav-section-title{color:var(--text-tertiary);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:var(--s-3);padding-left:var(--s-3)}
+.nav-item{position:relative}
+.nav-link{display:flex;align-items:center;justify-content:space-between;gap:var(--s-3);padding:10px var(--s-3);color:var(--text-secondary);border-radius:var(--r-md);transition:all var(--dur-fast) var(--ease-out);font-size:.9rem;font-weight:500;cursor:pointer}
+.nav-link:hover{background:var(--bg-muted);color:var(--text-primary)}
+.nav-link.active{background:var(--blue-900);color:white;box-shadow:var(--shadow-sm)}
+[data-theme="dark"] .nav-link.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.nav-link-left{display:flex;align-items:center;gap:var(--s-3)}
+.nav-link i.nav-icon{font-size:.95rem;width:18px;text-align:center;opacity:.85}
+.nav-link.active i.nav-icon{opacity:1}
+.dropdown-arrow{font-size:.65rem;transition:transform var(--dur-fast) var(--ease-out);color:var(--text-tertiary)}
+.nav-item.active .dropdown-arrow{transform:rotate(180deg);color:var(--amber-400)}
+.dropdown{margin-top:var(--s-1);margin-left:var(--s-7);padding-left:var(--s-4);border-left:1px solid var(--border-subtle);max-height:0;overflow:hidden;transition:max-height var(--dur-base) var(--ease-out)}
+.nav-item.active .dropdown{max-height:400px}
+.dropdown-link{display:flex;align-items:center;gap:var(--s-3);padding:7px var(--s-3);color:var(--text-tertiary);font-size:.825rem;font-weight:500;border-radius:var(--r-sm);transition:all var(--dur-fast)}
+.dropdown-link:hover{color:var(--text-primary);background:var(--bg-muted);padding-left:var(--s-4)}
+.dropdown-link i{font-size:.75rem;width:14px;color:var(--blue-500)}
+.sidebar-footer{margin-top:auto;padding-top:var(--s-5);border-top:1px solid var(--border-hairline);flex-shrink:0}
+.theme-toggle{width:100%;padding:10px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-md);color:var(--text-primary);display:flex;align-items:center;justify-content:center;gap:var(--s-2);font-size:.825rem;font-weight:600;transition:all var(--dur-fast)}
+.theme-toggle:hover{background:var(--blue-900);color:white;border-color:var(--blue-900)}
+.mobile-toggle{display:none;position:fixed;top:var(--s-4);left:var(--s-4);z-index:1001;width:48px;height:48px;background:rgba(255,255,255,.85);backdrop-filter:blur(20px);border:1px solid var(--border-subtle);border-radius:var(--r-md);color:var(--blue-900);font-size:1.1rem;align-items:center;justify-content:center;box-shadow:var(--shadow-lg)}
+[data-theme="dark"] .mobile-toggle{background:rgba(11,21,38,.85);color:white}
+.main-content{margin-left:var(--sidebar-w);min-height:100vh;position:relative;z-index:2;transition:margin-left var(--dur-base) var(--ease-out)}
 
-            --border-hairline: rgba(12, 27, 51, 0.06);
-            --border-subtle:   rgba(12, 27, 51, 0.10);
-            --border-default:  rgba(12, 27, 51, 0.16);
-            --border-strong:   rgba(12, 27, 51, 0.24);
+.hero{position:relative;padding:var(--s-24) var(--s-12) var(--s-16);overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;z-index:3;width:100%;max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:1.12fr .88fr;gap:var(--s-16);align-items:center}
+.hero-content{animation:heroFadeIn 1.2s var(--ease-out) both}
+@keyframes heroFadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:var(--s-3);padding:8px 16px;background:rgba(30,79,216,.08);border:1px solid rgba(30,79,216,.18);border-radius:var(--r-full);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-600);margin-bottom:var(--s-8);backdrop-filter:blur(12px);animation:heroFadeIn 1s var(--ease-out) .2s both}
+[data-theme="dark"] .hero-eyebrow{background:rgba(14,165,233,.1);border-color:rgba(14,165,233,.25);color:var(--sky-400)}
+.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--amber-400);box-shadow:0 0 0 0 rgba(251,191,36,.7);animation:pulseRing 2.4s ease-out infinite}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(251,191,36,.7)}70%{box-shadow:0 0 0 10px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.5rem,5.6vw,5rem);font-weight:400;line-height:1.02;letter-spacing:-.03em;margin-bottom:var(--s-8);color:var(--text-primary);font-variation-settings:"opsz" 144;animation:heroFadeIn 1.2s var(--ease-out) .3s both}
+.hero-title .italic{font-style:italic;font-weight:300;color:var(--blue-600);letter-spacing:-.02em}
+[data-theme="dark"] .hero-title .italic{color:var(--sky-400)}
+.hero-title .line{display:block}
+.hero-subtitle{font-size:clamp(1rem,1.4vw,1.125rem);color:var(--text-secondary);max-width:580px;line-height:1.7;margin-bottom:var(--s-10);font-weight:400;animation:heroFadeIn 1s var(--ease-out) .5s both}
+.hero-ctas{display:flex;gap:var(--s-3);flex-wrap:wrap;margin-bottom:var(--s-12);animation:heroFadeIn 1s var(--ease-out) .6s both}
+.btn{display:inline-flex;align-items:center;gap:var(--s-2);padding:14px 26px;border-radius:var(--r-full);font-weight:600;font-size:.925rem;transition:all var(--dur-fast) var(--ease-out);border:1px solid transparent;min-height:52px;white-space:nowrap}
+.btn-primary{background:var(--blue-900);color:white;box-shadow:var(--shadow-lg)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-xl);background:var(--blue-600)}
+.btn-primary i{transition:transform var(--dur-fast)}.btn-primary:hover i{transform:translateX(3px)}
+.btn-ghost{background:transparent;color:var(--text-primary);border-color:var(--border-default)}
+.btn-ghost:hover{background:var(--bg-muted);border-color:var(--blue-600);transform:translateY(-2px)}
+.btn-accent{background:var(--amber-500);color:var(--blue-950);box-shadow:0 8px 24px rgba(245,158,11,.35)}
+.btn-accent:hover{background:var(--amber-400);transform:translateY(-2px)}
+.btn-sm{padding:8px 16px;min-height:40px;font-size:.825rem}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
 
-            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
-            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
-            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
-            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
-                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+/* Due stack */
+.hero-visual{position:relative;animation:heroFadeIn 1.4s var(--ease-out) .4s both}
+.due-stack{position:relative;min-height:420px}
+.dcard{position:absolute;border-radius:var(--r-3xl);padding:var(--s-7);width:92%;transition:transform .45s var(--ease-out)}
+.dcard.back{background:var(--bg-surface);border:1px solid var(--border-hairline);box-shadow:var(--shadow-lg);width:86%;top:36px;left:9%;transform:rotate(4deg);opacity:.65}
+.dcard.front{background:rgba(255,255,255,.88);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid var(--border-default);box-shadow:var(--shadow-2xl),inset 0 1px 0 rgba(255,255,255,.4);left:0;top:0;transform:rotate(-2.5deg)}
+[data-theme="dark"] .dcard.front{background:rgba(17,30,54,.8)}
+.dcard.front:hover{transform:rotate(0) translateY(-6px)}
+.due-clock{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,var(--blue-50),var(--sky-100));border-radius:var(--r-lg);padding:18px;margin-top:18px}
+[data-theme="dark"] .due-clock{background:linear-gradient(135deg,rgba(30,79,216,.15),rgba(14,165,233,.1))}
+.due-clock .big{font:700 clamp(1.8rem,3vw,2.4rem)/1 var(--font-display);color:var(--blue-600);font-variation-settings:"opsz" 144}
+[data-theme="dark"] .due-clock .big{color:var(--sky-400)}
+.due-clock .k{font:600 10.5px var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-tertiary)}
+.cd-segs{display:flex;gap:10px;margin-left:auto}
+.cd-seg{text-align:center;background:var(--bg-surface);border-radius:12px;padding:8px 10px;min-width:52px;box-shadow:var(--shadow-sm);border:1px solid var(--border-hairline)}
+.cd-seg b{display:block;font:700 20px var(--font-mono);color:var(--text-primary)}
+.cd-seg span{font:600 9px var(--font-mono);letter-spacing:.14em;color:var(--text-tertiary);text-transform:uppercase}
 
-            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
-            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
-            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
-            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
-            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
-            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
-            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
-            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+/* Hero trust */
+.hero-trust{display:flex;gap:var(--s-4);flex-wrap:wrap;padding-top:var(--s-8);border-top:1px solid var(--border-hairline);animation:heroFadeIn 1s var(--ease-out) .8s both}
+.trust-item{display:flex;align-items:center;gap:var(--s-2);color:var(--text-secondary);font-size:.8rem;font-weight:500}
+.trust-item i{color:var(--amber-500);font-size:.85rem}
 
-            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+/* Badge */
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:var(--r-full);font:600 11.5px var(--font-mono);letter-spacing:.04em}
+.b-royal{background:rgba(30,79,216,.1);color:var(--blue-700)}
+.b-sky{background:rgba(14,165,233,.1);color:var(--sky-500)}
+.b-amber{background:rgba(245,158,11,.12);color:var(--amber-600)}
+.b-green{background:rgba(22,163,74,.1);color:#15803D}
+.b-red{background:rgba(220,38,38,.1);color:#B91C1C}
+[data-theme="dark"] .b-royal{background:rgba(59,130,246,.18);color:var(--sky-400)}
+[data-theme="dark"] .b-sky{background:rgba(14,165,233,.18);color:var(--sky-300)}
+[data-theme="dark"] .b-amber{background:rgba(245,158,11,.18);color:var(--amber-400)}
+[data-theme="dark"] .b-green{background:rgba(34,197,94,.15);color:#86EFAC}
+[data-theme="dark"] .b-red{background:rgba(239,68,68,.18);color:#FCA5A5}
 
-            --fs-xs:   0.75rem;
-            --fs-sm:   0.875rem;
-            --fs-base: 1rem;
-            --fs-md:   1.0625rem;
-            --fs-lg:   1.125rem;
-            --fs-xl:   1.25rem;
-            --fs-2xl:  1.5rem;
-            --fs-3xl:  1.875rem;
-            --fs-4xl:  2.25rem;
-            --fs-5xl:  3rem;
+.container{width:100%;max-width:var(--container);margin:0 auto;padding:0 var(--s-8);position:relative}
+.section{padding:var(--s-24) 0;position:relative}
+.section-eyebrow{display:inline-flex;align-items:center;gap:var(--s-3);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-600);margin-bottom:var(--s-5)}
+[data-theme="dark"] .section-eyebrow{color:var(--sky-400)}
+.section-eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.08;letter-spacing:-.025em;color:var(--text-primary);margin-bottom:var(--s-6);font-variation-settings:"opsz" 144;max-width:880px}
+.section-title .italic{font-style:italic;font-weight:300;color:var(--blue-600)}
+[data-theme="dark"] .section-title .italic{color:var(--sky-400)}
+.section-lede{font-size:1.0625rem;color:var(--text-secondary);line-height:1.75;max-width:720px;margin-bottom:var(--s-12)}
+.section-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--border-default),transparent)}
 
-            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
-            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
-            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
-            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+/* Category strip */
+.cat-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.cat{background:var(--bg-surface);border:1.5px solid var(--border-hairline);border-radius:var(--r-lg);padding:18px 16px;text-align:left;transition:.25s;position:relative;overflow:hidden}
+.cat::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--c);opacity:0;transition:.25s}
+.cat:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.cat[aria-pressed="true"]{border-color:var(--c);box-shadow:var(--shadow-md)}
+.cat[aria-pressed="true"]::before{opacity:1}
+.cat .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c);margin-bottom:12px}
+.cat .ic i{font-size:1rem}
+.cat b{display:block;font:700 14px var(--font-body);color:var(--text-primary)}
+.cat span{font:600 11px var(--font-mono);color:var(--text-tertiary)}
 
-            --r-sm: 8px;
-            --r-md: 12px;
-            --r-lg: 16px;
-            --r-xl: 24px;
-            --r-2xl: 32px;
-            --r-3xl: 40px;
-            --r-full: 9999px;
+/* Layout grid */
+.portal-grid{display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start}
+.aside-col{display:grid;gap:20px;position:sticky;top:24px}
+.card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);box-shadow:var(--shadow-sm);overflow:hidden}
+.panel-h{display:flex;align-items:center;gap:10px;padding:18px 22px;border-bottom:1px solid var(--border-hairline);font:700 15px var(--font-body);color:var(--text-primary)}
+.panel-h i{width:17px;color:var(--blue-600)}
+[data-theme="dark"] .panel-h i{color:var(--sky-400)}
 
-            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-            --dur-fast: 200ms;
-            --dur-base: 360ms;
-            --dur-slow: 640ms;
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:var(--s-5)}
+.search{display:flex;align-items:center;gap:10px;background:var(--bg-muted);border:1.5px solid var(--border-subtle);border-radius:var(--r-full);padding:10px 16px;flex:1;min-width:200px;transition:border-color var(--dur-fast)}
+.search:focus-within{border-color:var(--blue-500)}
+.search input{border:0;background:none;outline:none;width:100%;font:500 .9rem var(--font-body);color:var(--text-primary)}
+.search i{width:17px;color:var(--text-tertiary);flex-shrink:0}
+select{appearance:none;background:var(--bg-muted) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 14px center;border:1.5px solid var(--border-subtle);border-radius:var(--r-full);padding:10px 38px 10px 16px;font:600 .825rem var(--font-body);color:var(--text-primary);cursor:pointer;transition:border-color var(--dur-fast)}
+select:focus{border-color:var(--blue-500);outline:none}
+.view-tg{display:flex;border:1.5px solid var(--border-subtle);border-radius:var(--r-full);overflow:hidden}
+.view-tg button{padding:9px 14px;display:grid;place-items:center;transition:.2s;color:var(--text-secondary)}
+.view-tg button[aria-pressed="true"]{background:var(--blue-600);color:white}
+.view-tg button:not([aria-pressed="true"]):hover{background:var(--bg-muted)}
+.view-tg i{width:16px}
 
-            --sidebar-w: 300px;
-            --container: 1320px;
-        }
+/* Assignment cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cards.list{grid-template-columns:1fr}
+.acard{position:relative;overflow:hidden;padding:24px;display:flex;flex-direction:column;gap:14px;transition:transform .3s,box-shadow .3s;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);box-shadow:var(--shadow-sm)}
+.acard:hover{transform:translateY(-5px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.acard::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--c)}
+.ac-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.ac-cat{font:600 10.5px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.acard h3{font-family:var(--font-display);font-size:20px;font-weight:500;line-height:1.2;color:var(--text-primary)}
+.acard .desc{font-size:14px;color:var(--text-secondary);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ac-meta{display:flex;flex-wrap:wrap;gap:14px;font:500 12px var(--font-mono);color:var(--text-tertiary)}
+.ac-meta span{display:inline-flex;align-items:center;gap:6px}
+.ac-meta i{width:14px}
+.t-chip{display:flex;align-items:center;gap:10px}
+.t-ava{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 12px var(--font-display);flex-shrink:0}
+.t-chip b{font:700 13.5px var(--font-body);color:var(--text-primary)}
+.t-chip span{display:block;font:500 11px var(--font-mono);color:var(--text-tertiary)}
+.ac-prog{display:grid;grid-template-columns:1fr 42px;gap:10px;align-items:center}
+.p-track{height:8px;border-radius:99px;background:var(--border-subtle);overflow:hidden}
+.p-fill{display:block;height:100%;border-radius:99px;background:var(--c);transition:width .8s var(--ease-out)}
+.ac-foot{display:flex;gap:10px;align-items:center;margin-top:auto}
+.due-pill{margin-left:auto;display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:var(--r-full);font:600 11.5px var(--font-mono)}
+.due-pill i{width:13px}
+.dp-ok{background:var(--sky-100);color:var(--sky-500)}
+.dp-soon{background:var(--amber-100);color:var(--amber-600)}
+.dp-urgent{background:#FEE2E2;color:#B91C1C;animation:blink 1.6s ease infinite}
+.dp-late{background:#DC2626;color:#fff}
+.dp-done{background:#DCFCE7;color:#15803D}
+[data-theme="dark"] .dp-ok{background:rgba(14,165,233,.18);color:var(--sky-300)}
+[data-theme="dark"] .dp-soon{background:rgba(245,158,11,.18);color:var(--amber-400)}
+[data-theme="dark"] .dp-urgent{background:rgba(239,68,68,.2);color:#FCA5A5}
+[data-theme="dark"] .dp-done{background:rgba(34,197,94,.18);color:#86EFAC}
+@keyframes blink{50%{opacity:.6}}
+.empty{text-align:center;padding:60px 24px}
+.empty i{font-size:3rem;color:var(--text-tertiary);margin-bottom:18px;opacity:.4}
+.empty h3{font-family:var(--font-display);font-size:22px;font-weight:500;margin:14px 0 8px;color:var(--text-primary)}
+.empty p{color:var(--text-secondary);max-width:38ch;margin:0 auto 18px;font-size:.9rem}
 
-        [data-theme="dark"] {
-            --bg-page:     #050B16;
-            --bg-surface:  #0B1526;
-            --bg-elevated: #111E36;
-            --bg-muted:    #0A1322;
-            --bg-inverse:  var(--ivory);
+/* Dropzone */
+.dropzone{border:2.5px dashed var(--border-default);border-radius:var(--r-2xl);padding:clamp(28px,4vw,44px);text-align:center;transition:.25s;background:var(--bg-surface);box-shadow:var(--shadow-sm)}
+.dropzone.drag{border-color:var(--blue-600);background:var(--blue-50);transform:scale(1.01)}
+[data-theme="dark"] .dropzone.drag{background:rgba(30,79,216,.15)}
+.dropzone .dz-ic{width:64px;height:64px;margin:0 auto 16px;border-radius:50%;background:linear-gradient(135deg,var(--blue-50),var(--sky-100));display:grid;place-items:center;color:var(--blue-600)}
+[data-theme="dark"] .dropzone .dz-ic{background:linear-gradient(135deg,rgba(30,79,216,.15),rgba(14,165,233,.1));color:var(--sky-400)}
+.dropzone .dz-ic i{font-size:1.5rem}
+.dropzone h3{font-family:var(--font-display);font-size:21px;font-weight:500;color:var(--text-primary)}
+.dropzone h3 label{color:var(--blue-600);cursor:pointer;text-decoration:underline}
+.dz-files{margin-top:18px;display:grid;gap:8px;text-align:left}
+.dz-file{display:flex;align-items:center;gap:12px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:12px;padding:10px 14px;font-size:13.5px}
+.dz-file i{color:var(--blue-600)}
+.dz-file .fn{font-weight:700;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)}
+.dz-file .fs{font:500 11.5px var(--font-mono);color:var(--text-tertiary)}
+.dz-file button{color:#DC2626;font-weight:800;padding:4px}
+.dz-prog{height:8px;border-radius:99px;background:var(--border-subtle);overflow:hidden;margin-top:16px;display:none}
+.dz-prog i{display:block;height:100%;width:0;background:var(--gradient-royal);border-radius:99px;transition:width .1s linear}
 
-            --text-primary:   #F5F7FA;
-            --text-secondary: #B8C5D9;
-            --text-tertiary:  #7A8BA3;
-            --text-inverse:   var(--blue-950);
-            --text-accent:    var(--sky-400);
+/* Progress + sidebar widgets */
+.ring-wrap{display:flex;align-items:center;gap:20px;padding:22px}
+.ring{transform:rotate(-90deg)}
+.ring .bg{fill:none;stroke:var(--border-subtle);stroke-width:13}
+.ring .fg{fill:none;stroke:var(--blue-600);stroke-width:13;stroke-linecap:round;stroke-dasharray:0 100;transition:stroke-dasharray 1.4s var(--ease-out)}
+[data-theme="dark"] .ring .fg{stroke:var(--sky-400)}
+.ring text{transform:rotate(90deg);transform-origin:center;font:700 22px var(--font-display);fill:var(--text-primary);font-variation-settings:"opsz" 144}
+.week-bars{display:flex;align-items:flex-end;gap:10px;height:90px;padding:0 22px 8px}
+.wb{flex:1;display:grid;gap:6px;justify-items:center}
+.wb i{width:100%;max-width:26px;border-radius:7px 7px 3px 3px;background:var(--sky-100);transition:height .8s var(--ease-out);display:block}
+[data-theme="dark"] .wb i{background:rgba(14,165,233,.2)}
+.wb.today i{background:var(--gradient-royal)}
+.wb span{font:600 10px var(--font-mono);color:var(--text-tertiary)}
+.cal{padding:18px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;font:700 15px var(--font-display);padding:4px 4px 12px;color:var(--text-primary)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal-grid .dow{font:600 9.5px var(--font-mono);letter-spacing:.1em;color:var(--text-tertiary);padding:4px 0}
+.cal-d{position:relative;aspect-ratio:1;display:grid;place-items:center;font:600 12.5px var(--font-mono);border-radius:10px;cursor:default;transition:.2s;color:var(--text-primary)}
+.cal-d.has{cursor:pointer}
+.cal-d.has:hover{background:var(--blue-50)}
+[data-theme="dark"] .cal-d.has:hover{background:rgba(30,79,216,.18)}
+.cal-d.today{background:var(--blue-900);color:white}
+.cal-d .dot{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);display:flex;gap:2px}
+.cal-d .dot i{width:5px;height:5px;border-radius:50%;display:block}
+.notif{display:grid;gap:2px;padding:8px}
+.n-item{display:flex;gap:12px;padding:12px;border-radius:12px;transition:background var(--dur-fast);position:relative}
+.n-item:hover{background:var(--bg-muted)}
+.n-item.unread::before{content:"";position:absolute;left:2px;top:20px;width:7px;height:7px;border-radius:50%;background:var(--amber-500)}
+.n-item p{font-size:13.5px;line-height:1.45;color:var(--text-primary)}
+.n-item p b{color:var(--blue-600)}
+[data-theme="dark"] .n-item p b{color:var(--sky-400)}
+.n-item time{font:500 11px var(--font-mono);color:var(--text-tertiary);display:block;margin-top:4px}
+.help-card{padding:22px;background:linear-gradient(150deg,var(--bg-surface) 55%,var(--blue-50));border:1px solid var(--border-hairline);border-radius:var(--r-2xl);box-shadow:var(--shadow-sm)}
+[data-theme="dark"] .help-card{background:linear-gradient(150deg,var(--bg-surface) 55%,rgba(30,79,216,.15))}
 
-            --border-hairline: rgba(255,255,255,0.05);
-            --border-subtle:   rgba(255,255,255,0.08);
-            --border-default:  rgba(255,255,255,0.14);
-            --border-strong:   rgba(255,255,255,0.22);
+/* Brief drawer */
+.scrim{position:fixed;inset:0;z-index:180;background:rgba(4,11,26,.55);backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:.3s}
+.scrim.open{opacity:1;visibility:visible}
+.brief{position:fixed;top:0;right:0;bottom:0;z-index:190;width:min(480px,94vw);background:var(--bg-page);box-shadow:-30px 0 60px rgba(0,0,0,.25);transform:translateX(105%);transition:transform .4s var(--ease-out);overflow:auto;padding:28px}
+.brief.open{transform:none}
+.brief .b-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:6px}
+.brief h3{font-family:var(--font-display);font-size:24px;font-weight:500;margin:8px 0 4px;color:var(--text-primary)}
+.b-sec{margin-top:24px}
+.b-sec h4{font:700 11px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--blue-600);margin-bottom:12px}
+[data-theme="dark"] .b-sec h4{color:var(--sky-400)}
+.step{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px dashed var(--border-hairline);cursor:pointer}
+.step input{accent-color:var(--blue-600);width:18px;height:18px;margin-top:2px;flex-shrink:0}
+.step label{cursor:pointer;font-size:14.5px;color:var(--text-primary)}
+.step.done label{text-decoration:line-through;color:var(--text-tertiary)}
+.mat{display:flex;align-items:center;gap:12px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:12px;padding:12px 14px;margin-bottom:8px;font-size:13.5px}
+.mat i{color:var(--blue-600)}
+.mat .fn{font-weight:700;flex:1;color:var(--text-primary)}
+.mat .fs{font:500 11.5px var(--font-mono);color:var(--text-tertiary)}
+.hist{position:relative;padding-left:22px}
+.hist::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--border-subtle)}
+.h-item{position:relative;padding:0 0 16px;font-size:13.5px;color:var(--text-primary)}
+.h-item::before{content:"";position:absolute;left:-20px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--blue-600);box-shadow:0 0 0 3px var(--blue-50)}
+.h-item time{display:block;font:500 11px var(--font-mono);color:var(--text-tertiary)}
 
-            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+/* Footer */
+.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:var(--s-20) 0 var(--s-8);position:relative;overflow:hidden;margin-top:var(--s-16)}
+.footer::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.15),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,158,11,.08),transparent 50%);pointer-events:none}
+.footer>*{position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:var(--s-12);margin-bottom:var(--s-12)}
+.footer-brand .footer-logo{display:flex;align-items:center;gap:var(--s-3);margin-bottom:var(--s-5);color:white;font-weight:700;font-size:1rem}
+.footer-brand .footer-logo-mark{width:40px;height:40px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));color:var(--amber-400);display:grid;place-items:center;font-size:1rem;box-shadow:var(--shadow-md)}
+.footer-tagline{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:1.125rem;color:var(--amber-300);margin-bottom:var(--s-5);line-height:1.5;letter-spacing:-.01em}
+.footer-brand>p{font-size:.875rem;line-height:1.7;margin-bottom:var(--s-6);max-width:360px}
+.footer-contact{display:flex;flex-direction:column;gap:var(--s-2);font-size:.825rem;font-style:normal}
+.footer-contact-item{display:flex;align-items:center;gap:var(--s-2);color:rgba(255,255,255,.7)}
+.footer-contact-item i{color:var(--amber-400);width:14px;font-size:.8rem}
+.footer-col h4{color:white;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:var(--s-5)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:var(--s-3)}
+.footer-links a{font-size:.875rem;color:rgba(255,255,255,.65);transition:color var(--dur-fast);font-weight:500}
+.footer-links a:hover{color:var(--amber-300)}
+.footer-newsletter p{font-size:.875rem;margin-bottom:var(--s-4);line-height:1.6}
+.newsletter-form{display:flex;gap:var(--s-2);margin-bottom:var(--s-5)}
+.newsletter-form input{flex:1;padding:11px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-md);color:white;font-family:var(--font-body);font-size:.85rem;min-width:0;transition:all var(--dur-fast)}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter-form input:focus{outline:none;border-color:var(--amber-400);background:rgba(255,255,255,.1)}
+.newsletter-form button{padding:11px 18px;background:var(--amber-500);color:var(--blue-950);border-radius:var(--r-md);font-weight:700;font-size:.85rem;transition:background var(--dur-fast)}
+.newsletter-form button:hover{background:var(--amber-400)}
+.footer-bottom{padding-top:var(--s-8);border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--s-4);font-size:.78rem;color:rgba(255,255,255,.5)}
+.footer-legal{display:flex;gap:var(--s-5)}
+.footer-legal a{transition:color var(--dur-fast)}.footer-legal a:hover{color:var(--amber-300)}
 
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
-        }
+.reveal{opacity:0;transform:translateY(28px);transition:opacity var(--dur-slow) var(--ease-out),transform var(--dur-slow) var(--ease-out)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-stagger>*{opacity:0;transform:translateY(20px);transition:opacity var(--dur-base) var(--ease-out),transform var(--dur-base) var(--ease-out)}
+.reveal-stagger.visible>*{opacity:1;transform:none}
+.reveal-stagger.visible>*:nth-child(1){transition-delay:0ms}
+.reveal-stagger.visible>*:nth-child(2){transition-delay:100ms}
+.reveal-stagger.visible>*:nth-child(3){transition-delay:200ms}
+.reveal-stagger.visible>*:nth-child(4){transition-delay:300ms}
+.reveal-stagger.visible>*:nth-child(5){transition-delay:400ms}
+.reveal-stagger.visible>*:nth-child(6){transition-delay:500ms}
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
-        body {
-            font-family: var(--font-body);
-            font-size: var(--fs-base);
-            line-height: 1.65;
-            color: var(--text-primary);
-            background: var(--bg-page);
-            min-height: 100vh;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
-        }
-        a { color: inherit; text-decoration: none; }
-        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-        ::selection { background: var(--blue-600); color: white; }
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,80px);background:var(--blue-900);color:white;padding:13px 22px;border-radius:var(--r-full);font:600 14px var(--font-body);box-shadow:var(--shadow-xl);z-index:300;transition:transform var(--dur-base) var(--ease-out);display:flex;gap:10px;align-items:center;max-width:90vw}
+.toast.show{transform:translate(-50%,0)}
+.toast i{color:var(--amber-400)}
 
-        :focus-visible {
-            outline: 2px solid var(--blue-500);
-            outline-offset: 3px;
-            border-radius: var(--r-sm);
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -100px; left: var(--s-4);
-            background: var(--blue-900);
-            color: white;
-            padding: var(--s-3) var(--s-5);
-            border-radius: var(--r-md);
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            z-index: 10000;
-            transition: top var(--dur-fast);
-        }
-        .skip-link:focus { top: var(--s-4); }
-
-        /* =========================================================
-           AMBIENT BACKGROUND
-           ========================================================= */
-        .ambient-bg {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .ambient-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.4;
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.35;
-            animation: orbFloat 24s ease-in-out infinite;
-            will-change: transform;
-        }
-        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
-        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
-        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
-        @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(40px, -30px) scale(1.08); }
-            66% { transform: translate(-30px, 40px) scale(0.95); }
-        }
-
-        /* =========================================================
-           SIDEBAR — Identical to index.html
-           ========================================================= */
-        .sidebar {
-            position: fixed;
-            left: 0; top: 0;
-            height: 100vh;
-            width: var(--sidebar-w);
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border-right: 1px solid var(--border-hairline);
-            padding: var(--s-7) var(--s-5);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            transition: transform var(--dur-base) var(--ease-out);
-            overflow: hidden;
-        }
-        [data-theme="dark"] .sidebar {
-            background: rgba(11, 21, 38, 0.78);
-            border-right: 1px solid var(--border-subtle);
-        }
-        .sidebar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-        }
-
-        .sidebar-header {
-            padding-bottom: var(--s-6);
-            margin-bottom: var(--s-6);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .sidebar-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            transition: opacity var(--dur-fast);
-        }
-        .sidebar-logo:hover { opacity: 0.8; }
-        .sidebar-logo-mark {
-            width: 44px; height: 44px;
-            border-radius: var(--r-md);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .sidebar-logo-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
-        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
-
-        .sidebar-nav {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-6);
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-default) transparent;
-            padding-right: 2px;
-        }
-        .sidebar-nav::-webkit-scrollbar { width: 4px; }
-        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
-
-        .nav-section-title {
-            color: var(--text-tertiary);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            margin-bottom: var(--s-3);
-            padding-left: var(--s-3);
-        }
-        .nav-item { position: relative; }
-        .nav-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-3);
-            padding: 10px var(--s-3);
-            color: var(--text-secondary);
-            border-radius: var(--r-md);
-            transition: all var(--dur-fast) var(--ease-out);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            position: relative;
-        }
-        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
-        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
-        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
-        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
-        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
-        .nav-link.active i.nav-icon { opacity: 1; }
-        .dropdown-arrow {
-            font-size: 0.65rem;
-            transition: transform var(--dur-fast) var(--ease-out);
-            color: var(--text-tertiary);
-        }
-        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
-
-        .dropdown {
-            margin-top: var(--s-1);
-            margin-left: var(--s-7);
-            padding-left: var(--s-4);
-            border-left: 1px solid var(--border-subtle);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--dur-base) var(--ease-out);
-        }
-        .nav-item.active .dropdown { max-height: 400px; }
-        .dropdown-link {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 7px var(--s-3);
-            color: var(--text-tertiary);
-            font-size: 0.825rem;
-            font-weight: 500;
-            border-radius: var(--r-sm);
-            transition: all var(--dur-fast);
-        }
-        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
-        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
-        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
-        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
-        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
-
-        .sidebar-footer {
-            margin-top: auto;
-            padding-top: var(--s-5);
-            border-top: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .theme-toggle {
-            width: 100%;
-            padding: 10px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-md);
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-2);
-            font-size: 0.825rem;
-            font-weight: 600;
-            transition: all var(--dur-fast);
-        }
-        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
-
-        .mobile-toggle {
-            display: none;
-            position: fixed;
-            top: var(--s-4); left: var(--s-4);
-            z-index: 1001;
-            width: 48px; height: 48px;
-            background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-md);
-            color: var(--blue-900);
-            font-size: 1.1rem;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-lg);
-        }
-        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
-
-        /* =========================================================
-           MAIN CONTENT — Full viewport, flex column
-           ========================================================= */
-        .main-content {
-            margin-left: var(--sidebar-w);
-            height: 100vh;
-            position: relative;
-            z-index: 2;
-            transition: margin-left var(--dur-base) var(--ease-out);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        /* =========================================================
-           PORTAL — Edge-to-edge, no hero, no padding, sharp edges
-           ========================================================= */
-        .portal-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            min-height: 0;
-            position: relative;
-            background: var(--bg-surface);
-        }
-
-        /* Ultra-minimal header bar — thin, integrated */
-        .portal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-4);
-            padding: 10px var(--s-5);
-            background: var(--bg-surface);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-            z-index: 10;
-        }
-        .portal-title-group {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            min-width: 0;
-        }
-        .portal-icon {
-            width: 32px; height: 32px;
-            border-radius: var(--r-sm);
-            background: linear-gradient(135deg, var(--amber-500), var(--amber-400));
-            color: var(--blue-950);
-            display: grid; place-items: center;
-            font-size: 0.85rem;
-            flex-shrink: 0;
-        }
-        .portal-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-base);
-            font-weight: 500;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .portal-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 4px 10px;
-            background: rgba(45, 138, 78, 0.08);
-            border: 1px solid rgba(45, 138, 78, 0.15);
-            border-radius: var(--r-full);
-            font-size: 0.68rem;
-            font-weight: 600;
-            color: var(--forest-600);
-            font-family: var(--font-mono);
-            flex-shrink: 0;
-        }
-        [data-theme="dark"] .portal-status {
-            background: rgba(45, 138, 78, 0.12);
-            color: #4ade80;
-            border-color: rgba(74, 222, 128, 0.2);
-        }
-        .portal-status .dot {
-            width: 5px; height: 5px;
-            border-radius: 50%;
-            background: var(--forest-500);
-            box-shadow: 0 0 6px var(--forest-500);
-            animation: statusPulse 2s ease-in-out infinite;
-        }
-        @keyframes statusPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Portal frame — edge-to-edge, sharp corners, fills all space */
-        .portal-frame {
-            flex: 1;
-            position: relative;
-            background: var(--bg-surface);
-            overflow: hidden;
-            min-height: 0;
-        }
-        .portal-frame iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
-            display: block;
-            background: var(--bg-surface);
-        }
-
-        /* Branded loader */
-        .portal-loader {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-6);
-            z-index: 5;
-            transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base) var(--ease-out);
-        }
-        .portal-loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .loader-mark {
-            width: 72px; height: 72px;
-            border-radius: var(--r-xl);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.8rem;
-            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            animation: loaderPulse 2s ease-in-out infinite;
-        }
-        .loader-mark::before {
-            content: '';
-            position: absolute;
-            inset: -8px;
-            border-radius: var(--r-2xl);
-            border: 2px solid transparent;
-            border-top-color: var(--amber-400);
-            border-right-color: var(--blue-400);
-            animation: loaderSpin 1.5s linear infinite;
-        }
-        .loader-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: var(--r-xl);
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        @keyframes loaderPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        @keyframes loaderSpin { to { transform: rotate(360deg); } }
-        .loader-text { text-align: center; }
-        .loader-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 500;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-            letter-spacing: -0.01em;
-        }
-        .loader-subtitle {
-            font-size: 0.825rem;
-            color: var(--text-tertiary);
-            font-weight: 500;
-        }
-        .loader-bar {
-            width: 200px;
-            height: 3px;
-            background: var(--bg-muted);
-            border-radius: var(--r-full);
-            overflow: hidden;
-            position: relative;
-        }
-        .loader-bar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 40%;
-            height: 100%;
-            background: linear-gradient(90deg, var(--blue-600), var(--amber-400), var(--sky-500));
-            border-radius: var(--r-full);
-            animation: loaderBar 1.8s ease-in-out infinite;
-        }
-        @keyframes loaderBar {
-            0% { left: -40%; }
-            100% { left: 100%; }
-        }
-
-        /* Error state */
-        .portal-error {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-4);
-            z-index: 6;
-            padding: var(--s-8);
-            text-align: center;
-        }
-        .portal-error.active { display: flex; }
-        .error-icon {
-            width: 64px; height: 64px;
-            border-radius: 50%;
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            display: grid; place-items: center;
-            color: #ef4444;
-            font-size: 1.5rem;
-        }
-        .error-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-xl);
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-        .error-text {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            max-width: 400px;
-            line-height: 1.6;
-        }
-        .error-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: var(--blue-900);
-            color: white;
-            border-radius: var(--r-full);
-            font-weight: 600;
-            font-size: 0.875rem;
-            transition: all var(--dur-fast);
-            margin-top: var(--s-2);
-        }
-        .error-btn:hover {
-            background: var(--blue-800);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        /* =========================================================
-           SCROLLABLE CONTENT AREA — Tips sections below the fold
-           ========================================================= */
-        .content-scroll {
-            flex: 0 0 auto;
-            overflow-y: auto;
-            overflow-x: hidden;
-            max-height: 0;
-            transition: max-height 0.4s var(--ease-out);
-        }
-        .content-scroll.expanded {
-            max-height: 10000px;
-        }
-
-        /* Scroll indicator — subtle bar between portal and tips */
-        .scroll-indicator {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-3);
-            padding: var(--s-3) var(--s-5);
-            background: var(--bg-muted);
-            border-top: 1px solid var(--border-hairline);
-            border-bottom: 1px solid var(--border-hairline);
-            cursor: pointer;
-            transition: all var(--dur-fast);
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: var(--text-tertiary);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-        .scroll-indicator:hover {
-            background: var(--bg-surface);
-            color: var(--text-primary);
-        }
-        .scroll-indicator i {
-            font-size: 0.7rem;
-            transition: transform var(--dur-fast);
-        }
-        .scroll-indicator.expanded i {
-            transform: rotate(180deg);
-        }
-
-        /* =========================================================
-           SECTIONS — Exam tips & tracking
-           ========================================================= */
-        .container {
-            width: 100%;
-            max-width: var(--container);
-            margin: 0 auto;
-            padding: 0 var(--s-8);
-            position: relative;
-        }
-
-        .section {
-            padding: var(--s-16) 0;
-            position: relative;
-        }
-        .section.alt-bg {
-            background: var(--bg-muted);
-        }
-        .section.alt-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.3;
-            pointer-events: none;
-        }
-        .section.alt-bg > * { position: relative; z-index: 1; }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--s-10);
-        }
-        .section-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-3);
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--blue-600);
-            margin-bottom: var(--s-4);
-        }
-        [data-theme="dark"] .section-eyebrow { color: var(--sky-400); }
-        .section-eyebrow::before {
-            content: '';
-            width: 28px; height: 1px;
-            background: currentColor;
-        }
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, var(--fs-3xl));
-            font-weight: 400;
-            line-height: 1.1;
-            letter-spacing: -0.025em;
-            color: var(--text-primary);
-            margin-bottom: var(--s-3);
-            font-variation-settings: "opsz" 144;
-        }
-        .section-title .italic {
-            font-style: italic;
-            font-weight: 300;
-            color: var(--blue-600);
-        }
-        [data-theme="dark"] .section-title .italic { color: var(--sky-400); }
-        .section-lede {
-            font-size: var(--fs-base);
-            color: var(--text-secondary);
-            line-height: 1.7;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Info cards grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--s-5);
-        }
-
-        .info-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-xl);
-            padding: var(--s-6);
-            transition: all var(--dur-base) var(--ease-out);
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-        .info-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 3px; height: 100%;
-            background: var(--card-accent, var(--gradient-royal));
-            transform: scaleY(0);
-            transform-origin: top;
-            transition: transform var(--dur-slow) var(--ease-out);
-        }
-        .info-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--border-default);
-        }
-        .info-card:hover::before { transform: scaleY(1); }
-
-        .info-card:nth-child(1) { --card-accent: linear-gradient(180deg, var(--amber-500), #ef4444); }
-        .info-card:nth-child(2) { --card-accent: linear-gradient(180deg, var(--blue-600), var(--sky-500)); }
-        .info-card:nth-child(3) { --card-accent: linear-gradient(180deg, var(--sky-500), var(--blue-400)); }
-        .info-card:nth-child(4) { --card-accent: linear-gradient(180deg, #ec4899, #f43f5e); }
-        .info-card:nth-child(5) { --card-accent: linear-gradient(180deg, var(--forest-500), var(--sky-500)); }
-        .info-card:nth-child(6) { --card-accent: linear-gradient(180deg, #7c3aed, #a855f7); }
-        .info-card:nth-child(7) { --card-accent: linear-gradient(180deg, #f97316, var(--amber-500)); }
-        .info-card:nth-child(8) { --card-accent: linear-gradient(180deg, var(--blue-500), var(--sky-400)); }
-        .info-card:nth-child(9) { --card-accent: linear-gradient(180deg, var(--terra-500), var(--amber-500)); }
-
-        .info-icon {
-            width: 44px; height: 44px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
-            color: var(--blue-700);
-            display: grid; place-items: center;
-            font-size: 1.1rem;
-            margin-bottom: var(--s-3);
-            box-shadow: var(--shadow-inner);
-        }
-        [data-theme="dark"] .info-icon {
-            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
-            color: var(--sky-400);
-        }
-
-        .info-card h3 {
-            font-family: var(--font-display);
-            font-size: var(--fs-base);
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-            letter-spacing: -0.01em;
-        }
-        .info-card > p {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            line-height: 1.65;
-            margin-bottom: var(--s-3);
-        }
-        .info-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-1);
-        }
-        .info-card ul li {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--s-2);
-            color: var(--text-secondary);
-            font-size: 0.8rem;
-            line-height: 1.55;
-        }
-        .info-card ul li i {
-            color: var(--amber-500);
-            margin-top: 3px;
-            flex-shrink: 0;
-            font-size: 0.7rem;
-        }
-        [data-theme="dark"] .info-card ul li i { color: var(--amber-400); }
-
-        /* Tips highlight box */
-        .tips-highlight {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-xl);
-            padding: var(--s-8);
-            margin-top: var(--s-8);
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-        .tips-highlight::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--amber-500), var(--blue-600), var(--sky-500));
-        }
-        .tips-highlight h4 {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            letter-spacing: -0.01em;
-        }
-        .tips-highlight h4 i {
-            color: var(--amber-500);
-            font-size: 1.1rem;
-        }
-        [data-theme="dark"] .tips-highlight h4 i { color: var(--amber-400); }
-        .tips-highlight p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.75;
-        }
-
-        /* =========================================================
-           FOOTER — Identical to index.html
-           ========================================================= */
-        .footer {
-            background: var(--blue-950);
-            color: rgba(255,255,255,0.75);
-            padding: var(--s-16) 0 var(--s-8);
-            position: relative;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        .footer::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
-                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
-            pointer-events: none;
-        }
-        .footer > * { position: relative; z-index: 1; }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-            gap: var(--s-10);
-            margin-bottom: var(--s-10);
-        }
-        .footer-brand .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            margin-bottom: var(--s-4);
-            color: white;
-            font-weight: 700;
-            font-size: 0.95rem;
-        }
-        .footer-brand .footer-logo-mark {
-            width: 38px; height: 38px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
-            color: var(--amber-400);
-            display: grid; place-items: center;
-            font-size: 0.95rem;
-            box-shadow: var(--shadow-md);
-        }
-        .footer-tagline {
-            font-family: var(--font-display);
-            font-style: italic;
-            font-weight: 400;
-            font-size: var(--fs-lg);
-            color: var(--amber-300);
-            margin-bottom: var(--s-4);
-            line-height: 1.5;
-            letter-spacing: -0.01em;
-        }
-        .footer-brand > p {
-            font-size: 0.85rem;
-            line-height: 1.7;
-            margin-bottom: var(--s-5);
-            max-width: 360px;
-        }
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-2);
-            font-size: 0.8rem;
-            font-style: normal;
-        }
-        .footer-contact-item {
-            display: flex;
-            align-items: center;
-            gap: var(--s-2);
-            color: rgba(255,255,255,0.7);
-        }
-        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.75rem; }
-
-        .footer-col h4 {
-            color: white;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            margin-bottom: var(--s-4);
-        }
-        .footer-links {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-2);
-        }
-        .footer-links a {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.65);
-            transition: color var(--dur-fast);
-            font-weight: 500;
-        }
-        .footer-links a:hover { color: var(--amber-300); }
-
-        .footer-newsletter p {
-            font-size: 0.85rem;
-            margin-bottom: var(--s-3);
-            line-height: 1.6;
-        }
-        .newsletter-form {
-            display: flex;
-            gap: var(--s-2);
-            margin-bottom: var(--s-4);
-        }
-        .newsletter-form input {
-            flex: 1;
-            padding: 10px 12px;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: var(--r-md);
-            color: white;
-            font-family: var(--font-body);
-            font-size: 0.825rem;
-            min-width: 0;
-            transition: all var(--dur-fast);
-        }
-        .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
-        .newsletter-form input:focus {
-            outline: none;
-            border-color: var(--amber-400);
-            background: rgba(255,255,255,0.1);
-        }
-        .newsletter-form button {
-            padding: 10px 16px;
-            background: var(--amber-500);
-            color: var(--blue-950);
-            border-radius: var(--r-md);
-            font-weight: 700;
-            font-size: 0.825rem;
-            transition: background var(--dur-fast);
-        }
-        .newsletter-form button:hover { background: var(--amber-400); }
-
-        .social-links { display: flex; gap: var(--s-2); }
-        .social-links a {
-            width: 36px; height: 36px;
-            border-radius: var(--r-md);
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
-            display: grid; place-items: center;
-            color: rgba(255,255,255,0.7);
-            transition: all var(--dur-fast);
-            font-size: 0.85rem;
-        }
-        .social-links a:hover {
-            background: var(--amber-500);
-            color: var(--blue-950);
-            border-color: var(--amber-500);
-            transform: translateY(-2px);
-        }
-
-        .footer-bottom {
-            padding-top: var(--s-6);
-            border-top: 1px solid rgba(255,255,255,0.08);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: var(--s-4);
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-        }
-        .footer-legal { display: flex; gap: var(--s-5); }
-        .footer-legal a { transition: color var(--dur-fast); }
-        .footer-legal a:hover { color: var(--amber-300); }
-
-        /* =========================================================
-           REVEAL ANIMATIONS
-           ========================================================= */
-        .reveal {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
-        }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-stagger > * {
-            opacity: 0;
-            transform: translateY(16px);
-            transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
-        }
-        .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
-        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
-        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 60ms; }
-        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 120ms; }
-        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 180ms; }
-        .reveal-stagger.visible > *:nth-child(5) { transition-delay: 240ms; }
-        .reveal-stagger.visible > *:nth-child(6) { transition-delay: 300ms; }
-        .reveal-stagger.visible > *:nth-child(7) { transition-delay: 360ms; }
-        .reveal-stagger.visible > *:nth-child(8) { transition-delay: 420ms; }
-        .reveal-stagger.visible > *:nth-child(9) { transition-delay: 480ms; }
-
-        /* =========================================================
-           RESPONSIVE
-           ========================================================= */
-        @media (max-width: 1280px) {
-            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
-            .footer-newsletter { grid-column: 1 / -1; }
-        }
-        @media (max-width: 1024px) {
-            :root { --sidebar-w: 280px; }
-        }
-        @media (max-width: 900px) {
-            .sidebar { transform: translateX(-100%); box-shadow: none; }
-            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
-            .main-content { margin-left: 0; }
-            .mobile-toggle { display: flex; }
-            .portal-header { padding: 8px var(--s-4); }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
-            .footer-brand { grid-column: 1 / -1; }
-        }
-        @media (max-width: 640px) {
-            .container { padding: 0 var(--s-5); }
-            .section { padding: var(--s-12) 0; }
-            .portal-header { padding: 8px var(--s-3); }
-            .portal-title { font-size: var(--fs-sm); }
-            .info-grid { grid-template-columns: 1fr; }
-            .info-card { padding: var(--s-5); }
-            .tips-highlight { padding: var(--s-5); }
-            .footer-grid { grid-template-columns: 1fr; }
-            .footer-bottom { flex-direction: column; text-align: center; }
-            .footer-legal { flex-wrap: wrap; justify-content: center; }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-            .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
-            .orb { animation: none; }
-            .loader-mark::before { animation: none; }
-            .loader-bar::before { animation: none; width: 100%; left: 0; }
-        }
-
-        @media print {
-            .sidebar, .mobile-toggle, .ambient-bg, .portal-frame, .footer, .scroll-indicator { display: none !important; }
-            .main-content { margin-left: 0; height: auto; }
-            body { background: white !important; color: black !important; overflow: visible; }
-            .info-card { box-shadow: none !important; border: 1px solid #ccc !important; break-inside: avoid; background: white !important; }
-        }
-    </style>
+@media(max-width:1280px){.hero-inner,.portal-grid{grid-template-columns:1fr;gap:var(--s-12)}.aside-col{position:static;grid-template-columns:1fr 1fr}.due-stack{max-width:480px}.footer-grid{grid-template-columns:1.5fr 1fr 1fr}.footer-newsletter{grid-column:1/-1}}
+@media(max-width:900px){.sidebar{transform:translateX(-100%);box-shadow:none}.sidebar.active{transform:none;box-shadow:var(--shadow-2xl)}.main-content{margin-left:0}.mobile-toggle{display:flex}.hero{padding:var(--s-20) var(--s-6) var(--s-12)}.cat-strip{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:var(--s-8)}.footer-brand{grid-column:1/-1}}
+@media(max-width:640px){.container{padding:0 var(--s-5)}.section{padding:var(--s-16) 0}.cards,.aside-col{grid-template-columns:1fr}.cat-strip{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.footer-legal{flex-wrap:wrap;justify-content:center}.hero-ctas{flex-direction:column;align-items:stretch}.btn{justify-content:center}.cd-segs{margin-left:0}.due-clock{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal,.reveal-stagger>*{opacity:1;transform:none}.orb{animation:none}}
+</style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="ambient-bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar"><i class="fas fa-bars"></i></button>
 
-    <!-- Ambient background -->
-    <div class="ambient-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<!-- SIDEBAR -->
+<nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="sidebar-header">
+    <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+      <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+      <div class="sidebar-logo-text"><span class="sidebar-logo-title">KE0274 PEFA</span><span class="sidebar-logo-sub">Mfangano CYDC</span></div>
+    </a>
+  </div>
+  <div class="sidebar-nav">
+    <div class="nav-section">
+      <div class="nav-section-title">Main</div>
+      <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon"></i><span>Home</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie"></i> Leaders</a>
+          <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea"></i> Voting</a>
+          <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb"></i> Suggestions</a>
+          <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award"></i> Empowerment</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye"></i> Goal Achiever</a>
+          <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap"></i> Departments</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-section-title">Resources</div>
+      <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon"></i><span>Learning</span></div></a></div>
+      <div class="nav-item active">
+        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt"></i> Timetable</a>
+          <a href="assignment.html" class="dropdown-link" role="menuitem" aria-current="page" style="color:var(--blue-600);font-weight:700"><i class="fas fa-tasks"></i> Assignments</a>
+          <a href="results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line"></i> Results</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../newsandupdates/newsandupdates.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-newspaper nav-icon"></i><span>News</span></div></a></div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-section-title">More</div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video"></i> Gallery</a>
+          <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard"></i> Virtual Tour</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../achievments/achievment.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-trophy nav-icon"></i><span>Achievements</span></div></a></div>
+      <div class="nav-item"><a href="../inventory/inventory.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-boxes nav-icon"></i><span>Inventory</span></div></a></div>
+      <div class="nav-item"><a href="../chatsupport/chat-support.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-comments nav-icon"></i><span>Support</span></div></a></div>
+    </div>
+  </div>
+  <div class="sidebar-footer"><button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><i class="fas fa-moon"></i><span>Dark Mode</span></button></div>
+</nav>
+
+<main class="main-content" id="main">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="pulse"></span><span>Student Portal · August 2026</span></div>
+      <h1 class="hero-title">
+        <span class="line">Assignments &amp;</span>
+        <span class="line"><span class="italic">Studio Tasks.</span></span>
+      </h1>
+      <p class="hero-subtitle">Everything set for Saturday classes and holiday programmes — Scripture memory, worksheets, garden diaries and creative projects, all in one place.</p>
+      <div class="hero-ctas">
+        <a href="#submit" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Submit Work</a>
+        <a href="timetable.html" class="btn btn-ghost"><i class="fas fa-calendar-alt"></i> View Timetable</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><i class="fas fa-calendar-check"></i><span id="metaDue">— due this week</span></div>
+        <div class="trust-item"><i class="fas fa-tasks"></i><span>9 active tasks</span></div>
+        <div class="trust-item"><i class="fas fa-check-circle"></i><span>86% on-time rate</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="due-stack">
+        <div class="dcard back"></div>
+        <div class="dcard front">
+          <span class="badge b-amber">✦ Next Due</span>
+          <h3 style="font-family:var(--font-display);font-size:24px;font-weight:500;margin-top:12px;color:var(--text-primary)" id="ndTitle">Scripture Memory — Psalm 23</h3>
+          <p style="color:var(--text-secondary);font-size:14px" id="ndMeta">Spiritual Formation · Sr. B. Owino · Sat 8 Aug</p>
+          <div class="due-clock">
+            <div><div class="k">Countdown</div><div class="big" id="ndBig">—</div></div>
+            <div class="cd-segs">
+              <div class="cd-seg"><b id="cdD">0</b><span>Days</span></div>
+              <div class="cd-seg"><b id="cdH">0</b><span>Hrs</span></div>
+              <div class="cd-seg"><b id="cdM">0</b><span>Min</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CATEGORIES -->
+<section class="section" style="padding-bottom:0">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Browse by Area</div>
+      <h2 class="section-title">Assignment <span class="italic">categories.</span></h2>
+    </div>
+    <div class="cat-strip" id="catStrip" role="group" aria-label="Filter assignments by category"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- MAIN GRID -->
+<section class="section">
+  <div class="container portal-grid">
+    <div>
+      <div class="card" style="margin-bottom:20px">
+        <div class="toolbar">
+          <label class="search"><i class="fas fa-search"></i><input type="search" id="q" placeholder="Search assignments…"></label>
+          <select id="statusSel"><option value="all">All statuses</option><option>Pending</option><option>Submitted</option><option>Graded</option><option>Late</option></select>
+          <select id="sortSel"><option value="due">Sort: Due date</option><option value="title">Sort: Title A–Z</option><option value="status">Sort: Status</option></select>
+          <div class="view-tg">
+            <button id="gridV" aria-pressed="true" aria-label="Grid view"><i class="fas fa-th-large"></i></button>
+            <button id="listV" aria-pressed="false" aria-label="List view"><i class="fas fa-list"></i></button>
+          </div>
+        </div>
+        <div style="padding:0 22px 16px;font:500 12px var(--font-mono);color:var(--text-tertiary)" id="countLbl"></div>
+      </div>
+      <div class="cards" id="cards"></div>
+      <div class="card empty" id="emptyState" hidden>
+        <i class="far fa-folder-open"></i>
+        <h3>Nothing matches your filters</h3>
+        <p>Try clearing the search box or choosing another category or status.</p>
+        <button class="btn btn-ghost btn-sm" id="emptyClear">Clear filters</button>
+      </div>
+
+      <div id="submit" style="scroll-margin-top:100px">
+        <div class="reveal" style="margin-top:56px">
+          <div class="section-eyebrow">Hand-In Desk</div>
+          <h2 class="section-title" style="font-size:clamp(1.6rem,2.6vw,2.1rem)">Submit your <span class="italic">work.</span></h2>
+          <p class="section-lede">Drag files in or browse from your phone. A tutor confirms every submission within 48 hours.</p>
+        </div>
+        <div class="dropzone" id="dropzone">
+          <div class="dz-ic"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h3>Drop files here, or <label for="fileIn">browse</label></h3>
+          <p style="color:var(--text-secondary);font-size:14px;margin-top:6px">PDF, photos, Word or audio · up to 10 MB each</p>
+          <input type="file" id="fileIn" multiple hidden>
+          <div style="margin-top:16px;text-align:left">
+            <label for="assignSel" style="font:600 11px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--text-tertiary)">Submitting for</label><br>
+            <select id="assignSel" style="margin-top:8px;width:100%;max-width:420px"></select>
+          </div>
+          <div class="dz-files" id="dzFiles"></div>
+          <div class="dz-prog" id="dzProg"><i></i></div>
+          <button class="btn btn-primary" id="uploadBtn" style="margin-top:18px" disabled><i class="fas fa-paper-plane"></i> Upload submission</button>
+        </div>
+      </div>
     </div>
 
-    <!-- Mobile Toggle -->
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
-
-    <!-- Sidebar Navigation — Identical to index.html -->
-    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
-        <div class="sidebar-header">
-            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
-                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                <div class="sidebar-logo-text">
-                    <span class="sidebar-logo-title">KE0274 PEFA</span>
-                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
-                </div>
-            </a>
+    <aside class="aside-col">
+      <div class="card">
+        <div class="panel-h"><i class="fas fa-chart-pie"></i>Term II Progress</div>
+        <div class="ring-wrap">
+          <svg class="ring" width="110" height="110" viewBox="0 0 110 110">
+            <circle class="bg" cx="55" cy="55" r="46" pathLength="100"/>
+            <circle class="fg" id="ringFg" cx="55" cy="55" r="46" pathLength="100"/>
+            <text x="55" y="62" text-anchor="middle" id="ringTxt">0%</text>
+          </svg>
+          <div><b style="font:700 15px var(--font-body);color:var(--text-primary)">Submitted or graded</b><p style="font-size:13px;color:var(--text-secondary);margin-top:6px">3 of 9 tasks handed in. Target: 100% by Sat 29 Aug.</p></div>
         </div>
+        <div class="panel-h" style="border-top:1px solid var(--border-hairline)"><i class="fas fa-chart-bar"></i>This Week's Hand-Ins</div>
+        <div class="week-bars" id="weekBars"></div>
+        <div style="display:flex;justify-content:space-between;padding:0 22px 18px;font:600 10px var(--font-mono);color:var(--text-tertiary)"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div>
+      </div>
 
-        <div class="sidebar-nav">
-            <div class="nav-section">
-                <div class="nav-section-title">Main</div>
-                <div class="nav-item">
-                    <a href="../index.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
-                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
-                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
-                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
-                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
-                    </div>
-                </div>
-            </div>
+      <div class="card">
+        <div class="panel-h"><i class="fas fa-calendar-alt"></i><span id="calTitle">August 2026</span></div>
+        <div class="cal"><div class="cal-grid" id="calGrid"></div></div>
+        <div style="padding:0 18px 16px;display:flex;flex-wrap:wrap;gap:10px;font:500 10.5px var(--font-mono);color:var(--text-tertiary)" id="calLegend"></div>
+      </div>
 
-            <div class="nav-section">
-                <div class="nav-section-title">Resources</div>
-                <div class="nav-item">
-                    <a href="../learningresources/learningresources.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
-                    </a>
-                </div>
-                <div class="nav-item active">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
-                        <a href="assignment.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
-                        <a href="results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">More</div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
-                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../achievments/achievment.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../inventory/inventory.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../chatsupport/chat-support.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
-                    </a>
-                </div>
-            </div>
+      <div class="card">
+        <div class="panel-h"><i class="fas fa-bell"></i>Notifications
+          <button id="readAll" class="btn btn-ghost btn-sm" style="margin-left:auto;padding:5px 12px">Mark read</button></div>
+        <div class="notif" id="notifList">
+          <div class="n-item unread"><div><p><b>New task posted:</b> Kiswahili Insha — Somo la 4</p><time>2 hours ago</time></div></div>
+          <div class="n-item unread"><div><p>Your WASH poster was received — awaiting tutor review</p><time>1 day ago</time></div></div>
+          <div class="n-item unread"><div><p>Term II results are live in the <a href="results.html" style="color:var(--blue-600);font-weight:700">Results portal</a></p><time>2 days ago</time></div></div>
+          <div class="n-item"><div><p>Reminder: bring gumboots for Garden Club on Saturday</p><time>3 days ago</time></div></div>
         </div>
+      </div>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-                <span>Dark Mode</span>
-            </button>
-        </div>
-    </nav>
+      <div class="help-card">
+        <div class="section-eyebrow" style="margin-bottom:8px">Need Help?</div>
+        <h3 style="font-family:var(--font-display);font-size:20px;font-weight:500;margin:10px 0 6px;color:var(--text-primary)">Tutor office hours</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary)">Every Saturday, 9:00 AM – 2:00 PM at Sena Centre. Parents and caregivers are warmly welcome.</p>
+        <a class="btn btn-primary btn-sm" style="margin-top:14px" href="../chatsupport/chat-support.html"><i class="fas fa-hand-holding-heart"></i> Ask a Tutor</a>
+      </div>
+    </aside>
+  </div>
+</section>
 
-    <!-- Main Content — Full viewport, no hero, portal starts immediately -->
-    <main class="main-content" id="main">
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><div class="footer-logo-mark"><i class="fas fa-heart"></i></div><span>KE0274 PEFA Mfangano CYDC</span></div>
+        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+        <address class="footer-contact">
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Sena Centre, PEFA Cathedral Sena</div>
+          <div class="footer-contact-item"><i class="fas fa-location-arrow"></i> Suba West, Homa Bay County, Kenya</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@ke0274pefa.org</div>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../studentleadership/leaders.html">Leadership</a></li><li><a href="../academics/dreamachiever.html">Academics</a></li><li><a href="../achievments/achievment.html">Achievements</a></li><li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul class="footer-links"><li><a href="../learningresources/learningresources.html">Learning Resources</a></li><li><a href="timetable.html">Student Portal</a></li><li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li><li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li><li><a href="../childprotection.html">Child Protection</a></li></ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Stay Connected</h4>
+        <p>Receive quarterly updates on the lives being transformed through our work.</p>
+        <form class="newsletter-form" id="newsForm"><input type="email" required placeholder="Your email address"><button type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="yr">2026</span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Child Protection Policy</a><a href="#">Terms of Use</a><a href="#">Safeguarding</a></div>
+    </div>
+  </div>
+</footer>
+</main>
 
-        <!-- ===== PORTAL — Edge-to-edge, fills viewport ===== -->
-        <section class="portal-section" aria-labelledby="portal-label">
+<!-- Brief drawer -->
+<div class="scrim" id="scrim"></div>
+<aside class="brief" id="brief" role="dialog" aria-modal="true" aria-labelledby="briefTitle" aria-hidden="true">
+  <div class="b-top"><span class="badge" id="briefBadge">Pending</span>
+    <button class="btn btn-ghost btn-sm" id="briefClose" aria-label="Close panel"><i class="fas fa-times"></i></button></div>
+  <div style="font:600 11px var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-600)" id="briefCat"></div>
+  <h3 id="briefTitle"></h3>
+  <p id="briefDesc" style="color:var(--text-secondary);font-size:14.5px"></p>
+  <div class="b-sec"><h4>Instructions</h4><div id="briefSteps"></div></div>
+  <div class="b-sec"><h4>Materials</h4><div id="briefMats"></div></div>
+  <div class="b-sec"><h4>Submission history</h4><div class="hist" id="briefHist"></div></div>
+  <a class="btn btn-primary" href="#submit" id="briefSubmit" style="margin-top:8px;width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> Submit This Task</a>
+</aside>
 
-            <!-- Ultra-minimal header bar -->
-            <div class="portal-header">
-                <div class="portal-title-group">
-                    <div class="portal-icon" aria-hidden="true"><i class="fas fa-tasks"></i></div>
-                    <h1 class="portal-title" id="portal-label">Assignments & Events Portal</h1>
-                </div>
-                <div class="portal-status" id="portalStatus">
-                    <span class="dot" aria-hidden="true"></span>
-                    <span>Live</span>
-                </div>
-            </div>
+<div class="toast" id="toast" role="status"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
 
-            <!-- Iframe fills all remaining space, edge-to-edge, sharp edges -->
-            <div class="portal-frame" id="portalFrame">
-                <!-- Branded loader -->
-                <div class="portal-loader" id="portalLoader" aria-live="polite" aria-label="Loading assignments portal">
-                    <div class="loader-mark" aria-hidden="true">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="loader-text">
-                        <div class="loader-title">Preparing your assignments</div>
-                        <div class="loader-subtitle">Loading tasks, deadlines & events...</div>
-                    </div>
-                    <div class="loader-bar" aria-hidden="true"></div>
-                </div>
+<script>
+"use strict";
+const CATS={
+ spirit:{name:"Spiritual Formation",color:"var(--amber-500)",ic:"fa-pray"},
+ acad:{name:"Academic Support",color:"var(--blue-600)",ic:"fa-book-open"},
+ life:{name:"Life Skills",color:"#16A34A",ic:"fa-heart"},
+ agri:{name:"Agriculture & Environment",color:"#65A30D",ic:"fa-seedling"},
+ wash:{name:"WASH",color:"var(--sky-500)",ic:"fa-tint"},
+ arts:{name:"Creative Arts",color:"#DC2626",ic:"fa-palette"}
+};
+const T={SO:["SO","Sr. Susan Owino","Head Tutor","var(--blue-50)","var(--blue-600)"],BO:["BO","Sr. Beatrice Owino","Spiritual Mentor","var(--amber-100)","var(--amber-600)"],SN:["SN","Br. Samuel Njeri","Maths Tutor","#DCFCE7","#16A34A"],PA:["PA","Sr. Purity Anyango","WASH Lead","var(--sky-100)","var(--sky-500)"],MA:["MA","Br. Michael Achieng'","Creative Arts","#FEE2E2","#DC2626"],JA:["JA","Sr. Janet Awiti","Life Skills","var(--amber-100)","var(--amber-600)"]};
+const A=[
+ {id:"a1",cat:"spirit",title:"Scripture Memory — Psalm 23 Recitation",desc:"Memorise and recite Psalm 23 in your language of choice, with a short reflection on how the Good Shepherd cares for your family.",due:"2026-08-08T14:00",status:"Pending",tutor:"BO",pts:20,time:"45 min",steps:["Read Psalm 23 three times aloud","Write the key verse in your notebook","Recite to a family member","Recite to your mentor on Saturday"],stepsDone:1,files:[["psalm-23-dholuo.pdf","412 KB"],["reflection-guide.pdf","268 KB"]],hist:[["Posted by Sr. Beatrice","Sat 1 Aug · 9:20 AM"]]},
+ {id:"a2",cat:"acad",title:"Grade 5 Maths — Fractions Drill",desc:"Complete worksheet F-12: equivalent fractions, comparison, and two word problems about sharing omena catch at the beach.",due:"2026-08-11T17:00",status:"Pending",tutor:"SN",pts:30,time:"1 hr",steps:["Attempt all 20 questions alone","Check answers with the marking guide","Correct any mistakes in red pen"],stepsDone:0,files:[["worksheet-F12-fractions.pdf","1.2 MB"],["marking-guide.pdf","640 KB"]],hist:[["Posted by Br. Samuel","Tue 4 Aug · 3:40 PM"]]},
+ {id:"a3",cat:"wash",title:"WASH Awareness Poster",desc:"Design an A4 poster teaching hand-washing steps for the holiday programme — colourful, clear, and in Kiswahili or Dholuo.",due:"2026-08-13T17:00",status:"Submitted",tutor:"PA",pts:25,time:"1.5 hrs",steps:["List the 5 hand-washing steps","Sketch your layout","Finalise with colour","Photograph and upload"],stepsDone:4,files:[["poster-template.pdf","890 KB"]],hist:[["Posted by Sr. Purity","Wed 29 Jul","Received — poster-photo.jpg (2.1 MB)","Wed 6 Aug · 11:05 AM"]]},
+ {id:"a4",cat:"agri",title:"Kitchen Garden Diary — Week 3",desc:"Record germination, watering and weeding for your bean plot. Include one observation about rainfall and a photo if possible.",due:"2026-08-15T12:00",status:"Pending",tutor:"SN",pts:20,time:"30 min",steps:["Measure plant height","Note watering days","Write one observation"],stepsDone:1,files:[["garden-diary-template.pdf","512 KB"]],hist:[["Posted by Br. Samuel","Mon 3 Aug"]]},
+ {id:"a5",cat:"arts",title:"My Island Story — Creative Writing",desc:"Write a one-page story about a day on Mfangano Island. Use at least three similes and read it aloud to someone at home.",due:"2026-08-05T17:00",status:"Late",tutor:"MA",pts:30,time:"1 hr",steps:["Brainstorm characters","Draft your story","Add similes and edit"],stepsDone:2,files:[["story-starters.pdf","300 KB"]],hist:[["Posted by Br. Michael","Mon 27 Jul","Deadline passed — see a tutor Saturday","Tue 5 Aug"]]},
+ {id:"a6",cat:"acad",title:"Kiswahili Insha — Somo la 4",desc:"Andika insha kuhusu 'Mazingira ya Kisiwa Chetu' — aya kumi, kwa herufi nzuri na uakifishaji sahihi.",due:"2026-08-19T17:00",status:"Pending",tutor:"MA",pts:25,time:"1 hr",steps:["Andika rasimu ya kwanza","Rekebisha kosa za sarufi","Nakili insha ya mwisho"],stepsDone:0,files:[["insha-muundo.pdf","480 KB"]],hist:[["Posted by Br. Michael","Thu 6 Aug · 8:15 AM"]]},
+ {id:"a7",cat:"life",title:"Family Budget Plan",desc:"With your caregiver, complete a simple monthly budget: income, needs, savings goal — then set one saving target for December.",due:"2026-08-22T17:00",status:"Pending",tutor:"JA",pts:20,time:"40 min",steps:["List all income sources","Separate needs and wants","Set one savings goal"],stepsDone:0,files:[["budget-worksheet.pdf","720 KB"]],hist:[["Posted by Sr. Janet","Tue 4 Aug"]]},
+ {id:"a8",cat:"spirit",title:"Memory Verse Song Recording",desc:"Record yourself singing your memory verse (any melody). Keep it under two minutes.",due:"2026-08-01T14:00",status:"Graded",tutor:"BO",pts:15,time:"20 min",steps:["Choose your melody","Record audio","Upload recording"],stepsDone:3,files:[],hist:[["Posted by Sr. Beatrice","Mon 20 Jul","Received — verse-song.m4a","Sat 1 Aug","Graded: 88% — Beautiful joy! ✦","Tue 4 Aug"]]},
+ {id:"a9",cat:"acad",title:"Computing — Keyboard Skills Quiz",desc:"Online quiz on home-row keys and safe computer care. Available on the Centre's tablets during Saturday class.",due:"2026-08-27T14:00",status:"Submitted",tutor:"SN",pts:15,time:"25 min",steps:["Practice typing drill","Complete the quiz"],stepsDone:2,files:[["keyboard-chart.pdf","980 KB"]],hist:[["Posted by Br. Samuel","Mon 3 Aug","Completed on Centre tablet","Sat 8 Aug (preview session)"]]}
+];
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const fmtDate=d=>d.toLocaleDateString("en-KE",{weekday:"short",day:"numeric",month:"short"});
+const statusBadge=s=>({Pending:"b-amber",Submitted:"b-sky",Graded:"b-green",Late:"b-red"})[s];
 
-                <!-- Error state -->
-                <div class="portal-error" id="portalError" role="alert">
-                    <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
-                    <div class="error-title">Portal unavailable</div>
-                    <p class="error-text">We're having trouble connecting to the assignments portal. Please try again in a moment.</p>
-                    <button class="error-btn" id="errorRetryBtn">
-                        <i class="fas fa-redo" aria-hidden="true"></i>
-                        <span>Try Again</span>
-                    </button>
-                </div>
+/* Sidebar + theme */
+const mobileToggle=$("#mobileToggle"),sidebar=$("#sidebar");
+mobileToggle.addEventListener("click",()=>{const a=sidebar.classList.toggle("active");mobileToggle.querySelector("i").className=a?"fas fa-times":"fas fa-bars";mobileToggle.setAttribute("aria-expanded",a);document.body.style.overflow=a?"hidden":"";});
+document.addEventListener("click",e=>{if(window.innerWidth<=900&&sidebar.classList.contains("active")&&!sidebar.contains(e.target)&&!mobileToggle.contains(e.target)){sidebar.classList.remove("active");mobileToggle.querySelector("i").className="fas fa-bars";mobileToggle.setAttribute("aria-expanded","false");document.body.style.overflow="";}});
+window.toggleDropdown=function(e,el){e.preventDefault();e.stopPropagation();const ni=el.closest(".nav-item"),act=ni.classList.toggle("active");el.setAttribute("aria-expanded",act);document.querySelectorAll(".nav-item").forEach(x=>{if(x!==ni){x.classList.remove("active");const l=x.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute("aria-expanded","false");}});};
+document.addEventListener("click",e=>{if(!e.target.closest(".nav-item"))document.querySelectorAll(".nav-item.active").forEach(x=>{x.classList.remove("active");const l=x.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute("aria-expanded","false");});});
+const themeToggle=$("#themeToggle");
+function applyTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){};const i=themeToggle.querySelector("i"),l=themeToggle.querySelector("span");i.className=t==="dark"?"fas fa-sun":"fas fa-moon";l.textContent=t==="dark"?"Light Mode":"Dark Mode";}
+applyTheme(localStorage.getItem("theme")||"light");
+themeToggle.addEventListener("click",()=>applyTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(sidebar.classList.contains("active")){sidebar.classList.remove("active");mobileToggle.querySelector("i").className="fas fa-bars";mobileToggle.setAttribute("aria-expanded","false");document.body.style.overflow="";}if(brief.classList.contains("open"))closeBrief();}});
 
-                <!-- The embedded portal -->
-                <iframe
-                    id="assignmentsFrame"
-                    src=""
-                    title="Assignments and Events Portal — Track tasks, deadlines, and events at KE0274 PEFA Mfangano CYDC"
-                    allow="clipboard-write"
-                    loading="eager"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+let toastT;function toast(m){$("#toastMsg").textContent=m;$("#toast").classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>$("#toast").classList.remove("show"),3400);}
 
-        <!-- ===== SCROLL INDICATOR — Expandable bar ===== -->
-        <div class="scroll-indicator" id="scrollIndicator" role="button" tabindex="0" aria-expanded="false" aria-controls="tipsContent">
-            <span>Study Tips & Assignment Strategies</span>
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        </div>
+const state={q:"",cat:"all",status:"all",sort:"due"};
 
-        <!-- ===== SCROLLABLE CONTENT — Tips sections (hidden by default) ===== -->
-        <div class="content-scroll" id="tipsContent">
+/* Category strip */
+const strip=$("#catStrip");
+strip.innerHTML=`<button class="cat" data-cat="all" aria-pressed="true" style="--c:var(--blue-600)"><span class="ic"><i class="fas fa-th-large"></i></span><b>All Areas</b><span>${A.length} tasks</span></button>`+
+Object.entries(CATS).map(([k,c])=>{const n=A.filter(a=>a.cat===k).length;
+  return `<button class="cat" data-cat="${k}" aria-pressed="false" style="--c:${c.color}"><span class="ic"><i class="fas ${c.ic}"></i></span><b>${c.name}</b><span>${n} task${n>1?"s":""}</span></button>`;}).join("");
+strip.addEventListener("click",e=>{const b=e.target.closest(".cat");if(!b)return;
+  strip.querySelectorAll(".cat").forEach(x=>x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");state.cat=b.dataset.cat;render();});
 
-            <!-- EXAM TIPS SECTION -->
-            <section class="section alt-bg" aria-labelledby="tips-title">
-                <div class="container">
-                    <div class="section-header reveal">
-                        <div class="section-eyebrow">Smart Strategies</div>
-                        <h2 class="section-title" id="tips-title">How to <span class="italic">ace</span> your assignments.</h2>
-                        <p class="section-lede">Master these essential techniques to excel in your assignments and achieve academic success.</p>
-                    </div>
+/* Card render */
+function dueInfo(a){const now=new Date(),due=new Date(a.due),ms=due-now;
+  if(a.status==="Graded")return{cls:"dp-done",txt:"Graded ✓"};
+  if(ms<0)return{cls:"dp-late",txt:"Overdue "+Math.ceil(-ms/864e5)+"d"};
+  const d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);
+  const txt=d>0?`${d}d ${h}h left`:`${h}h left`;
+  return{cls:ms<864e5?"dp-urgent":ms<3*864e5?"dp-soon":"dp-ok",txt};}
+function cardHTML(a){const c=CATS[a.cat],t=T[a.tutor],di=dueInfo(a),pct=Math.round(a.stepsDone/a.steps.length*100);
+  return `<article class="acard" data-id="${a.id}" style="--c:${c.color}">
+    <div class="ac-top"><span class="ac-cat">${c.name}</span><span class="badge ${statusBadge(a.status)}">${a.status}</span></div>
+    <h3>${a.title}</h3><p class="desc">${a.desc}</p>
+    <div class="ac-meta"><span><i class="fas fa-star"></i>${a.pts} pts</span><span><i class="fas fa-clock"></i>${a.time}</span><span><i class="fas fa-paperclip"></i>${a.files.length} file${a.files.length===1?"":"s"}</span></div>
+    <div class="t-chip"><span class="t-ava" style="background:${t[3]};color:${t[4]}">${t[0]}</span><div><b>${t[1]}</b><span>${t[2]}</span></div></div>
+    <div class="ac-prog"><span class="p-track"><span class="p-fill" style="width:${pct}%"></span></span><span style="font:500 12px var(--font-mono);color:var(--text-tertiary)">${a.stepsDone}/${a.steps.length}</span></div>
+    <div class="ac-foot">
+      <button class="btn btn-ghost btn-sm open-brief"><i class="fas fa-external-link-alt"></i> Open Brief</button>
+      <button class="btn btn-ghost btn-sm dl-btn"><i class="fas fa-download"></i> Materials</button>
+      <span class="due-pill ${di.cls}"><i class="fas fa-clock"></i><span class="cd-txt">${di.txt}</span></span>
+    </div></article>`;}
+function render(){
+  let list=A.filter(a=>(state.cat==="all"||a.cat===state.cat)&&(state.status==="all"||a.status===state.status));
+  if(state.q)list=list.filter(a=>(a.title+a.desc).toLowerCase().includes(state.q.toLowerCase()));
+  if(state.sort==="due")list.sort((a,b)=>new Date(a.due)-new Date(b.due));
+  if(state.sort==="title")list.sort((a,b)=>a.title.localeCompare(b.title));
+  if(state.sort==="status")list.sort((a,b)=>["Late","Pending","Submitted","Graded"].indexOf(a.status)-["Late","Pending","Submitted","Graded"].indexOf(b.status));
+  $("#cards").innerHTML=list.map(cardHTML).join("");
+  $("#emptyState").hidden=list.length>0;
+  $("#countLbl").textContent=`Showing ${list.length} of ${A.length} assignments · Term II 2026`;
+}
+render();
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render();});
+$("#statusSel").addEventListener("change",e=>{state.status=e.target.value;render();});
+$("#sortSel").addEventListener("change",e=>{state.sort=e.target.value;render();});
+const resetF=()=>{state.q="";state.cat="all";state.status="all";$("#q").value="";$("#statusSel").value="all";strip.querySelectorAll(".cat").forEach((x,i)=>x.setAttribute("aria-pressed",i===0));render();};
+$("#emptyClear").addEventListener("click",resetF);
+$("#gridV").addEventListener("click",()=>{$("#cards").classList.remove("list");$("#gridV").setAttribute("aria-pressed","true");$("#listV").setAttribute("aria-pressed","false");});
+$("#listV").addEventListener("click",()=>{$("#cards").classList.add("list");$("#listV").setAttribute("aria-pressed","true");$("#gridV").setAttribute("aria-pressed","false");});
 
-                    <div class="info-grid reveal-stagger">
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
-                            <h3>Create a Study Plan</h3>
-                            <p>Organize your study time effectively with a structured plan that covers all subjects.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Break subjects into manageable chunks</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Allocate specific times for each topic</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Include regular breaks to avoid burnout</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Prioritize difficult subjects when energy is high</li>
-                            </ul>
-                        </article>
+/* Brief drawer */
+const brief=$("#brief"),scrim=$("#scrim");let lastFocus=null;
+function openBrief(id){const a=A.find(x=>x.id===id);if(!a)return;
+  const c=CATS[a.cat],bd=$("#briefBadge");bd.textContent=a.status;bd.className="badge "+statusBadge(a.status);
+  $("#briefCat").textContent=c.name;$("#briefTitle").textContent=a.title;$("#briefDesc").textContent=a.desc;
+  $("#briefSteps").innerHTML=a.steps.map((s,i)=>`<div class="step ${i<a.stepsDone?"done":""}"><input type="checkbox" id="st${i}" ${i<a.stepsDone?"checked":""} data-i="${i}"><label for="st${i}">${s}</label></div>`).join("");
+  $("#briefMats").innerHTML=a.files.length?a.files.map(f=>`<div class="mat"><i class="fas fa-file"></i><span class="fn">${f[0]}</span><span class="fs">${f[1]}</span><button class="btn btn-ghost btn-sm dl-file" data-f="${f[0]}"><i class="fas fa-download"></i></button></div>`).join(""):'<p style="font-size:13.5px;color:var(--text-secondary)">No materials attached for this task.</p>';
+  const h=a.hist;let hh="";for(let i=0;i<h.length;i+=2){hh+=`<div class="h-item"><b>${h[i][0]}</b><time>${h[i][1]}</time>${h[i+1]?`<div style="margin-top:4px;color:var(--text-secondary)">${h[i+1][0]}<br><time>${h[i+1][1]}</time></div>`:""}</div>`;}
+  $("#briefHist").innerHTML=hh;
+  $("#briefSteps").querySelectorAll("input").forEach(ch=>ch.addEventListener("change",()=>{
+    const i=+ch.dataset.i;ch.checked?a.stepsDone=Math.max(a.stepsDone,i+1):a.stepsDone=Math.min(a.stepsDone,i);
+    ch.closest(".step").classList.toggle("done",ch.checked);render();}));
+  $("#briefMats").querySelectorAll(".dl-file").forEach(b=>b.addEventListener("click",()=>toast(`Downloading ${b.dataset.f}…`)));
+  lastFocus=document.activeElement;scrim.classList.add("open");brief.classList.add("open");brief.setAttribute("aria-hidden","false");
+  $("#briefClose").focus();document.body.style.overflow="hidden";}
+function closeBrief(){scrim.classList.remove("open");brief.classList.remove("open");brief.setAttribute("aria-hidden","true");document.body.style.overflow="";if(lastFocus)lastFocus.focus();}
+$("#cards").addEventListener("click",e=>{
+  const card=e.target.closest(".acard");if(!card)return;
+  if(e.target.closest(".dl-btn")){toast("Preparing assignment materials pack…");return;}
+  if(e.target.closest(".open-brief")||e.target===card)openBrief(card.dataset.id);});
+$("#briefClose").addEventListener("click",closeBrief);scrim.addEventListener("click",closeBrief);
+$("#briefSubmit").addEventListener("click",closeBrief);
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
-                            <h3>Practice Active Recall</h3>
-                            <p>Test yourself regularly instead of just re-reading notes. This strengthens memory retention.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use flashcards for key concepts</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Close books and recite from memory</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Teach concepts to someone else</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Practice past exam questions</li>
-                            </ul>
-                        </article>
+/* Countdowns */
+function tick(){const pending=A.filter(a=>a.status==="Pending").sort((a,b)=>new Date(a.due)-new Date(b.due));
+  const next=pending[0],now=new Date();
+  if(next){const due=new Date(next.due),ms=Math.max(0,due-now);
+    $("#ndTitle").textContent=next.title;$("#ndMeta").textContent=`${CATS[next.cat].name} · ${T[next.tutor][1]} · ${fmtDate(due)}`;
+    const d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);
+    $("#cdD").textContent=d;$("#cdH").textContent=String(h).padStart(2,"0");$("#cdM").textContent=String(m).padStart(2,"0");
+    $("#ndBig").textContent=d>0?`${d}d ${h}h`:`${h}h ${m}m`;}
+  $$(".acard").forEach(el=>{const a=A.find(x=>x.id===el.dataset.id);if(!a)return;
+    const t=el.querySelector(".cd-txt"),di=dueInfo(a);t.textContent=di.txt;
+    const p=el.querySelector(".due-pill");p.className="due-pill "+di.cls;});}
+tick();setInterval(tick,30000);
+$("#metaDue").textContent=`${A.filter(a=>{const d=(new Date(a.due)-new Date())/864e5;return d>=0&&d<=7&&a.status==="Pending";}).length} due this week`;
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-redo" aria-hidden="true"></i></div>
-                            <h3>Use Spaced Repetition</h3>
-                            <p>Review material at increasing intervals to move information into long-term memory.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review after 1 day, then 3 days, then 1 week</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Focus more on topics you find difficult</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use apps like Anki for digital flashcards</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Consistency beats cramming every time</li>
-                            </ul>
-                        </article>
+/* Dropzone */
+const dz=$("#dropzone"),fileIn=$("#fileIn"),dzFiles=$("#dzFiles"),upBtn=$("#uploadBtn");let staged=[];
+const selA=$("#assignSel");
+function fillSel(){selA.innerHTML=A.filter(a=>a.status==="Pending"||a.status==="Late").map(a=>`<option value="${a.id}">${a.title} — due ${fmtDate(new Date(a.due))}</option>`).join("");}
+fillSel();
+function fmtSize(b){return b>1e6?(b/1e6).toFixed(1)+" MB":Math.round(b/1e3)+" KB";}
+function renderFiles(){dzFiles.innerHTML=staged.map((f,i)=>`<div class="dz-file"><i class="fas fa-file"></i><span class="fn">${f.name}</span><span class="fs">${fmtSize(f.size)}</span><button data-i="${i}" aria-label="Remove ${f.name}">✕</button></div>`).join("");
+  upBtn.disabled=staged.length===0;
+  dzFiles.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{staged.splice(+b.dataset.i,1);renderFiles();}));}
+["dragenter","dragover"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add("drag");}));
+["dragleave","drop"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove("drag");}));
+dz.addEventListener("drop",e=>{staged.push(...e.dataTransfer.files);renderFiles();});
+fileIn.addEventListener("change",()=>{staged.push(...fileIn.files);fileIn.value="";renderFiles();});
+upBtn.addEventListener("click",()=>{
+  const prog=$("#dzProg"),bar=prog.querySelector("i");prog.style.display="block";upBtn.disabled=true;upBtn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Uploading…';
+  const st=performance.now(),dur=reduced?100:1500;
+  (function f(n){const p=Math.min(1,(n-st)/dur);bar.style.width=(p*100)+"%";
+    if(p<1)requestAnimationFrame(f);
+    else{const id=selA.value,a=A.find(x=>x.id===id);
+      if(a){a.status="Submitted";a.hist.push(["Received — "+staged.map(f=>f.name).join(", "),"Just now"]);}
+      staged=[];renderFiles();prog.style.display="none";bar.style.width="0";
+      upBtn.innerHTML='<i class="fas fa-paper-plane"></i> Upload submission';fillSel();render();updateRing();
+      toast("Submission received! A tutor will confirm within 48 hours.");}})(st);});
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
-                            <h3>Maintain Healthy Habits</h3>
-                            <p>Your physical and mental health directly impacts your academic performance.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Get 7–9 hours of sleep nightly</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Eat nutritious meals and stay hydrated</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Exercise regularly to boost brain function</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Practice stress management techniques</li>
-                            </ul>
-                        </article>
+/* Progress ring + week bars */
+function updateRing(){const done=A.filter(a=>a.status==="Submitted"||a.status==="Graded").length,pct=Math.round(done/A.length*100);
+  $("#ringFg").style.strokeDasharray=`${pct} ${100-pct}`;$("#ringTxt").textContent=pct+"%";}
+const wb=$("#weekBars"),vals=[3,5,2,6,4,1];
+wb.innerHTML=vals.map((v,i)=>`<div class="wb ${i===3?"today":""}"><i style="height:${v*12}px"></i></div>`).join("");
+const ringIO=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){updateRing();ringIO.disconnect();}}),{threshold:.3});
+ringIO.observe($("#ringFg"));
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
-                            <h3>Master Exam Day</h3>
-                            <p>Prepare properly on the day of your exam to perform at your best.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Arrive early and stay calm</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Read all instructions carefully</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Start with questions you know well</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Manage time wisely and review answers</li>
-                            </ul>
-                        </article>
+/* Calendar */
+function buildCal(){const now=new Date(),y=now.getFullYear(),m=now.getMonth();
+  $("#calTitle").textContent=now.toLocaleDateString("en-KE",{month:"long",year:"numeric"});
+  const first=new Date(y,m,1),start=(first.getDay()+6)%7,days=new Date(y,m+1,0).getDate();
+  const dues={};A.forEach(a=>{const d=new Date(a.due);if(d.getFullYear()===y&&d.getMonth()===m){const k=d.getDate();(dues[k]=dues[k]||[]).push(a);}});
+  let html=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].map(d=>`<span class="dow">${d[0]}</span>`).join("");
+  for(let i=0;i<start;i++)html+="<span></span>";
+  for(let d=1;d<=days;d++){const ds=dues[d],today=d===now.getDate();
+    const tip=ds?ds.map(a=>a.title).join(", "):null;
+    html+=`<span class="cal-d ${today?"today":""} ${ds?"has":""}" ${tip?`title="${tip}" tabindex="0" role="note" aria-label="${d}: ${tip}"`:""} aria-hidden="${ds?"false":"true"}">${d}${ds?`<span class="dot">${ds.slice(0,3).map(a=>`<i style="background:${CATS[a.cat].color}"></i>`).join("")}</span>`:""}</span>`;}
+  $("#calGrid").innerHTML=html;
+  $("#calLegend").innerHTML=Object.values(CATS).slice(0,4).map(c=>`<span><i style="width:7px;height:7px;border-radius:50%;background:${c.color};display:inline-block;margin-right:4px"></i>${c.name.split(" ")[0]}</span>`).join("");}
+buildCal();
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
-                            <h3>Take Effective Notes</h3>
-                            <p>Good notes are the foundation of successful studying and exam preparation.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use the Cornell note-taking method</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Highlight key concepts and definitions</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Create mind maps for complex topics</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review and organize notes weekly</li>
-                            </ul>
-                        </article>
+/* Notifications */
+$("#readAll").addEventListener("click",()=>{$$(".n-item.unread").forEach(n=>n.classList.remove("unread"));toast("All notifications marked as read.");});
 
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                            <h3>Study in Groups</h3>
-                            <p>Collaborative learning can deepen understanding and expose you to different perspectives.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Choose focused, motivated study partners</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set clear goals for each session</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Take turns teaching each other</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Stay on topic and avoid distractions</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
-                            <h3>Develop Growth Mindset</h3>
-                            <p>Believe that intelligence can be developed through dedication and hard work.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Embrace challenges as learning opportunities</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Learn from mistakes and failures</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate effort, not just results</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Stay positive and persistent</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
-                            <h3>Manage Your Time</h3>
-                            <p>Effective time management is crucial for balancing studies, rest, and other activities.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use the Pomodoro technique (25 min study, 5 min break)</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Eliminate distractions during study time</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set realistic daily and weekly goals</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Reward yourself for completing tasks</li>
-                            </ul>
-                        </article>
-                    </div>
-
-                    <div class="tips-highlight reveal">
-                        <h4><i class="fas fa-quote-left" aria-hidden="true"></i> Remember This</h4>
-                        <p>Success in assignments is not about being the smartest — it's about being the most prepared. Consistent effort, smart study strategies, and a positive mindset will take you further than natural talent alone. Trust the process, stay disciplined, and believe in your ability to succeed. You've got this!</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- TRACKING SECTION -->
-            <section class="section" aria-labelledby="tracking-title">
-                <div class="container">
-                    <div class="section-header reveal">
-                        <div class="section-eyebrow">Stay on Track</div>
-                        <h2 class="section-title" id="tracking-title">How to keep <span class="italic">track</span> of progress.</h2>
-                        <p class="section-lede">Stay on top of your academic journey with these proven tracking methods.</p>
-                    </div>
-
-                    <div class="info-grid reveal-stagger">
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-laptop" aria-hidden="true"></i></div>
-                            <h3>Use the Assignments Portal</h3>
-                            <p>Access your official assignments dashboard to view tasks, track deadlines, and submit work.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> View all your assignments in one place</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track your progress over time</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Identify subjects needing improvement</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Download official reports for records</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
-                            <h3>Maintain a Study Journal</h3>
-                            <p>Document your daily study activities, challenges, and achievements to stay accountable.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Record what you studied each day</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Note difficulties and breakthroughs</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track time spent on each subject</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Reflect on what study methods work best</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
-                            <h3>Set SMART Goals</h3>
-                            <p>Create Specific, Measurable, Achievable, Relevant, and Time-bound academic goals.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set target grades for each subject</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Break long-term goals into weekly targets</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review and adjust goals regularly</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate when you achieve milestones</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
-                            <h3>Create Visual Progress Charts</h3>
-                            <p>Visual representations help you see your progress and stay motivated.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Graph your test scores over time</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use color coding for different subjects</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track study hours with a calendar</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate improvements visually</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
-                            <h3>Conduct Weekly Reviews</h3>
-                            <p>Regular self-assessment helps you stay on track and make necessary adjustments.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review what you learned each week</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Identify areas needing more attention</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Adjust your study plan accordingly</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Seek help when you're struggling</li>
-                            </ul>
-                        </article>
-
-                        <article class="info-card">
-                            <div class="info-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
-                            <h3>Seek Teacher Feedback</h3>
-                            <p>Teachers are your best resource for understanding your performance and improving.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Ask for feedback on assignments</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Discuss your progress during office hours</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Request guidance on weak areas</li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Learn from their experience and insights</li>
-                            </ul>
-                        </article>
-                    </div>
-
-                    <div class="tips-highlight reveal">
-                        <h4><i class="fas fa-lightbulb" aria-hidden="true"></i> Pro Tip</h4>
-                        <p>The key to academic success is consistency. Small, daily efforts compound into remarkable achievements over time. Don't wait until exam season to start tracking your progress — make it a daily habit. Remember: what gets measured gets managed, and what gets managed gets improved!</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ===== FOOTER ===== -->
-            <footer class="footer" role="contentinfo">
-                <div class="container">
-                    <div class="footer-grid">
-                        <div class="footer-brand">
-                            <div class="footer-logo">
-                                <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                                <span>KE0274 PEFA Mfangano CYDC</span>
-                            </div>
-                            <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
-                            <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
-                            <address class="footer-contact">
-                                <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
-                                <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
-                                <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
-                            </address>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Explore</h4>
-                            <ul class="footer-links">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../studentleadership/leaders.html">Leadership</a></li>
-                                <li><a href="../academics/dreamachiever.html">Academics</a></li>
-                                <li><a href="../achievments/achievment.html">Achievements</a></li>
-                                <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Resources</h4>
-                            <ul class="footer-links">
-                                <li><a href="../learningresources/learningresources.html">Learning Resources</a></li>
-                                <li><a href="timetable.html">Student Portal</a></li>
-                                <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
-                                <li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li>
-                                <li><a href="../childprotection.html">Child Protection</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col footer-newsletter">
-                            <h4>Stay Connected</h4>
-                            <p>Receive quarterly updates on the lives being transformed through our work.</p>
-                            <form class="newsletter-form" aria-label="Newsletter subscription">
-                                <label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label>
-                                <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email">
-                                <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
-                            </form>
-                            <div class="social-links" aria-label="Social media">
-                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
-                        <div class="footer-legal">
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Child Protection Policy</a>
-                            <a href="#">Terms of Use</a>
-                            <a href="#">Safeguarding</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-        </div><!-- end content-scroll -->
-
-    </main>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // ===== THEME TOGGLE =====
-        const themeToggle = document.getElementById('themeToggle');
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        applyTheme(savedTheme);
-
-        function applyTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            const icon = themeToggle.querySelector('i');
-            const label = themeToggle.querySelector('span');
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-        }
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            applyTheme(current === 'dark' ? 'light' : 'dark');
-        });
-
-        // ===== MOBILE SIDEBAR =====
-        const mobileToggle = document.getElementById('mobileToggle');
-        const sidebar = document.getElementById('sidebar');
-        mobileToggle.addEventListener('click', () => {
-            const isActive = sidebar.classList.toggle('active');
-            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
-            mobileToggle.setAttribute('aria-expanded', String(isActive));
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
-                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-                sidebar.classList.remove('active');
-                mobileToggle.querySelector('i').className = 'fas fa-bars';
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // ===== DROPDOWN TOGGLE =====
-        window.toggleDropdown = function(event, element) {
-            event.preventDefault();
-            event.stopPropagation();
-            const navItem = element.closest('.nav-item');
-            const isActive = navItem.classList.toggle('active');
-            element.setAttribute('aria-expanded', String(isActive));
-            document.querySelectorAll('.nav-item').forEach(item => {
-                if (item !== navItem) {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                }
-            });
-        };
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                });
-            }
-        });
-
-        // ===== SCROLL INDICATOR — Expand tips =====
-        const scrollIndicator = document.getElementById('scrollIndicator');
-        const tipsContent = document.getElementById('tipsContent');
-
-        function toggleTips() {
-            const isExpanded = tipsContent.classList.toggle('expanded');
-            scrollIndicator.classList.toggle('expanded', isExpanded);
-            scrollIndicator.setAttribute('aria-expanded', String(isExpanded));
-
-            if (isExpanded) {
-                setTimeout(() => {
-                    tipsContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
-                setTimeout(() => {
-                    tipsContent.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
-                        el.classList.add('visible');
-                    });
-                }, 400);
-            }
-        }
-
-        scrollIndicator.addEventListener('click', toggleTips);
-        scrollIndicator.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                toggleTips();
-            }
-        });
-
-        // ===== SCROLL REVEAL =====
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
-
-        // ===== KEYBOARD: ESCAPE =====
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                    mobileToggle.focus();
-                }
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
-                });
-                if (tipsContent.classList.contains('expanded')) {
-                    toggleTips();
-                }
-            }
-        });
-
-        // ===== NEWSLETTER FORM =====
-        const form = document.querySelector('.newsletter-form');
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const input = form.querySelector('input');
-                const btn = form.querySelector('button');
-                const original = btn.textContent;
-                btn.textContent = '✓ Subscribed';
-                btn.style.background = 'var(--amber-400)';
-                input.value = '';
-                setTimeout(() => {
-                    btn.textContent = original;
-                    btn.style.background = '';
-                }, 2800);
-            });
-        }
-
-        // ===== RESIZE HANDLER =====
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                if (window.innerWidth > 900) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                }
-            }, 200);
-        });
-
-        // =========================================================
-        // PORTAL IFRAME — Edge-to-edge, fills viewport
-        // =========================================================
-        const PORTAL_URL = 'https://acadia-post.lovable.app';
-        const iframe = document.getElementById('assignmentsFrame');
-        const loader = document.getElementById('portalLoader');
-        const errorPanel = document.getElementById('portalError');
-        const statusEl = document.getElementById('portalStatus');
-        const retryBtn = document.getElementById('errorRetryBtn');
-        let loadTimeout;
-
-        function loadPortal() {
-            errorPanel.classList.remove('active');
-            loader.classList.remove('hidden');
-            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Loading...</span>';
-
-            iframe.src = PORTAL_URL;
-
-            clearTimeout(loadTimeout);
-            loadTimeout = setTimeout(() => {
-                if (!loader.classList.contains('hidden')) {
-                    showError();
-                }
-            }, 12000);
-        }
-
-        function hideLoader() {
-            loader.classList.add('hidden');
-            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Live</span>';
-        }
-
-        function showError() {
-            loader.classList.add('hidden');
-            errorPanel.classList.add('active');
-            statusEl.innerHTML = '<span class="dot" style="background:#ef4444;box-shadow:0 0 8px #ef4444;" aria-hidden="true"></span><span style="color:#ef4444;">Offline</span>';
-        }
-
-        iframe.addEventListener('load', () => {
-            setTimeout(hideLoader, 400);
-        });
-
-        iframe.addEventListener('error', () => {
-            clearTimeout(loadTimeout);
-            showError();
-        });
-
-        retryBtn.addEventListener('click', () => {
-            loadPortal();
-        });
-
-        // Start loading the portal immediately
-        loadPortal();
-    });
-    </script>
+/* Reveal + misc */
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("visible");io.unobserve(en.target);}}),{threshold:.12,rootMargin:"0px 0px -60px 0px"});
+$$(".reveal,.reveal-stagger").forEach(el=>io.observe(el));
+$("#newsForm").addEventListener("submit",e=>{e.preventDefault();toast("Asante! You are subscribed to quarterly updates.");e.target.reset();});
+$("#yr").textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
