@@ -1,1064 +1,439 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Achievers | Academics | KE0274 PEFA Mfangano CYDC</title>
-    <meta name="description" content="Personalized learning portal for KE0274 PEFA Mfangano CYDC participants to track goals, explore resources, and connect with mentors.">
-    <meta name="theme-color" content="#0B1B33">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* =========================================================
-           DESIGN TOKENS — Identical to index.html
-           ========================================================= */
-        :root {
-            --blue-950: #040B1A;
-            --blue-900: #0B1B33;
-            --blue-850: #0F2544;
-            --blue-800: #132E55;
-            --blue-700: #1A3F73;
-            --blue-600: #1E4FD8;
-            --blue-500: #2563EB;
-            --blue-400: #3B82F6;
-            --blue-300: #60A5FA;
-            --blue-200: #93C5FD;
-            --blue-100: #BFDBFE;
-            --blue-50:  #EFF6FF;
-            --sky-500:  #0EA5E9;
-            --sky-400:  #38BDF8;
-            --sky-300:  #7DD3FC;
-            --sky-200:  #BAE6FD;
-            --sky-100:  #E0F2FE;
-            --amber-600: #D97706;
-            --amber-500: #F59E0B;
-            --amber-400: #FBBF24;
-            --amber-300: #FCD34D;
-            --amber-100: #FEF3C7;
-            --forest-600: #1e6b3a;
-            --forest-500: #2d8a4e;
-            --terra-500: #a8553c;
-            --stone-950: #0C0A09;
-            --stone-900: #1C1917;
-            --stone-800: #292524;
-            --stone-700: #44403C;
-            --stone-600: #57534E;
-            --stone-500: #78716C;
-            --stone-400: #A8A29E;
-            --stone-300: #D6D3D1;
-            --stone-200: #E7E5E4;
-            --stone-100: #F5F5F4;
-            --stone-50:  #FAFAF9;
-            --ivory:    #FDFCF8;
-            --cream:    #FAF7F0;
-            --pearl:    #F8F6F1;
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="description" content="Personalized learning portal for KE0274 PEFA Mfangano CYDC participants to track goals, explore resources, and connect with mentors.">
+<meta name="theme-color" content="#0B1B33"/>
+<meta property="og:title" content="Dream Achievers Portal | KE0274 PEFA Mfangano CYDC">
+<meta property="og:description" content="Inspire · Grow · Achieve — your personal learning space.">
+<title>Dream Achievers | Academics | KE0274 PEFA Mfangano CYDC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+  --blue-950:#020814;--blue-900:#0A1628;--blue-800:#132E55;--blue-700:#1A3F73;--blue-600:#1E4FD8;--blue-500:#2563EB;--blue-400:#3B82F6;--blue-300:#60A5FA;--blue-100:#BFDBFE;--blue-50:#EFF6FF;
+  --sky-500:#0EA5E9;--sky-400:#38BDF8;--sky-300:#7DD3FC;--sky-100:#E0F2FE;
+  --amber-600:#D97706;--amber-500:#F59E0B;--amber-400:#FBBF24;--amber-300:#FCD34D;--amber-200:#FDE68A;--amber-100:#FEF3C7;--gold-400:#FACC15;
+  --forest-600:#1e6b3a;--forest-500:#2d8a4e;
+  --stone-700:#44403C;--stone-500:#78716C;--stone-400:#A8A29E;--ivory:#FDFCF8;--pearl:#F8F6F1;
+  --bg-page:var(--ivory);--bg-surface:#fff;--bg-muted:var(--pearl);--bg-glass:rgba(255,255,255,.72);
+  --text-primary:var(--blue-950);--text-secondary:var(--stone-700);--text-tertiary:var(--stone-500);--text-quaternary:var(--stone-400);--text-accent:var(--blue-600);
+  --border-hairline:rgba(12,27,51,.05);--border-subtle:rgba(12,27,51,.09);--border-default:rgba(12,27,51,.14);
+  --gradient-hero:linear-gradient(135deg,var(--blue-950) 0%,var(--blue-900) 40%,var(--blue-800) 100%);
+  --gradient-royal:linear-gradient(135deg,var(--blue-700),var(--blue-600));
+  --gradient-warm:linear-gradient(135deg,var(--amber-600) 0%,var(--amber-400) 55%,var(--gold-400) 100%);
+  --gradient-gold:linear-gradient(135deg,var(--gold-400),var(--amber-300));
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.12) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.10) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.09) 0%,transparent 50%),radial-gradient(at 10% 90%,rgba(30,79,216,.07) 0%,transparent 45%);
+  --shadow-sm:0 1px 2px rgba(11,27,51,.05),0 2px 6px rgba(11,27,51,.05);
+  --shadow-md:0 4px 10px -2px rgba(11,27,51,.07),0 10px 24px -6px rgba(11,27,51,.10);
+  --shadow-lg:0 10px 20px -6px rgba(11,27,51,.10),0 24px 48px -12px rgba(11,27,51,.14);
+  --shadow-xl:0 18px 36px -10px rgba(11,27,51,.14),0 40px 80px -20px rgba(11,27,51,.20);
+  --shadow-2xl:0 28px 56px -14px rgba(11,27,51,.20),0 56px 112px -28px rgba(11,27,51,.30);
+  --shadow-blue:0 16px 32px -8px rgba(30,79,216,.35);--shadow-gold:0 14px 28px -8px rgba(245,158,11,.38);
+  --inset-light:inset 0 1px 0 rgba(255,255,255,.8);--inset-glass:inset 0 1px 0 rgba(255,255,255,.12);
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --track-tight:-.03em;--track-tighter:-.045em;--track-wide:.06em;--track-wider:.14em;--track-widest:.22em;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
+  --ease-expo:cubic-bezier(.16,1,.3,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:180ms;--dur-base:360ms;--dur-slow:640ms;--dur-cine:1200ms;
+  --sidebar-w:300px;--container:1320px;--container-wide:1520px;--bar-h:64px;
+}
+[data-theme="dark"]{
+  --bg-page:#030812;--bg-surface:#081122;--bg-muted:#050C1A;--bg-glass:rgba(9,18,34,.78);
+  --text-primary:#F5F7FA;--text-secondary:#B8C5D9;--text-tertiary:#7A8BA3;--text-quaternary:#5A6B80;--text-accent:var(--sky-400);
+  --border-hairline:rgba(255,255,255,.05);--border-subtle:rgba(255,255,255,.09);--border-default:rgba(255,255,255,.14);
+  --gradient-hero:linear-gradient(135deg,#010409 0%,#040A17 40%,#081325 100%);
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.22) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.16) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.10) 0%,transparent 50%);
+  --shadow-sm:0 2px 6px rgba(0,0,0,.35);--shadow-md:0 8px 20px rgba(0,0,0,.45);--shadow-lg:0 16px 36px rgba(0,0,0,.5);--shadow-xl:0 28px 60px rgba(0,0,0,.55);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text-primary);background:var(--bg-page);overflow:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;transition:background-color .8s var(--ease-expo),color .4s var(--ease-expo);font-feature-settings:"cv02","cv03","cv04","cv11"}
+body.nav-locked{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--blue-600);color:#fff}
+:focus-visible{outline:2px solid var(--blue-500);outline-offset:3px;border-radius:var(--r-sm)}
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--blue-900);color:#fff;padding:.75rem 1.25rem;border-radius:var(--r-md);font-weight:600;font-size:.875rem;z-index:10000;transition:top .2s}
+.skip-link:focus{top:1rem}
 
-            --bg-page:       var(--ivory);
-            --bg-surface:    #ffffff;
-            --bg-elevated:   #ffffff;
-            --bg-muted:      var(--pearl);
-            --bg-inverse:    var(--blue-900);
+/* ============ CHROME ============ */
+.ambient-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient-bg::before{content:'';position:absolute;inset:0;background:var(--gradient-mesh);opacity:.85}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);opacity:.5;animation:orbFloat 32s ease-in-out infinite;will-change:transform;mix-blend-mode:screen}
+[data-theme="dark"] .orb{mix-blend-mode:normal;opacity:.35}
+.orb-1{width:min(620px,70vw);height:min(620px,70vw);background:radial-gradient(circle,var(--blue-400),transparent 70%);top:-15%;left:-12%}
+.orb-2{width:min(480px,60vw);height:min(480px,60vw);background:radial-gradient(circle,var(--sky-400),transparent 70%);top:35%;right:-12%;animation-delay:-11s}
+.orb-3{width:min(520px,60vw);height:min(520px,60vw);background:radial-gradient(circle,var(--amber-300),transparent 70%);bottom:-15%;left:25%;opacity:.25;animation-delay:-22s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.08)}66%{transform:translate(-40px,50px) scale(.95)}}
+.noise-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;z-index:9999;mix-blend-mode:difference;transition:width .3s var(--ease-expo),height .3s var(--ease-expo),border-color .3s,background .3s,opacity .3s}
+.cursor-dot{width:6px;height:6px;background:var(--blue-600)}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--blue-600);opacity:.55}
+body.cursor-hover .cursor-dot{width:10px;height:10px;background:var(--amber-400)}
+body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-400);opacity:.35}
+@media(hover:none),(max-width:1024px){.cursor-dot,.cursor-ring{display:none!important}}
+.page-loader{position:fixed;inset:0;z-index:10001;background:var(--blue-950);display:grid;place-items:center;transition:opacity .7s var(--ease-expo),visibility .7s}
+.page-loader.hidden{opacity:0;visibility:hidden}
+.loader-logo{width:56px;height:56px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));display:grid;place-items:center;color:var(--amber-400);font-size:1.3rem;animation:loaderPulse 1.6s ease-in-out infinite}
+@keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 56px rgba(30,79,216,.6)}50%{transform:scale(1.06);box-shadow:0 0 88px rgba(245,158,11,.5)}}
 
-            --text-primary:   var(--blue-950);
-            --text-secondary: var(--stone-700);
-            --text-tertiary:  var(--stone-500);
-            --text-inverse:   var(--ivory);
-            --text-accent:    var(--blue-600);
+/* ============ MOBILE BAR / SIDEBAR ============ */
+.mobile-bar{position:fixed;top:0;left:0;right:0;height:calc(var(--bar-h) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);z-index:1001;display:none;align-items:center;justify-content:space-between;padding-left:clamp(.9rem,4vw,1.25rem);padding-right:clamp(.9rem,4vw,1.25rem);background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-hairline)}
+.mobile-logo{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:.92rem;letter-spacing:-.01em}
+.mobile-logo .mark{width:38px;height:38px;border-radius:10px;background:var(--gradient-hero);color:var(--amber-400);display:grid;place-items:center;font-size:.95rem;box-shadow:var(--shadow-md),var(--inset-glass)}
+.mobile-toggle{width:46px;height:46px;border-radius:var(--r-md);background:var(--bg-muted);border:1px solid var(--border-subtle);display:grid;place-items:center;font-size:1.05rem;color:var(--text-primary);transition:transform .15s}
+.mobile-toggle:active{transform:scale(.92)}
+.nav-backdrop{position:fixed;inset:0;z-index:999;background:rgba(2,8,20,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .45s var(--ease-expo)}
+.nav-backdrop.show{opacity:1;pointer-events:auto}
+.sidebar{position:fixed;left:0;top:0;height:100vh;height:100dvh;width:var(--sidebar-w);background:var(--bg-glass);backdrop-filter:blur(32px) saturate(200%);-webkit-backdrop-filter:blur(32px) saturate(200%);border-right:1px solid var(--border-hairline);padding:2rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom));z-index:1000;display:flex;flex-direction:column;overflow:hidden;transition:transform .55s var(--ease-expo)}
+.sidebar::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.35),transparent)}
+.sidebar-header{padding-bottom:1.4rem;margin-bottom:1.4rem;border-bottom:1px solid var(--border-hairline);flex-shrink:0}
+.sidebar-logo{display:flex;align-items:center;gap:.75rem}
+.sidebar-logo-mark{width:44px;height:44px;border-radius:var(--r-md);background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-size:1.05rem;flex-shrink:0;box-shadow:var(--shadow-md),var(--inset-glass);position:relative;overflow:hidden}
+.sidebar-logo-mark::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 60%)}
+.sidebar-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.sidebar-logo-title{font-size:.95rem;font-weight:700;letter-spacing:-.02em}
+.sidebar-logo-sub{font-size:.63rem;color:var(--text-tertiary);font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;margin-top:2px}
+.sidebar-nav{flex:1;display:flex;flex-direction:column;gap:1.6rem;overflow-y:auto;scrollbar-width:thin;padding-right:2px;overscroll-behavior:contain}
+.nav-section-title{color:var(--text-quaternary);font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:var(--track-widest);margin-bottom:.7rem;padding-left:.75rem}
+.nav-item{position:relative}
+.nav-link{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:11px .75rem;min-height:44px;color:var(--text-secondary);border-radius:var(--r-md);transition:all .2s var(--ease-expo);font-size:.875rem;font-weight:500;cursor:pointer}
+.nav-link:hover{background:var(--bg-muted);color:var(--text-primary)}
+.nav-link.active{background:var(--blue-900);color:#fff;box-shadow:var(--shadow-md),var(--inset-glass)}
+[data-theme="dark"] .nav-link.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.nav-link-left{display:flex;align-items:center;gap:.75rem}
+.nav-link i.nav-icon{font-size:.95rem;width:18px;text-align:center;opacity:.85}
+.dropdown-arrow{font-size:.62rem;transition:transform .25s var(--ease-expo);color:var(--text-quaternary)}
+.nav-item.active .dropdown-arrow{transform:rotate(180deg);color:var(--amber-400)}
+.dropdown{margin:2px 0 0 1.75rem;padding-left:1rem;border-left:1px solid var(--border-subtle);max-height:0;overflow:hidden;transition:max-height .4s var(--ease-expo)}
+.nav-item.active .dropdown{max-height:400px}
+.dropdown-link{display:flex;align-items:center;gap:.75rem;padding:10px .75rem;min-height:40px;color:var(--text-tertiary);font-size:.825rem;font-weight:500;border-radius:var(--r-sm);transition:all .2s}
+.dropdown-link:hover{color:var(--text-primary);background:var(--bg-muted);padding-left:1rem}
+.dropdown-link.active{color:var(--blue-600);background:var(--blue-50);font-weight:600}
+[data-theme="dark"] .dropdown-link.active{color:var(--sky-400);background:rgba(30,79,216,.15)}
+.dropdown-link i{font-size:.72rem;width:14px;color:var(--blue-500)}
+.sidebar-footer{margin-top:auto;padding-top:1.25rem;border-top:1px solid var(--border-hairline);flex-shrink:0}
+.theme-toggle{width:100%;padding:11px;background:var(--bg-muted);border:1px solid var(--border-subtle);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;gap:.5rem;font-size:.825rem;font-weight:600;transition:all .2s;min-height:44px}
+.theme-toggle:hover{background:var(--blue-900);color:#fff;border-color:var(--blue-900)}
+.main-content{margin-left:var(--sidebar-w);height:100vh;height:100dvh;position:relative;z-index:2;transition:margin-left .5s var(--ease-expo);display:flex;flex-direction:column;overflow:hidden}
 
-            --border-hairline: rgba(12, 27, 51, 0.06);
-            --border-subtle:   rgba(12, 27, 51, 0.10);
-            --border-default:  rgba(12, 27, 51, 0.16);
-            --border-strong:   rgba(12, 27, 51, 0.24);
+/* ============ PORTAL ============ */
+.portal-section{flex:1;display:flex;flex-direction:column;padding:clamp(1rem,2vw,1.5rem) clamp(1rem,2vw,1.5rem) clamp(1rem,2vw,1.5rem);min-height:0;position:relative}
+.portal-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.5rem;margin-bottom:1rem;flex-shrink:0;flex-wrap:wrap}
+.portal-title-group{display:flex;align-items:center;gap:.9rem}
+.portal-icon{width:46px;height:46px;border-radius:var(--r-lg);background:linear-gradient(135deg,var(--amber-500),var(--amber-400));color:var(--blue-950);display:grid;place-items:center;font-size:1.15rem;box-shadow:var(--shadow-gold);flex-shrink:0;transition:transform .4s var(--ease-spring)}
+.portal-header:hover .portal-icon{transform:rotate(-6deg) scale(1.05)}
+.portal-title{font-family:var(--font-display);font-size:clamp(1.15rem,2vw,1.5rem);font-weight:500;letter-spacing:-.02em;color:var(--text-primary)}
+.portal-subtitle{font-family:var(--font-mono);font-size:.72rem;color:var(--text-tertiary);font-weight:500;letter-spacing:var(--track-wide);text-transform:uppercase}
+.portal-actions{display:flex;align-items:center;gap:.75rem}
+.portal-status{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(45,138,78,.08);border:1px solid rgba(45,138,78,.22);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--forest-600);letter-spacing:var(--track-wide);backdrop-filter:blur(8px)}
+[data-theme="dark"] .portal-status{background:rgba(45,138,78,.15);color:#4ade80;border-color:rgba(74,222,128,.25)}
+.portal-status .dot{width:7px;height:7px;border-radius:50%;background:var(--forest-500);box-shadow:0 0 8px var(--forest-500);animation:statusPulse 2s ease-in-out infinite}
+@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:.45}}
 
-            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
-            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
-            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
-            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
-                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+.portal-frame{flex:1;position:relative;background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid var(--border-default);border-radius:var(--r-3xl);overflow:hidden;box-shadow:var(--shadow-2xl);min-height:0;transition:all .5s var(--ease-expo)}
+[data-theme="dark"] .portal-frame{background:rgba(8,17,34,.85)}
+.portal-frame:hover{box-shadow:0 28px 64px -16px rgba(11,27,51,.22),0 56px 120px -28px rgba(11,27,51,.32)}
+.portal-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--amber-400),var(--blue-600),var(--sky-500));z-index:3}
+.portal-frame::after{content:'';position:absolute;bottom:-80px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(245,158,11,.08),transparent 70%);pointer-events:none;z-index:0}
+.portal-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;display:block;background:var(--bg-surface);z-index:2}
 
-            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
-            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
-            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
-            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
-            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
-            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
-            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
-            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+.portal-loader{position:absolute;inset:0;background:var(--bg-surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;z-index:5;transition:opacity var(--dur-base) var(--ease-expo),visibility var(--dur-base) var(--ease-expo)}
+.portal-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-mark{width:76px;height:76px;border-radius:var(--r-xl);background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-size:1.9rem;box-shadow:var(--shadow-lg),var(--inset-glass);position:relative;animation:loaderPulse2 2s ease-in-out infinite}
+.loader-mark::before{content:'';position:absolute;inset:-8px;border-radius:var(--r-2xl);border:2px solid transparent;border-top-color:var(--amber-400);border-right-color:var(--blue-400);animation:loaderSpin 1.5s linear infinite}
+.loader-mark::after{content:'';position:absolute;inset:0;border-radius:var(--r-xl);background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 60%)}
+@keyframes loaderPulse2{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes loaderSpin{to{transform:rotate(360deg)}}
+.loader-text{text-align:center}
+.loader-title{font-family:var(--font-display);font-size:1.15rem;font-weight:500;margin-bottom:5px;letter-spacing:-.015em}
+.loader-subtitle{font-size:.85rem;color:var(--text-tertiary);font-weight:500}
+.loader-bar{width:220px;height:3px;background:var(--bg-muted);border-radius:var(--r-full);overflow:hidden;position:relative}
+.loader-bar::before{content:'';position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,var(--blue-600),var(--amber-400),var(--sky-500));border-radius:var(--r-full);animation:loaderBar 1.8s ease-in-out infinite}
+@keyframes loaderBar{0%{left:-40%}100%{left:100%}}
 
-            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+.portal-error{position:absolute;inset:0;background:var(--bg-surface);display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;z-index:6;padding:2rem;text-align:center}
+.portal-error.active{display:flex}
+.error-icon{width:64px;height:64px;border-radius:50%;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.22);display:grid;place-items:center;color:#ef4444;font-size:1.5rem}
+.error-title{font-family:var(--font-display);font-size:1.3rem;font-weight:500;letter-spacing:-.015em}
+.error-text{font-size:.925rem;color:var(--text-secondary);max-width:420px;line-height:1.7}
+.error-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-full);font-weight:700;font-size:.875rem;transition:all var(--dur-fast) var(--ease-expo);box-shadow:var(--shadow-gold);margin-top:.5rem}
+.error-btn:hover{transform:translateY(-3px);box-shadow:0 20px 40px -8px rgba(245,158,11,.5),0 0 48px rgba(245,158,11,.4)}
 
-            --fs-xs:   0.75rem;
-            --fs-sm:   0.875rem;
-            --fs-base: 1rem;
-            --fs-md:   1.0625rem;
-            --fs-lg:   1.125rem;
-            --fs-xl:   1.25rem;
-            --fs-2xl:  1.5rem;
-            --fs-3xl:  1.875rem;
-            --fs-4xl:  2.25rem;
-            --fs-5xl:  3rem;
+.portal-note{display:flex;align-items:center;justify-content:center;gap:.6rem;margin-top:1rem;font-family:var(--font-mono);font-size:.72rem;color:var(--text-tertiary);font-weight:500;letter-spacing:var(--track-wide);text-transform:uppercase;flex-wrap:wrap}
+.portal-note i{color:var(--forest-500);font-size:.85rem}
 
-            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
-            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
-            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
-            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
-
-            --r-sm: 8px;
-            --r-md: 12px;
-            --r-lg: 16px;
-            --r-xl: 24px;
-            --r-2xl: 32px;
-            --r-3xl: 40px;
-            --r-full: 9999px;
-
-            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-            --dur-fast: 200ms;
-            --dur-base: 360ms;
-            --dur-slow: 640ms;
-
-            --sidebar-w: 300px;
-        }
-
-        [data-theme="dark"] {
-            --bg-page:     #050B16;
-            --bg-surface:  #0B1526;
-            --bg-elevated: #111E36;
-            --bg-muted:    #0A1322;
-            --bg-inverse:  var(--ivory);
-
-            --text-primary:   #F5F7FA;
-            --text-secondary: #B8C5D9;
-            --text-tertiary:  #7A8BA3;
-            --text-inverse:   var(--blue-950);
-            --text-accent:    var(--sky-400);
-
-            --border-hairline: rgba(255,255,255,0.05);
-            --border-subtle:   rgba(255,255,255,0.08);
-            --border-default:  rgba(255,255,255,0.14);
-            --border-strong:   rgba(255,255,255,0.22);
-
-            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
-
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
-        body {
-            font-family: var(--font-body);
-            font-size: var(--fs-base);
-            line-height: 1.65;
-            color: var(--text-primary);
-            background: var(--bg-page);
-            min-height: 100vh;
-            overflow: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
-        }
-        a { color: inherit; text-decoration: none; }
-        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-        ::selection { background: var(--blue-600); color: white; }
-
-        :focus-visible {
-            outline: 2px solid var(--blue-500);
-            outline-offset: 3px;
-            border-radius: var(--r-sm);
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -100px; left: var(--s-4);
-            background: var(--blue-900);
-            color: white;
-            padding: var(--s-3) var(--s-5);
-            border-radius: var(--r-md);
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            z-index: 10000;
-            transition: top var(--dur-fast);
-        }
-        .skip-link:focus { top: var(--s-4); }
-
-        /* =========================================================
-           AMBIENT BACKGROUND
-           ========================================================= */
-        .ambient-bg {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .ambient-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.5;
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.4;
-            animation: orbFloat 24s ease-in-out infinite;
-            will-change: transform;
-        }
-        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
-        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
-        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.25; animation-delay: -16s; }
-        @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(40px, -30px) scale(1.08); }
-            66% { transform: translate(-30px, 40px) scale(0.95); }
-        }
-
-        /* =========================================================
-           SIDEBAR — Identical to index.html
-           ========================================================= */
-        .sidebar {
-            position: fixed;
-            left: 0; top: 0;
-            height: 100vh;
-            width: var(--sidebar-w);
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border-right: 1px solid var(--border-hairline);
-            padding: var(--s-7) var(--s-5);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            transition: transform var(--dur-base) var(--ease-out);
-            overflow: hidden;
-        }
-        [data-theme="dark"] .sidebar {
-            background: rgba(11, 21, 38, 0.78);
-            border-right: 1px solid var(--border-subtle);
-        }
-        .sidebar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-        }
-
-        .sidebar-header {
-            padding-bottom: var(--s-6);
-            margin-bottom: var(--s-6);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .sidebar-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            transition: opacity var(--dur-fast);
-        }
-        .sidebar-logo:hover { opacity: 0.8; }
-        .sidebar-logo-mark {
-            width: 44px; height: 44px;
-            border-radius: var(--r-md);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .sidebar-logo-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
-        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
-
-        .sidebar-nav {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-6);
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-default) transparent;
-            padding-right: 2px;
-        }
-        .sidebar-nav::-webkit-scrollbar { width: 4px; }
-        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
-
-        .nav-section-title {
-            color: var(--text-tertiary);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            margin-bottom: var(--s-3);
-            padding-left: var(--s-3);
-        }
-        .nav-item { position: relative; }
-        .nav-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-3);
-            padding: 10px var(--s-3);
-            color: var(--text-secondary);
-            border-radius: var(--r-md);
-            transition: all var(--dur-fast) var(--ease-out);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            position: relative;
-        }
-        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
-        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
-        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
-        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
-        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
-        .nav-link.active i.nav-icon { opacity: 1; }
-        .dropdown-arrow {
-            font-size: 0.65rem;
-            transition: transform var(--dur-fast) var(--ease-out);
-            color: var(--text-tertiary);
-        }
-        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
-
-        .dropdown {
-            margin-top: var(--s-1);
-            margin-left: var(--s-7);
-            padding-left: var(--s-4);
-            border-left: 1px solid var(--border-subtle);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--dur-base) var(--ease-out);
-        }
-        .nav-item.active .dropdown { max-height: 400px; }
-        .dropdown-link {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 7px var(--s-3);
-            color: var(--text-tertiary);
-            font-size: 0.825rem;
-            font-weight: 500;
-            border-radius: var(--r-sm);
-            transition: all var(--dur-fast);
-        }
-        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
-        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
-        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
-        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
-        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
-
-        .sidebar-footer {
-            margin-top: auto;
-            padding-top: var(--s-5);
-            border-top: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .theme-toggle {
-            width: 100%;
-            padding: 10px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-md);
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-2);
-            font-size: 0.825rem;
-            font-weight: 600;
-            transition: all var(--dur-fast);
-        }
-        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
-
-        .mobile-toggle {
-            display: none;
-            position: fixed;
-            top: var(--s-4); left: var(--s-4);
-            z-index: 1001;
-            width: 48px; height: 48px;
-            background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-md);
-            color: var(--blue-900);
-            font-size: 1.1rem;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-lg);
-        }
-        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
-
-        /* =========================================================
-           MAIN CONTENT — Full viewport, flex column
-           ========================================================= */
-        .main-content {
-            margin-left: var(--sidebar-w);
-            height: 100vh;
-            position: relative;
-            z-index: 2;
-            transition: margin-left var(--dur-base) var(--ease-out);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        /* =========================================================
-           PORTAL SECTION — fills entire viewport
-           ========================================================= */
-        .portal-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding: var(--s-4) var(--s-6) var(--s-6);
-            min-height: 0;
-            position: relative;
-        }
-
-        /* Portal header bar — minimal, integrated */
-        .portal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-4);
-            padding: var(--s-2) var(--s-2);
-            flex-shrink: 0;
-            flex-wrap: wrap;
-        }
-        .portal-title-group {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-        }
-        .portal-icon {
-            width: 40px; height: 40px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, var(--amber-500), var(--amber-400));
-            color: var(--blue-950);
-            display: grid; place-items: center;
-            font-size: 1rem;
-            box-shadow: var(--shadow-md);
-            flex-shrink: 0;
-        }
-        .portal-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 500;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-        }
-        .portal-subtitle {
-            font-size: 0.75rem;
-            color: var(--text-tertiary);
-            font-weight: 500;
-        }
-        .portal-actions {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-        }
-        .portal-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 5px 12px;
-            background: rgba(45, 138, 78, 0.1);
-            border: 1px solid rgba(45, 138, 78, 0.2);
-            border-radius: var(--r-full);
-            font-size: 0.72rem;
-            font-weight: 600;
-            color: var(--forest-600);
-            font-family: var(--font-mono);
-        }
-        [data-theme="dark"] .portal-status {
-            background: rgba(45, 138, 78, 0.15);
-            color: #4ade80;
-            border-color: rgba(74, 222, 128, 0.25);
-        }
-        .portal-status .dot {
-            width: 6px; height: 6px;
-            border-radius: 50%;
-            background: var(--forest-500);
-            box-shadow: 0 0 8px var(--forest-500);
-            animation: statusPulse 2s ease-in-out infinite;
-        }
-        @keyframes statusPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Portal frame — the iframe container, fills remaining space */
-        .portal-frame {
-            flex: 1;
-            position: relative;
-            background: var(--bg-surface);
-            border: 1px solid var(--border-default);
-            border-radius: var(--r-2xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-xl);
-            min-height: 0;
-            transition: all var(--dur-base) var(--ease-out);
-        }
-        .portal-frame::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--amber-500), var(--blue-600), var(--sky-500));
-            z-index: 3;
-        }
-        .portal-frame iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
-            display: block;
-            background: var(--bg-surface);
-        }
-
-        /* Branded loader */
-        .portal-loader {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-6);
-            z-index: 5;
-            transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base) var(--ease-out);
-        }
-        .portal-loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .loader-mark {
-            width: 72px; height: 72px;
-            border-radius: var(--r-xl);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.8rem;
-            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            animation: loaderPulse 2s ease-in-out infinite;
-        }
-        .loader-mark::before {
-            content: '';
-            position: absolute;
-            inset: -8px;
-            border-radius: var(--r-2xl);
-            border: 2px solid transparent;
-            border-top-color: var(--amber-400);
-            border-right-color: var(--blue-400);
-            animation: loaderSpin 1.5s linear infinite;
-        }
-        .loader-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: var(--r-xl);
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        @keyframes loaderPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        @keyframes loaderSpin {
-            to { transform: rotate(360deg); }
-        }
-        .loader-text {
-            text-align: center;
-        }
-        .loader-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 500;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-            letter-spacing: -0.01em;
-        }
-        .loader-subtitle {
-            font-size: 0.825rem;
-            color: var(--text-tertiary);
-            font-weight: 500;
-        }
-        .loader-bar {
-            width: 200px;
-            height: 3px;
-            background: var(--bg-muted);
-            border-radius: var(--r-full);
-            overflow: hidden;
-            position: relative;
-        }
-        .loader-bar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 40%;
-            height: 100%;
-            background: linear-gradient(90deg, var(--blue-600), var(--amber-400), var(--sky-500));
-            border-radius: var(--r-full);
-            animation: loaderBar 1.8s ease-in-out infinite;
-        }
-        @keyframes loaderBar {
-            0% { left: -40%; }
-            100% { left: 100%; }
-        }
-
-        /* Error state */
-        .portal-error {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-4);
-            z-index: 6;
-            padding: var(--s-8);
-            text-align: center;
-        }
-        .portal-error.active {
-            display: flex;
-        }
-        .error-icon {
-            width: 64px; height: 64px;
-            border-radius: 50%;
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            display: grid; place-items: center;
-            color: #ef4444;
-            font-size: 1.5rem;
-        }
-        .error-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-xl);
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-        .error-text {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            max-width: 400px;
-            line-height: 1.6;
-        }
-        .error-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: var(--blue-900);
-            color: white;
-            border-radius: var(--r-full);
-            font-weight: 600;
-            font-size: 0.875rem;
-            transition: all var(--dur-fast);
-            margin-top: var(--s-2);
-        }
-        .error-btn:hover {
-            background: var(--blue-800);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        /* =========================================================
-           RESPONSIVE
-           ========================================================= */
-        @media (max-width: 1024px) {
-            :root { --sidebar-w: 280px; }
-        }
-        @media (max-width: 900px) {
-            .sidebar { transform: translateX(-100%); box-shadow: none; }
-            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
-            .main-content { margin-left: 0; }
-            .mobile-toggle { display: flex; }
-            .portal-section { padding: var(--s-3) var(--s-4) var(--s-4); }
-            .portal-frame { border-radius: var(--r-xl); }
-        }
-        @media (max-width: 640px) {
-            .portal-section { padding: var(--s-3) var(--s-3) var(--s-3); }
-            .portal-frame { border-radius: var(--r-lg); }
-            .portal-header { flex-direction: column; align-items: flex-start; gap: var(--s-2); }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-            .orb { animation: none; }
-            .loader-mark::before { animation: none; }
-            .loader-bar::before { animation: none; width: 100%; left: 0; }
-        }
-
-        @media print {
-            .sidebar, .mobile-toggle, .ambient-bg, .portal-frame { display: none !important; }
-            .main-content { margin-left: 0; height: auto; }
-            body { background: white !important; color: black !important; overflow: visible; }
-        }
-    </style>
+/* ============ RESPONSIVE ============ */
+@media(min-width:2000px){.portal-section{padding:2rem}}
+@media(max-width:1024px){:root{--sidebar-w:280px}}
+@media(max-width:900px){
+  html{scroll-padding-top:calc(var(--bar-h) + 14px)}
+  .mobile-bar{display:flex}
+  .sidebar{transform:translateX(-105%);width:min(86vw,340px);box-shadow:none;z-index:1002}
+  .sidebar.open{transform:none;box-shadow:var(--shadow-2xl)}
+  .sidebar .st{opacity:0;transform:translateX(-16px);transition:opacity .5s var(--ease-expo),transform .5s var(--ease-expo)}
+  .sidebar.open .st{opacity:1;transform:none}
+  .sidebar.open .sidebar-header.st{transition-delay:.06s}
+  .sidebar.open .nav-section:nth-of-type(1).st{transition-delay:.12s}
+  .sidebar.open .nav-section:nth-of-type(2).st{transition-delay:.2s}
+  .sidebar.open .nav-section:nth-of-type(3).st{transition-delay:.28s}
+  .sidebar.open .sidebar-footer.st{transition-delay:.36s}
+  .main-content{margin-left:0;padding-top:0}
+  .portal-section{padding:.75rem}
+  .portal-frame{border-radius:var(--r-xl)}
+}
+@media(max-width:640px){
+  .portal-section{padding:.5rem}
+  .portal-frame{border-radius:var(--r-lg)}
+  .portal-header{flex-direction:column;align-items:flex-start;gap:.75rem;padding:.25rem;margin-bottom:.75rem}
+  .portal-note{font-size:.66rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .orb{animation:none}
+  .cursor-dot,.cursor-ring{display:none}
+  .loader-mark::before,.loader-bar::before{animation:none}
+  .loader-bar::before{width:100%;left:0}
+}
+@media print{
+  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.nav-backdrop{display:none!important}
+  .main-content{margin-left:0;height:auto}
+  body{background:#fff;color:#000;overflow:visible}
+}
+</style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+<div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-logo"><i class="fas fa-heart"></i></div></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Ambient background -->
-    <div class="ambient-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<div class="ambient-bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="mobile-bar">
+  <a href="../index.html" class="mobile-logo" aria-label="KE0274 PEFA Mfangano CYDC — Home"><span class="mark" aria-hidden="true"><i class="fas fa-heart"></i></span><span>KE0274 PEFA · Mfangano CYDC</span></a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"><i class="fas fa-bars" aria-hidden="true"></i></button>
+</header>
+<div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+<nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="sidebar-header st">
+    <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+      <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+      <div class="sidebar-logo-text"><span class="sidebar-logo-title">KE0274 PEFA</span><span class="sidebar-logo-sub">Mfangano CYDC</span></div>
+    </a>
+  </div>
+  <div class="sidebar-nav">
+    <div class="nav-section st">
+      <div class="nav-section-title">Main</div>
+      <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+          <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+          <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+          <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+        </div>
+      </div>
+      <div class="nav-item active">
+        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="dreamachiever.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+          <a href="department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-section st">
+      <div class="nav-section-title">Resources</div>
+      <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+          <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+          <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../newsandupdates/newsandupdates.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div></a></div>
+    </div>
+    <div class="nav-section st">
+      <div class="nav-section-title">More</div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+          <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../achievments/achievment.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div></a></div>
+      <div class="nav-item"><a href="../inventory/inventory.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div></a></div>
+      <div class="nav-item"><a href="../chatsupport/chat-support.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div></a></div>
+    </div>
+  </div>
+  <div class="sidebar-footer st">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><i class="fas fa-moon" aria-hidden="true"></i><span>Dark Mode</span></button>
+  </div>
+</nav>
+
+<main class="main-content" id="main">
+  <section class="portal-section" aria-labelledby="portal-label">
+    <div class="portal-header">
+      <div class="portal-title-group">
+        <div class="portal-icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+        <div>
+          <h1 class="portal-title" id="portal-label">Dream Achievers Portal</h1>
+          <p class="portal-subtitle">Inspire · Grow · Achieve</p>
+        </div>
+      </div>
+      <div class="portal-actions">
+        <div class="portal-status" id="portalStatus">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Live</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Mobile Toggle -->
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
-
-    <!-- Sidebar Navigation — Identical to index.html -->
-    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
-        <div class="sidebar-header">
-            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
-                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                <div class="sidebar-logo-text">
-                    <span class="sidebar-logo-title">KE0274 PEFA</span>
-                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
-                </div>
-            </a>
+    <div class="portal-frame" id="portalFrame">
+      <div class="portal-loader" id="portalLoader" aria-live="polite" aria-label="Loading Dream Achievers portal">
+        <div class="loader-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+        <div class="loader-text">
+          <div class="loader-title">Preparing your learning space</div>
+          <div class="loader-subtitle">Loading the Dream Achievers portal…</div>
         </div>
+        <div class="loader-bar" aria-hidden="true"></div>
+      </div>
+      <div class="portal-error" id="portalError" role="alert">
+        <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
+        <div class="error-title">Portal unavailable</div>
+        <p class="error-text">We're having trouble connecting to the Dream Achievers portal. Please try again in a moment, or open it in a new window.</p>
+        <button class="error-btn" id="errorRetryBtn"><i class="fas fa-redo" aria-hidden="true"></i><span>Try Again</span></button>
+      </div>
+      <iframe id="dreamFrame" src="" title="Dream Achievers Portal — Track goals, explore resources, and grow with KE0274 PEFA Mfangano CYDC" allow="clipboard-write" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-        <div class="sidebar-nav">
-            <div class="nav-section">
-                <div class="nav-section-title">Main</div>
-                <div class="nav-item">
-                    <a href="../index.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
-                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
-                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
-                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
-                    </div>
-                </div>
-                <div class="nav-item active">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="dreamachiever.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
-                        <a href="department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
-                    </div>
-                </div>
-            </div>
+    <div class="portal-note">
+      <i class="fas fa-shield-alt" aria-hidden="true"></i>
+      <span>Your progress is private · Secure connection · Mentored learning</span>
+    </div>
+  </section>
+</main>
 
-            <div class="nav-section">
-                <div class="nav-section-title">Resources</div>
-                <div class="nav-item">
-                    <a href="../learningresources/learningresources.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
-                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
-                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
-                    </a>
-                </div>
-            </div>
+<script>
+(function(){
+  var $ = function(s){return document.querySelector(s);};
+  var $$ = function(s){return document.querySelectorAll(s);};
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canHover = window.matchMedia('(hover: hover)').matches && window.innerWidth > 1024;
 
-            <div class="nav-section">
-                <div class="nav-section-title">More</div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
-                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../achievments/achievment.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../inventory/inventory.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../chatsupport/chat-support.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
-                    </a>
-                </div>
-            </div>
-        </div>
+  // Page loader
+  var loader = $('#pageLoader');
+  setTimeout(function(){ loader.classList.add('hidden'); }, 2000);
+  window.addEventListener('load', function(){ setTimeout(function(){ loader.classList.add('hidden'); }, 300); });
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-                <span>Dark Mode</span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Main Content — Full viewport -->
-    <main class="main-content" id="main">
-
-        <!-- ===== PORTAL SECTION — fills entire viewport ===== -->
-        <section class="portal-section" aria-labelledby="portal-label">
-
-            <div class="portal-header">
-                <div class="portal-title-group">
-                    <div class="portal-icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
-                    <div>
-                        <h1 class="portal-title" id="portal-label">Dream Achievers Portal</h1>
-                        <p class="portal-subtitle">Inspire · Grow · Achieve</p>
-                    </div>
-                </div>
-                <div class="portal-actions">
-                    <div class="portal-status" id="portalStatus">
-                        <span class="dot" aria-hidden="true"></span>
-                        <span>Live</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portal-frame" id="portalFrame">
-                <!-- Branded loader -->
-                <div class="portal-loader" id="portalLoader" aria-live="polite" aria-label="Loading Dream Achievers portal">
-                    <div class="loader-mark" aria-hidden="true">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="loader-text">
-                        <div class="loader-title">Preparing your learning space</div>
-                        <div class="loader-subtitle">Loading the Dream Achievers portal...</div>
-                    </div>
-                    <div class="loader-bar" aria-hidden="true"></div>
-                </div>
-
-                <!-- Error state -->
-                <div class="portal-error" id="portalError" role="alert">
-                    <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
-                    <div class="error-title">Portal unavailable</div>
-                    <p class="error-text">We're having trouble connecting to the Dream Achievers portal. Please try again in a moment, or open it in a new window.</p>
-                    <button class="error-btn" id="errorRetryBtn">
-                        <i class="fas fa-redo" aria-hidden="true"></i>
-                        <span>Try Again</span>
-                    </button>
-                </div>
-
-                <!-- The embedded portal -->
-                <iframe
-                    id="dreamFrame"
-                    src=""
-                    title="Dream Achievers Portal — Track goals, explore resources, and grow with KE0274 PEFA Mfangano CYDC"
-                    allow="clipboard-write"
-                    loading="eager"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-        </section>
-
-    </main>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // ===== THEME TOGGLE =====
-        const themeToggle = document.getElementById('themeToggle');
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        applyTheme(savedTheme);
-
-        function applyTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            const icon = themeToggle.querySelector('i');
-            const label = themeToggle.querySelector('span');
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-        }
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            applyTheme(current === 'dark' ? 'light' : 'dark');
-        });
-
-        // ===== MOBILE SIDEBAR =====
-        const mobileToggle = document.getElementById('mobileToggle');
-        const sidebar = document.getElementById('sidebar');
-        mobileToggle.addEventListener('click', () => {
-            const isActive = sidebar.classList.toggle('active');
-            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
-            mobileToggle.setAttribute('aria-expanded', String(isActive));
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
-                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-                sidebar.classList.remove('active');
-                mobileToggle.querySelector('i').className = 'fas fa-bars';
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // ===== DROPDOWN TOGGLE =====
-        window.toggleDropdown = function(event, element) {
-            event.preventDefault();
-            event.stopPropagation();
-            const navItem = element.closest('.nav-item');
-            const isActive = navItem.classList.toggle('active');
-            element.setAttribute('aria-expanded', String(isActive));
-            document.querySelectorAll('.nav-item').forEach(item => {
-                if (item !== navItem) {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                }
-            });
-        };
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                });
-            }
-        });
-
-        // ===== KEYBOARD: ESCAPE =====
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                    mobileToggle.focus();
-                }
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
-                });
-            }
-        });
-
-        // ===== RESIZE HANDLER =====
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                if (window.innerWidth > 900) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                }
-            }, 200);
-        });
-
-        // =========================================================
-        // PORTAL IFRAME — Embedded directly, fills entire viewport
-        // =========================================================
-        const PORTAL_URL = 'https://inspire-grow-achieve.lovable.app/';
-        const iframe = document.getElementById('dreamFrame');
-        const loader = document.getElementById('portalLoader');
-        const errorPanel = document.getElementById('portalError');
-        const statusEl = document.getElementById('portalStatus');
-        const retryBtn = document.getElementById('errorRetryBtn');
-        let loadTimeout;
-
-        function loadPortal() {
-            errorPanel.classList.remove('active');
-            loader.classList.remove('hidden');
-            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Loading...</span>';
-
-            iframe.src = PORTAL_URL;
-
-            clearTimeout(loadTimeout);
-            loadTimeout = setTimeout(() => {
-                if (!loader.classList.contains('hidden')) {
-                    showError();
-                }
-            }, 12000);
-        }
-
-        function hideLoader() {
-            loader.classList.add('hidden');
-            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Live</span>';
-        }
-
-        function showError() {
-            loader.classList.add('hidden');
-            errorPanel.classList.add('active');
-            statusEl.innerHTML = '<span class="dot" style="background:#ef4444;box-shadow:0 0 8px #ef4444;" aria-hidden="true"></span><span style="color:#ef4444;">Offline</span>';
-        }
-
-        iframe.addEventListener('load', () => {
-            setTimeout(hideLoader, 400);
-        });
-
-        iframe.addEventListener('error', () => {
-            clearTimeout(loadTimeout);
-            showError();
-        });
-
-        retryBtn.addEventListener('click', () => {
-            loadPortal();
-        });
-
-        // Start loading the portal immediately
-        loadPortal();
+  // Custom Cursor
+  if(canHover && !reduced){
+    var dot = $('#cursorDot'), ring = $('#cursorRing');
+    var mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', function(e){ mx=e.clientX; my=e.clientY; dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)'; }, {passive:true});
+    (function loop(){ rx+=(mx-rx)*.18; ry+=(my-ry)*.18; ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)'; requestAnimationFrame(loop); })();
+    $$('a,button,.nav-link,.dropdown-link,input,.error-btn,.portal-icon').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ document.body.classList.add('cursor-hover'); });
+      el.addEventListener('mouseleave', function(){ document.body.classList.remove('cursor-hover'); });
     });
-    </script>
+  }
+
+  // Theme
+  var themeToggle = $('#themeToggle');
+  function applyTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    localStorage.setItem('theme', t);
+    themeToggle.querySelector('i').className = t==='dark' ? 'fas fa-sun' : 'fas fa-moon';
+    themeToggle.querySelector('span').textContent = t==='dark' ? 'Light Mode' : 'Dark Mode';
+  }
+  applyTheme(localStorage.getItem('theme') || 'light');
+  themeToggle.addEventListener('click', function(){
+    applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  // Mobile nav
+  var sidebar = $('#sidebar'), mobileToggle = $('#mobileToggle'), backdrop = $('#navBackdrop');
+  function openNav(){ sidebar.classList.add('open'); backdrop.classList.add('show'); document.body.classList.add('nav-locked'); mobileToggle.setAttribute('aria-expanded','true'); mobileToggle.querySelector('i').className='fas fa-times'; mobileToggle.setAttribute('aria-label','Close navigation menu'); }
+  function closeNav(){ sidebar.classList.remove('open'); backdrop.classList.remove('show'); document.body.classList.remove('nav-locked'); mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.querySelector('i').className='fas fa-bars'; mobileToggle.setAttribute('aria-label','Open navigation menu'); }
+  mobileToggle.addEventListener('click', function(){ sidebar.classList.contains('open') ? closeNav() : openNav(); });
+  backdrop.addEventListener('click', closeNav);
+
+  // Dropdowns
+  window.toggleDropdown = function(e, el){
+    e.preventDefault(); e.stopPropagation();
+    var item = el.closest('.nav-item'), active = item.classList.toggle('active');
+    el.setAttribute('aria-expanded', String(active));
+    $$('.nav-item').forEach(function(i){ if(i !== item){ i.classList.remove('active'); var l = i.querySelector('.nav-link[aria-expanded]'); if(l) l.setAttribute('aria-expanded','false'); } });
+  };
+  document.addEventListener('click', function(e){ if(!e.target.closest('.nav-item')){ $$('.nav-item.active').forEach(function(i){ i.classList.remove('active'); var l = i.querySelector('.nav-link[aria-expanded]'); if(l) l.setAttribute('aria-expanded','false'); }); } });
+
+  // Keyboard
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      closeNav();
+      $$('.nav-item.active').forEach(function(i){
+        i.classList.remove('active');
+        var l = i.querySelector('.nav-link[aria-expanded]');
+        if(l){ l.setAttribute('aria-expanded','false'); l.focus(); }
+      });
+    }
+  });
+
+  // Resize
+  var rt;
+  window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ if(window.innerWidth > 900) closeNav(); }, 200); });
+
+  // Portal iframe logic
+  var PORTAL_URL = 'https://inspire-grow-achieve.lovable.app/';
+  var iframe = $('#dreamFrame');
+  var portalLoader = $('#portalLoader');
+  var errorPanel = $('#portalError');
+  var statusEl = $('#portalStatus');
+  var retryBtn = $('#errorRetryBtn');
+  var loadTimeout;
+
+  function loadPortal() {
+    if(!iframe) return;
+    errorPanel.classList.remove('active');
+    portalLoader.classList.remove('hidden');
+    statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Loading…</span>';
+    iframe.src = PORTAL_URL;
+    clearTimeout(loadTimeout);
+    // Force hide loader after 8s (prevents infinite loading on cross-origin blocks)
+    loadTimeout = setTimeout(function() { hideLoader(); }, 8000);
+  }
+
+  function hideLoader() {
+    if(!portalLoader) return;
+    portalLoader.classList.add('hidden');
+    if(statusEl) statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Live</span>';
+  }
+
+  function showError() {
+    if(!portalLoader || !errorPanel) return;
+    portalLoader.classList.add('hidden');
+    errorPanel.classList.add('active');
+    if(statusEl) statusEl.innerHTML = '<span class="dot" style="background:#ef4444;box-shadow:0 0 8px #ef4444;" aria-hidden="true"></span><span style="color:#ef4444;">Offline</span>';
+  }
+
+  if(iframe) {
+    iframe.addEventListener('load', function() { setTimeout(hideLoader, 400); });
+    iframe.addEventListener('error', function() { clearTimeout(loadTimeout); showError(); });
+  }
+  if(retryBtn) retryBtn.addEventListener('click', function() { loadPortal(); });
+  loadPortal();
+})();
+</script>
 </body>
 </html>
