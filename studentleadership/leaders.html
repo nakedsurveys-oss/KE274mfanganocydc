@@ -401,7 +401,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
       <div class="nav-section-title">Main</div>
       <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div></a></div>
       <div class="nav-item active">
-        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="leaders.html" class="dropdown-link active" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
           <a href="index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
@@ -410,7 +410,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
         </div>
       </div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
           <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
@@ -421,7 +421,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
       <div class="nav-section-title">Resources</div>
       <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div></a></div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
           <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
@@ -433,7 +433,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
     <div class="nav-section st">
       <div class="nav-section-title">More</div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
           <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
@@ -848,6 +848,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     const item=el.closest('.nav-item'),active=item.classList.toggle('active');
     el.setAttribute('aria-expanded',String(active));
     $$('.nav-item').forEach(i=>{if(i!==item){i.classList.remove('active');const l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');}});};
+    
+  document.addEventListener('click',e=>{if(!e.target.closest('.nav-item')){$$('.nav-item.active').forEach(i=>{i.classList.remove('active');const l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');});}});
 
   /* Counters */
   function count(el,target,dur=2400){const suf=el.getAttribute('data-suffix')||'';const t0=performance.now();
