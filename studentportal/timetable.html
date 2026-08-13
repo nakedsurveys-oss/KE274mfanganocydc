@@ -1280,17 +1280,21 @@
         }
         .teacher-card:hover::before { transform: scaleX(1); }
 
-        .teacher-card:nth-child(1) { --card-accent: linear-gradient(135deg, var(--amber-500), var(--amber-400)); }
-        .teacher-card:nth-child(2) { --card-accent: linear-gradient(135deg, #a8553c, #fb923c); }
-        .teacher-card:nth-child(3) { --card-accent: linear-gradient(135deg, #7c3aed, #ec4899); }
-        .teacher-card:nth-child(4) { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-400)); }
-        .teacher-card:nth-child(5) { --card-accent: linear-gradient(135deg, #2d8a4e, var(--sky-500)); }
-        .teacher-card:nth-child(6) { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
-        .teacher-card:nth-child(7) { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
-        .teacher-card:nth-child(8) { --card-accent: linear-gradient(135deg, #ec4899, #f43f5e); }
-        .teacher-card:nth-child(9) { --card-accent: linear-gradient(135deg, #f97316, var(--amber-500)); }
+        .teacher-card:nth-child(1)  { --card-accent: linear-gradient(135deg, var(--amber-500), var(--amber-400)); }
+        .teacher-card:nth-child(2)  { --card-accent: linear-gradient(135deg, #a8553c, #fb923c); }
+        .teacher-card:nth-child(3)  { --card-accent: linear-gradient(135deg, #7c3aed, #ec4899); }
+        .teacher-card:nth-child(4)  { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-400)); }
+        .teacher-card:nth-child(5)  { --card-accent: linear-gradient(135deg, #2d8a4e, var(--sky-500)); }
+        .teacher-card:nth-child(6)  { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
+        .teacher-card:nth-child(7)  { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
+        .teacher-card:nth-child(8)  { --card-accent: linear-gradient(135deg, #ec4899, #f43f5e); }
+        .teacher-card:nth-child(9)  { --card-accent: linear-gradient(135deg, #f97316, var(--amber-500)); }
         .teacher-card:nth-child(10) { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-600)); }
         .teacher-card:nth-child(11) { --card-accent: linear-gradient(135deg, #ef4444, #f97316); }
+        .teacher-card:nth-child(12) { --card-accent: linear-gradient(135deg, #8b5cf6, var(--blue-400)); }
+        .teacher-card:nth-child(13) { --card-accent: linear-gradient(135deg, #059669, var(--amber-400)); }
+        .teacher-card:nth-child(14) { --card-accent: linear-gradient(135deg, var(--blue-700), var(--sky-400)); }
+        .teacher-card:nth-child(15) { --card-accent: linear-gradient(135deg, #dc2626, var(--amber-500)); }
 
         .teacher-image {
             width: 88px; height: 88px;
@@ -1526,17 +1530,21 @@
             transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
         }
         .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
-        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
-        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
-        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
-        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
-        .reveal-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
-        .reveal-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
-        .reveal-stagger.visible > *:nth-child(7) { transition-delay: 480ms; }
-        .reveal-stagger.visible > *:nth-child(8) { transition-delay: 560ms; }
-        .reveal-stagger.visible > *:nth-child(9) { transition-delay: 640ms; }
-        .reveal-stagger.visible > *:nth-child(10) { transition-delay: 720ms; }
-        .reveal-stagger.visible > *:nth-child(11) { transition-delay: 800ms; }
+        .reveal-stagger.visible > *:nth-child(1)  { transition-delay: 0ms; }
+        .reveal-stagger.visible > *:nth-child(2)  { transition-delay: 60ms; }
+        .reveal-stagger.visible > *:nth-child(3)  { transition-delay: 120ms; }
+        .reveal-stagger.visible > *:nth-child(4)  { transition-delay: 180ms; }
+        .reveal-stagger.visible > *:nth-child(5)  { transition-delay: 240ms; }
+        .reveal-stagger.visible > *:nth-child(6)  { transition-delay: 300ms; }
+        .reveal-stagger.visible > *:nth-child(7)  { transition-delay: 360ms; }
+        .reveal-stagger.visible > *:nth-child(8)  { transition-delay: 420ms; }
+        .reveal-stagger.visible > *:nth-child(9)  { transition-delay: 480ms; }
+        .reveal-stagger.visible > *:nth-child(10) { transition-delay: 540ms; }
+        .reveal-stagger.visible > *:nth-child(11) { transition-delay: 600ms; }
+        .reveal-stagger.visible > *:nth-child(12) { transition-delay: 660ms; }
+        .reveal-stagger.visible > *:nth-child(13) { transition-delay: 720ms; }
+        .reveal-stagger.visible > *:nth-child(14) { transition-delay: 780ms; }
+        .reveal-stagger.visible > *:nth-child(15) { transition-delay: 840ms; }
 
         /* =========================================================
            RESPONSIVE
@@ -1769,12 +1777,12 @@
                     </div>
                     <div class="hero-stat" role="listitem">
                         <div class="stat-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
-                        <div class="stat-number">11</div>
+                        <div class="stat-number">15</div>
                         <div class="stat-label">Part-Time Staff</div>
                     </div>
                     <div class="hero-stat" role="listitem">
                         <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                        <div class="stat-number">375</div>
+                        <div class="stat-number">373</div>
                         <div class="stat-label">Participants</div>
                     </div>
                 </div>
@@ -1827,7 +1835,7 @@
                                 </tr>
                                 <tr data-type="spiritual" data-details="Morning worship, prayer, and announcements. Participants gather in the main hall for spiritual formation.">
                                     <td class="time-col">08:00 – 08:45 AM</td>
-                                    <td>Morning Assembly & Devotion <span class="activity-badge badge-spiritual">Spiritual</span></td>
+                                    <td>Morning Assembly &amp; Devotion <span class="activity-badge badge-spiritual">Spiritual</span></td>
                                     <td>Staff/CDW on Duty</td>
                                 </tr>
                                 <tr data-type="break" data-details="Nutritious breakfast served in the dining area. Menu rotates weekly for balanced nutrition.">
@@ -1837,7 +1845,7 @@
                                 </tr>
                                 <tr data-type="academic" data-details="Class teachers mark attendance register. Participants settle into their classrooms for the academic session.">
                                     <td class="time-col">09:45 – 10:00 AM</td>
-                                    <td>Settling & Marking Register <span class="activity-badge badge-academic">Academic</span></td>
+                                    <td>Settling &amp; Marking Register <span class="activity-badge badge-academic">Academic</span></td>
                                     <td>Class Teacher</td>
                                 </tr>
                                 <tr data-type="academic" data-details="Core academic subjects taught by age group. See Part-Time Staff Reference below for specific assignments.">
@@ -1847,7 +1855,7 @@
                                 </tr>
                                 <tr data-type="break" data-details="Short break for participants to transition to skills sessions. Light refreshments available.">
                                     <td class="time-col">11:30 – 11:45 AM</td>
-                                    <td>Break & Transition to Skills <span class="activity-badge badge-break">Break</span></td>
+                                    <td>Break &amp; Transition to Skills <span class="activity-badge badge-break">Break</span></td>
                                     <td>—</td>
                                 </tr>
                                 <tr data-type="skills" data-details="Participants rotate through specialized skills: Piano, Art, Tailoring, Computer, Hairdressing, Music, Sports, and more.">
@@ -1867,12 +1875,12 @@
                                 </tr>
                                 <tr data-type="service" data-details="Final cleaning of classrooms and compound. Participants prepare the centre for the next week.">
                                     <td class="time-col">03:00 – 03:30 PM</td>
-                                    <td>Service & Cleaning <span class="activity-badge badge-service">Service</span></td>
+                                    <td>Service &amp; Cleaning <span class="activity-badge badge-service">Service</span></td>
                                     <td>All Participants</td>
                                 </tr>
                                 <tr data-type="spiritual" data-details="Closing prayers, announcements, and dismissal. Football boys stay for additional training 3–5 PM.">
                                     <td class="time-col">03:30 PM</td>
-                                    <td>Final Assembly & Departure <span class="activity-badge badge-spiritual">Spiritual</span></td>
+                                    <td>Final Assembly &amp; Departure <span class="activity-badge badge-spiritual">Spiritual</span></td>
                                     <td>Except Football Boys (3–5 PM)</td>
                                 </tr>
                             </tbody>
@@ -1906,13 +1914,13 @@
                     <article class="program-card">
                         <div class="program-week">1st Saturday</div>
                         <div class="program-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
-                        <h4>Mentorship & Leadership Training</h4>
+                        <h4>Mentorship &amp; Leadership Training</h4>
                         <p>Empowering participants aged 12+ with leadership skills, mentorship, and character development for future impact.</p>
                     </article>
                     <article class="program-card">
                         <div class="program-week">2nd Saturday</div>
                         <div class="program-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div>
-                        <h4>Sanitation & Reproductive Health</h4>
+                        <h4>Sanitation &amp; Reproductive Health</h4>
                         <p>ARISE program promoting hygiene, health awareness, and reproductive education in a safe, supportive environment.</p>
                     </article>
                     <article class="program-card">
@@ -1936,7 +1944,7 @@
             <div class="container">
                 <div class="reveal">
                     <div class="section-eyebrow">11:45 AM – 1:15 PM</div>
-                    <h2 class="section-title" id="skills-title">Skills offered & <span class="italic">part-time staff.</span></h2>
+                    <h2 class="section-title" id="skills-title">Skills offered &amp; <span class="italic">part-time staff.</span></h2>
                     <p class="section-lede">Available during the skills session for participants ages 9–18. Each skill is facilitated by a dedicated part-time staff member.</p>
                 </div>
 
@@ -1944,7 +1952,7 @@
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
                         <h4>Computer Studies</h4>
-                        <p>Digital literacy & practical applications for the modern world.</p>
+                        <p>Digital literacy &amp; practical applications for the modern world.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">TB</div>
                             <span class="teacher-name">Teacher Bernard</span>
@@ -1954,7 +1962,7 @@
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-tshirt" aria-hidden="true"></i></div>
                         <h4>Tailoring</h4>
-                        <p>Garment making, design & entrepreneurship skills.</p>
+                        <p>Garment making, design &amp; entrepreneurship skills.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">TR</div>
                             <span class="teacher-name">Teacher Ruth</span>
@@ -1963,8 +1971,8 @@
 
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-cut" aria-hidden="true"></i></div>
-                        <h4>Hairdressing & Barbering</h4>
-                        <p>Professional styling & grooming techniques.</p>
+                        <h4>Hairdressing &amp; Barbering</h4>
+                        <p>Professional styling &amp; grooming techniques.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">TJ</div>
                             <span class="teacher-name">Teacher Jesca</span>
@@ -1973,7 +1981,7 @@
 
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
-                        <h4>Art & Design</h4>
+                        <h4>Art &amp; Design</h4>
                         <p>Creative expression through visual arts and design.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">TO</div>
@@ -1983,8 +1991,8 @@
 
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
-                        <h4>Music, Piano & Band</h4>
-                        <p>Instrumental training, drama & poetry expression.</p>
+                        <h4>Music, Piano &amp; Band</h4>
+                        <p>Instrumental training, drama &amp; poetry expression.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">ST</div>
                             <span class="teacher-name">Skills Team</span>
@@ -1994,7 +2002,7 @@
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
                         <h4>Soft Talents</h4>
-                        <p>Drama, music, poetry & letter writing development.</p>
+                        <p>Drama, music, poetry &amp; letter writing development.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">MH</div>
                             <span class="teacher-name">Madam Hellen</span>
@@ -2004,7 +2012,7 @@
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
                         <h4>Interactive Sessions</h4>
-                        <p>Adolescent mentorship & life guidance programs.</p>
+                        <p>Adolescent mentorship &amp; life guidance programs.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">MC</div>
                             <span class="teacher-name">Mr. Cliff</span>
@@ -2013,8 +2021,8 @@
 
                     <article class="skill-card">
                         <div class="skill-icon"><i class="fas fa-running" aria-hidden="true"></i></div>
-                        <h4>Indoor & Outdoor Games</h4>
-                        <p>Netball, Volleyball, Football & teamwork building.</p>
+                        <h4>Indoor &amp; Outdoor Games</h4>
+                        <p>Netball, Volleyball, Football &amp; teamwork building.</p>
                         <div class="teacher-profile">
                             <div class="teacher-avatar">TV</div>
                             <span class="teacher-name">Teacher Victor / Cliff</span>
@@ -2030,76 +2038,122 @@
                 <div class="reveal">
                     <div class="section-eyebrow">Academic Session</div>
                     <h2 class="section-title" id="teachers-title">Part-time staff <span class="italic">reference.</span></h2>
-                    <p class="section-lede">Academic session groupings and assigned part-time staff by age group.</p>
+                    <p class="section-lede">Academic session groupings and assigned part-time staff by age group — 15 PTTs across 11 domain classes.</p>
                 </div>
 
                 <div class="teachers-grid reveal-stagger">
+
+                    <!-- 0–2 Years · Jireh -->
                     <article class="teacher-card">
-                        <div class="teacher-image">CO</div>
-                        <div class="age-badge">15–18 Years</div>
-                        <h4>Emmaus Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div>
+                        <div class="teacher-image">GO</div>
+                        <div class="age-badge">0–2 Years</div>
+                        <h4>Jireh</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Grace Oketch</div>
                     </article>
+
                     <article class="teacher-card">
-                        <div class="teacher-image">VO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Blessed Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Victor Okatch</div>
+                        <div class="teacher-image">LK</div>
+                        <div class="age-badge">0–2 Years</div>
+                        <h4>Jireh</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Lucy Auma Kwala</div>
                     </article>
+
                     <article class="teacher-card">
-                        <div class="teacher-image">HO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Blessed Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Hellen Odera</div>
+                        <div class="teacher-image">PO</div>
+                        <div class="age-badge">0–2 Years</div>
+                        <h4>Jireh</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Peres Anyango Okinyi</div>
                     </article>
+
+                    <!-- 3–5 Years · Bethlehem -->
                     <article class="teacher-card">
-                        <div class="teacher-image">CO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Judea Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div>
+                        <div class="teacher-image">MA</div>
+                        <div class="age-badge">3–5 Years</div>
+                        <h4>Bethlehem</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Mary Akoth</div>
                     </article>
-                    <article class="teacher-card">
-                        <div class="teacher-image">EW</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Judea Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elias Wanchara</div>
-                    </article>
-                    <article class="teacher-card">
-                        <div class="teacher-image">VA</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Nazareth Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Vallary Ayuma</div>
-                    </article>
-                    <article class="teacher-card">
-                        <div class="teacher-image">CD</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Jerusalem Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Duwa</div>
-                    </article>
-                    <article class="teacher-card">
-                        <div class="teacher-image">CJ</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Nazareth Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Jaoko</div>
-                    </article>
-                    <article class="teacher-card">
-                        <div class="teacher-image">SO</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Jerusalem Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Sarah Okinyi</div>
-                    </article>
+
+                    <!-- 6–8 Years · Bethel -->
                     <article class="teacher-card">
                         <div class="teacher-image">DT</div>
                         <div class="age-badge">6–8 Years</div>
                         <h4>Bethel</h4>
                         <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Damarice Thocho</div>
                     </article>
+
+                    <!-- 9–11 Years · Nazareth YR1 & Jerusalem YR1 -->
+                    <article class="teacher-card">
+                        <div class="teacher-image">CJ</div>
+                        <div class="age-badge">9–11 Years</div>
+                        <h4>Nazareth Year 1</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Jaoko</div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">VO</div>
+                        <div class="age-badge">9–11 Years</div>
+                        <h4>Jerusalem Year 1</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Victor Okoth</div>
+                    </article>
+
+                    <!-- 12–14 Years · Nazareth YR2, Judea YR1 & YR2, Blessed YR1 & YR2, Jerusalem YR2 -->
+                    <article class="teacher-card">
+                        <div class="teacher-image">DO</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Nazareth Year 2</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Denish Okech</div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">EW</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Judea Year 1</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elias Wanchara</div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">EK</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Judea Year 2</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elvis Kajole</div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">HO</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Blessed Year 2</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Hellen Odera</div>
+                    </article>
+
                     <article class="teacher-card">
                         <div class="teacher-image">MO</div>
-                        <div class="age-badge">3–5 Years</div>
-                        <h4>Bethlehem</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Mary Omondi</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Jerusalem Year 2</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Margaret Otwo</div>
                     </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">VA</div>
+                        <div class="age-badge">12–14 Years</div>
+                        <h4>Blessed Year 1</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Vallary Ayuma</div>
+                    </article>
+
+                    <!-- 15–18 Years · Emmaus YR1 & YR2 -->
+                    <article class="teacher-card">
+                        <div class="teacher-image">CO</div>
+                        <div class="age-badge">15–18 Years</div>
+                        <h4>Emmaus Year 2</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-image">MT</div>
+                        <div class="age-badge">15–18 Years</div>
+                        <h4>Emmaus Year 1</h4>
+                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Maxwell Tom</div>
+                    </article>
+
                 </div>
             </div>
         </section>
