@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Departments | Academics | KE0274 PEFA Mfangano CYDC</title>
-    <meta name="description" content="Explore our specialized academic departments at KE0274 PEFA Mfangano CYDC. Holistic development through faith, education, and community partnership.">
+    <title>Assignments | Student Portal | KE0274 PEFA Mfangano CYDC</title>
+    <meta name="description" content="Access your assignments, events, deadlines, and academic tasks at KE0274 PEFA Mfangano Child Development Centre.">
     <meta name="theme-color" content="#0B1B33">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,6 @@
             --sky-500:  #0EA5E9;
             --sky-400:  #38BDF8;
             --sky-300:  #7DD3FC;
-            --sky-200:  #BAE6FD;
             --sky-100:  #E0F2FE;
             --amber-600: #D97706;
             --amber-500: #F59E0B;
@@ -104,15 +103,11 @@
             --fs-3xl:  1.875rem;
             --fs-4xl:  2.25rem;
             --fs-5xl:  3rem;
-            --fs-6xl:  3.75rem;
-            --fs-7xl:  4.5rem;
-            --fs-8xl:  5.5rem;
 
             --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
             --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
             --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
             --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
-            --s-32: 8rem;   --s-40: 10rem;
 
             --r-sm: 8px;
             --r-md: 12px;
@@ -127,11 +122,9 @@
             --dur-fast: 200ms;
             --dur-base: 360ms;
             --dur-slow: 640ms;
-            --dur-slower: 1000ms;
 
             --sidebar-w: 300px;
             --container: 1320px;
-            --container-wide: 1520px;
         }
 
         [data-theme="dark"] {
@@ -163,11 +156,8 @@
             --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
         }
 
-        /* =========================================================
-           RESET & BASE
-           ========================================================= */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
         body {
             font-family: var(--font-body);
             font-size: var(--fs-base);
@@ -181,7 +171,6 @@
             font-feature-settings: "cv02", "cv03", "cv04", "cv11";
             transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
         }
-        img { max-width: 100%; height: auto; display: block; }
         a { color: inherit; text-decoration: none; }
         button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
         ::selection { background: var(--blue-600); color: white; }
@@ -207,7 +196,7 @@
         .skip-link:focus { top: var(--s-4); }
 
         /* =========================================================
-           AMBIENT BACKGROUND — Identical to index.html
+           AMBIENT BACKGROUND
            ========================================================= */
         .ambient-bg {
             position: fixed;
@@ -221,52 +210,27 @@
             position: absolute;
             inset: 0;
             background: var(--gradient-mesh);
-            opacity: 0.7;
+            opacity: 0.4;
         }
         .orb {
             position: absolute;
             border-radius: 50%;
             filter: blur(80px);
-            opacity: 0.5;
+            opacity: 0.35;
             animation: orbFloat 24s ease-in-out infinite;
             will-change: transform;
         }
-        .orb-1 {
-            width: 500px; height: 500px;
-            background: radial-gradient(circle, var(--blue-400), transparent 70%);
-            top: -10%; left: -10%;
-            animation-delay: 0s;
-        }
-        .orb-2 {
-            width: 400px; height: 400px;
-            background: radial-gradient(circle, var(--sky-400), transparent 70%);
-            top: 40%; right: -8%;
-            animation-delay: -8s;
-        }
-        .orb-3 {
-            width: 380px; height: 380px;
-            background: radial-gradient(circle, var(--amber-400), transparent 70%);
-            bottom: -10%; left: 30%;
-            opacity: 0.3;
-            animation-delay: -16s;
-        }
+        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
+        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
+        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
         @keyframes orbFloat {
             0%, 100% { transform: translate(0, 0) scale(1); }
             33% { transform: translate(40px, -30px) scale(1.08); }
             66% { transform: translate(-30px, 40px) scale(0.95); }
         }
-        .noise-overlay {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.025;
-            mix-blend-mode: overlay;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-        }
 
         /* =========================================================
-           SIDEBAR NAVIGATION — Identical to index.html
+           SIDEBAR — Identical to index.html
            ========================================================= */
         .sidebar {
             position: fixed;
@@ -368,19 +332,9 @@
             cursor: pointer;
             position: relative;
         }
-        .nav-link:hover {
-            background: var(--bg-muted);
-            color: var(--text-primary);
-        }
-        .nav-link.active {
-            background: var(--blue-900);
-            color: white;
-            box-shadow: var(--shadow-sm);
-        }
-        [data-theme="dark"] .nav-link.active {
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
-            box-shadow: var(--shadow-blue);
-        }
+        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
+        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
+        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
         .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
         .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
         .nav-link.active i.nav-icon { opacity: 1; }
@@ -412,20 +366,9 @@
             border-radius: var(--r-sm);
             transition: all var(--dur-fast);
         }
-        .dropdown-link:hover {
-            color: var(--text-primary);
-            background: var(--bg-muted);
-            padding-left: var(--s-4);
-        }
-        .dropdown-link.active {
-            color: var(--blue-700);
-            font-weight: 600;
-            background: var(--blue-50);
-        }
-        [data-theme="dark"] .dropdown-link.active {
-            color: var(--sky-400);
-            background: rgba(30, 79, 216, 0.15);
-        }
+        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
+        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
+        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
         .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
         [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
 
@@ -450,11 +393,7 @@
             font-weight: 600;
             transition: all var(--dur-fast);
         }
-        .theme-toggle:hover {
-            background: var(--blue-900);
-            color: white;
-            border-color: var(--blue-900);
-        }
+        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
 
         .mobile-toggle {
             display: none;
@@ -472,234 +411,309 @@
             justify-content: center;
             box-shadow: var(--shadow-lg);
         }
-        [data-theme="dark"] .mobile-toggle {
-            background: rgba(11, 21, 38, 0.85);
-            color: white;
-        }
+        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
 
         /* =========================================================
-           MAIN CONTENT
+           MAIN CONTENT — Full viewport, flex column
            ========================================================= */
         .main-content {
             margin-left: var(--sidebar-w);
-            min-height: 100vh;
+            height: 100vh;
             position: relative;
             z-index: 2;
             transition: margin-left var(--dur-base) var(--ease-out);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
         /* =========================================================
-           PAGE HERO — Cinematic, photographic
+           PORTAL — Edge-to-edge, no hero, no padding, sharp edges
            ========================================================= */
-        .page-hero {
+        .portal-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
             position: relative;
-            padding: var(--s-32) var(--s-12) var(--s-24);
-            overflow: hidden;
-            color: white;
-            isolation: isolate;
-        }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            z-index: -3;
-        }
-        .hero-bg img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            object-position: center 30%;
-        }
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                linear-gradient(135deg, rgba(4, 11, 26, 0.94) 0%, rgba(11, 27, 51, 0.82) 50%, rgba(19, 46, 85, 0.72) 100%),
-                linear-gradient(180deg, transparent 50%, rgba(4, 11, 26, 0.85) 100%);
-            z-index: 1;
-        }
-        .hero-bg::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.25) 0%, transparent 50%);
-            z-index: 2;
-        }
-        .hero-grid-pattern {
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            opacity: 0.06;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
-            background-size: 80px 80px;
-            mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
-            -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+            background: var(--bg-surface);
         }
 
-        .hero-inner {
-            position: relative;
-            z-index: 3;
-            max-width: var(--container-wide);
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero-breadcrumb {
-            display: inline-flex;
+        /* Ultra-minimal header bar — thin, integrated */
+        .portal-header {
+            display: flex;
             align-items: center;
-            gap: var(--s-2);
-            padding: 6px 14px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--r-full);
-            font-size: var(--fs-xs);
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: var(--s-8);
-            backdrop-filter: blur(12px);
-            animation: heroFadeIn 1s var(--ease-out) both;
+            justify-content: space-between;
+            gap: var(--s-4);
+            padding: 10px var(--s-5);
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-hairline);
+            flex-shrink: 0;
+            z-index: 10;
         }
-        .hero-breadcrumb i { color: var(--amber-400); font-size: 0.7rem; }
-        .hero-breadcrumb .sep { opacity: 0.5; }
-
-        .hero-eyebrow {
-            display: inline-flex;
+        .portal-title-group {
+            display: flex;
             align-items: center;
             gap: var(--s-3);
-            padding: 8px 16px;
-            background: rgba(251, 191, 36, 0.12);
-            border: 1px solid rgba(251, 191, 36, 0.3);
-            border-radius: var(--r-full);
-            font-size: var(--fs-xs);
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: var(--s-8);
-            backdrop-filter: blur(12px);
-            animation: heroFadeIn 1s var(--ease-out) 0.2s both;
+            min-width: 0;
         }
-        .hero-eyebrow .pulse {
-            width: 7px; height: 7px;
-            border-radius: 50%;
-            background: var(--amber-400);
-            box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
-            animation: pulseRing 2.4s ease-out infinite;
+        .portal-icon {
+            width: 32px; height: 32px;
+            border-radius: var(--r-sm);
+            background: linear-gradient(135deg, var(--amber-500), var(--amber-400));
+            color: var(--blue-950);
+            display: grid; place-items: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
         }
-        @keyframes pulseRing {
-            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
-        }
-
-        .hero-title {
+        .portal-title {
             font-family: var(--font-display);
-            font-size: clamp(2.75rem, 6vw, var(--fs-8xl));
-            font-weight: 400;
-            line-height: 1.02;
-            letter-spacing: -0.03em;
-            margin-bottom: var(--s-8);
-            color: white;
-            font-variation-settings: "opsz" 144;
-            animation: heroFadeIn 1.2s var(--ease-out) 0.3s both;
-        }
-        .hero-title .line { display: block; }
-        .hero-title .italic {
-            font-style: italic;
-            font-weight: 300;
-            color: var(--amber-300);
-            letter-spacing: -0.02em;
-        }
-        .hero-title .divider {
-            display: inline-block;
-            width: 80px; height: 2px;
-            background: linear-gradient(90deg, var(--amber-400), transparent);
-            margin: var(--s-5) 0;
-            vertical-align: middle;
-            border-radius: 1px;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1rem, 1.4vw, var(--fs-lg));
-            color: rgba(255, 255, 255, 0.78);
-            max-width: 680px;
-            line-height: 1.7;
-            margin: 0 auto var(--s-10);
-            font-weight: 400;
-            animation: heroFadeIn 1s var(--ease-out) 0.5s both;
-        }
-
-        @keyframes heroFadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--s-5);
-            max-width: 900px;
-            margin: 0 auto;
-            animation: heroFadeIn 1s var(--ease-out) 0.6s both;
-        }
-        .hero-stat {
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: var(--r-xl);
-            padding: var(--s-6) var(--s-4);
-            text-align: center;
-            transition: all var(--dur-base) var(--ease-out);
-            position: relative;
+            font-size: var(--fs-base);
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
         }
-        .hero-stat::before {
+        .portal-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(45, 138, 78, 0.08);
+            border: 1px solid rgba(45, 138, 78, 0.15);
+            border-radius: var(--r-full);
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--forest-600);
+            font-family: var(--font-mono);
+            flex-shrink: 0;
+        }
+        [data-theme="dark"] .portal-status {
+            background: rgba(45, 138, 78, 0.12);
+            color: #4ade80;
+            border-color: rgba(74, 222, 128, 0.2);
+        }
+        .portal-status .dot {
+            width: 5px; height: 5px;
+            border-radius: 50%;
+            background: var(--forest-500);
+            box-shadow: 0 0 6px var(--forest-500);
+            animation: statusPulse 2s ease-in-out infinite;
+        }
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Portal frame — edge-to-edge, sharp corners, fills all space */
+        .portal-frame {
+            flex: 1;
+            position: relative;
+            background: var(--bg-surface);
+            overflow: hidden;
+            min-height: 0;
+        }
+        .portal-frame iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+            display: block;
+            background: var(--bg-surface);
+        }
+
+        /* Branded loader */
+        .portal-loader {
+            position: absolute;
+            inset: 0;
+            background: var(--bg-surface);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-6);
+            z-index: 5;
+            transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base) var(--ease-out);
+        }
+        .portal-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loader-mark {
+            width: 72px; height: 72px;
+            border-radius: var(--r-xl);
+            background: var(--gradient-hero);
+            display: grid; place-items: center;
+            color: var(--amber-400);
+            font-size: 1.8rem;
+            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            animation: loaderPulse 2s ease-in-out infinite;
+        }
+        .loader-mark::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            inset: -8px;
+            border-radius: var(--r-2xl);
+            border: 2px solid transparent;
+            border-top-color: var(--amber-400);
+            border-right-color: var(--blue-400);
+            animation: loaderSpin 1.5s linear infinite;
         }
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-4px);
+        .loader-mark::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--r-xl);
+            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
         }
-        .stat-icon {
-            width: 36px; height: 36px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(14, 165, 233, 0.2));
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            display: grid; place-items: center;
-            color: var(--sky-300);
-            font-size: 0.9rem;
-            margin: 0 auto var(--s-3);
+        @keyframes loaderPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-        .stat-number {
+        @keyframes loaderSpin { to { transform: rotate(360deg); } }
+        .loader-text { text-align: center; }
+        .loader-title {
             font-family: var(--font-display);
-            font-size: var(--fs-4xl);
+            font-size: var(--fs-lg);
             font-weight: 500;
-            color: white;
-            line-height: 1;
-            letter-spacing: -0.02em;
+            color: var(--text-primary);
             margin-bottom: 4px;
-            font-variation-settings: "opsz" 144;
+            letter-spacing: -0.01em;
         }
-        .stat-label {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.6);
+        .loader-subtitle {
+            font-size: 0.825rem;
+            color: var(--text-tertiary);
             font-weight: 500;
-            letter-spacing: 0.02em;
+        }
+        .loader-bar {
+            width: 200px;
+            height: 3px;
+            background: var(--bg-muted);
+            border-radius: var(--r-full);
+            overflow: hidden;
+            position: relative;
+        }
+        .loader-bar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--blue-600), var(--amber-400), var(--sky-500));
+            border-radius: var(--r-full);
+            animation: loaderBar 1.8s ease-in-out infinite;
+        }
+        @keyframes loaderBar {
+            0% { left: -40%; }
+            100% { left: 100%; }
+        }
+
+        /* Error state */
+        .portal-error {
+            position: absolute;
+            inset: 0;
+            background: var(--bg-surface);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-4);
+            z-index: 6;
+            padding: var(--s-8);
+            text-align: center;
+        }
+        .portal-error.active { display: flex; }
+        .error-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            display: grid; place-items: center;
+            color: #ef4444;
+            font-size: 1.5rem;
+        }
+        .error-title {
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .error-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            max-width: 400px;
+            line-height: 1.6;
+        }
+        .error-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--blue-900);
+            color: white;
+            border-radius: var(--r-full);
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all var(--dur-fast);
+            margin-top: var(--s-2);
+        }
+        .error-btn:hover {
+            background: var(--blue-800);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         /* =========================================================
-           SECTIONS
+           SCROLLABLE CONTENT AREA — Tips sections below the fold
+           ========================================================= */
+        .content-scroll {
+            flex: 0 0 auto;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 0;
+            transition: max-height 0.4s var(--ease-out);
+        }
+        .content-scroll.expanded {
+            max-height: 10000px;
+        }
+
+        /* Scroll indicator — subtle bar between portal and tips */
+        .scroll-indicator {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--s-3);
+            padding: var(--s-3) var(--s-5);
+            background: var(--bg-muted);
+            border-top: 1px solid var(--border-hairline);
+            border-bottom: 1px solid var(--border-hairline);
+            cursor: pointer;
+            transition: all var(--dur-fast);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .scroll-indicator:hover {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+        .scroll-indicator i {
+            font-size: 0.7rem;
+            transition: transform var(--dur-fast);
+        }
+        .scroll-indicator.expanded i {
+            transform: rotate(180deg);
+        }
+
+        /* =========================================================
+           SECTIONS — Exam tips & tracking
            ========================================================= */
         .container {
             width: 100%;
@@ -708,54 +722,13 @@
             padding: 0 var(--s-8);
             position: relative;
         }
+
         .section {
-            padding: var(--s-32) 0;
+            padding: var(--s-16) 0;
             position: relative;
         }
-        .section-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-3);
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--blue-600);
-            margin-bottom: var(--s-5);
-        }
-        [data-theme="dark"] .section-eyebrow { color: var(--sky-400); }
-        .section-eyebrow::before {
-            content: '';
-            width: 28px; height: 1px;
-            background: currentColor;
-        }
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, var(--fs-5xl));
-            font-weight: 400;
-            line-height: 1.08;
-            letter-spacing: -0.025em;
-            color: var(--text-primary);
-            margin-bottom: var(--s-6);
-            font-variation-settings: "opsz" 144;
-            max-width: 880px;
-        }
-        .section-title .italic {
-            font-style: italic;
-            font-weight: 300;
-            color: var(--blue-600);
-        }
-        [data-theme="dark"] .section-title .italic { color: var(--sky-400); }
-        .section-lede {
-            font-size: var(--fs-md);
-            color: var(--text-secondary);
-            line-height: 1.75;
-            max-width: 720px;
-            margin-bottom: var(--s-16);
-        }
-
         .section.alt-bg {
-            background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-page) 100%);
+            background: var(--bg-muted);
         }
         .section.alt-bg::before {
             content: '';
@@ -767,182 +740,186 @@
         }
         .section.alt-bg > * { position: relative; z-index: 1; }
 
-        /* =========================================================
-           DEPARTMENTS GRID — Premium editorial cards
-           ========================================================= */
-        .departments-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: var(--s-6);
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--s-10);
+        }
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: var(--s-4);
+        }
+        [data-theme="dark"] .section-eyebrow { color: var(--sky-400); }
+        .section-eyebrow::before {
+            content: '';
+            width: 28px; height: 1px;
+            background: currentColor;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, var(--fs-3xl));
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: var(--s-3);
+            font-variation-settings: "opsz" 144;
+        }
+        .section-title .italic {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--blue-600);
+        }
+        [data-theme="dark"] .section-title .italic { color: var(--sky-400); }
+        .section-lede {
+            font-size: var(--fs-base);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .department-card {
+        /* Info cards grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--s-5);
+        }
+
+        .info-card {
             background: var(--bg-surface);
             border: 1px solid var(--border-hairline);
-            border-radius: var(--r-2xl);
-            overflow: hidden;
+            border-radius: var(--r-xl);
+            padding: var(--s-6);
             transition: all var(--dur-base) var(--ease-out);
-            display: flex;
-            flex-direction: column;
             position: relative;
+            overflow: hidden;
             box-shadow: var(--shadow-sm);
         }
-        .department-card::before {
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 3px; height: 100%;
+            background: var(--card-accent, var(--gradient-royal));
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform var(--dur-slow) var(--ease-out);
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-default);
+        }
+        .info-card:hover::before { transform: scaleY(1); }
+
+        .info-card:nth-child(1) { --card-accent: linear-gradient(180deg, var(--amber-500), #ef4444); }
+        .info-card:nth-child(2) { --card-accent: linear-gradient(180deg, var(--blue-600), var(--sky-500)); }
+        .info-card:nth-child(3) { --card-accent: linear-gradient(180deg, var(--sky-500), var(--blue-400)); }
+        .info-card:nth-child(4) { --card-accent: linear-gradient(180deg, #ec4899, #f43f5e); }
+        .info-card:nth-child(5) { --card-accent: linear-gradient(180deg, var(--forest-500), var(--sky-500)); }
+        .info-card:nth-child(6) { --card-accent: linear-gradient(180deg, #7c3aed, #a855f7); }
+        .info-card:nth-child(7) { --card-accent: linear-gradient(180deg, #f97316, var(--amber-500)); }
+        .info-card:nth-child(8) { --card-accent: linear-gradient(180deg, var(--blue-500), var(--sky-400)); }
+        .info-card:nth-child(9) { --card-accent: linear-gradient(180deg, var(--terra-500), var(--amber-500)); }
+
+        .info-icon {
+            width: 44px; height: 44px;
+            border-radius: var(--r-md);
+            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
+            color: var(--blue-700);
+            display: grid; place-items: center;
+            font-size: 1.1rem;
+            margin-bottom: var(--s-3);
+            box-shadow: var(--shadow-inner);
+        }
+        [data-theme="dark"] .info-icon {
+            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
+            color: var(--sky-400);
+        }
+
+        .info-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--fs-base);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--s-2);
+            letter-spacing: -0.01em;
+        }
+        .info-card > p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.65;
+            margin-bottom: var(--s-3);
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-1);
+        }
+        .info-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--s-2);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            line-height: 1.55;
+        }
+        .info-card ul li i {
+            color: var(--amber-500);
+            margin-top: 3px;
+            flex-shrink: 0;
+            font-size: 0.7rem;
+        }
+        [data-theme="dark"] .info-card ul li i { color: var(--amber-400); }
+
+        /* Tips highlight box */
+        .tips-highlight {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--r-xl);
+            padding: var(--s-8);
+            margin-top: var(--s-8);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .tips-highlight::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
-            background: var(--card-accent, var(--gradient-royal));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--dur-slow) var(--ease-out);
-            z-index: 2;
+            background: linear-gradient(90deg, var(--amber-500), var(--blue-600), var(--sky-500));
         }
-        .department-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--border-default);
-        }
-        .department-card:hover::before { transform: scaleX(1); }
-
-        /* Unique accent per card */
-        .department-card:nth-child(1)  { --card-accent: linear-gradient(135deg, #ef4444, #f97316); }
-        .department-card:nth-child(2)  { --card-accent: linear-gradient(135deg, var(--forest-500), var(--sky-500)); }
-        .department-card:nth-child(3)  { --card-accent: linear-gradient(135deg, #7c3aed, #a855f7); }
-        .department-card:nth-child(4)  { --card-accent: linear-gradient(135deg, #ec4899, #f43f5e); }
-        .department-card:nth-child(5)  { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-400)); }
-        .department-card:nth-child(6)  { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
-        .department-card:nth-child(7)  { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
-        .department-card:nth-child(8)  { --card-accent: linear-gradient(135deg, #a855f7, #ec4899); }
-        .department-card:nth-child(9)  { --card-accent: linear-gradient(135deg, var(--terra-500), var(--amber-500)); }
-        .department-card:nth-child(10) { --card-accent: linear-gradient(135deg, var(--sky-400), var(--blue-500)); }
-
-        /* Card image placeholder */
-        .card-image {
-            position: relative;
-            height: 160px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, var(--blue-700), var(--blue-900));
-        }
-        .card-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--card-accent, var(--gradient-royal));
-            opacity: 0.85;
-        }
-        .card-image::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
-        }
-        .card-image i {
-            font-size: 3.5rem;
-            color: white;
-            z-index: 2;
-            transition: transform var(--dur-slow) var(--ease-out);
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
-        }
-        .department-card:hover .card-image i {
-            transform: scale(1.1) rotate(-3deg);
-        }
-        .card-badge {
-            position: absolute;
-            top: var(--s-4); right: var(--s-4);
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            color: var(--blue-900);
-            padding: 5px 12px;
-            border-radius: var(--r-full);
-            font-family: var(--font-ui);
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            z-index: 3;
-            box-shadow: var(--shadow-md);
-        }
-
-        /* Card content */
-        .card-content {
-            padding: var(--s-8);
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .card-content h3 {
+        .tips-highlight h4 {
             font-family: var(--font-display);
-            font-size: var(--fs-xl);
+            font-size: var(--fs-lg);
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: var(--s-3);
-            letter-spacing: -0.01em;
+            margin-bottom: var(--s-2);
             display: flex;
             align-items: center;
             gap: var(--s-3);
+            letter-spacing: -0.01em;
         }
-        .card-content h3 i {
-            color: var(--blue-600);
+        .tips-highlight h4 i {
+            color: var(--amber-500);
             font-size: 1.1rem;
         }
-        [data-theme="dark"] .card-content h3 i { color: var(--sky-400); }
-        .card-content p {
+        [data-theme="dark"] .tips-highlight h4 i { color: var(--amber-400); }
+        .tips-highlight p {
             color: var(--text-secondary);
-            font-size: 0.925rem;
-            line-height: 1.75;
-            margin-bottom: var(--s-4);
-        }
-
-        .highlight-text {
-            background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(245, 158, 11, 0.04));
-            border-left: 3px solid var(--amber-500);
-            padding: var(--s-4) var(--s-5);
-            border-radius: 0 var(--r-md) var(--r-md) 0;
-            margin: var(--s-4) 0;
-            font-family: var(--font-display);
             font-size: 0.9rem;
-            font-style: italic;
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-        .highlight-text strong {
-            font-style: normal;
-            color: var(--amber-600);
-            font-weight: 600;
-            font-family: var(--font-ui);
-            font-size: 0.75rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 4px;
-        }
-        [data-theme="dark"] .highlight-text strong { color: var(--amber-400); }
-
-        /* Card footer */
-        .card-footer {
-            padding-top: var(--s-4);
-            border-top: 1px solid var(--border-hairline);
-            margin-top: auto;
-        }
-        .card-tags {
-            display: flex;
-            gap: var(--s-2);
-            flex-wrap: wrap;
-        }
-        .tag {
-            padding: 4px 10px;
-            background: var(--bg-muted);
-            color: var(--text-secondary);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-full);
-            font-family: var(--font-ui);
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
+            line-height: 1.75;
         }
 
         /* =========================================================
@@ -951,9 +928,10 @@
         .footer {
             background: var(--blue-950);
             color: rgba(255,255,255,0.75);
-            padding: var(--s-20) 0 var(--s-8);
+            padding: var(--s-16) 0 var(--s-8);
             position: relative;
             overflow: hidden;
+            flex-shrink: 0;
         }
         .footer::before {
             content: '';
@@ -968,25 +946,25 @@
         .footer-grid {
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-            gap: var(--s-12);
-            margin-bottom: var(--s-12);
+            gap: var(--s-10);
+            margin-bottom: var(--s-10);
         }
         .footer-brand .footer-logo {
             display: flex;
             align-items: center;
             gap: var(--s-3);
-            margin-bottom: var(--s-5);
+            margin-bottom: var(--s-4);
             color: white;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
         .footer-brand .footer-logo-mark {
-            width: 40px; height: 40px;
+            width: 38px; height: 38px;
             border-radius: var(--r-md);
             background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
             color: var(--amber-400);
             display: grid; place-items: center;
-            font-size: 1rem;
+            font-size: 0.95rem;
             box-shadow: var(--shadow-md);
         }
         .footer-tagline {
@@ -995,21 +973,21 @@
             font-weight: 400;
             font-size: var(--fs-lg);
             color: var(--amber-300);
-            margin-bottom: var(--s-5);
+            margin-bottom: var(--s-4);
             line-height: 1.5;
             letter-spacing: -0.01em;
         }
         .footer-brand > p {
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             line-height: 1.7;
-            margin-bottom: var(--s-6);
+            margin-bottom: var(--s-5);
             max-width: 360px;
         }
         .footer-contact {
             display: flex;
             flex-direction: column;
             gap: var(--s-2);
-            font-size: 0.825rem;
+            font-size: 0.8rem;
             font-style: normal;
         }
         .footer-contact-item {
@@ -1018,24 +996,24 @@
             gap: var(--s-2);
             color: rgba(255,255,255,0.7);
         }
-        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.8rem; }
+        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.75rem; }
 
         .footer-col h4 {
             color: white;
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 0.14em;
             text-transform: uppercase;
-            margin-bottom: var(--s-5);
+            margin-bottom: var(--s-4);
         }
         .footer-links {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: var(--s-3);
+            gap: var(--s-2);
         }
         .footer-links a {
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             color: rgba(255,255,255,0.65);
             transition: color var(--dur-fast);
             font-weight: 500;
@@ -1043,24 +1021,24 @@
         .footer-links a:hover { color: var(--amber-300); }
 
         .footer-newsletter p {
-            font-size: 0.875rem;
-            margin-bottom: var(--s-4);
+            font-size: 0.85rem;
+            margin-bottom: var(--s-3);
             line-height: 1.6;
         }
         .newsletter-form {
             display: flex;
             gap: var(--s-2);
-            margin-bottom: var(--s-5);
+            margin-bottom: var(--s-4);
         }
         .newsletter-form input {
             flex: 1;
-            padding: 11px 14px;
+            padding: 10px 12px;
             background: rgba(255,255,255,0.06);
             border: 1px solid rgba(255,255,255,0.12);
             border-radius: var(--r-md);
             color: white;
             font-family: var(--font-body);
-            font-size: 0.85rem;
+            font-size: 0.825rem;
             min-width: 0;
             transition: all var(--dur-fast);
         }
@@ -1071,26 +1049,26 @@
             background: rgba(255,255,255,0.1);
         }
         .newsletter-form button {
-            padding: 11px 18px;
+            padding: 10px 16px;
             background: var(--amber-500);
             color: var(--blue-950);
             border-radius: var(--r-md);
             font-weight: 700;
-            font-size: 0.85rem;
+            font-size: 0.825rem;
             transition: background var(--dur-fast);
         }
         .newsletter-form button:hover { background: var(--amber-400); }
 
         .social-links { display: flex; gap: var(--s-2); }
         .social-links a {
-            width: 38px; height: 38px;
+            width: 36px; height: 36px;
             border-radius: var(--r-md);
             background: rgba(255,255,255,0.06);
             border: 1px solid rgba(255,255,255,0.1);
             display: grid; place-items: center;
             color: rgba(255,255,255,0.7);
             transition: all var(--dur-fast);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         .social-links a:hover {
             background: var(--amber-500);
@@ -1100,14 +1078,14 @@
         }
 
         .footer-bottom {
-            padding-top: var(--s-8);
+            padding-top: var(--s-6);
             border-top: 1px solid rgba(255,255,255,0.08);
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: var(--s-4);
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             color: rgba(255,255,255,0.5);
         }
         .footer-legal { display: flex; gap: var(--s-5); }
@@ -1119,26 +1097,25 @@
            ========================================================= */
         .reveal {
             opacity: 0;
-            transform: translateY(28px);
+            transform: translateY(24px);
             transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
         }
         .reveal.visible { opacity: 1; transform: translateY(0); }
         .reveal-stagger > * {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(16px);
             transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
         }
         .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
-        .reveal-stagger.visible > *:nth-child(1)  { transition-delay: 0ms; }
-        .reveal-stagger.visible > *:nth-child(2)  { transition-delay: 80ms; }
-        .reveal-stagger.visible > *:nth-child(3)  { transition-delay: 160ms; }
-        .reveal-stagger.visible > *:nth-child(4)  { transition-delay: 240ms; }
-        .reveal-stagger.visible > *:nth-child(5)  { transition-delay: 320ms; }
-        .reveal-stagger.visible > *:nth-child(6)  { transition-delay: 400ms; }
-        .reveal-stagger.visible > *:nth-child(7)  { transition-delay: 480ms; }
-        .reveal-stagger.visible > *:nth-child(8)  { transition-delay: 560ms; }
-        .reveal-stagger.visible > *:nth-child(9)  { transition-delay: 640ms; }
-        .reveal-stagger.visible > *:nth-child(10) { transition-delay: 720ms; }
+        .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+        .reveal-stagger.visible > *:nth-child(2) { transition-delay: 60ms; }
+        .reveal-stagger.visible > *:nth-child(3) { transition-delay: 120ms; }
+        .reveal-stagger.visible > *:nth-child(4) { transition-delay: 180ms; }
+        .reveal-stagger.visible > *:nth-child(5) { transition-delay: 240ms; }
+        .reveal-stagger.visible > *:nth-child(6) { transition-delay: 300ms; }
+        .reveal-stagger.visible > *:nth-child(7) { transition-delay: 360ms; }
+        .reveal-stagger.visible > *:nth-child(8) { transition-delay: 420ms; }
+        .reveal-stagger.visible > *:nth-child(9) { transition-delay: 480ms; }
 
         /* =========================================================
            RESPONSIVE
@@ -1149,25 +1126,24 @@
         }
         @media (max-width: 1024px) {
             :root { --sidebar-w: 280px; }
-            .departments-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 900px) {
             .sidebar { transform: translateX(-100%); box-shadow: none; }
             .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
             .main-content { margin-left: 0; }
             .mobile-toggle { display: flex; }
-            .page-hero { padding: var(--s-24) var(--s-6) var(--s-20); }
-            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .portal-header { padding: 8px var(--s-4); }
             .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
             .footer-brand { grid-column: 1 / -1; }
         }
         @media (max-width: 640px) {
             .container { padding: 0 var(--s-5); }
-            .section { padding: var(--s-20) 0; }
-            .departments-grid { grid-template-columns: 1fr; }
-            .card-content { padding: var(--s-6); }
-            .card-image { height: 140px; }
-            .card-image i { font-size: 2.8rem; }
+            .section { padding: var(--s-12) 0; }
+            .portal-header { padding: 8px var(--s-3); }
+            .portal-title { font-size: var(--fs-sm); }
+            .info-grid { grid-template-columns: 1fr; }
+            .info-card { padding: var(--s-5); }
+            .tips-highlight { padding: var(--s-5); }
             .footer-grid { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; text-align: center; }
             .footer-legal { flex-wrap: wrap; justify-content: center; }
@@ -1176,26 +1152,19 @@
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
             }
             .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
             .orb { animation: none; }
+            .loader-mark::before { animation: none; }
+            .loader-bar::before { animation: none; width: 100%; left: 0; }
         }
 
         @media print {
-            .sidebar, .mobile-toggle, .ambient-bg, .noise-overlay, .footer { display: none !important; }
-            .main-content { margin-left: 0; }
-            body { background: white !important; color: black !important; }
-            .page-hero { padding: var(--s-8) var(--s-4); color: black; }
-            .hero-bg { display: none; }
-            .department-card {
-                box-shadow: none !important;
-                border: 1px solid #ccc !important;
-                break-inside: avoid;
-                background: white !important;
-            }
+            .sidebar, .mobile-toggle, .ambient-bg, .portal-frame, .footer, .scroll-indicator { display: none !important; }
+            .main-content { margin-left: 0; height: auto; }
+            body { background: white !important; color: black !important; overflow: visible; }
+            .info-card { box-shadow: none !important; border: 1px solid #ccc !important; break-inside: avoid; background: white !important; }
         }
     </style>
 </head>
@@ -1208,7 +1177,6 @@
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
-    <div class="noise-overlay" aria-hidden="true"></div>
 
     <!-- Mobile Toggle -->
     <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
@@ -1247,14 +1215,14 @@
                         <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
                     </div>
                 </div>
-                <div class="nav-item active">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                <div class="nav-item">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
                         <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
                         <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
                     </div>
                     <div class="dropdown" role="menu">
-                        <a href="dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
-                        <a href="department.html" class="dropdown-link active" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
                     </div>
                 </div>
             </div>
@@ -1266,15 +1234,15 @@
                         <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
                     </a>
                 </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
+                <div class="nav-item active">
+                    <div class="nav-link" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
                         <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
                         <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
                     </div>
                     <div class="dropdown" role="menu">
-                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
-                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
-                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+                        <a href="timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+                        <a href="assignment.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+                        <a href="results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
                     </div>
                 </div>
                 <div class="nav-item">
@@ -1322,398 +1290,365 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main Content — Full viewport, no hero, portal starts immediately -->
     <main class="main-content" id="main">
 
-        <!-- ===== PAGE HERO ===== -->
-        <section class="page-hero" aria-labelledby="page-title">
-            <div class="hero-bg" aria-hidden="true">
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2400&q=85" alt="" loading="eager" decoding="async">
+        <!-- ===== PORTAL — Edge-to-edge, fills viewport ===== -->
+        <section class="portal-section" aria-labelledby="portal-label">
+
+            <!-- Ultra-minimal header bar -->
+            <div class="portal-header">
+                <div class="portal-title-group">
+                    <div class="portal-icon" aria-hidden="true"><i class="fas fa-tasks"></i></div>
+                    <h1 class="portal-title" id="portal-label">Assignments & Events Portal</h1>
+                </div>
+                <div class="portal-status" id="portalStatus">
+                    <span class="dot" aria-hidden="true"></span>
+                    <span>Live</span>
+                </div>
             </div>
-            <div class="hero-grid-pattern" aria-hidden="true"></div>
 
-            <div class="hero-inner">
-                <div class="hero-breadcrumb">
-                    <i class="fas fa-home" aria-hidden="true"></i>
-                    <span>Home</span>
-                    <span class="sep">/</span>
-                    <span>Academics</span>
-                    <span class="sep">/</span>
-                    <span>Departments</span>
+            <!-- Iframe fills all remaining space, edge-to-edge, sharp edges -->
+            <div class="portal-frame" id="portalFrame">
+                <!-- Branded loader -->
+                <div class="portal-loader" id="portalLoader" aria-live="polite" aria-label="Loading assignments portal">
+                    <div class="loader-mark" aria-hidden="true">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="loader-text">
+                        <div class="loader-title">Preparing your assignments</div>
+                        <div class="loader-subtitle">Loading tasks, deadlines & events...</div>
+                    </div>
+                    <div class="loader-bar" aria-hidden="true"></div>
                 </div>
 
-                <div class="hero-eyebrow">
-                    <span class="pulse" aria-hidden="true"></span>
-                    <span>Academic Structure · 10 Departments</span>
+                <!-- Error state -->
+                <div class="portal-error" id="portalError" role="alert">
+                    <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="error-title">Portal unavailable</div>
+                    <p class="error-text">We're having trouble connecting to the assignments portal. Please try again in a moment.</p>
+                    <button class="error-btn" id="errorRetryBtn">
+                        <i class="fas fa-redo" aria-hidden="true"></i>
+                        <span>Try Again</span>
+                    </button>
                 </div>
 
-                <h1 class="hero-title" id="page-title">
-                    <span class="line">Our academic</span>
-                    <span class="line"><span class="italic">departments.</span></span>
-                    <span class="line"><span class="divider" aria-hidden="true"></span></span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    Specialized programs designed to nurture every participant's holistic development — mind, body, and spirit — through faith-centered education and community partnership.
-                </p>
-
-                <div class="hero-stats" role="list" aria-label="Academics at a glance">
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-building-columns" aria-hidden="true"></i></div>
-                        <div class="stat-number">10</div>
-                        <div class="stat-label">Departments</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
-                        <div class="stat-number">40+</div>
-                        <div class="stat-label">Part-Time Staff</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                        <div class="stat-number">375</div>
-                        <div class="stat-label">Participants</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
-                        <div class="stat-number">0–18</div>
-                        <div class="stat-label">Age Range</div>
-                    </div>
-                </div>
+                <!-- The embedded portal -->
+                <iframe
+                    id="assignmentsFrame"
+                    src=""
+                    title="Assignments and Events Portal — Track tasks, deadlines, and events at KE0274 PEFA Mfangano CYDC"
+                    allow="clipboard-write"
+                    loading="eager"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
 
-        <!-- ===== DEPARTMENTS GRID ===== -->
-        <section class="section alt-bg" aria-labelledby="departments-title">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-eyebrow">Departments of Excellence</div>
-                    <h2 class="section-title" id="departments-title">Specialized care for <span class="italic">every stage.</span></h2>
-                    <p class="section-lede">Each department is led by dedicated part-time staff committed to transforming lives through specialized programs and personalized care.</p>
+        <!-- ===== SCROLL INDICATOR — Expandable bar ===== -->
+        <div class="scroll-indicator" id="scrollIndicator" role="button" tabindex="0" aria-expanded="false" aria-controls="tipsContent">
+            <span>Study Tips & Assignment Strategies</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </div>
+
+        <!-- ===== SCROLLABLE CONTENT — Tips sections (hidden by default) ===== -->
+        <div class="content-scroll" id="tipsContent">
+
+            <!-- EXAM TIPS SECTION -->
+            <section class="section alt-bg" aria-labelledby="tips-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <div class="section-eyebrow">Smart Strategies</div>
+                        <h2 class="section-title" id="tips-title">How to <span class="italic">ace</span> your assignments.</h2>
+                        <p class="section-lede">Master these essential techniques to excel in your assignments and achieve academic success.</p>
+                    </div>
+
+                    <div class="info-grid reveal-stagger">
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
+                            <h3>Create a Study Plan</h3>
+                            <p>Organize your study time effectively with a structured plan that covers all subjects.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Break subjects into manageable chunks</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Allocate specific times for each topic</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Include regular breaks to avoid burnout</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Prioritize difficult subjects when energy is high</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                            <h3>Practice Active Recall</h3>
+                            <p>Test yourself regularly instead of just re-reading notes. This strengthens memory retention.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use flashcards for key concepts</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Close books and recite from memory</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Teach concepts to someone else</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Practice past exam questions</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-redo" aria-hidden="true"></i></div>
+                            <h3>Use Spaced Repetition</h3>
+                            <p>Review material at increasing intervals to move information into long-term memory.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review after 1 day, then 3 days, then 1 week</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Focus more on topics you find difficult</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use apps like Anki for digital flashcards</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Consistency beats cramming every time</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+                            <h3>Maintain Healthy Habits</h3>
+                            <p>Your physical and mental health directly impacts your academic performance.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Get 7–9 hours of sleep nightly</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Eat nutritious meals and stay hydrated</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Exercise regularly to boost brain function</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Practice stress management techniques</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                            <h3>Master Exam Day</h3>
+                            <p>Prepare properly on the day of your exam to perform at your best.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Arrive early and stay calm</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Read all instructions carefully</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Start with questions you know well</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Manage time wisely and review answers</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+                            <h3>Take Effective Notes</h3>
+                            <p>Good notes are the foundation of successful studying and exam preparation.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use the Cornell note-taking method</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Highlight key concepts and definitions</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Create mind maps for complex topics</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review and organize notes weekly</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                            <h3>Study in Groups</h3>
+                            <p>Collaborative learning can deepen understanding and expose you to different perspectives.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Choose focused, motivated study partners</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set clear goals for each session</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Take turns teaching each other</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Stay on topic and avoid distractions</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+                            <h3>Develop Growth Mindset</h3>
+                            <p>Believe that intelligence can be developed through dedication and hard work.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Embrace challenges as learning opportunities</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Learn from mistakes and failures</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate effort, not just results</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Stay positive and persistent</li>
+                            </ul>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                            <h3>Manage Your Time</h3>
+                            <p>Effective time management is crucial for balancing studies, rest, and other activities.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use the Pomodoro technique (25 min study, 5 min break)</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Eliminate distractions during study time</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set realistic daily and weekly goals</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Reward yourself for completing tasks</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="tips-highlight reveal">
+                        <h4><i class="fas fa-quote-left" aria-hidden="true"></i> Remember This</h4>
+                        <p>Success in assignments is not about being the smartest — it's about being the most prepared. Consistent effort, smart study strategies, and a positive mindset will take you further than natural talent alone. Trust the process, stay disciplined, and believe in your ability to succeed. You've got this!</p>
+                    </div>
                 </div>
+            </section>
 
-                <div class="departments-grid reveal-stagger">
+            <!-- TRACKING SECTION -->
+            <section class="section" aria-labelledby="tracking-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <div class="section-eyebrow">Stay on Track</div>
+                        <h2 class="section-title" id="tracking-title">How to keep <span class="italic">track</span> of progress.</h2>
+                        <p class="section-lede">Stay on top of your academic journey with these proven tracking methods.</p>
+                    </div>
 
-                    <!-- Early Childhood Development -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-seedling" aria-hidden="true"></i>
-                            <span class="card-badge">Ages 0–5</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-seedling" aria-hidden="true"></i> Early Childhood Development</h3>
-                            <p>The foundation of lifelong learning begins here. Research shows that 90% of brain development occurs before age 5, making these formative years critical for cognitive, emotional, and social growth.</p>
-                            <div class="highlight-text">
-                                <strong>Why It Matters</strong>
-                                Children who receive quality early education are 44% more likely to graduate from high school and 30% more likely to attend college.
-                            </div>
-                            <p>Our play-based curriculum integrates sensory development, language acquisition, and spiritual foundations in a nurturing environment that honors each child's God-given potential.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Brain Development</span>
-                                    <span class="tag">Play-Based Learning</span>
-                                    <span class="tag">Faith Foundation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="info-grid reveal-stagger">
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-laptop" aria-hidden="true"></i></div>
+                            <h3>Use the Assignments Portal</h3>
+                            <p>Access your official assignments dashboard to view tasks, track deadlines, and submit work.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> View all your assignments in one place</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track your progress over time</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Identify subjects needing improvement</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Download official reports for records</li>
+                            </ul>
+                        </article>
 
-                    <!-- Primary Education -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-book-open" aria-hidden="true"></i>
-                            <span class="card-badge">Grades 1–9</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-book-open" aria-hidden="true"></i> Primary Education</h3>
-                            <p>Since the establishment of formal education in Kenya in 1911, primary education has been the cornerstone of national development. Today's CBC framework continues this legacy while preparing participants for a rapidly changing world.</p>
-                            <div class="highlight-text">
-                                <strong>The Power of Education</strong>
-                                Every additional year of schooling increases a person's earnings by 10% and reduces poverty rates by 9%.
-                            </div>
-                            <p>Our comprehensive curriculum builds strong foundations in literacy, numeracy, critical thinking, and Christian values, aligned with Kenya's Competency-Based Curriculum.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">CBC Aligned</span>
-                                    <span class="tag">Critical Thinking</span>
-                                    <span class="tag">Character Building</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+                            <h3>Maintain a Study Journal</h3>
+                            <p>Document your daily study activities, challenges, and achievements to stay accountable.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Record what you studied each day</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Note difficulties and breakthroughs</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track time spent on each subject</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Reflect on what study methods work best</li>
+                            </ul>
+                        </article>
 
-                    <!-- Secondary Education -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                            <span class="card-badge">Forms 1–4</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-graduation-cap" aria-hidden="true"></i> Secondary Education</h3>
-                            <p>Secondary education marks the transition from childhood to young adulthood. Historically, it has been the gateway to higher education and professional opportunities in Kenya since the 1960s.</p>
-                            <div class="highlight-text">
-                                <strong>Why Secondary Education</strong>
-                                Secondary graduates earn 50% more than primary graduates and are 3x more likely to be employed in formal sectors.
-                            </div>
-                            <p>We prepare youth for KCSE excellence, university admission, and career readiness through rigorous academics, leadership training, mentorship, and Christ-centered character development.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">KCSE Excellence</span>
-                                    <span class="tag">University Prep</span>
-                                    <span class="tag">Leadership</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+                            <h3>Set SMART Goals</h3>
+                            <p>Create Specific, Measurable, Achievable, Relevant, and Time-bound academic goals.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Set target grades for each subject</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Break long-term goals into weekly targets</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review and adjust goals regularly</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate when you achieve milestones</li>
+                            </ul>
+                        </article>
 
-                    <!-- Vocational Training -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-tools" aria-hidden="true"></i>
-                            <span class="card-badge">Skills Training</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-tools" aria-hidden="true"></i> Vocational Training</h3>
-                            <p>Vocational education has transformed economies worldwide. Ke0274 PEFA MFANGANO CDC offers vocational skills such as computer, advanced coding ,hairdressing ,tailoring ,media ,band ,barbering and chess. The skills are aimed at transforming and equipping the beneficiaries with skils that can enable them to be self-reliant after their exit from the program.</p>
-                            <div class="highlight-text">
-                                <strong>Skills for Life</strong>
-                                Vocational training reduces youth unemployment by 60% and creates entrepreneurs who employ others, multiplying community impact.
-                            </div>
-                            <p>Hands-on training in barbering ,tailoring, hair dressing,computer and advanced coding, and entrepreneurship empowers youth with certified skills for sustainable livelihoods and self-reliance.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Certified Skills</span>
-                                    <span class="tag">Income generating activities</span>
-                                    <span class="tag">Job Ready</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                            <h3>Create Visual Progress Charts</h3>
+                            <p>Visual representations help you see your progress and stay motivated.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Graph your test scores over time</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use color coding for different subjects</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Track study hours with a calendar</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Celebrate improvements visually</li>
+                            </ul>
+                        </article>
 
-                    <!-- Spiritual Formation -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-praying-hands" aria-hidden="true"></i>
-                            <span class="card-badge">Faith & Character</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-praying-hands" aria-hidden="true"></i> Spiritual Formation</h3>
-                            <p>Through the slogan "releasing children from poverty in Jesus name", spiritual impacact has been our main area of concern.The vision of KE0274 PEFA MFANGANO CYDC is to have a fullfilled christian adults who know christ and make him known.</p>
-                            <div class="highlight-text">
-                                <strong>Why Spiritual Growth</strong>
-                                Participants with strong faith foundations sd likely to engage in risky behaviors and 85% more likely to become community leaders.
-                            </div>
-                            <p>Through age-appropriate discipleship, worship, biblical teaching, and service opportunities, we help participants know Christ, develop character, and make Him known in their communities.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Discipleship</span>
-                                    <span class="tag">Moral Character</span>
-                                    <span class="tag">Service</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
+                            <h3>Conduct Weekly Reviews</h3>
+                            <p>Regular self-assessment helps you stay on track and make necessary adjustments.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Review what you learned each week</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Identify areas needing more attention</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Adjust your study plan accordingly</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Seek help when you're struggling</li>
+                            </ul>
+                        </article>
 
-                    <!-- Health & Nutrition -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-heartbeat" aria-hidden="true"></i>
-                            <span class="card-badge">Wellbeing</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-heartbeat" aria-hidden="true"></i> Health & Nutrition</h3>
-                            <p>The connection between health and learning is undeniable. Research shows that malnourished children score 15% lower on tests and are 4x more likely to repeat grades.</p>
-                            <div class="highlight-text">
-                                <strong>Healthy Children Learn Better</strong>
-                                Ke0274 ensures children get adequate and clean meals for their health.Health screening has also been part of ensuring participants are sound and healthy.
-                            </div>
-                            <p>We ensure physical wellbeing through regular health screenings, nutritious meals, hygiene education, disease prevention, and access to medical care — because a healthy body supports a healthy mind.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Nutrition</span>
-                                    <span class="tag">Health Screening</span>
-                                    <span class="tag">Disease Prevention</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        <article class="info-card">
+                            <div class="info-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
+                            <h3>Seek Teacher Feedback</h3>
+                            <p>Teachers are your best resource for understanding your performance and improving.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Ask for feedback on assignments</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Discuss your progress during office hours</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Request guidance on weak areas</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Learn from their experience and insights</li>
+                            </ul>
+                        </article>
+                    </div>
 
-                    <!-- Sports & Recreation -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-running" aria-hidden="true"></i>
-                            <span class="card-badge">Physical Fitness</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-running" aria-hidden="true"></i> Sports & Recreation</h3>
-                            <p>Since 2018, sports have been recognized as essential in ke0274 for developing discipline, teamwork, and leadership. Modern research confirms that physically active participants perform 20% better academically.</p>
-                            <div class="highlight-text">
-                                <strong>More Than Games</strong>
-                                participants are helped to develop their talents and skills in footbal ,netball ,volleyball among others
-                            </div>
-                            <p>Through organized sports, games, and outdoor activities, we promote physical fitness, teamwork, discipline, and leadership — building character that lasts a lifetime.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Teamwork</span>
-                                    <span class="tag">Discipline</span>
-                                    <span class="tag">Talent naturing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Drama and music -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-palette" aria-hidden="true"></i>
-                            <span class="card-badge">Creative Expression</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-palette" aria-hidden="true"></i> Drama and music</h3>
-                            <p>in ke0274 we realy invest in drama and music because of participants who are talented in music and drama.This is a  opportunity for children to exercise their talents for a better future.</p>
-                            <div class="highlight-text">
-                                <strong>Creativity Matters</strong>
-                                Participants engaged in arts and drama and  likely to be recognized for thier unexplainable talent and skills in drama and music.
-                            </div>
-                            <p>Through music, dance, visual arts, drama, and cultural preservation, we celebrate creativity and heritage while developing artistic gifts and authentic self-expression.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Music & drama</span>
-                                    <span class="tag">Visual Arts</span>
-                                    <span class="tag">Cultural Heritage</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Counseling & Support -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-hands-helping" aria-hidden="true"></i>
-                            <span class="card-badge">Emotional Care</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-hands-helping" aria-hidden="true"></i> Counseling & Support</h3>
-                            <p>Mental health awareness has grown significantly since the 1950s. Today, in ke0274 participants who receive emotional support are  more resilient and  more successful in relationships and careers.</p>
-                            <div class="highlight-text">
-                                <strong>Healing Hearts</strong>
-                                Trauma-informed care reduces behavioral issues  and improves academic performance  in affected participants.
-                            </div>
-                            <p>our guidance and counselling team helps to provide emotional support, trauma healing, life skills training, and mental health resources in a safe, confidential environment that honors each participant's dignity and journey toward wholeness.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Trauma Healing</span>
-                                    <span class="tag">Life Skills</span>
-                                    <span class="tag">Safe Space</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Community Outreach -->
-                    <article class="department-card">
-                        <div class="card-image">
-                            <i class="fas fa-globe-africa" aria-hidden="true"></i>
-                            <span class="card-badge">Community Impact</span>
-                        </div>
-                        <div class="card-content">
-                            <h3><i class="fas fa-globe-africa" aria-hidden="true"></i> Community Outreach</h3>
-                            <p>Community development has transformed societies worldwide. ke0274 ensures that the neediest paricipants in the community are sponserd and eqiipped emotionally, physically and even spiritually.</p>
-                            <div class="highlight-text">
-                                <strong>Ripple Effect</strong>
-                                participants are well equipped with sklls like coding ,tailoring ,hair dressing among others to help the start on income generating activities as early as possible.
-            
-                            </div>
-                            <p>Through parent engagement, community projects, advocacy, and partnership development, we extend our impact beyond our centre, creating sustainable change that multiplies our mission throughout Mfangano Island and beyond.</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    <span class="tag">Family Engagement</span>
-                                    <span class="tag">Community Projects</span>
-                                    <span class="tag">Vocational skills</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
+                    <div class="tips-highlight reveal">
+                        <h4><i class="fas fa-lightbulb" aria-hidden="true"></i> Pro Tip</h4>
+                        <p>The key to academic success is consistency. Small, daily efforts compound into remarkable achievements over time. Don't wait until exam season to start tracking your progress — make it a daily habit. Remember: what gets measured gets managed, and what gets managed gets improved!</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ===== FOOTER ===== -->
-        <footer class="footer" role="contentinfo">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                            <span>KE0274 PEFA Mfangano CYDC</span>
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer" role="contentinfo">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                                <span>KE0274 PEFA Mfangano CYDC</span>
+                            </div>
+                            <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
+                            <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+                            <address class="footer-contact">
+                                <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
+                                <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
+                                <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
+                            </address>
                         </div>
-                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
-                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
-                        <address class="footer-contact">
-                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
-                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
-                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
-                        </address>
+
+                        <div class="footer-col">
+                            <h4>Explore</h4>
+                            <ul class="footer-links">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../studentleadership/leaders.html">Leadership</a></li>
+                                <li><a href="../academics/dreamachiever.html">Academics</a></li>
+                                <li><a href="../achievments/achievment.html">Achievements</a></li>
+                                <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Resources</h4>
+                            <ul class="footer-links">
+                                <li><a href="../learningresources/learningresources.html">Learning Resources</a></li>
+                                <li><a href="timetable.html">Student Portal</a></li>
+                                <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
+                                <li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li>
+                                <li><a href="../childprotection.html">Child Protection</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col footer-newsletter">
+                            <h4>Stay Connected</h4>
+                            <p>Receive quarterly updates on the lives being transformed through our work.</p>
+                            <form class="newsletter-form" aria-label="Newsletter subscription">
+                                <label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label>
+                                <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email">
+                                <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+                            </form>
+                            <div class="social-links" aria-label="Social media">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="footer-col">
-                        <h4>Explore</h4>
-                        <ul class="footer-links">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="../studentleadership/leaders.html">Leadership</a></li>
-                            <li><a href="dreamachiever.html">Academics</a></li>
-                            <li><a href="../achievments/achievment.html">Achievements</a></li>
-                            <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Resources</h4>
-                        <ul class="footer-links">
-                            <li><a href="../learningresources/learningresources.html">Learning Resources</a></li>
-                            <li><a href="../studentportal/timetable.html">Student Portal</a></li>
-                            <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
-                            <li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li>
-                            <li><a href="../childprotection.html">Child Protection</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col footer-newsletter">
-                        <h4>Stay Connected</h4>
-                        <p>Receive quarterly updates on the lives being transformed through our work.</p>
-                        <form class="newsletter-form" aria-label="Newsletter subscription">
-                            <label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label>
-                            <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email">
-                            <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
-                        </form>
-                        <div class="social-links" aria-label="Social media">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <div class="footer-bottom">
+                        <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
+                        <div class="footer-legal">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Child Protection Policy</a>
+                            <a href="#">Terms of Use</a>
+                            <a href="#">Safeguarding</a>
                         </div>
                     </div>
                 </div>
+            </footer>
 
-                <div class="footer-bottom">
-                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
-                    <div class="footer-legal">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Child Protection Policy</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Safeguarding</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div><!-- end content-scroll -->
+
     </main>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Theme toggle — identical to index.html
+        // ===== THEME TOGGLE =====
         const themeToggle = document.getElementById('themeToggle');
         const savedTheme = localStorage.getItem('theme') || 'light';
         applyTheme(savedTheme);
@@ -1731,7 +1666,7 @@
             applyTheme(current === 'dark' ? 'light' : 'dark');
         });
 
-        // Mobile sidebar — identical to index.html
+        // ===== MOBILE SIDEBAR =====
         const mobileToggle = document.getElementById('mobileToggle');
         const sidebar = document.getElementById('sidebar');
         mobileToggle.addEventListener('click', () => {
@@ -1750,7 +1685,7 @@
             }
         });
 
-        // Dropdown toggle — identical to index.html
+        // ===== DROPDOWN TOGGLE =====
         window.toggleDropdown = function(event, element) {
             event.preventDefault();
             event.stopPropagation();
@@ -1775,7 +1710,36 @@
             }
         });
 
-        // Scroll reveal
+        // ===== SCROLL INDICATOR — Expand tips =====
+        const scrollIndicator = document.getElementById('scrollIndicator');
+        const tipsContent = document.getElementById('tipsContent');
+
+        function toggleTips() {
+            const isExpanded = tipsContent.classList.toggle('expanded');
+            scrollIndicator.classList.toggle('expanded', isExpanded);
+            scrollIndicator.setAttribute('aria-expanded', String(isExpanded));
+
+            if (isExpanded) {
+                setTimeout(() => {
+                    tipsContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+                setTimeout(() => {
+                    tipsContent.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
+                        el.classList.add('visible');
+                    });
+                }, 400);
+            }
+        }
+
+        scrollIndicator.addEventListener('click', toggleTips);
+        scrollIndicator.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleTips();
+            }
+        });
+
+        // ===== SCROLL REVEAL =====
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1783,23 +1747,10 @@
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
         document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#' || href.length < 2) return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Keyboard: Escape closes sidebar/dropdowns
+        // ===== KEYBOARD: ESCAPE =====
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
@@ -1814,20 +1765,13 @@
                     const link = item.querySelector('.nav-link[aria-expanded]');
                     if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
                 });
+                if (tipsContent.classList.contains('expanded')) {
+                    toggleTips();
+                }
             }
         });
 
-        // Active link highlighting
-        const currentPage = window.location.pathname.split('/').pop() || 'department.html';
-        document.querySelectorAll('.nav-link[href]').forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === currentPage) {
-                link.classList.add('active');
-                link.setAttribute('aria-current', 'page');
-            }
-        });
-
-        // Newsletter form
+        // ===== NEWSLETTER FORM =====
         const form = document.querySelector('.newsletter-form');
         if (form) {
             form.addEventListener('submit', (e) => {
@@ -1845,7 +1789,7 @@
             });
         }
 
-        // Resize handler
+        // ===== RESIZE HANDLER =====
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
@@ -1858,6 +1802,59 @@
                 }
             }, 200);
         });
+
+        // =========================================================
+        // PORTAL IFRAME — Edge-to-edge, fills viewport
+        // =========================================================
+        const PORTAL_URL = 'https://acadia-post.lovable.app';
+        const iframe = document.getElementById('assignmentsFrame');
+        const loader = document.getElementById('portalLoader');
+        const errorPanel = document.getElementById('portalError');
+        const statusEl = document.getElementById('portalStatus');
+        const retryBtn = document.getElementById('errorRetryBtn');
+        let loadTimeout;
+
+        function loadPortal() {
+            errorPanel.classList.remove('active');
+            loader.classList.remove('hidden');
+            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Loading...</span>';
+
+            iframe.src = PORTAL_URL;
+
+            clearTimeout(loadTimeout);
+            loadTimeout = setTimeout(() => {
+                if (!loader.classList.contains('hidden')) {
+                    showError();
+                }
+            }, 12000);
+        }
+
+        function hideLoader() {
+            loader.classList.add('hidden');
+            statusEl.innerHTML = '<span class="dot" aria-hidden="true"></span><span>Live</span>';
+        }
+
+        function showError() {
+            loader.classList.add('hidden');
+            errorPanel.classList.add('active');
+            statusEl.innerHTML = '<span class="dot" style="background:#ef4444;box-shadow:0 0 8px #ef4444;" aria-hidden="true"></span><span style="color:#ef4444;">Offline</span>';
+        }
+
+        iframe.addEventListener('load', () => {
+            setTimeout(hideLoader, 400);
+        });
+
+        iframe.addEventListener('error', () => {
+            clearTimeout(loadTimeout);
+            showError();
+        });
+
+        retryBtn.addEventListener('click', () => {
+            loadPortal();
+        });
+
+        // Start loading the portal immediately
+        loadPortal();
     });
     </script>
 </body>
