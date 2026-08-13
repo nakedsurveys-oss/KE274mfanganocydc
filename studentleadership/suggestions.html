@@ -309,6 +309,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 </style>
 </head>
 <body>
+    
 <div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-logo"><i class="fas fa-heart"></i></div></div>
 <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
@@ -335,7 +336,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
       <div class="nav-section-title">Main</div>
       <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div></a></div>
       <div class="nav-item active">
-        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
           <a href="index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
@@ -344,7 +345,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
         </div>
       </div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
           <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
@@ -355,7 +356,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
       <div class="nav-section-title">Resources</div>
       <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div></a></div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
           <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
@@ -367,7 +368,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
     <div class="nav-section st">
       <div class="nav-section-title">More</div>
       <div class="nav-item">
-        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
         <div class="dropdown" role="menu">
           <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
           <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
@@ -628,43 +629,42 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
     applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   });
 
-  // Mobile Navigation
-  var sidebar = document.getElementById('sidebar'), mobileToggle = document.getElementById('mobileToggle'), backdrop = document.getElementById('navBackdrop');
-  function openNav(){ sidebar.classList.add('open'); backdrop.classList.add('show'); document.body.classList.add('nav-locked'); mobileToggle.setAttribute('aria-expanded','true'); mobileToggle.querySelector('i').className='fas fa-times'; mobileToggle.setAttribute('aria-label','Close navigation menu'); }
-  function closeNav(){ sidebar.classList.remove('open'); backdrop.classList.remove('show'); document.body.classList.remove('nav-locked'); mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.querySelector('i').className='fas fa-bars'; mobileToggle.setAttribute('aria-label','Open navigation menu'); }
-  mobileToggle.addEventListener('click', function(){ sidebar.classList.contains('open') ? closeNav() : openNav(); });
-  backdrop.addEventListener('click', closeNav);
+   /* Mobile nav */
+  const sidebar=$('#sidebar'),mobileToggle=$('#mobileToggle'),backdrop=$('#navBackdrop');
+  function openNav(){sidebar.classList.add('open');backdrop.classList.add('show');document.body.classList.add('nav-locked');mobileToggle.setAttribute('aria-expanded','true');mobileToggle.querySelector('i').className='fas fa-times';mobileToggle.setAttribute('aria-label','Close navigation menu');}
+  function closeNav(){sidebar.classList.remove('open');backdrop.classList.remove('show');document.body.classList.remove('nav-locked');mobileToggle.setAttribute('aria-expanded','false');mobileToggle.querySelector('i').className='fas fa-bars';mobileToggle.setAttribute('aria-label','Open navigation menu');}
+  mobileToggle.addEventListener('click',()=>sidebar.classList.contains('open')?closeNav():openNav());
+  backdrop.addEventListener('click',closeNav);
 
-  // Dropdown Menus
-  window.toggleDropdown = function(e, el){
-    e.preventDefault(); e.stopPropagation();
-    var item = el.closest('.nav-item'), active = item.classList.toggle('active');
-    el.setAttribute('aria-expanded', String(active));
-    $$('.nav-item').forEach(function(i){ if(i !== item){ i.classList.remove('active'); var l = i.querySelector('.nav-link[aria-expanded]'); if(l) l.setAttribute('aria-expanded','false'); } });
-  };
-  document.addEventListener('click', function(e){ if(!e.target.closest('.nav-item')){ $$('.nav-item.active').forEach(function(i){ i.classList.remove('active'); var l = i.querySelector('.nav-link[aria-expanded]'); if(l) l.setAttribute('aria-expanded','false'); }); } });
+  /* Dropdowns */
+  window.toggleDropdown=function(e,el){e.preventDefault();e.stopPropagation();
+    const item=el.closest('.nav-item'),active=item.classList.toggle('active');
+    el.setAttribute('aria-expanded',String(active));
+    $$('.nav-item').forEach(i=>{if(i!==item){i.classList.remove('active');const l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');}});};
+  document.addEventListener('click',e=>{if(!e.target.closest('.nav-item')){$$('.nav-item.active').forEach(i=>{i.classList.remove('active');const l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');});}});
 
-  // Scroll Reveals
-  var rObs = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visible'); rObs.unobserve(en.target); } }); }, {threshold:.1, rootMargin:'0px 0px -60px 0px'});
-  $$('.reveal,.reveal-stagger').forEach(function(el){ rObs.observe(el); });
+  /* Counters */
+  function count(el,target,dur=2400){const isYear=el.hasAttribute('data-is-year');const t0=performance.now();
+    (function u(now){const p=Math.min((now-t0)/dur,1);const e=p===1?1:1-Math.pow(2,-10*p);
+      el.textContent=isYear?Math.floor(e*target):Math.floor(e*target).toLocaleString();
+      if(p<1)requestAnimationFrame(u);else el.textContent=isYear?String(target):target.toLocaleString();})(t0);}
+  const cObs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.querySelectorAll('[data-count]').forEach(el=>{if(!el.dataset.done){el.dataset.done=1;count(el,parseInt(el.dataset.count));}});cObs.unobserve(en.target);}}),{threshold:.3});
+  $$('.stats-grid,.impact-row,.impact-grid').forEach(s=>cObs.observe(s));
 
-  // Smooth Anchors
-  $$('a[href^="#"]').forEach(function(a){ a.addEventListener('click', function(e){ var h = this.getAttribute('href'); if(h.length < 2) return; var t = document.querySelector(h); if(t){ e.preventDefault(); t.scrollIntoView({behavior: reduced ? 'auto' : 'smooth'}); closeNav(); } }); });
+  /* Reveals */
+  const rObs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');rObs.unobserve(en.target);}}),{threshold:.1,rootMargin:'0px 0px -70px 0px'});
+  $$('.reveal,.reveal-stagger').forEach(el=>rObs.observe(el));
 
-  // Scroll Progress & Parallax
-  var prog = document.getElementById('scrollProgress'), heroImg = document.querySelector('.hero-bg img');
-  var ticking = false;
-  window.addEventListener('scroll', function(){ 
-    if(!ticking){ 
-      requestAnimationFrame(function(){ 
-        var h = document.documentElement; 
-        prog.style.transform = 'scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')'; 
-        if(heroImg && h.scrollTop < window.innerHeight && !reduced) heroImg.style.transform = 'scale(1.02) translateY('+(h.scrollTop*.25)+'px)'; 
-        ticking = false; 
-      }); 
-      ticking = true; 
-    } 
-  }, {passive:true});
+  /* Smooth anchors */
+  $$('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h.length<2)return;const t=document.querySelector(h);if(t){e.preventDefault();t.scrollIntoView({behavior:reduced?'auto':'smooth'});closeNav();}}));
+
+  /* Scroll: progress + parallax (rAF-throttled, passive) */
+  const prog=$('#scrollProgress'),heroImg=document.querySelector('.hero-bg img');
+  let ticking=false;
+  addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{const h=document.documentElement;
+    prog.style.transform=`scaleX(${h.scrollTop/(h.scrollHeight-h.clientHeight||1)})`;
+    if(heroImg&&h.scrollTop<innerHeight&&!reduced)heroImg.style.transform=`scale(1.02) translateY(${h.scrollTop*.25}px)`;
+    ticking=false;});ticking=true;}},{passive:true});
 
   // Keyboard Accessibility
   document.addEventListener('keydown', function(e){ 
