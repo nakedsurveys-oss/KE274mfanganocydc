@@ -4,10 +4,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <title>Timetable | Student Portal | KE0274 PEFA Mfangano CYDC</title>
-<meta name="description" content="Weekly schedule for Saturday classes and holiday programs at KE0274 PEFA Mfangano Child Development Centre."/>
+<meta name="description" content="View the Saturday program timetable, skills sessions, and class assignments for participants at KE0274 PEFA Mfangano Child Development Centre."/>
 <meta name="theme-color" content="#0B1B33"/>
 <meta property="og:title" content="Timetable | Student Portal | KE0274 PEFA Mfangano CYDC"/>
-<meta property="og:description" content="Your personalized schedule for holistic development — spiritual, academic, and life skills."/>
+<meta property="og:description" content="Saturday schedule — academic sessions, skills development & spiritual formation."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -17,8 +17,7 @@
   --blue-950:#020814;--blue-900:#0A1628;--blue-800:#132E55;--blue-700:#1A3F73;--blue-600:#1E4FD8;--blue-500:#2563EB;--blue-400:#3B82F6;--blue-300:#60A5FA;--blue-100:#BFDBFE;--blue-50:#EFF6FF;
   --sky-500:#0EA5E9;--sky-400:#38BDF8;--sky-300:#7DD3FC;--sky-100:#E0F2FE;
   --amber-600:#D97706;--amber-500:#F59E0B;--amber-400:#FBBF24;--amber-300:#FCD34D;--amber-200:#FDE68A;--amber-100:#FEF3C7;--gold-400:#FACC15;
-  --forest-600:#1e6b3a;--forest-500:#2d8a4e;--forest-400:#4ade80;--forest-100:#dcfce7;
-  --terra-500:#a8553c;--purple-500:#8b5cf6;--purple-100:#ede9fe;--pink-500:#ec4899;--pink-100:#fce7f3;
+  --forest-600:#1e6b3a;--forest-500:#2d8a4e;--terra-500:#a8553c;--purple-500:#8b5cf6;--pink-500:#ec4899;
   --stone-700:#44403C;--stone-500:#78716C;--stone-400:#A8A29E;--ivory:#FDFCF8;--pearl:#F8F6F1;
   --bg-page:var(--ivory);--bg-surface:#fff;--bg-muted:var(--pearl);--bg-glass:rgba(255,255,255,.72);
   --text-primary:var(--blue-950);--text-secondary:var(--stone-700);--text-tertiary:var(--stone-500);--text-quaternary:var(--stone-400);--text-accent:var(--blue-600);
@@ -40,7 +39,7 @@
   --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
   --ease-expo:cubic-bezier(.16,1,.3,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
   --dur-fast:180ms;--dur-base:360ms;--dur-slow:640ms;--dur-cine:1200ms;
-  --sidebar-w:300px;--container:1320px;--container-wide:1520px;--container-narrow:900px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
+  --sidebar-w:300px;--container:1320px;--container-wide:1520px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
 }
 [data-theme="dark"]{
   --bg-page:#030812;--bg-surface:#081122;--bg-muted:#050C1A;--bg-glass:rgba(9,18,34,.78);
@@ -49,7 +48,6 @@
   --gradient-hero:linear-gradient(135deg,#010409 0%,#040A17 40%,#081325 100%);
   --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.22) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.16) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.10) 0%,transparent 50%);
   --shadow-sm:0 2px 6px rgba(0,0,0,.35);--shadow-md:0 8px 20px rgba(0,0,0,.45);--shadow-lg:0 16px 36px rgba(0,0,0,.5);--shadow-xl:0 28px 60px rgba(0,0,0,.55);
-  --forest-100:rgba(74,222,128,.15);--purple-100:rgba(139,92,246,.15);--pink-100:rgba(236,72,153,.15);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
@@ -127,14 +125,14 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 .main-content{margin-left:var(--sidebar-w);position:relative;z-index:2;transition:margin-left .5s var(--ease-expo)}
 
 /* ============ PAGE HERO ============ */
-.page-hero{position:relative;min-height:auto;padding:clamp(6.5rem,12vh,10rem) clamp(1.25rem,4vw,3rem) clamp(3rem,6vh,5rem);overflow:hidden;isolation:isolate;color:#fff}
+.page-hero{position:relative;min-height:92vh;min-height:92dvh;display:flex;align-items:center;padding:clamp(6.5rem,12vh,10rem) clamp(1.25rem,4vw,3rem) clamp(5rem,10vh,7rem);overflow:hidden;isolation:isolate;color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:-3}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.08);transition:transform 22s cubic-bezier(.3,0,.3,1);will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scale(1.08);transition:transform 22s cubic-bezier(.3,0,.3,1);will-change:transform}
 .page-hero.in-view .hero-bg img{transform:scale(1)}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,8,20,.94) 0%,rgba(10,22,40,.82) 40%,rgba(19,46,85,.66) 100%),linear-gradient(180deg,transparent 30%,rgba(2,8,20,.92) 100%);z-index:1}
 .hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 85%,rgba(245,158,11,.22) 0%,transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(59,130,246,.28) 0%,transparent 55%);z-index:2}
 .hero-grid-pattern{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at center,black 10%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,black 10%,transparent 80%)}
-.hero-inner{position:relative;z-index:3;width:100%;max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:clamp(2rem,4vw,4rem);align-items:center}
+.hero-inner{position:relative;z-index:3;width:100%;max-width:var(--container-wide);margin:0 auto;display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(2.5rem,4vw,4rem);align-items:center}
 .hero-content>*{opacity:0;transform:translateY(36px)}
 .hero-content.loaded>*{animation:heroReveal 1.2s var(--ease-expo) forwards}
 .hero-content.loaded>:nth-child(1){animation-delay:.1s}
@@ -143,175 +141,183 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 .hero-content.loaded>:nth-child(4){animation-delay:.66s}
 .hero-content.loaded>:nth-child(5){animation-delay:.84s}
 @keyframes heroReveal{to{opacity:1;transform:translateY(0)}}
-.hero-breadcrumb{display:inline-flex;align-items:center;gap:.55rem;padding:6px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:var(--track-wide);color:rgba(255,255,255,.78);margin-bottom:1.5rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
+.hero-breadcrumb{display:inline-flex;align-items:center;gap:.55rem;padding:6px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:var(--track-wide);color:rgba(255,255,255,.78);margin-bottom:2rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
 .hero-breadcrumb i{color:var(--amber-400);font-size:.65rem}
 .hero-breadcrumb .sep{opacity:.35}
 .hero-breadcrumb .current{color:var(--amber-300)}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;padding:8px 16px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.28);border-radius:var(--r-full);font-size:.7rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-300);margin-bottom:1.5rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;padding:8px 16px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.28);border-radius:var(--r-full);font-size:.7rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-300);margin-bottom:2rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
 .hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--amber-400);animation:pulseRing 2.4s ease-out infinite}
 @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(251,191,36,.7)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
-.hero-title{font-family:var(--font-display);font-size:clamp(2.2rem,5.5vw,4rem);font-weight:400;line-height:1.05;letter-spacing:var(--track-tighter);margin-bottom:1rem;font-variation-settings:"opsz" 144}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.4rem,6.5vw,5.5rem);font-weight:400;line-height:1.02;letter-spacing:var(--track-tighter);margin-bottom:2rem;font-variation-settings:"opsz" 144}
+.hero-title .line{display:block;overflow:hidden}
+.hero-title .line-inner{display:block;transform:translateY(110%);animation:lineReveal 1.2s var(--ease-expo) forwards;animation-play-state:paused}
+.hero-content.loaded .line-inner{animation-play-state:running}
+.hero-content.loaded .line:nth-child(1) .line-inner{animation-delay:.3s}
+.hero-content.loaded .line:nth-child(2) .line-inner{animation-delay:.48s}
+.hero-content.loaded .line:nth-child(3) .line-inner{animation-delay:.66s}
+@keyframes lineReveal{to{transform:translateY(0)}}
 .hero-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--amber-200),var(--amber-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero-subtitle{font-size:clamp(.95rem,1.3vw,1.05rem);color:rgba(255,255,255,.78);max-width:540px;line-height:1.7;margin-bottom:0}
+.hero-title .divider{display:inline-block;width:56px;height:2px;background:linear-gradient(90deg,var(--amber-400),transparent);margin:1.1rem .7rem 0 0;vertical-align:middle;border-radius:1px}
+.hero-subtitle{font-size:clamp(1rem,1.4vw,1.125rem);color:rgba(255,255,255,.82);max-width:560px;line-height:1.75;margin-bottom:0}
 
-/* Hero Live Clock Widget */
-.hero-clock-widget{background:rgba(255,255,255,.08);backdrop-filter:blur(30px) saturate(190%);-webkit-backdrop-filter:blur(30px) saturate(190%);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-2xl);padding:clamp(1.5rem,3vw,2rem);box-shadow:var(--shadow-2xl),var(--inset-glass);position:relative;overflow:hidden;min-width:280px;text-align:center}
-.hero-clock-widget::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
-.hero-clock-widget::after{content:'';position:absolute;top:-50%;right:-30%;width:200px;height:200px;background:radial-gradient(circle,rgba(245,158,11,.15),transparent 70%);pointer-events:none}
-.clock-label{font-family:var(--font-mono);font-size:.68rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.75rem;position:relative;z-index:1}
-.clock-time{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:500;color:#fff;line-height:1;letter-spacing:-.02em;margin-bottom:.25rem;font-variation-settings:"opsz" 144;position:relative;z-index:1}
-.clock-date{font-size:.875rem;color:rgba(255,255,255,.7);margin-bottom:1rem;position:relative;z-index:1}
-.clock-status{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(45,138,78,.15);border:1px solid rgba(74,222,128,.3);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--forest-400);letter-spacing:var(--track-wide);position:relative;z-index:1}
-.clock-status .dot{width:7px;height:7px;border-radius:50%;background:var(--forest-400);box-shadow:0 0 10px var(--forest-400);animation:statusPulse 2s ease-in-out infinite}
-@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero-visual{opacity:0;transform:translateY(36px);transition:all 1.2s var(--ease-expo) .55s}
+.hero-visual.loaded{opacity:1;transform:none}
+.hero-stats-card{background:rgba(255,255,255,.08);backdrop-filter:blur(30px) saturate(190%);-webkit-backdrop-filter:blur(30px) saturate(190%);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-3xl);padding:clamp(1.5rem,3vw,2.5rem);box-shadow:var(--shadow-2xl),var(--inset-glass);position:relative;overflow:hidden;transition:transform .5s var(--ease-expo)}
+.hero-stats-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+.hero-stats-card::after{content:'';position:absolute;top:-50%;right:-20%;width:380px;height:380px;background:radial-gradient(circle,rgba(245,158,11,.18),transparent 70%);pointer-events:none}
+.stats-card-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid rgba(255,255,255,.12);position:relative;z-index:1}
+.stats-card-title{font-family:var(--font-display);font-size:1.25rem;font-weight:500;letter-spacing:-.02em}
+.stats-card-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.35);border-radius:var(--r-full);font-size:.68rem;font-weight:600;color:var(--amber-300);letter-spacing:var(--track-wide)}
+.stats-card-badge i{font-size:.5rem;animation:pulseRing 2.4s ease-out infinite}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.75rem,1.5vw,1.25rem);position:relative;z-index:1}
+.stat-item{padding:clamp(1rem,2vw,1.25rem);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-xl);transition:all .35s var(--ease-expo)}
+.stat-item:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+.stat-icon{width:36px;height:36px;border-radius:var(--r-md);background:linear-gradient(135deg,rgba(59,130,246,.25),rgba(14,165,233,.2));border:1px solid rgba(59,130,246,.35);display:grid;place-items:center;color:var(--sky-300);font-size:.9rem;margin-bottom:.7rem}
+.stat-number{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.25rem);font-weight:500;color:#fff;line-height:1;letter-spacing:-.03em;margin-bottom:4px;font-variation-settings:"opsz" 144}
+.stat-label{font-size:.68rem;color:rgba(255,255,255,.62);font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase}
 
-/* ============ TIMETABLE DASHBOARD ============ */
-.timetable-dashboard{padding:clamp(2rem,4vw,3rem) clamp(1.25rem,4vw,2rem) clamp(4rem,8vw,6rem);position:relative}
-.dashboard-container{max-width:var(--container);margin:0 auto}
+.scroll-indicator-hero{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(255,255,255,.5);font-size:.66rem;letter-spacing:var(--track-widest);text-transform:uppercase;font-weight:500;z-index:3}
+.scroll-indicator-hero::after{content:'';width:1px;height:40px;background:linear-gradient(180deg,rgba(251,191,36,.8),transparent);animation:scrollLine 2.4s ease-in-out infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* Quick Stats Row */
-.quick-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
-.stat-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);padding:1.25rem 1.5rem;transition:all .3s var(--ease-expo);position:relative;overflow:hidden}
-.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--stat-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease-expo)}
-.stat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--border-default)}
-.stat-card:hover::before{transform:scaleX(1)}
-.stat-card:nth-child(1){--stat-accent:linear-gradient(90deg,var(--blue-600),var(--sky-400))}
-.stat-card:nth-child(2){--stat-accent:linear-gradient(90deg,var(--amber-500),var(--gold-400))}
-.stat-card:nth-child(3){--stat-accent:linear-gradient(90deg,var(--forest-500),#4ade80)}
-.stat-card:nth-child(4){--stat-accent:linear-gradient(90deg,var(--purple-500),var(--pink-500))}
-.stat-card-inner{display:flex;align-items:center;gap:1rem}
-.stat-icon-wrap{width:48px;height:48px;border-radius:var(--r-lg);display:grid;place-items:center;font-size:1.25rem;flex-shrink:0}
-.stat-card:nth-child(1) .stat-icon-wrap{background:linear-gradient(135deg,var(--blue-50),var(--sky-100));color:var(--blue-600)}
-.stat-card:nth-child(2) .stat-icon-wrap{background:linear-gradient(135deg,var(--amber-100),#fef3c7);color:var(--amber-600)}
-.stat-card:nth-child(3) .stat-icon-wrap{background:var(--forest-100);color:var(--forest-600)}
-.stat-card:nth-child(4) .stat-icon-wrap{background:var(--purple-100);color:var(--purple-500)}
-[data-theme="dark"] .stat-card:nth-child(1) .stat-icon-wrap{background:rgba(59,130,246,.15);color:var(--sky-400)}
-[data-theme="dark"] .stat-card:nth-child(2) .stat-icon-wrap{background:rgba(245,158,11,.15);color:var(--amber-400)}
-[data-theme="dark"] .stat-card:nth-child(3) .stat-icon-wrap{background:rgba(74,222,128,.15);color:var(--forest-400)}
-[data-theme="dark"] .stat-card:nth-child(4) .stat-icon-wrap{background:rgba(139,92,246,.15);color:var(--purple-500)}
-.stat-info{flex:1;min-width:0}
-.stat-value{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--text-primary);line-height:1.1;letter-spacing:-.02em}
-.stat-label{font-size:.75rem;color:var(--text-tertiary);font-weight:500;letter-spacing:.02em}
+/* ============ SECTIONS ============ */
+.container{width:100%;max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,2rem);position:relative}
+.section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+.section-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--blue-600);margin-bottom:1.4rem}
+[data-theme="dark"] .section-eyebrow{color:var(--sky-400)}
+.section-eyebrow::before{content:'';width:32px;height:1px;background:currentColor}
+.section-title{font-family:var(--font-display);font-size:clamp(1.9rem,4.6vw,3.75rem);font-weight:400;line-height:1.06;letter-spacing:var(--track-tighter);margin-bottom:1.4rem;font-variation-settings:"opsz" 144;max-width:920px}
+.section-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--blue-600),var(--sky-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .section-title .italic{background:linear-gradient(135deg,var(--sky-300),var(--amber-300));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.section-lede{font-size:clamp(.98rem,1.4vw,1.0625rem);color:var(--text-secondary);line-height:1.75;max-width:720px;margin-bottom:clamp(2.5rem,5vw,4rem)}
 
-/* Day Selector */
-.day-selector{margin-bottom:2rem}
-.day-selector-label{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
-.day-selector-label::before{content:'';width:20px;height:1px;background:currentColor}
-.day-pills{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:none}
-.day-pills::-webkit-scrollbar{display:none}
-.day-pill{flex:1;min-width:100px;padding:1rem;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);cursor:pointer;transition:all .3s var(--ease-expo);text-align:center;position:relative;overflow:hidden}
-.day-pill::before{content:'';position:absolute;inset:0;background:var(--gradient-hero);opacity:0;transition:opacity .3s var(--ease-expo)}
-.day-pill>*{position:relative;z-index:1}
-.day-pill:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border-default)}
-.day-pill.active{border-color:transparent;box-shadow:var(--shadow-lg),var(--inset-glass)}
-.day-pill.active::before{opacity:1}
-.day-pill.active .day-name,.day-pill.active .day-date,.day-pill.active .day-count{color:#fff}
-.day-pill.active .day-dot{background:var(--amber-400);box-shadow:0 0 12px var(--amber-400)}
-.day-pill.today{border-color:var(--blue-400)}
-.day-pill.today .day-name{color:var(--blue-600);font-weight:700}
-[data-theme="dark"] .day-pill.today .day-name{color:var(--sky-400)}
-.day-name{font-size:.75rem;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:var(--track-wider);margin-bottom:.25rem;transition:color .3s}
-.day-date{font-family:var(--font-display);font-size:1.5rem;font-weight:500;color:var(--text-primary);line-height:1.1;margin-bottom:.25rem;transition:color .3s}
-.day-count{font-family:var(--font-mono);font-size:.68rem;color:var(--text-quaternary);transition:color .3s}
-.day-dot{width:6px;height:6px;border-radius:50%;background:var(--border-default);margin:.5rem auto 0;transition:all .3s}
-.day-pill.today .day-dot{background:var(--blue-600);box-shadow:0 0 8px var(--blue-600)}
-[data-theme="dark"] .day-pill.today .day-dot{background:var(--sky-400);box-shadow:0 0 8px var(--sky-400)}
+.section.alt-bg{background:linear-gradient(180deg,var(--bg-muted) 0%,var(--bg-page) 100%)}
+.section.alt-bg::before{content:'';position:absolute;inset:0;background:var(--gradient-mesh);opacity:.3;pointer-events:none}
+.section.alt-bg>*{position:relative;z-index:1}
 
-/* Schedule Grid */
-.schedule-section{position:relative}
-.schedule-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
-.schedule-title{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:500;color:var(--text-primary);letter-spacing:-.015em}
-.schedule-meta{display:flex;align-items:center;gap:1rem}
-.schedule-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--text-secondary);letter-spacing:var(--track-wide)}
-.schedule-badge i{color:var(--amber-500);font-size:.6rem}
-.view-toggle{display:flex;background:var(--bg-muted);border-radius:var(--r-full);padding:4px;border:1px solid var(--border-hairline)}
-.view-btn{padding:8px 16px;border-radius:var(--r-full);font-size:.8rem;font-weight:600;color:var(--text-tertiary);transition:all .2s;min-width:80px}
-.view-btn.active{background:var(--bg-surface);color:var(--text-primary);box-shadow:var(--shadow-sm)}
-.view-btn:hover:not(.active){color:var(--text-primary)}
+/* ============ TIMETABLE CARD ============ */
+.timetable-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-3xl);padding:clamp(1.75rem,3vw,2.5rem);box-shadow:var(--shadow-lg);position:relative;overflow:hidden;transition:all .4s var(--ease-expo)}
+.timetable-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue-600),var(--sky-400),var(--amber-400))}
+.timetable-card:hover{box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.timetable-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
+.timetable-header h3{font-family:var(--font-display);font-size:1.5rem;font-weight:500;color:var(--text-primary);display:flex;align-items:center;gap:.75rem;letter-spacing:-.01em}
+.timetable-header h3 i{color:var(--blue-600)}
+[data-theme="dark"] .timetable-header h3 i{color:var(--sky-400)}
+.timetable-subtitle{font-size:.875rem;color:var(--text-tertiary);font-weight:500;font-family:var(--font-mono);letter-spacing:.02em}
 
-/* Timeline */
-.timeline{position:relative;padding-left:0}
-.timeline::before{content:'';position:absolute;left:80px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--border-subtle),var(--border-hairline));border-radius:1px}
-@media(max-width:640px){.timeline::before{left:20px}}
+.filter-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;padding:.5rem;background:var(--bg-muted);border-radius:var(--r-full);border:1px solid var(--border-hairline);width:fit-content}
+.filter-tab{padding:8px 16px;background:transparent;border:none;border-radius:var(--r-full);font-weight:600;font-size:.8rem;color:var(--text-tertiary);cursor:pointer;transition:all .2s var(--ease-expo);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.filter-tab:hover{color:var(--text-primary);background:var(--bg-surface)}
+.filter-tab.active{background:var(--blue-900);color:#fff;box-shadow:var(--shadow-sm)}
+[data-theme="dark"] .filter-tab.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.filter-tab i{font-size:.75rem}
 
-.schedule-item{display:grid;grid-template-columns:80px 1fr;gap:1.5rem;margin-bottom:1rem;position:relative}
-@media(max-width:640px){.schedule-item{grid-template-columns:40px 1fr;gap:1rem}}
+.table-container{overflow-x:auto;border-radius:var(--r-xl);border:1px solid var(--border-hairline);margin-bottom:1.5rem;background:var(--bg-surface)}
+.timetable-table{width:100%;border-collapse:collapse;min-width:700px;font-size:.9rem}
+.timetable-table th{background:var(--gradient-hero);color:#fff;font-weight:600;padding:1rem 1.25rem;text-align:left;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;position:sticky;top:0;z-index:5}
+.timetable-table th i{margin-right:6px;color:var(--amber-400)}
+.timetable-table td{padding:1rem 1.25rem;border-bottom:1px solid var(--border-hairline);color:var(--text-secondary);transition:all .2s;vertical-align:middle}
+.timetable-table tr{transition:all .2s;cursor:pointer}
+.timetable-table tbody tr:hover{background:var(--blue-50)}
+[data-theme="dark"] .timetable-table tbody tr:hover{background:rgba(59,130,246,.08)}
+.timetable-table tr.selected{background:linear-gradient(90deg,rgba(251,191,36,.08),rgba(245,158,11,.04));border-left:3px solid var(--amber-500)}
+.timetable-table tr.hidden-row{display:none}
+.time-col{font-family:var(--font-mono);font-weight:500;color:var(--blue-600)!important;white-space:nowrap;min-width:160px;font-size:.85rem}
+[data-theme="dark"] .time-col{color:var(--sky-400)!important}
 
-.time-column{display:flex;flex-direction:column;align-items:center;padding-top:1.25rem;position:relative}
-.time-label{font-family:var(--font-mono);font-size:.825rem;font-weight:600;color:var(--text-secondary);letter-spacing:.02em;white-space:nowrap}
-.time-duration{font-family:var(--font-mono);font-size:.68rem;color:var(--text-quaternary);margin-top:.25rem}
-.time-dot{position:absolute;top:1.5rem;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--bg-surface);border:2px solid var(--border-default);z-index:2;transition:all .3s}
-.schedule-item.current .time-dot{background:var(--amber-400);border-color:var(--amber-400);box-shadow:0 0 0 4px rgba(251,191,36,.2)}
-.schedule-item.completed .time-dot{background:var(--forest-500);border-color:var(--forest-500)}
+.activity-badge{display:inline-block;padding:3px 10px;border-radius:var(--r-full);font-size:.68rem;font-weight:700;margin-left:8px;vertical-align:middle;letter-spacing:.04em;text-transform:uppercase}
+.badge-academic{background:var(--blue-50);color:var(--blue-700);border:1px solid var(--blue-100)}
+[data-theme="dark"] .badge-academic{background:rgba(30,79,216,.15);color:var(--sky-400);border-color:rgba(59,130,246,.3)}
+.badge-skills{background:rgba(251,191,36,.1);color:var(--amber-600);border:1px solid rgba(251,191,36,.25)}
+[data-theme="dark"] .badge-skills{background:rgba(251,191,36,.12);color:var(--amber-300)}
+.badge-spiritual{background:rgba(139,92,246,.08);color:var(--purple-500);border:1px solid rgba(139,92,246,.2)}
+[data-theme="dark"] .badge-spiritual{background:rgba(139,92,246,.15);color:#c084fc}
+.badge-break{background:rgba(45,138,78,.08);color:var(--forest-600);border:1px solid rgba(45,138,78,.2)}
+[data-theme="dark"] .badge-break{background:rgba(45,138,78,.15);color:#4ade80}
+.badge-service{background:rgba(168,85,60,.08);color:var(--terra-500);border:1px solid rgba(168,85,60,.2)}
+[data-theme="dark"] .badge-service{background:rgba(168,85,60,.15);color:#fb923c}
 
-/* Activity Card */
-.activity-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:1.5rem;transition:all .4s var(--ease-expo);position:relative;overflow:hidden}
-.activity-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:var(--card-accent,var(--gradient-royal));border-radius:4px 0 0 4px}
-.activity-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
-.activity-card.current{border-color:var(--amber-400);box-shadow:var(--shadow-lg),0 0 0 1px var(--amber-400)}
-.activity-card.current::after{content:'';position:absolute;top:1rem;right:1rem;width:10px;height:10px;border-radius:50%;background:var(--amber-400);animation:pulseRing 2s ease-out infinite}
-.activity-card.completed{opacity:.7}
-.activity-card.completed .activity-title{text-decoration:line-through;text-decoration-color:var(--text-quaternary)}
+.row-details{max-height:0;overflow:hidden;transition:max-height .4s var(--ease-expo),padding .4s var(--ease-expo);background:var(--bg-muted)}
+.row-details.expanded{max-height:200px;padding:1rem 1.25rem}
+.row-details-content{display:flex;gap:1rem;flex-wrap:wrap;font-size:.875rem;color:var(--text-secondary)}
+.detail-item{display:flex;align-items:center;gap:6px}
+.detail-item i{color:var(--amber-500)}
 
-/* Card Accent Colors by Category */
-.activity-card[data-category="spiritual"]{--card-accent:linear-gradient(180deg,var(--amber-500),var(--gold-400))}
-.activity-card[data-category="academic"]{--card-accent:linear-gradient(180deg,var(--blue-600),var(--sky-400))}
-.activity-card[data-category="lifeskills"]{--card-accent:linear-gradient(180deg,var(--forest-500),#4ade80)}
-.activity-card[data-category="recreation"]{--card-accent:linear-gradient(180deg,var(--purple-500),var(--pink-500))}
-.activity-card[data-category="community"]{--card-accent:linear-gradient(180deg,var(--terra-500),#f97316)}
-.activity-card[data-category="nutrition"]{--card-accent:linear-gradient(180deg,#10b981,#34d399)}
+.timetable-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:14px 26px;border-radius:var(--r-full);font-weight:600;font-size:.925rem;transition:all .25s var(--ease-expo);border:1px solid transparent;min-height:52px;white-space:nowrap}
+.btn-primary{background:var(--blue-900);color:#fff;box-shadow:var(--shadow-md)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);background:var(--blue-800)}
+.btn-outline{background:transparent;border:1px solid var(--border-default);color:var(--text-primary)}
+.btn-outline:hover{background:var(--bg-muted);border-color:var(--blue-600);color:var(--blue-600);transform:translateY(-2px)}
+[data-theme="dark"] .btn-outline:hover{color:var(--sky-400);border-color:var(--sky-400)}
 
-.activity-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem}
-.activity-title-wrap{flex:1;min-width:0}
-.activity-category{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:.63rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:.35rem}
-.activity-category i{font-size:.6rem}
-.activity-title{font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);line-height:1.3;letter-spacing:-.01em;margin-bottom:.25rem}
-.activity-facilitator{font-size:.825rem;color:var(--text-tertiary);display:flex;align-items:center;gap:.4rem}
-.activity-facilitator i{font-size:.7rem;color:var(--text-quaternary)}
-.activity-badges{display:flex;gap:.35rem;flex-wrap:wrap}
-.badge{padding:4px 10px;border-radius:var(--r-full);font-family:var(--font-mono);font-size:.63rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
-.badge-priority{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
-.badge-new{background:rgba(245,158,11,.1);color:var(--amber-600);border:1px solid rgba(245,158,11,.2)}
-[data-theme="dark"] .badge-new{color:var(--amber-400)}
-.badge-required{background:rgba(59,130,246,.1);color:var(--blue-600);border:1px solid rgba(59,130,246,.2)}
-[data-theme="dark"] .badge-required{color:var(--sky-400)}
-.badge-completed{background:var(--forest-100);color:var(--forest-600);border:1px solid rgba(45,138,78,.2)}
-[data-theme="dark"] .badge-completed{background:rgba(74,222,128,.15);color:var(--forest-400)}
+/* ============ PROGRAMS / SKILLS / TEACHERS ============ */
+.programs-grid,.skills-grid,.teachers-grid{display:grid;gap:var(--gap)}
+.programs-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.program-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:2rem;position:relative;overflow:hidden;transition:all .4s var(--ease-expo);box-shadow:var(--shadow-sm)}
+.program-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease-expo)}
+.program-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.program-card:hover::before{transform:scaleX(1)}
+.program-card:nth-child(1){--card-accent:linear-gradient(135deg,var(--amber-500),var(--amber-400))}
+.program-card:nth-child(2){--card-accent:linear-gradient(135deg,var(--terra-500),#fb923c)}
+.program-card:nth-child(3){--card-accent:linear-gradient(135deg,var(--purple-500),#a855f7)}
+.program-card:nth-child(4){--card-accent:linear-gradient(135deg,var(--sky-500),var(--blue-400))}
+.program-week{display:inline-block;padding:4px 12px;background:var(--card-accent,var(--gradient-royal));color:#fff;border-radius:var(--r-full);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+.program-icon{width:52px;height:52px;border-radius:var(--r-lg);background:linear-gradient(135deg,var(--blue-50),var(--sky-100));color:var(--blue-700);display:grid;place-items:center;font-size:1.3rem;margin-bottom:1rem;transition:transform .4s var(--ease-spring)}
+.program-card:hover .program-icon{transform:scale(1.08) rotate(-4deg)}
+[data-theme="dark"] .program-icon{background:linear-gradient(135deg,rgba(30,79,216,.15),rgba(14,165,233,.1));color:var(--sky-400)}
+.program-card h4{font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.01em}
+.program-card p{color:var(--text-secondary);font-size:.9rem;line-height:1.7}
 
-.activity-body{margin-bottom:1rem}
-.activity-description{font-size:.875rem;color:var(--text-secondary);line-height:1.7;margin-bottom:.75rem}
-.activity-details{display:flex;flex-wrap:wrap;gap:1rem}
-.activity-detail{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--text-tertiary)}
-.activity-detail i{font-size:.75rem;color:var(--text-quaternary);width:14px}
+.skills-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.skill-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:2rem;position:relative;overflow:hidden;transition:all .4s var(--ease-expo);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;align-items:flex-start}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease-expo)}
+.skill-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.skill-card:hover::before{transform:scaleX(1)}
+.skill-card:nth-child(1){--card-accent:linear-gradient(135deg,var(--blue-600),var(--sky-500))}
+.skill-card:nth-child(2){--card-accent:linear-gradient(135deg,var(--pink-500),#f43f5e)}
+.skill-card:nth-child(3){--card-accent:linear-gradient(135deg,var(--amber-500),#ef4444)}
+.skill-card:nth-child(4){--card-accent:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
+.skill-card:nth-child(5){--card-accent:linear-gradient(135deg,var(--forest-500),var(--sky-500))}
+.skill-card:nth-child(6){--card-accent:linear-gradient(135deg,#f97316,var(--amber-500))}
+.skill-card:nth-child(7){--card-accent:linear-gradient(135deg,var(--sky-500),var(--blue-600))}
+.skill-card:nth-child(8){--card-accent:linear-gradient(135deg,#ef4444,#f97316)}
+.skill-icon{width:56px;height:56px;border-radius:var(--r-lg);background:linear-gradient(135deg,var(--blue-50),var(--sky-100));color:var(--blue-700);display:grid;place-items:center;font-size:1.4rem;margin-bottom:1rem;transition:transform .4s var(--ease-spring)}
+.skill-card:hover .skill-icon{transform:scale(1.08) rotate(-4deg)}
+[data-theme="dark"] .skill-icon{background:linear-gradient(135deg,rgba(30,79,216,.15),rgba(14,165,233,.1));color:var(--sky-400)}
+.skill-card h4{font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.01em}
+.skill-card p{color:var(--text-secondary);font-size:.9rem;line-height:1.65;margin-bottom:1rem;flex-grow:1}
+.teacher-profile{display:flex;align-items:center;gap:.75rem;padding:8px 14px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-full);margin-top:auto;transition:all .2s}
+.skill-card:hover .teacher-profile{background:var(--blue-50);border-color:var(--blue-100)}
+[data-theme="dark"] .skill-card:hover .teacher-profile{background:rgba(30,79,216,.12);border-color:rgba(59,130,246,.25)}
+.teacher-avatar{width:32px;height:32px;border-radius:50%;background:var(--gradient-royal);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.75rem;flex-shrink:0}
+.teacher-name{font-weight:600;font-size:.825rem;color:var(--text-primary)}
 
-.activity-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--border-hairline);flex-wrap:wrap;gap:.75rem}
-.activity-progress{display:flex;align-items:center;gap:.75rem;flex:1;min-width:200px}
-.progress-label{font-family:var(--font-mono);font-size:.68rem;font-weight:600;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
-.progress-bar{flex:1;height:6px;background:var(--bg-muted);border-radius:var(--r-full);overflow:hidden;min-width:80px}
-.progress-fill{height:100%;border-radius:var(--r-full);background:var(--card-accent,var(--gradient-royal));transition:width 1s var(--ease-expo)}
-.activity-actions{display:flex;gap:.5rem}
-.action-btn{padding:8px 14px;border-radius:var(--r-full);font-size:.75rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
-.action-btn i{font-size:.65rem}
-.action-btn-primary{background:var(--blue-600);color:#fff}
-.action-btn-primary:hover{background:var(--blue-700);transform:translateY(-1px)}
-.action-btn-ghost{background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-hairline)}
-.action-btn-ghost:hover{background:var(--bg-surface);color:var(--text-primary);border-color:var(--border-default)}
-
-/* Legend */
-.legend{margin-top:2rem;padding:1.5rem;background:var(--bg-muted);border-radius:var(--r-xl);border:1px solid var(--border-hairline)}
-.legend-title{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:1rem}
-.legend-items{display:flex;flex-wrap:wrap;gap:1rem}
-.legend-item{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--text-secondary)}
-.legend-color{width:12px;height:12px;border-radius:3px}
-.legend-color.spiritual{background:linear-gradient(135deg,var(--amber-500),var(--gold-400))}
-.legend-color.academic{background:linear-gradient(135deg,var(--blue-600),var(--sky-400))}
-.legend-color.lifeskills{background:linear-gradient(135deg,var(--forest-500),#4ade80)}
-.legend-color.recreation{background:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
-.legend-color.community{background:linear-gradient(135deg,var(--terra-500),#f97316)}
-.legend-color.nutrition{background:linear-gradient(135deg,#10b981,#34d399)}
+.teachers-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.teacher-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:2rem 1.5rem;text-align:center;position:relative;overflow:hidden;transition:all .4s var(--ease-expo);box-shadow:var(--shadow-sm)}
+.teacher-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease-expo)}
+.teacher-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.teacher-card:hover::before{transform:scaleX(1)}
+.teacher-card:nth-child(1){--card-accent:linear-gradient(135deg,var(--amber-500),var(--amber-400))}
+.teacher-card:nth-child(2){--card-accent:linear-gradient(135deg,var(--terra-500),#fb923c)}
+.teacher-card:nth-child(3){--card-accent:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
+.teacher-card:nth-child(4){--card-accent:linear-gradient(135deg,var(--sky-500),var(--blue-400))}
+.teacher-card:nth-child(5){--card-accent:linear-gradient(135deg,var(--forest-500),var(--sky-500))}
+.teacher-card:nth-child(6){--card-accent:linear-gradient(135deg,var(--amber-500),#ef4444)}
+.teacher-card:nth-child(7){--card-accent:linear-gradient(135deg,var(--blue-600),var(--sky-500))}
+.teacher-card:nth-child(8){--card-accent:linear-gradient(135deg,var(--pink-500),#f43f5e)}
+.teacher-card:nth-child(9){--card-accent:linear-gradient(135deg,#f97316,var(--amber-500))}
+.teacher-card:nth-child(10){--card-accent:linear-gradient(135deg,var(--sky-500),var(--blue-600))}
+.teacher-card:nth-child(11){--card-accent:linear-gradient(135deg,#ef4444,#f97316)}
+.teacher-image{width:88px;height:88px;border-radius:50%;margin:0 auto 1rem;background:var(--card-accent,var(--gradient-royal));display:grid;place-items:center;color:#fff;font-family:var(--font-display);font-size:1.8rem;font-weight:600;position:relative;box-shadow:var(--shadow-md);transition:transform .3s var(--ease-expo)}
+.teacher-card:hover .teacher-image{transform:scale(1.06)}
+.age-badge{display:inline-block;padding:4px 12px;background:var(--card-accent,var(--gradient-royal));color:#fff;border-radius:var(--r-full);font-size:.68rem;font-weight:700;letter-spacing:.06em;margin-bottom:.75rem}
+.teacher-card h4{font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.01em}
+.teacher-full-name{font-size:.85rem;color:var(--text-tertiary);display:flex;align-items:center;justify-content:center;gap:6px;font-weight:500}
+.teacher-full-name i{color:var(--amber-500);font-size:.8rem}
 
 /* ============ FOOTER ============ */
-.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:clamp(3.5rem,7vw,5rem) 0 2rem;position:relative;overflow:hidden}
+.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:clamp(3.5rem,7vw,5rem) 0 2rem;position:relative;overflow:hidden;flex-shrink:0}
 .footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.18),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,158,11,.10),transparent 50%);pointer-events:none}
 .footer>*{position:relative;z-index:1}
 .footer-scripture{text-align:center;margin-bottom:clamp(2.5rem,6vw,4rem);padding-bottom:clamp(2.5rem,6vw,4rem);border-bottom:1px solid rgba(255,255,255,.08)}
@@ -352,24 +358,29 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 .reveal-stagger>*{opacity:0;transform:translateY(30px);transition:opacity var(--dur-slow) var(--ease-expo),transform var(--dur-slow) var(--ease-expo)}
 .reveal-stagger.visible>*{opacity:1;transform:translateY(0)}
 .reveal-stagger.visible>*:nth-child(1){transition-delay:0ms}
-.reveal-stagger.visible>*:nth-child(2){transition-delay:80ms}
-.reveal-stagger.visible>*:nth-child(3){transition-delay:160ms}
-.reveal-stagger.visible>*:nth-child(4){transition-delay:240ms}
-.reveal-stagger.visible>*:nth-child(5){transition-delay:320ms}
-.reveal-stagger.visible>*:nth-child(6){transition-delay:400ms}
-.reveal-stagger.visible>*:nth-child(7){transition-delay:480ms}
-.reveal-stagger.visible>*:nth-child(8){transition-delay:560ms}
+.reveal-stagger.visible>*:nth-child(2){transition-delay:110ms}
+.reveal-stagger.visible>*:nth-child(3){transition-delay:220ms}
+.reveal-stagger.visible>*:nth-child(4){transition-delay:330ms}
+.reveal-stagger.visible>*:nth-child(5){transition-delay:440ms}
+.reveal-stagger.visible>*:nth-child(6){transition-delay:550ms}
+.reveal-stagger.visible>*:nth-child(7){transition-delay:660ms}
+.reveal-stagger.visible>*:nth-child(8){transition-delay:770ms}
+.reveal-stagger.visible>*:nth-child(9){transition-delay:880ms}
+.reveal-stagger.visible>*:nth-child(10){transition-delay:990ms}
+.reveal-stagger.visible>*:nth-child(11){transition-delay:1100ms}
 
 /* ============ RESPONSIVE ============ */
-@media(min-width:2000px){.dashboard-container{max-width:1440px}}
+@media(min-width:2000px){.container{max-width:1440px}}
 @media(max-width:1280px){
-  .quick-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-inner{grid-template-columns:1fr;gap:3rem}
+  .hero-visual{max-width:640px;margin:0 auto;width:100%}
   .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
   .footer-newsletter{grid-column:1/-1}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-clock-widget{max-width:400px;margin:0 auto}
 }
-@media(max-width:1024px){:root{--sidebar-w:280px}}
+@media(max-width:1024px){
+  :root{--sidebar-w:280px}
+  .programs-grid,.skills-grid,.teachers-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media(max-width:900px){
   html{scroll-padding-top:calc(var(--bar-h) + 14px)}
   .mobile-bar{display:flex}
@@ -383,36 +394,21 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   .sidebar.open .nav-section:nth-of-type(3).st{transition-delay:.28s}
   .sidebar.open .sidebar-footer.st{transition-delay:.36s}
   .main-content{margin-left:0}
-  .page-hero{padding-top:calc(var(--bar-h) + 3rem)}
+  .page-hero{padding-top:calc(var(--bar-h) + 4.5rem);min-height:auto;padding-bottom:4rem}
+  .scroll-indicator-hero{display:none}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
   .footer-brand{grid-column:1/-1}
 }
 @media(max-width:640px){
-  .quick-stats{grid-template-columns:1fr 1fr}
-  .stat-card{padding:1rem}
-  .stat-icon-wrap{width:40px;height:40px;font-size:1rem}
-  .stat-value{font-size:1.25rem}
-  .day-pills{gap:.35rem}
-  .day-pill{min-width:80px;padding:.75rem .5rem}
-  .day-date{font-size:1.25rem}
-  .activity-card{padding:1.25rem}
-  .activity-header{flex-direction:column;align-items:flex-start}
-  .activity-badges{margin-top:.5rem}
-  .activity-footer{flex-direction:column;align-items:stretch}
-  .activity-progress{min-width:0}
-  .activity-actions{justify-content:flex-end}
+  .section{padding:4.5rem 0}
+  .programs-grid,.skills-grid,.teachers-grid{grid-template-columns:1fr}
+  .timetable-card{padding:1.5rem}
+  .timetable-header{flex-direction:column;align-items:flex-start}
+  .filter-tabs{width:100%;overflow-x:auto;flex-wrap:nowrap}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
   .footer-legal{justify-content:center}
   .newsletter-form{flex-direction:column}
-  .schedule-header{flex-direction:column;align-items:flex-start}
-  .schedule-meta{width:100%;justify-content:space-between}
-}
-@media(max-width:400px){
-  .quick-stats{grid-template-columns:1fr}
-  .day-pill{min-width:70px}
-  .day-name{font-size:.65rem}
-  .day-count{display:none}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
@@ -421,12 +417,12 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   .cursor-dot,.cursor-ring{display:none}
 }
 @media print{
-  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop{display:none!important}
+  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop,.scroll-indicator-hero,.timetable-actions,.filter-tabs,.footer{display:none!important}
   .main-content{margin-left:0}
   body{background:#fff;color:#000}
   .page-hero{padding:2rem 1rem;color:#000}
   .hero-bg{display:none}
-  .activity-card{box-shadow:none!important;border:1px solid #ccc!important;break-inside:avoid;background:#fff!important}
+  .timetable-card,.skill-card,.program-card,.teacher-card{box-shadow:none!important;border:1px solid #ccc!important;break-inside:avoid;background:#fff!important}
 }
 </style>
 </head>
@@ -508,373 +504,146 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 <main class="main-content" id="main">
   <!-- PAGE HERO -->
   <section class="page-hero" id="hero" aria-labelledby="page-title">
-    <div class="hero-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2400&q=85" alt="" fetchpriority="high" decoding="async"/></div>
+    <div class="hero-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=2400&q=85" alt="" fetchpriority="high" decoding="async"/></div>
     <div class="hero-grid-pattern" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-content" id="heroContent">
         <div class="hero-breadcrumb"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span><span class="sep">/</span><span>Portal</span><span class="sep">/</span><span class="current">Timetable</span></div>
-        <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span><span>Student Portal · Live Schedule</span></div>
-        <h1 class="hero-title" id="page-title">Your weekly <span class="italic">schedule.</span></h1>
-        <p class="hero-subtitle">Plan your week with precision. Track sessions, manage priorities, and stay on top of your holistic development journey at KE0274 PEFA Mfangano CYDC.</p>
+        <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span><span>Saturday Program · FY26 Schedule</span></div>
+        <h1 class="hero-title" id="page-title">
+          <span class="line"><span class="line-inner">The participant</span></span>
+          <span class="line"><span class="line-inner"><span class="italic">timetable.</span></span></span>
+          <span class="line"><span class="line-inner"><span class="divider" aria-hidden="true"></span> Every moment matters.</span></span>
+        </h1>
+        <p class="hero-subtitle">A carefully crafted Saturday schedule designed for holistic growth — academic sessions, skills development, and spiritual formation for all age groups at Sena Centre.</p>
       </div>
-      <div class="hero-clock-widget" id="clockWidget">
-        <div class="clock-label">Current Time · Mfangano</div>
-        <div class="clock-time" id="clockTime">--:--</div>
-        <div class="clock-date" id="clockDate">Loading...</div>
-        <div class="clock-status"><span class="dot" aria-hidden="true"></span><span id="clockStatus">On Schedule</span></div>
+      <div class="hero-visual" id="heroVisual" aria-hidden="true">
+        <div class="hero-stats-card" id="heroStatsCard">
+          <div class="stats-card-header"><div class="stats-card-title">Program at a Glance</div><div class="stats-card-badge"><i class="fas fa-circle" aria-hidden="true"></i> Live · 2026</div></div>
+          <div class="stats-grid">
+            <div class="stat-item"><div class="stat-icon"><i class="fas fa-clock" aria-hidden="true"></i></div><div class="stat-number">8.5h</div><div class="stat-label">Full Day</div></div>
+            <div class="stat-item"><div class="stat-icon"><i class="fas fa-tools" aria-hidden="true"></i></div><div class="stat-number" data-count="8">0</div><div class="stat-label">Skills</div></div>
+            <div class="stat-item"><div class="stat-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div><div class="stat-number" data-count="11">0</div><div class="stat-label">Staff</div></div>
+            <div class="stat-item"><div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div><div class="stat-number" data-count="375">0</div><div class="stat-label">Participants</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#schedule" class="scroll-indicator-hero" aria-label="Scroll to schedule"><span>Scroll</span></a>
+  </section>
+
+  <!-- WEEKLY SCHEDULE -->
+  <section class="section" id="schedule" aria-labelledby="schedule-title">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-eyebrow">Weekly Schedule</div>
+        <h2 class="section-title" id="schedule-title">Every <span class="italic">moment</span> matters.</h2>
+        <p class="section-lede">Our carefully planned timetable balances academics, skills development, and spiritual growth for all participants.</p>
+      </div>
+
+      <div class="timetable-card reveal">
+        <div class="timetable-header">
+          <h3><i class="fas fa-table" aria-hidden="true"></i> Saturday Program Timetable</h3>
+          <span class="timetable-subtitle">FY26 · All Age Groups · Sena Centre · Click any row for details</span>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter activities">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true"><i class="fas fa-th" aria-hidden="true"></i> All</button>
+          <button class="filter-tab" data-filter="academic" role="tab"><i class="fas fa-book" aria-hidden="true"></i> Academic</button>
+          <button class="filter-tab" data-filter="skills" role="tab"><i class="fas fa-tools" aria-hidden="true"></i> Skills</button>
+          <button class="filter-tab" data-filter="spiritual" role="tab"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual</button>
+          <button class="filter-tab" data-filter="break" role="tab"><i class="fas fa-coffee" aria-hidden="true"></i> Breaks</button>
+          <button class="filter-tab" data-filter="service" role="tab"><i class="fas fa-hands-helping" aria-hidden="true"></i> Service</button>
+        </div>
+
+        <div class="table-container">
+          <table class="timetable-table" id="printableTimetable">
+            <thead>
+              <tr><th><i class="fas fa-clock" aria-hidden="true"></i> Time</th><th><i class="fas fa-calendar-check" aria-hidden="true"></i> Activity</th><th><i class="fas fa-user-tie" aria-hidden="true"></i> Details / Staff</th></tr>
+            </thead>
+            <tbody>
+              <tr data-type="service" data-details="Participants arrive at Sena Centre. Gates open at 6:45 AM. Late arrivals report to the main office."><td class="time-col">07:00 – 07:30 AM</td><td>Arrival <span class="activity-badge badge-service">Service</span></td><td>All Participants</td></tr>
+              <tr data-type="service" data-details="Participants clean their classrooms, compound, and common areas. Builds responsibility and teamwork."><td class="time-col">07:30 – 08:00 AM</td><td>Cleaning Service <span class="activity-badge badge-service">Service</span></td><td>All Part-Time Staff</td></tr>
+              <tr data-type="spiritual" data-details="Morning worship, prayer, and announcements. Participants gather in the main hall for spiritual formation."><td class="time-col">08:00 – 08:45 AM</td><td>Morning Assembly & Devotion <span class="activity-badge badge-spiritual">Spiritual</span></td><td>Staff/CDW on Duty</td></tr>
+              <tr data-type="break" data-details="Nutritious breakfast served in the dining area. Menu rotates weekly for balanced nutrition."><td class="time-col">08:45 – 09:45 AM</td><td>Breakfast <span class="activity-badge badge-break">Break</span></td><td>Dining Area</td></tr>
+              <tr data-type="academic" data-details="Class teachers mark attendance register. Participants settle into their classrooms for the academic session."><td class="time-col">09:45 – 10:00 AM</td><td>Settling & Marking Register <span class="activity-badge badge-academic">Academic</span></td><td>Class Teacher</td></tr>
+              <tr data-type="academic" data-details="Core academic subjects taught by age group. See Part-Time Staff Reference below for specific assignments."><td class="time-col">10:00 – 11:30 AM</td><td>Academic Session <span class="activity-badge badge-academic">Academic</span></td><td>By Age Group (See Staff Below)</td></tr>
+              <tr data-type="break" data-details="Short break for participants to transition to skills sessions. Light refreshments available."><td class="time-col">11:30 – 11:45 AM</td><td>Break & Transition to Skills <span class="activity-badge badge-break">Break</span></td><td>—</td></tr>
+              <tr data-type="skills" data-details="Participants rotate through specialized skills: Piano, Art, Tailoring, Computer, Hairdressing, Music, Sports, and more."><td class="time-col">11:45 AM – 01:15 PM</td><td>Skills Session <span class="activity-badge badge-skills">Skills</span></td><td>Rotation: Piano, Art, Tailoring, Computer, etc.</td></tr>
+              <tr data-type="break" data-details="Balanced lunch served in the dining area. Participants eat together fostering community and fellowship."><td class="time-col">01:15 – 02:15 PM</td><td>Lunch <span class="activity-badge badge-break">Break</span></td><td>All Part-Time Staff</td></tr>
+              <tr data-type="academic" data-details="Rotating special programs: 1st Sat — Mentorship, 2nd Sat — ARISE Health, 3rd Sat — Discipleship, 4th Sat — Birthdays."><td class="time-col">02:15 – 03:00 PM</td><td>Special Program / Games <span class="activity-badge badge-academic">Academic</span></td><td>Rotating Activities (See Below)</td></tr>
+              <tr data-type="service" data-details="Final cleaning of classrooms and compound. Participants prepare the centre for the next week."><td class="time-col">03:00 – 03:30 PM</td><td>Service & Cleaning <span class="activity-badge badge-service">Service</span></td><td>All Participants</td></tr>
+              <tr data-type="spiritual" data-details="Closing prayers, announcements, and dismissal. Football boys stay for additional training 3–5 PM."><td class="time-col">03:30 PM</td><td>Final Assembly & Departure <span class="activity-badge badge-spiritual">Spiritual</span></td><td>Except Football Boys (3–5 PM)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="timetable-actions">
+          <button class="btn btn-primary" id="printBtn"><i class="fas fa-print" aria-hidden="true"></i><span>Print Schedule</span></button>
+          <button class="btn btn-outline" id="downloadBtn"><i class="fas fa-download" aria-hidden="true"></i><span>Download PDF</span></button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- TIMETABLE DASHBOARD -->
-  <section class="timetable-dashboard" aria-labelledby="dashboard-title">
-    <div class="dashboard-container">
-      <h2 id="dashboard-title" class="skip-link">Schedule Dashboard</h2>
-
-      <!-- Quick Stats -->
-      <div class="quick-stats reveal-stagger">
-        <div class="stat-card">
-          <div class="stat-card-inner">
-            <div class="stat-icon-wrap"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
-            <div class="stat-info"><div class="stat-value" data-count="8">0</div><div class="stat-label">Sessions Today</div></div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-inner">
-            <div class="stat-icon-wrap"><i class="fas fa-clock" aria-hidden="true"></i></div>
-            <div class="stat-info"><div class="stat-value" data-count="5" data-suffix="h">0</div><div class="stat-label">Learning Hours</div></div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-inner">
-            <div class="stat-icon-wrap"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
-            <div class="stat-info"><div class="stat-value" data-count="75" data-suffix="%">0</div><div class="stat-label">Attendance</div></div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-inner">
-            <div class="stat-icon-wrap"><i class="fas fa-fire" aria-hidden="true"></i></div>
-            <div class="stat-info"><div class="stat-value" data-count="12">0</div><div class="stat-label">Day Streak</div></div>
-          </div>
-        </div>
+  <!-- SPECIAL PROGRAMS -->
+  <section class="section alt-bg" aria-labelledby="programs-title">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-eyebrow">Rotating Weekly</div>
+        <h2 class="section-title" id="programs-title">Saturday <span class="italic">special</span> programs.</h2>
+        <p class="section-lede">Unique programs running from 2:15 – 3:00 PM each Saturday for holistic development.</p>
       </div>
-
-      <!-- Day Selector -->
-      <div class="day-selector reveal">
-        <div class="day-selector-label"><span>Select Day</span></div>
-        <div class="day-pills" id="dayPills" role="tablist" aria-label="Select day">
-          <button class="day-pill" data-day="mon" role="tab" aria-selected="false">
-            <div class="day-name">Mon</div>
-            <div class="day-date">12</div>
-            <div class="day-count">0 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill" data-day="tue" role="tab" aria-selected="false">
-            <div class="day-name">Tue</div>
-            <div class="day-date">13</div>
-            <div class="day-count">0 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill" data-day="wed" role="tab" aria-selected="false">
-            <div class="day-name">Wed</div>
-            <div class="day-date">14</div>
-            <div class="day-count">0 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill" data-day="thu" role="tab" aria-selected="false">
-            <div class="day-name">Thu</div>
-            <div class="day-date">15</div>
-            <div class="day-count">0 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill" data-day="fri" role="tab" aria-selected="false">
-            <div class="day-name">Fri</div>
-            <div class="day-date">16</div>
-            <div class="day-count">0 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill today active" data-day="sat" role="tab" aria-selected="true">
-            <div class="day-name">Sat</div>
-            <div class="day-date">17</div>
-            <div class="day-count">8 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-          <button class="day-pill" data-day="sun" role="tab" aria-selected="false">
-            <div class="day-name">Sun</div>
-            <div class="day-date">18</div>
-            <div class="day-count">2 sessions</div>
-            <div class="day-dot"></div>
-          </button>
-        </div>
+      <div class="programs-grid reveal-stagger">
+        <article class="program-card"><div class="program-week">1st Saturday</div><div class="program-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div><h4>Mentorship & Leadership Training</h4><p>Empowering participants aged 12+ with leadership skills, mentorship, and character development for future impact.</p></article>
+        <article class="program-card"><div class="program-week">2nd Saturday</div><div class="program-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div><h4>Sanitation & Reproductive Health</h4><p>ARISE program promoting hygiene, health awareness, and reproductive education in a safe, supportive environment.</p></article>
+        <article class="program-card"><div class="program-week">3rd Saturday</div><div class="program-icon"><i class="fas fa-bible" aria-hidden="true"></i></div><h4>Discipleship Sessions</h4><p>Deepening faith through biblical teaching, worship, and spiritual formation guided by trained mentors.</p></article>
+        <article class="program-card"><div class="program-week">4th Saturday</div><div class="program-icon"><i class="fas fa-birthday-cake" aria-hidden="true"></i></div><h4>Birthday Celebrations</h4><p>Celebrating our participants' special days with joy, recognition, and community fellowship.</p></article>
       </div>
+    </div>
+  </section>
 
-      <!-- Schedule -->
-      <div class="schedule-section reveal">
-        <div class="schedule-header">
-          <h3 class="schedule-title" id="scheduleTitle">Saturday · August 17, 2026</h3>
-          <div class="schedule-meta">
-            <div class="schedule-badge"><i class="fas fa-circle" aria-hidden="true"></i> <span id="sessionCount">8 Sessions · 5 Hours</span></div>
-            <div class="view-toggle" role="group" aria-label="View mode">
-              <button class="view-btn active" data-view="timeline">Timeline</button>
-              <button class="view-btn" data-view="grid">Grid</button>
-            </div>
-          </div>
-        </div>
+  <!-- SKILLS -->
+  <section class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-eyebrow">11:45 AM – 1:15 PM</div>
+        <h2 class="section-title" id="skills-title">Skills offered & <span class="italic">part-time staff.</span></h2>
+        <p class="section-lede">Available during the skills session for participants ages 9–18. Each skill is facilitated by a dedicated part-time staff member.</p>
+      </div>
+      <div class="skills-grid reveal-stagger">
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div><h4>Computer Studies</h4><p>Digital literacy & practical applications for the modern world.</p><div class="teacher-profile"><div class="teacher-avatar">TB</div><span class="teacher-name">Teacher Bernard</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-tshirt" aria-hidden="true"></i></div><h4>Tailoring</h4><p>Garment making, design & entrepreneurship skills.</p><div class="teacher-profile"><div class="teacher-avatar">TR</div><span class="teacher-name">Teacher Ruth</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-cut" aria-hidden="true"></i></div><h4>Hairdressing & Barbering</h4><p>Professional styling & grooming techniques.</p><div class="teacher-profile"><div class="teacher-avatar">TJ</div><span class="teacher-name">Teacher Jesca</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-palette" aria-hidden="true"></i></div><h4>Art & Design</h4><p>Creative expression through visual arts and design.</p><div class="teacher-profile"><div class="teacher-avatar">TO</div><span class="teacher-name">Teacher Osodo</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-music" aria-hidden="true"></i></div><h4>Music, Piano & Band</h4><p>Instrumental training, drama & poetry expression.</p><div class="teacher-profile"><div class="teacher-avatar">ST</div><span class="teacher-name">Skills Team</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-users" aria-hidden="true"></i></div><h4>Soft Talents</h4><p>Drama, music, poetry & letter writing development.</p><div class="teacher-profile"><div class="teacher-avatar">MH</div><span class="teacher-name">Madam Hellen</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-comments" aria-hidden="true"></i></div><h4>Interactive Sessions</h4><p>Adolescent mentorship & life guidance programs.</p><div class="teacher-profile"><div class="teacher-avatar">MC</div><span class="teacher-name">Mr. Cliff</span></div></article>
+        <article class="skill-card"><div class="skill-icon"><i class="fas fa-running" aria-hidden="true"></i></div><h4>Indoor & Outdoor Games</h4><p>Netball, Volleyball, Football & teamwork building.</p><div class="teacher-profile"><div class="teacher-avatar">TV</div><span class="teacher-name">Teacher Victor / Cliff</span></div></article>
+      </div>
+    </div>
+  </section>
 
-        <div class="timeline" id="scheduleTimeline">
-          <!-- 9:00 AM - Devotion -->
-          <div class="schedule-item completed">
-            <div class="time-column">
-              <div class="time-label">9:00 AM</div>
-              <div class="time-duration">30 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="spiritual">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual Formation</div>
-                  <h4 class="activity-title">Morning Devotion & Prayer</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Pastor James Odhiambo</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Begin the day with worship, scripture reading, and corporate prayer. Today's focus: Gratitude and thanksgiving for God's faithfulness.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Main Chapel</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-book-open" aria-hidden="true"></i> Notes</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 9:30 AM - Academic -->
-          <div class="schedule-item completed">
-            <div class="time-column">
-              <div class="time-label">9:30 AM</div>
-              <div class="time-duration">90 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="academic">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academic Excellence</div>
-                  <h4 class="activity-title">CBC Mathematics — Grade 6-8</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Teacher Mary Akinyi</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span><span class="badge badge-required">Required</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Problem-solving with fractions, decimals, and percentages. Interactive activities aligned with Kenya's Competency-Based Curriculum.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Classroom A</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 45 Students</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-file-alt" aria-hidden="true"></i> Materials</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 11:00 AM - Snack -->
-          <div class="schedule-item current">
-            <div class="time-column">
-              <div class="time-label">11:00 AM</div>
-              <div class="time-duration">30 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card current" data-category="nutrition">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-utensils" aria-hidden="true"></i> Health & Nutrition</div>
-                  <h4 class="activity-title">Healthy Snack Break</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Nutrition Team</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-new"><i class="fas fa-bolt" aria-hidden="true"></i> In Progress</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Nutritious snack prepared with locally-sourced ingredients. Today: Fresh fruits, whole grain bread, and fortified porridge.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dining Hall</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-primary"><i class="fas fa-play" aria-hidden="true"></i> Check In</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 11:30 AM - Life Skills -->
-          <div class="schedule-item">
-            <div class="time-column">
-              <div class="time-label">11:30 AM</div>
-              <div class="time-duration">60 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="lifeskills">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-heart" aria-hidden="true"></i> Life Skills</div>
-                  <h4 class="activity-title">Financial Literacy — Saving & Budgeting</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Mr. Peter Ochieng</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-required">Required</span><span class="badge badge-priority">Priority</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Learn practical money management skills: how to save, budget, and make wise financial decisions. Interactive exercises with real-life scenarios.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Classroom B</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 38 Students</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-calendar-plus" aria-hidden="true"></i> Reminder</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 12:30 PM - Lunch -->
-          <div class="schedule-item">
-            <div class="time-column">
-              <div class="time-label">12:30 PM</div>
-              <div class="time-duration">60 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="nutrition">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-utensils" aria-hidden="true"></i> Health & Nutrition</div>
-                  <h4 class="activity-title">Lunch & Fellowship</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Kitchen Team</div>
-                </div>
-                <div class="activity-badges"></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Balanced meal with proteins, carbohydrates, and vegetables. Time to connect with peers and mentors in a relaxed setting.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dining Hall</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-info-circle" aria-hidden="true"></i> Menu</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 1:30 PM - Recreation -->
-          <div class="schedule-item">
-            <div class="time-column">
-              <div class="time-label">1:30 PM</div>
-              <div class="time-duration">60 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="recreation">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-running" aria-hidden="true"></i> Sports & Recreation</div>
-                  <h4 class="activity-title">Team Sports — Football & Netball</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Coach Daniel Otieno</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-new">New Activity</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Physical fitness through organized team sports. Develop teamwork, discipline, and leadership skills while staying active and healthy.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sports Field</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 52 Students</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-users" aria-hidden="true"></i> Teams</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2:30 PM - Community -->
-          <div class="schedule-item">
-            <div class="time-column">
-              <div class="time-label">2:30 PM</div>
-              <div class="time-duration">60 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="community">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-hands-helping" aria-hidden="true"></i> Community Service</div>
-                  <h4 class="activity-title">Environmental Stewardship — Tree Planting</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Ms. Grace Wanjiku</div>
-                </div>
-                <div class="activity-badges"><span class="badge badge-required">Required</span></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Plant indigenous trees around the centre and learn about environmental conservation. Contributing to a greener Mfangano Island.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Centre Grounds</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-leaf" aria-hidden="true"></i> Impact</button></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3:30 PM - Closing -->
-          <div class="schedule-item">
-            <div class="time-column">
-              <div class="time-label">3:30 PM</div>
-              <div class="time-duration">30 min</div>
-              <div class="time-dot"></div>
-            </div>
-            <div class="activity-card" data-category="spiritual">
-              <div class="activity-header">
-                <div class="activity-title-wrap">
-                  <div class="activity-category"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual Formation</div>
-                  <h4 class="activity-title">Closing Devotion & Reflection</h4>
-                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Pastor James Odhiambo</div>
-                </div>
-                <div class="activity-badges"></div>
-              </div>
-              <div class="activity-body">
-                <p class="activity-description">Reflect on the day's lessons, share testimonies, and close with prayer. Take home key learnings and commitments for the week ahead.</p>
-                <div class="activity-details">
-                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Main Chapel</div>
-                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
-                </div>
-              </div>
-              <div class="activity-footer">
-                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
-                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-book" aria-hidden="true"></i> Journal</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Legend -->
-        <div class="legend reveal">
-          <div class="legend-title">Activity Categories</div>
-          <div class="legend-items">
-            <div class="legend-item"><span class="legend-color spiritual"></span> Spiritual Formation</div>
-            <div class="legend-item"><span class="legend-color academic"></span> Academic Excellence</div>
-            <div class="legend-item"><span class="legend-color lifeskills"></span> Life Skills</div>
-            <div class="legend-item"><span class="legend-color recreation"></span> Sports & Recreation</div>
-            <div class="legend-item"><span class="legend-color community"></span> Community Service</div>
-            <div class="legend-item"><span class="legend-color nutrition"></span> Health & Nutrition</div>
-          </div>
-        </div>
+  <!-- CLASS TEACHERS -->
+  <section class="section alt-bg" aria-labelledby="teachers-title">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-eyebrow">Academic Session</div>
+        <h2 class="section-title" id="teachers-title">Part-time staff <span class="italic">reference.</span></h2>
+        <p class="section-lede">Academic session groupings and assigned part-time staff by age group.</p>
+      </div>
+      <div class="teachers-grid reveal-stagger">
+        <article class="teacher-card"><div class="teacher-image">CO</div><div class="age-badge">15–18 Years</div><h4>Emmaus Year 1</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div></article>
+        <article class="teacher-card"><div class="teacher-image">VO</div><div class="age-badge">12–14 Years</div><h4>Blessed Year 2</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Victor Okatch</div></article>
+        <article class="teacher-card"><div class="teacher-image">HO</div><div class="age-badge">12–14 Years</div><h4>Blessed Year 1</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Hellen Odera</div></article>
+        <article class="teacher-card"><div class="teacher-image">CO</div><div class="age-badge">12–14 Years</div><h4>Judea Year 2</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div></article>
+        <article class="teacher-card"><div class="teacher-image">EW</div><div class="age-badge">12–14 Years</div><h4>Judea Year 1</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elias Wanchara</div></article>
+        <article class="teacher-card"><div class="teacher-image">VA</div><div class="age-badge">9–11 Years</div><h4>Nazareth Year 2</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Vallary Ayuma</div></article>
+        <article class="teacher-card"><div class="teacher-image">CD</div><div class="age-badge">9–11 Years</div><h4>Jerusalem Year 2</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Duwa</div></article>
+        <article class="teacher-card"><div class="teacher-image">CJ</div><div class="age-badge">9–11 Years</div><h4>Nazareth Year 1</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Jaoko</div></article>
+        <article class="teacher-card"><div class="teacher-image">SO</div><div class="age-badge">9–11 Years</div><h4>Jerusalem Year 1</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Sarah Okinyi</div></article>
+        <article class="teacher-card"><div class="teacher-image">DT</div><div class="age-badge">6–8 Years</div><h4>Bethel</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Damarice Thocho</div></article>
+        <article class="teacher-card"><div class="teacher-image">MO</div><div class="age-badge">3–5 Years</div><h4>Bethlehem</h4><div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Mary Omondi</div></article>
       </div>
     </div>
   </section>
@@ -921,7 +690,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
     var dot=$('#cursorDot'),ring=$('#cursorRing'),mx=0,my=0,rx=0,ry=0;
     addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)';},{passive:true});
     (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop);})();
-    $$('a,button,.nav-link,.activity-card,.dropdown-link,input,.day-pill').forEach(function(el){
+    $$('a,button,.nav-link,.skill-card,.program-card,.teacher-card,.dropdown-link,input,.filter-tab,.timetable-table tbody tr').forEach(function(el){
       el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-hover');});
       el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-hover');});
     });
@@ -929,33 +698,18 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 
   var hero=$('#hero');
   new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)hero.classList.add('in-view');});},{threshold:.1}).observe(hero);
-  setTimeout(function(){$('#heroContent').classList.add('loaded');},400);
+  setTimeout(function(){$('#heroContent').classList.add('loaded');$('#heroVisual').classList.add('loaded');},400);
 
-  // Live Clock
-  function updateClock(){
-    var now=new Date();
-    var h=now.getHours(),m=now.getMinutes(),s=now.getSeconds();
-    var ampm=h>=12?'PM':'AM';
-    h=h%12||12;
-    var timeStr=h+':'+(m<10?'0':'')+m+' '+ampm;
-    $('#clockTime').textContent=timeStr;
-    var options={weekday:'long',year:'numeric',month:'long',day:'numeric'};
-    $('#clockDate').textContent=now.toLocaleDateString('en-US',options);
-    // Determine status
-    var currentHour=now.getHours(),currentMin=now.getMinutes();
-    var totalMin=currentHour*60+currentMin;
-    if(totalMin>=540&&totalMin<570){$('#clockStatus').textContent='Devotion Time';}
-    else if(totalMin>=570&&totalMin<660){$('#clockStatus').textContent='Academic Session';}
-    else if(totalMin>=660&&totalMin<690){$('#clockStatus').textContent='Snack Break';}
-    else if(totalMin>=690&&totalMin<750){$('#clockStatus').textContent='Life Skills';}
-    else if(totalMin>=750&&totalMin<810){$('#clockStatus').textContent='Lunch Time';}
-    else if(totalMin>=810&&totalMin<870){$('#clockStatus').textContent='Sports Time';}
-    else if(totalMin>=870&&totalMin<930){$('#clockStatus').textContent='Community Service';}
-    else if(totalMin>=930&&totalMin<960){$('#clockStatus').textContent='Closing Devotion';}
-    else{$('#clockStatus').textContent='On Schedule';}
+  // Stats tilt
+  var card=$('#heroStatsCard');
+  if(card&&canHover&&!reduced){
+    card.addEventListener('mousemove',function(e){
+      var r=card.getBoundingClientRect();
+      var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform='perspective(1200px) rotateY('+(x*7)+'deg) rotateX('+(-y*7)+'deg)';
+    });
+    card.addEventListener('mouseleave',function(){card.style.transform='';});
   }
-  updateClock();
-  setInterval(updateClock,1000);
 
   var themeToggle=$('#themeToggle');
   function applyTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);themeToggle.querySelector('i').className=t==='dark'?'fas fa-sun':'fas fa-moon';themeToggle.querySelector('span').textContent=t==='dark'?'Light Mode':'Dark Mode';}
@@ -983,7 +737,7 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
       if(p<1)requestAnimationFrame(u);else el.textContent=target.toLocaleString()+suf;})(t0);
   }
   var cObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.querySelectorAll('[data-count]').forEach(function(el){if(!el.dataset.done){el.dataset.done=1;count(el,parseInt(el.dataset.count));}});cObs.unobserve(en.target);}});},{threshold:.3});
-  $$('.quick-stats').forEach(function(s){cObs.observe(s);});
+  $$('.stats-grid').forEach(function(s){cObs.observe(s);});
 
   var rObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');rObs.unobserve(en.target);}});},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
   $$('.reveal,.reveal-stagger').forEach(function(el){rObs.observe(el);});
@@ -993,38 +747,59 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   var prog=$('#scrollProgress'),heroImg=document.querySelector('.hero-bg img'),ticking=false;
   addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(function(){var h=document.documentElement;prog.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';if(heroImg&&h.scrollTop<innerHeight&&!reduced)heroImg.style.transform='scale(1.02) translateY('+(h.scrollTop*.25)+'px)';ticking=false;});ticking=true;}},{passive:true});
 
-  addEventListener('keydown',function(e){if(e.key==='Escape'){closeNav();$$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l){l.setAttribute('aria-expanded','false');l.focus();}});}});
+  addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+      closeNav();
+      $$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l){l.setAttribute('aria-expanded','false');l.focus();}});
+    }
+  });
 
   var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(innerWidth>900)closeNav();},200);});
 
   var form=document.querySelector('.newsletter-form');
   if(form){form.addEventListener('submit',function(e){e.preventDefault();var inp=form.querySelector('input'),btn=form.querySelector('button'),orig=btn.textContent;btn.textContent='✓ Subscribed';inp.value='';setTimeout(function(){btn.textContent=orig;},2800);});}
 
-  // Day Selector
-  var dayPills=$$('.day-pill');
-  dayPills.forEach(function(pill){
-    pill.addEventListener('click',function(){
-      dayPills.forEach(function(p){p.classList.remove('active');p.setAttribute('aria-selected','false');});
-      pill.classList.add('active');pill.setAttribute('aria-selected','true');
-      var day=pill.getAttribute('data-day');
-      var dayNames={mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',fri:'Friday',sat:'Saturday',sun:'Sunday'};
-      var dayDate=pill.querySelector('.day-date').textContent;
-      $('#scheduleTitle').textContent=dayNames[day]+' · August '+dayDate+', 2026';
-      // Update session count based on day
-      var counts={mon:0,tue:0,wed:0,thu:0,fri:0,sat:8,sun:2};
-      var hours={mon:0,tue:0,wed:0,thu:0,fri:0,sat:5,sun:1};
-      $('#sessionCount').textContent=counts[day]+' Sessions · '+hours[day]+' Hours';
+  // Filter tabs
+  var filterTabs=$$('.filter-tab'),tableRows=$$('#printableTimetable tbody tr');
+  filterTabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      filterTabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      tab.classList.add('active');tab.setAttribute('aria-selected','true');
+      var filter=tab.getAttribute('data-filter');
+      tableRows.forEach(function(row){
+        var type=row.getAttribute('data-type');
+        if(filter==='all'||type===filter)row.classList.remove('hidden-row');
+        else row.classList.add('hidden-row');
+      });
     });
   });
 
-  // View Toggle
-  var viewBtns=$$('.view-btn');
-  viewBtns.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      viewBtns.forEach(function(b){b.classList.remove('active');});
-      btn.classList.add('active');
+  // Row expansion
+  tableRows.forEach(function(row){
+    row.addEventListener('click',function(){
+      tableRows.forEach(function(r){r.classList.remove('selected');});
+      row.classList.add('selected');
+      var details=row.getAttribute('data-details');
+      if(details){
+        var detailsRow=row.nextElementSibling;
+        if(!detailsRow||!detailsRow.classList.contains('details-row')){
+          detailsRow=document.createElement('tr');
+          detailsRow.classList.add('details-row');
+          var td=document.createElement('td');
+          td.colSpan=3;
+          td.innerHTML='<div class="row-details expanded"><div class="row-details-content"><div class="detail-item"><i class="fas fa-info-circle"></i> <span>'+details+'</span></div></div></div>';
+          detailsRow.appendChild(td);
+          row.parentNode.insertBefore(detailsRow,row.nextSibling);
+        }else{
+          var detailsDiv=detailsRow.querySelector('.row-details');
+          detailsDiv.classList.toggle('expanded');
+        }
+      }
     });
   });
+
+  $('#printBtn')?.addEventListener('click',function(){window.print();});
+  $('#downloadBtn')?.addEventListener('click',function(){alert('PDF download feature coming soon! For now, use the print function to save as PDF.');});
 })();
 </script>
 </body>
