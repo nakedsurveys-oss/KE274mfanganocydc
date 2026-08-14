@@ -1,2448 +1,1031 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timetable | Student Portal | KE0274 PEFA Mfangano CYDC</title>
-    <meta name="description" content="View the Saturday program timetable, skills sessions, and class assignments for participants at KE0274 PEFA Mfangano Child Development Centre.">
-    <meta name="theme-color" content="#0B1B33">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* =========================================================
-           DESIGN TOKENS — Identical to index.html
-           ========================================================= */
-        :root {
-            --blue-950: #040B1A;
-            --blue-900: #0B1B33;
-            --blue-850: #0F2544;
-            --blue-800: #132E55;
-            --blue-700: #1A3F73;
-            --blue-600: #1E4FD8;
-            --blue-500: #2563EB;
-            --blue-400: #3B82F6;
-            --blue-300: #60A5FA;
-            --blue-200: #93C5FD;
-            --blue-100: #BFDBFE;
-            --blue-50:  #EFF6FF;
-            --sky-500:  #0EA5E9;
-            --sky-400:  #38BDF8;
-            --sky-300:  #7DD3FC;
-            --sky-200:  #BAE6FD;
-            --sky-100:  #E0F2FE;
-            --amber-600: #D97706;
-            --amber-500: #F59E0B;
-            --amber-400: #FBBF24;
-            --amber-300: #FCD34D;
-            --amber-100: #FEF3C7;
-            --stone-950: #0C0A09;
-            --stone-900: #1C1917;
-            --stone-800: #292524;
-            --stone-700: #44403C;
-            --stone-600: #57534E;
-            --stone-500: #78716C;
-            --stone-400: #A8A29E;
-            --stone-300: #D6D3D1;
-            --stone-200: #E7E5E4;
-            --stone-100: #F5F5F4;
-            --stone-50:  #FAFAF9;
-            --ivory:    #FDFCF8;
-            --cream:    #FAF7F0;
-            --pearl:    #F8F6F1;
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Timetable | Student Portal | KE0274 PEFA Mfangano CYDC</title>
+<meta name="description" content="Weekly schedule for Saturday classes and holiday programs at KE0274 PEFA Mfangano Child Development Centre."/>
+<meta name="theme-color" content="#0B1B33"/>
+<meta property="og:title" content="Timetable | Student Portal | KE0274 PEFA Mfangano CYDC"/>
+<meta property="og:description" content="Your personalized schedule for holistic development — spiritual, academic, and life skills."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+:root{
+  --blue-950:#020814;--blue-900:#0A1628;--blue-800:#132E55;--blue-700:#1A3F73;--blue-600:#1E4FD8;--blue-500:#2563EB;--blue-400:#3B82F6;--blue-300:#60A5FA;--blue-100:#BFDBFE;--blue-50:#EFF6FF;
+  --sky-500:#0EA5E9;--sky-400:#38BDF8;--sky-300:#7DD3FC;--sky-100:#E0F2FE;
+  --amber-600:#D97706;--amber-500:#F59E0B;--amber-400:#FBBF24;--amber-300:#FCD34D;--amber-200:#FDE68A;--amber-100:#FEF3C7;--gold-400:#FACC15;
+  --forest-600:#1e6b3a;--forest-500:#2d8a4e;--forest-400:#4ade80;--forest-100:#dcfce7;
+  --terra-500:#a8553c;--purple-500:#8b5cf6;--purple-100:#ede9fe;--pink-500:#ec4899;--pink-100:#fce7f3;
+  --stone-700:#44403C;--stone-500:#78716C;--stone-400:#A8A29E;--ivory:#FDFCF8;--pearl:#F8F6F1;
+  --bg-page:var(--ivory);--bg-surface:#fff;--bg-muted:var(--pearl);--bg-glass:rgba(255,255,255,.72);
+  --text-primary:var(--blue-950);--text-secondary:var(--stone-700);--text-tertiary:var(--stone-500);--text-quaternary:var(--stone-400);--text-accent:var(--blue-600);
+  --border-hairline:rgba(12,27,51,.05);--border-subtle:rgba(12,27,51,.09);--border-default:rgba(12,27,51,.14);
+  --gradient-hero:linear-gradient(135deg,var(--blue-950) 0%,var(--blue-900) 40%,var(--blue-800) 100%);
+  --gradient-royal:linear-gradient(135deg,var(--blue-700),var(--blue-600));
+  --gradient-warm:linear-gradient(135deg,var(--amber-600) 0%,var(--amber-400) 55%,var(--gold-400) 100%);
+  --gradient-gold:linear-gradient(135deg,var(--gold-400),var(--amber-300));
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.12) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.10) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.09) 0%,transparent 50%),radial-gradient(at 10% 90%,rgba(30,79,216,.07) 0%,transparent 45%);
+  --shadow-sm:0 1px 2px rgba(11,27,51,.05),0 2px 6px rgba(11,27,51,.05);
+  --shadow-md:0 4px 10px -2px rgba(11,27,51,.07),0 10px 24px -6px rgba(11,27,51,.10);
+  --shadow-lg:0 10px 20px -6px rgba(11,27,51,.10),0 24px 48px -12px rgba(11,27,51,.14);
+  --shadow-xl:0 18px 36px -10px rgba(11,27,51,.14),0 40px 80px -20px rgba(11,27,51,.20);
+  --shadow-2xl:0 28px 56px -14px rgba(11,27,51,.20),0 56px 112px -28px rgba(11,27,51,.30);
+  --shadow-blue:0 16px 32px -8px rgba(30,79,216,.35);--shadow-gold:0 14px 28px -8px rgba(245,158,11,.38);
+  --inset-light:inset 0 1px 0 rgba(255,255,255,.8);--inset-glass:inset 0 1px 0 rgba(255,255,255,.12);
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --track-tight:-.03em;--track-tighter:-.045em;--track-wide:.06em;--track-wider:.14em;--track-widest:.22em;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
+  --ease-expo:cubic-bezier(.16,1,.3,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:180ms;--dur-base:360ms;--dur-slow:640ms;--dur-cine:1200ms;
+  --sidebar-w:300px;--container:1320px;--container-wide:1520px;--container-narrow:900px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
+}
+[data-theme="dark"]{
+  --bg-page:#030812;--bg-surface:#081122;--bg-muted:#050C1A;--bg-glass:rgba(9,18,34,.78);
+  --text-primary:#F5F7FA;--text-secondary:#B8C5D9;--text-tertiary:#7A8BA3;--text-quaternary:#5A6B80;--text-accent:var(--sky-400);
+  --border-hairline:rgba(255,255,255,.05);--border-subtle:rgba(255,255,255,.09);--border-default:rgba(255,255,255,.14);
+  --gradient-hero:linear-gradient(135deg,#010409 0%,#040A17 40%,#081325 100%);
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.22) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.16) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.10) 0%,transparent 50%);
+  --shadow-sm:0 2px 6px rgba(0,0,0,.35);--shadow-md:0 8px 20px rgba(0,0,0,.45);--shadow-lg:0 16px 36px rgba(0,0,0,.5);--shadow-xl:0 28px 60px rgba(0,0,0,.55);
+  --forest-100:rgba(74,222,128,.15);--purple-100:rgba(139,92,246,.15);--pink-100:rgba(236,72,153,.15);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text-primary);background:var(--bg-page);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;transition:background-color .8s var(--ease-expo),color .4s var(--ease-expo);font-feature-settings:"cv02","cv03","cv04","cv11"}
+body.nav-locked{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button,input{font-family:inherit}
+button{cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--blue-600);color:#fff}
+:focus-visible{outline:2px solid var(--blue-500);outline-offset:3px;border-radius:var(--r-sm)}
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--blue-900);color:#fff;padding:.75rem 1.25rem;border-radius:var(--r-md);font-weight:600;font-size:.875rem;z-index:10000;transition:top .2s}
+.skip-link:focus{top:1rem}
 
-            --bg-page:       var(--ivory);
-            --bg-surface:    #ffffff;
-            --bg-elevated:   #ffffff;
-            --bg-muted:      var(--pearl);
-            --bg-inverse:    var(--blue-900);
+/* ============ CHROME ============ */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:1200;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--blue-600),var(--sky-400),var(--amber-400));pointer-events:none}
+.ambient-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient-bg::before{content:'';position:absolute;inset:0;background:var(--gradient-mesh);opacity:.85}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);opacity:.5;animation:orbFloat 32s ease-in-out infinite;will-change:transform;mix-blend-mode:screen}
+[data-theme="dark"] .orb{mix-blend-mode:normal;opacity:.35}
+.orb-1{width:min(620px,70vw);height:min(620px,70vw);background:radial-gradient(circle,var(--blue-400),transparent 70%);top:-15%;left:-12%}
+.orb-2{width:min(480px,60vw);height:min(480px,60vw);background:radial-gradient(circle,var(--sky-400),transparent 70%);top:35%;right:-12%;animation-delay:-11s}
+.orb-3{width:min(520px,60vw);height:min(520px,60vw);background:radial-gradient(circle,var(--amber-300),transparent 70%);bottom:-15%;left:25%;opacity:.25;animation-delay:-22s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.08)}66%{transform:translate(-40px,50px) scale(.95)}}
+.noise-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;z-index:9999;mix-blend-mode:difference;transition:width .3s var(--ease-expo),height .3s var(--ease-expo),border-color .3s,background .3s,opacity .3s}
+.cursor-dot{width:6px;height:6px;background:var(--blue-600)}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--blue-600);opacity:.55}
+body.cursor-hover .cursor-dot{width:10px;height:10px;background:var(--amber-400)}
+body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-400);opacity:.35}
+@media(hover:none),(max-width:1024px){.cursor-dot,.cursor-ring{display:none!important}}
+.page-loader{position:fixed;inset:0;z-index:10001;background:var(--blue-950);display:grid;place-items:center;transition:opacity .7s var(--ease-expo),visibility .7s}
+.page-loader.hidden{opacity:0;visibility:hidden}
+.loader-logo{width:56px;height:56px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));display:grid;place-items:center;color:var(--amber-400);font-size:1.3rem;animation:loaderPulse 1.6s ease-in-out infinite}
+@keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 56px rgba(30,79,216,.6)}50%{transform:scale(1.06);box-shadow:0 0 88px rgba(245,158,11,.5)}}
 
-            --text-primary:   var(--blue-950);
-            --text-secondary: var(--stone-700);
-            --text-tertiary:  var(--stone-500);
-            --text-inverse:   var(--ivory);
-            --text-accent:    var(--blue-600);
+/* ============ MOBILE BAR / SIDEBAR ============ */
+.mobile-bar{position:fixed;top:0;left:0;right:0;height:calc(var(--bar-h) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);z-index:1001;display:none;align-items:center;justify-content:space-between;padding-left:clamp(.9rem,4vw,1.25rem);padding-right:clamp(.9rem,4vw,1.25rem);background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-hairline)}
+.mobile-logo{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:.92rem;letter-spacing:-.01em}
+.mobile-logo .mark{width:38px;height:38px;border-radius:10px;background:var(--gradient-hero);color:var(--amber-400);display:grid;place-items:center;font-size:.95rem;box-shadow:var(--shadow-md),var(--inset-glass)}
+.mobile-toggle{width:46px;height:46px;border-radius:var(--r-md);background:var(--bg-muted);border:1px solid var(--border-subtle);display:grid;place-items:center;font-size:1.05rem;color:var(--text-primary);transition:transform .15s}
+.mobile-toggle:active{transform:scale(.92)}
+.nav-backdrop{position:fixed;inset:0;z-index:999;background:rgba(2,8,20,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .45s var(--ease-expo)}
+.nav-backdrop.show{opacity:1;pointer-events:auto}
+.sidebar{position:fixed;left:0;top:0;height:100vh;height:100dvh;width:var(--sidebar-w);background:var(--bg-glass);backdrop-filter:blur(32px) saturate(200%);-webkit-backdrop-filter:blur(32px) saturate(200%);border-right:1px solid var(--border-hairline);padding:2rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom));z-index:1000;display:flex;flex-direction:column;overflow:hidden;transition:transform .55s var(--ease-expo)}
+.sidebar::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.35),transparent)}
+.sidebar-header{padding-bottom:1.4rem;margin-bottom:1.4rem;border-bottom:1px solid var(--border-hairline);flex-shrink:0}
+.sidebar-logo{display:flex;align-items:center;gap:.75rem}
+.sidebar-logo-mark{width:44px;height:44px;border-radius:var(--r-md);background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-size:1.05rem;flex-shrink:0;box-shadow:var(--shadow-md),var(--inset-glass);position:relative;overflow:hidden}
+.sidebar-logo-mark::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 60%)}
+.sidebar-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.sidebar-logo-title{font-size:.95rem;font-weight:700;letter-spacing:-.02em}
+.sidebar-logo-sub{font-size:.63rem;color:var(--text-tertiary);font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;margin-top:2px}
+.sidebar-nav{flex:1;display:flex;flex-direction:column;gap:1.6rem;overflow-y:auto;scrollbar-width:thin;padding-right:2px;overscroll-behavior:contain}
+.nav-section-title{color:var(--text-quaternary);font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:var(--track-widest);margin-bottom:.7rem;padding-left:.75rem}
+.nav-item{position:relative}
+.nav-link{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:11px .75rem;min-height:44px;color:var(--text-secondary);border-radius:var(--r-md);transition:all .2s var(--ease-expo);font-size:.875rem;font-weight:500;cursor:pointer}
+.nav-link:hover{background:var(--bg-muted);color:var(--text-primary)}
+.nav-link.active{background:var(--blue-900);color:#fff;box-shadow:var(--shadow-md),var(--inset-glass)}
+[data-theme="dark"] .nav-link.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.nav-link-left{display:flex;align-items:center;gap:.75rem}
+.nav-link i.nav-icon{font-size:.95rem;width:18px;text-align:center;opacity:.85}
+.dropdown-arrow{font-size:.62rem;transition:transform .25s var(--ease-expo);color:var(--text-quaternary)}
+.nav-item.active .dropdown-arrow{transform:rotate(180deg);color:var(--amber-400)}
+.dropdown{margin:2px 0 0 1.75rem;padding-left:1rem;border-left:1px solid var(--border-subtle);max-height:0;overflow:hidden;transition:max-height .4s var(--ease-expo)}
+.nav-item.active .dropdown{max-height:400px}
+.dropdown-link{display:flex;align-items:center;gap:.75rem;padding:10px .75rem;min-height:40px;color:var(--text-tertiary);font-size:.825rem;font-weight:500;border-radius:var(--r-sm);transition:all .2s}
+.dropdown-link:hover{color:var(--text-primary);background:var(--bg-muted);padding-left:1rem}
+.dropdown-link.active{color:var(--blue-600);background:var(--blue-50);font-weight:600}
+[data-theme="dark"] .dropdown-link.active{color:var(--sky-400);background:rgba(30,79,216,.15)}
+.dropdown-link i{font-size:.72rem;width:14px;color:var(--blue-500)}
+.sidebar-footer{margin-top:auto;padding-top:1.25rem;border-top:1px solid var(--border-hairline);flex-shrink:0}
+.theme-toggle{width:100%;padding:11px;background:var(--bg-muted);border:1px solid var(--border-subtle);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;gap:.5rem;font-size:.825rem;font-weight:600;transition:all .2s;min-height:44px}
+.theme-toggle:hover{background:var(--blue-900);color:#fff;border-color:var(--blue-900)}
+.main-content{margin-left:var(--sidebar-w);position:relative;z-index:2;transition:margin-left .5s var(--ease-expo)}
 
-            --border-hairline: rgba(12, 27, 51, 0.06);
-            --border-subtle:   rgba(12, 27, 51, 0.10);
-            --border-default:  rgba(12, 27, 51, 0.16);
-            --border-strong:   rgba(12, 27, 51, 0.24);
+/* ============ PAGE HERO ============ */
+.page-hero{position:relative;min-height:auto;padding:clamp(6.5rem,12vh,10rem) clamp(1.25rem,4vw,3rem) clamp(3rem,6vh,5rem);overflow:hidden;isolation:isolate;color:#fff}
+.hero-bg{position:absolute;inset:0;z-index:-3}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.08);transition:transform 22s cubic-bezier(.3,0,.3,1);will-change:transform}
+.page-hero.in-view .hero-bg img{transform:scale(1)}
+.hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,8,20,.94) 0%,rgba(10,22,40,.82) 40%,rgba(19,46,85,.66) 100%),linear-gradient(180deg,transparent 30%,rgba(2,8,20,.92) 100%);z-index:1}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 85%,rgba(245,158,11,.22) 0%,transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(59,130,246,.28) 0%,transparent 55%);z-index:2}
+.hero-grid-pattern{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at center,black 10%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,black 10%,transparent 80%)}
+.hero-inner{position:relative;z-index:3;width:100%;max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:clamp(2rem,4vw,4rem);align-items:center}
+.hero-content>*{opacity:0;transform:translateY(36px)}
+.hero-content.loaded>*{animation:heroReveal 1.2s var(--ease-expo) forwards}
+.hero-content.loaded>:nth-child(1){animation-delay:.1s}
+.hero-content.loaded>:nth-child(2){animation-delay:.28s}
+.hero-content.loaded>:nth-child(3){animation-delay:.48s}
+.hero-content.loaded>:nth-child(4){animation-delay:.66s}
+.hero-content.loaded>:nth-child(5){animation-delay:.84s}
+@keyframes heroReveal{to{opacity:1;transform:translateY(0)}}
+.hero-breadcrumb{display:inline-flex;align-items:center;gap:.55rem;padding:6px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:var(--track-wide);color:rgba(255,255,255,.78);margin-bottom:1.5rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
+.hero-breadcrumb i{color:var(--amber-400);font-size:.65rem}
+.hero-breadcrumb .sep{opacity:.35}
+.hero-breadcrumb .current{color:var(--amber-300)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;padding:8px 16px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.28);border-radius:var(--r-full);font-size:.7rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-300);margin-bottom:1.5rem;backdrop-filter:blur(14px);box-shadow:var(--inset-glass)}
+.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--amber-400);animation:pulseRing 2.4s ease-out infinite}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(251,191,36,.7)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.2rem,5.5vw,4rem);font-weight:400;line-height:1.05;letter-spacing:var(--track-tighter);margin-bottom:1rem;font-variation-settings:"opsz" 144}
+.hero-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--amber-200),var(--amber-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-subtitle{font-size:clamp(.95rem,1.3vw,1.05rem);color:rgba(255,255,255,.78);max-width:540px;line-height:1.7;margin-bottom:0}
 
-            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
-            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
-            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
-            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
-                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+/* Hero Live Clock Widget */
+.hero-clock-widget{background:rgba(255,255,255,.08);backdrop-filter:blur(30px) saturate(190%);-webkit-backdrop-filter:blur(30px) saturate(190%);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-2xl);padding:clamp(1.5rem,3vw,2rem);box-shadow:var(--shadow-2xl),var(--inset-glass);position:relative;overflow:hidden;min-width:280px;text-align:center}
+.hero-clock-widget::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+.hero-clock-widget::after{content:'';position:absolute;top:-50%;right:-30%;width:200px;height:200px;background:radial-gradient(circle,rgba(245,158,11,.15),transparent 70%);pointer-events:none}
+.clock-label{font-family:var(--font-mono);font-size:.68rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.75rem;position:relative;z-index:1}
+.clock-time{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:500;color:#fff;line-height:1;letter-spacing:-.02em;margin-bottom:.25rem;font-variation-settings:"opsz" 144;position:relative;z-index:1}
+.clock-date{font-size:.875rem;color:rgba(255,255,255,.7);margin-bottom:1rem;position:relative;z-index:1}
+.clock-status{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(45,138,78,.15);border:1px solid rgba(74,222,128,.3);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--forest-400);letter-spacing:var(--track-wide);position:relative;z-index:1}
+.clock-status .dot{width:7px;height:7px;border-radius:50%;background:var(--forest-400);box-shadow:0 0 10px var(--forest-400);animation:statusPulse 2s ease-in-out infinite}
+@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:.4}}
 
-            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
-            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
-            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
-            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
-            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
-            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
-            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
-            --shadow-glow: 0 0 0 1px rgba(59, 130, 246, 0.1), 0 8px 24px rgba(59, 130, 246, 0.15);
-            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+/* ============ TIMETABLE DASHBOARD ============ */
+.timetable-dashboard{padding:clamp(2rem,4vw,3rem) clamp(1.25rem,4vw,2rem) clamp(4rem,8vw,6rem);position:relative}
+.dashboard-container{max-width:var(--container);margin:0 auto}
 
-            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+/* Quick Stats Row */
+.quick-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+.stat-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);padding:1.25rem 1.5rem;transition:all .3s var(--ease-expo);position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--stat-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease-expo)}
+.stat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--border-default)}
+.stat-card:hover::before{transform:scaleX(1)}
+.stat-card:nth-child(1){--stat-accent:linear-gradient(90deg,var(--blue-600),var(--sky-400))}
+.stat-card:nth-child(2){--stat-accent:linear-gradient(90deg,var(--amber-500),var(--gold-400))}
+.stat-card:nth-child(3){--stat-accent:linear-gradient(90deg,var(--forest-500),#4ade80)}
+.stat-card:nth-child(4){--stat-accent:linear-gradient(90deg,var(--purple-500),var(--pink-500))}
+.stat-card-inner{display:flex;align-items:center;gap:1rem}
+.stat-icon-wrap{width:48px;height:48px;border-radius:var(--r-lg);display:grid;place-items:center;font-size:1.25rem;flex-shrink:0}
+.stat-card:nth-child(1) .stat-icon-wrap{background:linear-gradient(135deg,var(--blue-50),var(--sky-100));color:var(--blue-600)}
+.stat-card:nth-child(2) .stat-icon-wrap{background:linear-gradient(135deg,var(--amber-100),#fef3c7);color:var(--amber-600)}
+.stat-card:nth-child(3) .stat-icon-wrap{background:var(--forest-100);color:var(--forest-600)}
+.stat-card:nth-child(4) .stat-icon-wrap{background:var(--purple-100);color:var(--purple-500)}
+[data-theme="dark"] .stat-card:nth-child(1) .stat-icon-wrap{background:rgba(59,130,246,.15);color:var(--sky-400)}
+[data-theme="dark"] .stat-card:nth-child(2) .stat-icon-wrap{background:rgba(245,158,11,.15);color:var(--amber-400)}
+[data-theme="dark"] .stat-card:nth-child(3) .stat-icon-wrap{background:rgba(74,222,128,.15);color:var(--forest-400)}
+[data-theme="dark"] .stat-card:nth-child(4) .stat-icon-wrap{background:rgba(139,92,246,.15);color:var(--purple-500)}
+.stat-info{flex:1;min-width:0}
+.stat-value{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--text-primary);line-height:1.1;letter-spacing:-.02em}
+.stat-label{font-size:.75rem;color:var(--text-tertiary);font-weight:500;letter-spacing:.02em}
 
-            --fs-xs:   0.75rem;
-            --fs-sm:   0.875rem;
-            --fs-base: 1rem;
-            --fs-md:   1.0625rem;
-            --fs-lg:   1.125rem;
-            --fs-xl:   1.25rem;
-            --fs-2xl:  1.5rem;
-            --fs-3xl:  1.875rem;
-            --fs-4xl:  2.25rem;
-            --fs-5xl:  3rem;
-            --fs-6xl:  3.75rem;
-            --fs-7xl:  4.5rem;
-            --fs-8xl:  5.5rem;
+/* Day Selector */
+.day-selector{margin-bottom:2rem}
+.day-selector-label{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.day-selector-label::before{content:'';width:20px;height:1px;background:currentColor}
+.day-pills{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:none}
+.day-pills::-webkit-scrollbar{display:none}
+.day-pill{flex:1;min-width:100px;padding:1rem;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);cursor:pointer;transition:all .3s var(--ease-expo);text-align:center;position:relative;overflow:hidden}
+.day-pill::before{content:'';position:absolute;inset:0;background:var(--gradient-hero);opacity:0;transition:opacity .3s var(--ease-expo)}
+.day-pill>*{position:relative;z-index:1}
+.day-pill:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border-default)}
+.day-pill.active{border-color:transparent;box-shadow:var(--shadow-lg),var(--inset-glass)}
+.day-pill.active::before{opacity:1}
+.day-pill.active .day-name,.day-pill.active .day-date,.day-pill.active .day-count{color:#fff}
+.day-pill.active .day-dot{background:var(--amber-400);box-shadow:0 0 12px var(--amber-400)}
+.day-pill.today{border-color:var(--blue-400)}
+.day-pill.today .day-name{color:var(--blue-600);font-weight:700}
+[data-theme="dark"] .day-pill.today .day-name{color:var(--sky-400)}
+.day-name{font-size:.75rem;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:var(--track-wider);margin-bottom:.25rem;transition:color .3s}
+.day-date{font-family:var(--font-display);font-size:1.5rem;font-weight:500;color:var(--text-primary);line-height:1.1;margin-bottom:.25rem;transition:color .3s}
+.day-count{font-family:var(--font-mono);font-size:.68rem;color:var(--text-quaternary);transition:color .3s}
+.day-dot{width:6px;height:6px;border-radius:50%;background:var(--border-default);margin:.5rem auto 0;transition:all .3s}
+.day-pill.today .day-dot{background:var(--blue-600);box-shadow:0 0 8px var(--blue-600)}
+[data-theme="dark"] .day-pill.today .day-dot{background:var(--sky-400);box-shadow:0 0 8px var(--sky-400)}
 
-            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
-            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
-            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
-            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
-            --s-32: 8rem;   --s-40: 10rem;
+/* Schedule Grid */
+.schedule-section{position:relative}
+.schedule-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
+.schedule-title{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:500;color:var(--text-primary);letter-spacing:-.015em}
+.schedule-meta{display:flex;align-items:center;gap:1rem}
+.schedule-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--text-secondary);letter-spacing:var(--track-wide)}
+.schedule-badge i{color:var(--amber-500);font-size:.6rem}
+.view-toggle{display:flex;background:var(--bg-muted);border-radius:var(--r-full);padding:4px;border:1px solid var(--border-hairline)}
+.view-btn{padding:8px 16px;border-radius:var(--r-full);font-size:.8rem;font-weight:600;color:var(--text-tertiary);transition:all .2s;min-width:80px}
+.view-btn.active{background:var(--bg-surface);color:var(--text-primary);box-shadow:var(--shadow-sm)}
+.view-btn:hover:not(.active){color:var(--text-primary)}
 
-            --r-sm: 8px;
-            --r-md: 12px;
-            --r-lg: 16px;
-            --r-xl: 24px;
-            --r-2xl: 32px;
-            --r-3xl: 40px;
-            --r-full: 9999px;
+/* Timeline */
+.timeline{position:relative;padding-left:0}
+.timeline::before{content:'';position:absolute;left:80px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--border-subtle),var(--border-hairline));border-radius:1px}
+@media(max-width:640px){.timeline::before{left:20px}}
 
-            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-            --dur-fast: 200ms;
-            --dur-base: 360ms;
-            --dur-slow: 640ms;
-            --dur-slower: 1000ms;
+.schedule-item{display:grid;grid-template-columns:80px 1fr;gap:1.5rem;margin-bottom:1rem;position:relative}
+@media(max-width:640px){.schedule-item{grid-template-columns:40px 1fr;gap:1rem}}
 
-            --sidebar-w: 300px;
-            --container: 1320px;
-            --container-wide: 1520px;
-        }
+.time-column{display:flex;flex-direction:column;align-items:center;padding-top:1.25rem;position:relative}
+.time-label{font-family:var(--font-mono);font-size:.825rem;font-weight:600;color:var(--text-secondary);letter-spacing:.02em;white-space:nowrap}
+.time-duration{font-family:var(--font-mono);font-size:.68rem;color:var(--text-quaternary);margin-top:.25rem}
+.time-dot{position:absolute;top:1.5rem;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--bg-surface);border:2px solid var(--border-default);z-index:2;transition:all .3s}
+.schedule-item.current .time-dot{background:var(--amber-400);border-color:var(--amber-400);box-shadow:0 0 0 4px rgba(251,191,36,.2)}
+.schedule-item.completed .time-dot{background:var(--forest-500);border-color:var(--forest-500)}
 
-        [data-theme="dark"] {
-            --bg-page:     #050B16;
-            --bg-surface:  #0B1526;
-            --bg-elevated: #111E36;
-            --bg-muted:    #0A1322;
-            --bg-inverse:  var(--ivory);
+/* Activity Card */
+.activity-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:1.5rem;transition:all .4s var(--ease-expo);position:relative;overflow:hidden}
+.activity-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:var(--card-accent,var(--gradient-royal));border-radius:4px 0 0 4px}
+.activity-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.activity-card.current{border-color:var(--amber-400);box-shadow:var(--shadow-lg),0 0 0 1px var(--amber-400)}
+.activity-card.current::after{content:'';position:absolute;top:1rem;right:1rem;width:10px;height:10px;border-radius:50%;background:var(--amber-400);animation:pulseRing 2s ease-out infinite}
+.activity-card.completed{opacity:.7}
+.activity-card.completed .activity-title{text-decoration:line-through;text-decoration-color:var(--text-quaternary)}
 
-            --text-primary:   #F5F7FA;
-            --text-secondary: #B8C5D9;
-            --text-tertiary:  #7A8BA3;
-            --text-inverse:   var(--blue-950);
-            --text-accent:    var(--sky-400);
+/* Card Accent Colors by Category */
+.activity-card[data-category="spiritual"]{--card-accent:linear-gradient(180deg,var(--amber-500),var(--gold-400))}
+.activity-card[data-category="academic"]{--card-accent:linear-gradient(180deg,var(--blue-600),var(--sky-400))}
+.activity-card[data-category="lifeskills"]{--card-accent:linear-gradient(180deg,var(--forest-500),#4ade80)}
+.activity-card[data-category="recreation"]{--card-accent:linear-gradient(180deg,var(--purple-500),var(--pink-500))}
+.activity-card[data-category="community"]{--card-accent:linear-gradient(180deg,var(--terra-500),#f97316)}
+.activity-card[data-category="nutrition"]{--card-accent:linear-gradient(180deg,#10b981,#34d399)}
 
-            --border-hairline: rgba(255,255,255,0.05);
-            --border-subtle:   rgba(255,255,255,0.08);
-            --border-default:  rgba(255,255,255,0.14);
-            --border-strong:   rgba(255,255,255,0.22);
+.activity-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem}
+.activity-title-wrap{flex:1;min-width:0}
+.activity-category{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:.63rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:.35rem}
+.activity-category i{font-size:.6rem}
+.activity-title{font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);line-height:1.3;letter-spacing:-.01em;margin-bottom:.25rem}
+.activity-facilitator{font-size:.825rem;color:var(--text-tertiary);display:flex;align-items:center;gap:.4rem}
+.activity-facilitator i{font-size:.7rem;color:var(--text-quaternary)}
+.activity-badges{display:flex;gap:.35rem;flex-wrap:wrap}
+.badge{padding:4px 10px;border-radius:var(--r-full);font-family:var(--font-mono);font-size:.63rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.badge-priority{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
+.badge-new{background:rgba(245,158,11,.1);color:var(--amber-600);border:1px solid rgba(245,158,11,.2)}
+[data-theme="dark"] .badge-new{color:var(--amber-400)}
+.badge-required{background:rgba(59,130,246,.1);color:var(--blue-600);border:1px solid rgba(59,130,246,.2)}
+[data-theme="dark"] .badge-required{color:var(--sky-400)}
+.badge-completed{background:var(--forest-100);color:var(--forest-600);border:1px solid rgba(45,138,78,.2)}
+[data-theme="dark"] .badge-completed{background:rgba(74,222,128,.15);color:var(--forest-400)}
 
-            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+.activity-body{margin-bottom:1rem}
+.activity-description{font-size:.875rem;color:var(--text-secondary);line-height:1.7;margin-bottom:.75rem}
+.activity-details{display:flex;flex-wrap:wrap;gap:1rem}
+.activity-detail{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--text-tertiary)}
+.activity-detail i{font-size:.75rem;color:var(--text-quaternary);width:14px}
 
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
-        }
+.activity-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--border-hairline);flex-wrap:wrap;gap:.75rem}
+.activity-progress{display:flex;align-items:center;gap:.75rem;flex:1;min-width:200px}
+.progress-label{font-family:var(--font-mono);font-size:.68rem;font-weight:600;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.progress-bar{flex:1;height:6px;background:var(--bg-muted);border-radius:var(--r-full);overflow:hidden;min-width:80px}
+.progress-fill{height:100%;border-radius:var(--r-full);background:var(--card-accent,var(--gradient-royal));transition:width 1s var(--ease-expo)}
+.activity-actions{display:flex;gap:.5rem}
+.action-btn{padding:8px 14px;border-radius:var(--r-full);font-size:.75rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.action-btn i{font-size:.65rem}
+.action-btn-primary{background:var(--blue-600);color:#fff}
+.action-btn-primary:hover{background:var(--blue-700);transform:translateY(-1px)}
+.action-btn-ghost{background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-hairline)}
+.action-btn-ghost:hover{background:var(--bg-surface);color:var(--text-primary);border-color:var(--border-default)}
 
-        /* =========================================================
-           RESET & BASE
-           ========================================================= */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
-        body {
-            font-family: var(--font-body);
-            font-size: var(--fs-base);
-            line-height: 1.65;
-            color: var(--text-primary);
-            background: var(--bg-page);
-            min-height: 100vh;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
-        }
-        img { max-width: 100%; height: auto; display: block; }
-        a { color: inherit; text-decoration: none; }
-        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-        ::selection { background: var(--blue-600); color: white; }
+/* Legend */
+.legend{margin-top:2rem;padding:1.5rem;background:var(--bg-muted);border-radius:var(--r-xl);border:1px solid var(--border-hairline)}
+.legend-title{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--text-quaternary);margin-bottom:1rem}
+.legend-items{display:flex;flex-wrap:wrap;gap:1rem}
+.legend-item{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--text-secondary)}
+.legend-color{width:12px;height:12px;border-radius:3px}
+.legend-color.spiritual{background:linear-gradient(135deg,var(--amber-500),var(--gold-400))}
+.legend-color.academic{background:linear-gradient(135deg,var(--blue-600),var(--sky-400))}
+.legend-color.lifeskills{background:linear-gradient(135deg,var(--forest-500),#4ade80)}
+.legend-color.recreation{background:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
+.legend-color.community{background:linear-gradient(135deg,var(--terra-500),#f97316)}
+.legend-color.nutrition{background:linear-gradient(135deg,#10b981,#34d399)}
 
-        :focus-visible {
-            outline: 2px solid var(--blue-500);
-            outline-offset: 3px;
-            border-radius: var(--r-sm);
-        }
+/* ============ FOOTER ============ */
+.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:clamp(3.5rem,7vw,5rem) 0 2rem;position:relative;overflow:hidden}
+.footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.18),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,158,11,.10),transparent 50%);pointer-events:none}
+.footer>*{position:relative;z-index:1}
+.footer-scripture{text-align:center;margin-bottom:clamp(2.5rem,6vw,4rem);padding-bottom:clamp(2.5rem,6vw,4rem);border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-scripture p{font-family:var(--font-display);font-style:italic;font-size:clamp(1.15rem,2.4vw,1.6rem);color:var(--amber-300);max-width:820px;margin:0 auto .8rem;line-height:1.5;letter-spacing:-.01em}
+.footer-scripture cite{font-style:normal;font-size:.75rem;letter-spacing:var(--track-widest);text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:600}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:3rem;margin-bottom:3rem}
+.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;color:#fff;font-weight:700;font-size:1rem}
+.footer-logo-mark{width:40px;height:40px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));color:var(--amber-400);display:grid;place-items:center;font-size:1rem;box-shadow:var(--shadow-md)}
+.footer-tagline{font-family:var(--font-display);font-style:italic;font-size:1.125rem;color:var(--amber-300);margin-bottom:1.25rem;line-height:1.5}
+.footer-brand>p{font-size:.875rem;line-height:1.7;margin-bottom:1.5rem;max-width:360px}
+.footer-contact{display:flex;flex-direction:column;gap:.55rem;font-size:.825rem;font-style:normal}
+.footer-contact-item{display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.7);line-height:1.5}
+.footer-contact-item i{color:var(--amber-400);width:14px;font-size:.8rem;margin-top:3px;flex-shrink:0}
+.footer-contact-item a{transition:color .2s}
+.footer-contact-item a:hover{color:var(--amber-300)}
+.footer-col h4{color:#fff;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;margin-bottom:1.25rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.footer-links a{font-size:.875rem;color:rgba(255,255,255,.65);transition:color .2s,transform .2s;font-weight:500;display:inline-block}
+.footer-links a:hover{color:var(--amber-300);transform:translateX(4px)}
+.footer-newsletter p{font-size:.875rem;margin-bottom:1rem;line-height:1.6}
+.newsletter-form{display:flex;gap:.5rem;margin-bottom:1.25rem}
+.newsletter-form input{flex:1;padding:12px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-md);color:#fff;font-family:var(--font-body);font-size:.85rem;min-width:0;transition:all .2s;min-height:44px}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter-form input:focus{outline:none;border-color:var(--amber-400);background:rgba(255,255,255,.1);box-shadow:0 0 0 3px rgba(245,158,11,.15)}
+.newsletter-form button{padding:12px 18px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-md);font-weight:700;font-size:.85rem;transition:transform .2s,box-shadow .2s;min-height:44px}
+.newsletter-form button:hover{transform:translateY(-2px);box-shadow:var(--shadow-gold)}
+.social-links{display:flex;gap:.5rem}
+.social-links a{width:40px;height:40px;border-radius:var(--r-md);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;color:rgba(255,255,255,.7);transition:all .25s;font-size:.9rem}
+.social-links a:hover{background:var(--gradient-warm);color:var(--blue-950);border-color:transparent;transform:translateY(-3px) rotate(-4deg)}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:rgba(255,255,255,.5)}
+.footer-legal{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-legal a{transition:color .2s}
+.footer-legal a:hover{color:var(--amber-300)}
 
-        .skip-link {
-            position: absolute;
-            top: -100px; left: var(--s-4);
-            background: var(--blue-900);
-            color: white;
-            padding: var(--s-3) var(--s-5);
-            border-radius: var(--r-md);
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            z-index: 10000;
-            transition: top var(--dur-fast);
-        }
-        .skip-link:focus { top: var(--s-4); }
+/* ============ REVEALS ============ */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity var(--dur-cine) var(--ease-expo),transform var(--dur-cine) var(--ease-expo)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-stagger>*{opacity:0;transform:translateY(30px);transition:opacity var(--dur-slow) var(--ease-expo),transform var(--dur-slow) var(--ease-expo)}
+.reveal-stagger.visible>*{opacity:1;transform:translateY(0)}
+.reveal-stagger.visible>*:nth-child(1){transition-delay:0ms}
+.reveal-stagger.visible>*:nth-child(2){transition-delay:80ms}
+.reveal-stagger.visible>*:nth-child(3){transition-delay:160ms}
+.reveal-stagger.visible>*:nth-child(4){transition-delay:240ms}
+.reveal-stagger.visible>*:nth-child(5){transition-delay:320ms}
+.reveal-stagger.visible>*:nth-child(6){transition-delay:400ms}
+.reveal-stagger.visible>*:nth-child(7){transition-delay:480ms}
+.reveal-stagger.visible>*:nth-child(8){transition-delay:560ms}
 
-        /* =========================================================
-           AMBIENT BACKGROUND — Identical to index.html
-           ========================================================= */
-        .ambient-bg {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .ambient-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.7;
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.5;
-            animation: orbFloat 24s ease-in-out infinite;
-            will-change: transform;
-        }
-        .orb-1 {
-            width: 500px; height: 500px;
-            background: radial-gradient(circle, var(--blue-400), transparent 70%);
-            top: -10%; left: -10%;
-            animation-delay: 0s;
-        }
-        .orb-2 {
-            width: 400px; height: 400px;
-            background: radial-gradient(circle, var(--sky-400), transparent 70%);
-            top: 40%; right: -8%;
-            animation-delay: -8s;
-        }
-        .orb-3 {
-            width: 380px; height: 380px;
-            background: radial-gradient(circle, var(--amber-400), transparent 70%);
-            bottom: -10%; left: 30%;
-            opacity: 0.3;
-            animation-delay: -16s;
-        }
-        @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(40px, -30px) scale(1.08); }
-            66% { transform: translate(-30px, 40px) scale(0.95); }
-        }
-        .noise-overlay {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.025;
-            mix-blend-mode: overlay;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-        }
-
-        /* =========================================================
-           SIDEBAR NAVIGATION — EXACTLY matching index.html
-           ========================================================= */
-        .sidebar {
-            position: fixed;
-            left: 0; top: 0;
-            height: 100vh;
-            width: var(--sidebar-w);
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border-right: 1px solid var(--border-hairline);
-            padding: var(--s-7) var(--s-5);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            transition: transform var(--dur-base) var(--ease-out);
-            overflow: hidden;
-        }
-        [data-theme="dark"] .sidebar {
-            background: rgba(11, 21, 38, 0.78);
-            border-right: 1px solid var(--border-subtle);
-        }
-        .sidebar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-        }
-
-        .sidebar-header {
-            padding-bottom: var(--s-6);
-            margin-bottom: var(--s-6);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .sidebar-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            transition: opacity var(--dur-fast);
-        }
-        .sidebar-logo:hover { opacity: 0.8; }
-        .sidebar-logo-mark {
-            width: 44px; height: 44px;
-            border-radius: var(--r-md);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .sidebar-logo-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
-        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
-
-        .sidebar-nav {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-6);
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-default) transparent;
-            padding-right: 2px;
-        }
-        .sidebar-nav::-webkit-scrollbar { width: 4px; }
-        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
-
-        .nav-section-title {
-            color: var(--text-tertiary);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            margin-bottom: var(--s-3);
-            padding-left: var(--s-3);
-        }
-        .nav-item { position: relative; }
-        .nav-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-3);
-            padding: 10px var(--s-3);
-            color: var(--text-secondary);
-            border-radius: var(--r-md);
-            transition: all var(--dur-fast) var(--ease-out);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            position: relative;
-        }
-        .nav-link:hover {
-            background: var(--bg-muted);
-            color: var(--text-primary);
-        }
-        .nav-link.active {
-            background: var(--blue-900);
-            color: white;
-            box-shadow: var(--shadow-sm);
-        }
-        [data-theme="dark"] .nav-link.active {
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
-            box-shadow: var(--shadow-blue);
-        }
-        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
-        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
-        .nav-link.active i.nav-icon { opacity: 1; }
-        .dropdown-arrow {
-            font-size: 0.65rem;
-            transition: transform var(--dur-fast) var(--ease-out);
-            color: var(--text-tertiary);
-        }
-        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
-
-        .dropdown {
-            margin-top: var(--s-1);
-            margin-left: var(--s-7);
-            padding-left: var(--s-4);
-            border-left: 1px solid var(--border-subtle);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--dur-base) var(--ease-out);
-        }
-        .nav-item.active .dropdown { max-height: 400px; }
-        .dropdown-link {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 7px var(--s-3);
-            color: var(--text-tertiary);
-            font-size: 0.825rem;
-            font-weight: 500;
-            border-radius: var(--r-sm);
-            transition: all var(--dur-fast);
-        }
-        .dropdown-link:hover {
-            color: var(--text-primary);
-            background: var(--bg-muted);
-            padding-left: var(--s-4);
-        }
-        .dropdown-link.active {
-            color: var(--blue-700);
-            font-weight: 600;
-            background: var(--blue-50);
-        }
-        [data-theme="dark"] .dropdown-link.active {
-            color: var(--sky-400);
-            background: rgba(30, 79, 216, 0.15);
-        }
-        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
-        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
-
-        .sidebar-footer {
-            margin-top: auto;
-            padding-top: var(--s-5);
-            border-top: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .theme-toggle {
-            width: 100%;
-            padding: 10px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-md);
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-2);
-            font-size: 0.825rem;
-            font-weight: 600;
-            transition: all var(--dur-fast);
-        }
-        .theme-toggle:hover {
-            background: var(--blue-900);
-            color: white;
-            border-color: var(--blue-900);
-        }
-
-        .mobile-toggle {
-            display: none;
-            position: fixed;
-            top: var(--s-4); left: var(--s-4);
-            z-index: 1001;
-            width: 48px; height: 48px;
-            background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-md);
-            color: var(--blue-900);
-            font-size: 1.1rem;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-lg);
-        }
-        [data-theme="dark"] .mobile-toggle {
-            background: rgba(11, 21, 38, 0.85);
-            color: white;
-        }
-
-        /* =========================================================
-           MAIN CONTENT
-           ========================================================= */
-        .main-content {
-            margin-left: var(--sidebar-w);
-            min-height: 100vh;
-            position: relative;
-            z-index: 2;
-            transition: margin-left var(--dur-base) var(--ease-out);
-        }
-
-        /* =========================================================
-           PAGE HERO
-           ========================================================= */
-        .page-hero {
-            position: relative;
-            padding: var(--s-32) var(--s-12) var(--s-24);
-            overflow: hidden;
-            color: white;
-            isolation: isolate;
-        }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            z-index: -3;
-        }
-        .hero-bg img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            object-position: center 30%;
-        }
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                linear-gradient(135deg, rgba(4, 11, 26, 0.94) 0%, rgba(11, 27, 51, 0.82) 50%, rgba(19, 46, 85, 0.72) 100%),
-                linear-gradient(180deg, transparent 50%, rgba(4, 11, 26, 0.85) 100%);
-            z-index: 1;
-        }
-        .hero-bg::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.25) 0%, transparent 50%);
-            z-index: 2;
-        }
-        .hero-grid-pattern {
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            opacity: 0.06;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
-            background-size: 80px 80px;
-            mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
-            -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
-        }
-
-        .hero-inner {
-            position: relative;
-            z-index: 3;
-            max-width: var(--container-wide);
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero-breadcrumb {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-2);
-            padding: 6px 14px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--r-full);
-            font-size: var(--fs-xs);
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: var(--s-8);
-            backdrop-filter: blur(12px);
-            animation: heroFadeIn 1s var(--ease-out) both;
-        }
-        .hero-breadcrumb i { color: var(--amber-400); font-size: 0.7rem; }
-        .hero-breadcrumb .sep { opacity: 0.5; }
-
-        .hero-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 8px 16px;
-            background: rgba(251, 191, 36, 0.12);
-            border: 1px solid rgba(251, 191, 36, 0.3);
-            border-radius: var(--r-full);
-            font-size: var(--fs-xs);
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: var(--s-8);
-            backdrop-filter: blur(12px);
-            animation: heroFadeIn 1s var(--ease-out) 0.2s both;
-        }
-        .hero-eyebrow .pulse {
-            width: 7px; height: 7px;
-            border-radius: 50%;
-            background: var(--amber-400);
-            box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
-            animation: pulseRing 2.4s ease-out infinite;
-        }
-        @keyframes pulseRing {
-            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
-        }
-
-        .hero-title {
-            font-family: var(--font-display);
-            font-size: clamp(2.75rem, 6vw, var(--fs-8xl));
-            font-weight: 400;
-            line-height: 1.02;
-            letter-spacing: -0.03em;
-            margin-bottom: var(--s-8);
-            color: white;
-            font-variation-settings: "opsz" 144;
-            animation: heroFadeIn 1.2s var(--ease-out) 0.3s both;
-        }
-        .hero-title .line { display: block; }
-        .hero-title .italic {
-            font-style: italic;
-            font-weight: 300;
-            color: var(--amber-300);
-            letter-spacing: -0.02em;
-        }
-        .hero-title .divider {
-            display: inline-block;
-            width: 80px; height: 2px;
-            background: linear-gradient(90deg, var(--amber-400), transparent);
-            margin: var(--s-5) 0;
-            vertical-align: middle;
-            border-radius: 1px;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1rem, 1.4vw, var(--fs-lg));
-            color: rgba(255, 255, 255, 0.78);
-            max-width: 580px;
-            line-height: 1.7;
-            margin-bottom: var(--s-10);
-            font-weight: 400;
-            animation: heroFadeIn 1s var(--ease-out) 0.5s both;
-        }
-
-        @keyframes heroFadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--s-5);
-            max-width: 900px;
-            margin: 0 auto;
-            animation: heroFadeIn 1s var(--ease-out) 0.6s both;
-        }
-        .hero-stat {
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: var(--r-xl);
-            padding: var(--s-6) var(--s-4);
-            text-align: center;
-            transition: all var(--dur-base) var(--ease-out);
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-stat::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-        }
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-4px);
-        }
-        .stat-icon {
-            width: 36px; height: 36px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(14, 165, 233, 0.2));
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            display: grid; place-items: center;
-            color: var(--sky-300);
-            font-size: 0.9rem;
-            margin: 0 auto var(--s-3);
-        }
-        .stat-number {
-            font-family: var(--font-display);
-            font-size: var(--fs-4xl);
-            font-weight: 500;
-            color: white;
-            line-height: 1;
-            letter-spacing: -0.02em;
-            margin-bottom: 4px;
-            font-variation-settings: "opsz" 144;
-        }
-        .stat-label {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.6);
-            font-weight: 500;
-            letter-spacing: 0.02em;
-        }
-
-        /* =========================================================
-           SECTIONS
-           ========================================================= */
-        .container {
-            width: 100%;
-            max-width: var(--container);
-            margin: 0 auto;
-            padding: 0 var(--s-8);
-            position: relative;
-        }
-        .section {
-            padding: var(--s-32) 0;
-            position: relative;
-        }
-        .section-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-3);
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--blue-600);
-            margin-bottom: var(--s-5);
-        }
-        [data-theme="dark"] .section-eyebrow { color: var(--sky-400); }
-        .section-eyebrow::before {
-            content: '';
-            width: 28px; height: 1px;
-            background: currentColor;
-        }
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, var(--fs-5xl));
-            font-weight: 400;
-            line-height: 1.08;
-            letter-spacing: -0.025em;
-            color: var(--text-primary);
-            margin-bottom: var(--s-6);
-            font-variation-settings: "opsz" 144;
-            max-width: 880px;
-        }
-        .section-title .italic {
-            font-style: italic;
-            font-weight: 300;
-            color: var(--blue-600);
-        }
-        [data-theme="dark"] .section-title .italic { color: var(--sky-400); }
-        .section-lede {
-            font-size: var(--fs-md);
-            color: var(--text-secondary);
-            line-height: 1.75;
-            max-width: 720px;
-            margin-bottom: var(--s-16);
-        }
-
-        .section.alt-bg {
-            background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-page) 100%);
-        }
-        .section.alt-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.3;
-            pointer-events: none;
-        }
-        .section.alt-bg > * { position: relative; z-index: 1; }
-
-        /* =========================================================
-           TIMETABLE CARD
-           ========================================================= */
-        .timetable-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-3xl);
-            padding: var(--s-10);
-            box-shadow: var(--shadow-lg);
-            position: relative;
-            overflow: hidden;
-            transition: all var(--dur-base) var(--ease-out);
-        }
-        .timetable-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--blue-600), var(--sky-400), var(--amber-400));
-        }
-        .timetable-card:hover {
-            box-shadow: var(--shadow-xl);
-            border-color: var(--border-default);
-        }
-
-        .timetable-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: var(--s-6);
-            flex-wrap: wrap;
-            gap: var(--s-4);
-        }
-        .timetable-header h3 {
-            font-family: var(--font-display);
-            font-size: var(--fs-2xl);
-            font-weight: 500;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            letter-spacing: -0.01em;
-        }
-        .timetable-header h3 i {
-            color: var(--blue-600);
-        }
-        [data-theme="dark"] .timetable-header h3 i { color: var(--sky-400); }
-        .timetable-subtitle {
-            font-size: var(--fs-sm);
-            color: var(--text-tertiary);
-            font-weight: 500;
-        }
-
-        /* Filter Tabs */
-        .filter-tabs {
-            display: flex;
-            gap: var(--s-2);
-            flex-wrap: wrap;
-            margin-bottom: var(--s-6);
-            padding: var(--s-2);
-            background: var(--bg-muted);
-            border-radius: var(--r-full);
-            border: 1px solid var(--border-hairline);
-            width: fit-content;
-        }
-        .filter-tab {
-            padding: 8px 16px;
-            background: transparent;
-            border: none;
-            border-radius: var(--r-full);
-            font-weight: 600;
-            font-size: 0.8rem;
-            color: var(--text-tertiary);
-            cursor: pointer;
-            transition: all var(--dur-fast) var(--ease-out);
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-        }
-        .filter-tab:hover {
-            color: var(--text-primary);
-            background: var(--bg-surface);
-        }
-        .filter-tab.active {
-            background: var(--blue-900);
-            color: white;
-            box-shadow: var(--shadow-sm);
-        }
-        [data-theme="dark"] .filter-tab.active {
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
-            box-shadow: var(--shadow-blue);
-        }
-        .filter-tab i { font-size: 0.75rem; }
-
-        /* Table */
-        .table-container {
-            overflow-x: auto;
-            border-radius: var(--r-xl);
-            border: 1px solid var(--border-hairline);
-            margin-bottom: var(--s-6);
-            background: var(--bg-surface);
-        }
-        .timetable-table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 700px;
-            font-size: 0.9rem;
-        }
-        .timetable-table th {
-            background: var(--gradient-hero);
-            color: white;
-            font-weight: 600;
-            padding: var(--s-4) var(--s-5);
-            text-align: left;
-            font-size: 0.75rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            position: sticky;
-            top: 0;
-            z-index: 5;
-        }
-        .timetable-table th i {
-            margin-right: 6px;
-            color: var(--amber-400);
-        }
-        .timetable-table td {
-            padding: var(--s-4) var(--s-5);
-            border-bottom: 1px solid var(--border-hairline);
-            color: var(--text-secondary);
-            transition: all var(--dur-fast);
-            vertical-align: middle;
-        }
-        .timetable-table tr {
-            transition: all var(--dur-fast);
-            cursor: pointer;
-        }
-        .timetable-table tbody tr:hover {
-            background: var(--blue-50);
-        }
-        [data-theme="dark"] .timetable-table tbody tr:hover {
-            background: rgba(59, 130, 246, 0.08);
-        }
-        .timetable-table tr.selected {
-            background: linear-gradient(90deg, rgba(251, 191, 36, 0.08), rgba(245, 158, 11, 0.04));
-            border-left: 3px solid var(--amber-500);
-        }
-        .timetable-table tr.hidden-row {
-            display: none;
-        }
-        .time-col {
-            font-family: var(--font-mono);
-            font-weight: 500;
-            color: var(--blue-600) !important;
-            white-space: nowrap;
-            min-width: 160px;
-            font-size: 0.85rem;
-        }
-        [data-theme="dark"] .time-col { color: var(--sky-400) !important; }
-
-        /* Activity badges */
-        .activity-badge {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: var(--r-full);
-            font-size: 0.68rem;
-            font-weight: 700;
-            margin-left: 8px;
-            vertical-align: middle;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-        .badge-academic {
-            background: var(--blue-50);
-            color: var(--blue-700);
-            border: 1px solid var(--blue-100);
-        }
-        [data-theme="dark"] .badge-academic {
-            background: rgba(30, 79, 216, 0.15);
-            color: var(--sky-400);
-            border-color: rgba(59, 130, 246, 0.3);
-        }
-        .badge-skills {
-            background: rgba(251, 191, 36, 0.1);
-            color: var(--amber-600);
-            border: 1px solid rgba(251, 191, 36, 0.25);
-        }
-        [data-theme="dark"] .badge-skills {
-            background: rgba(251, 191, 36, 0.12);
-            color: var(--amber-300);
-        }
-        .badge-spiritual {
-            background: rgba(168, 85, 247, 0.08);
-            color: #7c3aed;
-            border: 1px solid rgba(168, 85, 247, 0.2);
-        }
-        [data-theme="dark"] .badge-spiritual {
-            background: rgba(168, 85, 247, 0.15);
-            color: #c084fc;
-        }
-        .badge-break {
-            background: rgba(45, 138, 78, 0.08);
-            color: #1e6b3a;
-            border: 1px solid rgba(45, 138, 78, 0.2);
-        }
-        [data-theme="dark"] .badge-break {
-            background: rgba(45, 138, 78, 0.15);
-            color: #4ade80;
-        }
-        .badge-service {
-            background: rgba(168, 85, 60, 0.08);
-            color: #a8553c;
-            border: 1px solid rgba(168, 85, 60, 0.2);
-        }
-        [data-theme="dark"] .badge-service {
-            background: rgba(168, 85, 60, 0.15);
-            color: #fb923c;
-        }
-
-        /* Row details */
-        .row-details {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s var(--ease-out), padding 0.4s var(--ease-out);
-            background: var(--bg-muted);
-        }
-        .row-details.expanded {
-            max-height: 200px;
-            padding: var(--s-4) var(--s-5);
-        }
-        .row-details-content {
-            display: flex;
-            gap: var(--s-4);
-            flex-wrap: wrap;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-        .detail-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .detail-item i { color: var(--amber-500); }
-
-        /* Action buttons */
-        .timetable-actions {
-            display: flex;
-            gap: var(--s-3);
-            flex-wrap: wrap;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-2);
-            padding: 14px 26px;
-            border-radius: var(--r-full);
-            font-weight: 600;
-            font-size: 0.925rem;
-            transition: all var(--dur-fast) var(--ease-out);
-            border: 1px solid transparent;
-            min-height: 52px;
-            white-space: nowrap;
-        }
-        .btn-primary {
-            background: var(--blue-900);
-            color: white;
-            box-shadow: var(--shadow-md);
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            background: var(--blue-800);
-        }
-        .btn-outline {
-            background: transparent;
-            border: 1px solid var(--border-default);
-            color: var(--text-primary);
-        }
-        .btn-outline:hover {
-            background: var(--bg-muted);
-            border-color: var(--blue-600);
-            color: var(--blue-600);
-            transform: translateY(-2px);
-        }
-        [data-theme="dark"] .btn-outline:hover {
-            color: var(--sky-400);
-            border-color: var(--sky-400);
-        }
-
-        /* =========================================================
-           PROGRAMS GRID
-           ========================================================= */
-        .programs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--s-5);
-        }
-        .program-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-2xl);
-            padding: var(--s-8);
-            position: relative;
-            overflow: hidden;
-            transition: all var(--dur-base) var(--ease-out);
-            box-shadow: var(--shadow-sm);
-        }
-        .program-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: var(--card-accent, var(--gradient-royal));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--dur-slow) var(--ease-out);
-        }
-        .program-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--border-default);
-        }
-        .program-card:hover::before { transform: scaleX(1); }
-
-        .program-card:nth-child(1) { --card-accent: linear-gradient(135deg, var(--amber-500), var(--amber-400)); }
-        .program-card:nth-child(2) { --card-accent: linear-gradient(135deg, #a8553c, #fb923c); }
-        .program-card:nth-child(3) { --card-accent: linear-gradient(135deg, #7c3aed, #a855f7); }
-        .program-card:nth-child(4) { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-400)); }
-
-        .program-week {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--card-accent, var(--gradient-royal));
-            color: white;
-            border-radius: var(--r-full);
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: var(--s-4);
-        }
-        .program-icon {
-            width: 52px; height: 52px;
-            border-radius: var(--r-lg);
-            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
-            color: var(--blue-700);
-            display: grid; place-items: center;
-            font-size: 1.3rem;
-            margin-bottom: var(--s-4);
-        }
-        [data-theme="dark"] .program-icon {
-            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
-            color: var(--sky-400);
-        }
-        .program-card h4 {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-            letter-spacing: -0.01em;
-        }
-        .program-card p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
-
-        /* =========================================================
-           SKILLS GRID
-           ========================================================= */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--s-5);
-        }
-        .skill-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-2xl);
-            padding: var(--s-8);
-            position: relative;
-            overflow: hidden;
-            transition: all var(--dur-base) var(--ease-out);
-            box-shadow: var(--shadow-sm);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .skill-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: var(--card-accent, var(--gradient-royal));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--dur-slow) var(--ease-out);
-        }
-        .skill-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--border-default);
-        }
-        .skill-card:hover::before { transform: scaleX(1); }
-
-        .skill-card:nth-child(1) { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
-        .skill-card:nth-child(2) { --card-accent: linear-gradient(135deg, #ec4899, #f43f5e); }
-        .skill-card:nth-child(3) { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
-        .skill-card:nth-child(4) { --card-accent: linear-gradient(135deg, #7c3aed, #ec4899); }
-        .skill-card:nth-child(5) { --card-accent: linear-gradient(135deg, #2d8a4e, var(--sky-500)); }
-        .skill-card:nth-child(6) { --card-accent: linear-gradient(135deg, #f97316, var(--amber-500)); }
-        .skill-card:nth-child(7) { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-600)); }
-        .skill-card:nth-child(8) { --card-accent: linear-gradient(135deg, #ef4444, #f97316); }
-
-        .skill-icon {
-            width: 56px; height: 56px;
-            border-radius: var(--r-lg);
-            background: linear-gradient(135deg, var(--blue-50), var(--sky-100));
-            color: var(--blue-700);
-            display: grid; place-items: center;
-            font-size: 1.4rem;
-            margin-bottom: var(--s-4);
-        }
-        [data-theme="dark"] .skill-icon {
-            background: linear-gradient(135deg, rgba(30, 79, 216, 0.15), rgba(14, 165, 233, 0.1));
-            color: var(--sky-400);
-        }
-        .skill-card h4 {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-            letter-spacing: -0.01em;
-        }
-        .skill-card p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.65;
-            margin-bottom: var(--s-4);
-            flex-grow: 1;
-        }
-        .teacher-profile {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 8px 14px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-full);
-            margin-top: auto;
-            transition: all var(--dur-fast);
-        }
-        .skill-card:hover .teacher-profile {
-            background: var(--blue-50);
-            border-color: var(--blue-100);
-        }
-        [data-theme="dark"] .skill-card:hover .teacher-profile {
-            background: rgba(30, 79, 216, 0.12);
-            border-color: rgba(59, 130, 246, 0.25);
-        }
-        .teacher-avatar {
-            width: 32px; height: 32px;
-            border-radius: 50%;
-            background: var(--gradient-royal);
-            color: white;
-            display: grid; place-items: center;
-            font-weight: 700;
-            font-size: 0.75rem;
-            flex-shrink: 0;
-        }
-        .teacher-name {
-            font-weight: 600;
-            font-size: 0.825rem;
-            color: var(--text-primary);
-        }
-
-        /* =========================================================
-           TEACHERS GRID
-           ========================================================= */
-        .teachers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--s-5);
-        }
-        .teacher-card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-2xl);
-            padding: var(--s-8) var(--s-6);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            transition: all var(--dur-base) var(--ease-out);
-            box-shadow: var(--shadow-sm);
-        }
-        .teacher-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: var(--card-accent, var(--gradient-royal));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--dur-slow) var(--ease-out);
-        }
-        .teacher-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--border-default);
-        }
-        .teacher-card:hover::before { transform: scaleX(1); }
-
-        .teacher-card:nth-child(1)  { --card-accent: linear-gradient(135deg, var(--amber-500), var(--amber-400)); }
-        .teacher-card:nth-child(2)  { --card-accent: linear-gradient(135deg, #a8553c, #fb923c); }
-        .teacher-card:nth-child(3)  { --card-accent: linear-gradient(135deg, #7c3aed, #ec4899); }
-        .teacher-card:nth-child(4)  { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-400)); }
-        .teacher-card:nth-child(5)  { --card-accent: linear-gradient(135deg, #2d8a4e, var(--sky-500)); }
-        .teacher-card:nth-child(6)  { --card-accent: linear-gradient(135deg, var(--amber-500), #ef4444); }
-        .teacher-card:nth-child(7)  { --card-accent: linear-gradient(135deg, var(--blue-600), var(--sky-500)); }
-        .teacher-card:nth-child(8)  { --card-accent: linear-gradient(135deg, #ec4899, #f43f5e); }
-        .teacher-card:nth-child(9)  { --card-accent: linear-gradient(135deg, #f97316, var(--amber-500)); }
-        .teacher-card:nth-child(10) { --card-accent: linear-gradient(135deg, var(--sky-500), var(--blue-600)); }
-        .teacher-card:nth-child(11) { --card-accent: linear-gradient(135deg, #ef4444, #f97316); }
-        .teacher-card:nth-child(12) { --card-accent: linear-gradient(135deg, #8b5cf6, var(--blue-400)); }
-        .teacher-card:nth-child(13) { --card-accent: linear-gradient(135deg, #059669, var(--amber-400)); }
-        .teacher-card:nth-child(14) { --card-accent: linear-gradient(135deg, var(--blue-700), var(--sky-400)); }
-        .teacher-card:nth-child(15) { --card-accent: linear-gradient(135deg, #dc2626, var(--amber-500)); }
-
-        .teacher-image {
-            width: 88px; height: 88px;
-            border-radius: 50%;
-            margin: 0 auto var(--s-4);
-            background: var(--card-accent, var(--gradient-royal));
-            display: grid; place-items: center;
-            color: white;
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 600;
-            position: relative;
-            box-shadow: var(--shadow-md);
-            transition: transform var(--dur-base) var(--ease-out);
-        }
-        .teacher-card:hover .teacher-image {
-            transform: scale(1.06);
-        }
-        .age-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--card-accent, var(--gradient-royal));
-            color: white;
-            border-radius: var(--r-full);
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            margin-bottom: var(--s-3);
-        }
-        .teacher-card h4 {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-            letter-spacing: -0.01em;
-        }
-        .teacher-full-name {
-            font-size: 0.85rem;
-            color: var(--text-tertiary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            font-weight: 500;
-        }
-        .teacher-full-name i {
-            color: var(--amber-500);
-            font-size: 0.8rem;
-        }
-
-        /* =========================================================
-           FOOTER — Identical to index.html
-           ========================================================= */
-        .footer {
-            background: var(--blue-950);
-            color: rgba(255,255,255,0.75);
-            padding: var(--s-20) 0 var(--s-8);
-            position: relative;
-            overflow: hidden;
-        }
-        .footer::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.15), transparent 50%),
-                radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.08), transparent 50%);
-            pointer-events: none;
-        }
-        .footer > * { position: relative; z-index: 1; }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-            gap: var(--s-12);
-            margin-bottom: var(--s-12);
-        }
-        .footer-brand .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            margin-bottom: var(--s-5);
-            color: white;
-            font-weight: 700;
-            font-size: 1rem;
-        }
-        .footer-brand .footer-logo-mark {
-            width: 40px; height: 40px;
-            border-radius: var(--r-md);
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
-            color: var(--amber-400);
-            display: grid; place-items: center;
-            font-size: 1rem;
-            box-shadow: var(--shadow-md);
-        }
-        .footer-tagline {
-            font-family: var(--font-display);
-            font-style: italic;
-            font-weight: 400;
-            font-size: var(--fs-lg);
-            color: var(--amber-300);
-            margin-bottom: var(--s-5);
-            line-height: 1.5;
-            letter-spacing: -0.01em;
-        }
-        .footer-brand > p {
-            font-size: 0.875rem;
-            line-height: 1.7;
-            margin-bottom: var(--s-6);
-            max-width: 360px;
-        }
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-2);
-            font-size: 0.825rem;
-            font-style: normal;
-        }
-        .footer-contact-item {
-            display: flex;
-            align-items: center;
-            gap: var(--s-2);
-            color: rgba(255,255,255,0.7);
-        }
-        .footer-contact-item i { color: var(--amber-400); width: 14px; font-size: 0.8rem; }
-
-        .footer-col h4 {
-            color: white;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            margin-bottom: var(--s-5);
-        }
-        .footer-links {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-3);
-        }
-        .footer-links a {
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.65);
-            transition: color var(--dur-fast);
-            font-weight: 500;
-        }
-        .footer-links a:hover { color: var(--amber-300); }
-
-        .footer-newsletter p {
-            font-size: 0.875rem;
-            margin-bottom: var(--s-4);
-            line-height: 1.6;
-        }
-        .newsletter-form {
-            display: flex;
-            gap: var(--s-2);
-            margin-bottom: var(--s-5);
-        }
-        .newsletter-form input {
-            flex: 1;
-            padding: 11px 14px;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: var(--r-md);
-            color: white;
-            font-family: var(--font-body);
-            font-size: 0.85rem;
-            min-width: 0;
-            transition: all var(--dur-fast);
-        }
-        .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
-        .newsletter-form input:focus {
-            outline: none;
-            border-color: var(--amber-400);
-            background: rgba(255,255,255,0.1);
-        }
-        .newsletter-form button {
-            padding: 11px 18px;
-            background: var(--amber-500);
-            color: var(--blue-950);
-            border-radius: var(--r-md);
-            font-weight: 700;
-            font-size: 0.85rem;
-            transition: background var(--dur-fast);
-        }
-        .newsletter-form button:hover { background: var(--amber-400); }
-
-        .social-links { display: flex; gap: var(--s-2); }
-        .social-links a {
-            width: 38px; height: 38px;
-            border-radius: var(--r-md);
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
-            display: grid; place-items: center;
-            color: rgba(255,255,255,0.7);
-            transition: all var(--dur-fast);
-            font-size: 0.9rem;
-        }
-        .social-links a:hover {
-            background: var(--amber-500);
-            color: var(--blue-950);
-            border-color: var(--amber-500);
-            transform: translateY(-2px);
-        }
-
-        .footer-bottom {
-            padding-top: var(--s-8);
-            border-top: 1px solid rgba(255,255,255,0.08);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: var(--s-4);
-            font-size: 0.78rem;
-            color: rgba(255,255,255,0.5);
-        }
-        .footer-legal { display: flex; gap: var(--s-5); }
-        .footer-legal a { transition: color var(--dur-fast); }
-        .footer-legal a:hover { color: var(--amber-300); }
-
-        /* =========================================================
-           REVEAL ANIMATIONS
-           ========================================================= */
-        .reveal {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
-        }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-stagger > * {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
-        }
-        .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
-        .reveal-stagger.visible > *:nth-child(1)  { transition-delay: 0ms; }
-        .reveal-stagger.visible > *:nth-child(2)  { transition-delay: 60ms; }
-        .reveal-stagger.visible > *:nth-child(3)  { transition-delay: 120ms; }
-        .reveal-stagger.visible > *:nth-child(4)  { transition-delay: 180ms; }
-        .reveal-stagger.visible > *:nth-child(5)  { transition-delay: 240ms; }
-        .reveal-stagger.visible > *:nth-child(6)  { transition-delay: 300ms; }
-        .reveal-stagger.visible > *:nth-child(7)  { transition-delay: 360ms; }
-        .reveal-stagger.visible > *:nth-child(8)  { transition-delay: 420ms; }
-        .reveal-stagger.visible > *:nth-child(9)  { transition-delay: 480ms; }
-        .reveal-stagger.visible > *:nth-child(10) { transition-delay: 540ms; }
-        .reveal-stagger.visible > *:nth-child(11) { transition-delay: 600ms; }
-        .reveal-stagger.visible > *:nth-child(12) { transition-delay: 660ms; }
-        .reveal-stagger.visible > *:nth-child(13) { transition-delay: 720ms; }
-        .reveal-stagger.visible > *:nth-child(14) { transition-delay: 780ms; }
-        .reveal-stagger.visible > *:nth-child(15) { transition-delay: 840ms; }
-
-        /* =========================================================
-           RESPONSIVE
-           ========================================================= */
-        @media (max-width: 1280px) {
-            .story-layout { grid-template-columns: 1fr; gap: var(--s-12); }
-            .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
-            .footer-newsletter { grid-column: 1 / -1; }
-        }
-        @media (max-width: 1024px) {
-            :root { --sidebar-w: 280px; }
-            .programs-grid, .skills-grid, .teachers-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 900px) {
-            .sidebar { transform: translateX(-100%); box-shadow: none; }
-            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
-            .main-content { margin-left: 0; }
-            .mobile-toggle { display: flex; }
-            .page-hero { padding: var(--s-24) var(--s-6) var(--s-20); }
-            .hero-stats { grid-template-columns: repeat(2, 1fr); }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
-            .footer-brand { grid-column: 1 / -1; }
-        }
-        @media (max-width: 640px) {
-            .container { padding: 0 var(--s-5); }
-            .section { padding: var(--s-20) 0; }
-            .programs-grid, .skills-grid, .teachers-grid { grid-template-columns: 1fr; }
-            .timetable-card { padding: var(--s-6); }
-            .timetable-header { flex-direction: column; align-items: flex-start; }
-            .filter-tabs { width: 100%; overflow-x: auto; flex-wrap: nowrap; }
-            .footer-grid { grid-template-columns: 1fr; }
-            .footer-bottom { flex-direction: column; text-align: center; }
-            .footer-legal { flex-wrap: wrap; justify-content: center; }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-            .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
-            .orb { animation: none; }
-        }
-
-        @media print {
-            .sidebar, .mobile-toggle, .ambient-bg, .noise-overlay, .timetable-actions, .filter-tabs, .footer { display: none !important; }
-            .main-content { margin-left: 0; }
-            body { background: white !important; color: black !important; }
-            .page-hero { padding: var(--s-8) var(--s-4); color: black; }
-            .hero-bg { display: none; }
-            .timetable-card, .skill-card, .program-card, .teacher-card {
-                box-shadow: none !important;
-                border: 1px solid #ccc !important;
-                break-inside: avoid;
-                background: white !important;
-            }
-        }
-    </style>
+/* ============ RESPONSIVE ============ */
+@media(min-width:2000px){.dashboard-container{max-width:1440px}}
+@media(max-width:1280px){
+  .quick-stats{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+  .footer-newsletter{grid-column:1/-1}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-clock-widget{max-width:400px;margin:0 auto}
+}
+@media(max-width:1024px){:root{--sidebar-w:280px}}
+@media(max-width:900px){
+  html{scroll-padding-top:calc(var(--bar-h) + 14px)}
+  .mobile-bar{display:flex}
+  .sidebar{transform:translateX(-105%);width:min(86vw,340px);box-shadow:none;z-index:1002}
+  .sidebar.open{transform:none;box-shadow:var(--shadow-2xl)}
+  .sidebar .st{opacity:0;transform:translateX(-16px);transition:opacity .5s var(--ease-expo),transform .5s var(--ease-expo)}
+  .sidebar.open .st{opacity:1;transform:none}
+  .sidebar.open .sidebar-header.st{transition-delay:.06s}
+  .sidebar.open .nav-section:nth-of-type(1).st{transition-delay:.12s}
+  .sidebar.open .nav-section:nth-of-type(2).st{transition-delay:.2s}
+  .sidebar.open .nav-section:nth-of-type(3).st{transition-delay:.28s}
+  .sidebar.open .sidebar-footer.st{transition-delay:.36s}
+  .main-content{margin-left:0}
+  .page-hero{padding-top:calc(var(--bar-h) + 3rem)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:640px){
+  .quick-stats{grid-template-columns:1fr 1fr}
+  .stat-card{padding:1rem}
+  .stat-icon-wrap{width:40px;height:40px;font-size:1rem}
+  .stat-value{font-size:1.25rem}
+  .day-pills{gap:.35rem}
+  .day-pill{min-width:80px;padding:.75rem .5rem}
+  .day-date{font-size:1.25rem}
+  .activity-card{padding:1.25rem}
+  .activity-header{flex-direction:column;align-items:flex-start}
+  .activity-badges{margin-top:.5rem}
+  .activity-footer{flex-direction:column;align-items:stretch}
+  .activity-progress{min-width:0}
+  .activity-actions{justify-content:flex-end}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .footer-legal{justify-content:center}
+  .newsletter-form{flex-direction:column}
+  .schedule-header{flex-direction:column;align-items:flex-start}
+  .schedule-meta{width:100%;justify-content:space-between}
+}
+@media(max-width:400px){
+  .quick-stats{grid-template-columns:1fr}
+  .day-pill{min-width:70px}
+  .day-name{font-size:.65rem}
+  .day-count{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal-stagger>*{opacity:1;transform:none}
+  .orb{animation:none}
+  .cursor-dot,.cursor-ring{display:none}
+}
+@media print{
+  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop{display:none!important}
+  .main-content{margin-left:0}
+  body{background:#fff;color:#000}
+  .page-hero{padding:2rem 1rem;color:#000}
+  .hero-bg{display:none}
+  .activity-card{box-shadow:none!important;border:1px solid #ccc!important;break-inside:avoid;background:#fff!important}
+}
+</style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+<div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-logo"><i class="fas fa-heart"></i></div></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="ambient-bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div class="noise-overlay" aria-hidden="true"></div>
 
-    <!-- Ambient background -->
-    <div class="ambient-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<header class="mobile-bar">
+  <a href="../index.html" class="mobile-logo" aria-label="KE0274 PEFA Mfangano CYDC — Home"><span class="mark" aria-hidden="true"><i class="fas fa-heart"></i></span><span>KE0274 PEFA · Mfangano CYDC</span></a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"><i class="fas fa-bars" aria-hidden="true"></i></button>
+</header>
+<div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+<nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="sidebar-header st">
+    <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+      <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+      <div class="sidebar-logo-text"><span class="sidebar-logo-title">KE0274 PEFA</span><span class="sidebar-logo-sub">Mfangano CYDC</span></div>
+    </a>
+  </div>
+  <div class="sidebar-nav">
+    <div class="nav-section st">
+      <div class="nav-section-title">Main</div>
+      <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+          <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+          <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+          <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+          <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+        </div>
+      </div>
     </div>
-    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="nav-section st">
+      <div class="nav-section-title">Resources</div>
+      <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div></a></div>
+      <div class="nav-item active">
+        <div class="nav-link active" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="timetable.html" class="dropdown-link active" role="menuitem" aria-current="page"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+          <a href="assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+          <a href="results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../newsandupdates/newsandupdates.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div></a></div>
+    </div>
+    <div class="nav-section st">
+      <div class="nav-section-title">More</div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+          <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../achievments/achievment.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div></a></div>
+      <div class="nav-item"><a href="../inventory/inventory.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div></a></div>
+      <div class="nav-item"><a href="../chatsupport/chat-support.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div></a></div>
+    </div>
+  </div>
+  <div class="sidebar-footer st">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><i class="fas fa-moon" aria-hidden="true"></i><span>Dark Mode</span></button>
+  </div>
+</nav>
 
-    <!-- Mobile Toggle -->
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
+<main class="main-content" id="main">
+  <!-- PAGE HERO -->
+  <section class="page-hero" id="hero" aria-labelledby="page-title">
+    <div class="hero-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2400&q=85" alt="" fetchpriority="high" decoding="async"/></div>
+    <div class="hero-grid-pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content" id="heroContent">
+        <div class="hero-breadcrumb"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span><span class="sep">/</span><span>Portal</span><span class="sep">/</span><span class="current">Timetable</span></div>
+        <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span><span>Student Portal · Live Schedule</span></div>
+        <h1 class="hero-title" id="page-title">Your weekly <span class="italic">schedule.</span></h1>
+        <p class="hero-subtitle">Plan your week with precision. Track sessions, manage priorities, and stay on top of your holistic development journey at KE0274 PEFA Mfangano CYDC.</p>
+      </div>
+      <div class="hero-clock-widget" id="clockWidget">
+        <div class="clock-label">Current Time · Mfangano</div>
+        <div class="clock-time" id="clockTime">--:--</div>
+        <div class="clock-date" id="clockDate">Loading...</div>
+        <div class="clock-status"><span class="dot" aria-hidden="true"></span><span id="clockStatus">On Schedule</span></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sidebar Navigation — EXACTLY matching index.html structure -->
-    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
-        <div class="sidebar-header">
-            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
-                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                <div class="sidebar-logo-text">
-                    <span class="sidebar-logo-title">KE0274 PEFA</span>
-                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
-                </div>
-            </a>
+  <!-- TIMETABLE DASHBOARD -->
+  <section class="timetable-dashboard" aria-labelledby="dashboard-title">
+    <div class="dashboard-container">
+      <h2 id="dashboard-title" class="skip-link">Schedule Dashboard</h2>
+
+      <!-- Quick Stats -->
+      <div class="quick-stats reveal-stagger">
+        <div class="stat-card">
+          <div class="stat-card-inner">
+            <div class="stat-icon-wrap"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
+            <div class="stat-info"><div class="stat-value" data-count="8">0</div><div class="stat-label">Sessions Today</div></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-inner">
+            <div class="stat-icon-wrap"><i class="fas fa-clock" aria-hidden="true"></i></div>
+            <div class="stat-info"><div class="stat-value" data-count="5" data-suffix="h">0</div><div class="stat-label">Learning Hours</div></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-inner">
+            <div class="stat-icon-wrap"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+            <div class="stat-info"><div class="stat-value" data-count="75" data-suffix="%">0</div><div class="stat-label">Attendance</div></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-inner">
+            <div class="stat-icon-wrap"><i class="fas fa-fire" aria-hidden="true"></i></div>
+            <div class="stat-info"><div class="stat-value" data-count="12">0</div><div class="stat-label">Day Streak</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day Selector -->
+      <div class="day-selector reveal">
+        <div class="day-selector-label"><span>Select Day</span></div>
+        <div class="day-pills" id="dayPills" role="tablist" aria-label="Select day">
+          <button class="day-pill" data-day="mon" role="tab" aria-selected="false">
+            <div class="day-name">Mon</div>
+            <div class="day-date">12</div>
+            <div class="day-count">0 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill" data-day="tue" role="tab" aria-selected="false">
+            <div class="day-name">Tue</div>
+            <div class="day-date">13</div>
+            <div class="day-count">0 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill" data-day="wed" role="tab" aria-selected="false">
+            <div class="day-name">Wed</div>
+            <div class="day-date">14</div>
+            <div class="day-count">0 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill" data-day="thu" role="tab" aria-selected="false">
+            <div class="day-name">Thu</div>
+            <div class="day-date">15</div>
+            <div class="day-count">0 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill" data-day="fri" role="tab" aria-selected="false">
+            <div class="day-name">Fri</div>
+            <div class="day-date">16</div>
+            <div class="day-count">0 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill today active" data-day="sat" role="tab" aria-selected="true">
+            <div class="day-name">Sat</div>
+            <div class="day-date">17</div>
+            <div class="day-count">8 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+          <button class="day-pill" data-day="sun" role="tab" aria-selected="false">
+            <div class="day-name">Sun</div>
+            <div class="day-date">18</div>
+            <div class="day-count">2 sessions</div>
+            <div class="day-dot"></div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Schedule -->
+      <div class="schedule-section reveal">
+        <div class="schedule-header">
+          <h3 class="schedule-title" id="scheduleTitle">Saturday · August 17, 2026</h3>
+          <div class="schedule-meta">
+            <div class="schedule-badge"><i class="fas fa-circle" aria-hidden="true"></i> <span id="sessionCount">8 Sessions · 5 Hours</span></div>
+            <div class="view-toggle" role="group" aria-label="View mode">
+              <button class="view-btn active" data-view="timeline">Timeline</button>
+              <button class="view-btn" data-view="grid">Grid</button>
+            </div>
+          </div>
         </div>
 
-        <div class="sidebar-nav">
-            <div class="nav-section">
-                <div class="nav-section-title">Main</div>
-                <div class="nav-item">
-                    <a href="../index.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
-                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
-                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
-                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
-                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
-                    </div>
-                </div>
+        <div class="timeline" id="scheduleTimeline">
+          <!-- 9:00 AM - Devotion -->
+          <div class="schedule-item completed">
+            <div class="time-column">
+              <div class="time-label">9:00 AM</div>
+              <div class="time-duration">30 min</div>
+              <div class="time-dot"></div>
             </div>
+            <div class="activity-card" data-category="spiritual">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual Formation</div>
+                  <h4 class="activity-title">Morning Devotion & Prayer</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Pastor James Odhiambo</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Begin the day with worship, scripture reading, and corporate prayer. Today's focus: Gratitude and thanksgiving for God's faithfulness.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Main Chapel</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-book-open" aria-hidden="true"></i> Notes</button></div>
+              </div>
+            </div>
+          </div>
 
-            <div class="nav-section">
-                <div class="nav-section-title">Resources</div>
-                <div class="nav-item">
-                    <a href="../learningresources/learningresources.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
-                    </a>
-                </div>
-                <div class="nav-item active">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="true" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="timetable.html" class="dropdown-link active" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
-                        <a href="assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
-                        <a href="results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
-                    </a>
-                </div>
+          <!-- 9:30 AM - Academic -->
+          <div class="schedule-item completed">
+            <div class="time-column">
+              <div class="time-label">9:30 AM</div>
+              <div class="time-duration">90 min</div>
+              <div class="time-dot"></div>
             </div>
+            <div class="activity-card" data-category="academic">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academic Excellence</div>
+                  <h4 class="activity-title">CBC Mathematics — Grade 6-8</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Teacher Mary Akinyi</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span><span class="badge badge-required">Required</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Problem-solving with fractions, decimals, and percentages. Interactive activities aligned with Kenya's Competency-Based Curriculum.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Classroom A</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 45 Students</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-file-alt" aria-hidden="true"></i> Materials</button></div>
+              </div>
+            </div>
+          </div>
 
-            <div class="nav-section">
-                <div class="nav-section-title">More</div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
-                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../achievments/achievment.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../inventory/inventory.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../chatsupport/chat-support.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
-                    </a>
-                </div>
+          <!-- 11:00 AM - Snack -->
+          <div class="schedule-item current">
+            <div class="time-column">
+              <div class="time-label">11:00 AM</div>
+              <div class="time-duration">30 min</div>
+              <div class="time-dot"></div>
             </div>
+            <div class="activity-card current" data-category="nutrition">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-utensils" aria-hidden="true"></i> Health & Nutrition</div>
+                  <h4 class="activity-title">Healthy Snack Break</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Nutrition Team</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-new"><i class="fas fa-bolt" aria-hidden="true"></i> In Progress</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Nutritious snack prepared with locally-sourced ingredients. Today: Fresh fruits, whole grain bread, and fortified porridge.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dining Hall</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-primary"><i class="fas fa-play" aria-hidden="true"></i> Check In</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11:30 AM - Life Skills -->
+          <div class="schedule-item">
+            <div class="time-column">
+              <div class="time-label">11:30 AM</div>
+              <div class="time-duration">60 min</div>
+              <div class="time-dot"></div>
+            </div>
+            <div class="activity-card" data-category="lifeskills">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-heart" aria-hidden="true"></i> Life Skills</div>
+                  <h4 class="activity-title">Financial Literacy — Saving & Budgeting</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Mr. Peter Ochieng</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-required">Required</span><span class="badge badge-priority">Priority</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Learn practical money management skills: how to save, budget, and make wise financial decisions. Interactive exercises with real-life scenarios.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Classroom B</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 38 Students</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-calendar-plus" aria-hidden="true"></i> Reminder</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12:30 PM - Lunch -->
+          <div class="schedule-item">
+            <div class="time-column">
+              <div class="time-label">12:30 PM</div>
+              <div class="time-duration">60 min</div>
+              <div class="time-dot"></div>
+            </div>
+            <div class="activity-card" data-category="nutrition">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-utensils" aria-hidden="true"></i> Health & Nutrition</div>
+                  <h4 class="activity-title">Lunch & Fellowship</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Kitchen Team</div>
+                </div>
+                <div class="activity-badges"></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Balanced meal with proteins, carbohydrates, and vegetables. Time to connect with peers and mentors in a relaxed setting.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dining Hall</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-info-circle" aria-hidden="true"></i> Menu</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1:30 PM - Recreation -->
+          <div class="schedule-item">
+            <div class="time-column">
+              <div class="time-label">1:30 PM</div>
+              <div class="time-duration">60 min</div>
+              <div class="time-dot"></div>
+            </div>
+            <div class="activity-card" data-category="recreation">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-running" aria-hidden="true"></i> Sports & Recreation</div>
+                  <h4 class="activity-title">Team Sports — Football & Netball</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Coach Daniel Otieno</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-new">New Activity</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Physical fitness through organized team sports. Develop teamwork, discipline, and leadership skills while staying active and healthy.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sports Field</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> 52 Students</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-users" aria-hidden="true"></i> Teams</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2:30 PM - Community -->
+          <div class="schedule-item">
+            <div class="time-column">
+              <div class="time-label">2:30 PM</div>
+              <div class="time-duration">60 min</div>
+              <div class="time-dot"></div>
+            </div>
+            <div class="activity-card" data-category="community">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-hands-helping" aria-hidden="true"></i> Community Service</div>
+                  <h4 class="activity-title">Environmental Stewardship — Tree Planting</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Ms. Grace Wanjiku</div>
+                </div>
+                <div class="activity-badges"><span class="badge badge-required">Required</span></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Plant indigenous trees around the centre and learn about environmental conservation. Contributing to a greener Mfangano Island.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Centre Grounds</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-leaf" aria-hidden="true"></i> Impact</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3:30 PM - Closing -->
+          <div class="schedule-item">
+            <div class="time-column">
+              <div class="time-label">3:30 PM</div>
+              <div class="time-duration">30 min</div>
+              <div class="time-dot"></div>
+            </div>
+            <div class="activity-card" data-category="spiritual">
+              <div class="activity-header">
+                <div class="activity-title-wrap">
+                  <div class="activity-category"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual Formation</div>
+                  <h4 class="activity-title">Closing Devotion & Reflection</h4>
+                  <div class="activity-facilitator"><i class="fas fa-user" aria-hidden="true"></i> Pastor James Odhiambo</div>
+                </div>
+                <div class="activity-badges"></div>
+              </div>
+              <div class="activity-body">
+                <p class="activity-description">Reflect on the day's lessons, share testimonies, and close with prayer. Take home key learnings and commitments for the week ahead.</p>
+                <div class="activity-details">
+                  <div class="activity-detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Main Chapel</div>
+                  <div class="activity-detail"><i class="fas fa-users" aria-hidden="true"></i> All Participants</div>
+                </div>
+              </div>
+              <div class="activity-footer">
+                <div class="activity-progress"><span class="progress-label">Progress</span><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div></div>
+                <div class="activity-actions"><button class="action-btn action-btn-ghost"><i class="fas fa-book" aria-hidden="true"></i> Journal</button></div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-                <span>Dark Mode</span>
-            </button>
+        <!-- Legend -->
+        <div class="legend reveal">
+          <div class="legend-title">Activity Categories</div>
+          <div class="legend-items">
+            <div class="legend-item"><span class="legend-color spiritual"></span> Spiritual Formation</div>
+            <div class="legend-item"><span class="legend-color academic"></span> Academic Excellence</div>
+            <div class="legend-item"><span class="legend-color lifeskills"></span> Life Skills</div>
+            <div class="legend-item"><span class="legend-color recreation"></span> Sports & Recreation</div>
+            <div class="legend-item"><span class="legend-color community"></span> Community Service</div>
+            <div class="legend-item"><span class="legend-color nutrition"></span> Health & Nutrition</div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="main-content" id="main">
-
-        <!-- ===== PAGE HERO ===== -->
-        <section class="page-hero" aria-labelledby="page-title">
-            <div class="hero-bg" aria-hidden="true">
-                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=2400&q=85" alt="" loading="eager" decoding="async">
-            </div>
-            <div class="hero-grid-pattern" aria-hidden="true"></div>
-
-            <div class="hero-inner">
-                <div class="hero-breadcrumb">
-                    <i class="fas fa-home" aria-hidden="true"></i>
-                    <span>Home</span>
-                    <span class="sep">/</span>
-                    <span>Student Portal</span>
-                    <span class="sep">/</span>
-                    <span>Timetable</span>
-                </div>
-
-                <div class="hero-eyebrow">
-                    <span class="pulse" aria-hidden="true"></span>
-                    <span>Saturday Program · FY26 Schedule</span>
-                </div>
-
-                <h1 class="hero-title" id="page-title">
-                    <span class="line">The participant</span>
-                    <span class="line"><span class="italic">timetable.</span></span>
-                    <span class="line"><span class="divider" aria-hidden="true"></span></span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    A carefully crafted Saturday schedule designed for holistic growth — academic sessions, skills development, and spiritual formation for all age groups at Sena Centre.
-                </p>
-
-                <div class="hero-stats" role="list" aria-label="Program at a glance">
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
-                        <div class="stat-number">8.5h</div>
-                        <div class="stat-label">Full Day Program</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Skills Offered</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
-                        <div class="stat-number">15</div>
-                        <div class="stat-label">Part-Time Staff</div>
-                    </div>
-                    <div class="hero-stat" role="listitem">
-                        <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                        <div class="stat-number">373</div>
-                        <div class="stat-label">Participants</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== WEEKLY SCHEDULE ===== -->
-        <section class="section" aria-labelledby="schedule-title">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-eyebrow">Weekly Schedule</div>
-                    <h2 class="section-title" id="schedule-title">Every <span class="italic">moment</span> matters.</h2>
-                    <p class="section-lede">Our carefully planned timetable balances academics, skills development, and spiritual growth for all participants.</p>
-                </div>
-
-                <div class="timetable-card reveal">
-                    <div class="timetable-header">
-                        <h3><i class="fas fa-table" aria-hidden="true"></i> Saturday Program Timetable</h3>
-                        <span class="timetable-subtitle">FY26 · All Age Groups · Sena Centre · Click any row for details</span>
-                    </div>
-
-                    <div class="filter-tabs" role="tablist" aria-label="Filter activities">
-                        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true"><i class="fas fa-th" aria-hidden="true"></i> All</button>
-                        <button class="filter-tab" data-filter="academic" role="tab"><i class="fas fa-book" aria-hidden="true"></i> Academic</button>
-                        <button class="filter-tab" data-filter="skills" role="tab"><i class="fas fa-tools" aria-hidden="true"></i> Skills</button>
-                        <button class="filter-tab" data-filter="spiritual" role="tab"><i class="fas fa-pray" aria-hidden="true"></i> Spiritual</button>
-                        <button class="filter-tab" data-filter="break" role="tab"><i class="fas fa-coffee" aria-hidden="true"></i> Breaks</button>
-                        <button class="filter-tab" data-filter="service" role="tab"><i class="fas fa-hands-helping" aria-hidden="true"></i> Service</button>
-                    </div>
-
-                    <div class="table-container">
-                        <table class="timetable-table" id="printableTimetable">
-                            <thead>
-                                <tr>
-                                    <th><i class="fas fa-clock" aria-hidden="true"></i> Time</th>
-                                    <th><i class="fas fa-calendar-check" aria-hidden="true"></i> Activity</th>
-                                    <th><i class="fas fa-user-tie" aria-hidden="true"></i> Details / Staff</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr data-type="service" data-details="Participants arrive at Sena Centre. Gates open at 6:45 AM. Late arrivals report to the main office.">
-                                    <td class="time-col">07:00 – 07:30 AM</td>
-                                    <td>Arrival <span class="activity-badge badge-service">Service</span></td>
-                                    <td>All Participants</td>
-                                </tr>
-                                <tr data-type="service" data-details="Participants clean their classrooms, compound, and common areas. Builds responsibility and teamwork.">
-                                    <td class="time-col">07:30 – 08:00 AM</td>
-                                    <td>Cleaning Service <span class="activity-badge badge-service">Service</span></td>
-                                    <td>All Part-Time Staff</td>
-                                </tr>
-                                <tr data-type="spiritual" data-details="Morning worship, prayer, and announcements. Participants gather in the main hall for spiritual formation.">
-                                    <td class="time-col">08:00 – 08:45 AM</td>
-                                    <td>Morning Assembly &amp; Devotion <span class="activity-badge badge-spiritual">Spiritual</span></td>
-                                    <td>Staff/CDW on Duty</td>
-                                </tr>
-                                <tr data-type="break" data-details="Nutritious breakfast served in the dining area. Menu rotates weekly for balanced nutrition.">
-                                    <td class="time-col">08:45 – 09:45 AM</td>
-                                    <td>Breakfast <span class="activity-badge badge-break">Break</span></td>
-                                    <td>Dining Area</td>
-                                </tr>
-                                <tr data-type="academic" data-details="Class teachers mark attendance register. Participants settle into their classrooms for the academic session.">
-                                    <td class="time-col">09:45 – 10:00 AM</td>
-                                    <td>Settling &amp; Marking Register <span class="activity-badge badge-academic">Academic</span></td>
-                                    <td>Class Teacher</td>
-                                </tr>
-                                <tr data-type="academic" data-details="Core academic subjects taught by age group. See Part-Time Staff Reference below for specific assignments.">
-                                    <td class="time-col">10:00 – 11:30 AM</td>
-                                    <td>Academic Session <span class="activity-badge badge-academic">Academic</span></td>
-                                    <td>By Age Group (See Staff Below)</td>
-                                </tr>
-                                <tr data-type="break" data-details="Short break for participants to transition to skills sessions. Light refreshments available.">
-                                    <td class="time-col">11:30 – 11:45 AM</td>
-                                    <td>Break &amp; Transition to Skills <span class="activity-badge badge-break">Break</span></td>
-                                    <td>—</td>
-                                </tr>
-                                <tr data-type="skills" data-details="Participants rotate through specialized skills: Piano, Art, Tailoring, Computer, Hairdressing, Music, Sports, and more.">
-                                    <td class="time-col">11:45 AM – 01:15 PM</td>
-                                    <td>Skills Session <span class="activity-badge badge-skills">Skills</span></td>
-                                    <td>Rotation: Piano, Art, Tailoring, Computer, etc.</td>
-                                </tr>
-                                <tr data-type="break" data-details="Balanced lunch served in the dining area. Participants eat together fostering community and fellowship.">
-                                    <td class="time-col">01:15 – 02:15 PM</td>
-                                    <td>Lunch <span class="activity-badge badge-break">Break</span></td>
-                                    <td>All Part-Time Staff</td>
-                                </tr>
-                                <tr data-type="academic" data-details="Rotating special programs: 1st Sat — Mentorship, 2nd Sat — ARISE Health, 3rd Sat — Discipleship, 4th Sat — Birthdays.">
-                                    <td class="time-col">02:15 – 03:00 PM</td>
-                                    <td>Special Program / Games <span class="activity-badge badge-academic">Academic</span></td>
-                                    <td>Rotating Activities (See Below)</td>
-                                </tr>
-                                <tr data-type="service" data-details="Final cleaning of classrooms and compound. Participants prepare the centre for the next week.">
-                                    <td class="time-col">03:00 – 03:30 PM</td>
-                                    <td>Service &amp; Cleaning <span class="activity-badge badge-service">Service</span></td>
-                                    <td>All Participants</td>
-                                </tr>
-                                <tr data-type="spiritual" data-details="Closing prayers, announcements, and dismissal. Football boys stay for additional training 3–5 PM.">
-                                    <td class="time-col">03:30 PM</td>
-                                    <td>Final Assembly &amp; Departure <span class="activity-badge badge-spiritual">Spiritual</span></td>
-                                    <td>Except Football Boys (3–5 PM)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="timetable-actions">
-                        <button class="btn btn-primary" id="printBtn">
-                            <i class="fas fa-print" aria-hidden="true"></i>
-                            <span>Print Schedule</span>
-                        </button>
-                        <button class="btn btn-outline" id="downloadBtn">
-                            <i class="fas fa-download" aria-hidden="true"></i>
-                            <span>Download PDF</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== SPECIAL PROGRAMS ===== -->
-        <section class="section alt-bg" aria-labelledby="programs-title">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-eyebrow">Rotating Weekly</div>
-                    <h2 class="section-title" id="programs-title">Saturday <span class="italic">special</span> programs.</h2>
-                    <p class="section-lede">Unique programs running from 2:15 – 3:00 PM each Saturday for holistic development.</p>
-                </div>
-
-                <div class="programs-grid reveal-stagger">
-                    <article class="program-card">
-                        <div class="program-week">1st Saturday</div>
-                        <div class="program-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
-                        <h4>Mentorship &amp; Leadership Training</h4>
-                        <p>Empowering participants aged 12+ with leadership skills, mentorship, and character development for future impact.</p>
-                    </article>
-                    <article class="program-card">
-                        <div class="program-week">2nd Saturday</div>
-                        <div class="program-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div>
-                        <h4>Sanitation &amp; Reproductive Health</h4>
-                        <p>ARISE program promoting hygiene, health awareness, and reproductive education in a safe, supportive environment.</p>
-                    </article>
-                    <article class="program-card">
-                        <div class="program-week">3rd Saturday</div>
-                        <div class="program-icon"><i class="fas fa-bible" aria-hidden="true"></i></div>
-                        <h4>Discipleship Sessions</h4>
-                        <p>Deepening faith through biblical teaching, worship, and spiritual formation guided by trained mentors.</p>
-                    </article>
-                    <article class="program-card">
-                        <div class="program-week">4th Saturday</div>
-                        <div class="program-icon"><i class="fas fa-birthday-cake" aria-hidden="true"></i></div>
-                        <h4>Birthday Celebrations</h4>
-                        <p>Celebrating our participants' special days with joy, recognition, and community fellowship.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== SKILLS SECTION ===== -->
-        <section class="section" aria-labelledby="skills-title">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-eyebrow">11:45 AM – 1:15 PM</div>
-                    <h2 class="section-title" id="skills-title">Skills offered &amp; <span class="italic">part-time staff.</span></h2>
-                    <p class="section-lede">Available during the skills session for participants ages 9–18. Each skill is facilitated by a dedicated part-time staff member.</p>
-                </div>
-
-                <div class="skills-grid reveal-stagger">
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
-                        <h4>Computer Studies</h4>
-                        <p>Digital literacy &amp; practical applications for the modern world.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">TB</div>
-                            <span class="teacher-name">Teacher Bernard</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-tshirt" aria-hidden="true"></i></div>
-                        <h4>Tailoring</h4>
-                        <p>Garment making, design &amp; entrepreneurship skills.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">TR</div>
-                            <span class="teacher-name">Teacher Ruth</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-cut" aria-hidden="true"></i></div>
-                        <h4>Hairdressing &amp; Barbering</h4>
-                        <p>Professional styling &amp; grooming techniques.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">TJ</div>
-                            <span class="teacher-name">Teacher Jesca</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
-                        <h4>Art &amp; Design</h4>
-                        <p>Creative expression through visual arts and design.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">TO</div>
-                            <span class="teacher-name">Teacher Osodo</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
-                        <h4>Music, Piano &amp; Band</h4>
-                        <p>Instrumental training, drama &amp; poetry expression.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">ST</div>
-                            <span class="teacher-name">Skills Team</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                        <h4>Soft Talents</h4>
-                        <p>Drama, music, poetry &amp; letter writing development.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">MH</div>
-                            <span class="teacher-name">Madam Hellen</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
-                        <h4>Interactive Sessions</h4>
-                        <p>Adolescent mentorship &amp; life guidance programs.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">MC</div>
-                            <span class="teacher-name">Mr. Cliff</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-running" aria-hidden="true"></i></div>
-                        <h4>Indoor &amp; Outdoor Games</h4>
-                        <p>Netball, Volleyball, Football &amp; teamwork building.</p>
-                        <div class="teacher-profile">
-                            <div class="teacher-avatar">TV</div>
-                            <span class="teacher-name">Teacher Victor / Cliff</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== CLASS TEACHERS REFERENCE ===== -->
-        <section class="section alt-bg" aria-labelledby="teachers-title">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-eyebrow">Academic Session</div>
-                    <h2 class="section-title" id="teachers-title">Part-time staff <span class="italic">reference.</span></h2>
-                    <p class="section-lede">Academic session groupings and assigned part-time staff by age group — 15 PTTs across 11 domain classes.</p>
-                </div>
-
-                <div class="teachers-grid reveal-stagger">
-
-                    <!-- 0–2 Years · Jireh -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">GO</div>
-                        <div class="age-badge">0–2 Years</div>
-                        <h4>Jireh</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Grace Oketch</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">LK</div>
-                        <div class="age-badge">0–2 Years</div>
-                        <h4>Jireh</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Lucy Auma Kwala</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">PO</div>
-                        <div class="age-badge">0–2 Years</div>
-                        <h4>Jireh</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Peres Anyango Okinyi</div>
-                    </article>
-
-                    <!-- 3–5 Years · Bethlehem -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">MA</div>
-                        <div class="age-badge">3–5 Years</div>
-                        <h4>Bethlehem</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Mary Akoth</div>
-                    </article>
-
-                    <!-- 6–8 Years · Bethel -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">DT</div>
-                        <div class="age-badge">6–8 Years</div>
-                        <h4>Bethel</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Damarice Thocho</div>
-                    </article>
-
-                    <!-- 9–11 Years · Nazareth YR1 & Jerusalem YR1 -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">CJ</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Nazareth Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Carolyne Jaoko</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">VO</div>
-                        <div class="age-badge">9–11 Years</div>
-                        <h4>Jerusalem Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Victor Okoth</div>
-                    </article>
-
-                    <!-- 12–14 Years · Nazareth YR2, Judea YR1 & YR2, Blessed YR1 & YR2, Jerusalem YR2 -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">DO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Nazareth Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Denish Okech</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">EW</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Judea Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elias Wanchara</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">EK</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Judea Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Elvis Kajole</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">HO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Blessed Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Hellen Odera</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">MO</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Jerusalem Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Margaret Otwo</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">VA</div>
-                        <div class="age-badge">12–14 Years</div>
-                        <h4>Blessed Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Vallary Ayuma</div>
-                    </article>
-
-                    <!-- 15–18 Years · Emmaus YR1 & YR2 -->
-                    <article class="teacher-card">
-                        <div class="teacher-image">CO</div>
-                        <div class="age-badge">15–18 Years</div>
-                        <h4>Emmaus Year 2</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Cliff Ochomo</div>
-                    </article>
-
-                    <article class="teacher-card">
-                        <div class="teacher-image">MT</div>
-                        <div class="age-badge">15–18 Years</div>
-                        <h4>Emmaus Year 1</h4>
-                        <div class="teacher-full-name"><i class="fas fa-user-tie" aria-hidden="true"></i> Maxwell Tom</div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FOOTER ===== -->
-        <footer class="footer" role="contentinfo">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                            <span>KE0274 PEFA Mfangano CYDC</span>
-                        </div>
-                        <p class="footer-tagline">Releasing children from poverty in Jesus' name.</p>
-                        <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
-                        <address class="footer-contact">
-                            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Sena Centre, PEFA Cathedral Sena</div>
-                            <div class="footer-contact-item"><i class="fas fa-location-arrow" aria-hidden="true"></i> Suba West, Homa Bay County, Kenya</div>
-                            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> info@ke0274pefa.org</div>
-                        </address>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Explore</h4>
-                        <ul class="footer-links">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="../studentleadership/leaders.html">Leadership</a></li>
-                            <li><a href="../academics/dreamachiever.html">Academics</a></li>
-                            <li><a href="../achievments/achievment.html">Achievements</a></li>
-                            <li><a href="../newsandupdates/newsandupdates.html">News &amp; Updates</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Resources</h4>
-                        <ul class="footer-links">
-                            <li><a href="../learningresources/learningresources.html">Learning Resources</a></li>
-                            <li><a href="timetable.html">Student Portal</a></li>
-                            <li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li>
-                            <li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li>
-                            <li><a href="../childprotection.html">Child Protection</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col footer-newsletter">
-                        <h4>Stay Connected</h4>
-                        <p>Receive quarterly updates on the lives being transformed through our work.</p>
-                        <form class="newsletter-form" aria-label="Newsletter subscription">
-                            <label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label>
-                            <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email">
-                            <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
-                        </form>
-                        <div class="social-links" aria-label="Social media">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div>
-                    <div class="footer-legal">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Child Protection Policy</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Safeguarding</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </main>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Theme toggle — identical to index.html
-        const themeToggle = document.getElementById('themeToggle');
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        applyTheme(savedTheme);
-
-        function applyTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            const icon = themeToggle.querySelector('i');
-            const label = themeToggle.querySelector('span');
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-        }
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            applyTheme(current === 'dark' ? 'light' : 'dark');
-        });
-
-        // Mobile sidebar — identical to index.html
-        const mobileToggle = document.getElementById('mobileToggle');
-        const sidebar = document.getElementById('sidebar');
-        mobileToggle.addEventListener('click', () => {
-            const isActive = sidebar.classList.toggle('active');
-            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
-            mobileToggle.setAttribute('aria-expanded', String(isActive));
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
-                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-                sidebar.classList.remove('active');
-                mobileToggle.querySelector('i').className = 'fas fa-bars';
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Dropdown toggle — identical to index.html
-        window.toggleDropdown = function(event, element) {
-            event.preventDefault();
-            event.stopPropagation();
-            const navItem = element.closest('.nav-item');
-            const isActive = navItem.classList.toggle('active');
-            element.setAttribute('aria-expanded', String(isActive));
-            document.querySelectorAll('.nav-item').forEach(item => {
-                if (item !== navItem) {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                }
-            });
-        };
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                });
-            }
-        });
-
-        // Scroll reveal
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
-        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#' || href.length < 2) return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Keyboard: Escape closes sidebar/dropdowns — identical to index.html
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                    mobileToggle.focus();
-                }
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
-                });
-            }
-        });
-
-        // Active link highlighting — identical to index.html
-        const currentPage = window.location.pathname.split('/').pop() || 'timetable.html';
-        document.querySelectorAll('.nav-link[href]').forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === currentPage) {
-                link.classList.add('active');
-                link.setAttribute('aria-current', 'page');
-            }
-        });
-
-        // Newsletter form — identical to index.html
-        const form = document.querySelector('.newsletter-form');
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const input = form.querySelector('input');
-                const btn = form.querySelector('button');
-                const original = btn.textContent;
-                btn.textContent = '✓ Subscribed';
-                btn.style.background = 'var(--amber-400)';
-                input.value = '';
-                setTimeout(() => {
-                    btn.textContent = original;
-                    btn.style.background = '';
-                }, 2800);
-            });
-        }
-
-        // Resize handler — identical to index.html
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                if (window.innerWidth > 900) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                }
-            }, 200);
-        });
-
-        // ===== FILTER TABS =====
-        const filterTabs = document.querySelectorAll('.filter-tab');
-        const tableRows = document.querySelectorAll('#printableTimetable tbody tr');
-
-        filterTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                filterTabs.forEach(t => {
-                    t.classList.remove('active');
-                    t.setAttribute('aria-selected', 'false');
-                });
-                tab.classList.add('active');
-                tab.setAttribute('aria-selected', 'true');
-
-                const filter = tab.getAttribute('data-filter');
-                tableRows.forEach(row => {
-                    const type = row.getAttribute('data-type');
-                    if (filter === 'all' || type === filter) {
-                        row.classList.remove('hidden-row');
-                    } else {
-                        row.classList.add('hidden-row');
-                    }
-                });
-            });
-        });
-
-        // ===== ROW EXPANSION =====
-        tableRows.forEach(row => {
-            row.addEventListener('click', () => {
-                tableRows.forEach(r => r.classList.remove('selected'));
-                row.classList.add('selected');
-
-                const details = row.getAttribute('data-details');
-                if (details) {
-                    let detailsRow = row.nextElementSibling;
-                    if (!detailsRow || !detailsRow.classList.contains('details-row')) {
-                        detailsRow = document.createElement('tr');
-                        detailsRow.classList.add('details-row');
-                        const td = document.createElement('td');
-                        td.colSpan = 3;
-                        td.innerHTML = `<div class="row-details expanded">
-                            <div class="row-details-content">
-                                <div class="detail-item"><i class="fas fa-info-circle"></i> <span>${details}</span></div>
-                            </div>
-                        </div>`;
-                        detailsRow.appendChild(td);
-                        row.parentNode.insertBefore(detailsRow, row.nextSibling);
-                    } else {
-                        const detailsDiv = detailsRow.querySelector('.row-details');
-                        detailsDiv.classList.toggle('expanded');
-                    }
-                }
-            });
-        });
-
-        // ===== PRINT =====
-        document.getElementById('printBtn')?.addEventListener('click', () => {
-            window.print();
-        });
-
-        // ===== DOWNLOAD =====
-        document.getElementById('downloadBtn')?.addEventListener('click', () => {
-            alert('PDF download feature coming soon! For now, use the print function to save as PDF.');
-        });
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-scripture reveal"><p>"Train a child in the way he should go; even when he is old he will not depart from it."</p><cite>— Proverbs 22:6</cite></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div><span>KE0274 PEFA Mfangano CYDC</span></div>
+          <p class="footer-tagline">Nurturing today for a stronger tomorrow.</p>
+          <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+          <address class="footer-contact">
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Sena Centre, PEFA Cathedral Sena, Mfangano Island</span></div>
+            <div class="footer-contact-item"><i class="fas fa-mail-bulk" aria-hidden="true"></i><span>P.O. Box 27-40319, Suba Central Sub-County, Homa Bay County, Kenya</span></div>
+            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:ke0274pefamfangano@gmail.com">ke0274pefamfangano@gmail.com</a></div>
+            <div class="footer-contact-item"><i class="fas fa-phone-alt" aria-hidden="true"></i><span><a href="tel:+254723447002">+254 723 447 002</a> · <a href="tel:+254720768958">+254 720 768 958</a> · <a href="tel:+254728729615">+254 728 729 615</a></span></div>
+            <div class="footer-contact-item"><i class="fas fa-globe" aria-hidden="true"></i><a href="https://pefamfanganoecdc.or.ke" target="_blank" rel="noopener">pefamfanganoecdc.or.ke</a></div>
+          </address>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../studentleadership/leaders.html">Leadership</a></li><li><a href="../academics/dreamachiever.html">Academics</a></li><li><a href="../achievments/achievment.html">Achievements</a></li><li><a href="../newsandupdates/newsandupdates.html">News & Updates</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul class="footer-links"><li><a href="../learningresources/learningresources.html">Learning Resources</a></li><li><a href="timetable.html">Student Portal</a></li><li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li><li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li><li><a href="../childprotection.html">Child Protection</a></li></ul></div>
+        <div class="footer-col footer-newsletter"><h4>Stay Connected</h4><p>Receive quarterly updates on the lives being transformed through our work.</p><form class="newsletter-form" aria-label="Newsletter subscription"><label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email"/><button type="submit" aria-label="Subscribe to newsletter">Subscribe</button></form><div class="social-links" aria-label="Social media"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Child Protection Policy</a><a href="#">Terms of Use</a><a href="#">Safeguarding</a></div></div>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s);};
+  var $$=function(s){return document.querySelectorAll(s);};
+  var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canHover=matchMedia('(hover: hover)').matches&&innerWidth>1024;
+  $('#currentYear').textContent=new Date().getFullYear();
+
+  var loader=$('#pageLoader');
+  setTimeout(function(){loader.classList.add('hidden');},2000);
+  addEventListener('load',function(){setTimeout(function(){loader.classList.add('hidden');},300);});
+
+  if(canHover&&!reduced){
+    var dot=$('#cursorDot'),ring=$('#cursorRing'),mx=0,my=0,rx=0,ry=0;
+    addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)';},{passive:true});
+    (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop);})();
+    $$('a,button,.nav-link,.activity-card,.dropdown-link,input,.day-pill').forEach(function(el){
+      el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-hover');});
+      el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-hover');});
     });
-    </script>
+  }
+
+  var hero=$('#hero');
+  new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)hero.classList.add('in-view');});},{threshold:.1}).observe(hero);
+  setTimeout(function(){$('#heroContent').classList.add('loaded');},400);
+
+  // Live Clock
+  function updateClock(){
+    var now=new Date();
+    var h=now.getHours(),m=now.getMinutes(),s=now.getSeconds();
+    var ampm=h>=12?'PM':'AM';
+    h=h%12||12;
+    var timeStr=h+':'+(m<10?'0':'')+m+' '+ampm;
+    $('#clockTime').textContent=timeStr;
+    var options={weekday:'long',year:'numeric',month:'long',day:'numeric'};
+    $('#clockDate').textContent=now.toLocaleDateString('en-US',options);
+    // Determine status
+    var currentHour=now.getHours(),currentMin=now.getMinutes();
+    var totalMin=currentHour*60+currentMin;
+    if(totalMin>=540&&totalMin<570){$('#clockStatus').textContent='Devotion Time';}
+    else if(totalMin>=570&&totalMin<660){$('#clockStatus').textContent='Academic Session';}
+    else if(totalMin>=660&&totalMin<690){$('#clockStatus').textContent='Snack Break';}
+    else if(totalMin>=690&&totalMin<750){$('#clockStatus').textContent='Life Skills';}
+    else if(totalMin>=750&&totalMin<810){$('#clockStatus').textContent='Lunch Time';}
+    else if(totalMin>=810&&totalMin<870){$('#clockStatus').textContent='Sports Time';}
+    else if(totalMin>=870&&totalMin<930){$('#clockStatus').textContent='Community Service';}
+    else if(totalMin>=930&&totalMin<960){$('#clockStatus').textContent='Closing Devotion';}
+    else{$('#clockStatus').textContent='On Schedule';}
+  }
+  updateClock();
+  setInterval(updateClock,1000);
+
+  var themeToggle=$('#themeToggle');
+  function applyTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);themeToggle.querySelector('i').className=t==='dark'?'fas fa-sun':'fas fa-moon';themeToggle.querySelector('span').textContent=t==='dark'?'Light Mode':'Dark Mode';}
+  applyTheme(localStorage.getItem('theme')||'light');
+  themeToggle.addEventListener('click',function(){applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');});
+
+  var sidebar=$('#sidebar'),mobileToggle=$('#mobileToggle'),backdrop=$('#navBackdrop');
+  function openNav(){sidebar.classList.add('open');backdrop.classList.add('show');document.body.classList.add('nav-locked');mobileToggle.setAttribute('aria-expanded','true');mobileToggle.querySelector('i').className='fas fa-times';mobileToggle.setAttribute('aria-label','Close navigation menu');}
+  function closeNav(){sidebar.classList.remove('open');backdrop.classList.remove('show');document.body.classList.remove('nav-locked');mobileToggle.setAttribute('aria-expanded','false');mobileToggle.querySelector('i').className='fas fa-bars';mobileToggle.setAttribute('aria-label','Open navigation menu');}
+  mobileToggle.addEventListener('click',function(){sidebar.classList.contains('open')?closeNav():openNav();});
+  backdrop.addEventListener('click',closeNav);
+
+  window.toggleDropdown=function(e,el){
+    e.preventDefault();e.stopPropagation();
+    var item=el.closest('.nav-item'),active=item.classList.toggle('active');
+    el.setAttribute('aria-expanded',String(active));
+    $$('.nav-item').forEach(function(i){if(i!==item){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');}});
+  };
+  addEventListener('click',function(e){if(!e.target.closest('.nav-item')){$$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');});}});
+
+  function count(el,target,dur){
+    dur=dur||2400;var suf=el.getAttribute('data-suffix')||'';var t0=performance.now();
+    (function u(now){var p=Math.min((now-t0)/dur,1);var e=p===1?1:1-Math.pow(2,-10*p);
+      el.textContent=Math.floor(e*target).toLocaleString()+suf;
+      if(p<1)requestAnimationFrame(u);else el.textContent=target.toLocaleString()+suf;})(t0);
+  }
+  var cObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.querySelectorAll('[data-count]').forEach(function(el){if(!el.dataset.done){el.dataset.done=1;count(el,parseInt(el.dataset.count));}});cObs.unobserve(en.target);}});},{threshold:.3});
+  $$('.quick-stats').forEach(function(s){cObs.observe(s);});
+
+  var rObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');rObs.unobserve(en.target);}});},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+  $$('.reveal,.reveal-stagger').forEach(function(el){rObs.observe(el);});
+
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=this.getAttribute('href');if(h.length<2)return;var t=document.querySelector(h);if(t){e.preventDefault();t.scrollIntoView({behavior:reduced?'auto':'smooth'});closeNav();}});});
+
+  var prog=$('#scrollProgress'),heroImg=document.querySelector('.hero-bg img'),ticking=false;
+  addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(function(){var h=document.documentElement;prog.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';if(heroImg&&h.scrollTop<innerHeight&&!reduced)heroImg.style.transform='scale(1.02) translateY('+(h.scrollTop*.25)+'px)';ticking=false;});ticking=true;}},{passive:true});
+
+  addEventListener('keydown',function(e){if(e.key==='Escape'){closeNav();$$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l){l.setAttribute('aria-expanded','false');l.focus();}});}});
+
+  var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(innerWidth>900)closeNav();},200);});
+
+  var form=document.querySelector('.newsletter-form');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();var inp=form.querySelector('input'),btn=form.querySelector('button'),orig=btn.textContent;btn.textContent='✓ Subscribed';inp.value='';setTimeout(function(){btn.textContent=orig;},2800);});}
+
+  // Day Selector
+  var dayPills=$$('.day-pill');
+  dayPills.forEach(function(pill){
+    pill.addEventListener('click',function(){
+      dayPills.forEach(function(p){p.classList.remove('active');p.setAttribute('aria-selected','false');});
+      pill.classList.add('active');pill.setAttribute('aria-selected','true');
+      var day=pill.getAttribute('data-day');
+      var dayNames={mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',fri:'Friday',sat:'Saturday',sun:'Sunday'};
+      var dayDate=pill.querySelector('.day-date').textContent;
+      $('#scheduleTitle').textContent=dayNames[day]+' · August '+dayDate+', 2026';
+      // Update session count based on day
+      var counts={mon:0,tue:0,wed:0,thu:0,fri:0,sat:8,sun:2};
+      var hours={mon:0,tue:0,wed:0,thu:0,fri:0,sat:5,sun:1};
+      $('#sessionCount').textContent=counts[day]+' Sessions · '+hours[day]+' Hours';
+    });
+  });
+
+  // View Toggle
+  var viewBtns=$$('.view-btn');
+  viewBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      viewBtns.forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+    });
+  });
+})();
+</script>
 </body>
 </html>
