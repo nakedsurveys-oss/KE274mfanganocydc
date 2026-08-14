@@ -4,10 +4,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <title>Achievements | KE0274 PEFA Mfangano CYDC</title>
-<meta name="description" content="Celebrate the academic, athletic, artistic, and spiritual achievements of students at KE0274 PEFA Mfangano Child Development Centre."/>
+<meta name="description" content="A journey of transformation — celebrate the academic, athletic, artistic, and spiritual milestones of KE0274 PEFA Mfangano CYDC since our launch in 2017."/>
 <meta name="theme-color" content="#0B1B33"/>
 <meta property="og:title" content="Achievements | KE0274 PEFA Mfangano CYDC"/>
-<meta property="og:description" content="Celebrating academic, athletic, artistic & spiritual milestones."/>
+<meta property="og:description" content="Nearly a decade of transformative — academic, athletic, artistic & spiritual milestones since 2017."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -26,7 +26,6 @@
   --gradient-hero:linear-gradient(135deg,var(--blue-950) 0%,var(--blue-900) 40%,var(--blue-800) 100%);
   --gradient-royal:linear-gradient(135deg,var(--blue-700),var(--blue-600));
   --gradient-warm:linear-gradient(135deg,var(--amber-600) 0%,var(--amber-400) 55%,var(--gold-400) 100%);
-  --gradient-gold:linear-gradient(135deg,var(--gold-400),var(--amber-300));
   --gradient-trophy:linear-gradient(135deg,var(--amber-500) 0%,var(--gold-400) 60%,var(--amber-300) 100%);
   --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.12) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.10) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.09) 0%,transparent 50%),radial-gradient(at 10% 90%,rgba(30,79,216,.07) 0%,transparent 45%);
   --shadow-sm:0 1px 2px rgba(11,27,51,.05),0 2px 6px rgba(11,27,51,.05);
@@ -36,13 +35,17 @@
   --shadow-2xl:0 28px 56px -14px rgba(11,27,51,.20),0 56px 112px -28px rgba(11,27,51,.30);
   --shadow-blue:0 16px 32px -8px rgba(30,79,216,.35);
   --shadow-gold:0 14px 28px -8px rgba(245,158,11,.38);
+  --shadow-trophy:0 20px 40px -12px rgba(245,158,11,.45),0 0 0 1px rgba(245,158,11,.1);
+  --shadow-glow-amber:0 0 40px rgba(245,158,11,.35),0 0 80px rgba(245,158,11,.15);
+  --shadow-glow-blue:0 0 40px rgba(59,130,246,.25),0 0 80px rgba(59,130,246,.1);
   --inset-light:inset 0 1px 0 rgba(255,255,255,.8);--inset-glass:inset 0 1px 0 rgba(255,255,255,.12);
   --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace;
   --track-tight:-.03em;--track-tighter:-.045em;--track-wide:.06em;--track-wider:.14em;--track-widest:.22em;
   --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
   --ease-expo:cubic-bezier(.16,1,.3,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
   --dur-fast:180ms;--dur-base:360ms;--dur-slow:640ms;--dur-cine:1200ms;
-  --sidebar-w:300px;--container:1320px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
+  --sidebar-w:300px;--container:1320px;--container-wide:1440px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
+  --panel-w:560px;
 }
 [data-theme="dark"]{
   --bg-page:#030812;--bg-surface:#081122;--bg-muted:#050C1A;--bg-glass:rgba(9,18,34,.78);
@@ -51,17 +54,19 @@
   --gradient-hero:linear-gradient(135deg,#010409 0%,#040A17 40%,#081325 100%);
   --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.22) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.16) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.10) 0%,transparent 50%);
   --shadow-sm:0 2px 6px rgba(0,0,0,.35);--shadow-md:0 8px 20px rgba(0,0,0,.45);--shadow-lg:0 16px 36px rgba(0,0,0,.5);--shadow-xl:0 28px 60px rgba(0,0,0,.55);
+  --shadow-glow-amber:0 0 40px rgba(245,158,11,.25),0 0 80px rgba(245,158,11,.12);
+  --shadow-glow-blue:0 0 40px rgba(59,130,246,.25),0 0 80px rgba(59,130,246,.12);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
 body{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text-primary);background:var(--bg-page);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;transition:background-color .8s var(--ease-expo),color .4s var(--ease-expo);font-feature-settings:"cv02","cv03","cv04","cv11"}
-body.nav-locked{overflow:hidden}
+body.nav-locked,body.panel-open{overflow:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
 button,input{font-family:inherit}
 button{cursor:pointer;border:none;background:none;color:inherit}
-::selection{background:var(--blue-600);color:#fff}
-:focus-visible{outline:2px solid var(--blue-500);outline-offset:3px;border-radius:var(--r-sm)}
+::selection{background:var(--amber-500);color:#fff}
+:focus-visible{outline:2px solid var(--amber-500);outline-offset:3px;border-radius:var(--r-sm)}
 .skip-link{position:absolute;top:-100px;left:1rem;background:var(--blue-900);color:#fff;padding:.75rem 1.25rem;border-radius:var(--r-md);font-weight:600;font-size:.875rem;z-index:10000;transition:top .2s}
 .skip-link:focus{top:1rem}
 
@@ -77,15 +82,15 @@ button{cursor:pointer;border:none;background:none;color:inherit}
 @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.08)}66%{transform:translate(-40px,50px) scale(.95)}}
 .noise-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;z-index:9999;mix-blend-mode:difference;transition:width .3s var(--ease-expo),height .3s var(--ease-expo),border-color .3s,background .3s,opacity .3s}
-.cursor-dot{width:6px;height:6px;background:var(--blue-600)}
-.cursor-ring{width:34px;height:34px;border:1px solid var(--blue-600);opacity:.55}
-body.cursor-hover .cursor-dot{width:10px;height:10px;background:var(--amber-400)}
-body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-400);opacity:.35}
+.cursor-dot{width:6px;height:6px;background:var(--amber-500)}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--amber-500);opacity:.55}
+body.cursor-hover .cursor-dot{width:10px;height:10px;background:var(--gold-400)}
+body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--gold-400);opacity:.35}
 @media(hover:none),(max-width:1024px){.cursor-dot,.cursor-ring{display:none!important}}
 .page-loader{position:fixed;inset:0;z-index:10001;background:var(--blue-950);display:grid;place-items:center;transition:opacity .7s var(--ease-expo),visibility .7s}
 .page-loader.hidden{opacity:0;visibility:hidden}
-.loader-logo{width:56px;height:56px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--amber-500),var(--gold-400));display:grid;place-items:center;color:var(--blue-950);font-size:1.3rem;animation:loaderPulse 1.6s ease-in-out infinite;box-shadow:0 0 56px rgba(245,158,11,.5)}
-@keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 56px rgba(245,158,11,.5)}50%{transform:scale(1.06);box-shadow:0 0 88px rgba(245,158,11,.7)}}
+.loader-logo{width:56px;height:56px;border-radius:var(--r-md);background:var(--gradient-trophy);display:grid;place-items:center;color:var(--blue-950);font-size:1.3rem;animation:loaderPulse 1.6s ease-in-out infinite;box-shadow:0 0 56px rgba(245,158,11,.6)}
+@keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 56px rgba(245,158,11,.6)}50%{transform:scale(1.06);box-shadow:0 0 88px rgba(245,158,11,.8)}}
 
 /* ============ MOBILE BAR / SIDEBAR ============ */
 .mobile-bar{position:fixed;top:0;left:0;right:0;height:calc(var(--bar-h) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);z-index:1001;display:none;align-items:center;justify-content:space-between;padding-left:clamp(.9rem,4vw,1.25rem);padding-right:clamp(.9rem,4vw,1.25rem);background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-hairline)}
@@ -125,57 +130,340 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 .sidebar-footer{margin-top:auto;padding-top:1.25rem;border-top:1px solid var(--border-hairline);flex-shrink:0}
 .theme-toggle{width:100%;padding:11px;background:var(--bg-muted);border:1px solid var(--border-subtle);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;gap:.5rem;font-size:.825rem;font-weight:600;transition:all .2s;min-height:44px}
 .theme-toggle:hover{background:var(--blue-900);color:#fff;border-color:var(--blue-900)}
-.main-content{margin-left:var(--sidebar-w);position:relative;z-index:2;transition:margin-left .5s var(--ease-expo);display:flex;flex-direction:column;min-height:100vh}
+.main-content{margin-left:var(--sidebar-w);position:relative;z-index:2;transition:margin-left .5s var(--ease-expo),padding-right .5s var(--ease-expo)}
+.main-content.panel-shift{padding-right:var(--panel-w)}
 
-/* ============ PORTAL ============ */
-.portal-section{flex:1;display:flex;flex-direction:column;min-height:0;position:relative;background:var(--bg-surface)}
-.portal-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1.25rem;background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-hairline);flex-shrink:0;z-index:10;box-shadow:var(--shadow-sm)}
-[data-theme="dark"] .portal-header{background:rgba(8,17,34,.6)}
-.portal-title-group{display:flex;align-items:center;gap:.85rem;min-width:0}
-.portal-icon{width:44px;height:44px;border-radius:var(--r-md);background:var(--gradient-trophy);color:var(--blue-950);display:grid;place-items:center;font-size:1.1rem;flex-shrink:0;box-shadow:var(--shadow-gold);transition:transform .4s var(--ease-spring);position:relative;overflow:hidden}
-.portal-icon::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%);animation:trophyShine 4s ease-in-out infinite}
-@keyframes trophyShine{0%,100%{transform:translateX(-100%) rotate(45deg)}50%{transform:translateX(100%) rotate(45deg)}}
-.portal-header:hover .portal-icon{transform:rotate(-6deg) scale(1.05)}
-.portal-title{font-family:var(--font-display);font-size:clamp(1rem,1.8vw,1.25rem);font-weight:500;color:var(--text-primary);letter-spacing:-.015em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.portal-subtitle{font-family:var(--font-mono);font-size:.68rem;color:var(--text-tertiary);font-weight:500;letter-spacing:var(--track-wide);text-transform:uppercase;margin-top:2px}
-.portal-status{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(45,138,78,.08);border:1px solid rgba(45,138,78,.22);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--forest-600);letter-spacing:var(--track-wide)}
-[data-theme="dark"] .portal-status{background:rgba(45,138,78,.15);color:var(--forest-400);border-color:rgba(74,222,128,.25)}
-.portal-status .dot{width:7px;height:7px;border-radius:50%;background:var(--forest-500);box-shadow:0 0 8px var(--forest-500);animation:statusPulse 2s ease-in-out infinite}
-@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:.45}}
+/* ============ PAGE HERO ============ */
+.page-hero{position:relative;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem) clamp(2.5rem,5vw,4rem);overflow:hidden}
+.page-hero-inner{max-width:var(--container-wide);margin:0 auto;display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+.hero-breadcrumb{display:inline-flex;align-items:center;gap:.55rem;padding:6px 14px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:var(--track-wide);color:var(--text-tertiary);margin-bottom:1.5rem;box-shadow:var(--shadow-sm)}
+.hero-breadcrumb i{color:var(--amber-500);font-size:.65rem}
+.hero-breadcrumb .sep{opacity:.35}
+.hero-breadcrumb .current{color:var(--text-primary);font-weight:600}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;padding:8px 16px;background:rgba(245,158,11,.10);border:1px solid rgba(245,158,11,.22);border-radius:var(--r-full);font-size:.7rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-600);margin-bottom:1.5rem}
+[data-theme="dark"] .hero-eyebrow{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.28);color:var(--amber-300)}
+.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--amber-500);animation:pulseRing 2.4s ease-out infinite}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(245,158,11,.7)}70%{box-shadow:0 0 0 12px rgba(245,158,11,0)}100%{box-shadow:0 0 0 0 rgba(245,158,11,0)}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.5rem,6vw,5rem);font-weight:400;line-height:1.02;letter-spacing:var(--track-tighter);margin-bottom:1.25rem;font-variation-settings:"opsz" 144}
+.hero-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--amber-500),var(--gold-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .hero-title .italic{background:linear-gradient(135deg,var(--amber-300),var(--gold-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-subtitle{font-size:clamp(1rem,1.4vw,1.125rem);color:var(--text-secondary);max-width:720px;line-height:1.75;margin-bottom:2rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;padding:10px 16px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-size:.78rem;font-weight:600;color:var(--text-primary);box-shadow:var(--shadow-sm);transition:all .25s var(--ease-expo)}
+.hero-badge:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border-default)}
+.hero-badge-icon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;color:#fff;flex-shrink:0}
+.hero-badge-icon.launch{background:var(--gradient-trophy)}
+.hero-badge-icon.impact{background:var(--gradient-royal)}
+.hero-badge-icon.certified{background:linear-gradient(135deg,var(--forest-500),var(--forest-400))}
+.hero-badge strong{color:var(--text-primary);font-weight:700}
 
-.portal-frame{flex:1;position:relative;background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid var(--border-default);border-radius:var(--r-xl);overflow:hidden;min-height:560px;margin:clamp(.75rem,1.5vw,1rem);box-shadow:var(--shadow-xl),var(--inset-glass);transition:all .5s var(--ease-expo)}
-.portal-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--amber-400),var(--gold-400),var(--blue-600));z-index:3}
-.portal-frame::after{content:'';position:absolute;bottom:-80px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(245,158,11,.08),transparent 70%);pointer-events:none;z-index:0}
-.portal-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;display:block;background:var(--bg-surface);z-index:2}
+/* ============ SECTION ============ */
+.section{position:relative;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem)}
+.section-inner{max-width:var(--container-wide);margin:0 auto}
+.section-header{margin-bottom:clamp(2rem,4vw,3rem);max-width:780px}
+.section-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--amber-600);margin-bottom:1rem}
+[data-theme="dark"] .section-eyebrow{color:var(--amber-300)}
+.section-eyebrow::before{content:'';width:32px;height:1px;background:currentColor}
+.section-title{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,3rem);font-weight:400;line-height:1.08;letter-spacing:var(--track-tighter);margin-bottom:.75rem;font-variation-settings:"opsz" 144}
+.section-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--amber-500),var(--gold-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .section-title .italic{background:linear-gradient(135deg,var(--amber-300),var(--gold-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.section-lede{font-size:clamp(.95rem,1.3vw,1.0625rem);color:var(--text-secondary);line-height:1.75}
 
-.portal-loader{position:absolute;inset:0;background:var(--bg-surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;z-index:5;transition:opacity var(--dur-base) var(--ease-expo),visibility var(--dur-base) var(--ease-expo)}
-.portal-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.loader-mark{width:76px;height:76px;border-radius:var(--r-xl);background:var(--gradient-trophy);display:grid;place-items:center;color:var(--blue-950);font-size:1.9rem;box-shadow:var(--shadow-lg),var(--inset-glass);position:relative;animation:loaderPulse2 2s ease-in-out infinite}
-.loader-mark::before{content:'';position:absolute;inset:-8px;border-radius:var(--r-2xl);border:2px solid transparent;border-top-color:var(--amber-400);border-right-color:var(--gold-400);animation:loaderSpin 1.5s linear infinite}
-.loader-mark::after{content:'';position:absolute;inset:0;border-radius:var(--r-xl);background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.3),transparent 60%)}
-@keyframes loaderPulse2{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-@keyframes loaderSpin{to{transform:rotate(360deg)}}
-.loader-text{text-align:center}
-.loader-title{font-family:var(--font-display);font-size:1.15rem;font-weight:500;margin-bottom:5px;letter-spacing:-.015em}
-.loader-subtitle{font-size:.85rem;color:var(--text-tertiary);font-weight:500}
-.loader-bar{width:220px;height:3px;background:var(--bg-muted);border-radius:var(--r-full);overflow:hidden;position:relative}
-.loader-bar::before{content:'';position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,var(--amber-400),var(--gold-400),var(--blue-600));border-radius:var(--r-full);animation:loaderBar 1.8s ease-in-out infinite}
-@keyframes loaderBar{0%{left:-40%}100%{left:100%}}
+/* ============ IMPACT STATS ============ */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);margin-bottom:clamp(2rem,4vw,3rem)}
+.stat-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:clamp(1.5rem,3vw,2rem);box-shadow:var(--shadow-sm);transition:all .4s var(--ease-expo);position:relative;overflow:hidden;text-align:center}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gradient-trophy));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease-expo)}
+.stat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.stat-card:hover::before{transform:scaleX(1)}
+.stat-card:nth-child(1){--card-accent:linear-gradient(90deg,var(--amber-500),var(--gold-400))}
+.stat-card:nth-child(2){--card-accent:linear-gradient(90deg,var(--blue-600),var(--sky-400))}
+.stat-card:nth-child(3){--card-accent:linear-gradient(90deg,var(--forest-500),var(--forest-400))}
+.stat-card:nth-child(4){--card-accent:linear-gradient(90deg,var(--purple-500),var(--pink-500))}
+.stat-icon{width:52px;height:52px;border-radius:var(--r-md);display:grid;place-items:center;font-size:1.25rem;color:#fff;margin:0 auto 1rem;box-shadow:var(--shadow-md);transition:transform .4s var(--ease-spring)}
+.stat-card:hover .stat-icon{transform:scale(1.08) rotate(-4deg)}
+.stat-card:nth-child(1) .stat-icon{background:var(--gradient-trophy)}
+.stat-card:nth-child(2) .stat-icon{background:var(--gradient-royal)}
+.stat-card:nth-child(3) .stat-icon{background:linear-gradient(135deg,var(--forest-500),var(--forest-400))}
+.stat-card:nth-child(4) .stat-icon{background:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
+.stat-number{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.75rem);font-weight:500;color:var(--text-primary);line-height:1;margin-bottom:.5rem;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+.stat-label{font-family:var(--font-mono);font-size:.72rem;font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase;color:var(--text-tertiary)}
 
-.portal-error{position:absolute;inset:0;background:var(--bg-surface);display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;z-index:6;padding:2rem;text-align:center}
-.portal-error.active{display:flex}
-.error-icon{width:64px;height:64px;border-radius:50%;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.22);display:grid;place-items:center;color:#ef4444;font-size:1.5rem}
-.error-title{font-family:var(--font-display);font-size:1.3rem;font-weight:500;letter-spacing:-.015em}
-.error-text{font-size:.925rem;color:var(--text-secondary);max-width:420px;line-height:1.7}
-.error-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-full);font-weight:700;font-size:.875rem;transition:all .25s var(--ease-expo);box-shadow:var(--shadow-gold);margin-top:.5rem}
-.error-btn:hover{transform:translateY(-3px);box-shadow:0 20px 40px -8px rgba(245,158,11,.5),0 0 48px rgba(245,158,11,.4)}
+/* ============ PREMIUM INTERACTIVE TIMELINE ============ */
+.timeline-section{position:relative;padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2rem);overflow:hidden}
+.timeline-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(245,158,11,.08) 0%,transparent 55%),radial-gradient(ellipse at 70% 80%,rgba(59,130,246,.06) 0%,transparent 55%);pointer-events:none;z-index:0}
+.timeline-section>*{position:relative;z-index:1}
+.timeline-section-inner{max-width:var(--container-wide);margin:0 auto}
 
-.portal-note{display:flex;align-items:center;justify-content:center;gap:.6rem;margin:.75rem clamp(.75rem,1.5vw,1rem) 0;font-family:var(--font-mono);font-size:.72rem;color:var(--text-tertiary);font-weight:500;letter-spacing:var(--track-wide);text-transform:uppercase;flex-wrap:wrap}
-.portal-note i{color:var(--forest-500);font-size:.85rem}
+.timeline-progress-rail{position:absolute;left:50%;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--amber-400) 0%,var(--gold-400) 20%,var(--blue-500) 50%,var(--forest-500) 75%,var(--purple-500) 100%);transform:translateX(-50%);border-radius:2px;overflow:hidden;opacity:.15;z-index:1}
+.timeline-progress-fill{position:absolute;top:0;left:0;width:100%;height:0;background:linear-gradient(180deg,var(--amber-400) 0%,var(--gold-400) 20%,var(--blue-500) 50%,var(--forest-500) 75%,var(--purple-500) 100%);border-radius:2px;transition:height .1s linear;box-shadow:0 0 12px rgba(245,158,11,.4),0 0 24px rgba(59,130,246,.2)}
+
+.timeline{position:relative;padding:clamp(2rem,4vw,3rem) 0}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,var(--border-default) 10%,var(--border-default) 90%,transparent);transform:translateX(-50%)}
+
+.timeline-item{position:relative;display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(1.5rem,3vw,3rem);align-items:start;margin-bottom:clamp(3rem,6vw,5rem);opacity:0;transform:translateY(40px);transition:opacity .8s var(--ease-expo),transform .8s var(--ease-expo)}
+.timeline-item.revealed{opacity:1;transform:translateY(0)}
+.timeline-item:last-child{margin-bottom:0}
+
+.timeline-item .tl-side-left{grid-column:1;text-align:right}
+.timeline-item .tl-side-right{grid-column:3;text-align:left}
+.timeline-item .tl-marker-wrap{grid-column:2;grid-row:1;display:flex;justify-content:center;position:relative;z-index:2}
+
+/* Alternating layout */
+.timeline-item.pos-left .tl-side-right{visibility:hidden}
+.timeline-item.pos-right .tl-side-left{visibility:hidden}
+
+.timeline-marker{width:56px;height:56px;border-radius:50%;background:var(--bg-surface);border:3px solid var(--marker-color,var(--amber-500));display:grid;place-items:center;font-size:1.05rem;color:var(--marker-color,var(--amber-500));box-shadow:0 0 0 6px var(--bg-page),0 8px 24px -4px rgba(0,0,0,.15);transition:transform .4s var(--ease-spring),box-shadow .4s;position:relative;z-index:3}
+.timeline-item.featured .timeline-marker{width:76px;height:76px;font-size:1.4rem;border-width:4px;box-shadow:0 0 0 8px var(--bg-page),var(--marker-glow,var(--shadow-glow-amber))}
+.timeline-item.revealed .timeline-marker{animation:markerPulse 2.4s ease-out}
+@keyframes markerPulse{0%{transform:scale(.7);opacity:0}40%{opacity:1}100%{transform:scale(1);opacity:1}}
+
+.timeline-marker::before{content:'';position:absolute;inset:-14px;border-radius:50%;border:1.5px solid var(--marker-color,var(--amber-500));opacity:0;transition:opacity .4s}
+.timeline-item.featured .timeline-marker::before{opacity:.25;animation:markerRing 3s ease-in-out infinite}
+@keyframes markerRing{0%,100%{transform:scale(1);opacity:.25}50%{transform:scale(1.15);opacity:.1}}
+
+.timeline-marker::after{content:'';position:absolute;left:50%;top:50%;width:32px;height:1px;background:var(--marker-color,var(--amber-500));opacity:.3}
+.timeline-item.pos-left .timeline-marker::after{left:auto;right:50%;transform:translateX(100%);width:60px}
+.timeline-item.pos-right .timeline-marker::after{left:50%;transform:translateX(0);width:60px}
+
+.timeline-date{font-family:var(--font-mono);font-size:.72rem;font-weight:700;letter-spacing:var(--track-wide);text-transform:uppercase;color:var(--marker-color,var(--amber-500));margin-bottom:.85rem;display:inline-flex;align-items:center;gap:.5rem;padding:5px 12px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);box-shadow:var(--shadow-sm)}
+.timeline-date i{font-size:.6rem}
+
+.timeline-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);padding:clamp(1.5rem,3vw,2rem);box-shadow:var(--shadow-md);transition:all .4s var(--ease-expo);position:relative;overflow:hidden;display:inline-block;max-width:440px;text-align:left;vertical-align:top}
+.timeline-item.featured .timeline-card{padding:clamp(2rem,4vw,2.5rem);box-shadow:var(--shadow-xl);border-color:var(--border-default);background:linear-gradient(180deg,var(--bg-surface) 0%,var(--bg-muted) 100%)}
+.timeline-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--marker-color,var(--amber-500)),transparent);opacity:.8}
+.timeline-item.featured .timeline-card::before{height:4px;background:linear-gradient(90deg,var(--marker-color,var(--amber-500)),var(--marker-color-2,var(--gold-400)));opacity:1}
+.timeline-card::after{content:'';position:absolute;inset:0;background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%),rgba(245,158,11,.08),transparent 65%);opacity:0;transition:opacity .45s;pointer-events:none;border-radius:var(--r-xl)}
+.timeline-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl)}
+.timeline-card:hover::after{opacity:1}
+.timeline-item.featured:hover .timeline-card{box-shadow:0 32px 64px -20px rgba(11,27,51,.25),0 0 0 1px var(--marker-color,var(--amber-500))}
+[data-theme="dark"] .timeline-card::after{background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%),rgba(245,158,11,.1),transparent 65%)}
+
+.timeline-card-badge{position:absolute;top:1rem;right:1rem;padding:4px 10px;background:var(--marker-color,var(--amber-500));color:#fff;border-radius:var(--r-full);font-size:.62rem;font-weight:700;letter-spacing:var(--track-wide);text-transform:uppercase;box-shadow:var(--shadow-sm);display:inline-flex;align-items:center;gap:4px}
+.timeline-card-badge i{font-size:.55rem}
+
+.timeline-card h3{font-family:var(--font-display);font-size:clamp(1.25rem,2.2vw,1.5rem);font-weight:500;color:var(--text-primary);letter-spacing:-.01em;margin-bottom:.85rem;line-height:1.25;padding-right:100px}
+.timeline-item.featured .timeline-card h3{font-size:clamp(1.5rem,2.8vw,1.85rem);padding-right:120px}
+
+.timeline-card p{color:var(--text-secondary);font-size:.925rem;line-height:1.75;margin-bottom:1rem}
+.timeline-item.featured .timeline-card p{font-size:1rem}
+
+.timeline-impact{display:flex;align-items:center;gap:1rem;padding:1rem;background:var(--bg-muted);border-radius:var(--r-md);border:1px solid var(--border-hairline);margin-top:1.25rem;transition:all .3s}
+.timeline-card:hover .timeline-impact{background:var(--bg-surface);border-color:var(--marker-color,var(--amber-500))}
+.timeline-impact-icon{width:40px;height:40px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--marker-color,var(--amber-500)),var(--marker-color-2,var(--gold-400)));display:grid;place-items:center;color:#fff;font-size:.9rem;flex-shrink:0}
+.timeline-impact-content{flex:1;min-width:0}
+.timeline-impact-value{font-family:var(--font-display);font-size:1.25rem;font-weight:600;color:var(--text-primary);letter-spacing:-.01em;line-height:1}
+.timeline-impact-label{font-family:var(--font-mono);font-size:.68rem;font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase;color:var(--text-tertiary);margin-top:4px}
+
+.timeline-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.timeline-tag{display:inline-flex;align-items:center;gap:.35rem;padding:4px 10px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-size:.65rem;font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase;color:var(--text-tertiary)}
+.timeline-tag i{font-size:.6rem;color:var(--marker-color,var(--amber-500))}
+
+/* Spotlight featured styling */
+.timeline-item.featured .timeline-card{position:relative}
+.timeline-item.featured .timeline-card::before{content:'';position:absolute;inset:-1px;border-radius:var(--r-xl);background:linear-gradient(135deg,var(--marker-color,var(--amber-500)),var(--marker-color-2,var(--gold-400)),var(--blue-600));z-index:-1;opacity:.4;filter:blur(8px)}
+
+/* Timeline origin cap */
+.timeline-origin{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:4rem;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease-expo),transform .8s var(--ease-expo)}
+.timeline-origin.revealed{opacity:1;transform:translateY(0)}
+.timeline-origin-cap{width:88px;height:88px;border-radius:50%;background:var(--gradient-trophy);display:grid;place-items:center;color:var(--blue-950);font-size:1.8rem;box-shadow:var(--shadow-gold),0 0 0 8px var(--bg-page),0 0 0 10px rgba(245,158,11,.2);position:relative;margin-bottom:1.5rem}
+.timeline-origin-cap::before{content:'';position:absolute;inset:-16px;border-radius:50%;border:1.5px dashed var(--amber-400);opacity:.4;animation:originSpin 24s linear infinite}
+@keyframes originSpin{to{transform:rotate(360deg)}}
+.timeline-origin-label{font-family:var(--font-mono);font-size:.72rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-600);margin-bottom:.5rem}
+[data-theme="dark"] .timeline-origin-label{color:var(--amber-300)}
+.timeline-origin-title{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:400;color:var(--text-primary);letter-spacing:var(--track-tight);margin-bottom:.5rem;font-variation-settings:"opsz" 144}
+.timeline-origin-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--amber-500),var(--gold-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.timeline-origin-subtitle{font-size:.925rem;color:var(--text-secondary);max-width:560px;line-height:1.7}
+
+/* Timeline conclusion */
+.timeline-conclusion{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:4rem;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease-expo),transform .8s var(--ease-expo)}
+.timeline-conclusion.revealed{opacity:1;transform:translateY(0)}
+.timeline-conclusion-cap{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--blue-600),var(--purple-500),var(--amber-400));display:grid;place-items:center;color:#fff;font-size:2rem;box-shadow:0 0 60px rgba(139,92,246,.4),0 0 0 8px var(--bg-page);position:relative;margin-bottom:1.5rem;animation:conclusionPulse 3s ease-in-out infinite}
+@keyframes conclusionPulse{0%,100%{transform:scale(1);box-shadow:0 0 60px rgba(139,92,246,.4),0 0 0 8px var(--bg-page)}50%{transform:scale(1.05);box-shadow:0 0 80px rgba(139,92,246,.55),0 0 0 8px var(--bg-page),0 0 0 20px rgba(139,92,246,.1)}}
+
+/* Marker colors per milestone */
+.timeline-item.m-1{--marker-color:var(--amber-500);--marker-color-2:var(--gold-400);--marker-glow:var(--shadow-glow-amber)}
+.timeline-item.m-2{--marker-color:var(--gold-400);--marker-color-2:var(--amber-300);--marker-glow:var(--shadow-glow-amber)}
+.timeline-item.m-3{--marker-color:var(--blue-600);--marker-color-2:var(--sky-400);--marker-glow:var(--shadow-glow-blue)}
+.timeline-item.m-4{--marker-color:var(--sky-500);--marker-color-2:var(--blue-400);--marker-glow:var(--shadow-glow-blue)}
+.timeline-item.m-5{--marker-color:var(--forest-500);--marker-color-2:var(--forest-400);--marker-glow:0 0 40px rgba(45,138,78,.3),0 0 80px rgba(45,138,78,.12)}
+.timeline-item.m-6{--marker-color:var(--purple-500);--marker-color-2:var(--pink-500);--marker-glow:0 0 40px rgba(139,92,246,.3),0 0 80px rgba(139,92,246,.12)}
+.timeline-item.m-7{--marker-color:var(--amber-500);--marker-color-2:var(--purple-500);--marker-glow:var(--shadow-glow-amber)}
+
+/* Scroll progress indicator (fixed on side) */
+.timeline-side-indicator{position:fixed;right:2rem;top:50%;transform:translateY(-50%);z-index:100;display:none;flex-direction:column;gap:.4rem;padding:.75rem;background:var(--bg-glass);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid var(--border-hairline);border-radius:var(--r-full);box-shadow:var(--shadow-lg)}
+.timeline-side-indicator.visible{display:flex}
+.timeline-side-dot{width:10px;height:10px;border-radius:50%;background:var(--border-default);cursor:pointer;transition:all .3s var(--ease-expo);position:relative}
+.timeline-side-dot:hover{background:var(--amber-400);transform:scale(1.3)}
+.timeline-side-dot.active{background:var(--amber-500);box-shadow:0 0 0 4px rgba(245,158,11,.2);transform:scale(1.2)}
+.timeline-side-dot::before{content:attr(data-label);position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);padding:4px 10px;background:var(--blue-950);color:#fff;border-radius:var(--r-sm);font-family:var(--font-mono);font-size:.68rem;font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;transform:translateY(-50%) translateX(8px)}
+.timeline-side-dot:hover::before{opacity:1;transform:translateY(-50%) translateX(0)}
+
+@media(min-width:1280px){
+  .timeline-side-indicator{display:flex}
+}
+
+/* ============ STORIES SECTION ============ */
+.stories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--gap)}
+.story-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .4s var(--ease-expo);display:flex;flex-direction:column;position:relative}
+.story-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.story-image-wrap{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--gradient-hero)}
+.story-image-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease-expo)}
+.story-card:hover .story-image-wrap img{transform:scale(1.08)}
+.story-image-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(2,8,20,.6) 100%);pointer-events:none}
+.story-tag{position:absolute;top:1rem;left:1rem;padding:6px 14px;background:var(--gradient-trophy);color:var(--blue-950);border-radius:var(--r-full);font-size:.68rem;font-weight:700;letter-spacing:var(--track-wide);text-transform:uppercase;z-index:2;box-shadow:var(--shadow-sm)}
+.story-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+.story-quote{font-family:var(--font-display);font-style:italic;font-size:1rem;line-height:1.6;color:var(--text-primary);margin-bottom:1.5rem;flex-grow:1;position:relative;padding-left:1rem;border-left:2px solid var(--amber-400)}
+.story-attribution{display:flex;align-items:center;gap:.85rem;padding-top:1rem;border-top:1px solid var(--border-hairline);margin-top:auto}
+.story-avatar{width:42px;height:42px;border-radius:50%;background:var(--gradient-royal);display:grid;place-items:center;color:#fff;font-weight:700;font-size:.85rem;flex-shrink:0}
+.story-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.story-name{font-weight:600;font-size:.9rem;color:var(--text-primary);line-height:1.2}
+.story-role{font-size:.72rem;color:var(--text-tertiary);font-family:var(--font-mono);letter-spacing:var(--track-wide);text-transform:uppercase}
+
+/* ============ CTA SECTION ============ */
+.cta-section{background:var(--gradient-hero);color:#fff;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem);position:relative;overflow:hidden;isolation:isolate}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,rgba(245,158,11,.22),transparent 55%),radial-gradient(ellipse at 80% 70%,rgba(59,130,246,.15),transparent 55%);pointer-events:none}
+.cta-section>*{position:relative;z-index:1}
+.cta-inner{max-width:var(--container-wide);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,4vw,3rem);align-items:center}
+.cta-content h2{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:400;letter-spacing:var(--track-tighter);margin-bottom:1rem;font-variation-settings:"opsz" 144;line-height:1.1}
+.cta-content h2 .italic{font-style:italic;font-weight:300;color:var(--amber-300)}
+.cta-content p{color:rgba(255,255,255,.78);font-size:clamp(.95rem,1.3vw,1.0625rem);line-height:1.75;margin-bottom:2rem;max-width:560px}
+.cta-buttons{display:flex;flex-wrap:wrap;gap:.75rem}
+.cta-btn{padding:14px 26px;border-radius:var(--r-full);font-weight:600;font-size:.925rem;display:inline-flex;align-items:center;gap:.5rem;transition:all .25s var(--ease-expo);border:none;min-height:52px;white-space:nowrap}
+.cta-btn-primary{background:var(--gradient-trophy);color:var(--blue-950);box-shadow:var(--shadow-gold)}
+.cta-btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -8px rgba(245,158,11,.55)}
+.cta-btn-secondary{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.cta-btn-secondary:hover{background:rgba(255,255,255,.18);transform:translateY(-3px)}
+.cta-visual{display:flex;justify-content:center;align-items:center}
+.cta-illustration{width:100%;max-width:380px;aspect-ratio:1;border-radius:var(--r-3xl);background:rgba(255,255,255,.06);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow-2xl),var(--inset-glass)}
+.cta-illustration::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+.cta-illustration-icon{font-size:5rem;color:var(--amber-300);opacity:.9;position:relative;z-index:2}
+.cta-illustration::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(245,158,11,.22),transparent 60%);animation:ctaGlow 4s ease-in-out infinite}
+@keyframes ctaGlow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.8;transform:scale(1.1)}}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:clamp(3rem,6vw,4rem) 0 2rem;position:relative;overflow:hidden}
+.footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.15),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,158,11,.08),transparent 50%);pointer-events:none}
+.footer>*{position:relative;z-index:1}
+.footer-inner{max-width:var(--container-wide);margin:0 auto;padding:0 clamp(1.25rem,4vw,2rem)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:3rem;margin-bottom:3rem}
+.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;color:#fff;font-weight:700;font-size:1rem}
+.footer-logo-mark{width:40px;height:40px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));color:var(--amber-400);display:grid;place-items:center;font-size:1rem;box-shadow:var(--shadow-md)}
+.footer-tagline{font-family:var(--font-display);font-style:italic;font-size:1.125rem;color:var(--amber-300);margin-bottom:1.25rem;line-height:1.5}
+.footer-brand>p{font-size:.875rem;line-height:1.7;margin-bottom:1.5rem;max-width:360px}
+.footer-contact{display:flex;flex-direction:column;gap:.55rem;font-size:.825rem;font-style:normal}
+.footer-contact-item{display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.7);line-height:1.5}
+.footer-contact-item i{color:var(--amber-400);width:14px;font-size:.8rem;margin-top:3px;flex-shrink:0}
+.footer-contact-item a{transition:color .2s}
+.footer-contact-item a:hover{color:var(--amber-300)}
+.footer-col h4{color:#fff;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;margin-bottom:1.25rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.footer-links a{font-size:.875rem;color:rgba(255,255,255,.65);transition:color .2s,transform .2s;font-weight:500;display:inline-flex;align-items:center;gap:.4rem}
+.footer-links a:hover{color:var(--amber-300);transform:translateX(4px)}
+.newsletter-form{display:flex;gap:.5rem;margin-bottom:1.25rem}
+.newsletter-form input{flex:1;padding:12px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-md);color:#fff;font-family:var(--font-body);font-size:.85rem;min-width:0;transition:all .2s;min-height:44px}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter-form input:focus{outline:none;border-color:var(--amber-400);background:rgba(255,255,255,.1);box-shadow:0 0 0 3px rgba(245,158,11,.15)}
+.newsletter-form button{padding:12px 18px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-md);font-weight:700;font-size:.85rem;transition:transform .2s,box-shadow .2s;min-height:44px}
+.newsletter-form button:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(245,158,11,.5)}
+.social-links{display:flex;gap:.5rem}
+.social-links a{width:40px;height:40px;border-radius:var(--r-md);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;color:rgba(255,255,255,.7);transition:all .25s;font-size:.9rem}
+.social-links a:hover{background:var(--gradient-warm);color:var(--blue-950);border-color:transparent;transform:translateY(-3px) rotate(-4deg)}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:rgba(255,255,255,.5)}
+.footer-legal{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-legal a{transition:color .2s}
+.footer-legal a:hover{color:var(--amber-300)}
+
+/* ============ FLOATING BUTTON ============ */
+.achievements-float{position:fixed;bottom:2rem;right:2rem;z-index:998;display:flex;align-items:center;gap:.7rem;padding:14px 22px;background:var(--gradient-trophy);color:var(--blue-950);border-radius:var(--r-full);font-weight:700;font-size:.9rem;box-shadow:var(--shadow-trophy);transition:all .3s var(--ease-expo);min-height:56px;overflow:hidden}
+.achievements-float::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);animation:trophyShine 4s ease-in-out infinite}
+@keyframes trophyShine{0%,100%{left:-100%}50%{left:150%}}
+.achievements-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 24px 48px -12px rgba(245,158,11,.55),0 0 0 1px rgba(245,158,11,.25)}
+.achievements-float-icon{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.3);display:grid;place-items:center;font-size:.85rem;flex-shrink:0;position:relative}
+.achievements-float-icon::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(255,255,255,.5);animation:trophyPulseRing 2s ease-out infinite}
+@keyframes trophyPulseRing{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.achievements-float-text{position:relative;z-index:2}
+.achievements-float-text small{display:block;font-size:.62rem;font-weight:600;opacity:.8;letter-spacing:var(--track-wide);text-transform:uppercase;margin-bottom:1px}
+
+/* ============ ACHIEVEMENTS PANEL ============ */
+.achievements-panel-backdrop{position:fixed;inset:0;background:rgba(2,8,20,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:1100;opacity:0;pointer-events:none;transition:opacity .4s var(--ease-expo)}
+.achievements-panel-backdrop.show{opacity:1;pointer-events:auto}
+.achievements-panel{position:fixed;top:0;right:0;height:100vh;height:100dvh;width:min(var(--panel-w),100vw);background:var(--bg-surface);z-index:1101;transform:translateX(100%);transition:transform .5s var(--ease-expo);display:flex;flex-direction:column;overflow:hidden;box-shadow:-20px 0 60px rgba(0,0,0,.15)}
+.achievements-panel.open{transform:translateX(0)}
+.achievements-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-trophy)}
+.achievements-panel-header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--border-hairline);display:flex;align-items:center;gap:.85rem;flex-shrink:0;background:var(--bg-surface);position:relative}
+.achievements-panel-avatar{width:44px;height:44px;border-radius:50%;background:var(--gradient-trophy);display:grid;place-items:center;color:var(--blue-950);font-size:1.1rem;flex-shrink:0;position:relative;box-shadow:0 0 0 3px var(--bg-surface),var(--shadow-md)}
+.achievements-panel-avatar::after{content:'';position:absolute;bottom:2px;right:2px;width:10px;height:10px;border-radius:50%;background:var(--forest-500);border:2px solid var(--bg-surface);box-shadow:0 0 0 0 rgba(45,138,78,.5);animation:panelOnlinePulse 2s ease-in-out infinite}
+@keyframes panelOnlinePulse{0%,100%{box-shadow:0 0 0 0 rgba(45,138,78,.5)}50%{box-shadow:0 0 0 6px rgba(45,138,78,0)}}
+.achievements-panel-info{flex:1;min-width:0}
+.achievements-panel-name{font-family:var(--font-display);font-size:1.1rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em;line-height:1.2}
+.achievements-panel-status{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:.68rem;color:var(--forest-600);letter-spacing:var(--track-wide);text-transform:uppercase;font-weight:600;margin-top:2px}
+[data-theme="dark"] .achievements-panel-status{color:var(--forest-400)}
+.achievements-panel-status .dot{width:6px;height:6px;border-radius:50%;background:var(--forest-500);box-shadow:0 0 6px var(--forest-500)}
+.achievements-panel-close{width:38px;height:38px;border-radius:50%;background:var(--bg-muted);display:grid;place-items:center;color:var(--text-secondary);font-size:.9rem;transition:all .2s;flex-shrink:0}
+.achievements-panel-close:hover{background:var(--blue-900);color:#fff;transform:rotate(90deg)}
+
+.achievements-panel-body{flex:1;position:relative;overflow:hidden;background:var(--bg-surface)}
+.achievements-panel-body iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;display:block}
+
+.achievements-panel-loader{position:absolute;inset:0;background:var(--bg-surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;z-index:5;transition:opacity var(--dur-base) var(--ease-expo),visibility var(--dur-base) var(--ease-expo)}
+.achievements-panel-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.panel-loader-mark{width:64px;height:64px;border-radius:var(--r-xl);background:var(--gradient-trophy);display:grid;place-items:center;color:var(--blue-950);font-size:1.6rem;box-shadow:var(--shadow-lg),var(--inset-glass);position:relative;animation:panelLoaderPulse 2s ease-in-out infinite}
+.panel-loader-mark::before{content:'';position:absolute;inset:-8px;border-radius:var(--r-2xl);border:2px solid transparent;border-top-color:var(--amber-400);border-right-color:var(--gold-400);animation:panelLoaderSpin 1.5s linear infinite}
+.panel-loader-mark::after{content:'';position:absolute;inset:0;border-radius:var(--r-xl);background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.3),transparent 60%)}
+@keyframes panelLoaderPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes panelLoaderSpin{to{transform:rotate(360deg)}}
+.panel-loader-title{font-family:var(--font-display);font-size:1rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em}
+.panel-loader-subtitle{font-size:.8rem;color:var(--text-tertiary);font-weight:500;margin-top:-.75rem}
+.panel-loader-bar{width:180px;height:3px;background:var(--bg-muted);border-radius:var(--r-full);overflow:hidden;position:relative}
+.panel-loader-bar::before{content:'';position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,var(--amber-400),var(--gold-400),var(--blue-600));border-radius:var(--r-full);animation:panelLoaderBar 1.8s ease-in-out infinite}
+@keyframes panelLoaderBar{0%{left:-40%}100%{left:100%}}
+
+.achievements-panel-error{position:absolute;inset:0;background:var(--bg-surface);display:none;flex-direction:column;align-items:center;justify-content:center;gap:.85rem;padding:2rem;text-align:center;z-index:6}
+.achievements-panel-error.active{display:flex}
+.panel-error-icon{width:56px;height:56px;border-radius:50%;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);display:grid;place-items:center;color:#ef4444;font-size:1.3rem}
+.panel-error-title{font-family:var(--font-display);font-size:1.15rem;font-weight:500;letter-spacing:-.01em}
+.panel-error-text{font-size:.85rem;color:var(--text-secondary);max-width:320px;line-height:1.6}
+.panel-error-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-full);font-weight:700;font-size:.8rem;transition:all .25s var(--ease-expo);box-shadow:var(--shadow-gold)}
+.panel-error-btn:hover{transform:translateY(-2px)}
+
+.achievements-panel-footer{padding:.85rem 1.25rem;border-top:1px solid var(--border-hairline);background:var(--bg-muted);flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:.75rem;font-size:.72rem}
+.panel-footer-status{display:flex;align-items:center;gap:.5rem;color:var(--text-tertiary);font-family:var(--font-mono);letter-spacing:var(--track-wide);text-transform:uppercase;font-weight:600}
+.panel-footer-status .dot{width:6px;height:6px;border-radius:50%;background:var(--forest-500);box-shadow:0 0 6px var(--forest-500)}
+.panel-footer-link{display:inline-flex;align-items:center;gap:.4rem;padding:6px 12px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);color:var(--text-primary);font-weight:600;transition:all .2s}
+.panel-footer-link:hover{background:var(--blue-900);color:#fff;border-color:var(--blue-900)}
+.panel-footer-link i{font-size:.65rem}
+
+/* ============ REVEALS ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity var(--dur-cine) var(--ease-expo),transform var(--dur-cine) var(--ease-expo)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-stagger>*{opacity:0;transform:translateY(30px);transition:opacity var(--dur-slow) var(--ease-expo),transform var(--dur-slow) var(--ease-expo)}
+.reveal-stagger.visible>*{opacity:1;transform:translateY(0)}
+.reveal-stagger.visible>*:nth-child(1){transition-delay:0ms}
+.reveal-stagger.visible>*:nth-child(2){transition-delay:110ms}
+.reveal-stagger.visible>*:nth-child(3){transition-delay:220ms}
+.reveal-stagger.visible>*:nth-child(4){transition-delay:330ms}
 
 /* ============ RESPONSIVE ============ */
-@media(max-width:1024px){:root{--sidebar-w:280px}}
+@media(min-width:2000px){:root{--container-wide:1560px}}
+@media(max-width:1280px){
+  :root{--panel-w:520px}
+  .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+  .footer-newsletter{grid-column:1/-1}
+  .cta-inner{grid-template-columns:1fr;text-align:center}
+  .cta-content{max-width:640px;margin:0 auto}
+  .cta-content p{margin-left:auto;margin-right:auto}
+  .cta-buttons{justify-content:center}
+  .cta-visual{display:none}
+}
+@media(max-width:1024px){
+  :root{--sidebar-w:280px;--panel-w:480px}
+  .main-content.panel-shift{padding-right:0}
+  .timeline-section{padding:clamp(3rem,6vw,5rem) clamp(1rem,3vw,1.5rem)}
+}
+
+/* Mobile timeline: single column, spine on left */
 @media(max-width:900px){
+  :root{--panel-w:100vw}
   html{scroll-padding-top:calc(var(--bar-h) + 14px)}
   .mobile-bar{display:flex}
   .sidebar{transform:translateX(-105%);width:min(86vw,340px);box-shadow:none;z-index:1002}
@@ -187,26 +475,51 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   .sidebar.open .nav-section:nth-of-type(2).st{transition-delay:.2s}
   .sidebar.open .nav-section:nth-of-type(3).st{transition-delay:.28s}
   .sidebar.open .sidebar-footer.st{transition-delay:.36s}
-  .main-content{margin-left:0;padding-top:calc(var(--bar-h) + env(safe-area-inset-top))}
-  .portal-frame{min-height:480px;border-radius:var(--r-xl)}
+  .main-content{margin-left:0}
+
+  /* Mobile timeline */
+  .timeline-progress-rail{left:28px}
+  .timeline::before{left:28px;transform:none}
+  .timeline-item{grid-template-columns:auto 1fr;gap:1.25rem;align-items:flex-start;margin-bottom:2.5rem}
+  .timeline-item .tl-marker-wrap{grid-column:1;grid-row:auto;justify-content:flex-start}
+  .timeline-item .tl-side-left,.timeline-item .tl-side-right{grid-column:2;text-align:left;visibility:visible!important}
+  .timeline-item .tl-side-left{display:none}
+  .timeline-marker{width:48px;height:48px;font-size:.9rem}
+  .timeline-item.featured .timeline-marker{width:60px;height:60px;font-size:1.15rem}
+  .timeline-marker::after{display:none}
+  .timeline-card{max-width:none}
+  .timeline-card h3{padding-right:0;font-size:1.25rem!important}
+  .timeline-item.featured .timeline-card h3{font-size:1.5rem!important}
+  .timeline-card-badge{position:static;display:inline-flex;margin-bottom:.75rem}
+  .timeline-origin-cap{width:72px;height:72px;font-size:1.5rem}
+  .timeline-conclusion-cap{width:80px;height:80px;font-size:1.6rem}
+
+  .achievements-float{bottom:1.25rem;right:1.25rem;padding:12px 18px}
+  .achievements-float-text small{display:none}
 }
 @media(max-width:640px){
-  .portal-header{flex-direction:column;align-items:stretch;gap:.75rem;padding:.85rem 1rem}
-  .portal-frame{margin:.75rem;min-height:420px}
-  .portal-note{font-size:.65rem}
+  .section{padding:3rem 0}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .footer-legal{justify-content:center}
+  .hero-badges{gap:.5rem}
+  .hero-badge{padding:8px 12px;font-size:.72rem}
+  .stories-grid{grid-template-columns:1fr}
+  .newsletter-form{flex-direction:column}
+  .timeline-origin-cap{width:64px;height:64px;font-size:1.3rem}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal-stagger>*{opacity:1;transform:none}
+  .timeline-item,.timeline-origin,.timeline-conclusion{opacity:1;transform:none}
   .orb{animation:none}
   .cursor-dot,.cursor-ring{display:none}
-  .loader-mark::before,.loader-bar::before,.portal-icon::before{animation:none}
-  .loader-bar::before{width:100%;left:0}
+  .timeline-progress-fill{transition:none}
 }
 @media print{
-  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop{display:none!important}
+  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop,.achievements-float,.achievements-panel,.achievements-panel-backdrop,.cta-section,.timeline-side-indicator{display:none!important}
   .main-content{margin-left:0;height:auto}
   body{background:#fff;color:#000}
-  .portal-frame{border:1px solid #ccc!important;background:#fff!important}
 }
 </style>
 </head>
@@ -286,45 +599,417 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
 </nav>
 
 <main class="main-content" id="main">
-  <section class="portal-section" aria-labelledby="portal-label">
-    <div class="portal-header">
-      <div class="portal-title-group">
-        <div class="portal-icon" aria-hidden="true"><i class="fas fa-trophy"></i></div>
-        <div>
-          <h1 class="portal-title" id="portal-label">Achievements</h1>
-          <p class="portal-subtitle">Academic · Athletic · Artistic · Spiritual</p>
-        </div>
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="page-hero-inner">
+      <div class="hero-breadcrumb"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span><span class="sep">/</span><span class="current">Achievements</span></div>
+      <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span><span>Nearly a Decade · Est. 2017</span></div>
+      <h1 class="hero-title" id="page-title">A journey of <span class="italic">transformation.</span></h1>
+      <p class="hero-subtitle">Every number represents a child fed, a family supported, a future unlocked. Since our launch in August 2017, KE0274 PEFA Mfangano CYDC has walked alongside hundreds of vulnerable children and youth — releasing them from poverty in Jesus' name through holistic spiritual, physical, socio-emotional, and economic development.</p>
+      <div class="hero-badges">
+        <div class="hero-badge"><div class="hero-badge-icon launch" aria-hidden="true"><i class="fas fa-rocket"></i></div><span>Launched <strong>Aug 2017</strong></span></div>
+        <div class="hero-badge"><div class="hero-badge-icon impact" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></div><span>Compassion <strong>Partner</strong></span></div>
+        <div class="hero-badge"><div class="hero-badge-icon certified" aria-hidden="true"><i class="fas fa-shield-alt"></i></div><span>Child Protection <strong>Certified</strong></span></div>
       </div>
-      <div class="portal-status" id="portalStatus">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Live</span>
-      </div>
-    </div>
-
-    <div class="portal-frame" id="portalFrame">
-      <div class="portal-loader" id="portalLoader" aria-live="polite" aria-label="Loading achievements portal">
-        <div class="loader-mark" aria-hidden="true"><i class="fas fa-trophy"></i></div>
-        <div class="loader-text">
-          <div class="loader-title">Loading achievements</div>
-          <div class="loader-subtitle">Celebrating academic, athletic, artistic & spiritual milestones…</div>
-        </div>
-        <div class="loader-bar" aria-hidden="true"></div>
-      </div>
-      <div class="portal-error" id="portalError" role="alert">
-        <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
-        <div class="error-title">Achievements feed unavailable</div>
-        <p class="error-text">We're having trouble connecting to the achievements portal. Please try again in a moment, or open it in a new window.</p>
-        <button class="error-btn" id="errorRetryBtn"><i class="fas fa-redo" aria-hidden="true"></i><span>Try Again</span></button>
-      </div>
-      <iframe id="achievementsFrame" src="" title="Achievements Portal — Celebrating student achievements at KE0274 PEFA Mfangano CYDC" allow="clipboard-write" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <div class="portal-note">
-      <i class="fas fa-shield-alt" aria-hidden="true"></i>
-      <span>Secure connection · Verified milestones · Updated by the Centre team</span>
     </div>
   </section>
+
+  <!-- IMPACT STATS -->
+  <section class="section" aria-labelledby="impact-title" style="padding-top:0;">
+    <div class="section-inner">
+      <div class="stats-grid reveal-stagger">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+          <div class="stat-number" data-count="375">0</div>
+          <div class="stat-label">Lives Transformed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
+          <div class="stat-number" data-count="45" data-suffix="+">0</div>
+          <div class="stat-label">Dedicated Volunteers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
+          <div class="stat-number" data-count="2500" data-suffix="+">0</div>
+          <div class="stat-label">Activities Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+          <div class="stat-number" data-count="9">0</div>
+          <div class="stat-label">Years of Service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM INTERACTIVE TIMELINE -->
+  <section class="timeline-section" id="milestones" aria-labelledby="milestones-title">
+    <div class="timeline-progress-rail" aria-hidden="true">
+      <div class="timeline-progress-fill" id="timelineProgressFill"></div>
+    </div>
+
+    <div class="timeline-section-inner">
+      <div class="section-header reveal" style="text-align:center;max-width:780px;margin:0 auto clamp(2.5rem,5vw,4rem);">
+        <div class="section-eyebrow" style="justify-content:center;"><span>Our Journey</span></div>
+        <h2 class="section-title" id="milestones-title" style="text-align:center;">Notable <span class="italic">milestones.</span></h2>
+        <p class="section-lede" style="text-align:center;margin:0 auto;">From a signed partnership to a movement of holistic transformation — a chronicle of God's faithfulness through every season of our work on Mfangano Island.</p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <!-- ORIGIN -->
+        <div class="timeline-origin" data-tl-origin>
+          <div class="timeline-origin-cap" aria-hidden="true"><i class="fas fa-seedling"></i></div>
+          <div class="timeline-origin-label">The Beginning</div>
+          <h3 class="timeline-origin-title">Where our story <span class="italic">began.</span></h3>
+          <p class="timeline-origin-subtitle">On the shores of Lake Victoria, a vision took root — to release children from poverty in Jesus' name through holistic development.</p>
+        </div>
+
+        <!-- MILESTONE 1: Partnership Signed -->
+        <div class="timeline-item pos-left featured m-1" data-tl-item>
+          <div class="tl-side-left">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>July 1, 2017</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-star" aria-hidden="true"></i> Founding Moment</div>
+              <h3>Partnership Agreement Signed</h3>
+              <p>A strategic partnership was formally signed between Sena PEFA Church and Compassion International Kenya, laying the foundation for holistic child development on Mfangano Island — a covenant that would change generations.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">1 Strategic Covenant</div>
+                  <div class="timeline-impact-label">Church × Compassion International</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-file-signature" aria-hidden="true"></i>Partnership</span>
+                <span class="timeline-tag"><i class="fas fa-church" aria-hidden="true"></i>Sena PEFA</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-flag"></i></div>
+          </div>
+          <div class="tl-side-right"></div>
+        </div>
+
+        <!-- MILESTONE 2: Program Launched -->
+        <div class="timeline-item pos-right featured m-2" data-tl-item>
+          <div class="tl-side-left"></div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+          </div>
+          <div class="tl-side-right">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>August 15, 2017</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-bolt" aria-hidden="true"></i> Launch Day</div>
+              <h3>Program Officially Launched</h3>
+              <p>KE0274 PEFA Mfangano CYDC was officially commissioned at Sena Centre, PEFA Cathedral Sena in Suba West Sub-County — marking the beginning of a new chapter for hundreds of families across Mfangano Island and the surrounding communities.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">Homa Bay County</div>
+                  <div class="timeline-impact-label">Sena Centre · Suba West</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-church" aria-hidden="true"></i>Commissioned</span>
+                <span class="timeline-tag"><i class="fas fa-map-pin" aria-hidden="true"></i>Mfangano Island</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 3: First Cohort -->
+        <div class="timeline-item pos-left m-3" data-tl-item>
+          <div class="tl-side-left">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>Early 2018</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-user-plus" aria-hidden="true"></i> First Families</div>
+              <h3>First Cohort Enrolled</h3>
+              <p>The first cohort of children and youth was officially enrolled into the Child Development program, beginning their journey through spiritual formation, academic support, and holistic care — from pregnancy through young adulthood.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-child" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">First Generation</div>
+                  <div class="timeline-impact-label">Children & youth enrolled</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-child" aria-hidden="true"></i>Enrollment</span>
+                <span class="timeline-tag"><i class="fas fa-heart" aria-hidden="true"></i>Holistic Care</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-child"></i></div>
+          </div>
+          <div class="tl-side-right"></div>
+        </div>
+
+        <!-- MILESTONE 4: Integrated Programs -->
+        <div class="timeline-item pos-right m-4" data-tl-item>
+          <div class="tl-side-left"></div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-seedling"></i></div>
+          </div>
+          <div class="tl-side-right">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>2019 – 2022</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-leaf" aria-hidden="true"></i> Holistic Growth</div>
+              <h3>Integrated Programs Expansion</h3>
+              <p>Launched integrated programs in agriculture, entrepreneurship, WASH (Water, Sanitation & Hygiene), and environmental conservation — equipping families with practical skills to break cycles of poverty and build sustainable livelihoods.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">4 Core Pillars</div>
+                  <div class="timeline-impact-label">Agriculture · Entrepreneurship · WASH · Conservation</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-wheat-awn" aria-hidden="true"></i>Agriculture</span>
+                <span class="timeline-tag"><i class="fas fa-droplet" aria-hidden="true"></i>WASH</span>
+                <span class="timeline-tag"><i class="fas fa-briefcase" aria-hidden="true"></i>Enterprise</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 5: Student Portal -->
+        <div class="timeline-item pos-left m-5" data-tl-item>
+          <div class="tl-side-left">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>2023</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-laptop" aria-hidden="true"></i> Digital Leap</div>
+              <h3>Student Portal & Digital Transformation</h3>
+              <p>Introduced a comprehensive digital Student Portal featuring timetables, assignment tracking, and academic results — modernizing how participants and families engage with program resources.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-desktop" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">Full Digital Suite</div>
+                  <div class="timeline-impact-label">Timetables · Assignments · Results</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-laptop" aria-hidden="true"></i>Portal</span>
+                <span class="timeline-tag"><i class="fas fa-calendar-alt" aria-hidden="true"></i>Timetable</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-satellite-dish"></i></div>
+          </div>
+          <div class="tl-side-right"></div>
+        </div>
+
+        <!-- MILESTONE 6: Child Protection -->
+        <div class="timeline-item pos-right m-6" data-tl-item>
+          <div class="tl-side-left"></div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
+          </div>
+          <div class="tl-side-right">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>2024</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-certificate" aria-hidden="true"></i> Safeguarding</div>
+              <h3>Child Protection Certification</h3>
+              <p>Achieved full Child Protection Certification alongside the launch of the Kenya Child Protection Strategy, with a 24/7 reporting hotline and comprehensive safeguarding training for all staff and volunteers.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-phone-volume" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">24/7 Hotline</div>
+                  <div class="timeline-impact-label">Kenya Child Protection Strategy</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-shield-alt" aria-hidden="true"></i>Certified</span>
+                <span class="timeline-tag"><i class="fas fa-phone" aria-hidden="true"></i>24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 7: Today / Graduates -->
+        <div class="timeline-item pos-left featured m-7" data-tl-item>
+          <div class="tl-side-left">
+            <div class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i>2026 · Today</div>
+            <div class="timeline-card">
+              <div class="timeline-card-badge"><i class="fas fa-crown" aria-hidden="true"></i> Full-Circle</div>
+              <h3>Self-Reliant Graduates Emerging</h3>
+              <p>Nearly a decade in, our first graduates are becoming self-reliant, Christ-centered adults who know Christ, make Him known, and are returning as mentors, tutors, and leaders in their communities — fulfilling the vision of transformation.</p>
+              <div class="timeline-impact">
+                <div class="timeline-impact-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+                <div class="timeline-impact-content">
+                  <div class="timeline-impact-value">First Generation Graduates</div>
+                  <div class="timeline-impact-label">Now mentors · tutors · leaders</div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag"><i class="fas fa-star" aria-hidden="true"></i>Transformation</span>
+                <span class="timeline-tag"><i class="fas fa-handshake" aria-hidden="true"></i>Legacy</span>
+                <span class="timeline-tag"><i class="fas fa-cross" aria-hidden="true"></i>Christ-Centered</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-marker-wrap">
+            <div class="timeline-marker" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+          </div>
+          <div class="tl-side-right"></div>
+        </div>
+
+        <!-- CONCLUSION -->
+        <div class="timeline-conclusion" data-tl-conclusion>
+          <div class="timeline-conclusion-cap" aria-hidden="true"><i class="fas fa-infinity"></i></div>
+          <div class="timeline-origin-label">The Journey Continues</div>
+          <h3 class="timeline-origin-title">The story is still <span class="italic">being written.</span></h3>
+          <p class="timeline-origin-subtitle">Every day brings new milestones, new lives transformed, and new evidence of God's faithfulness. Walk with us into the next chapter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STORIES -->
+  <section class="section" id="stories" aria-labelledby="stories-title">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Voices of Transformation</div>
+        <h2 class="section-title" id="stories-title">Featured <span class="italic">stories.</span></h2>
+        <p class="section-lede">Behind every milestone is a name, a family, and a story of hope. These are the lived experiences of participants, parents, and volunteers whose lives have been changed through the work of the Centre.</p>
+      </div>
+
+      <div class="stories-grid reveal-stagger">
+        <article class="story-card">
+          <div class="story-image-wrap">
+            <img src="../studentleadership/image/20260417_120436.jpg" alt="Achieng' O. - Participant Story" loading="lazy" decoding="async">
+            <span class="story-tag">Participant Story</span>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">I came to the Centre shy and unsure of myself. Today I lead my school's peer mentorship club and dream of becoming a doctor to serve my island.</p>
+            <div class="story-attribution">
+              <div class="story-avatar" aria-hidden="true">AO</div>
+              <div class="story-meta">
+                <span class="story-name">Achieng' O.</span>
+                <span class="story-role">Participant, Age 16</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-image-wrap">
+            <img src="../studentleadership/image/20260417_121405.jpg" alt="Mary O. - Parent Testimony" loading="lazy" decoding="async">
+            <span class="story-tag">Parent Testimony</span>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">The Centre didn't just help my son with school — they helped our whole family learn to farm, save, and hope again. We are a different household.</p>
+            <div class="story-attribution">
+              <div class="story-avatar" aria-hidden="true">MO</div>
+              <div class="story-meta">
+                <span class="story-name">Mary O.</span>
+                <span class="story-role">Parent &amp; Caregiver</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-image-wrap">
+            <img src="../studentleadership/image/20260417_123404.jpg" alt="James O. - Volunteer Voice" loading="lazy" decoding="async">
+            <span class="story-tag">Volunteer Voice</span>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">Serving here has shaped my faith more than anywhere else. To watch a child go from survival to self-reliance — there is no greater privilege.</p>
+            <div class="story-attribution">
+              <div class="story-avatar" aria-hidden="true">JO</div>
+              <div class="story-meta">
+                <span class="story-name">James O.</span>
+                <span class="story-role">Volunteer Tutor, 5 Years</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="cta-inner">
+      <div class="cta-content">
+        <h2 id="cta-title">Explore the full <span class="italic">achievements portal.</span></h2>
+        <p>Step inside our complete achievements archive — a curated gallery of academic honors, athletic victories, artistic expressions, and spiritual milestones that celebrate every child's journey from survival to self-reliance.</p>
+        <div class="cta-buttons">
+          <button class="cta-btn cta-btn-primary" id="ctaOpenPanel"><i class="fas fa-trophy" aria-hidden="true"></i><span>Open Achievements Portal</span></button>
+          <a href="../newsandupdates/newsandupdates.html" class="cta-btn cta-btn-secondary"><i class="fas fa-newspaper" aria-hidden="true"></i><span>Read Latest News</span></a>
+        </div>
+      </div>
+      <div class="cta-visual" aria-hidden="true">
+        <div class="cta-illustration"><i class="fas fa-trophy cta-illustration-icon"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div><span>KE0274 PEFA Mfangano CYDC</span></div>
+          <p class="footer-tagline">Nurturing today for a stronger tomorrow.</p>
+          <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+          <address class="footer-contact">
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Sena Centre, PEFA Cathedral Sena, Mfangano Island</span></div>
+            <div class="footer-contact-item"><i class="fas fa-mail-bulk" aria-hidden="true"></i><span>P.O. Box 27-40319, Suba Central Sub-County, Homa Bay County, Kenya</span></div>
+            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:ke0274pefamfangano@gmail.com">ke0274pefamfangano@gmail.com</a></div>
+          </address>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../studentleadership/leaders.html">Leadership</a></li><li><a href="../academics/dreamachiever.html">Academics</a></li><li><a href="achievment.html">Achievements</a></li><li><a href="../newsandupdates/newsandupdates.html">News & Updates</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul class="footer-links"><li><a href="../learningresources/learningresources.html">Learning Resources</a></li><li><a href="../studentportal/timetable.html">Student Portal</a></li><li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li><li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li><li><a href="../childprotection.html">Child Protection</a></li></ul></div>
+        <div class="footer-col footer-newsletter"><h4>Stay Connected</h4><p>Receive quarterly updates on the lives being transformed through our work.</p><form class="newsletter-form" aria-label="Newsletter subscription"><label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email"/><button type="submit" aria-label="Subscribe to newsletter">Subscribe</button></form><div class="social-links" aria-label="Social media"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Child Protection Policy</a><a href="#">Terms of Use</a><a href="#">Safeguarding</a></div></div>
+    </div>
+  </footer>
 </main>
+
+<!-- FLOATING BUTTON -->
+<button class="achievements-float" id="achievementsFloatBtn" aria-label="Open achievements portal">
+  <div class="achievements-float-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+  <div class="achievements-float-text"><small>Full Archive</small><span>Achievements Portal</span></div>
+</button>
+
+<!-- SIDE INDICATOR (desktop only) -->
+<nav class="timeline-side-indicator" id="timelineSideIndicator" aria-label="Timeline navigation"></nav>
+
+<!-- ACHIEVEMENTS PANEL -->
+<div class="achievements-panel-backdrop" id="panelBackdrop" aria-hidden="true"></div>
+<aside class="achievements-panel" id="achievementsPanel" aria-label="Achievements Portal" role="dialog" aria-modal="false">
+  <div class="achievements-panel-header">
+    <div class="achievements-panel-avatar"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+    <div class="achievements-panel-info">
+      <div class="achievements-panel-name">Achievements Portal</div>
+      <div class="achievements-panel-status"><span class="dot" aria-hidden="true"></span><span>Live · Updated Daily</span></div>
+    </div>
+    <button class="achievements-panel-close" id="panelClose" aria-label="Close portal"><i class="fas fa-times" aria-hidden="true"></i></button>
+  </div>
+  <div class="achievements-panel-body">
+    <div class="achievements-panel-loader" id="panelLoader" aria-live="polite" aria-label="Loading achievements portal">
+      <div class="panel-loader-mark"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+      <div class="panel-loader-title">Loading achievements</div>
+      <div class="panel-loader-subtitle">Celebrating academic, athletic, artistic & spiritual milestones…</div>
+      <div class="panel-loader-bar" aria-hidden="true"></div>
+    </div>
+    <div class="achievements-panel-error" id="panelError" role="alert">
+      <div class="panel-error-icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></div>
+      <div class="panel-error-title">Achievements feed unavailable</div>
+      <p class="panel-error-text">We're having trouble connecting. Please try again in a moment, or open in a new window.</p>
+      <button class="panel-error-btn" id="panelRetryBtn"><i class="fas fa-redo" aria-hidden="true"></i><span>Try Again</span></button>
+    </div>
+    <iframe id="achievementsFrame" src="" title="Achievements Portal — Celebrating student achievements at KE0274 PEFA Mfangano CYDC" allow="clipboard-write" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="achievements-panel-footer">
+    <div class="panel-footer-status"><span class="dot" aria-hidden="true"></span><span id="panelStatus">Connected</span></div>
+    <a href="https://skyward-achieve-joy.lovable.app" target="_blank" rel="noopener noreferrer" class="panel-footer-link"><span>Open in new tab</span><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+  </div>
+</aside>
 
 <script>
 (function(){
@@ -332,20 +1017,32 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   var $$=function(s){return document.querySelectorAll(s);};
   var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var canHover=matchMedia('(hover: hover)').matches&&innerWidth>1024;
+  $('#currentYear').textContent=new Date().getFullYear();
 
   // Page loader
   var loader=$('#pageLoader');
-  setTimeout(function(){loader.classList.add('hidden');},2000);
-  addEventListener('load',function(){setTimeout(function(){loader.classList.add('hidden');},300);});
+  setTimeout(function(){loader.classList.add('hidden');},1800);
+  addEventListener('load',function(){setTimeout(function(){loader.classList.add('hidden');},200);});
 
   // Custom Cursor
   if(canHover&&!reduced){
     var dot=$('#cursorDot'),ring=$('#cursorRing'),mx=0,my=0,rx=0,ry=0;
     addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)';},{passive:true});
     (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop);})();
-    $$('a,button,.nav-link,.dropdown-link,input,.portal-frame,.error-btn').forEach(function(el){
+    $$('a,button,.nav-link,.dropdown-link,.stat-card,.timeline-card,.story-card,.hero-badge,input').forEach(function(el){
       el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-hover');});
       el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-hover');});
+    });
+  }
+
+  // Spotlight on timeline cards
+  if(canHover&&!reduced){
+    $$('.timeline-card').forEach(function(c){
+      c.addEventListener('pointermove',function(e){
+        var r=c.getBoundingClientRect();
+        c.style.setProperty('--sx',(e.clientX-r.left)+'px');
+        c.style.setProperty('--sy',(e.clientY-r.top)+'px');
+      },{passive:true});
     });
   }
 
@@ -362,7 +1059,6 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   mobileToggle.addEventListener('click',function(){sidebar.classList.contains('open')?closeNav():openNav();});
   backdrop.addEventListener('click',closeNav);
 
-  // Dropdowns
   window.toggleDropdown=function(e,el){
     e.preventDefault();e.stopPropagation();
     var item=el.closest('.nav-item'),active=item.classList.toggle('active');
@@ -375,10 +1071,111 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   var prog=$('#scrollProgress'),ticking=false;
   addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(function(){var h=document.documentElement;prog.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';ticking=false;});ticking=true;}},{passive:true});
 
+  // Reveals
+  var rObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');rObs.unobserve(en.target);}});},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+  $$('.reveal,.reveal-stagger').forEach(function(el){rObs.observe(el);});
+
+  // ===== PREMIUM TIMELINE =====
+  var tlItems=$$('[data-tl-item]');
+  var tlOrigin=$('[data-tl-origin]');
+  var tlConclusion=$('[data-tl-conclusion]');
+  var tlProgressFill=$('#timelineProgressFill');
+  var tlSection=$('.timeline-section');
+  var sideIndicator=$('#timelineSideIndicator');
+
+  // Build side indicator dots
+  var labels=['Partnership','Launch','First Cohort','Integrated Programs','Digital Portal','Protection','Graduates'];
+  tlItems.forEach(function(item,i){
+    var dot=document.createElement('button');
+    dot.className='timeline-side-dot';
+    dot.setAttribute('data-label',labels[i]||'Milestone '+(i+1));
+    dot.setAttribute('aria-label','Jump to '+labels[i]);
+    dot.addEventListener('click',function(){
+      item.scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});
+    });
+    sideIndicator.appendChild(dot);
+  });
+  var sideDots=$$('.timeline-side-dot');
+
+  // Timeline reveal observer
+  var tlObs=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('revealed');
+        tlObs.unobserve(en.target);
+      }
+    });
+  },{threshold:.2,rootMargin:'0px 0px -80px 0px'});
+
+  tlItems.forEach(function(item){tlObs.observe(item);});
+  if(tlOrigin)tlObs.observe(tlOrigin);
+  if(tlConclusion)tlObs.observe(tlConclusion);
+
+  // Timeline scroll progress & active dot tracking
+  var progressTicking=false;
+  function updateTimelineProgress(){
+    if(!tlSection||!tlProgressFill)return;
+    var rect=tlSection.getBoundingClientRect();
+    var vh=window.innerHeight;
+    var sectionTop=rect.top;
+    var sectionHeight=rect.height;
+    var scrolledPast=Math.max(0,-sectionTop+vh*0.3);
+    var totalScrollable=sectionHeight-vh*0.5;
+    var progress=Math.min(1,Math.max(0,scrolledPast/totalScrollable));
+    tlProgressFill.style.height=(progress*100)+'%';
+
+    // Show/hide side indicator
+    if(sideIndicator){
+      if(sectionTop<vh&&rect.bottom>0){
+        sideIndicator.classList.add('visible');
+      }else{
+        sideIndicator.classList.remove('visible');
+      }
+    }
+
+    // Update active dot based on which milestone is most in view
+    var activeIdx=-1;
+    tlItems.forEach(function(item,i){
+      var r=item.getBoundingClientRect();
+      var center=r.top+r.height/2;
+      if(center<vh*0.7&&center>-vh*0.2){
+        activeIdx=i;
+      }
+    });
+    sideDots.forEach(function(d,i){
+      d.classList.toggle('active',i===activeIdx);
+    });
+  }
+
+  addEventListener('scroll',function(){
+    if(!progressTicking){
+      requestAnimationFrame(function(){
+        updateTimelineProgress();
+        progressTicking=false;
+      });
+      progressTicking=true;
+    }
+  },{passive:true});
+  updateTimelineProgress();
+
+  // Counter animation
+  function countUp(el,target,dur){
+    dur=dur||2400;var suf=el.getAttribute('data-suffix')||'';var t0=performance.now();
+    (function u(now){var p=Math.min((now-t0)/dur,1);var e=p===1?1:1-Math.pow(2,-10*p);
+      el.textContent=Math.floor(e*target).toLocaleString()+suf;
+      if(p<1)requestAnimationFrame(u);else el.textContent=target.toLocaleString()+suf;})(t0);
+  }
+  var cObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.querySelectorAll('[data-count]').forEach(function(el){if(!el.dataset.done){el.dataset.done=1;countUp(el,parseInt(el.dataset.count));}});cObs.unobserve(en.target);}});},{threshold:.3});
+  $$('.stats-grid').forEach(function(s){cObs.observe(s);});
+
+  // Smooth anchors
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=this.getAttribute('href');if(h.length<2)return;var t=document.querySelector(h);if(t){e.preventDefault();t.scrollIntoView({behavior:reduced?'auto':'smooth'});closeNav();}});});
+
   // Keyboard
   addEventListener('keydown',function(e){
     if(e.key==='Escape'){
       closeNav();
+      closePanel();
       $$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l){l.setAttribute('aria-expanded','false');l.focus();}});
     }
   });
@@ -386,44 +1183,59 @@ body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-4
   // Resize
   var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(innerWidth>900)closeNav();},200);});
 
-  // Portal iframe
+  // Newsletter
+  var form=document.querySelector('.newsletter-form');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();var inp=form.querySelector('input'),btn=form.querySelector('button'),orig=btn.textContent;btn.textContent='✓ Subscribed';inp.value='';setTimeout(function(){btn.textContent=orig;},2800);});}
+
+  // ===== ACHIEVEMENTS PANEL =====
   var ACHIEVEMENTS_URL='https://skyward-achieve-joy.lovable.app';
-  var iframe=$('#achievementsFrame');
-  var portalLoader=$('#portalLoader');
-  var errorPanel=$('#portalError');
-  var statusEl=$('#portalStatus');
-  var retryBtn=$('#errorRetryBtn');
+  var floatBtn=$('#achievementsFloatBtn'),panel=$('#achievementsPanel'),panelBackdrop=$('#panelBackdrop'),panelClose=$('#panelClose'),panelLoader=$('#panelLoader'),panelError=$('#panelError'),panelRetryBtn=$('#panelRetryBtn'),panelStatus=$('#panelStatus'),iframe=$('#achievementsFrame'),ctaOpenPanel=$('#ctaOpenPanel'),mainContent=$('.main-content');
   var loadTimeout;
 
+  function openPanel(){
+    panel.classList.add('open');
+    panelBackdrop.classList.add('show');
+    if(innerWidth>1024){mainContent.classList.add('panel-shift');}
+    document.body.classList.add('panel-open');
+    floatBtn.style.opacity='0';
+    floatBtn.style.pointerEvents='none';
+    if(!iframe.src||iframe.src==='about:blank'){loadPortal();}
+  }
+  function closePanel(){
+    panel.classList.remove('open');
+    panelBackdrop.classList.remove('show');
+    mainContent.classList.remove('panel-shift');
+    document.body.classList.remove('panel-open');
+    floatBtn.style.opacity='';
+    floatBtn.style.pointerEvents='';
+  }
   function loadPortal(){
-    if(!iframe)return;
-    errorPanel.classList.remove('active');
-    portalLoader.classList.remove('hidden');
-    statusEl.innerHTML='<span class="dot" aria-hidden="true"></span><span>Loading…</span>';
+    panelError.classList.remove('active');
+    panelLoader.classList.remove('hidden');
+    if(panelStatus)panelStatus.textContent='Loading…';
     iframe.src=ACHIEVEMENTS_URL;
     clearTimeout(loadTimeout);
-    loadTimeout=setTimeout(function(){hideLoader();},8000);
+    loadTimeout=setTimeout(function(){
+      if(!panelLoader.classList.contains('hidden')){showPanelError();}
+    },12000);
   }
+  function hidePanelLoader(){
+    panelLoader.classList.add('hidden');
+    if(panelStatus)panelStatus.textContent='Connected';
+  }
+  function showPanelError(){
+    panelLoader.classList.add('hidden');
+    panelError.classList.add('active');
+    if(panelStatus)panelStatus.textContent='Offline';
+  }
+  iframe.addEventListener('load',function(){setTimeout(hidePanelLoader,400);});
+  iframe.addEventListener('error',function(){clearTimeout(loadTimeout);showPanelError();});
+  if(panelRetryBtn)panelRetryBtn.addEventListener('click',function(){loadPortal();});
 
-  function hideLoader(){
-    if(!portalLoader)return;
-    portalLoader.classList.add('hidden');
-    if(statusEl)statusEl.innerHTML='<span class="dot" aria-hidden="true"></span><span>Live</span>';
-  }
-
-  function showError(){
-    if(!portalLoader||!errorPanel)return;
-    portalLoader.classList.add('hidden');
-    errorPanel.classList.add('active');
-    if(statusEl)statusEl.innerHTML='<span class="dot" style="background:#ef4444;box-shadow:0 0 8px #ef4444;" aria-hidden="true"></span><span style="color:#ef4444;">Offline</span>';
-  }
-
-  if(iframe){
-    iframe.addEventListener('load',function(){setTimeout(hideLoader,400);});
-    iframe.addEventListener('error',function(){clearTimeout(loadTimeout);showError();});
-  }
-  if(retryBtn)retryBtn.addEventListener('click',function(){loadPortal();});
-  loadPortal();
+  floatBtn.addEventListener('click',openPanel);
+  if(ctaOpenPanel)ctaOpenPanel.addEventListener('click',openPanel);
+  panelClose.addEventListener('click',closePanel);
+  panelBackdrop.addEventListener('click',closePanel);
 })();
 </script>
 </body>
