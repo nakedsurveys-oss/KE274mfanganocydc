@@ -1,1495 +1,1090 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Assistant & FAQ | KE0274 PEFA Mfangano CYDC</title>
-    <meta name="description" content="Get instant academic support with our AI assistant and find quick answers to common questions about enrollment, programs, and daily operations.">
-    <meta name="theme-color" content="#0B1B33">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* =========================================================
-           DESIGN TOKENS — Identical to index.html
-           ========================================================= */
-        :root {
-            --blue-950: #040B1A;
-            --blue-900: #0B1B33;
-            --blue-850: #0F2544;
-            --blue-800: #132E55;
-            --blue-700: #1A3F73;
-            --blue-600: #1E4FD8;
-            --blue-500: #2563EB;
-            --blue-400: #3B82F6;
-            --blue-300: #60A5FA;
-            --blue-200: #93C5FD;
-            --blue-100: #BFDBFE;
-            --blue-50:  #EFF6FF;
-            --sky-500:  #0EA5E9;
-            --sky-400:  #38BDF8;
-            --sky-300:  #7DD3FC;
-            --sky-100:  #E0F2FE;
-            --amber-600: #D97706;
-            --amber-500: #F59E0B;
-            --amber-400: #FBBF24;
-            --amber-300: #FCD34D;
-            --amber-100: #FEF3C7;
-            --forest-600: #1e6b3a;
-            --forest-500: #2d8a4e;
-            --terra-500: #a8553c;
-            --stone-950: #0C0A09;
-            --stone-900: #1C1917;
-            --stone-800: #292524;
-            --stone-700: #44403C;
-            --stone-600: #57534E;
-            --stone-500: #78716C;
-            --stone-400: #A8A29E;
-            --stone-300: #D6D3D1;
-            --stone-200: #E7E5E4;
-            --stone-100: #F5F5F4;
-            --stone-50:  #FAFAF9;
-            --ivory:    #FDFCF8;
-            --cream:    #FAF7F0;
-            --pearl:    #F8F6F1;
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Support Center | KE0274 PEFA Mfangano CYDC</title>
+<meta name="description" content="Get instant academic support with our AI assistant and find quick answers to common questions about enrollment, programs, and daily operations."/>
+<meta name="theme-color" content="#0B1B33"/>
+<meta property="og:title" content="Support Center | KE0274 PEFA Mfangano CYDC"/>
+<meta property="og:description" content="24/7 AI assistant, comprehensive FAQ, and direct contact with our support team."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+:root{
+  --blue-950:#020814;--blue-900:#0A1628;--blue-800:#132E55;--blue-700:#1A3F73;--blue-600:#1E4FD8;--blue-500:#2563EB;--blue-400:#3B82F6;--blue-300:#60A5FA;--blue-100:#BFDBFE;--blue-50:#EFF6FF;
+  --sky-500:#0EA5E9;--sky-400:#38BDF8;--sky-300:#7DD3FC;--sky-100:#E0F2FE;
+  --amber-600:#D97706;--amber-500:#F59E0B;--amber-400:#FBBF24;--amber-300:#FCD34D;--amber-200:#FDE68A;--amber-100:#FEF3C7;--gold-400:#FACC15;
+  --forest-600:#1e6b3a;--forest-500:#2d8a4e;--forest-400:#4ade80;
+  --terra-500:#a8553c;--purple-500:#8b5cf6;--pink-500:#ec4899;
+  --stone-700:#44403C;--stone-500:#78716C;--stone-400:#A8A29E;--ivory:#FDFCF8;--pearl:#F8F6F1;
+  --bg-page:var(--ivory);--bg-surface:#fff;--bg-muted:var(--pearl);--bg-glass:rgba(255,255,255,.72);
+  --text-primary:var(--blue-950);--text-secondary:var(--stone-700);--text-tertiary:var(--stone-500);--text-quaternary:var(--stone-400);--text-accent:var(--blue-600);
+  --border-hairline:rgba(12,27,51,.05);--border-subtle:rgba(12,27,51,.09);--border-default:rgba(12,27,51,.14);
+  --gradient-hero:linear-gradient(135deg,var(--blue-950) 0%,var(--blue-900) 40%,var(--blue-800) 100%);
+  --gradient-royal:linear-gradient(135deg,var(--blue-700),var(--blue-600));
+  --gradient-warm:linear-gradient(135deg,var(--amber-600) 0%,var(--amber-400) 55%,var(--gold-400) 100%);
+  --gradient-ai:linear-gradient(135deg,var(--blue-600),var(--sky-400),var(--purple-500));
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.12) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.10) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.09) 0%,transparent 50%),radial-gradient(at 10% 90%,rgba(30,79,216,.07) 0%,transparent 45%);
+  --shadow-sm:0 1px 2px rgba(11,27,51,.05),0 2px 6px rgba(11,27,51,.05);
+  --shadow-md:0 4px 10px -2px rgba(11,27,51,.07),0 10px 24px -6px rgba(11,27,51,.10);
+  --shadow-lg:0 10px 20px -6px rgba(11,27,51,.10),0 24px 48px -12px rgba(11,27,51,.14);
+  --shadow-xl:0 18px 36px -10px rgba(11,27,51,.14),0 40px 80px -20px rgba(11,27,51,.20);
+  --shadow-2xl:0 28px 56px -14px rgba(11,27,51,.20),0 56px 112px -28px rgba(11,27,51,.30);
+  --shadow-blue:0 16px 32px -8px rgba(30,79,216,.35);
+  --shadow-ai:0 20px 40px -12px rgba(59,130,246,.45),0 0 0 1px rgba(59,130,246,.1);
+  --inset-light:inset 0 1px 0 rgba(255,255,255,.8);--inset-glass:inset 0 1px 0 rgba(255,255,255,.12);
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --track-tight:-.03em;--track-tighter:-.045em;--track-wide:.06em;--track-wider:.14em;--track-widest:.22em;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-2xl:32px;--r-3xl:40px;--r-full:9999px;
+  --ease-expo:cubic-bezier(.16,1,.3,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:180ms;--dur-base:360ms;--dur-slow:640ms;--dur-cine:1200ms;
+  --sidebar-w:300px;--container:1320px;--container-wide:1440px;--bar-h:64px;--gap:clamp(1rem,1.6vw,1.5rem);
+}
+[data-theme="dark"]{
+  --bg-page:#030812;--bg-surface:#081122;--bg-muted:#050C1A;--bg-glass:rgba(9,18,34,.78);
+  --text-primary:#F5F7FA;--text-secondary:#B8C5D9;--text-tertiary:#7A8BA3;--text-quaternary:#5A6B80;--text-accent:var(--sky-400);
+  --border-hairline:rgba(255,255,255,.05);--border-subtle:rgba(255,255,255,.09);--border-default:rgba(255,255,255,.14);
+  --gradient-hero:linear-gradient(135deg,#010409 0%,#040A17 40%,#081325 100%);
+  --gradient-mesh:radial-gradient(at 15% 20%,rgba(59,130,246,.22) 0%,transparent 45%),radial-gradient(at 85% 10%,rgba(14,165,233,.16) 0%,transparent 45%),radial-gradient(at 75% 85%,rgba(245,158,11,.10) 0%,transparent 50%);
+  --shadow-sm:0 2px 6px rgba(0,0,0,.35);--shadow-md:0 8px 20px rgba(0,0,0,.45);--shadow-lg:0 16px 36px rgba(0,0,0,.5);--shadow-xl:0 28px 60px rgba(0,0,0,.55);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text-primary);background:var(--bg-page);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;transition:background-color .8s var(--ease-expo),color .4s var(--ease-expo);font-feature-settings:"cv02","cv03","cv04","cv11"}
+body.nav-locked,body.panel-open{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font-family:inherit}
+button{cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--blue-600);color:#fff}
+:focus-visible{outline:2px solid var(--blue-500);outline-offset:3px;border-radius:var(--r-sm)}
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--blue-900);color:#fff;padding:.75rem 1.25rem;border-radius:var(--r-md);font-weight:600;font-size:.875rem;z-index:10000;transition:top .2s}
+.skip-link:focus{top:1rem}
 
-            --bg-page:       var(--ivory);
-            --bg-surface:    #ffffff;
-            --bg-elevated:   #ffffff;
-            --bg-muted:      var(--pearl);
-            --bg-inverse:    var(--blue-900);
+/* ============ CHROME ============ */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:1200;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--blue-600),var(--sky-400),var(--amber-400));pointer-events:none}
+.ambient-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient-bg::before{content:'';position:absolute;inset:0;background:var(--gradient-mesh);opacity:.85}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);opacity:.5;animation:orbFloat 32s ease-in-out infinite;will-change:transform;mix-blend-mode:screen}
+[data-theme="dark"] .orb{mix-blend-mode:normal;opacity:.35}
+.orb-1{width:min(620px,70vw);height:min(620px,70vw);background:radial-gradient(circle,var(--blue-400),transparent 70%);top:-15%;left:-12%}
+.orb-2{width:min(480px,60vw);height:min(480px,60vw);background:radial-gradient(circle,var(--sky-400),transparent 70%);top:35%;right:-12%;animation-delay:-11s}
+.orb-3{width:min(520px,60vw);height:min(520px,60vw);background:radial-gradient(circle,var(--amber-300),transparent 70%);bottom:-15%;left:25%;opacity:.25;animation-delay:-22s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.08)}66%{transform:translate(-40px,50px) scale(.95)}}
+.noise-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;z-index:9999;mix-blend-mode:difference;transition:width .3s var(--ease-expo),height .3s var(--ease-expo),border-color .3s,background .3s,opacity .3s}
+.cursor-dot{width:6px;height:6px;background:var(--blue-600)}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--blue-600);opacity:.55}
+body.cursor-hover .cursor-dot{width:10px;height:10px;background:var(--amber-400)}
+body.cursor-hover .cursor-ring{width:60px;height:60px;border-color:var(--amber-400);opacity:.35}
+@media(hover:none),(max-width:1024px){.cursor-dot,.cursor-ring{display:none!important}}
+.page-loader{position:fixed;inset:0;z-index:10001;background:var(--blue-950);display:grid;place-items:center;transition:opacity .7s var(--ease-expo),visibility .7s}
+.page-loader.hidden{opacity:0;visibility:hidden}
+.loader-logo{width:56px;height:56px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--sky-400));display:grid;place-items:center;color:#fff;font-size:1.3rem;animation:loaderPulse 1.6s ease-in-out infinite;box-shadow:0 0 56px rgba(59,130,246,.6)}
+@keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 56px rgba(59,130,246,.6)}50%{transform:scale(1.06);box-shadow:0 0 88px rgba(56,189,248,.7)}}
 
-            --text-primary:   var(--blue-950);
-            --text-secondary: var(--stone-700);
-            --text-tertiary:  var(--stone-500);
-            --text-inverse:   var(--ivory);
-            --text-accent:    var(--blue-600);
+/* ============ MOBILE BAR / SIDEBAR ============ */
+.mobile-bar{position:fixed;top:0;left:0;right:0;height:calc(var(--bar-h) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);z-index:1001;display:none;align-items:center;justify-content:space-between;padding-left:clamp(.9rem,4vw,1.25rem);padding-right:clamp(.9rem,4vw,1.25rem);background:var(--bg-glass);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-hairline)}
+.mobile-logo{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:.92rem;letter-spacing:-.01em}
+.mobile-logo .mark{width:38px;height:38px;border-radius:10px;background:var(--gradient-hero);color:var(--amber-400);display:grid;place-items:center;font-size:.95rem;box-shadow:var(--shadow-md),var(--inset-glass)}
+.mobile-toggle{width:46px;height:46px;border-radius:var(--r-md);background:var(--bg-muted);border:1px solid var(--border-subtle);display:grid;place-items:center;font-size:1.05rem;color:var(--text-primary);transition:transform .15s}
+.mobile-toggle:active{transform:scale(.92)}
+.nav-backdrop{position:fixed;inset:0;z-index:999;background:rgba(2,8,20,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .45s var(--ease-expo)}
+.nav-backdrop.show{opacity:1;pointer-events:auto}
+.sidebar{position:fixed;left:0;top:0;height:100vh;height:100dvh;width:var(--sidebar-w);background:var(--bg-glass);backdrop-filter:blur(32px) saturate(200%);-webkit-backdrop-filter:blur(32px) saturate(200%);border-right:1px solid var(--border-hairline);padding:2rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom));z-index:1000;display:flex;flex-direction:column;overflow:hidden;transition:transform .55s var(--ease-expo)}
+.sidebar::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.35),transparent)}
+.sidebar-header{padding-bottom:1.4rem;margin-bottom:1.4rem;border-bottom:1px solid var(--border-hairline);flex-shrink:0}
+.sidebar-logo{display:flex;align-items:center;gap:.75rem}
+.sidebar-logo-mark{width:44px;height:44px;border-radius:var(--r-md);background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-size:1.05rem;flex-shrink:0;box-shadow:var(--shadow-md),var(--inset-glass);position:relative;overflow:hidden}
+.sidebar-logo-mark::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 60%)}
+.sidebar-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.sidebar-logo-title{font-size:.95rem;font-weight:700;letter-spacing:-.02em}
+.sidebar-logo-sub{font-size:.63rem;color:var(--text-tertiary);font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;margin-top:2px}
+.sidebar-nav{flex:1;display:flex;flex-direction:column;gap:1.6rem;overflow-y:auto;scrollbar-width:thin;padding-right:2px;overscroll-behavior:contain}
+.nav-section-title{color:var(--text-quaternary);font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:var(--track-widest);margin-bottom:.7rem;padding-left:.75rem}
+.nav-item{position:relative}
+.nav-link{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:11px .75rem;min-height:44px;color:var(--text-secondary);border-radius:var(--r-md);transition:all .2s var(--ease-expo);font-size:.875rem;font-weight:500;cursor:pointer}
+.nav-link:hover{background:var(--bg-muted);color:var(--text-primary)}
+.nav-link.active{background:var(--blue-900);color:#fff;box-shadow:var(--shadow-md),var(--inset-glass)}
+[data-theme="dark"] .nav-link.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.nav-link-left{display:flex;align-items:center;gap:.75rem}
+.nav-link i.nav-icon{font-size:.95rem;width:18px;text-align:center;opacity:.85}
+.dropdown-arrow{font-size:.62rem;transition:transform .25s var(--ease-expo);color:var(--text-quaternary)}
+.nav-item.active .dropdown-arrow{transform:rotate(180deg);color:var(--amber-400)}
+.dropdown{margin:2px 0 0 1.75rem;padding-left:1rem;border-left:1px solid var(--border-subtle);max-height:0;overflow:hidden;transition:max-height .4s var(--ease-expo)}
+.nav-item.active .dropdown{max-height:400px}
+.dropdown-link{display:flex;align-items:center;gap:.75rem;padding:10px .75rem;min-height:40px;color:var(--text-tertiary);font-size:.825rem;font-weight:500;border-radius:var(--r-sm);transition:all .2s}
+.dropdown-link:hover{color:var(--text-primary);background:var(--bg-muted);padding-left:1rem}
+.dropdown-link.active{color:var(--blue-600);background:var(--blue-50);font-weight:600}
+[data-theme="dark"] .dropdown-link.active{color:var(--sky-400);background:rgba(30,79,216,.15)}
+.dropdown-link i{font-size:.72rem;width:14px;color:var(--blue-500)}
+.sidebar-footer{margin-top:auto;padding-top:1.25rem;border-top:1px solid var(--border-hairline);flex-shrink:0}
+.theme-toggle{width:100%;padding:11px;background:var(--bg-muted);border:1px solid var(--border-subtle);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;gap:.5rem;font-size:.825rem;font-weight:600;transition:all .2s;min-height:44px}
+.theme-toggle:hover{background:var(--blue-900);color:#fff;border-color:var(--blue-900)}
+.main-content{margin-left:var(--sidebar-w);position:relative;z-index:2;transition:margin-left .5s var(--ease-expo),padding-right .5s var(--ease-expo)}
+.main-content.panel-shift{padding-right:440px}
 
-            --border-hairline: rgba(12, 27, 51, 0.06);
-            --border-subtle:   rgba(12, 27, 51, 0.10);
-            --border-default:  rgba(12, 27, 51, 0.16);
-            --border-strong:   rgba(12, 27, 51, 0.24);
+/* ============ PAGE HERO ============ */
+.page-hero{position:relative;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem) clamp(2.5rem,5vw,4rem);overflow:hidden}
+.page-hero-inner{max-width:var(--container-wide);margin:0 auto;display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+.hero-breadcrumb{display:inline-flex;align-items:center;gap:.55rem;padding:6px 14px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:var(--track-wide);color:var(--text-tertiary);margin-bottom:1.5rem;box-shadow:var(--shadow-sm)}
+.hero-breadcrumb i{color:var(--amber-500);font-size:.65rem}
+.hero-breadcrumb .sep{opacity:.35}
+.hero-breadcrumb .current{color:var(--text-primary);font-weight:600}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;padding:8px 16px;background:rgba(30,79,216,.08);border:1px solid rgba(30,79,216,.18);border-radius:var(--r-full);font-size:.7rem;font-weight:600;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--blue-600);margin-bottom:1.5rem}
+[data-theme="dark"] .hero-eyebrow{background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.25);color:var(--sky-400)}
+.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--blue-500);animation:pulseRing 2.4s ease-out infinite}
+[data-theme="dark"] .hero-eyebrow .pulse{background:var(--sky-400)}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(59,130,246,.7)}70%{box-shadow:0 0 0 12px rgba(59,130,246,0)}100%{box-shadow:0 0 0 0 rgba(59,130,246,0)}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:400;line-height:1.02;letter-spacing:var(--track-tighter);margin-bottom:1.25rem;font-variation-settings:"opsz" 144}
+.hero-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--blue-600),var(--sky-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .hero-title .italic{background:linear-gradient(135deg,var(--sky-300),var(--amber-300));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-subtitle{font-size:clamp(1rem,1.4vw,1.125rem);color:var(--text-secondary);max-width:720px;line-height:1.75;margin-bottom:2rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;padding:10px 16px;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-full);font-size:.78rem;font-weight:600;color:var(--text-primary);box-shadow:var(--shadow-sm);transition:all .25s var(--ease-expo)}
+.hero-badge:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border-default)}
+.hero-badge-icon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;color:#fff;flex-shrink:0}
+.hero-badge-icon.ai{background:var(--gradient-ai)}
+.hero-badge-icon.faq{background:var(--gradient-warm)}
+.hero-badge-icon.contact{background:var(--gradient-royal)}
+.hero-badge strong{color:var(--text-primary);font-weight:700}
 
-            --gradient-hero: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
-            --gradient-royal: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 100%);
-            --gradient-sky: linear-gradient(135deg, var(--sky-500) 0%, var(--blue-400) 100%);
-            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-400) 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
-                             radial-gradient(at 0% 100%, rgba(30, 79, 216, 0.10) 0%, transparent 50%);
+/* ============ SECTION ============ */
+.section{position:relative;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem)}
+.section-inner{max-width:var(--container-wide);margin:0 auto}
+.section-header{margin-bottom:clamp(2rem,4vw,3rem);max-width:780px}
+.section-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;color:var(--blue-600);margin-bottom:1rem}
+[data-theme="dark"] .section-eyebrow{color:var(--sky-400)}
+.section-eyebrow::before{content:'';width:32px;height:1px;background:currentColor}
+.section-title{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,3rem);font-weight:400;line-height:1.08;letter-spacing:var(--track-tighter);margin-bottom:.75rem;font-variation-settings:"opsz" 144}
+.section-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--blue-600),var(--sky-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .section-title .italic{background:linear-gradient(135deg,var(--sky-300),var(--amber-300));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.section-lede{font-size:clamp(.95rem,1.3vw,1.0625rem);color:var(--text-secondary);line-height:1.75}
 
-            --shadow-xs: 0 1px 2px rgba(11, 27, 51, 0.04);
-            --shadow-sm: 0 2px 4px rgba(11, 27, 51, 0.04), 0 1px 2px rgba(11, 27, 51, 0.06);
-            --shadow-md: 0 4px 16px -2px rgba(11, 27, 51, 0.08), 0 2px 4px rgba(11, 27, 51, 0.04);
-            --shadow-lg: 0 12px 32px -8px rgba(11, 27, 51, 0.12), 0 4px 8px rgba(11, 27, 51, 0.04);
-            --shadow-xl: 0 24px 64px -16px rgba(11, 27, 51, 0.18), 0 8px 16px rgba(11, 27, 51, 0.06);
-            --shadow-2xl: 0 48px 96px -24px rgba(11, 27, 51, 0.28);
-            --shadow-blue: 0 20px 48px -12px rgba(30, 79, 216, 0.35);
-            --shadow-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+/* ============ FAQ SECTION (Primary) ============ */
+.faq-container{display:grid;grid-template-columns:1fr;gap:clamp(1.5rem,3vw,2.5rem);max-width:960px}
+.faq-search-wrap{position:relative}
+.faq-search{width:100%;padding:18px 20px 18px 56px;background:var(--bg-surface);border:1.5px solid var(--border-subtle);border-radius:var(--r-xl);font-family:var(--font-body);font-size:1rem;color:var(--text-primary);transition:all .3s var(--ease-expo);box-shadow:var(--shadow-sm)}
+.faq-search::placeholder{color:var(--text-quaternary)}
+.faq-search:focus{outline:none;border-color:var(--blue-500);box-shadow:0 0 0 4px rgba(37,99,235,.12),var(--shadow-md);background:var(--bg-surface)}
+.faq-search-icon{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:var(--text-quaternary);font-size:1.1rem;pointer-events:none;transition:color .2s}
+.faq-search:focus~.faq-search-icon{color:var(--blue-600)}
+.faq-search-clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:none;align-items:center;justify-content:center;color:var(--text-tertiary);font-size:.75rem;transition:all .2s}
+.faq-search-clear.visible{display:flex}
+.faq-search-clear:hover{background:var(--blue-900);color:#fff}
 
-            --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+.faq-tabs{display:flex;flex-wrap:wrap;gap:.5rem}
+.faq-tab{padding:8px 16px;background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--r-full);font-size:.78rem;font-weight:600;color:var(--text-secondary);cursor:pointer;transition:all .25s var(--ease-expo);display:inline-flex;align-items:center;gap:.5rem;box-shadow:var(--shadow-xs)}
+.faq-tab i{font-size:.72rem}
+.faq-tab:hover{background:var(--bg-muted);color:var(--text-primary);border-color:var(--border-default);transform:translateY(-1px)}
+.faq-tab.active{background:var(--blue-900);color:#fff;border-color:var(--blue-900);box-shadow:var(--shadow-md),var(--inset-glass)}
+[data-theme="dark"] .faq-tab.active{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));box-shadow:var(--shadow-blue)}
+.faq-tab-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:var(--r-full);background:rgba(0,0,0,.08);font-size:.65rem;font-weight:700}
+.faq-tab.active .faq-tab-count{background:rgba(255,255,255,.2);color:#fff}
 
-            --fs-xs:   0.75rem;
-            --fs-sm:   0.875rem;
-            --fs-base: 1rem;
-            --fs-md:   1.0625rem;
-            --fs-lg:   1.125rem;
-            --fs-xl:   1.25rem;
-            --fs-2xl:  1.5rem;
-            --fs-3xl:  1.875rem;
-            --fs-4xl:  2.25rem;
-            --fs-5xl:  3rem;
+.faq-list{display:flex;flex-direction:column;gap:.75rem}
+.faq-item{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);overflow:hidden;transition:all .3s var(--ease-expo);box-shadow:var(--shadow-sm);position:relative}
+.faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gradient-royal);transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease-expo)}
+.faq-item:hover{border-color:var(--border-default);box-shadow:var(--shadow-md)}
+.faq-item.active{border-color:var(--blue-500);box-shadow:var(--shadow-lg),0 0 0 3px rgba(37,99,235,.08)}
+.faq-item.active::before{transform:scaleY(1)}
+.faq-question{padding:clamp(1rem,2vw,1.25rem) clamp(1.25rem,2.5vw,1.5rem);font-weight:600;color:var(--text-primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:clamp(.9rem,1.2vw,1rem);line-height:1.45;transition:color .2s;text-align:left;width:100%}
+.faq-question:hover{color:var(--blue-600)}
+[data-theme="dark"] .faq-question:hover{color:var(--sky-400)}
+.faq-question-text{flex:1;font-weight:600}
+.faq-question-meta{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.faq-category-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.faq-category-dot.general{background:var(--blue-500)}
+.faq-category-dot.enrollment{background:var(--amber-500)}
+.faq-category-dot.academics{background:var(--forest-500)}
+.faq-category-dot.sponsorship{background:var(--pink-500)}
+.faq-category-dot.contact{background:var(--purple-500)}
+.faq-toggle{width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:grid;place-items:center;flex-shrink:0;transition:all .3s var(--ease-expo)}
+.faq-toggle i{font-size:.7rem;color:var(--text-tertiary);transition:transform .3s var(--ease-expo)}
+.faq-item.active .faq-toggle{background:var(--blue-900);transform:rotate(0deg)}
+[data-theme="dark"] .faq-item.active .faq-toggle{background:linear-gradient(135deg,var(--blue-600),var(--blue-700))}
+.faq-item.active .faq-toggle i{color:#fff;transform:rotate(180deg)}
 
-            --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem;
-            --s-4: 1rem;    --s-5: 1.25rem; --s-6: 1.5rem;
-            --s-8: 2rem;    --s-10: 2.5rem; --s-12: 3rem;
-            --s-16: 4rem;   --s-20: 5rem;   --s-24: 6rem;
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .5s var(--ease-expo)}
+.faq-item.active .faq-answer{max-height:800px}
+.faq-answer-inner{padding:0 clamp(1.25rem,2.5vw,1.5rem) clamp(1.25rem,2.5vw,1.5rem);color:var(--text-secondary);font-size:.95rem;line-height:1.75;border-top:1px solid var(--border-hairline);padding-top:1.25rem}
+.faq-answer-inner strong{color:var(--text-primary);font-weight:600}
+.faq-answer-inner ul{margin:.75rem 0 0 1.25rem;display:flex;flex-direction:column;gap:.5rem}
+.faq-answer-inner ul li{position:relative;padding-left:0}
+.faq-answer-inner a{color:var(--blue-600);font-weight:500;text-decoration:underline;text-underline-offset:2px}
+[data-theme="dark"] .faq-answer-inner a{color:var(--sky-400)}
 
-            --r-sm: 8px;
-            --r-md: 12px;
-            --r-lg: 16px;
-            --r-xl: 24px;
-            --r-2xl: 32px;
-            --r-3xl: 40px;
-            --r-full: 9999px;
+.faq-no-results{text-align:center;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem);display:none}
+.faq-no-results.show{display:block}
+.faq-no-results-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.04));border:1px solid rgba(245,158,11,.2);display:grid;place-items:center;color:var(--amber-500);font-size:1.5rem;margin:0 auto 1.25rem}
+.faq-no-results h3{font-family:var(--font-display);font-size:1.35rem;font-weight:500;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.015em}
+.faq-no-results p{color:var(--text-secondary);margin-bottom:1.25rem;font-size:.95rem}
 
-            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-            --dur-fast: 200ms;
-            --dur-base: 360ms;
-            --dur-slow: 640ms;
+/* ============ CONTACT SUPPORT SECTION ============ */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap)}
+.contact-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-2xl);padding:clamp(1.5rem,3vw,2rem);box-shadow:var(--shadow-sm);transition:all .4s var(--ease-expo);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gradient-royal));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease-expo)}
+.contact-card::after{content:'';position:absolute;inset:0;background:radial-gradient(320px circle at var(--sx,50%) var(--sy,50%),rgba(30,79,216,.05),transparent 65%);opacity:0;transition:opacity .45s;pointer-events:none}
+.contact-card>*{position:relative;z-index:1}
+.contact-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--border-default)}
+.contact-card:hover::before{transform:scaleX(1)}
+.contact-card:hover::after{opacity:1}
+[data-theme="dark"] .contact-card::after{background:radial-gradient(320px circle at var(--sx,50%) var(--sy,50%),rgba(56,189,248,.06),transparent 65%)}
+.contact-card.email{--card-accent:linear-gradient(90deg,var(--blue-600),var(--sky-400))}
+.contact-card.phone{--card-accent:linear-gradient(90deg,var(--forest-500),var(--forest-400))}
+.contact-card.location{--card-accent:linear-gradient(90deg,var(--amber-500),var(--gold-400))}
+.contact-card.social{--card-accent:linear-gradient(90deg,var(--purple-500),var(--pink-500))}
 
-            --sidebar-w: 300px;
-            --container: 1320px;
-        }
+.contact-card-icon{width:52px;height:52px;border-radius:var(--r-md);display:grid;place-items:center;font-size:1.25rem;color:#fff;margin-bottom:1.25rem;box-shadow:var(--shadow-md);transition:transform .4s var(--ease-spring)}
+.contact-card:hover .contact-card-icon{transform:scale(1.08) rotate(-4deg)}
+.contact-card.email .contact-card-icon{background:var(--gradient-royal)}
+.contact-card.phone .contact-card-icon{background:linear-gradient(135deg,var(--forest-500),var(--forest-400))}
+.contact-card.location .contact-card-icon{background:var(--gradient-warm)}
+.contact-card.social .contact-card-icon{background:linear-gradient(135deg,var(--purple-500),var(--pink-500))}
 
-        [data-theme="dark"] {
-            --bg-page:     #050B16;
-            --bg-surface:  #0B1526;
-            --bg-elevated: #111E36;
-            --bg-muted:    #0A1322;
-            --bg-inverse:  var(--ivory);
+.contact-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:500;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.01em}
+.contact-card>p{color:var(--text-secondary);font-size:.875rem;line-height:1.65;margin-bottom:1.25rem;flex-grow:1}
+.contact-card-value{display:flex;align-items:center;gap:.6rem;padding:.85rem 1rem;background:var(--bg-muted);border-radius:var(--r-md);font-size:.875rem;font-weight:600;color:var(--text-primary);word-break:break-all;transition:all .2s}
+.contact-card-value:hover{background:var(--blue-50);color:var(--blue-600)}
+[data-theme="dark"] .contact-card-value:hover{background:rgba(56,189,248,.1);color:var(--sky-400)}
+.contact-card-value i{color:var(--text-tertiary);font-size:.85rem;flex-shrink:0}
 
-            --text-primary:   #F5F7FA;
-            --text-secondary: #B8C5D9;
-            --text-tertiary:  #7A8BA3;
-            --text-inverse:   var(--blue-950);
-            --text-accent:    var(--sky-400);
+/* ============ ADDITIONAL RESOURCES ============ */
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap)}
+.resource-card{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);padding:1.5rem;box-shadow:var(--shadow-sm);transition:all .3s var(--ease-expo);display:flex;flex-direction:column;gap:.75rem;position:relative;overflow:hidden}
+.resource-card::after{content:'→';position:absolute;top:1.5rem;right:1.5rem;color:var(--text-quaternary);font-size:1rem;transition:all .3s var(--ease-expo)}
+.resource-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--border-default)}
+.resource-card:hover::after{color:var(--blue-600);transform:translateX(4px)}
+[data-theme="dark"] .resource-card:hover::after{color:var(--sky-400)}
+.resource-card-icon{width:40px;height:40px;border-radius:var(--r-md);background:var(--bg-muted);display:grid;place-items:center;color:var(--blue-600);font-size:1rem;transition:all .3s var(--ease-expo)}
+[data-theme="dark"] .resource-card-icon{color:var(--sky-400)}
+.resource-card:hover .resource-card-icon{background:var(--gradient-royal);color:#fff;transform:scale(1.05)}
+.resource-card h3{font-family:var(--font-display);font-size:1.05rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em;margin-top:auto}
+.resource-card p{font-size:.825rem;color:var(--text-secondary);line-height:1.6}
 
-            --border-hairline: rgba(255,255,255,0.05);
-            --border-subtle:   rgba(255,255,255,0.08);
-            --border-default:  rgba(255,255,255,0.14);
-            --border-strong:   rgba(255,255,255,0.22);
+/* ============ CTA SECTION ============ */
+.cta-section{background:var(--gradient-hero);color:#fff;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2rem);position:relative;overflow:hidden;isolation:isolate}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,rgba(59,130,246,.18),transparent 55%),radial-gradient(ellipse at 80% 70%,rgba(245,158,11,.12),transparent 55%);pointer-events:none}
+.cta-section>*{position:relative;z-index:1}
+.cta-inner{max-width:var(--container-wide);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,4vw,3rem);align-items:center}
+.cta-content h2{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:400;letter-spacing:var(--track-tighter);margin-bottom:1rem;font-variation-settings:"opsz" 144;line-height:1.1}
+.cta-content h2 .italic{font-style:italic;font-weight:300;color:var(--amber-300)}
+.cta-content p{color:rgba(255,255,255,.78);font-size:clamp(.95rem,1.3vw,1.0625rem);line-height:1.75;margin-bottom:2rem;max-width:560px}
+.cta-buttons{display:flex;flex-wrap:wrap;gap:.75rem}
+.cta-btn{padding:14px 26px;border-radius:var(--r-full);font-weight:600;font-size:.925rem;display:inline-flex;align-items:center;gap:.5rem;transition:all .25s var(--ease-expo);border:none;min-height:52px;white-space:nowrap}
+.cta-btn-primary{background:var(--gradient-warm);color:var(--blue-950);box-shadow:0 14px 28px -8px rgba(245,158,11,.38)}
+.cta-btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -8px rgba(245,158,11,.55)}
+.cta-btn-secondary{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.cta-btn-secondary:hover{background:rgba(255,255,255,.18);transform:translateY(-3px)}
+.cta-visual{display:flex;justify-content:center;align-items:center}
+.cta-illustration{width:100%;max-width:380px;aspect-ratio:1;border-radius:var(--r-3xl);background:rgba(255,255,255,.06);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow-2xl),var(--inset-glass)}
+.cta-illustration::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+.cta-illustration-icon{font-size:5rem;color:var(--amber-300);opacity:.9;position:relative;z-index:2}
+.cta-illustration::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(245,158,11,.2),transparent 60%);animation:ctaGlow 4s ease-in-out infinite}
+@keyframes ctaGlow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.8;transform:scale(1.1)}}
 
-            --gradient-hero: linear-gradient(135deg, #020611 0%, #050E1F 40%, #0A1B35 100%);
-            --gradient-mesh: radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
-                             radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
-                             radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+/* ============ FOOTER ============ */
+.footer{background:var(--blue-950);color:rgba(255,255,255,.75);padding:clamp(3rem,6vw,4rem) 0 2rem;position:relative;overflow:hidden}
+.footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.15),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,158,11,.08),transparent 50%);pointer-events:none}
+.footer>*{position:relative;z-index:1}
+.footer-inner{max-width:var(--container-wide);margin:0 auto;padding:0 clamp(1.25rem,4vw,2rem)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:3rem;margin-bottom:3rem}
+.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;color:#fff;font-weight:700;font-size:1rem}
+.footer-logo-mark{width:40px;height:40px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--blue-600),var(--blue-800));color:var(--amber-400);display:grid;place-items:center;font-size:1rem;box-shadow:var(--shadow-md)}
+.footer-tagline{font-family:var(--font-display);font-style:italic;font-size:1.125rem;color:var(--amber-300);margin-bottom:1.25rem;line-height:1.5}
+.footer-brand>p{font-size:.875rem;line-height:1.7;margin-bottom:1.5rem;max-width:360px}
+.footer-contact{display:flex;flex-direction:column;gap:.55rem;font-size:.825rem;font-style:normal}
+.footer-contact-item{display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.7);line-height:1.5}
+.footer-contact-item i{color:var(--amber-400);width:14px;font-size:.8rem;margin-top:3px;flex-shrink:0}
+.footer-contact-item a{transition:color .2s}
+.footer-contact-item a:hover{color:var(--amber-300)}
+.footer-col h4{color:#fff;font-size:.68rem;font-weight:700;letter-spacing:var(--track-widest);text-transform:uppercase;margin-bottom:1.25rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.footer-links a{font-size:.875rem;color:rgba(255,255,255,.65);transition:color .2s,transform .2s;font-weight:500;display:inline-flex;align-items:center;gap:.4rem}
+.footer-links a:hover{color:var(--amber-300);transform:translateX(4px)}
+.newsletter-form{display:flex;gap:.5rem;margin-bottom:1.25rem}
+.newsletter-form input{flex:1;padding:12px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-md);color:#fff;font-family:var(--font-body);font-size:.85rem;min-width:0;transition:all .2s;min-height:44px}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter-form input:focus{outline:none;border-color:var(--amber-400);background:rgba(255,255,255,.1);box-shadow:0 0 0 3px rgba(245,158,11,.15)}
+.newsletter-form button{padding:12px 18px;background:var(--gradient-warm);color:var(--blue-950);border-radius:var(--r-md);font-weight:700;font-size:.85rem;transition:transform .2s,box-shadow .2s;min-height:44px}
+.newsletter-form button:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(245,158,11,.5)}
+.social-links{display:flex;gap:.5rem}
+.social-links a{width:40px;height:40px;border-radius:var(--r-md);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;color:rgba(255,255,255,.7);transition:all .25s;font-size:.9rem}
+.social-links a:hover{background:var(--gradient-warm);color:var(--blue-950);border-color:transparent;transform:translateY(-3px) rotate(-4deg)}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:rgba(255,255,255,.5)}
+.footer-legal{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-legal a{transition:color .2s}
+.footer-legal a:hover{color:var(--amber-300)}
+.footer-developer-btn{display:inline-flex;align-items:center;gap:.5rem;padding:8px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-full);color:rgba(255,255,255,.7);font-size:.72rem;font-weight:600;letter-spacing:var(--track-wide);text-transform:uppercase;transition:all .25s var(--ease-expo);cursor:pointer;margin-top:1rem}
+.footer-developer-btn:hover{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.25);transform:translateY(-2px)}
+.footer-developer-btn i{color:var(--amber-400)}
 
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-            --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-            --shadow-xl: 0 24px 64px rgba(0,0,0,0.6);
-        }
+/* ============ AI FLOATING BUTTON ============ */
+.ai-float{position:fixed;bottom:2rem;right:2rem;z-index:998;display:flex;align-items:center;gap:.7rem;padding:14px 22px;background:var(--gradient-ai);color:#fff;border-radius:var(--r-full);font-weight:700;font-size:.9rem;box-shadow:var(--shadow-ai);transition:all .3s var(--ease-expo);min-height:56px;overflow:hidden}
+.ai-float::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-20deg);animation:aiShine 4s ease-in-out infinite}
+@keyframes aiShine{0%,100%{left:-100%}50%{left:150%}}
+.ai-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 24px 48px -12px rgba(59,130,246,.55),0 0 0 1px rgba(59,130,246,.2)}
+.ai-float-icon{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:.85rem;flex-shrink:0;position:relative}
+.ai-float-icon::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(255,255,255,.4);animation:aiPulseRing 2s ease-out infinite}
+@keyframes aiPulseRing{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.ai-float-text{position:relative;z-index:2}
+.ai-float-text small{display:block;font-size:.62rem;font-weight:500;opacity:.85;letter-spacing:var(--track-wide);text-transform:uppercase;margin-bottom:1px}
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
-        body {
-            font-family: var(--font-body);
-            font-size: var(--fs-base);
-            line-height: 1.65;
-            color: var(--text-primary);
-            background: var(--bg-page);
-            min-height: 100vh;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-            transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-base) var(--ease-out);
-        }
-        a { color: inherit; text-decoration: none; }
-        button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-        ::selection { background: var(--blue-600); color: white; }
+/* ============ AI PANEL (Desktop: side panel, Mobile: full screen) ============ */
+.ai-panel-backdrop{position:fixed;inset:0;background:rgba(2,8,20,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:1100;opacity:0;pointer-events:none;transition:opacity .4s var(--ease-expo)}
+.ai-panel-backdrop.show{opacity:1;pointer-events:auto}
+.ai-panel{position:fixed;top:0;right:0;height:100vh;height:100dvh;width:min(440px,100vw);background:var(--bg-surface);z-index:1101;transform:translateX(100%);transition:transform .5s var(--ease-expo);display:flex;flex-direction:column;overflow:hidden;box-shadow:-20px 0 60px rgba(0,0,0,.15)}
+.ai-panel.open{transform:translateX(0)}
+.ai-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-ai)}
+.ai-panel-header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--border-hairline);display:flex;align-items:center;gap:.85rem;flex-shrink:0;background:var(--bg-surface);position:relative}
+.ai-panel-avatar{width:44px;height:44px;border-radius:50%;background:var(--gradient-ai);display:grid;place-items:center;color:#fff;font-size:1.1rem;flex-shrink:0;position:relative;box-shadow:0 0 0 3px var(--bg-surface),var(--shadow-md)}
+.ai-panel-avatar::after{content:'';position:absolute;bottom:2px;right:2px;width:10px;height:10px;border-radius:50%;background:var(--forest-500);border:2px solid var(--bg-surface);box-shadow:0 0 0 0 rgba(45,138,78,.5);animation:aiOnlinePulse 2s ease-in-out infinite}
+@keyframes aiOnlinePulse{0%,100%{box-shadow:0 0 0 0 rgba(45,138,78,.5)}50%{box-shadow:0 0 0 6px rgba(45,138,78,0)}}
+.ai-panel-info{flex:1;min-width:0}
+.ai-panel-name{font-family:var(--font-display);font-size:1.05rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em;line-height:1.2}
+.ai-panel-status{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:.68rem;color:var(--forest-600);letter-spacing:var(--track-wide);text-transform:uppercase;font-weight:600;margin-top:2px}
+[data-theme="dark"] .ai-panel-status{color:var(--forest-400)}
+.ai-panel-status .dot{width:6px;height:6px;border-radius:50%;background:var(--forest-500);box-shadow:0 0 6px var(--forest-500)}
+.ai-panel-close{width:38px;height:38px;border-radius:50%;background:var(--bg-muted);display:grid;place-items:center;color:var(--text-secondary);font-size:.9rem;transition:all .2s;flex-shrink:0}
+.ai-panel-close:hover{background:var(--blue-900);color:#fff;transform:rotate(90deg)}
 
-        :focus-visible {
-            outline: 2px solid var(--blue-500);
-            outline-offset: 3px;
-            border-radius: var(--r-sm);
-        }
+.ai-panel-body{flex:1;overflow-y:auto;padding:1.5rem;display:flex;flex-direction:column;gap:1rem;background:linear-gradient(180deg,var(--bg-muted) 0%,var(--bg-surface) 100%);scrollbar-width:thin}
+.ai-panel-body::-webkit-scrollbar{width:5px}
+.ai-panel-body::-webkit-scrollbar-thumb{background:var(--border-default);border-radius:3px}
 
-        .skip-link {
-            position: absolute;
-            top: -100px; left: var(--s-4);
-            background: var(--blue-900);
-            color: white;
-            padding: var(--s-3) var(--s-5);
-            border-radius: var(--r-md);
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            z-index: 10000;
-            transition: top var(--dur-fast);
-        }
-        .skip-link:focus { top: var(--s-4); }
+.ai-welcome{background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);padding:1.25rem;box-shadow:var(--shadow-sm)}
+.ai-welcome-greeting{font-family:var(--font-display);font-size:1.1rem;font-weight:500;color:var(--text-primary);margin-bottom:.5rem;letter-spacing:-.01em}
+.ai-welcome-greeting .wave{display:inline-block;animation:wave 2.5s ease-in-out infinite;transform-origin:70% 70%}
+@keyframes wave{0%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%{transform:rotate(-8deg)}40%{transform:rotate(14deg)}50%{transform:rotate(0)}}
+.ai-welcome p{font-size:.875rem;color:var(--text-secondary);line-height:1.65;margin-bottom:1rem}
+.ai-suggestions{display:flex;flex-direction:column;gap:.5rem}
+.ai-suggestion{padding:10px 14px;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-md);font-size:.825rem;color:var(--text-primary);cursor:pointer;text-align:left;transition:all .2s;display:flex;align-items:center;gap:.6rem;font-weight:500}
+.ai-suggestion i{color:var(--blue-600);font-size:.7rem;flex-shrink:0}
+[data-theme="dark"] .ai-suggestion i{color:var(--sky-400)}
+.ai-suggestion:hover{background:var(--blue-50);border-color:var(--blue-100);transform:translateX(2px)}
+[data-theme="dark"] .ai-suggestion:hover{background:rgba(30,79,216,.15);border-color:rgba(59,130,246,.3)}
 
-        /* =========================================================
-           AMBIENT BACKGROUND
-           ========================================================= */
-        .ambient-bg {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .ambient-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-mesh);
-            opacity: 0.4;
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.35;
-            animation: orbFloat 24s ease-in-out infinite;
-            will-change: transform;
-        }
-        .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, var(--blue-400), transparent 70%); top: -10%; left: -10%; }
-        .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, var(--sky-400), transparent 70%); top: 40%; right: -8%; animation-delay: -8s; }
-        .orb-3 { width: 380px; height: 380px; background: radial-gradient(circle, var(--amber-400), transparent 70%); bottom: -10%; left: 30%; opacity: 0.2; animation-delay: -16s; }
-        @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(40px, -30px) scale(1.08); }
-            66% { transform: translate(-30px, 40px) scale(0.95); }
-        }
+.ai-message{display:flex;gap:.75rem;align-items:flex-start}
+.ai-message.user{flex-direction:row-reverse}
+.ai-message-avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;color:#fff;flex-shrink:0}
+.ai-message.bot .ai-message-avatar{background:var(--gradient-ai)}
+.ai-message.user .ai-message-avatar{background:var(--gradient-warm);color:var(--blue-950)}
+.ai-message-bubble{max-width:80%;padding:.85rem 1.1rem;border-radius:var(--r-xl);font-size:.9rem;line-height:1.6;box-shadow:var(--shadow-xs)}
+.ai-message.bot .ai-message-bubble{background:var(--bg-surface);color:var(--text-primary);border:1px solid var(--border-hairline);border-top-left-radius:6px}
+.ai-message.user .ai-message-bubble{background:var(--gradient-royal);color:#fff;border-top-right-radius:6px}
 
-        /* =========================================================
-           SIDEBAR — Identical to index.html
-           ========================================================= */
-        .sidebar {
-            position: fixed;
-            left: 0; top: 0;
-            height: 100vh;
-            width: var(--sidebar-w);
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border-right: 1px solid var(--border-hairline);
-            padding: var(--s-7) var(--s-5);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            transition: transform var(--dur-base) var(--ease-out);
-            overflow: hidden;
-        }
-        [data-theme="dark"] .sidebar {
-            background: rgba(11, 21, 38, 0.78);
-            border-right: 1px solid var(--border-subtle);
-        }
-        .sidebar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-        }
+.ai-typing{display:flex;gap:4px;padding:.85rem 1.1rem;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-xl);border-top-left-radius:6px;width:fit-content}
+.ai-typing span{width:7px;height:7px;border-radius:50%;background:var(--text-quaternary);animation:typingBounce 1.4s ease-in-out infinite}
+.ai-typing span:nth-child(2){animation-delay:.15s}
+.ai-typing span:nth-child(3){animation-delay:.3s}
+@keyframes typingBounce{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
 
-        .sidebar-header {
-            padding-bottom: var(--s-6);
-            margin-bottom: var(--s-6);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .sidebar-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            transition: opacity var(--dur-fast);
-        }
-        .sidebar-logo:hover { opacity: 0.8; }
-        .sidebar-logo-mark {
-            width: 44px; height: 44px;
-            border-radius: var(--r-md);
-            background: var(--gradient-hero);
-            display: grid; place-items: center;
-            color: var(--amber-400);
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .sidebar-logo-mark::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        .sidebar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-        .sidebar-logo-title { font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-primary); }
-        .sidebar-logo-sub { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+.ai-panel-footer{padding:1rem 1.25rem;border-top:1px solid var(--border-hairline);background:var(--bg-surface);flex-shrink:0}
+.ai-input-form{display:flex;gap:.5rem;align-items:flex-end}
+.ai-input{flex:1;padding:12px 16px;background:var(--bg-muted);border:1.5px solid var(--border-subtle);border-radius:var(--r-full);font-family:var(--font-body);font-size:.9rem;color:var(--text-primary);min-height:44px;transition:all .2s}
+.ai-input::placeholder{color:var(--text-quaternary)}
+.ai-input:focus{outline:none;border-color:var(--blue-500);background:var(--bg-surface);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.ai-send-btn{width:44px;height:44px;border-radius:50%;background:var(--gradient-ai);color:#fff;display:grid;place-items:center;font-size:.9rem;transition:all .25s var(--ease-expo);flex-shrink:0}
+.ai-send-btn:hover{transform:scale(1.08) rotate(-12deg);box-shadow:var(--shadow-ai)}
+.ai-send-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.ai-disclaimer{font-family:var(--font-mono);font-size:.65rem;color:var(--text-quaternary);text-align:center;margin-top:.75rem;letter-spacing:var(--track-wide)}
 
-        .sidebar-nav {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: var(--s-6);
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-default) transparent;
-            padding-right: 2px;
-        }
-        .sidebar-nav::-webkit-scrollbar { width: 4px; }
-        .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 2px; }
+/* ============ DEVELOPER MODAL ============ */
+.dev-modal-backdrop{position:fixed;inset:0;background:rgba(2,8,20,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2000;opacity:0;pointer-events:none;transition:opacity .4s var(--ease-expo);display:grid;place-items:center;padding:1rem;overflow-y:auto}
+.dev-modal-backdrop.show{opacity:1;pointer-events:auto}
+.dev-modal{width:100%;max-width:580px;background:var(--bg-surface);border-radius:var(--r-3xl);overflow:hidden;position:relative;transform:scale(.92) translateY(20px);opacity:0;transition:all .5s var(--ease-expo);box-shadow:var(--shadow-2xl);max-height:90vh;overflow-y:auto}
+.dev-modal-backdrop.show .dev-modal{transform:scale(1) translateY(0);opacity:1}
+.dev-modal::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gradient-ai)}
+.dev-modal-glow{position:absolute;top:-50%;right:-20%;width:380px;height:380px;background:radial-gradient(circle,rgba(59,130,246,.15),transparent 70%);pointer-events:none}
+.dev-modal-close{position:absolute;top:1.25rem;right:1.25rem;width:38px;height:38px;border-radius:50%;background:var(--bg-muted);display:grid;place-items:center;color:var(--text-secondary);font-size:.9rem;transition:all .2s;z-index:2}
+.dev-modal-close:hover{background:var(--blue-900);color:#fff;transform:rotate(90deg)}
 
-        .nav-section-title {
-            color: var(--text-tertiary);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            margin-bottom: var(--s-3);
-            padding-left: var(--s-3);
-        }
-        .nav-item { position: relative; }
-        .nav-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-3);
-            padding: 10px var(--s-3);
-            color: var(--text-secondary);
-            border-radius: var(--r-md);
-            transition: all var(--dur-fast) var(--ease-out);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            position: relative;
-        }
-        .nav-link:hover { background: var(--bg-muted); color: var(--text-primary); }
-        .nav-link.active { background: var(--blue-900); color: white; box-shadow: var(--shadow-sm); }
-        [data-theme="dark"] .nav-link.active { background: linear-gradient(135deg, var(--blue-600), var(--blue-700)); box-shadow: var(--shadow-blue); }
-        .nav-link-left { display: flex; align-items: center; gap: var(--s-3); }
-        .nav-link i.nav-icon { font-size: 0.95rem; width: 18px; text-align: center; opacity: 0.85; }
-        .nav-link.active i.nav-icon { opacity: 1; }
-        .dropdown-arrow {
-            font-size: 0.65rem;
-            transition: transform var(--dur-fast) var(--ease-out);
-            color: var(--text-tertiary);
-        }
-        .nav-item.active .dropdown-arrow { transform: rotate(180deg); color: var(--amber-400); }
+.dev-modal-header{padding:2.5rem 2.5rem 1.5rem;text-align:center;position:relative}
+.dev-modal-eyebrow{display:inline-flex;align-items:center;gap:.6rem;padding:6px 14px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.18);border-radius:var(--r-full);font-size:.65rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--blue-600);margin-bottom:1.25rem}
+[data-theme="dark"] .dev-modal-eyebrow{background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.25);color:var(--sky-400)}
+.dev-modal-title{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:400;color:var(--text-primary);letter-spacing:var(--track-tight);margin-bottom:.5rem;font-variation-settings:"opsz" 144}
+.dev-modal-title .italic{font-style:italic;font-weight:300;background:linear-gradient(135deg,var(--blue-600),var(--sky-400));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="dark"] .dev-modal-title .italic{background:linear-gradient(135deg,var(--sky-300),var(--amber-300));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.dev-modal-subtitle{color:var(--text-secondary);font-size:.9rem}
 
-        .dropdown {
-            margin-top: var(--s-1);
-            margin-left: var(--s-7);
-            padding-left: var(--s-4);
-            border-left: 1px solid var(--border-subtle);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--dur-base) var(--ease-out);
-        }
-        .nav-item.active .dropdown { max-height: 400px; }
-        .dropdown-link {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            padding: 7px var(--s-3);
-            color: var(--text-tertiary);
-            font-size: 0.825rem;
-            font-weight: 500;
-            border-radius: var(--r-sm);
-            transition: all var(--dur-fast);
-        }
-        .dropdown-link:hover { color: var(--text-primary); background: var(--bg-muted); padding-left: var(--s-4); }
-        .dropdown-link.active { color: var(--blue-700); font-weight: 600; background: var(--blue-50); }
-        [data-theme="dark"] .dropdown-link.active { color: var(--sky-400); background: rgba(30, 79, 216, 0.15); }
-        .dropdown-link i { font-size: 0.75rem; width: 14px; color: var(--blue-500); }
-        [data-theme="dark"] .dropdown-link i { color: var(--sky-400); }
+.dev-profile-card{margin:0 2.5rem 1.5rem;padding:1.75rem;background:linear-gradient(135deg,var(--blue-50),var(--sky-100));border:1px solid var(--border-subtle);border-radius:var(--r-2xl);position:relative;overflow:hidden}
+[data-theme="dark"] .dev-profile-card{background:linear-gradient(135deg,rgba(30,79,216,.12),rgba(14,165,233,.08));border-color:rgba(59,130,246,.25)}
+.dev-profile-card::before{content:'';position:absolute;top:-50%;right:-30%;width:240px;height:240px;background:radial-gradient(circle,rgba(245,158,11,.15),transparent 70%);pointer-events:none}
+.dev-profile-card>*{position:relative;z-index:1}
+.dev-profile-top{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+.dev-avatar{width:64px;height:64px;border-radius:50%;background:var(--gradient-hero);display:grid;place-items:center;color:var(--amber-400);font-family:var(--font-display);font-size:1.5rem;font-weight:600;flex-shrink:0;box-shadow:var(--shadow-md);position:relative}
+.dev-avatar::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--amber-400);opacity:.4}
+.dev-profile-role{font-family:var(--font-mono);font-size:.62rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--blue-600);margin-bottom:4px}
+[data-theme="dark"] .dev-profile-role{color:var(--sky-400)}
+.dev-profile-name{font-family:var(--font-display);font-size:1.2rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em;line-height:1.2}
+.dev-profile-contact{display:flex;flex-direction:column;gap:.5rem}
+.dev-contact-link{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--bg-surface);border:1px solid var(--border-hairline);border-radius:var(--r-md);font-size:.825rem;font-weight:600;color:var(--text-primary);transition:all .2s;word-break:break-all}
+.dev-contact-link:hover{border-color:var(--blue-500);background:var(--blue-50);color:var(--blue-600);transform:translateX(2px)}
+[data-theme="dark"] .dev-contact-link:hover{background:rgba(59,130,246,.15);color:var(--sky-400)}
+.dev-contact-link i{color:var(--blue-600);font-size:.85rem;flex-shrink:0}
+[data-theme="dark"] .dev-contact-link i{color:var(--sky-400)}
 
-        .sidebar-footer {
-            margin-top: auto;
-            padding-top: var(--s-5);
-            border-top: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .theme-toggle {
-            width: 100%;
-            padding: 10px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-md);
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-2);
-            font-size: 0.825rem;
-            font-weight: 600;
-            transition: all var(--dur-fast);
-        }
-        .theme-toggle:hover { background: var(--blue-900); color: white; border-color: var(--blue-900); }
+.dev-team-section{margin:0 2.5rem 1.5rem;padding:1.25rem 1.5rem;background:var(--bg-muted);border:1px solid var(--border-hairline);border-radius:var(--r-xl)}
+.dev-team-label{font-family:var(--font-mono);font-size:.62rem;font-weight:700;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--text-tertiary);margin-bottom:.75rem}
+.dev-team-name{font-family:var(--font-display);font-size:1.05rem;font-weight:500;color:var(--text-primary);letter-spacing:-.01em;display:flex;align-items:center;gap:.6rem}
+.dev-team-name i{color:var(--amber-500);font-size:.9rem}
 
-        .mobile-toggle {
-            display: none;
-            position: fixed;
-            top: var(--s-4); left: var(--s-4);
-            z-index: 1001;
-            width: 48px; height: 48px;
-            background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-md);
-            color: var(--blue-900);
-            font-size: 1.1rem;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-lg);
-        }
-        [data-theme="dark"] .mobile-toggle { background: rgba(11, 21, 38, 0.85); color: white; }
+.dev-quote{margin:0 2.5rem 2rem;padding:1.5rem;background:var(--gradient-hero);color:#fff;border-radius:var(--r-xl);position:relative;overflow:hidden;box-shadow:var(--shadow-lg),var(--inset-glass)}
+.dev-quote::before{content:'\201C';position:absolute;top:-10px;left:14px;font-family:var(--font-display);font-size:5rem;color:var(--amber-400);opacity:.3;line-height:1}
+.dev-quote>*{position:relative;z-index:1}
+.dev-quote p{font-family:var(--font-display);font-style:italic;font-size:.95rem;line-height:1.7;color:rgba(255,255,255,.92);margin-bottom:.75rem}
+.dev-quote cite{font-style:normal;font-family:var(--font-mono);font-size:.65rem;letter-spacing:var(--track-wider);text-transform:uppercase;color:var(--amber-300);font-weight:600;display:flex;align-items:center;gap:.5rem}
+.dev-quote cite::before{content:'';width:24px;height:1px;background:var(--amber-400)}
 
-        /* =========================================================
-           MAIN CONTENT — Full viewport, flex column
-           ========================================================= */
-        .main-content {
-            margin-left: var(--sidebar-w);
-            height: 100vh;
-            position: relative;
-            z-index: 2;
-            transition: margin-left var(--dur-base) var(--ease-out);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
+/* ============ REVEALS ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity var(--dur-cine) var(--ease-expo),transform var(--dur-cine) var(--ease-expo)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-stagger>*{opacity:0;transform:translateY(30px);transition:opacity var(--dur-slow) var(--ease-expo),transform var(--dur-slow) var(--ease-expo)}
+.reveal-stagger.visible>*{opacity:1;transform:translateY(0)}
+.reveal-stagger.visible>*:nth-child(1){transition-delay:0ms}
+.reveal-stagger.visible>*:nth-child(2){transition-delay:110ms}
+.reveal-stagger.visible>*:nth-child(3){transition-delay:220ms}
+.reveal-stagger.visible>*:nth-child(4){transition-delay:330ms}
 
-        /* =========================================================
-           SPLIT LAYOUT — AI + FAQ
-           ========================================================= */
-        .split-container {
-            flex: 1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--s-5);
-            padding: var(--s-5);
-            min-height: 0;
-            overflow: hidden;
-        }
-
-        /* AI Panel */
-        .ai-panel {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-xl);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-        }
-
-        .ai-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--s-4);
-            padding: var(--s-3) var(--s-4);
-            background: var(--bg-surface);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .ai-title-group {
-            display: flex;
-            align-items: center;
-            gap: var(--s-3);
-            min-width: 0;
-        }
-        .ai-icon {
-            width: 32px; height: 32px;
-            border-radius: var(--r-sm);
-            background: linear-gradient(135deg, var(--blue-600), var(--sky-500));
-            color: white;
-            display: grid; place-items: center;
-            font-size: 0.85rem;
-            flex-shrink: 0;
-        }
-        .ai-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-base);
-            font-weight: 500;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .ai-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 4px 10px;
-            background: rgba(45, 138, 78, 0.08);
-            border: 1px solid rgba(45, 138, 78, 0.15);
-            border-radius: var(--r-full);
-            font-size: 0.68rem;
-            font-weight: 600;
-            color: var(--forest-600);
-            font-family: var(--font-mono);
-            flex-shrink: 0;
-        }
-        [data-theme="dark"] .ai-status {
-            background: rgba(45, 138, 78, 0.12);
-            color: #4ade80;
-            border-color: rgba(74, 222, 128, 0.2);
-        }
-        .ai-status .dot {
-            width: 5px; height: 5px;
-            border-radius: 50%;
-            background: var(--forest-500);
-            box-shadow: 0 0 6px var(--forest-500);
-            animation: statusPulse 2s ease-in-out infinite;
-        }
-        @keyframes statusPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .ai-frame {
-            flex: 1;
-            position: relative;
-            background: var(--bg-surface);
-            overflow: hidden;
-            min-height: 0;
-        }
-        .ai-frame iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
-            display: block;
-            background: var(--bg-surface);
-        }
-
-        /* AI Loader */
-        .ai-loader {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-6);
-            z-index: 5;
-            transition: opacity var(--dur-base) var(--ease-out), visibility var(--dur-base) var(--ease-out);
-        }
-        .ai-loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .loader-mark-ai {
-            width: 72px; height: 72px;
-            border-radius: var(--r-xl);
-            background: linear-gradient(135deg, var(--blue-600), var(--sky-500));
-            display: grid; place-items: center;
-            color: white;
-            font-size: 1.8rem;
-            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
-            position: relative;
-            animation: loaderPulse 2s ease-in-out infinite;
-        }
-        .loader-mark-ai::before {
-            content: '';
-            position: absolute;
-            inset: -8px;
-            border-radius: var(--r-2xl);
-            border: 2px solid transparent;
-            border-top-color: var(--blue-400);
-            border-right-color: var(--sky-400);
-            animation: loaderSpin 1.5s linear infinite;
-        }
-        .loader-mark-ai::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: var(--r-xl);
-            background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%);
-        }
-        @keyframes loaderPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        @keyframes loaderSpin { to { transform: rotate(360deg); } }
-
-        /* AI Error */
-        .ai-error {
-            position: absolute;
-            inset: 0;
-            background: var(--bg-surface);
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--s-4);
-            z-index: 6;
-            padding: var(--s-8);
-            text-align: center;
-        }
-        .ai-error.active { display: flex; }
-
-        /* FAQ Panel */
-        .faq-panel {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-xl);
-            display: flex;
-            flex-direction: column;
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-        }
-
-        .faq-header {
-            padding: var(--s-5);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-shrink: 0;
-        }
-        .faq-title {
-            font-family: var(--font-display);
-            font-size: var(--fs-xl);
-            font-weight: 500;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-            margin-bottom: var(--s-2);
-            display: flex;
-            align-items: center;
-            gap: var(--s-2);
-        }
-        .faq-title i {
-            color: var(--amber-500);
-        }
-        .faq-subtitle {
-            font-size: var(--fs-sm);
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
-
-        .faq-search {
-            padding: var(--s-3) var(--s-5);
-            border-bottom: 1px solid var(--border-hairline);
-            position: relative;
-            flex-shrink: 0;
-        }
-        .faq-search input {
-            width: 100%;
-            padding: 10px 12px 10px 38px;
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-md);
-            background: var(--bg-muted);
-            color: var(--text-primary);
-            font-family: var(--font-body);
-            font-size: var(--fs-sm);
-            transition: all var(--dur-fast);
-        }
-        .faq-search input::placeholder {
-            color: var(--text-tertiary);
-        }
-        .faq-search input:focus {
-            outline: none;
-            border-color: var(--blue-500);
-            background: var(--bg-surface);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-        .faq-search i {
-            position: absolute;
-            left: calc(var(--s-5) + 12px);
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-tertiary);
-            font-size: var(--fs-sm);
-            pointer-events: none;
-        }
-
-        .faq-tabs {
-            display: flex;
-            gap: var(--s-2);
-            padding: var(--s-3) var(--s-5);
-            border-bottom: 1px solid var(--border-hairline);
-            flex-wrap: wrap;
-            flex-shrink: 0;
-        }
-        .faq-tab {
-            padding: 6px 12px;
-            background: var(--bg-muted);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-full);
-            font-size: var(--fs-xs);
-            font-weight: 600;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: all var(--dur-fast);
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-2);
-        }
-        .faq-tab:hover {
-            background: var(--bg-elevated);
-            color: var(--text-primary);
-            border-color: var(--border-subtle);
-        }
-        .faq-tab.active {
-            background: var(--blue-900);
-            color: white;
-            border-color: var(--blue-900);
-        }
-        [data-theme="dark"] .faq-tab.active {
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
-            border-color: var(--blue-600);
-        }
-        .faq-tab i {
-            font-size: 0.7rem;
-        }
-
-        .faq-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: var(--s-4) var(--s-5);
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-default) transparent;
-        }
-        .faq-content::-webkit-scrollbar {
-            width: 6px;
-        }
-        .faq-content::-webkit-scrollbar-thumb {
-            background: var(--border-default);
-            border-radius: 3px;
-        }
-
-        .faq-item {
-            margin-bottom: var(--s-3);
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--r-md);
-            background: var(--bg-surface);
-            overflow: hidden;
-            transition: all var(--dur-fast);
-        }
-        .faq-item:hover {
-            border-color: var(--border-subtle);
-            box-shadow: var(--shadow-sm);
-        }
-        .faq-item.active {
-            border-color: var(--blue-500);
-            box-shadow: var(--shadow-md);
-        }
-
-        .faq-question {
-            padding: var(--s-3) var(--s-4);
-            font-weight: 600;
-            color: var(--text-primary);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: var(--s-3);
-            font-size: var(--fs-sm);
-            line-height: 1.4;
-        }
-        .faq-question-toggle {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: var(--bg-muted);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: all var(--dur-fast);
-        }
-        .faq-question-toggle i {
-            font-size: 0.65rem;
-            color: var(--text-tertiary);
-            transition: transform var(--dur-fast);
-        }
-        .faq-item.active .faq-question-toggle {
-            background: var(--blue-900);
-        }
-        [data-theme="dark"] .faq-item.active .faq-question-toggle {
-            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
-        }
-        .faq-item.active .faq-question-toggle i {
-            color: white;
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 0 var(--s-4);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--dur-base) var(--ease-out), padding var(--dur-base) var(--ease-out);
-            color: var(--text-secondary);
-            font-size: var(--fs-sm);
-            line-height: 1.65;
-        }
-        .faq-item.active .faq-answer {
-            padding: 0 var(--s-4) var(--s-4);
-            max-height: 600px;
-        }
-        .faq-answer ul {
-            margin: var(--s-2) 0 0 var(--s-4);
-            padding-left: var(--s-2);
-        }
-        .faq-answer ul li {
-            margin-bottom: var(--s-1);
-        }
-        .faq-answer strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .no-results {
-            text-align: center;
-            padding: var(--s-8) var(--s-4);
-            display: none;
-        }
-        .no-results.show {
-            display: block;
-        }
-        .no-results-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: rgba(245, 158, 11, 0.1);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            display: grid;
-            place-items: center;
-            color: var(--amber-600);
-            font-size: 1.25rem;
-            margin: 0 auto var(--s-3);
-        }
-        .no-results h3 {
-            font-family: var(--font-display);
-            font-size: var(--fs-lg);
-            font-weight: 500;
-            color: var(--text-primary);
-            margin-bottom: var(--s-2);
-        }
-        .no-results p {
-            font-size: var(--fs-sm);
-            color: var(--text-secondary);
-            margin-bottom: var(--s-3);
-        }
-        .no-results-btn {
-            padding: 8px 16px;
-            background: var(--blue-900);
-            color: white;
-            border-radius: var(--r-full);
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            transition: all var(--dur-fast);
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-2);
-        }
-        .no-results-btn:hover {
-            background: var(--blue-800);
-            transform: translateY(-1px);
-        }
-
-        .contact-cta {
-            padding: var(--s-4) var(--s-5);
-            background: var(--bg-muted);
-            border-top: 1px solid var(--border-hairline);
-            text-align: center;
-            flex-shrink: 0;
-        }
-        .contact-cta-text {
-            font-size: var(--fs-sm);
-            color: var(--text-secondary);
-            margin-bottom: var(--s-2);
-        }
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--s-2);
-            padding: 8px 16px;
-            background: var(--blue-900);
-            color: white;
-            font-weight: 600;
-            font-size: var(--fs-sm);
-            border-radius: var(--r-full);
-            transition: all var(--dur-fast);
-        }
-        .contact-link:hover {
-            background: var(--blue-800);
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-
-        /* =========================================================
-           RESPONSIVE
-           ========================================================= */
-        @media (max-width: 1200px) {
-            .split-container {
-                gap: var(--s-4);
-                padding: var(--s-4);
-            }
-        }
-
-        @media (max-width: 1024px) {
-            :root { --sidebar-w: 280px; }
-            .split-container {
-                grid-template-columns: 1fr;
-                overflow-y: auto;
-            }
-            .ai-panel, .faq-panel {
-                min-height: 500px;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .sidebar { transform: translateX(-100%); box-shadow: none; }
-            .sidebar.active { transform: translateX(0); box-shadow: var(--shadow-2xl); }
-            .main-content { margin-left: 0; }
-            .mobile-toggle { display: flex; }
-        }
-
-        @media (max-width: 640px) {
-            .split-container {
-                padding: var(--s-3);
-                gap: var(--s-3);
-            }
-            .faq-header {
-                padding: var(--s-4);
-            }
-            .faq-title {
-                font-size: var(--fs-lg);
-            }
-            .faq-search, .faq-tabs {
-                padding: var(--s-2) var(--s-4);
-            }
-            .faq-content {
-                padding: var(--s-3) var(--s-4);
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-            .orb { animation: none; }
-            .loader-mark-ai::before { animation: none; }
-        }
-
-        @media print {
-            .sidebar, .mobile-toggle, .ambient-bg, .ai-panel { display: none !important; }
-            .main-content { margin-left: 0; height: auto; }
-            .split-container { grid-template-columns: 1fr; }
-            body { background: white !important; color: black !important; overflow: visible; }
-        }
-    </style>
+/* ============ RESPONSIVE ============ */
+@media(min-width:2000px){:root{--container-wide:1560px}}
+@media(max-width:1280px){
+  .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+  .footer-newsletter{grid-column:1/-1}
+  .cta-inner{grid-template-columns:1fr;text-align:center}
+  .cta-content{max-width:640px;margin:0 auto}
+  .cta-content p{margin-left:auto;margin-right:auto}
+  .cta-buttons{justify-content:center}
+  .cta-visual{display:none}
+}
+@media(max-width:1024px){
+  :root{--sidebar-w:280px}
+  .main-content.panel-shift{padding-right:0}
+  .ai-panel{width:min(420px,100vw)}
+}
+@media(max-width:900px){
+  html{scroll-padding-top:calc(var(--bar-h) + 14px)}
+  .mobile-bar{display:flex}
+  .sidebar{transform:translateX(-105%);width:min(86vw,340px);box-shadow:none;z-index:1002}
+  .sidebar.open{transform:none;box-shadow:var(--shadow-2xl)}
+  .sidebar .st{opacity:0;transform:translateX(-16px);transition:opacity .5s var(--ease-expo),transform .5s var(--ease-expo)}
+  .sidebar.open .st{opacity:1;transform:none}
+  .sidebar.open .sidebar-header.st{transition-delay:.06s}
+  .sidebar.open .nav-section:nth-of-type(1).st{transition-delay:.12s}
+  .sidebar.open .nav-section:nth-of-type(2).st{transition-delay:.2s}
+  .sidebar.open .nav-section:nth-of-type(3).st{transition-delay:.28s}
+  .sidebar.open .sidebar-footer.st{transition-delay:.36s}
+  .main-content{margin-left:0}
+  .ai-panel{width:100vw;max-width:100vw}
+  .ai-float{bottom:1.25rem;right:1.25rem;padding:12px 18px}
+  .ai-float-text small{display:none}
+}
+@media(max-width:640px){
+  .section{padding:3rem 0}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .footer-legal{justify-content:center}
+  .hero-badges{gap:.5rem}
+  .hero-badge{padding:8px 12px;font-size:.72rem}
+  .contact-grid{grid-template-columns:1fr}
+  .resources-grid{grid-template-columns:1fr}
+  .newsletter-form{flex-direction:column}
+  .dev-modal-header,.dev-profile-card,.dev-team-section,.dev-quote{margin-left:1.5rem;margin-right:1.5rem;padding-left:1.25rem;padding-right:1.25rem}
+  .dev-modal-header{padding-top:2rem}
+  .dev-modal-close{top:1rem;right:1rem}
+  .faq-tab{font-size:.72rem;padding:7px 12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal-stagger>*{opacity:1;transform:none}
+  .orb{animation:none}
+  .cursor-dot,.cursor-ring{display:none}
+}
+@media print{
+  .sidebar,.mobile-bar,.ambient-bg,.noise-overlay,.cursor-dot,.cursor-ring,.page-loader,.scroll-progress,.nav-backdrop,.ai-float,.ai-panel,.ai-panel-backdrop,.dev-modal,.dev-modal-backdrop,.cta-section,.footer-developer-btn{display:none!important}
+  .main-content{margin-left:0;height:auto}
+  body{background:#fff;color:#000}
+}
+</style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+<div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-logo"><i class="fas fa-life-ring"></i></div></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="ambient-bg" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div class="noise-overlay" aria-hidden="true"></div>
 
-    <!-- Ambient background -->
-    <div class="ambient-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<header class="mobile-bar">
+  <a href="../index.html" class="mobile-logo" aria-label="KE0274 PEFA Mfangano CYDC — Home"><span class="mark" aria-hidden="true"><i class="fas fa-heart"></i></span><span>KE0274 PEFA · Mfangano CYDC</span></a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"><i class="fas fa-bars" aria-hidden="true"></i></button>
+</header>
+<div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+<nav class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="sidebar-header st">
+    <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
+      <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
+      <div class="sidebar-logo-text"><span class="sidebar-logo-title">KE0274 PEFA</span><span class="sidebar-logo-sub">Mfangano CYDC</span></div>
+    </a>
+  </div>
+  <div class="sidebar-nav">
+    <div class="nav-section st">
+      <div class="nav-section-title">Main</div>
+      <div class="nav-item"><a href="../index.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
+          <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
+          <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
+          <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
+          <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
+        </div>
+      </div>
     </div>
+    <div class="nav-section st">
+      <div class="nav-section-title">Resources</div>
+      <div class="nav-item"><a href="../learningresources/learningresources.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div></a></div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
+          <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
+          <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../newsandupdates/newsandupdates.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div></a></div>
+    </div>
+    <div class="nav-section st">
+      <div class="nav-section-title">More</div>
+      <div class="nav-item">
+        <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}"><div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div><i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i></div>
+        <div class="dropdown" role="menu">
+          <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
+          <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../achievments/achievment.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div></a></div>
+      <div class="nav-item"><a href="../inventory/inventory.html" class="nav-link"><div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div></a></div>
+      <div class="nav-item"><a href="chat-support.html" class="nav-link active" aria-current="page"><div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div></a></div>
+    </div>
+  </div>
+  <div class="sidebar-footer st">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><i class="fas fa-moon" aria-hidden="true"></i><span>Dark Mode</span></button>
+  </div>
+</nav>
 
-    <!-- Mobile Toggle -->
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
+<main class="main-content" id="main">
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="page-hero-inner">
+      <div class="hero-breadcrumb"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span><span class="sep">/</span><span class="current">Support Center</span></div>
+      <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span><span>24/7 Support · Always Here</span></div>
+      <h1 class="hero-title" id="page-title">Support <span class="italic">center.</span></h1>
+      <p class="hero-subtitle">Get instant answers, academic guidance, and direct access to our support team. Whether you need help with assignments, enrollment, or program details — we're here to walk alongside you.</p>
+      <div class="hero-badges">
+        <div class="hero-badge"><div class="hero-badge-icon ai" aria-hidden="true"><i class="fas fa-robot"></i></div><span>AI Assistant · <strong>Online</strong></span></div>
+        <div class="hero-badge"><div class="hero-badge-icon faq" aria-hidden="true"><i class="fas fa-book-open"></i></div><span>9+ FAQ Articles</span></div>
+        <div class="hero-badge"><div class="hero-badge-icon contact" aria-hidden="true"><i class="fas fa-headset"></i></div><span>Direct Support</span></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sidebar Navigation — Identical to index.html -->
-    <nav class="sidebar" id="sidebar" aria-label="Primary navigation">
-        <div class="sidebar-header">
-            <a href="../index.html" class="sidebar-logo" aria-label="KE0274 PEFA MFANGANO CYDC — Home">
-                <div class="sidebar-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div>
-                <div class="sidebar-logo-text">
-                    <span class="sidebar-logo-title">KE0274 PEFA</span>
-                    <span class="sidebar-logo-sub">Mfangano CYDC</span>
-                </div>
-            </a>
+  <!-- FAQ SECTION (Primary Focus) -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Knowledge Base</div>
+        <h2 class="section-title" id="faq-title">Frequently asked <span class="italic">questions.</span></h2>
+        <p class="section-lede">Find quick answers about enrollment, programs, sponsorship, and daily operations at our Child Development Centre.</p>
+      </div>
+
+      <div class="faq-container reveal">
+        <div class="faq-search-wrap">
+          <input type="text" class="faq-search" id="faqSearch" placeholder="Search for questions about enrollment, academics, sponsorship..." aria-label="Search FAQ questions"/>
+          <i class="fas fa-search faq-search-icon" aria-hidden="true"></i>
+          <button class="faq-search-clear" id="faqSearchClear" aria-label="Clear search"><i class="fas fa-times" aria-hidden="true"></i></button>
         </div>
 
-        <div class="sidebar-nav">
-            <div class="nav-section">
-                <div class="nav-section-title">Main</div>
-                <div class="nav-item">
-                    <a href="../index.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-home nav-icon" aria-hidden="true"></i><span>Home</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-users nav-icon" aria-hidden="true"></i><span>Leadership</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentleadership/leaders.html" class="dropdown-link" role="menuitem"><i class="fas fa-user-tie" aria-hidden="true"></i> Leaders</a>
-                        <a href="../studentleadership/index.html" class="dropdown-link" role="menuitem"><i class="fas fa-vote-yea" aria-hidden="true"></i> Voting</a>
-                        <a href="../studentleadership/suggestions.html" class="dropdown-link" role="menuitem"><i class="fas fa-lightbulb" aria-hidden="true"></i> Suggestions</a>
-                        <a href="../studentleadership/leadershipempowerment.html" class="dropdown-link" role="menuitem"><i class="fas fa-award" aria-hidden="true"></i> Empowerment</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-graduation-cap nav-icon" aria-hidden="true"></i><span>Academics</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../academics/dreamachiever.html" class="dropdown-link" role="menuitem"><i class="fas fa-bullseye" aria-hidden="true"></i> Goal Achiever</a>
-                        <a href="../academics/department.html" class="dropdown-link" role="menuitem"><i class="fas fa-sitemap" aria-hidden="true"></i> Departments</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">Resources</div>
-                <div class="nav-item">
-                    <a href="../learningresources/learningresources.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-book nav-icon" aria-hidden="true"></i><span>Learning</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-user-graduate nav-icon" aria-hidden="true"></i><span>Portal</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../studentportal/timetable.html" class="dropdown-link" role="menuitem"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Timetable</a>
-                        <a href="../studentportal/assignment.html" class="dropdown-link" role="menuitem"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
-                        <a href="../studentportal/results.html" class="dropdown-link" role="menuitem"><i class="fas fa-chart-line" aria-hidden="true"></i> Results</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../newsandupdates/newsandupdates.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-newspaper nav-icon" aria-hidden="true"></i><span>News</span></div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">More</div>
-                <div class="nav-item">
-                    <div class="nav-link" role="button" tabindex="0" aria-expanded="false" onclick="toggleDropdown(event, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(event,this);}">
-                        <div class="nav-link-left"><i class="fas fa-images nav-icon" aria-hidden="true"></i><span>Media</span></div>
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </div>
-                    <div class="dropdown" role="menu">
-                        <a href="../media-gallery/imagegallery/image-gallery.html" class="dropdown-link" role="menuitem"><i class="fas fa-photo-video" aria-hidden="true"></i> Gallery</a>
-                        <a href="../media-gallery/virtual-tour.html" class="dropdown-link" role="menuitem"><i class="fas fa-vr-cardboard" aria-hidden="true"></i> Virtual Tour</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../achievments/achievment.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-trophy nav-icon" aria-hidden="true"></i><span>Achievements</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="../inventory/inventory.html" class="nav-link">
-                        <div class="nav-link-left"><i class="fas fa-boxes nav-icon" aria-hidden="true"></i><span>Inventory</span></div>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="chat-support.html" class="nav-link active" aria-current="page">
-                        <div class="nav-link-left"><i class="fas fa-comments nav-icon" aria-hidden="true"></i><span>Support</span></div>
-                    </a>
-                </div>
-            </div>
+        <div class="faq-tabs" role="tablist" aria-label="Filter FAQ categories">
+          <button class="faq-tab active" data-filter="all" role="tab" aria-selected="true"><i class="fas fa-th-large" aria-hidden="true"></i><span>All</span><span class="faq-tab-count" data-count="all">9</span></button>
+          <button class="faq-tab" data-filter="general" role="tab"><i class="fas fa-info-circle" aria-hidden="true"></i><span>General</span><span class="faq-tab-count" data-count="general">2</span></button>
+          <button class="faq-tab" data-filter="enrollment" role="tab"><i class="fas fa-user-plus" aria-hidden="true"></i><span>Enrollment</span><span class="faq-tab-count" data-count="enrollment">2</span></button>
+          <button class="faq-tab" data-filter="academics" role="tab"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Academics</span><span class="faq-tab-count" data-count="academics">2</span></button>
+          <button class="faq-tab" data-filter="sponsorship" role="tab"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i><span>Sponsorship</span><span class="faq-tab-count" data-count="sponsorship">2</span></button>
+          <button class="faq-tab" data-filter="contact" role="tab"><i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span><span class="faq-tab-count" data-count="contact">1</span></button>
         </div>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-                <span>Dark Mode</span>
-            </button>
+        <div class="faq-list" id="faqList" role="tabpanel">
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">What is KE0274 PEFA Mfangano CYDC?</span><div class="faq-question-meta"><span class="faq-category-dot general" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner"><strong>KE0274 PEFA Mfangano Child Development Centre</strong> is a Compassion International partnership program located at Sena Centre, Suba West Sub-County, Homa Bay County. We provide holistic child development addressing <strong>spiritual, physical, socio-economic, and cognitive needs</strong> from pregnancy through young adulthood.</div></div>
+          </div>
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">Who can enroll at the centre?</span><div class="faq-question-meta"><span class="faq-category-dot general" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Children and youth from <strong>vulnerable households</strong> within our catchment area (Mfangano Island and surrounding communities) are eligible for enrollment. Priority is given to orphans, vulnerable children, and those facing extreme poverty, illness, or educational barriers.</div></div>
+          </div>
+          <div class="faq-item" data-category="enrollment">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">What documents are required for registration?</span><div class="faq-question-meta"><span class="faq-category-dot enrollment" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Please bring the following to our registration office:<ul><li>Child's <strong>birth certificate</strong> or baptismal record</li><li>Parent/Guardian <strong>national ID copy</strong></li><li>Recent <strong>passport-size photo</strong> of the child</li><li>Proof of <strong>residence</strong> within the catchment area</li></ul></div></div>
+          </div>
+          <div class="faq-item" data-category="enrollment">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">Is there an enrollment fee?</span><div class="faq-question-meta"><span class="faq-category-dot enrollment" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner"><strong>No.</strong> Our programs are fully funded through Compassion International partnerships and sponsor donations. Registration, participation, and all core program activities are <strong>completely free</strong> for eligible children and families.</div></div>
+          </div>
+          <div class="faq-item" data-category="academics">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">What academic programs do you offer?</span><div class="faq-question-meta"><span class="faq-category-dot academics" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We provide supplementary academic support alongside regular school attendance, including:<ul><li><strong>Homework assistance</strong> & exam preparation (KCPE/KCSE)</li><li><strong>Literacy & numeracy</strong> remediation</li><li><strong>Digital skills</strong> & computer literacy</li><li><strong>Vocational training</strong> & life skills workshops</li></ul></div></div>
+          </div>
+          <div class="faq-item" data-category="academics">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">When are programs scheduled?</span><div class="faq-question-meta"><span class="faq-category-dot academics" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Regular sessions run <strong>every Saturday from 9:00 AM to 2:00 PM</strong>. During school holidays, we offer intensive daily programs (Monday–Friday) to maximize learning opportunities and provide safe, structured environments for youth.</div></div>
+          </div>
+          <div class="faq-item" data-category="sponsorship">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">How can I sponsor a child?</span><div class="faq-question-meta"><span class="faq-category-dot sponsorship" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Sponsorship can be arranged through <strong>Compassion International's official website</strong>. Each sponsor is matched with one child, providing consistent support for education, healthcare, nutrition, and spiritual mentorship. Monthly contributions directly impact the child's development journey.</div></div>
+          </div>
+          <div class="faq-item" data-category="sponsorship">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">Can I volunteer or donate materials?</span><div class="faq-question-meta"><span class="faq-category-dot sponsorship" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner"><strong>Absolutely!</strong> We welcome skilled volunteers (teachers, mentors, healthcare workers) and material donations (books, stationery, sports equipment, computers). Please contact our volunteer coordinator to discuss current needs, background checks, and placement opportunities.</div></div>
+          </div>
+          <div class="faq-item" data-category="contact">
+            <button class="faq-question" aria-expanded="false"><span class="faq-question-text">How can I contact the centre or visit?</span><div class="faq-question-meta"><span class="faq-category-dot contact" aria-hidden="true"></span><div class="faq-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></div></button>
+            <div class="faq-answer"><div class="faq-answer-inner"><strong>📍 Location:</strong> Sena Centre, PEFA Cathedral Sena, Suba West, Homa Bay County<br/><strong>📧 Email:</strong> <a href="mailto:ke0274pefamfangano@gmail.com">ke0274pefamfangano@gmail.com</a><br/><strong>📞 Phone:</strong> <a href="tel:+254723447002">+254 723 447 002</a><br/><br/>Visits are welcome <strong>Monday–Friday, 8:00 AM–4:00 PM</strong>. Please schedule in advance for guided tours and meetings with programme staff.</div></div>
+          </div>
         </div>
-    </nav>
 
-    <!-- Main Content — Full viewport, split layout -->
-    <main class="main-content" id="main">
-        <div class="split-container">
-            <!-- AI Assistant Panel (Left) -->
-            <section class="ai-panel" aria-labelledby="ai-label">
-                <div class="ai-header">
-                    <div class="ai-title-group">
-                        <div class="ai-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
-                        <h2 class="ai-title" id="ai-label">AI Learning Assistant</h2>
-                    </div>
-                    <div class="ai-status">
-                        <span class="dot" aria-hidden="true"></span>
-                        <span>Online</span>
-                    </div>
-                </div>
-
-                <div class="ai-frame">
-                    <div class="ai-loader" id="aiLoader" aria-live="polite" aria-label="Loading AI assistant">
-                        <div class="loader-mark-ai" aria-hidden="true">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="loader-text">
-                            <div class="loader-title">Initializing AI Assistant</div>
-                            <div class="loader-subtitle">Your 24/7 learning companion...</div>
-                        </div>
-                        <div class="loader-bar" aria-hidden="true"></div>
-                    </div>
-
-                    <div class="ai-error" id="aiError" role="alert">
-                        <div class="error-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
-                        <div class="error-title">AI Assistant unavailable</div>
-                        <p class="error-text">We're having trouble connecting to the AI assistant. Please try again in a moment.</p>
-                        <button class="error-btn" id="aiRetryBtn">
-                            <i class="fas fa-redo" aria-hidden="true"></i>
-                            <span>Try Again</span>
-                        </button>
-                    </div>
-
-                    <iframe
-                        id="aiFrame"
-                        src=""
-                        title="AI Learning Assistant — Instant academic support and guidance"
-                        allow="clipboard-write"
-                        loading="eager"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </section>
-
-            <!-- FAQ Panel (Right) -->
-            <section class="faq-panel" aria-labelledby="faq-label">
-                <div class="faq-header">
-                    <h2 class="faq-title" id="faq-label"><i class="fas fa-question-circle" aria-hidden="true"></i> Frequently Asked Questions</h2>
-                    <p class="faq-subtitle">Find quick answers about enrollment, programs, sponsorship, and daily operations at our Child Development Centre.</p>
-                </div>
-
-                <div class="faq-search">
-                    <i class="fas fa-search" aria-hidden="true"></i>
-                    <input type="text" id="faqSearch" placeholder="Search questions..." aria-label="Search FAQ questions">
-                </div>
-
-                <div class="faq-tabs" role="tablist">
-                    <button class="faq-tab active" data-filter="all" role="tab"><i class="fas fa-th-large" aria-hidden="true"></i> All</button>
-                    <button class="faq-tab" data-filter="general" role="tab"><i class="fas fa-info-circle" aria-hidden="true"></i> General</button>
-                    <button class="faq-tab" data-filter="enrollment" role="tab"><i class="fas fa-user-plus" aria-hidden="true"></i> Enrollment</button>
-                    <button class="faq-tab" data-filter="academics" role="tab"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academics</button>
-                    <button class="faq-tab" data-filter="sponsorship" role="tab"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i> Sponsorship</button>
-                    <button class="faq-tab" data-filter="contact" role="tab"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</button>
-                </div>
-
-                <div class="faq-content" id="faqContent" role="tabpanel">
-                    <!-- General Questions -->
-                    <div class="faq-item" data-category="general">
-                        <div class="faq-question">
-                            <span class="faq-question-text">What is KE0274 PEFA Mfangano CYDC?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            <strong>KE0274 PEFA Mfangano Child Development Centre</strong> is a Compassion International partnership program located at Sena Centre, Suba West Sub-County, Homa Bay County. We provide holistic child development addressing <strong>spiritual, physical, socio-economic, and cognitive needs</strong> from pregnancy through young adulthood.
-                        </div>
-                    </div>
-
-                    <div class="faq-item" data-category="general">
-                        <div class="faq-question">
-                            <span class="faq-question-text">Who can enroll at the centre?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            Children and youth from <strong>vulnerable households</strong> within our catchment area (Mfangano Island and surrounding communities) are eligible for enrollment. Priority is given to orphans, vulnerable children, and those facing extreme poverty, illness, or educational barriers.
-                        </div>
-                    </div>
-
-                    <!-- Enrollment Questions -->
-                    <div class="faq-item" data-category="enrollment">
-                        <div class="faq-question">
-                            <span class="faq-question-text">What documents are required for registration?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            Please bring the following to our registration office:
-                            <ul>
-                                <li>Child's <strong>birth certificate</strong> or baptismal record</li>
-                                <li>Parent/Guardian <strong>national ID copy</strong></li>
-                                <li>Recent <strong>passport-size photo</strong> of the child</li>
-                                <li>Proof of <strong>residence</strong> within the catchment area</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="faq-item" data-category="enrollment">
-                        <div class="faq-question">
-                            <span class="faq-question-text">Is there an enrollment fee?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            <strong>No.</strong> Our programs are fully funded through Compassion International partnerships and sponsor donations. Registration, participation, and all core program activities are <strong>completely free</strong> for eligible children and families.
-                        </div>
-                    </div>
-
-                    <!-- Academics Questions -->
-                    <div class="faq-item" data-category="academics">
-                        <div class="faq-question">
-                            <span class="faq-question-text">What academic programs do you offer?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            We provide supplementary academic support alongside regular school attendance, including:
-                            <ul>
-                                <li><strong>Homework assistance</strong> & exam preparation (KCPE/KCSE)</li>
-                                <li><strong>Literacy & numeracy</strong> remediation</li>
-                                <li><strong>Digital skills</strong> & computer literacy</li>
-                                <li><strong>Vocational training</strong> & life skills workshops</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="faq-item" data-category="academics">
-                        <div class="faq-question">
-                            <span class="faq-question-text">When are programs scheduled?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            Regular sessions run <strong>every Saturday from 9:00 AM to 2:00 PM</strong>. During school holidays, we offer intensive daily programs (Monday–Friday) to maximize learning opportunities and provide safe, structured environments for youth.
-                        </div>
-                    </div>
-
-                    <!-- Sponsorship Questions -->
-                    <div class="faq-item" data-category="sponsorship">
-                        <div class="faq-question">
-                            <span class="faq-question-text">How can I sponsor a child?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            Sponsorship can be arranged through <strong>Compassion International's official website</strong>. Each sponsor is matched with one child, providing consistent support for education, healthcare, nutrition, and spiritual mentorship. Monthly contributions directly impact the child's development journey.
-                        </div>
-                    </div>
-
-                    <div class="faq-item" data-category="sponsorship">
-                        <div class="faq-question">
-                            <span class="faq-question-text">Can I volunteer or donate materials?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            <strong>Absolutely!</strong> We welcome skilled volunteers (teachers, mentors, healthcare workers) and material donations (books, stationery, sports equipment, computers). Please contact our volunteer coordinator to discuss current needs, background checks, and placement opportunities.
-                        </div>
-                    </div>
-
-                    <!-- Contact Questions -->
-                    <div class="faq-item" data-category="contact">
-                        <div class="faq-question">
-                            <span class="faq-question-text">How can I contact the centre or visit?</span>
-                            <div class="faq-question-toggle"><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="faq-answer">
-                            <strong>📍 Location:</strong> Sena Centre, PEFA Cathedral Sena, Suba West, Homa Bay County<br>
-                            <strong>📧 Email:</strong> ke0274pefamfangano@gmail.com<br>
-                            <strong>📞 Phone:</strong> +254 XXX XXX XXX<br><br>
-                            Visits are welcome <strong>Monday–Friday, 8:00 AM–4:00 PM</strong>. Please schedule in advance for guided tours and meetings with programme staff.
-                        </div>
-                    </div>
-
-                    <!-- No Results Message -->
-                    <div class="no-results" id="noResults">
-                        <div class="no-results-icon">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </div>
-                        <h3>No matching questions found</h3>
-                        <p>Try adjusting your search terms or select a different category above.</p>
-                        <button class="no-results-btn" id="resetSearchBtn">
-                            <i class="fas fa-redo" aria-hidden="true"></i>
-                            <span>Reset Search</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="contact-cta">
-                    <p class="contact-cta-text">Still have questions? We're here to help!</p>
-                    <a href="mailto:ke0274pefamfangano@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>Contact Support Team</span>
-                    </a>
-                </div>
-            </section>
+        <div class="faq-no-results" id="noResults">
+          <div class="faq-no-results-icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+          <h3>No matching questions found</h3>
+          <p>Try adjusting your search terms or select a different category above.</p>
+          <button class="faq-tab" id="resetSearchBtn" style="background:var(--blue-900);color:#fff;border-color:var(--blue-900);"><i class="fas fa-redo" aria-hidden="true"></i><span>Reset Search</span></button>
         </div>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // ===== THEME TOGGLE =====
-        const themeToggle = document.getElementById('themeToggle');
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        applyTheme(savedTheme);
+  <!-- CONTACT SUPPORT SECTION -->
+  <section class="section" id="contact" aria-labelledby="contact-title" style="background:var(--bg-muted);">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Direct Support</div>
+        <h2 class="section-title" id="contact-title">Reach our <span class="italic">team.</span></h2>
+        <p class="section-lede">Prefer to connect directly? Our support team is ready to help through any of these channels.</p>
+      </div>
+      <div class="contact-grid reveal-stagger">
+        <a href="mailto:ke0274pefamfangano@gmail.com" class="contact-card email">
+          <div class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <h3>Email Support</h3>
+          <p>Send us a detailed message and we'll respond within 24 hours on business days.</p>
+          <div class="contact-card-value"><i class="fas fa-at" aria-hidden="true"></i><span>ke0274pefamfangano@gmail.com</span></div>
+        </a>
+        <a href="tel:+254723447002" class="contact-card phone">
+          <div class="contact-card-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+          <h3>Phone Support</h3>
+          <p>Speak directly with our team during business hours for immediate assistance.</p>
+          <div class="contact-card-value"><i class="fas fa-phone" aria-hidden="true"></i><span>+254 723 447 002</span></div>
+        </a>
+        <div class="contact-card location">
+          <div class="contact-card-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+          <h3>Visit In Person</h3>
+          <p>Come see us at Sena Centre, PEFA Cathedral Sena. Open Monday–Friday, 8 AM – 4 PM.</p>
+          <div class="contact-card-value"><i class="fas fa-location-dot" aria-hidden="true"></i><span>Suba West, Homa Bay County</span></div>
+        </div>
+        <div class="contact-card social">
+          <div class="contact-card-icon"><i class="fas fa-share-nodes" aria-hidden="true"></i></div>
+          <h3>Social Channels</h3>
+          <p>Follow us for updates, announcements, and stories of transformation from our community.</p>
+          <div class="contact-card-value"><i class="fas fa-heart" aria-hidden="true"></i><span>@pefamfangano</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        function applyTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            const icon = themeToggle.querySelector('i');
-            const label = themeToggle.querySelector('span');
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            label.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-        }
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            applyTheme(current === 'dark' ? 'light' : 'dark');
-        });
+  <!-- ADDITIONAL RESOURCES -->
+  <section class="section" id="resources" aria-labelledby="resources-title">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Additional Resources</div>
+        <h2 class="section-title" id="resources-title">Explore <span class="italic">further.</span></h2>
+        <p class="section-lede">Discover more tools, programs, and information across the KE0274 PEFA Mfangano CYDC platform.</p>
+      </div>
+      <div class="resources-grid reveal-stagger">
+        <a href="../childprotection.html" class="resource-card">
+          <div class="resource-card-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+          <h3>Child Protection</h3>
+          <p>Report abuse and access our 24/7 protection resources.</p>
+        </a>
+        <a href="../learningresources/learningresources.html" class="resource-card">
+          <div class="resource-card-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+          <h3>Learning Resources</h3>
+          <p>Study materials, guides, and educational tools.</p>
+        </a>
+        <a href="../studentportal/timetable.html" class="resource-card">
+          <div class="resource-card-icon"><i class="fas fa-calendar-alt" aria-hidden="true"></i></div>
+          <h3>Student Portal</h3>
+          <p>Timetables, assignments, and academic results.</p>
+        </a>
+        <a href="../newsandupdates/newsandupdates.html" class="resource-card">
+          <div class="resource-card-icon"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+          <h3>News & Updates</h3>
+          <p>Latest announcements, events, and achievements.</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-        // ===== MOBILE SIDEBAR =====
-        const mobileToggle = document.getElementById('mobileToggle');
-        const sidebar = document.getElementById('sidebar');
-        mobileToggle.addEventListener('click', () => {
-            const isActive = sidebar.classList.toggle('active');
-            mobileToggle.querySelector('i').className = isActive ? 'fas fa-times' : 'fas fa-bars';
-            mobileToggle.setAttribute('aria-expanded', String(isActive));
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900 && sidebar.classList.contains('active') &&
-                !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-                sidebar.classList.remove('active');
-                mobileToggle.querySelector('i').className = 'fas fa-bars';
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
+  <!-- CTA SECTION -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="cta-inner">
+      <div class="cta-content">
+        <h2 id="cta-title">Still need <span class="italic">help?</span></h2>
+        <p>Our team is here to walk alongside you. Whether you're a participant, parent, volunteer, or partner — every question matters, and we're committed to providing the support you need.</p>
+        <div class="cta-buttons">
+          <button class="cta-btn cta-btn-primary" id="ctaOpenAI"><i class="fas fa-robot" aria-hidden="true"></i><span>Ask Our AI Assistant</span></button>
+          <a href="mailto:ke0274pefamfangano@gmail.com" class="cta-btn cta-btn-secondary"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email Support</span></a>
+        </div>
+      </div>
+      <div class="cta-visual" aria-hidden="true">
+        <div class="cta-illustration"><i class="fas fa-hands-holding-child cta-illustration-icon"></i></div>
+      </div>
+    </div>
+  </section>
 
-        // ===== DROPDOWN TOGGLE =====
-        window.toggleDropdown = function(event, element) {
-            event.preventDefault();
-            event.stopPropagation();
-            const navItem = element.closest('.nav-item');
-            const isActive = navItem.classList.toggle('active');
-            element.setAttribute('aria-expanded', String(isActive));
-            document.querySelectorAll('.nav-item').forEach(item => {
-                if (item !== navItem) {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                }
-            });
-        };
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) link.setAttribute('aria-expanded', 'false');
-                });
-            }
-        });
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-mark" aria-hidden="true"><i class="fas fa-heart"></i></div><span>KE0274 PEFA Mfangano CYDC</span></div>
+          <p class="footer-tagline">Nurturing today for a stronger tomorrow.</p>
+          <p>A Compassion International partner dedicated to the holistic development of children and youth on Mfangano Island, Kenya — from pregnancy through young adulthood.</p>
+          <address class="footer-contact">
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Sena Centre, PEFA Cathedral Sena, Mfangano Island</span></div>
+            <div class="footer-contact-item"><i class="fas fa-mail-bulk" aria-hidden="true"></i><span>P.O. Box 27-40319, Suba Central Sub-County, Homa Bay County, Kenya</span></div>
+            <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:ke0274pefamfangano@gmail.com">ke0274pefamfangano@gmail.com</a></div>
+          </address>
+          <button class="footer-developer-btn" id="devTriggerBtn"><i class="fas fa-code" aria-hidden="true"></i><span>Meet The Developer</span></button>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../studentleadership/leaders.html">Leadership</a></li><li><a href="../academics/dreamachiever.html">Academics</a></li><li><a href="../achievments/achievment.html">Achievements</a></li><li><a href="../newsandupdates/newsandupdates.html">News & Updates</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul class="footer-links"><li><a href="../learningresources/learningresources.html">Learning Resources</a></li><li><a href="../studentportal/timetable.html">Student Portal</a></li><li><a href="../media-gallery/imagegallery/image-gallery.html">Media Gallery</a></li><li><a href="../media-gallery/virtual-tour.html">Virtual Tour</a></li><li><a href="../childprotection.html">Child Protection</a></li></ul></div>
+        <div class="footer-col footer-newsletter"><h4>Stay Connected</h4><p>Receive quarterly updates on the lives being transformed through our work.</p><form class="newsletter-form" aria-label="Newsletter subscription"><label for="newsletter-email" style="position:absolute;left:-9999px;">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email"/><button type="submit" aria-label="Subscribe to newsletter">Subscribe</button></form><div class="social-links" aria-label="Social media"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><div>© <span id="currentYear"></span> KE0274 PEFA Mfangano CYDC. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Child Protection Policy</a><a href="#">Terms of Use</a><a href="#">Safeguarding</a></div></div>
+    </div>
+  </footer>
+</main>
 
-        // ===== KEYBOARD: ESCAPE =====
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                if (window.innerWidth <= 900 && sidebar.classList.contains('active')) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                    mobileToggle.focus();
-                }
-                document.querySelectorAll('.nav-item.active').forEach(item => {
-                    item.classList.remove('active');
-                    const link = item.querySelector('.nav-link[aria-expanded]');
-                    if (link) { link.setAttribute('aria-expanded', 'false'); link.focus(); }
-                });
-            }
-        });
+<!-- AI FLOATING BUTTON -->
+<button class="ai-float" id="aiFloatBtn" aria-label="Open AI assistant">
+  <div class="ai-float-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+  <div class="ai-float-text"><small>24/7 Support</small><span>Ask AI Assistant</span></div>
+</button>
 
-        // ===== RESIZE HANDLER =====
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                if (window.innerWidth > 900) {
-                    sidebar.classList.remove('active');
-                    mobileToggle.querySelector('i').className = 'fas fa-bars';
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                }
-            }, 200);
-        });
+<!-- AI PANEL -->
+<div class="ai-panel-backdrop" id="aiPanelBackdrop" aria-hidden="true"></div>
+<aside class="ai-panel" id="aiPanel" aria-label="AI Assistant" role="dialog" aria-modal="false">
+  <div class="ai-panel-header">
+    <div class="ai-panel-avatar"><i class="fas fa-robot" aria-hidden="true"></i></div>
+    <div class="ai-panel-info">
+      <div class="ai-panel-name">Mfangano AI Assistant</div>
+      <div class="ai-panel-status"><span class="dot" aria-hidden="true"></span><span>Online · Ready to help</span></div>
+    </div>
+    <button class="ai-panel-close" id="aiPanelClose" aria-label="Close assistant"><i class="fas fa-times" aria-hidden="true"></i></button>
+  </div>
+  <div class="ai-panel-body" id="aiPanelBody">
+    <div class="ai-welcome">
+      <div class="ai-welcome-greeting"><span class="wave">👋</span> Hello! How can I help you today?</div>
+      <p>I'm your AI learning companion, ready to assist with assignments, schedules, program questions, and more. Ask me anything!</p>
+      <div class="ai-suggestions">
+        <button class="ai-suggestion" data-prompt="What are Saturday program hours?"><i class="fas fa-clock" aria-hidden="true"></i><span>What are Saturday program hours?</span></button>
+        <button class="ai-suggestion" data-prompt="How do I submit an assignment?"><i class="fas fa-file-pen" aria-hidden="true"></i><span>How do I submit an assignment?</span></button>
+        <button class="ai-suggestion" data-prompt="Tell me about enrollment requirements"><i class="fas fa-user-plus" aria-hidden="true"></i><span>Tell me about enrollment requirements</span></button>
+        <button class="ai-suggestion" data-prompt="What skills are offered?"><i class="fas fa-tools" aria-hidden="true"></i><span>What skills are offered?</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="ai-panel-footer">
+    <form class="ai-input-form" id="aiInputForm">
+      <input type="text" class="ai-input" id="aiInput" placeholder="Type your question..." aria-label="Message AI assistant" autocomplete="off"/>
+      <button type="submit" class="ai-send-btn" id="aiSendBtn" aria-label="Send message"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+    </form>
+    <div class="ai-disclaimer">Powered by AI · Responses are for guidance only</div>
+  </div>
+</aside>
 
-        // ===== AI ASSISTANT IFRAME =====
-        const AI_ASSISTANT_URL = 'https://helpful-student-aid.lovable.app';
-        const aiFrame = document.getElementById('aiFrame');
-        const aiLoader = document.getElementById('aiLoader');
-        const aiError = document.getElementById('aiError');
-        const aiRetryBtn = document.getElementById('aiRetryBtn');
-        let aiLoadTimeout;
+<!-- DEVELOPER MODAL -->
+<div class="dev-modal-backdrop" id="devModalBackdrop" aria-hidden="true">
+  <div class="dev-modal" role="dialog" aria-modal="true" aria-labelledby="dev-modal-title">
+    <div class="dev-modal-glow" aria-hidden="true"></div>
+    <button class="dev-modal-close" id="devModalClose" aria-label="Close modal"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <div class="dev-modal-header">
+      <div class="dev-modal-eyebrow"><i class="fas fa-code" aria-hidden="true"></i><span>Development Team</span></div>
+      <h2 class="dev-modal-title" id="dev-modal-title">Meet The <span class="italic">Development Team.</span></h2>
+      <p class="dev-modal-subtitle">Crafted with vision, dedication, and purpose.</p>
+    </div>
+    <div class="dev-profile-card">
+      <div class="dev-profile-top">
+        <div class="dev-avatar" aria-hidden="true">HM</div>
+        <div>
+          <div class="dev-profile-role">Lead Developer</div>
+          <div class="dev-profile-name">Henry Maurice Ochieng</div>
+        </div>
+      </div>
+      <div class="dev-profile-contact">
+        <a href="mailto:henrymauriceochieng@gmail.com" class="dev-contact-link"><i class="fas fa-envelope" aria-hidden="true"></i><span>henrymauriceochieng@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="dev-team-section">
+      <div class="dev-team-label">Co-Assistants</div>
+      <div class="dev-team-name"><i class="fas fa-users" aria-hidden="true"></i><span>Mfangano Coding Students</span></div>
+    </div>
+    <div class="dev-quote">
+      <p>Great products are not built by code alone. They are crafted through vision, collaboration, creativity, and countless hours of dedication. Every pixel, interaction, and experience on this platform reflects a shared commitment to excellence and innovation.</p>
+      <cite>— The Development Team</cite>
+    </div>
+  </div>
+</div>
 
-        function loadAI() {
-            aiError.classList.remove('active');
-            aiLoader.classList.remove('hidden');
-            aiFrame.src = AI_ASSISTANT_URL;
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s);};
+  var $$=function(s){return document.querySelectorAll(s);};
+  var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canHover=matchMedia('(hover: hover)').matches&&innerWidth>1024;
+  $('#currentYear').textContent=new Date().getFullYear();
 
-            clearTimeout(aiLoadTimeout);
-            aiLoadTimeout = setTimeout(() => {
-                if (!aiLoader.classList.contains('hidden')) {
-                    aiLoader.classList.add('hidden');
-                    aiError.classList.add('active');
-                }
-            }, 15000);
-        }
+  // Page loader
+  var loader=$('#pageLoader');
+  setTimeout(function(){loader.classList.add('hidden');},1800);
+  addEventListener('load',function(){setTimeout(function(){loader.classList.add('hidden');},200);});
 
-        aiFrame.addEventListener('load', () => {
-            setTimeout(() => {
-                aiLoader.classList.add('hidden');
-            }, 400);
-        });
-
-        aiFrame.addEventListener('error', () => {
-            clearTimeout(aiLoadTimeout);
-            aiLoader.classList.add('hidden');
-            aiError.classList.add('active');
-        });
-
-        aiRetryBtn.addEventListener('click', () => {
-            loadAI();
-        });
-
-        loadAI();
-
-        // ===== FAQ FUNCTIONALITY =====
-        const faqSearch = document.getElementById('faqSearch');
-        const faqTabs = document.querySelectorAll('.faq-tab');
-        const faqItems = document.querySelectorAll('.faq-item');
-        const noResults = document.getElementById('noResults');
-        const resetSearchBtn = document.getElementById('resetSearchBtn');
-
-        // Toggle FAQ answers
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                const isActive = item.classList.contains('active');
-
-                document.querySelectorAll('.faq-item.active').forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('active');
-                    }
-                });
-
-                item.classList.toggle('active', !isActive);
-            });
-        });
-
-        // Category filtering
-        faqTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                faqTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                applyFilters();
-            });
-        });
-
-        function applyFilters() {
-            const activeTab = document.querySelector('.faq-tab.active')?.getAttribute('data-filter') || 'all';
-            const query = (faqSearch?.value || '').toLowerCase().trim();
-            let visibleCount = 0;
-
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question-text')?.textContent.toLowerCase() || '';
-                const answer = item.querySelector('.faq-answer')?.textContent.toLowerCase() || '';
-                const category = item.getAttribute('data-category');
-
-                const matchesQuery = !query || question.includes(query) || answer.includes(query);
-                const matchesCategory = activeTab === 'all' || category === activeTab;
-
-                if (matchesQuery && matchesCategory) {
-                    item.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-
-            noResults.classList.toggle('show', visibleCount === 0);
-        }
-
-        // Search functionality
-        if (faqSearch) {
-            faqSearch.addEventListener('input', () => {
-                applyFilters();
-            });
-        }
-
-        // Reset search button
-        if (resetSearchBtn) {
-            resetSearchBtn.addEventListener('click', () => {
-                faqSearch.value = '';
-                faqTabs.forEach(t => t.classList.remove('active'));
-                document.querySelector('.faq-tab[data-filter="all"]').classList.add('active');
-                applyFilters();
-            });
-        }
+  // Custom Cursor
+  if(canHover&&!reduced){
+    var dot=$('#cursorDot'),ring=$('#cursorRing'),mx=0,my=0,rx=0,ry=0;
+    addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)';},{passive:true});
+    (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop);})();
+    $$('a,button,.nav-link,.dropdown-link,.faq-item,.contact-card,.resource-card,.hero-badge,input').forEach(function(el){
+      el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-hover');});
+      el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-hover');});
     });
-    </script>
+  }
+
+  // Spotlight lighting on cards
+  if(canHover&&!reduced){
+    $$('.contact-card,.resource-card').forEach(function(c){
+      c.addEventListener('pointermove',function(e){
+        var r=c.getBoundingClientRect();
+        c.style.setProperty('--sx',(e.clientX-r.left)+'px');
+        c.style.setProperty('--sy',(e.clientY-r.top)+'px');
+      },{passive:true});
+    });
+  }
+
+  // Theme
+  var themeToggle=$('#themeToggle');
+  function applyTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);themeToggle.querySelector('i').className=t==='dark'?'fas fa-sun':'fas fa-moon';themeToggle.querySelector('span').textContent=t==='dark'?'Light Mode':'Dark Mode';}
+  applyTheme(localStorage.getItem('theme')||'light');
+  themeToggle.addEventListener('click',function(){applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');});
+
+  // Mobile nav
+  var sidebar=$('#sidebar'),mobileToggle=$('#mobileToggle'),backdrop=$('#navBackdrop');
+  function openNav(){sidebar.classList.add('open');backdrop.classList.add('show');document.body.classList.add('nav-locked');mobileToggle.setAttribute('aria-expanded','true');mobileToggle.querySelector('i').className='fas fa-times';mobileToggle.setAttribute('aria-label','Close navigation menu');}
+  function closeNav(){sidebar.classList.remove('open');backdrop.classList.remove('show');document.body.classList.remove('nav-locked');mobileToggle.setAttribute('aria-expanded','false');mobileToggle.querySelector('i').className='fas fa-bars';mobileToggle.setAttribute('aria-label','Open navigation menu');}
+  mobileToggle.addEventListener('click',function(){sidebar.classList.contains('open')?closeNav():openNav();});
+  backdrop.addEventListener('click',closeNav);
+
+  window.toggleDropdown=function(e,el){
+    e.preventDefault();e.stopPropagation();
+    var item=el.closest('.nav-item'),active=item.classList.toggle('active');
+    el.setAttribute('aria-expanded',String(active));
+    $$('.nav-item').forEach(function(i){if(i!==item){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');}});
+  };
+  addEventListener('click',function(e){if(!e.target.closest('.nav-item')){$$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l)l.setAttribute('aria-expanded','false');});}});
+
+  // Scroll progress
+  var prog=$('#scrollProgress'),ticking=false;
+  addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(function(){var h=document.documentElement;prog.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';ticking=false;});ticking=true;}},{passive:true});
+
+  // Reveals
+  var rObs=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');rObs.unobserve(en.target);}});},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+  $$('.reveal,.reveal-stagger').forEach(function(el){rObs.observe(el);});
+
+  // Smooth anchors
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=this.getAttribute('href');if(h.length<2)return;var t=document.querySelector(h);if(t){e.preventDefault();t.scrollIntoView({behavior:reduced?'auto':'smooth'});closeNav();}});});
+
+  // Keyboard
+  addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+      closeNav();
+      closeAIPanel();
+      closeDevModal();
+      $$('.nav-item.active').forEach(function(i){i.classList.remove('active');var l=i.querySelector('.nav-link[aria-expanded]');if(l){l.setAttribute('aria-expanded','false');l.focus();}});
+    }
+  });
+
+  // Resize
+  var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(innerWidth>900)closeNav();},200);});
+
+  // Newsletter
+  var form=document.querySelector('.newsletter-form');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();var inp=form.querySelector('input'),btn=form.querySelector('button'),orig=btn.textContent;btn.textContent='✓ Subscribed';inp.value='';setTimeout(function(){btn.textContent=orig;},2800);});}
+
+  // ===== FAQ =====
+  var faqSearch=$('#faqSearch'),faqSearchClear=$('#faqSearchClear'),faqItems=$$('.faq-item'),noResults=$('#noResults'),resetSearchBtn=$('#resetSearchBtn'),faqTabs=$$('.faq-tab');
+
+  $$('.faq-question').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=q.closest('.faq-item');
+      var wasActive=item.classList.contains('active');
+      $$('.faq-item.active').forEach(function(o){if(o!==item){o.classList.remove('active');o.querySelector('.faq-question').setAttribute('aria-expanded','false');}});
+      item.classList.toggle('active',!wasActive);
+      q.setAttribute('aria-expanded',String(!wasActive));
+    });
+  });
+
+  function applyFilters(){
+    var activeFilter=document.querySelector('.faq-tab.active').getAttribute('data-filter');
+    var query=(faqSearch.value||'').toLowerCase().trim();
+    var visibleCount=0;
+    faqItems.forEach(function(item){
+      var q=(item.querySelector('.faq-question-text').textContent||'').toLowerCase();
+      var a=(item.querySelector('.faq-answer').textContent||'').toLowerCase();
+      var cat=item.getAttribute('data-category');
+      var matchQ=!query||q.indexOf(query)>-1||a.indexOf(query)>-1;
+      var matchC=activeFilter==='all'||cat===activeFilter;
+      if(matchQ&&matchC){item.style.display='';visibleCount++;}
+      else{item.style.display='none';}
+    });
+    noResults.classList.toggle('show',visibleCount===0);
+    faqSearchClear.classList.toggle('visible',query.length>0);
+  }
+
+  faqSearch.addEventListener('input',applyFilters);
+  faqSearchClear.addEventListener('click',function(){faqSearch.value='';applyFilters();faqSearch.focus();});
+  resetSearchBtn.addEventListener('click',function(){faqSearch.value='';faqTabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});document.querySelector('.faq-tab[data-filter="all"]').classList.add('active');document.querySelector('.faq-tab[data-filter="all"]').setAttribute('aria-selected','true');applyFilters();});
+
+  faqTabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      faqTabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+      tab.classList.add('active');tab.setAttribute('aria-selected','true');
+      applyFilters();
+    });
+  });
+
+  // ===== AI PANEL =====
+  var aiFloatBtn=$('#aiFloatBtn'),aiPanel=$('#aiPanel'),aiPanelBackdrop=$('#aiPanelBackdrop'),aiPanelClose=$('#aiPanelClose'),aiInput=$('#aiInput'),aiInputForm=$('#aiInputForm'),aiPanelBody=$('#aiPanelBody'),aiSendBtn=$('#aiSendBtn'),ctaOpenAI=$('#ctaOpenAI'),mainContent=$('.main-content');
+
+  function openAIPanel(){
+    aiPanel.classList.add('open');
+    aiPanelBackdrop.classList.add('show');
+    if(innerWidth>900){mainContent.classList.add('panel-shift');}
+    document.body.classList.add('panel-open');
+    aiFloatBtn.style.opacity='0';
+    aiFloatBtn.style.pointerEvents='none';
+    setTimeout(function(){aiInput.focus();},400);
+  }
+  function closeAIPanel(){
+    aiPanel.classList.remove('open');
+    aiPanelBackdrop.classList.remove('show');
+    mainContent.classList.remove('panel-shift');
+    document.body.classList.remove('panel-open');
+    aiFloatBtn.style.opacity='';
+    aiFloatBtn.style.pointerEvents='';
+  }
+  aiFloatBtn.addEventListener('click',openAIPanel);
+  if(ctaOpenAI)ctaOpenAI.addEventListener('click',openAIPanel);
+  aiPanelClose.addEventListener('click',closeAIPanel);
+  aiPanelBackdrop.addEventListener('click',closeAIPanel);
+
+  // AI Suggestions
+  $$('.ai-suggestion').forEach(function(s){
+    s.addEventListener('click',function(){
+      var prompt=s.getAttribute('data-prompt');
+      addUserMessage(prompt);
+      simulateResponse(prompt);
+    });
+  });
+
+  function addUserMessage(text){
+    var msg=document.createElement('div');
+    msg.className='ai-message user';
+    msg.innerHTML='<div class="ai-message-avatar"><i class="fas fa-user"></i></div><div class="ai-message-bubble">'+escapeHtml(text)+'</div>';
+    aiPanelBody.appendChild(msg);
+    scrollChat();
+  }
+  function addBotMessage(text){
+    var msg=document.createElement('div');
+    msg.className='ai-message bot';
+    msg.innerHTML='<div class="ai-message-avatar"><i class="fas fa-robot"></i></div><div class="ai-message-bubble">'+text+'</div>';
+    aiPanelBody.appendChild(msg);
+    scrollChat();
+  }
+  function addTyping(){
+    var msg=document.createElement('div');
+    msg.className='ai-message bot';
+    msg.id='typingIndicator';
+    msg.innerHTML='<div class="ai-message-avatar"><i class="fas fa-robot"></i></div><div class="ai-typing"><span></span><span></span><span></span></div>';
+    aiPanelBody.appendChild(msg);
+    scrollChat();
+  }
+  function removeTyping(){
+    var t=$('#typingIndicator');
+    if(t)t.remove();
+  }
+  function scrollChat(){aiPanelBody.scrollTop=aiPanelBody.scrollHeight;}
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];});}
+
+  var responses={
+    'saturday':'Our Saturday programs run from <strong>9:00 AM to 2:00 PM</strong> every week at Sena Centre. Activities include spiritual formation, academic support, skills training, and a nutritious lunch. Arrive by 8:45 AM for settling time!',
+    'assignment':'To submit assignments, visit the <strong>Student Portal → Assignments</strong> section. You can view due dates, upload completed work, and track your progress. Remember to submit before deadlines!',
+    'enroll':'Enrollment requires: (1) Child\'s birth certificate, (2) Parent/Guardian national ID, (3) Recent passport photo, (4) Proof of residence. Programs are <strong>completely free</strong> for eligible children. Visit us Monday–Friday to begin!',
+    'skill':'We offer 8 skills: <strong>Computer Studies, Tailoring, Hairdressing, Art & Design, Music/Piano, Soft Talents (drama/poetry), Interactive Sessions, and Indoor/Outdoor Games</strong>. Each is led by dedicated part-time staff during the 11:45 AM – 1:15 PM session.',
+    'default':'Thanks for your question! For detailed assistance, I recommend reaching out to our support team at <strong>ke0274pefamfangano@gmail.com</strong> or calling <strong>+254 723 447 002</strong>. You can also explore our FAQ section above for common topics. Is there anything specific I can help with today?'
+  };
+
+  function simulateResponse(prompt){
+    addTyping();
+    var lower=prompt.toLowerCase();
+    var resp=responses.default;
+    if(lower.indexOf('saturday')>-1||lower.indexOf('hour')>-1||lower.indexOf('schedule')>-1||lower.indexOf('time')>-1)resp=responses.saturday;
+    else if(lower.indexOf('assignment')>-1||lower.indexOf('submit')>-1||lower.indexOf('homework')>-1)resp=responses.assignment;
+    else if(lower.indexOf('enroll')>-1||lower.indexOf('register')>-1||lower.indexOf('join')>-1||lower.indexOf('requirement')>-1)resp=responses.enroll;
+    else if(lower.indexOf('skill')>-1||lower.indexOf('class')>-1||lower.indexOf('offer')>-1)resp=responses.skill;
+    setTimeout(function(){
+      removeTyping();
+      addBotMessage(resp);
+    },1200+Math.random()*600);
+  }
+
+  aiInputForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var text=aiInput.value.trim();
+    if(!text)return;
+    addUserMessage(text);
+    aiInput.value='';
+    simulateResponse(text);
+  });
+
+  // ===== DEVELOPER MODAL =====
+  var devTriggerBtn=$('#devTriggerBtn'),devModalBackdrop=$('#devModalBackdrop'),devModalClose=$('#devModalClose');
+  function openDevModal(){devModalBackdrop.classList.add('show');document.body.classList.add('nav-locked');devModalBackdrop.setAttribute('aria-hidden','false');setTimeout(function(){devModalClose.focus();},300);}
+  function closeDevModal(){devModalBackdrop.classList.remove('show');document.body.classList.remove('nav-locked');devModalBackdrop.setAttribute('aria-hidden','true');}
+  devTriggerBtn.addEventListener('click',openDevModal);
+  devModalClose.addEventListener('click',closeDevModal);
+  devModalBackdrop.addEventListener('click',function(e){if(e.target===devModalBackdrop)closeDevModal();});
+})();
+</script>
 </body>
 </html>
